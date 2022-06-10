@@ -1,0 +1,228 @@
+{{ 'section-ingredient.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .ingredient{
+    background-color: {{ section.settings.color }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<style>
+  a.button.button-primary {
+    padding: 0 10%;
+    background: {{ section.settings.button-color }};
+    color:{{ section.settings.button-text-color }};
+  }
+  .faq_qus .qus-li img {
+    width: 70px;
+    border-radius: {{ section.settings.radius }}%;
+  }
+</style>
+
+{%- style -%}
+{% if page.title == 'Services' %}
+  .ingredient__main{display:flex;justify-content:space-around;}
+  .ingredient__accordion {width: 55%;margin-left: 10%;}
+  .faq_qus .qus-li img {width: auto;}
+{% endif %}
+{%- endstyle -%}
+
+<section class="ingredient section-{{ section.id }}-padding section">
+  <div class="ingredient__main page-width">
+    <div class="ingredient__left-container">
+        <div class="ingredient__heading"><h2>{{ section.settings.heading }}</h2></div>
+        <div class="ingredient__link">{{ section.settings.link }}</div>
+      {% if section.settings.btn_txt != blank %}
+      <div class="ingredient__btn"><a class="button button-primary " href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}{% render 'arrow-dotted' %}</a></div>
+      {% endif %}
+    </div>
+    <div class="ingredient__accordion">
+        <div class="question">
+          <div class="sub-heading">
+            <h3>{{ section.settings.sb-heading }}</h3>
+          </div>
+          {% for block in section.blocks %} {% if block.type == 'text' %}
+            <div class="q-ans__block" id="faq__block">
+              
+              <div class="faq_qus" id="faq_qus" data-content-id="faq_{{ forloop.index }}">
+                
+                <div class="qus-li"><img src="{{ block.settings.faq_img | img_url: '80x80', crop: 'center'}}" alt="FAQ Image"> 
+                    <div class="qus-li__inner">
+                      <h3>{{ block.settings.faq_qus }}</h3><p>{{ block.settings.faq_quality }}</p>
+                    </div>
+                  </div>
+                
+                <span>{% render 'icon-plus-new' %}{% render 'icon-minus-new' %}</span>
+                
+              </div>
+              <div class="question__ans">
+              <p class="faq_ans" id="faq_{{ forloop.index }}">
+                {{ block.settings.faq_ans }}
+              </p>
+            </div>
+              
+            </div>
+            {% endif %} {% endfor %}
+          </div>
+          <div class="ingredient__link-link">{{ section.settings.link }}</div>
+          {% if section.settings.btn_txt != blank %}
+          <div class="ingredient__btn-link"><a class="button button-primary " href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}{% render 'arrow-dotted' %}</a></div>
+          {% endif %}
+    </div>
+  </div>
+</section>
+
+<script>  
+  let Faqplus = document.querySelectorAll(".faq_qus .icon-plus-new");
+  let Faqminus = document.querySelectorAll(".faq_qus .icon-minus-new");
+  let Faqquestions = document.querySelectorAll(".faq_qus");
+  let Faqanswers = document.querySelectorAll(".faq_ans");
+   
+  Faqquestions.forEach((question) => {
+    question.addEventListener("click", (ele) => {
+      let ans_id = question.dataset.contentId;
+      let ans = document.getElementById(ans_id);
+
+      let FaqiconPlus = question.querySelector(".icon-plus-new");
+      let FaqiconMinus = question.querySelector(".icon-minus-new");
+       
+      if(!FaqiconMinus.classList.contains('is-active')) {       
+        FaqiconPlus.classList.remove("is-active");
+        FaqiconPlus.classList.add("not-active");
+        FaqiconMinus.classList.add("is-active");
+        FaqiconMinus.classList.remove("not-active");
+        ans.classList.add("is-active");
+      } else {
+        FaqiconMinus.classList.remove("is-active");
+        FaqiconMinus.classList.add("not-active");
+        FaqiconPlus.classList.add("is-active");
+        FaqiconPlus.classList.remove("not-active");
+        ans.classList.remove("is-active");
+      }
+     });
+     
+   });
+ </script>
+{% schema %}
+{
+  "name": "Ingredient Section",
+  "tag": "section",
+  "class": "faq__section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Select a Color"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "link",
+      "label": "Add a link"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Add a button link"
+    },
+    {
+      "type": "color",
+      "id": "button-color",
+      "label": "Add a button color"
+    },
+    {
+      "type": "color",
+      "id": "button-text-color",
+      "label": "Add a button text color"
+    },
+    {
+      "type": "text",
+      "id": "sb-heading",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "range",
+      "id": "radius",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "%",
+      "default": 0,
+      "label": "Image Radius"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Text Block",
+      "type": "text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "faq_img",
+          "label": "Upload an Image"
+        },
+        {
+          "type": "text",
+          "id": "faq_qus",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "faq_quality",
+          "label": "Quality"
+        },
+        {
+          "type": "text",
+          "id": "faq_ans",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ingredient Section"
+    }
+  ]
+}
+{% endschema %}

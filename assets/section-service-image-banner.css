@@ -1,0 +1,99 @@
+h2.service-banner__heading.banner__heading span {
+    font-size: 60px;
+}
+ .service-banner__box{
+     background-color: transparent;
+ }
+  .banner_inner_box {width: 44%;margin: auto;}
+  .banner--desktop-transparent .banner__box {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.banner__buttons {
+    margin-top: 8%;
+}
+.banner__buttons a{
+    background: #FF5DED;
+}
+.banner__text.body span {font-size: 17px;line-height: 30px;color: #000; font-family: 'GTAmerica';}
+.banner__buttons.banner__buttons--multiple a.button--primary {background: #FF5DED;}
+.banner__buttons.banner__buttons--multiple a.button--primary::before { border: none; }
+.banner__buttons.banner__buttons--multiple a.button--primary::after { border: none; }
+.banner__buttons.banner__buttons--multiple a.button--primary{color: #fff;}
+.banner__buttons.banner__buttons--multiple a.button--secondary {color: #000;}
+.banner__buttons.banner__buttons--multiple a.button{
+  justify-content: start;
+  font-family: 'GTAmerica';
+}
+.banner__buttons.banner__buttons--multiple a.button--primary svg{
+  position: absolute;
+  right: 25px;
+}
+.banner__buttons.banner__buttons--multiple a.button--secondary svg{
+  position: absolute;
+  right: 25px;
+}
+/* .banner__text.body {margin: 0 0 8%;} */
+.banner__text.body {
+    margin: auto;
+    width: 90%;
+}
+.banner__buttons.banner__buttons--multiple .button {
+  border: 1px solid;
+  }
+  .banner__buttons.banner__buttons--multiple a.button--primary::after {
+    border: none;
+    box-shadow: none;
+}
+.banner--desktop-transparent .banner__box{
+    max-width: 100%;
+    width: 100%;
+  }
+@media screen and (max-width: 767px){
+    h2.banner__heading span {
+        font-size: 40px;
+        color: #000;
+    }
+    .banner__text.body span {
+        font-size: 14px;
+    }
+    .banner_inner_box {
+    width: 80%;
+    margin: auto;
+    }
+    .banner__text.body span {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .banner__buttons.banner__buttons--multiple .button{
+      min-height: 38px;
+      width: 100px;
+      font-size: 13px;
+    }
+}
+  
+  @media screen and (min-width: 768px) and (max-width:990px){
+  	h2.banner__heading span {
+        font-size: 46px;
+        color: #000;
+    }
+  }
+@media screen and (min-width:350px) {
+    h2.banner__heading{
+        font-size: 30px;
+    }
+}
+.banner_inner_box .banner__buttons a{
+    background-color: #FF42EF;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+.banner_inner_box .banner__buttons a svg{
+    position: absolute;
+    right: 9%;
+}
+

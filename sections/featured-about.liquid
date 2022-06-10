@@ -1,0 +1,98 @@
+{{ 'section-featured-about.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-bg {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+{%- endstyle -%}
+
+<section class="featured-about page-width isolate section-{{ section.id }}-bg">
+    <div class="grid grid--gapless grid--1-col grid--2-col-tablet">
+        <div class="grid__item featured-about_left">
+            <div class="featured-about__heading"><h2>{{section.settings.heading}}</h2></div>
+            <div class="featured-about__image"><img src="{{section.settings.image | img_url: 'large'}}" alt="Image"></div>
+        </div>
+        <div class="grid__item featured-about__content__wrapper">
+            <div class="featured-about__content"><p>{{section.settings.content}}</p></div>
+            <div class="featured-about__buttons">
+              {%- if section.settings.btn-text-1 != blank -%}
+                <a class="featured-about__btn-primary button button--primary" href="{{section.settings.link_first_btn}}"><span>{{section.settings.btn-text-1}}</span>{%render 'arrow-dotted'%}</a>
+              {%- endif -%}
+              {%- if section.settings.btn-text-2 != blank -%}
+                <a class="featured-about__btn-secondary button button--secondary" href="{{section.settings.link_second_btn}}">{{section.settings.btn-text-2}}{%render 'arrow-dotted-black'%}</a>
+              {%- endif -%}
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+   "name": "t:sections.featured-about.name",
+   "class": "section section-featured-about",
+  "settings": [
+  {
+    "type": "text",
+    "id": "heading",
+    "label": "t:sections.featured-about.settings.heading.label"
+  },
+  {
+    "type": "image_picker",
+    "id": "image",
+    "label": "t:sections.featured-about.settings.image.label"
+  },
+  {
+    "type": "html",
+    "id": "content",
+    "label": "t:sections.featured-about.settings.content.label"
+  },
+  {
+    "type": "text",
+    "id": "btn-text-1",
+    "label": "First Button"
+  },
+  {
+    "type": "url",
+    "id": "link_first_btn",
+    "label": "First Button Link",
+    "info": "Please add a link for first button"
+  },
+  {
+    "type": "text",
+    "id": "btn-text-2",
+    "label": "Second Button"
+  },
+  {
+    "type": "url",
+    "id": "link_second_btn",
+    "label": "Second Button Link",
+    "info": "Please add a link for second button"
+  },
+  {
+    "type": "range",
+    "id": "padding_top",
+    "min": 0,
+    "max": 100,
+    "step": 4,
+    "unit": "px",
+    "label": "t:sections.all.padding.padding_top",
+    "default": 36
+  },
+  {
+    "type": "range",
+    "id": "padding_bottom",
+    "min": 0,
+    "max": 100,
+    "step": 4,
+    "unit": "px",
+    "label": "t:sections.all.padding.padding_bottom",
+    "default": 36
+  }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.featured-about.presets.name"
+    }
+  ]
+}
+{% endschema %}

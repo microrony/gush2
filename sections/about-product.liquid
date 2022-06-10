@@ -1,0 +1,141 @@
+{{ 'section-about-product.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  section.about-product {
+    background: {{ section.settings.color }};
+    
+}
+{%- endstyle -%}
+
+<section class="about-product isolate section-{{ section.id }}-padding">
+    <div class="about-product__main">
+        <div class="about-product__heading-left"><h2>{{section.settings.heading}}</h2></div>
+        <div class="about-product__icon-with-text" style="margin-top: {{section.settings.icon-margin}}%;">
+            <div class="about-product__icon">
+                <img src="{{section.settings.image1 | img_url: 'medium'}}" alt="Image">
+               <div class="about-product__icon-text">
+                    <h3>{{section.settings.heading1}}</h3>
+                    <p>{{section.settings.text1}}</p>
+                </div>
+            </div>
+            <div class="about-product__icon">
+                <img src="{{section.settings.image2 | img_url: 'medium'}}" alt="Image">
+                <div class="about-product__icon-text">
+                    <h3>{{section.settings.heading2}}</h3>
+                    <p>{{section.settings.text2}}</p>
+                </div>
+            </div>
+            <div class="about-product__icon">
+                <img src="{{section.settings.image3 | img_url: 'medium'}}" alt="Image">
+                <div class="about-product__icon-text">
+                    <h3>{{section.settings.heading3}}</h3>
+                    <p>{{section.settings.text3}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+   "name": "t:sections.about-product.name",
+  "class": "section section-about-product",
+ "settings": [
+    {
+        "type": "html",
+        "id": "heading",
+        "label": "t:sections.about-product.settings.heading.label"
+    },
+        {
+           "type": "color",
+           "id": "color",
+           "label": "Select A Color"
+        },
+    {
+        "type": "image_picker",
+        "id": "image1",
+        "label": "t:sections.about-product.settings.image.label"
+    },
+    {
+        "type": "text",
+        "id": "heading1",
+        "label": "t:sections.about-product.settings.heading1.label"
+    },
+    {
+        "type": "text",
+        "id": "text1",
+        "label": "t:sections.about-product.settings.text1.label"
+    },
+    {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "t:sections.about-product.settings.image2.label"
+    },
+    {
+        "type": "text",
+        "id": "heading2",
+        "label": "t:sections.about-product.settings.heading2.label"
+    },
+    {
+        "type": "text",
+        "id": "text2",
+        "label": "t:sections.about-product.settings.text2.label"
+    },
+    {
+        "type": "image_picker",
+        "id": "image3",
+        "label": "t:sections.about-product.settings.image3.label"
+    },
+    {
+        "type": "text",
+        "id": "heading3",
+        "label": "t:sections.about-product.settings.heading3.label"
+    },
+    {
+        "type": "text",
+        "id": "text3",
+        "label": "t:sections.about-product.settings.text3.label"
+    },
+    {
+       "type": "range",
+       "id": "icon-margin",
+       "min": 0,
+       "max": 100,
+       "step": 2,
+       "unit": "px",
+      "default": 0,
+       "label": "Margin Of Icon Section.",
+       "info": "Please Select Margin Top of Icons"
+    },
+    {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+
+ ],
+"presets": [
+    {
+        "name":"t:sections.about-product.presets.name"
+    }
+]
+}
+{% endschema %}

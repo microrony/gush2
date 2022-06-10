@@ -1,0 +1,353 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-gush",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "8ebdff30-e37c-4e7f-8454-4d90a479b42e": {
+          "type": "tab",
+          "settings": {
+            "tab_heading": "Why is it Special",
+            "tab_content": "Product introduction. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,"
+          }
+        },
+        "d31c5b0c-d7ac-4a4e-80cc-aca5b267f625": {
+          "type": "tab",
+          "settings": {
+            "tab_heading": "What is it",
+            "tab_content": "Product introduction. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share",
+        "8ebdff30-e37c-4e7f-8454-4d90a479b42e",
+        "d31c5b0c-d7ac-4a4e-80cc-aca5b267f625"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "1652439533f0dc6359": {
+      "type": "product-info",
+      "blocks": {
+        "c07957dd-18a2-43d1-82c2-ae93a37c6489": {
+          "type": "product-info",
+          "settings": {
+            "tabheading": "Air-Purifying",
+            "tabimg": "shopify:\/\/shop_images\/paint1.png",
+            "tabdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum tincidunt auctor"
+          }
+        },
+        "5fbea61b-e06f-4a95-b56b-938f9b84dc07": {
+          "type": "product-info",
+          "settings": {
+            "tabheading": "VOC-Free",
+            "tabimg": "shopify:\/\/shop_images\/paint3.png",
+            "tabdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum tincidunt auctor"
+          }
+        },
+        "f1d18298-7896-4cb8-8f81-c79c2fd62c24": {
+          "type": "product-info",
+          "settings": {
+            "tabheading": "Anti-Molding",
+            "tabimg": "shopify:\/\/shop_images\/paint2.png",
+            "tabdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum tincidunt auctor"
+          }
+        },
+        "9e3f1e75-5c22-4786-be51-b27f2252aae0": {
+          "type": "product-info",
+          "settings": {
+            "tabheading": "Humidity Control",
+            "tabimg": "shopify:\/\/shop_images\/paint4.png",
+            "tabdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum tincidunt auctor"
+          }
+        }
+      },
+      "block_order": [
+        "c07957dd-18a2-43d1-82c2-ae93a37c6489",
+        "5fbea61b-e06f-4a95-b56b-938f9b84dc07",
+        "f1d18298-7896-4cb8-8f81-c79c2fd62c24",
+        "9e3f1e75-5c22-4786-be51-b27f2252aae0"
+      ],
+      "settings": {
+        "heading": "The Benefits",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16524396805057076a": {
+      "type": "ingredient",
+      "blocks": {
+        "cdfe81e2-cf4d-472e-bec0-8ab9619936b7": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/paint3.png",
+            "faq_qus": "Activitated Carbon",
+            "faq_quality": "Low Cost",
+            "faq_ans": "Activitated Carbon Content"
+          }
+        },
+        "b3bf5e61-3ce4-49c8-a560-d9462466cd1b": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/paint1.png",
+            "faq_qus": "Titanium Dioxide",
+            "faq_quality": "Good Efficacy",
+            "faq_ans": "Titanium Dioxide Content"
+          }
+        },
+        "1ad7b02a-2065-4fab-82ec-485f4e416d27": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/paint4.png",
+            "faq_qus": "Devil’s Ivy",
+            "faq_quality": "No secondary Poulltions",
+            "faq_ans": "No secondary Poulltions Content"
+          }
+        },
+        "cedf5a43-0fd4-475f-bc51-205715b69abd": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/image_40_2.png",
+            "faq_qus": "Methylotorphic Bacteria",
+            "faq_quality": "Enviromental Friendly",
+            "faq_ans": "Methylotorphic Bacteria Content"
+          }
+        }
+      },
+      "block_order": [
+        "cdfe81e2-cf4d-472e-bec0-8ab9619936b7",
+        "b3bf5e61-3ce4-49c8-a560-d9462466cd1b",
+        "1ad7b02a-2065-4fab-82ec-485f4e416d27",
+        "cedf5a43-0fd4-475f-bc51-205715b69abd"
+      ],
+      "settings": {
+        "color": "#75fa4d",
+        "heading": "Ingredients",
+        "link": "<p><a href=\"#\" title=\"#\">Full Ingredient details here<\/a><\/p>",
+        "btn_text": "",
+        "btn_url": "",
+        "button-color": "",
+        "button-text-color": "",
+        "sb-heading": "Plant-based. VOC-Free. Non-toxic.",
+        "radius": 49,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "1652439903eeaf17c8": {
+      "type": "comparison",
+      "settings": {
+        "them-img": "shopify:\/\/shop_images\/paint4.png",
+        "heading-img1": "Other paints",
+        "us-img": "shopify:\/\/shop_images\/paint3.png",
+        "heading-img2": "Gush",
+        "heading": "Us vs Them",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus.",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16524399652ff3675c": {
+      "type": "testimonials-gush",
+      "disabled": true,
+      "blocks": {
+        "dde958b8-ccdb-4a9f-830c-c8e8f8cb17b9": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Client 1"
+          }
+        },
+        "6d1c47cc-d51f-4038-b331-4514023b48ce": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Client 2"
+          }
+        },
+        "d35ac7a1-aef7-4430-8e45-df5ce33bd98a": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Client 3"
+          }
+        },
+        "c27ecbf7-0622-4d67-a612-3d192b712ff3": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Client 4"
+          }
+        },
+        "62e86f71-6216-431a-8747-29a5b38eb301": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Client 5"
+          }
+        },
+        "d79bcb2f-a4a9-4a64-826f-17cdb4ca2fb2": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Client 5"
+          }
+        }
+      },
+      "block_order": [
+        "dde958b8-ccdb-4a9f-830c-c8e8f8cb17b9",
+        "6d1c47cc-d51f-4038-b331-4514023b48ce",
+        "d35ac7a1-aef7-4430-8e45-df5ce33bd98a",
+        "c27ecbf7-0622-4d67-a612-3d192b712ff3",
+        "62e86f71-6216-431a-8747-29a5b38eb301",
+        "d79bcb2f-a4a9-4a64-826f-17cdb4ca2fb2"
+      ],
+      "settings": {
+        "review_heading": "",
+        "review_num": "",
+        "review_count": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "1652439533f0dc6359",
+    "16524396805057076a",
+    "1652439903eeaf17c8",
+    "16524399652ff3675c"
+  ]
+}

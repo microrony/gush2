@@ -1,0 +1,78 @@
+{{ 'section-about-partner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+{%- endstyle -%}
+
+<section class="about-partner isolate section-{{ section.id }}-padding section section-primary section-wrapper">
+  <div class="grid--gapless grid--1-col grid--2-col-tablet about-partner__padding">
+    <div class="about-partner__heading">
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="about-partner__logos">
+
+     <div class="about-partner__logos-img"><img src="{{ section.settings.image1 | img_url: 'medium' }}" alt="logo"></div>
+     <div class="about-partner__logos-img"><img src="{{ section.settings.image2 | img_url: 'medium' }}" alt="logo"></div>
+     <div class="about-partner__logos-img"><img src="{{ section.settings.image3 | img_url: 'medium' }}" alt="logo"></div>
+     
+   
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+ "name": "t:sections.about-partner.name",
+"class": "section section-about-partner",
+"settings": [
+{
+  "type": "text",
+  "id": "heading",
+  "label": "t:sections.about-partner.settings.heading.label"
+},
+{
+  "type": "image_picker",
+  "id": "image1",
+  "label": "t:sections.about-partner.settings.image.label"
+},
+{
+  "type": "image_picker",
+  "id": "image2",
+  "label": "t:sections.about-partner.settings.image.label"
+},
+{
+  "type": "image_picker",
+  "id": "image3",
+  "label": "t:sections.about-partner.settings.image.label"
+},
+{
+  "type": "range",
+  "id": "padding_top",
+  "min": 0,
+  "max": 100,
+  "step": 4,
+  "unit": "px",
+  "label": "t:sections.all.padding.padding_top",
+  "default": 36
+},
+{
+  "type": "range",
+  "id": "padding_bottom",
+  "min": 0,
+  "max": 100,
+  "step": 4,
+  "unit": "px",
+  "label": "t:sections.all.padding.padding_bottom",
+  "default": 36
+}
+],
+"presets": [
+    {
+      "name": "t:sections.about-partner.presets.name"
+    }
+  ]
+}
+{% endschema %}

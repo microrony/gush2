@@ -1,0 +1,116 @@
+.footer-contact__main {
+    display: flex;
+}
+.footer-contact__main {
+    background-image: url('contact-footer-img.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0rem 0 25rem 0;
+}
+
+.footer-contact__main-text {
+    width: 50%;
+}
+.footer-contact__main-heading h2 {font-family: 'GTAmerica';}
+.footer-contact__main-para p {
+    font-size: 32px;
+    line-height: 44px;
+    width: 80%;
+    color: #000;
+    margin-top: 5%;
+    font-family: 'RecklessNeue';
+    font-weight: 400;
+}
+.footer-contact__form {
+    width: 50%;
+}
+.footer-contact__form .field:after{
+    box-shadow: none;
+    border: none;
+}
+.footer-contact__form .field{
+    border-bottom: 1px solid;
+    margin-top: 20px;
+}
+.footer-contact__form .field__input{
+    padding: 2.5rem 0;
+}
+
+.footer-contact__form .contact__button {
+    margin-top: 10%;
+}
+.footer-contact__form .contact__button button {
+    background: transparent;
+    border: 1px solid;
+    color: #000;
+    justify-content: flex-start;
+    position: relative;
+    font-family: 'GTAmerica';
+    font-size: 14px;
+}
+.footer-contact__form .contact__button button svg.icon{
+    position: absolute;
+    right: 25px;
+}
+.footer-contact__form .field:hover.field:after{
+    box-shadow: none;
+}
+.footer-contact__form .field__label{
+    position: absolute;
+    left: 0;
+    font-family: 'GTAmerica';
+}
+.footer-contact__form .contact__fields:focus-visible {
+    outline: none;
+}
+.footer-contact__form .contact__fields input:focus-visible {
+    outline-offset: none;
+}
+.footer-contact__form .contact__fields .field__input:focus-visible{
+    box-shadow: none;
+}
+.footer-contact__form .field__input:focus{
+    box-shadow: none;
+}
+.footer-contact__form .field__input:focus-visible, 
+.footer-contact__form .select__select:focus-visible, 
+.footer-contact__form .customer .field input:focus-visible, 
+.footer-contact__form .customer select:focus-visible, 
+.footer-contact__form .localization-form__select:focus-visible.localization-form__select:after{
+ box-shadow: none;
+}
+.footer-contact__form .field__input:focus ~ .field__label{
+    left: 0;
+}
+.footer-contact__form .field__input:not(:placeholder-shown) ~ .field__label{
+    top: 0;
+    left: 0;
+}
+@media screen and (min-width: 350px) and (max-width:768px){
+    .footer-contact__form .contact__button button{
+        /* width: 100%; */
+    }
+}
+@media screen and (max-width: 767px){
+    .footer-contact__main {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contact__main-text{
+        width: 100%;
+    }
+    .footer-contact__main-para p{
+        width: 100%;
+        font-size: 24px;
+    }
+    .footer-contact__form{
+        width: 100%;
+    }
+    .footer-contact__form .contact__button{
+        width: 50%;
+    }
+    .footer-contact__main {
+        padding: 0rem 0 7rem 0;
+    }
+}

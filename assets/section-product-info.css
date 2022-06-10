@@ -1,0 +1,240 @@
+.swiper:not(.swiper-initialized) .tab-content-info.isActive {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-info__tab-section {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+li.product-info-tab {
+  font-size: 26px;
+  list-style: none;
+}
+
+li.product-info-tab.isActive {
+  color: #2D2014;
+}
+
+li.product-info-tab {
+  color: #B4ACA0;
+}
+
+.tab_headings {
+  width: 40%;
+}
+
+.tab-content-container {
+  width: 100%;
+}
+
+.tab-dec {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-imgs img {
+  border-radius: 3px;
+  margin-top: 15%;
+}
+
+.product-info__heading h2,
+.ingredient__heading h2,
+.comparison__content h2 {
+  font-size: 64px;
+  margin: 25px 0;
+  font-family: var(--font-heading-family);
+}
+
+.tab_headings li {
+  margin: 25px 0;
+  cursor: pointer;
+}
+
+.swiper:not(.swiper-initialized) .tab-content-info {
+  display: none;
+}
+
+.tab-imgs::before {
+  content: '';
+  position: absolute;
+  color: #2D2014;
+  height: 1px;
+  width: 17.5%;
+  right: 40%;
+  top: 50%;
+  background-color: #2D2014;
+  display: block;
+}
+
+.tab-imgs::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 35%;
+  right: 40%;
+  background-color: #2D2014;
+  top: 34%;
+  display: block;
+}
+
+.tab_dsc {
+  width: 100%;
+}
+
+.product-info-responsive {
+  display: none;
+}
+
+/* .slide_wrap {
+  display: flex;
+  justify-content: space-between;
+} */
+@media screen and (max-width:767px) {
+  .tab_headings {
+    visibility: hidden;
+    display: none;
+  }
+
+  .tab-content-info.isActive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-imgs img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .tab-imgs::before {
+    display: none;
+  }
+
+  .tab-imgs::after {
+    display: none;
+  }
+
+  .tab-dec {
+    width: 100%;
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f7f4f0;
+  }
+
+  .product-info-desc {
+    font-size: 12px;
+    width: 75%;
+    position: relative;
+  }
+
+  .product-info-responsive {
+    display: block;
+  }
+
+  .product-info__heading h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 25px 0;
+  }
+}
+
+.product-info__tab-section .swiper-button-next,
+.product-info__tab-section .swiper-button-prev {
+  display: none !important;
+}
+
+@media screen and (max-width:768px) {
+  .swiper {
+    width: 95% !important;
+    height: 100%;
+  }
+
+  .product-info__tab-section .swiper-button-next,
+  .product-info__tab-section .swiper-button-prev {
+    display: block !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-info-desc {
+    text-align: start;
+  }
+
+  /* my slider css */
+  .swiper-slide {
+    width: 100% !important;
+  }
+
+  .swiper_main {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .tab-imgs {
+    width: 100%;
+  }
+
+  .swiper-slide:first-child .slide_wrap.tab-content.tab-dec.product-info-desc.swiper-button-prev {
+    display: none;
+  }
+
+  .product-info-desc .swiper-button-prev svg.icon.icon-arrow-left-slide {
+    position: absolute;
+    bottom: -50px;
+    right: 50px;
+    left: auto;
+  }
+
+  .product-info-desc .swiper-button-next {
+    position: absolute;
+    bottom: 0 !important;
+  }
+
+  .product-info-desc .swiper-button-next svg.icon.icon-arrow-right-slide {
+    right: -72px;
+    position: absolute;
+    bottom: -50px;
+  }
+
+  .product-info-desc .swiper-button-next,
+  .swiper-button-prev {
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-slide:not(.isActive) {
+    display: none;
+  }
+}

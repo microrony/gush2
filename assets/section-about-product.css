@@ -1,0 +1,127 @@
+section.about-product{
+    padding: 100px;
+}
+.about-product__main {
+    display: flex;
+}
+.about-product__heading-left h2 {
+    font-size: 74px;
+    color: #fff;
+    font-family: 'ABCCamera';
+}
+.about-product__heading-left h2 span {font-family: 'ABCCamera';}
+.about-product__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 25px;
+}
+.about-product__icon-text {
+    margin-left: 8%;
+    width: 60%;
+}
+.about-product__icon-with-text {
+    display: flex;
+    flex-direction: column;
+}
+.about-product__icon-text h3 {
+    font-size: 36px;
+    margin: 0;
+    color: #fff;
+    font-family: 'RecklessNeue';
+    font-weight: 400;
+}
+.about-product__icon-text p {
+    margin-top: 6px;
+    color: #fff;
+    font-family: 'GTAmerica';
+}
+.about-product__heading-left {
+    width: 70%;
+}
+
+@media screen and (max-width: 767px){
+  .about-product__main{
+        display: flex;
+        flex-direction: column;
+    }
+  .about-product__icon-with-text{
+   	margin: 7% 0 0;
+  }
+    .about-product__heading-left {
+        width: 100%;
+    }
+    .about-product__heading-left h2 {
+        font-size: 26px;
+        line-height: 36px;
+        color: #fff;
+        font-family: 'RecklessNeue';
+        font-weight: 400;
+    }
+    /* section.about-product{
+        padding: 27px 20px;
+    } */
+    .about-product__icon{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-product__icon-text {
+        margin: 0; 
+        width: 74%;
+        padding: 16px 0;
+        text-align: center;
+    }
+    .about-product__icon-text p{
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    .about-product__icon-text h3{
+        font-size: 22px;
+    }
+    section.about-product{
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+	.about-product__main{
+        display: flex;
+        flex-direction: column;
+    }
+  .about-product__heading-left {
+        width: 100%;
+    }
+    .about-product__heading-left h2 {
+        font-size: 4rem;
+    }
+    .about-product__icon-with-text{
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0 0;
+    }
+    .about-product__icon-text h3 {
+        font-size: 26px;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1439px){
+	.about-product__heading-left h2 {
+        font-size: 64px;
+    }
+}
+
+@media screen and (min-width: 1441px){
+	 .about-product__heading-left h2 {
+        font-size: 74px;
+        margin: 0;
+    }
+  .about-product__icon-text h3 {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width:350px) and (max-width:767px) {
+    section.about-product{
+        padding: 50px;
+    }
+}

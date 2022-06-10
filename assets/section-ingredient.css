@@ -1,0 +1,172 @@
+.ingredient__main {
+  display: flex;
+}
+
+.ingredient__left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.q-ans__block .faq_qus {
+  cursor: pointer;
+}
+
+.question .q-ans__block p.faq_ans {
+  /* display: none; */
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all ease 250ms;
+  margin: 0;
+}
+
+.question .q-ans__block p.faq_ans.is-active {
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+  max-height: 400px;
+  margin: 15px 0;
+}
+
+a.button.button-primary svg {
+  position: inherit;
+  right: 0;
+  margin-left: 45px;
+}
+
+a.button.button-primary::after,
+a.button.button-primary::after {
+  box-shadow: none;
+  border: 0;
+}
+
+svg.icon.icon-minus-new {
+  display: none;
+}
+
+svg.icon.icon-minus-new.is-active {
+  display: block;
+}
+
+.faq_qus span {
+  position: absolute;
+  right: 0;
+  top: 37%;
+}
+
+.not-active {
+  display: none;
+}
+
+.sub-heading {
+  border-bottom: 1px solid;
+}
+
+.sub-heading h3 {
+  margin-bottom: 12%;
+}
+
+.faq_qus {
+  position: relative;
+}
+
+.ingredient__link p a {
+  font-size: 15px;
+}
+
+.ingredient__accordion {
+  width: 55%;
+  margin-left: 10%;
+}
+
+.qus-li p {
+  display: block;
+  font-size: 13px;
+}
+
+.qus-li__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.qus-li__inner h3 {
+  margin-left: 4%;
+  font-size: 2rem;
+  font-family: 'RecklessNeue';
+  font-weight: 400;
+}
+
+.faq_qus .qus-li {
+  list-style: none;
+  font-size: 26px;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+}
+
+.ingredient__accordion .question .sub-heading h3 {
+  font-size: 20px;
+  font-family: GTAmerica;
+}
+
+.ingredient__link {
+  display: block;
+}
+
+.ingredient__btn {
+  display: block;
+}
+
+.ingredient__link-link {
+  display: none;
+}
+
+.ingredient__btn-link {
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+  .ingredient__main {
+    flex-direction: column;
+  }
+
+  .ingredient__heading h2 {
+    font-size: 40px;
+  }
+
+  .ingredient__accordion {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .qus-li p {
+    display: none;
+  }
+
+  .ingredient__accordion .question .sub-heading h3 {
+    font-size: 12px;
+  }
+
+  .ingredient__link {
+    display: none;
+  }
+
+  .ingredient__btn {
+    display: none;
+  }
+
+  .ingredient__link-link {
+    display: block;
+    margin-top: 12%;
+  }
+
+  .ingredient__btn-link {
+    display: block;
+    margin-top: 12%;
+  }
+}

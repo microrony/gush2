@@ -1,0 +1,295 @@
+{
+  "sections": {
+    "main": {
+      "type": "service-page-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Full Installation & Application Services",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "For every space, for all your needs--we’ve got you covered.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "#",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_34.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "165276794068d36259": {
+      "type": "about-product",
+      "settings": {
+        "heading": "Reasons to\nChoose gush",
+        "color": "#ff5500",
+        "image1": "shopify:\/\/shop_images\/Rectangle_6.png",
+        "heading1": "Season Experts",
+        "text1": "Ensures your gush products are applied seamlessly, even for complicated areas.",
+        "image2": "shopify:\/\/shop_images\/Rectangle_157.png",
+        "heading2": "Start-To-End",
+        "text2": "All available: Plastering, mold treatment, disinfection & more. Fulfil all your job requirements in one place.",
+        "image3": "shopify:\/\/shop_images\/Rectangle_156_1.png",
+        "heading3": "Flexible & Thorough",
+        "text3": "Accurate quotations tailored to your specific needs, with quality materials & equipment assured for all projects.",
+        "icon-margin": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165276808691ea54b2": {
+      "type": "ingredient",
+      "blocks": {
+        "01aef32a-718f-4b49-99b6-0ffa1ead0bc9": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_1237.png",
+            "faq_qus": "Enquire & Book",
+            "faq_quality": "",
+            "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+          }
+        },
+        "5df8158b-c9e0-4d3e-b063-8605ab369147": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Union.png",
+            "faq_qus": "Free Site Consultation",
+            "faq_quality": "",
+            "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+          }
+        },
+        "09d5098f-9c57-4b01-b3f0-463b287da0a8": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/ICON.png",
+            "faq_qus": "Select Project Dates",
+            "faq_quality": "",
+            "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+          }
+        },
+        "fc4c32ee-f225-49d6-b45c-84275372cae9": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/ICON_1.png",
+            "faq_qus": "Get Rolling",
+            "faq_quality": "",
+            "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+          }
+        },
+        "445a3435-b1e0-4c7f-bdd6-99b83bc0666d": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/ICON_2.png",
+            "faq_qus": "Inspection & Touch Up",
+            "faq_quality": "",
+            "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+          }
+        }
+      },
+      "block_order": [
+        "01aef32a-718f-4b49-99b6-0ffa1ead0bc9",
+        "5df8158b-c9e0-4d3e-b063-8605ab369147",
+        "09d5098f-9c57-4b01-b3f0-463b287da0a8",
+        "fc4c32ee-f225-49d6-b45c-84275372cae9",
+        "445a3435-b1e0-4c7f-bdd6-99b83bc0666d"
+      ],
+      "settings": {
+        "color": "#f9f4f0",
+        "heading": "The Flow",
+        "link": "",
+        "btn_text": "Shop Now",
+        "btn_url": "shopify:\/\/collections\/all",
+        "button-color": "#ff42ef",
+        "button-text-color": "",
+        "sb-heading": "",
+        "radius": 0,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "165276834663a5573d": {
+      "type": "footer-contact",
+      "settings": {
+        "heading": "Contact Us",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada mi venenatis, semper quam eget.",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1653548703a8d9cba4": {
+      "type": "gushi-product-slider",
+      "blocks": {
+        "452c641b-1cfe-4e5b-8027-acc719d7b7db": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint4.png",
+            "text": "Gush 1"
+          }
+        },
+        "3b58b5f3-086f-4181-9aa2-8db72ce9c5cd": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint2.png",
+            "text": "Gush 2"
+          }
+        },
+        "57b1de1e-efd0-45bb-8a59-353350e3036b": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint3.png",
+            "text": "Gush 3"
+          }
+        },
+        "c07edf85-e99d-403c-9095-8e80bdf2abd0": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint1.png",
+            "text": "Gush 4"
+          }
+        },
+        "e19725da-20da-4b19-b157-e6f3e5b0631f": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/color.jpg",
+            "text": "Gush 5"
+          }
+        },
+        "0043d3e9-32bc-43ef-91b8-ac115cc5d845": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/clr.jpg",
+            "text": "Gush 6"
+          }
+        }
+      },
+      "block_order": [
+        "452c641b-1cfe-4e5b-8027-acc719d7b7db",
+        "3b58b5f3-086f-4181-9aa2-8db72ce9c5cd",
+        "57b1de1e-efd0-45bb-8a59-353350e3036b",
+        "c07edf85-e99d-403c-9095-8e80bdf2abd0",
+        "e19725da-20da-4b19-b157-e6f3e5b0631f",
+        "0043d3e9-32bc-43ef-91b8-ac115cc5d845"
+      ],
+      "settings": {
+        "heading": "Past Projects",
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "1653548855ee6a3260": {
+      "type": "testimonials-gush",
+      "blocks": {
+        "cafd2dca-d820-4337-9a8b-f3dd8bf7acbf": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Dexter"
+          }
+        },
+        "6066deea-d403-4f4a-a942-b9d96791b10e": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Dexter"
+          }
+        },
+        "d51b4dc0-b495-4462-9087-fcb732b0aeae": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "134 Reviews"
+          }
+        },
+        "cddd51cb-d46d-4654-8f9e-26b96b3467bb": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Dexter"
+          }
+        },
+        "2e71b791-f1f8-49f7-b64d-91440b631c54": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Dexter"
+          }
+        },
+        "e3bfa381-21c4-4767-a717-607bd69edea9": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Dexter"
+          }
+        },
+        "fee3b351-32fb-47af-b5bd-65f05fad45ac": {
+          "type": "text",
+          "settings": {
+            "heading": "THE BESTTTTT",
+            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
+            "name": "Dexter"
+          }
+        }
+      },
+      "block_order": [
+        "cafd2dca-d820-4337-9a8b-f3dd8bf7acbf",
+        "6066deea-d403-4f4a-a942-b9d96791b10e",
+        "d51b4dc0-b495-4462-9087-fcb732b0aeae",
+        "cddd51cb-d46d-4654-8f9e-26b96b3467bb",
+        "2e71b791-f1f8-49f7-b64d-91440b631c54",
+        "e3bfa381-21c4-4767-a717-607bd69edea9",
+        "fee3b351-32fb-47af-b5bd-65f05fad45ac"
+      ],
+      "settings": {
+        "review_heading": "Overall rating",
+        "review_num": "4.98",
+        "review_count": "134 Reviews",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165276794068d36259",
+    "165276808691ea54b2",
+    "165276834663a5573d",
+    "1653548703a8d9cba4",
+    "1653548855ee6a3260"
+  ]
+}

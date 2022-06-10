@@ -1,0 +1,31 @@
+.policy__heading {border-bottom: 1px solid #FF42EF;}
+.policy__heading h1 {font-size: 10rem;width: 50%;line-height: 10rem;}
+.policy__main-wrapper {display: flex;justify-content: space-between;}
+.policy__main-content__content {width: 40%;}
+.policy__main-content__heading {width: 40%;}
+.policy__main-content__heading h3,
+.policy__main-content__heading h2 {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.policy__main-content {padding: 3% 0;}
+.policy-bg{background-color:#E5E5E5;}
+
+@media screen and (min-width:350px ) and (max-width:990px) {
+    .policy__heading h1 {font-size: 6rem; width: 100%; line-height: 7rem;margin: 0 0 12%;}
+    .policy__main-content__heading h2 {
+        font-size: 2.5rem;
+    }
+    .policy__main-wrapper{
+        display: block;
+    }
+    .policy__main-content__heading{
+        width: 100%;
+    }
+    .policy__main-content__content{
+        width: 100%;
+    }
+    .policy__main-wrapper .policy__main-content__content ul{
+        padding-left: 2.5rem;
+    }
+}

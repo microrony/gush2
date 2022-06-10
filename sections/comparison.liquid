@@ -1,0 +1,92 @@
+{{ 'section-comparison.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="comparison isolate section-{{ section.id }}-padding section section-primary section-wrapper">
+    <div class="comparison__main page-width">
+        <div class="comparison__img-section">
+            <div class="comparison__img-them about-image"><img src="{{ section.settings.them-img | img_url: 'medium'}}" alt="img1" ><h3>{{ section.settings.heading-img1 }}</h3></div>
+            
+            <div class="comparison__img-us about-image"><img src="{{ section.settings.us-img | img_url: 'medium'}}" alt="img2"><h3>{{ section.settings.heading-img2 }}</h3></div>
+        </div>
+        <div class="comparison__content">
+            <h2>{{ section.settings.heading }}</h2>
+            <p>{{ section.settings.content }}</p>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+   "name": "About Comparison",
+  "class": "section-comparison",
+  "settings": [
+      {
+         "type": "image_picker",
+         "id": "them-img",
+         "label": "Upload an image"
+      },
+      {
+        "type": "text",
+        "id": "heading-img1",
+        "label": "Image Heading"
+     },
+      {
+         "type": "image_picker",
+         "id": "us-img",
+         "label": "Upload an image"
+      },
+      {
+        "type": "text",
+        "id": "heading-img2",
+        "label": "Image Heading"
+     },
+      {
+         "type": "text",
+         "id": "heading",
+         "label": "Heading"
+      },
+      {
+         "type": "text",
+         "id": "content",
+         "label": "Write a content"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+  ],
+  "presets": [
+  {
+     "name": "About Comparison"
+  }
+]
+}
+{% endschema %}

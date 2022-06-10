@@ -1,0 +1,42 @@
+.testimonials-gush {
+    background: #FFC900;
+}
+.testimonials-gush__tabSection {
+    background: #fff;
+    border-radius: 10px;
+    padding: 6rem;
+}
+/* .testimonials-gush__mainSection{
+    padding: 0 0 9rem;
+} */
+.testimonials-gush__head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 50px;
+    align-items: center;
+}
+.testimonials-gush__rating svg.icon.review-star path {
+    fill: #000;
+}
+.swiper-slide__card svg.icon.review-star path {
+    fill: #FFC900;
+}
+.testimonials-gush__rating {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+}
+
+.testimonials-gush__review h2 {
+    font-size: 84px;
+    margin: 0;
+}
+.testimonials-gush__review p {
+    margin: 0;
+}
+.testimonials-gush__rating p {
+    margin: 0;
+}
