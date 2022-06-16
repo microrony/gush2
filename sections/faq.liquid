@@ -29,24 +29,24 @@ margin-top: 0 !important;
 			<div class="faq__main-content">
 				<div class="faq__categories">
 					{% for block in section.blocks %}
-					<div class="faq-category" data-category-id="faq-category-{{  block.settings.category }}">
-						<h3>{{ block.settings.category }}</h3>
-
+					<div class="faq-category"
+						data-category-id="faq-category-{{  block.settings.category | downcase | replace: ' ', '-' }}">
+						{{ block.settings.category }}
 					</div>
 					{% endfor %}
 				</div>
 				<div class="faq__contents">
 					<div class="faq__types">
 						{% for block in section.blocks %}
-
-						<div class="faq__main-content__heading faq-type" id="faq-category-{{ block.settings.category }}">
+						<div
+							class="faq__main-content__heading faq-type faq-category-{{ block.settings.category | downcase | replace: ' ', '-' }}">
 							<div class="faq__main-content__content">{{ block.settings.type }}</div>
 						</div>
 						{% endfor %}
 					</div>
 					<div class="faq__qas">
 						{% for block in section.blocks %}
-						<div class="faq-qa" id="faq-category-{{  block.settings.category }}">
+						<div class="faq-qa">
 							<div class="faq__main-content__content">{{ block.settings.question }}</div>
 							<div class="faq__main-content__content">{{ block.settings.answer }}</div>
 						</div>
@@ -59,37 +59,46 @@ margin-top: 0 !important;
 </div>
 
 {% javascript %}
-const tabs = document.querySelectorAll('.faq-category');
+const faqCategories = document.querySelectorAll('.faq-category');
 const faqTypes = document.querySelectorAll('.faq-type');
 const faqQas = document.querySelectorAll('.faq-qa');
 
+
+textArr = [];
+faqCategories.forEach(function(d, i) {
+if(textArr.indexOf(d.innerText) > -1) {
+d.remove();
+}
+else {
+textArr.push(d.innerText);
+}
+});
+
 //console.log(tabContents)
 
-tabs.forEach(tab => {
+faqCategories.forEach(tab => {
 
 tab.addEventListener('click', function(){
 
-console.log(this);
-console.log(this.dataset.categoryId);
+console.log(`.${this.dataset.categoryId}`);
 
-categoryId = this.dataset.categoryId;
-content = document.getElementById(categoryId);
-console.log(content);
+categoryId = `.${this.dataset.categoryId}`;
+contents = document.querySelectorAll(categoryId);
 
-faqTypes.forEach(function(content){
-content.classList.remove('active');
+faqTypes.forEach(function(type){
+type.classList.remove('active');
 });
 
-faqQas.forEach(function(content){
-content.classList.remove('active');
+contents.forEach(function(content){
+content.classList.add('active');
 });
 
-tabs.forEach(function(tab){
+faqCategories.forEach(function(tab){
 tab.classList.remove('active');
 });
 
 tab.classList.add('active');
-content.classList.add('active');
+//content.classList.add('active');
 });
 });
 
