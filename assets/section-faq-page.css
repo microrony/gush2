@@ -153,7 +153,11 @@ svg.icon.icon-minus-new.is-active {
   visibility: visible;
   opacity: 1;
   max-height: 400px;
-  margin: 15px 0;
+  padding: 15px 0;
+}
+
+p.faq_ans.is-active {
+  border-bottom: 1px solid rgba(45, 32, 20, 0.5);
 }
 
 @media screen and (min-width: 350px) and (max-width: 990px) {
