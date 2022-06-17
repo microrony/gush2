@@ -91,6 +91,15 @@ margin-top: 0 !important;
 	}
 	});
 
+	faqTypes.forEach(function(d, i) {
+	if(textArr.indexOf(d.innerText) > -1) {
+	d.remove();
+	}
+	else {
+	textArr.push(d.innerText);
+	}
+	});
+
 	//console.log(tabContents)
 
 	faqCategories.forEach(tab => {
