@@ -2,10 +2,14 @@
   border-bottom: 1px solid #ff42ef;
 }
 .faq__heading h1 {
+  font-weight: 400;
   font-size: 84px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
   width: 48%;
-  line-height: 10rem;
+  margin-bottom: 50px;
 }
+
 .faq__main-wrapper {
   display: flex;
   justify-content: space-between;
@@ -26,7 +30,7 @@
 }
 
 .faq-bg {
-  background-color: #e5e5e5;
+  background-color: #f9f4f0;
 }
 
 .faq__categories {
@@ -48,6 +52,23 @@
   letter-spacing: -1.15%;
   border: 0.5px solid rgba(0, 0, 0, 0.5);
   color: black;
+  cursor: pointer;
+}
+
+.faq__types > * {
+  margin-bottom: 35px;
+}
+
+.faq-type.selected {
+  color: #ff42ef;
+}
+
+.faq-type {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: -0.0115em;
+  cursor: pointer;
 }
 
 .faq__contents {
@@ -57,11 +78,44 @@
 }
 
 .faq__types {
-  width: 13%;
+  width: 18%;
 }
 
 .faq__qas {
-  width: 50%;
+  width: 60%;
+}
+
+.faq-qa {
+  border-top: 1px solid rgba(45, 32, 20, 0.5);
+}
+
+.faq_qus {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -0.0115em;
+  border-bottom: 1px solid rgba(45, 32, 20, 0.5);
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+svg.icon.icon-plus-new {
+  display: none;
+}
+
+svg.icon.icon-plus-new.is-active {
+  display: block;
+}
+
+svg.icon.icon-minus-new {
+  display: none;
+}
+
+svg.icon.icon-minus-new.is-active {
+  display: block;
 }
 
 .faq__contents .faq-type {
@@ -72,16 +126,37 @@
   display: block;
 }
 
-/* .faq__contents .faq-qa {
+.faq__contents .faq-qa {
   display: none;
 }
 
 .faq__contents .faq-qa.active {
   display: block;
-} */
+}
 
 .faq__contents .faq__qas {
   margin-left: auto;
+}
+
+.q-ans__block .faq_qus {
+  cursor: pointer;
+}
+
+.question .q-ans__block p.faq_ans {
+  /* display: none; */
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all ease 250ms;
+  margin: 0;
+}
+
+.question .q-ans__block p.faq_ans.is-active {
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+  max-height: 400px;
+  margin: 15px 0;
 }
 
 @media screen and (min-width: 350px) and (max-width: 990px) {
