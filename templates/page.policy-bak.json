@@ -1,0 +1,82 @@
+{
+  "sections": {
+    "main-policy": {
+      "type": "policy",
+      "blocks": {
+        "469bf2e4-b998-49e5-8d47-dfe9c488233c": {
+          "type": "text",
+          "settings": {
+            "heading": "Privacy Policy",
+            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+          }
+        },
+        "953c2df9-5ae3-45c3-91da-e0038a177aa2": {
+          "type": "text",
+          "settings": {
+            "heading": "Privacy Policy",
+            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+          }
+        },
+        "094123c6-d2e5-4de0-a33f-2fd5e6b70d66": {
+          "type": "text",
+          "settings": {
+            "heading": "Privacy Policy",
+            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "469bf2e4-b998-49e5-8d47-dfe9c488233c",
+        "953c2df9-5ae3-45c3-91da-e0038a177aa2",
+        "094123c6-d2e5-4de0-a33f-2fd5e6b70d66"
+      ],
+      "settings": {
+        "heading": "Information Usage",
+        "hdng-margin": 50,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1652455353400acfb3": {
+      "type": "policy",
+      "blocks": {
+        "2f2037bd-0846-47d1-b7ad-79b31de09249": {
+          "type": "text",
+          "settings": {
+            "heading": "Privacy Policy",
+            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+          }
+        },
+        "4cf4e64c-854d-4dc2-b03f-92b4637df48d": {
+          "type": "text",
+          "settings": {
+            "heading": "Privacy Policy",
+            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+          }
+        },
+        "5d6cfcf8-8d57-4e50-ad79-2c661c621a9d": {
+          "type": "text",
+          "settings": {
+            "heading": "Privacy Policy",
+            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "2f2037bd-0846-47d1-b7ad-79b31de09249",
+        "4cf4e64c-854d-4dc2-b03f-92b4637df48d",
+        "5d6cfcf8-8d57-4e50-ad79-2c661c621a9d"
+      ],
+      "settings": {
+        "heading": "Cookie Policy",
+        "hdng-margin": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main-policy",
+    "1652455353400acfb3"
+  ]
+}

@@ -1,82 +1,68 @@
 {
   "sections": {
-    "main-policy": {
+    "main": {
       "type": "policy",
       "blocks": {
-        "469bf2e4-b998-49e5-8d47-dfe9c488233c": {
-          "type": "text",
+        "379b20c1-e87c-4c82-8a2c-a25c58aaaf84": {
+          "type": "faqContent",
           "settings": {
-            "heading": "Privacy Policy",
-            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+            "category": "Privacy Policy",
+            "type": "What information we collect",
+            "question": "1.1 We collect the following types of information about you:",
+            "answer": "We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:"
           }
         },
-        "953c2df9-5ae3-45c3-91da-e0038a177aa2": {
-          "type": "text",
+        "9061c80b-fd4c-4524-b003-7e7db1ca608b": {
+          "type": "faqContent",
           "settings": {
-            "heading": "Privacy Policy",
-            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+            "category": "Privacy Policy",
+            "type": "How we use it",
+            "question": "We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:",
+            "answer": "We collect the following types of information about you:"
           }
         },
-        "094123c6-d2e5-4de0-a33f-2fd5e6b70d66": {
-          "type": "text",
+        "7b978442-0458-4eb5-a542-2a0313e21fb2": {
+          "type": "faqContent",
           "settings": {
-            "heading": "Privacy Policy",
-            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+            "category": "Cookie Policy",
+            "type": "Information sharing",
+            "question": "We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation",
+            "answer": "1.1\nWe collect the following types of information about you:\n1.2\nWe collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:\n1.3\nWe do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation"
+          }
+        },
+        "8531fa9f-d903-479b-862a-66bbc519121b": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Privacy Policy",
+            "type": "What information we collect",
+            "question": "1.2 We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:",
+            "answer": "We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation"
+          }
+        },
+        "91d86e99-504d-466f-8b09-9331a92e9b28": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Privacy Policy",
+            "type": "What information we collect",
+            "question": "1.3 We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation",
+            "answer": "We collect the following types of information about you"
           }
         }
       },
       "block_order": [
-        "469bf2e4-b998-49e5-8d47-dfe9c488233c",
-        "953c2df9-5ae3-45c3-91da-e0038a177aa2",
-        "094123c6-d2e5-4de0-a33f-2fd5e6b70d66"
+        "379b20c1-e87c-4c82-8a2c-a25c58aaaf84",
+        "9061c80b-fd4c-4524-b003-7e7db1ca608b",
+        "7b978442-0458-4eb5-a542-2a0313e21fb2",
+        "8531fa9f-d903-479b-862a-66bbc519121b",
+        "91d86e99-504d-466f-8b09-9331a92e9b28"
       ],
       "settings": {
-        "heading": "Information Usage",
-        "hdng-margin": 50,
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
-    "1652455353400acfb3": {
-      "type": "policy",
-      "blocks": {
-        "2f2037bd-0846-47d1-b7ad-79b31de09249": {
-          "type": "text",
-          "settings": {
-            "heading": "Privacy Policy",
-            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
-          }
-        },
-        "4cf4e64c-854d-4dc2-b03f-92b4637df48d": {
-          "type": "text",
-          "settings": {
-            "heading": "Privacy Policy",
-            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
-          }
-        },
-        "5d6cfcf8-8d57-4e50-ad79-2c661c621a9d": {
-          "type": "text",
-          "settings": {
-            "heading": "Privacy Policy",
-            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
-          }
-        }
-      },
-      "block_order": [
-        "2f2037bd-0846-47d1-b7ad-79b31de09249",
-        "4cf4e64c-854d-4dc2-b03f-92b4637df48d",
-        "5d6cfcf8-8d57-4e50-ad79-2c661c621a9d"
-      ],
-      "settings": {
-        "heading": "Cookie Policy",
-        "hdng-margin": 0,
+        "heading": "Privacy Policy & Cookie Policy",
+        "top-margin": 50,
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
-  "order": [
-    "main-policy",
-    "1652455353400acfb3"
-  ]
+  "order": ["main"]
 }
