@@ -1,36 +1,18 @@
 {
   "sections": {
-    "main": {
-      "type": "policy",
+    "1655445242a44fb8d1": {
+      "type": "faq",
       "blocks": {
-        "379b20c1-e87c-4c82-8a2c-a25c58aaaf84": {
+        "1dbac928-f4cc-4bfd-a1e9-87c271ff38f4": {
           "type": "faqContent",
           "settings": {
             "category": "Privacy Policy",
             "type": "What information we collect",
             "question": "1.1 We collect the following types of information about you:",
-            "answer": "We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:"
+            "answer": "We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including."
           }
         },
-        "9061c80b-fd4c-4524-b003-7e7db1ca608b": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Privacy Policy",
-            "type": "How we use it",
-            "question": "We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:",
-            "answer": "We collect the following types of information about you:"
-          }
-        },
-        "7b978442-0458-4eb5-a542-2a0313e21fb2": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Cookie Policy",
-            "type": "Information sharing",
-            "question": "We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation",
-            "answer": "1.1\nWe collect the following types of information about you:\n1.2\nWe collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:\n1.3\nWe do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation"
-          }
-        },
-        "8531fa9f-d903-479b-862a-66bbc519121b": {
+        "672dc2e9-bf58-460d-a7f3-fb8389507845": {
           "type": "faqContent",
           "settings": {
             "category": "Privacy Policy",
@@ -39,22 +21,30 @@
             "answer": "We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation"
           }
         },
-        "91d86e99-504d-466f-8b09-9331a92e9b28": {
+        "90a2a239-1eef-46e6-86f9-4d85b51b3389": {
           "type": "faqContent",
           "settings": {
             "category": "Privacy Policy",
             "type": "What information we collect",
             "question": "1.3 We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation",
-            "answer": "We collect the following types of information about you"
+            "answer": "We collect the following types of information about you:"
+          }
+        },
+        "93a08626-70eb-408c-bcd2-db82226dc296": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Cookie Policy",
+            "type": "How we use it",
+            "question": "1.2 We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:",
+            "answer": "We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation"
           }
         }
       },
       "block_order": [
-        "379b20c1-e87c-4c82-8a2c-a25c58aaaf84",
-        "9061c80b-fd4c-4524-b003-7e7db1ca608b",
-        "7b978442-0458-4eb5-a542-2a0313e21fb2",
-        "8531fa9f-d903-479b-862a-66bbc519121b",
-        "91d86e99-504d-466f-8b09-9331a92e9b28"
+        "1dbac928-f4cc-4bfd-a1e9-87c271ff38f4",
+        "672dc2e9-bf58-460d-a7f3-fb8389507845",
+        "90a2a239-1eef-46e6-86f9-4d85b51b3389",
+        "93a08626-70eb-408c-bcd2-db82226dc296"
       ],
       "settings": {
         "heading": "Privacy Policy & Cookie Policy",
@@ -64,5 +54,7 @@
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "1655445242a44fb8d1"
+  ]
 }
