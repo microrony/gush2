@@ -38,13 +38,23 @@
             "question": "1.2 We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:",
             "answer": "We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation"
           }
+        },
+        "4e1825cd-dc5b-45c0-8670-82158924d4f4": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Privacy Policy",
+            "type": "Information sharing",
+            "question": "1.2 We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:",
+            "answer": "We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation"
+          }
         }
       },
       "block_order": [
         "1dbac928-f4cc-4bfd-a1e9-87c271ff38f4",
         "672dc2e9-bf58-460d-a7f3-fb8389507845",
         "90a2a239-1eef-46e6-86f9-4d85b51b3389",
-        "93a08626-70eb-408c-bcd2-db82226dc296"
+        "93a08626-70eb-408c-bcd2-db82226dc296",
+        "4e1825cd-dc5b-45c0-8670-82158924d4f4"
       ],
       "settings": {
         "heading": "Privacy Policy & Cookie Policy",
