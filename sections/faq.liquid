@@ -66,7 +66,6 @@ margin-top: 0 !important;
 									</div>
 								</div>
 							</div>
-
 						</div>
 						{% endfor %}
 					</div>
@@ -100,13 +99,30 @@ margin-top: 0 !important;
 	}
 	});
 
-	//console.log(tabContents)
+	faqCategories.forEach(category => {
+	if(category.classList.contains('active')) {
+	const categoryId = `.${category.dataset.categoryId}`;
+	const contents = document.querySelectorAll(categoryId);
+	contents.forEach(function(content){
+	content.classList.add('active');
+	});
+	contents[0].classList.add('selected');
+	}
+	})
+
+	faqTypes.forEach(type => {
+	if(type.classList.contains('selected')) {
+	const categoryId = `.${type.dataset.typeId}`;
+	const contents = document.querySelectorAll(categoryId);
+	contents.forEach(function(content){
+	content.classList.add('active');
+	});
+	}
+	})
 
 	faqCategories.forEach(tab => {
 
 	tab.addEventListener('click', function(){
-
-	console.log(`.${this.dataset.categoryId}`);
 
 	categoryId = `.${this.dataset.categoryId}`;
 	contents = document.querySelectorAll(categoryId);
@@ -125,7 +141,26 @@ margin-top: 0 !important;
 
 	tab.classList.add('active');
 	//content.classList.add('active');
+
+	if(tab.classList.contains('active')) {
+	contents.forEach(function(content){
+	content.classList.add('active');
 	});
+	contents[0].classList.add('selected');
+	}
+
+	faqTypes.forEach(type => {
+	if(type.classList.contains('selected')) {
+	const categoryId = `.${type.dataset.typeId}`;
+	const contents = document.querySelectorAll(categoryId);
+	contents.forEach(function(content){
+	content.classList.toggle('active');
+	})
+	}
+	})
+
+	})
+
 	});
 
 	faqTypes.forEach(type => {
