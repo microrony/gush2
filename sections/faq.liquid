@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{ 'section-faq-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<script src="{{ 'section-faq.js' | asset_url }}" defer="defer"></script>
 
 
 {%- style -%}
@@ -20,9 +21,6 @@ margin-top: 0 !important;
 
 {%- endstyle -%}
 
-{% assign custom_classes = '' %}
-
-
 <div class="faq-bg">
 	<div class="faq page-width section-{{ section.id }}-padding">
 		<div class="rte faq__main">
@@ -32,9 +30,6 @@ margin-top: 0 !important;
 			<div class="faq__main-content">
 				<div class="faq__categories">
 					{% for block in section.blocks %}
-					{% if section.blocks[0] %}
-					{% assign custom_classes = custom_classes | append: 'active' %}
-					{% endif %}
 					<div class="faq-category {{ custom_classes }}"
 						data-category-id="faq-category-{{  block.settings.category | downcase | replace: ' ', '-' }}">
 						{{ block.settings.category }}
@@ -56,7 +51,7 @@ margin-top: 0 !important;
 							<div class="question">
 								<div class="q-ans__block" id="faq__block">
 									<div class="faq_qus" id="faq_qus" data-content-id="faq_{{ forloop.index }}">
-										{{ block.settings.question }}
+										<p class="faq_q">{{ block.settings.question }}</p>
 										<span>{% render 'icon-plus-new' %}{% render 'icon-minus-new' %}</span>
 									</div>
 									<div class="question__ans">
@@ -74,148 +69,6 @@ margin-top: 0 !important;
 		</div>
 	</div>
 
-	{% javascript %}
-	const faqCategories = document.querySelectorAll('.faq-category');
-	const faqTypes = document.querySelectorAll('.faq-type');
-	const faqQas = document.querySelectorAll('.faq-qa');
-
-
-	textArr = [];
-	faqCategories.forEach(function(d, i) {
-	if(textArr.indexOf(d.innerText) > -1) {
-	d.remove();
-	}
-	else {
-	textArr.push(d.innerText);
-	}
-	});
-
-	faqTypes.forEach(function(d, i) {
-	if(textArr.indexOf(d.innerText) > -1) {
-	d.remove();
-	}
-	else {
-	textArr.push(d.innerText);
-	}
-	});
-
-	faqCategories.forEach(category => {
-	if(category.classList.contains('active')) {
-	const categoryId = `.${category.dataset.categoryId}`;
-	const contents = document.querySelectorAll(categoryId);
-	contents.forEach(function(content){
-	content.classList.add('active');
-	});
-	contents[0].classList.add('selected');
-	}
-	})
-
-	faqTypes.forEach(type => {
-	if(type.classList.contains('selected')) {
-	const categoryId = `.${type.dataset.typeId}`;
-	const contents = document.querySelectorAll(categoryId);
-	contents.forEach(function(content){
-	content.classList.add('active');
-	});
-	}
-	})
-
-	faqCategories.forEach(tab => {
-
-	tab.addEventListener('click', function(){
-
-	categoryId = `.${this.dataset.categoryId}`;
-	contents = document.querySelectorAll(categoryId);
-
-	faqTypes.forEach(function(type){
-	type.classList.remove('active');
-	});
-
-	contents.forEach(function(content){
-	content.classList.add('active');
-	});
-
-	faqCategories.forEach(function(tab){
-	tab.classList.remove('active');
-	});
-
-	tab.classList.add('active');
-	//content.classList.add('active');
-
-	if(tab.classList.contains('active')) {
-	contents.forEach(function(content){
-	content.classList.add('active');
-	});
-	contents[0].classList.add('selected');
-	}
-
-	faqTypes.forEach(type => {
-	if(type.classList.contains('selected')) {
-	const categoryId = `.${type.dataset.typeId}`;
-	const contents = document.querySelectorAll(categoryId);
-	contents.forEach(function(content){
-	content.classList.toggle('active');
-	})
-	}
-	})
-
-	})
-
-	});
-
-	faqTypes.forEach(type => {
-	type.addEventListener('click', function(){
-	typeId = `.${this.dataset.typeId}`;
-	contents = document.querySelectorAll(typeId);
-
-	faqQas.forEach(function(qa){
-	qa.classList.remove('active');
-	});
-
-	contents.forEach(function(content){
-	content.classList.add('active');
-	});
-
-	faqTypes.forEach(function(tab){
-	tab.classList.remove('selected');
-	});
-
-	type.classList.add('selected');
-
-	});
-	});
-
-	let Faqplus = document.querySelectorAll(".faq_qus .icon-plus-new");
-	let Faqminus = document.querySelectorAll(".faq_qus .icon-minus-new");
-	let Faqquestions = document.querySelectorAll(".faq_qus");
-	let Faqanswers = document.querySelectorAll(".faq_ans");
-
-	Faqquestions.forEach((question) => {
-	question.addEventListener("click", (ele) => {
-	let ans_id = question.dataset.contentId;
-	let ans = document.getElementById(ans_id);
-
-	let FaqiconPlus = question.querySelector(".icon-plus-new");
-	let FaqiconMinus = question.querySelector(".icon-minus-new");
-
-	if(!FaqiconMinus.classList.contains('is-active')) {
-	FaqiconPlus.classList.remove("is-active");
-	FaqiconPlus.classList.add("not-active");
-	FaqiconMinus.classList.add("is-active");
-	FaqiconMinus.classList.remove("not-active");
-	ans.classList.add("is-active");
-	} else {
-	FaqiconMinus.classList.remove("is-active");
-	FaqiconMinus.classList.add("not-active");
-	FaqiconPlus.classList.add("is-active");
-	FaqiconPlus.classList.remove("not-active");
-	ans.classList.remove("is-active");
-	}
-	});
-
-	});
-
-	{% endjavascript %}
 
 	{% schema %}
 	{
@@ -275,22 +128,20 @@ margin-top: 0 !important;
 	},
 	{
 	"id": "question",
-	"type": "textarea",
-	"label": "Question: ",
-	"default":"question"
+	"type": "html",
+	"label": "Question: "
 	},
 	{
 	"type": "html",
 	"id": "answer",
-	"label": "Answer",
-	"default":"answer"
+	"label": "Answer: "
 	}
 	]
 	}
 	],
 	"presets": [
 	{
-	"name": "faq"
+	"name": "FAQ"
 	}
 	]
 	}

@@ -100,9 +100,13 @@
   gap: 5rem;
 }
 
-/* svg.icon.icon-plus-new {
-  display: none;
-} */
+.faq_q {
+  display: flex;
+}
+
+.faq_q > span {
+  margin-right: 0.6em;
+}
 
 svg.icon.icon-plus-new.not-active {
   display: none;
