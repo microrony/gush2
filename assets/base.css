@@ -3129,6 +3129,17 @@ p {
   letter-spacing: -0.0115em;
 }
 
+.gush-font-h1 {
+  font-family: 'ABCCamera';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+
 @media screen and (max-width: 767px) {
   .gush-h1,
   h1,
