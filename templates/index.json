@@ -81,88 +81,6 @@
         "padding_bottom": 36
       }
     },
-    "1651132771eba2e452": {
-      "type": "gushi-product-slider",
-      "blocks": {
-        "346a05f1-15fa-451d-a6b6-0b6ee9d29398": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/paint3.png",
-            "text": "ABC",
-            "clr": "#6b785a",
-            "txt_clr": "#ffffff"
-          }
-        },
-        "210b2cd5-5810-4bce-847f-daf590e3201f": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/paint2.png",
-            "text": "EDF",
-            "clr": "#bba993",
-            "txt_clr": "#ffffff"
-          }
-        },
-        "f0dd692a-519a-41f9-969e-b8863263cb7c": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/clr.jpg",
-            "text": "ERT",
-            "clr": "",
-            "txt_clr": ""
-          }
-        },
-        "e79519eb-eb46-48e3-822b-b2b5cffbde55": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/paint4.png",
-            "text": "gush 2",
-            "clr": "",
-            "txt_clr": ""
-          }
-        },
-        "61f9e5a0-c5b8-4d22-82b4-5eb68b81c1b4": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/paint1.png",
-            "text": "Gush 3",
-            "clr": "",
-            "txt_clr": ""
-          }
-        },
-        "2d2c5023-fe39-4573-8394-c55e801eeca0": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/paint4.png",
-            "text": "Gush 4",
-            "clr": "",
-            "txt_clr": ""
-          }
-        },
-        "a5e76b13-c6a8-4d2f-bf8e-a2c6b178ace0": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/paint2.png",
-            "text": "Gush 5",
-            "clr": "",
-            "txt_clr": ""
-          }
-        }
-      },
-      "block_order": [
-        "346a05f1-15fa-451d-a6b6-0b6ee9d29398",
-        "210b2cd5-5810-4bce-847f-daf590e3201f",
-        "f0dd692a-519a-41f9-969e-b8863263cb7c",
-        "e79519eb-eb46-48e3-822b-b2b5cffbde55",
-        "61f9e5a0-c5b8-4d22-82b4-5eb68b81c1b4",
-        "2d2c5023-fe39-4573-8394-c55e801eeca0",
-        "a5e76b13-c6a8-4d2f-bf8e-a2c6b178ace0"
-      ],
-      "settings": {
-        "heading": "Past Projects",
-        "padding_top": 68,
-        "padding_bottom": 100
-      }
-    },
     "1650518045272c9009": {
       "type": "image-with-text",
       "blocks": {
@@ -274,6 +192,88 @@
         "padding_bottom": 100
       }
     },
+    "1651132771eba2e452": {
+      "type": "gushi-product-slider",
+      "blocks": {
+        "346a05f1-15fa-451d-a6b6-0b6ee9d29398": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint3.png",
+            "text": "ABC",
+            "clr": "#6b785a",
+            "txt_clr": "#ffffff"
+          }
+        },
+        "210b2cd5-5810-4bce-847f-daf590e3201f": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint2.png",
+            "text": "EDF",
+            "clr": "#bba993",
+            "txt_clr": "#ffffff"
+          }
+        },
+        "f0dd692a-519a-41f9-969e-b8863263cb7c": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/clr.jpg",
+            "text": "ERT",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
+        "e79519eb-eb46-48e3-822b-b2b5cffbde55": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint4.png",
+            "text": "gush 2",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
+        "61f9e5a0-c5b8-4d22-82b4-5eb68b81c1b4": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint1.png",
+            "text": "Gush 3",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
+        "2d2c5023-fe39-4573-8394-c55e801eeca0": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint4.png",
+            "text": "Gush 4",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
+        "a5e76b13-c6a8-4d2f-bf8e-a2c6b178ace0": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint2.png",
+            "text": "Gush 5",
+            "clr": "",
+            "txt_clr": ""
+          }
+        }
+      },
+      "block_order": [
+        "346a05f1-15fa-451d-a6b6-0b6ee9d29398",
+        "210b2cd5-5810-4bce-847f-daf590e3201f",
+        "f0dd692a-519a-41f9-969e-b8863263cb7c",
+        "e79519eb-eb46-48e3-822b-b2b5cffbde55",
+        "61f9e5a0-c5b8-4d22-82b4-5eb68b81c1b4",
+        "2d2c5023-fe39-4573-8394-c55e801eeca0",
+        "a5e76b13-c6a8-4d2f-bf8e-a2c6b178ace0"
+      ],
+      "settings": {
+        "heading": "Past Projects",
+        "padding_top": 68,
+        "padding_bottom": 100
+      }
+    },
     "1651126988fd36cd2b": {
       "type": "featured-about",
       "settings": {
@@ -302,10 +302,10 @@
     "image_banner",
     "1651126244fe532c69",
     "16511265613364656e",
-    "1651132771eba2e452",
     "1650518045272c9009",
     "165112669837ed6592",
     "165051844120a95e3b",
+    "1651132771eba2e452",
     "1651126988fd36cd2b",
     "1651127831a7c71699"
   ]
