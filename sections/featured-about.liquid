@@ -10,11 +10,11 @@
 <section class="featured-about page-width isolate section-{{ section.id }}-bg">
     <div class="grid grid--gapless grid--1-col grid--2-col-tablet">
         <div class="grid__item featured-about_left">
-            <div class="featured-about__heading"><h2>{{section.settings.heading}}</h2></div>
+            <div class="featured-about__heading"><h2 class="gush-font-h1">{{section.settings.heading}}</h2></div>
             <div class="featured-about__image"><img src="{{section.settings.image | img_url: 'large'}}" alt="Image"></div>
         </div>
         <div class="grid__item featured-about__content__wrapper">
-            <div class="featured-about__content"><p>{{section.settings.content}}</p></div>
+            <div class="featured-about__content"><p class="gush-font-h3">{{section.settings.content}}</p></div>
             <div class="featured-about__buttons">
               {%- if section.settings.btn-text-1 != blank -%}
                 <a class="featured-about__btn-primary button button--primary" href="{{section.settings.link_first_btn}}"><span>{{section.settings.btn-text-1}}</span>{%render 'arrow-dotted'%}</a>

@@ -3088,56 +3088,66 @@ p {
 .gush-font-display {
   font-family: 'ABCCamera';
   font-weight: normal;
-  font-size: 140px;
+  font-size: 140px  !important;
   line-height: 91%;
   letter-spacing: -0.01em;
 }
 
 .gush-font-p1-24 {
-  font-family: 'GTAmerica';
+  font-family: 'GTAmerica' !important;
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 24px  !important;
   line-height: 130%;
   letter-spacing: -0.0115em;
 }
 
 .gush-font-p1-9 {
-  font-family: 'GTAmerica';
+  font-family: 'GTAmerica' !important;
   font-style: normal;
   font-weight: 300;
-  font-size: 9px;
+  font-size: 9px  !important;
   line-height: 130%;
   letter-spacing: -0.0115em;
 }
 
 .gush-font-p2-16 {
-  font-family: 'GTAmerica';
+  font-family: 'GTAmerica' !important;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 130%;
-  letter-spacing: -0.0115em;
-}
-
-.gush-font-p2-9 {
-  font-family: 'GTAmerica';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 9px;
+  font-size: 16px  !important;
   line-height: 130%;
   letter-spacing: -0.0115em;
 }
 
 .gush-font-h1 {
-  font-family: 'ABCCamera';
+  font-family: 'ABCCamera' !important;
   font-style: normal;
   font-weight: 400;
-  font-size: 84px;
+  font-size: 84px !important;
   line-height: 100%;
   letter-spacing: -0.03em;
-
   color: #000000;
+}
+
+.gush-font-h2 {
+  font-family: 'RecklessNeue' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px !important;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+.gush-font-h3 {
+  font-family: 'RecklessNeue' !important;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px !important;
+	line-height: 91% !important;
+	letter-spacing: -0.03em;
+	color: #000;
 }
 
 @media screen and (max-width: 767px) {
@@ -3164,21 +3174,33 @@ p {
     font-size: 9px;
   }
   .gush-p1 p {
-    font-size: 12px;
+    font-size: 12px  !important;
   }
   .gush-p1 p {
-    font-size: 12px;
+    font-size: 12px  !important;
   }
 
   .gush-font-display {
-    font-size: 64px;
+    font-size: 64px  !important;
     letter-spacing: -0.03em;
   }
 
   .gush-font-p1-24 {
-    font-size: 12px;
-    letter-spacing: 0;
+    font-size: 12px  !important;
   }
+	
+	.gush-font-h1 {
+		font-size: 40px  !important;
+	}
+
+	.gush-font-h2 {
+		font-size: 20px !important;
+	}
+
+	.gush-font-h3 {
+		font-size: 12px  !important;
+		line-height: 100% !important;
+	}
 }
 
 /* check for flexbox gap in older Safari versions */

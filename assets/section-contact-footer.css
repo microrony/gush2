@@ -1,5 +1,6 @@
 .footer-contact__main {
     display: flex;
+		gap: 15rem;
 }
 .footer-contact__main {
     background-image: url('contact-footer-img.png');
@@ -35,6 +36,7 @@
 }
 .footer-contact__form .field__input{
     padding: 2.5rem 0;
+		margin-top: 30px;
 }
 
 .footer-contact__form .contact__button {
@@ -57,7 +59,6 @@
     box-shadow: none;
 }
 .footer-contact__form .field__label{
-    position: absolute;
     left: 0;
     font-family: 'GTAmerica';
 }
