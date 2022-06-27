@@ -291,8 +291,8 @@
     "1651127831a7c71699": {
       "type": "footer-contact",
       "settings": {
-        "heading": "CONTACT US",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada mi venenatis, semper quam eget.",
+        "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada mi venenatis, semper quam eget.",
+        "content": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
