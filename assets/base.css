@@ -3089,34 +3089,25 @@ p {
   font-family: 'ABCCamera';
   font-weight: normal;
   font-size: 140px  !important;
-  line-height: 91%;
+  line-height: 91%  !important;
   letter-spacing: -0.01em;
 }
 
-.gush-font-p1-24 {
+.gush-font-p1 {
   font-family: 'GTAmerica' !important;
   font-style: normal;
   font-weight: 300;
   font-size: 24px  !important;
-  line-height: 130%;
+  line-height: 130%  !important;
   letter-spacing: -0.0115em;
 }
 
-.gush-font-p1-9 {
-  font-family: 'GTAmerica' !important;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 9px  !important;
-  line-height: 130%;
-  letter-spacing: -0.0115em;
-}
-
-.gush-font-p2-16 {
+.gush-font-p2 {
   font-family: 'GTAmerica' !important;
   font-style: normal;
   font-weight: 300;
   font-size: 16px  !important;
-  line-height: 130%;
+  line-height: 130% !important;
   letter-spacing: -0.0115em;
 }
 
@@ -3125,7 +3116,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 84px !important;
-  line-height: 100%;
+  line-height: 100%  !important;
   letter-spacing: -0.03em;
   color: #000000;
 }
@@ -3135,7 +3126,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 40px !important;
-  line-height: 110%;
+  line-height: 110%  !important;
   letter-spacing: -0.03em;
   color: #000000;
 }
@@ -3185,9 +3176,13 @@ p {
     letter-spacing: -0.03em;
   }
 
-  .gush-font-p1-24 {
+  .gush-font-p1 {
     font-size: 12px  !important;
   }
+
+	.gush-font-p2 {
+		font-size: 9px !important;
+	}
 	
 	.gush-font-h1 {
 		font-size: 40px  !important;
@@ -3199,7 +3194,6 @@ p {
 
 	.gush-font-h3 {
 		font-size: 12px  !important;
-		line-height: 100% !important;
 	}
 }
 

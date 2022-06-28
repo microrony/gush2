@@ -1,5 +1,6 @@
 .footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+	padding-bottom: 50px !important;
 }
 
 .footer:not(.color-background-1) {
@@ -8,7 +9,7 @@
 
 .footer__content-top {
   padding-bottom: 5rem;
-  padding-top: 3rem;
+  padding-top: 1.25rem;
   display: block;
 }
 
@@ -216,6 +217,8 @@ li.list-social__item a {
   margin-top: 0;
   font-family: "GTAmerica";
   font-size: calc(var(--font-heading-scale) * 1.6rem);
+	z-index: 2;
+	position: relative;
 }
 
 @media screen and (min-width: 990px) {
@@ -594,6 +597,12 @@ noscript .localization-selector.link {
   background: #f9f4f0;
   cursor: pointer;
   box-shadow: 0 -1px 1px #f8e3cf;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1;
 }
 
 .back_to_top__icon {

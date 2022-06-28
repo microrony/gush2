@@ -230,7 +230,7 @@ opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
 			</h2>
 			<div class="banner_inner_box">
 				{%- when 'text' -%}
-				<div class="banner__text gush-font-p1-24" {{ block.shopify_attributes }}>
+				<div class="banner__text gush-font-p1" {{ block.shopify_attributes }}>
 					<span>{{ block.settings.text | escape }}</span>
 				</div>
 				{%- when 'buttons' -%}

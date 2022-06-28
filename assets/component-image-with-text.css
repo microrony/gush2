@@ -1,7 +1,6 @@
-.grid {
+.image-with-text__grid {
 	align-items: center;
 }
-
 
 .image-with-text .grid__item {
   position: relative;
