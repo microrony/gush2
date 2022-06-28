@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  padding-top: 2rem;
+  padding-top: 25px;
 }
 
 .active-facets-mobile {

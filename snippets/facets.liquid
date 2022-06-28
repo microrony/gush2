@@ -47,7 +47,7 @@
                   <summary class="facets__summary caption-large focus-offset">
                     <div>
                       {%- unless results.filters == empty -%}
-                        <h2 class="facets__heading caption-large text-body"> Show Filters {% render 'icon-filter-new' %}</h2>
+                        <h2 class="facets__heading caption-large text-body gush-font-p2"> Show Filters {% render 'icon-filter-new' %}</h2>
                       {%- endunless -%}
                       {%- comment -%}
                       {% render 'icon-caret' %}
@@ -223,7 +223,7 @@
                   {% if collection.handle == "all" %}
                       {% assign sort_by = 'Sort' %}
                   {% endif %}
-                <select name="sort_by" class="facet-filters__sort select__select caption-large" id="SortBy" aria-describedby="a11y-refresh-page-message">
+                <select name="sort_by" class="facet-filters__sort select__select caption-large gush-font-p2" id="SortBy" aria-describedby="a11y-refresh-page-message">
                   <option value="sort">Sort</option>
                   {%- for option in results.sort_options -%}
                     <option value="{{ option.value | escape }}"{% if option.value == sort_by %}selected="selected"{% endif %}>{{ option.name | escape }}</option>

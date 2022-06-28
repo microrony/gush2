@@ -47,9 +47,9 @@
     <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
     
     <div class="page-width" id="main-collection-filters" data-id="{{ section.id }}">
-      <div class="collection-tabs">
+      <div class="collection-tabs collection-tabs__gush">
         {% for item in section.settings.collectionList.links %}
-        <a class="{% if collection.title == item.title %}bottom_line{% endif %}" href="{{item.url}}"> <div class="collection-tabs__name">{{- item.title | escape -}}</div></a>
+        <a class="{% if collection.title == item.title %}bottom_line{% endif %}" href="{{item.url}}"> <div class="collection-tabs__name gush-font-p1">{{- item.title | escape -}}</div></a>
        
 <!--         <div class="collection-tabs__name"></div> -->
         {% endfor %}
