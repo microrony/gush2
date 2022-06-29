@@ -3141,6 +3141,15 @@ p {
 	color: #000;
 }
 
+.gush-font-h4 {
+  font-family: 'RecklessNeue' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px  !important;
+  line-height: 130%  !important;
+  letter-spacing: -0.0115em;
+}
+
 @media screen and (max-width: 767px) {
   .gush-h1,
   h1,
@@ -3176,7 +3185,7 @@ p {
     letter-spacing: -0.03em;
   }
 
-  .gush-font-p1 {
+  .gush-font-p1, .gush-font-h4  {
     font-size: 12px  !important;
   }
 
@@ -3193,9 +3202,8 @@ p {
 	}
 
 	.gush-font-h3 {
-		font-size: 12px  !important;
+		font-size: 20px  !important;
 	}
-}
 
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {

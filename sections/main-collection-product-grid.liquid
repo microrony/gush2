@@ -30,7 +30,7 @@
   h3.card__heading.h5 a {text-decoration: none;}
   .collection-tabs {display: flex;justify-content: space-around;border-bottom: 1px solid;}
   .collection-tabs__name {margin-bottom: 5%;}
-  .collectionBannerInner {display: flex;position: relative;width: 100%; min-height: 15rem;}
+  .collectionBannerInner {display: flex;position: relative;width: 100%; min-height: 15rem; margin: 50px 0;}
   .collectionBannerInner__content {display: flex;flex-direction: column;justify-content: center;padding: 5% 5%;}
   .collectionBannerInner__content svg {position: absolute;right: 3%;height: 19%;}
   .collectionBannerInner__content h2 {margin: 0; font-size: 2.26em;}
@@ -76,7 +76,7 @@
           <div class="loading-overlay gradient"></div>
   
           <ul id="product-grid" data-id="{{ section.id }}" class="
-            grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
+            grid product-grid product-grid__gush grid--{{ section.settings.columns_mobile }}-col-tablet-down
             {% if section.settings.columns_desktop == 1 %} grid--full-width{% else %}
               grid--{{ section.settings.columns_desktop }}-col-desktop
             {% endif %}">
@@ -88,8 +88,8 @@
               <div class="collectionBannerInner" style= "background-color:{{ section.settings.bg_color }};">
                 <div class="collectionBannerInner__img"><img src="{{ section.settings.bg_img | img_url: 'medium'}}" alt="BG Image"></div>
                 <div class="collectionBannerInner__content">
-                  <h2>{{ section.settings.heading }}</h2>
-                  <p>{{ section.settings.content }}</p>
+                  <h2 class='gush-font-h2'>{{ section.settings.heading }}</h2>
+                  <p class="gush-font-p1">{{ section.settings.content }}</p>
                   {% render 'icon-arrow-right' %}
                 </div>
               </div>
