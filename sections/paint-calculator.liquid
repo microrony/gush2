@@ -21,38 +21,44 @@ margin-top: 0 !important;
 
 {%- endstyle -%}
 
-<section class="paint-calculator__bg">
+<div class="paint-calculator">
 	<div class="page-width">
 		<div class="paint-calculator-header">
 			<h1>Calculating Paint</h1>
+			<a href="#">
 			{% render 'icon-paint' %}
+		</a>
 		</div>
-	<div class="paint-calculator">
+	<div class="paint-calculator_content">
 		<div class="box">
-			<label for="floor area">Your Floor Area</label>
-			<div class="number-input">
-			<input type="number" id="floor area" name="floor area" placeholder="0">
+			<label class="gush-font-p2" for="floor area">Your Floor Area</label>
+			<div class="number-input gush-font-h3">
+			<input type="text" id="floorArea" name="floor area" placeholder="0">
 			<span>sqft</span>
 		</div>
 		</div>
-	</div>
 	<div class="double-arrow">
 		{% render 'icon-double-arrow' %}
 	</div>
 	<div class="required-boxes">
 	<div class="box">
-		<p>Paint</p>
-		<h3><span class="paint-required">0</span>L</h3>
+		<p class="gush-font-p2">Paint</p>
+		<h3 class="gush-font-h3"><span class="paint-required">0</span>L</h3>
 	</div>
 	<div class="box">
-		<p>Primer</p>
-		<h3><span class="sealer-required">0</span>L</h3>
+		<p class="gush-font-p2">Primer</p>
+		<h3  class="gush-font-h3"><span class="sealer-required">0</span>L</h3>
 	</div>
 </div>
-	<div class="calculate-button"></div>
+	<div class="calculate-button">
+		{%render 'icon-arrow-right-white'%}
+	</div>
 </div>
 </div>
-</section>
+</div>
+</div>
+
+
 
 
 {% schema %}
