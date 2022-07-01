@@ -47,7 +47,8 @@ li.product-info-tab {
 .ingredient__heading h2,
 .comparison__content h2 {
   font-size: 64px;
-  margin: 25px 0;
+	margin-top: 0;
+  margin-bottom: 25px;
   font-family: var(--font-heading-family);
 }
 

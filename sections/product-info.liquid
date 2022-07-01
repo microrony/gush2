@@ -17,14 +17,14 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 <section class="product-info section-{{ section.id }}-padding section section-primary section-wrapper">
   <div class="product-info__main page-width ">
     <div class="product-info__heading">
-      <h2>{{ section.settings.heading }}</h2>
+      <h2 class="gush-font-h1">{{ section.settings.heading }}</h2>
     </div>
     {% assign isActive = true %}
     {% assign tabindex = 1 %}
     {% for block in section.blocks %}
     {% if block.type == 'product-info' %}
     {% capture product_info_Heading %}
-    <li class="tab-info product-info-tab {% if isActive == true %}isActive{% endif %}"
+    <li class="tab-info product-info-tab gush-font-h2 {% if isActive == true %}isActive{% endif %}"
       data-content-id="tab-img-content-{{ tabindex }}">{{ block.settings.tabheading }}</li>
     {% endcapture %}
     {% assign tabInfo = tabInfo | append: product_info_Heading %}
@@ -46,7 +46,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           <div class="tab-dec">
             <li class="tab-info product-info-responsive product-info-tab {% if isActive == true %}isActive{% endif %}"
               data-content-id="tab-img-content-{{ tabindex }}">{{ block.settings.tabheading }}</li>
-            <div class=" product-info-desc ">{{ block.settings.tabdesc }}  
+            <div class=" product-info-desc gush-font-p1 ">{{ block.settings.tabdesc }}  
               <div class="swiper-button-next">{% render 'icon-arrow-right-gushi' %}</div>
             <div class="swiper-button-prev">{% render 'icon-arrow-left-gushi' %}</div></div>
           </div>

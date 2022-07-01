@@ -86,12 +86,19 @@
       max-width: 18rem;
     }
     .product-form__input.product-form__input--dropdown .select__select{
-      height: 3.6rem;
+      height: 4rem;
       border-radius: 4px;
+			border: 1px solid rgba(119, 109, 98, .5);
+			color:  #776D62;
     }
     .product-form__input.product-form__input--dropdown .select__select::before, .product-form__input.product-form__input--dropdown .select__select::after{
       border-radius: 4px;
     }
+
+		.product-form__input.product-form__input--dropdown .select:after {
+			box-shadow: none;
+		}
+
     variant-selects.no-js-hidden {position: relative;}
 
 .link-calculator {position: absolute;right: 0;font-size: 11px;bottom: 8%;}
@@ -110,6 +117,8 @@ button.quantity__button {
   }
   .product-form__input.product-form__quantity .quantity::after{
     border-radius: 4px;
+		box-shadow: none;
+		border: 1px solid rgba(119, 109, 98, .7);
   }
   .product__info-container .product-form__buttons {
     max-width: 100%;
@@ -125,9 +134,11 @@ button.quantity__button {
       border-radius: 4px;
       padding-left: 2rem;
       padding-right: 2rem;
+			height: 64px;
     }
     .product__info-container .product-form__buttons button::after{
       border-radius: 4px;
+			box-shadow: none;
     }
   .product-form__input button.quantity__button {
     height: 64px;
@@ -212,8 +223,8 @@ button.quantity__button {
 {%- endif -%}
 
 <section class="page-width section-{{ section.id }}-padding">
-  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper">
+  <div class="product product__gush product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+    <div class="grid__item product__media-wrapper  product__media-wrapper__gush">
       <media-gallery id="MediaGallery-{{ section.id }}" role="region" {% if section.settings.enable_sticky_info %}class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="{{ section.settings.gallery_layout }}">
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
         <div class="media-left">
@@ -281,7 +292,7 @@ button.quantity__button {
         {%- if media_count > 1 and section.settings.gallery_layout != 'stacked' or section.settings.mobile_thumbnails == 'show' -%}
           <slider-component id="GalleryThumbnails-{{ section.id }}" class="thumbnail-slider slider-mobile-gutter{% if section.settings.mobile_thumbnails == 'hide' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}">
             <button type="button" class="slider-button slider-button--prev{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}" aria-controls="GalleryThumbnails-{{ section.id }}" data-step="3">{% render 'icon-caret' %}</button>
-            <ul id="Slider-Thumbnails-{{ section.id }}" class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}">
+            <ul id="Slider-Thumbnails-{{ section.id }}" class="thumbnail-list thumbnail-list__gush list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}">
               {%- if featured_media != null -%}
                 {%- capture media_index -%}
                   {%- if featured_media.media_type == 'model' -%}{%- increment model_index -%}
@@ -365,7 +376,7 @@ button.quantity__button {
         {%- endif -%}
       </media-gallery>
     </div>
-    <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
+    <div class="product__info-wrapper product__info-wrapper__gush grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -375,17 +386,17 @@ button.quantity__button {
             {% render block %}
          
           {%- when 'title' -%}
-            <h1 class="product__title" {{ block.shopify_attributes }}>
+            <h1 class="product__title gush-font-h2" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
 
             <div class="product__desc-review">
             {%- if product.description != blank -%}
-              <div class="product__description rte">
+              <div class="product__description rte gush-font-p2">
                 {{ product.description }}
               </div>
             {%- endif -%}
-            <div class="product__desc-review__rating">reviews | 321</div>
+            <div class="product__desc-review__rating gush-font-p2">  321 reviews</div>
           </div>
 
           {% assign isActive = true %}
@@ -432,13 +443,14 @@ button.quantity__button {
               <ul class="tabs">
                 {{ tabsHTML }}
               </ul>
-              <ul class=" tabs-content">
+              <ul class="tabs-content">
                 {{ tabsContentHTML }}
               </ul>
             </div>
           {% endif %}
         
-          {%- when 'price' -%}
+					{%- comment -%}
+           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
@@ -458,6 +470,7 @@ button.quantity__button {
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
+						{%- endcomment -%}
          
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
@@ -483,9 +496,11 @@ button.quantity__button {
             {%- endcomment -%}
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
+							{% comment %}
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
+							{%- endcomment -%}
 
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
@@ -666,7 +681,7 @@ button.quantity__button {
                         >
                           
                           {%- for value in option.values -%}
-                            <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
+                            <option class=" gush-font-p2" value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
                               {{ value }}
                             </option>
                           {%- endfor -%}
@@ -697,7 +712,7 @@ button.quantity__button {
 
                     </div>
                   {%- endfor -%}
-                  <div class="link-calculator">
+                  <div class="link-calculator gush-font-p2">
                     <a href="#">Paint Calculator</a>
                   </div>
                   <script type="application/json">
