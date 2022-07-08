@@ -153,42 +153,54 @@
           "type": "image",
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/paint4.png",
-            "text": "Gush 1"
+            "text": "Gush 1",
+            "clr": "",
+            "txt_clr": ""
           }
         },
         "3b58b5f3-086f-4181-9aa2-8db72ce9c5cd": {
           "type": "image",
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/paint2.png",
-            "text": "Gush 2"
+            "text": "Gush 2",
+            "clr": "",
+            "txt_clr": ""
           }
         },
         "57b1de1e-efd0-45bb-8a59-353350e3036b": {
           "type": "image",
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/paint3.png",
-            "text": "Gush 3"
+            "text": "Gush 3",
+            "clr": "",
+            "txt_clr": ""
           }
         },
         "c07edf85-e99d-403c-9095-8e80bdf2abd0": {
           "type": "image",
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/paint1.png",
-            "text": "Gush 4"
+            "text": "Gush 4",
+            "clr": "",
+            "txt_clr": ""
           }
         },
         "e19725da-20da-4b19-b157-e6f3e5b0631f": {
           "type": "image",
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/color.jpg",
-            "text": "Gush 5"
+            "text": "Gush 5",
+            "clr": "",
+            "txt_clr": ""
           }
         },
         "0043d3e9-32bc-43ef-91b8-ac115cc5d845": {
           "type": "image",
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/clr.jpg",
-            "text": "Gush 6"
+            "text": "Gush 6",
+            "clr": "",
+            "txt_clr": ""
           }
         }
       },
@@ -282,6 +294,38 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16572557682a26b2f0": {
+      "type": "apps",
+      "blocks": {
+        "dc57e3ab-ca08-476e-96de-36fdfae425d6": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/carousel\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "title": "Real Reviews from Real Customers",
+            "auto_play": true,
+            "take": 30,
+            "color_title": "",
+            "color_star": "",
+            "color_text": "",
+            "color_link": "",
+            "review_ids": "",
+            "product_ids": "",
+            "category": "",
+            "product_brand": "",
+            "tags": "",
+            "min_rating": "none",
+            "fill_empty": false,
+            "random": false,
+            "with_photos": false
+          }
+        }
+      },
+      "block_order": [
+        "dc57e3ab-ca08-476e-96de-36fdfae425d6"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -290,6 +334,7 @@
     "165276808691ea54b2",
     "165276834663a5573d",
     "1653548703a8d9cba4",
-    "1653548855ee6a3260"
+    "1653548855ee6a3260",
+    "16572557682a26b2f0"
   ]
 }
