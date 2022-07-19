@@ -341,13 +341,12 @@
         "padding_bottom": 36
       }
     },
-    "165768821879e1be65": {
+    "1658208654922c2830": {
       "type": "apps",
       "blocks": {
-        "03313c6c-1c91-4a5b-a950-b34eb2191e1c": {
+        "6606afb3-698a-4e87-be76-7a7275907896": {
           "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
           "settings": {
-            "take_questions": 0,
             "animation": true,
             "tags_exclude": "",
             "tags_include": "",
@@ -359,10 +358,10 @@
         }
       },
       "block_order": [
-        "03313c6c-1c91-4a5b-a950-b34eb2191e1c"
+        "6606afb3-698a-4e87-be76-7a7275907896"
       ],
       "settings": {
-        "include_margins": false
+        "include_margins": true
       }
     }
   },
@@ -373,6 +372,6 @@
     "16524396805057076a",
     "1652439903eeaf17c8",
     "16524399652ff3675c",
-    "165768821879e1be65"
+    "1658208654922c2830"
   ]
 }
