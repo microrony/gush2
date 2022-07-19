@@ -347,6 +347,7 @@
         "03313c6c-1c91-4a5b-a950-b34eb2191e1c": {
           "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
           "settings": {
+            "take_questions": 0,
             "animation": true,
             "tags_exclude": "",
             "tags_include": "",
@@ -361,7 +362,7 @@
         "03313c6c-1c91-4a5b-a950-b34eb2191e1c"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": false
       }
     }
   },
