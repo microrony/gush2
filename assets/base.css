@@ -3114,7 +3114,7 @@ p {
 .gush-font-h1 {
   font-family: 'ABCCamera' !important;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-size: 84px !important;
   line-height: 100%  !important;
   letter-spacing: -0.03em;
