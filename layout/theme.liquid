@@ -30,6 +30,7 @@
     {% render 'meta-tags' %}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+		<script src="{{ 'section-stamped-reviews.js' | asset_url }}" defer="defer"></script>
     {% comment %} <script src="{{ 'base-animations.js' | asset_url }}" defer="defer"></script> {% endcomment %}
     {{ content_for_header }}
 
@@ -192,6 +193,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+		{{ 'section-stamped-reviews.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
