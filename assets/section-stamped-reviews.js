@@ -1,13 +1,16 @@
 const stampedHeaderTitle = document.querySelector('#stamped-main-widget .stamped-container .stamped-header-title')
 const stampedSummaryCaptionText = document.querySelector('#stamped-main-widget .stamped-container .stamped-header .stamped-summary-caption .stamped-summary-text')
 const stampedSummaryRatingText = document.querySelector('#stamped-main-widget .stamped-container .stamped-header .stamped-summary-text-1')
+const stampedSummaryActionsNewReview = document.querySelector('#stamped-main-widget .stamped-container .stamped-header .stamped-summary-actions .stamped-summary-actions-newreview')
 
 stampedHeaderTitle.textContent = 'Overall Rating';
 stampedSummaryCaptionText.textContent = stampedSummaryCaptionText.textContent.replace('Based on ', '');
+stampedSummaryActionsNewReview.textContent = stampedSummaryActionsNewReview.textContent.replace('Write', 'Leave');
 stampedSummaryRatingText.textContent = stampedSummaryRatingText.textContent
 stampedHeaderTitle.classList.add('gush-font-p2');
 stampedSummaryCaptionText.classList.add('gush-font-p2');
 stampedSummaryRatingText.classList.add('gush-font-h1')
+stampedSummaryActionsNewReview.classList.add('gush-font-p1')
 
 const stampedReviews = document.querySelectorAll('#stamped-main-widget .stamped-content .stamped-review');
 const stampedContent = document.querySelector('#stamped-main-widget .stamped-content');
