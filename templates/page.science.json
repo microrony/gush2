@@ -1,10 +1,88 @@
 {
   "sections": {
     "hero": {
-      "type": "science-hero"
+      "type": "science-hero",
+      "settings": {
+        "title": "Science",
+        "description": "Peel back the curtain to see how our paint protects you and your loved ones from indoor air pollution – round the clock."
+      }
+    },
+    "1659063469c000ddf6": {
+      "type": "science-steps",
+      "blocks": {
+        "a048d55b-dd40-4276-bf2f-40357a425873": {
+          "type": "the-problem-block",
+          "settings": {
+            "title": "Indoor Air Pollution",
+            "description": "We now spend more than 90% of our time indoors. When not at home, we’re huddled in offices, schools, malls – spaces prone to indoor pollutants.\n\nVOCs, viruses, bacteria, mold, allergens & chemical particles affect our physical health, well-being & productivity.",
+            "image": "shopify:\/\/shop_images\/image_98.jpg"
+          }
+        },
+        "498af38d-3010-480a-bb98-c9cdae0a0e5c": {
+          "type": "the-problem-block",
+          "settings": {
+            "title": "VOCs: the biggest culprit",
+            "description": "Volatile Organic Compounds (VOCs) are gases released from products or chemical processes.\n\nMany products release VOCs: cleaning liquids, aerosols, furniture, post-renovation odors, electronics – even our bodies.",
+            "image": "shopify:\/\/shop_images\/Rectangle_255.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "a048d55b-dd40-4276-bf2f-40357a425873",
+        "498af38d-3010-480a-bb98-c9cdae0a0e5c"
+      ],
+      "settings": {
+        "title": "01 The Problem",
+        "description": ""
+      }
+    },
+    "1659072861edce4799": {
+      "type": "science-steps",
+      "blocks": {
+        "c5f3fb64-36db-4528-a100-9b63aa56f3d8": {
+          "type": "the-solution-block",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "c5f3fb64-36db-4528-a100-9b63aa56f3d8"
+      ],
+      "settings": {
+        "title": "02 The Solution",
+        "description": "We’ve teamed up with leading scientists and research partners to make a proven paint formulation that rids the air of pollutants."
+      }
+    },
+    "16590738719506d830": {
+      "type": "science-steps",
+      "settings": {
+        "title": "03 Testing",
+        "description": "We conducted various third-party tests to certify our product’s efficacy against VOCs, bacteria and mold growth as shown below:"
+      }
+    },
+    "1659073882562a9fbf": {
+      "type": "science-steps",
+      "settings": {
+        "title": "04 Reports",
+        "description": "We conducted various third-party tests to certify our product’s efficacy against VOCs, bacteria and mold growth as shown below:"
+      }
+    },
+    "16590738922962dd01": {
+      "type": "science-steps",
+      "settings": {
+        "title": "05 Accreditations",
+        "description": "We’ve got a suite of accreditations and awards from respected institutions, so that you can be sure you’re getting nothing but the best."
+      }
     }
   },
   "order": [
-    "hero"
+    "hero",
+    "1659063469c000ddf6",
+    "1659072861edce4799",
+    "16590738719506d830",
+    "1659073882562a9fbf",
+    "16590738922962dd01"
   ]
 }

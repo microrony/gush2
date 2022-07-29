@@ -1,0 +1,49 @@
+{{ 'section-science-problem.css' | asset_url | stylesheet_tag }}
+
+<div class="science-problem">
+
+</div>
+
+
+{% schema %}
+{
+	"name": "Science Problem",
+	"tag": "section",
+	"settings": [
+	{
+	"type": "text",
+	"id": "title",
+	"label": "Title"
+	}
+	],
+	"blocks":[
+	{
+	"name": "block",
+	"type": "block",
+	"settings": [
+	{
+	"type": "text",
+	"id": "title",
+	"label": "Title"
+	},
+	{
+	"type": "textarea",
+	"id": "description",
+	"label": "Description"
+	},
+	{
+	"type": "image_picker",
+	"id": "image",
+	"label": "Image"
+}
+]
+	}
+	],
+	"presets": [
+	{
+	"name": "Science Problem"
+	}
+	]
+	}
+
+{% endschema %}

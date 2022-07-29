@@ -1,0 +1,135 @@
+{{ 'section-science-steps.css' | asset_url | stylesheet_tag }}
+
+<div class="science-steps page-width">
+	<h2 class="gush-font-h2">{{section.settings.title}}</h2>
+	<h3 class="gush-font-h3">{{section.settings.description}}</h3>
+	<div>
+		{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'the-problem-block' %}
+      <div class="the-problem-block {% if forloop.last -%}
+			last-block
+	 {%- endif -%}" {{ block.shopify_attributes }}>
+			<div class="content">
+				<h2>{{block.settings.title}}</h2>
+				<p>{{block.settings.description}}</p>
+			</div>
+			<div class="image">
+        {{ block.settings.image | image_url: width: 1280 | image_tag }}
+			</div>
+      </div>
+  {% endcase %}
+{% endfor %}
+	</div>
+</div>
+
+
+	{% schema %}
+	{
+		"name": "Science Steps",
+		"tag": "section",
+		"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+			},
+			{
+			"type": "textarea",
+			"id": "description",
+			"label": "Description"
+			}
+		],
+		"blocks":[
+	{
+	"name": "The Problem",
+	"type": "the-problem-block",
+	"settings": [
+	{
+	"type": "text",
+	"id": "title",
+	"label": "Title"
+	},
+	{
+	"type": "textarea",
+	"id": "description",
+	"label": "Description"
+	},
+	{
+	"type": "image_picker",
+	"id": "image",
+	"label": "Image"
+}
+]
+	},
+	{
+		"name": "The Solution",
+		"type": "the-solution-block",
+		"settings": [
+		{
+		"type": "text",
+		"id": "title",
+		"label": "Title"
+		},
+		{
+		"type": "textarea",
+		"id": "description",
+		"label": "Description"
+		},
+		{
+		"type": "image_picker",
+		"id": "image",
+		"label": "Image"
+	}
+	]
+		},
+		{
+			"name": "Reports",
+			"type": "reports-block",
+			"settings": [
+			{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+			},
+			{
+			"type": "textarea",
+			"id": "description",
+			"label": "Description"
+			},
+			{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image"
+		}
+		]
+			},
+			{
+				"name": "Accreditations",
+				"type": "accreditations-block",
+				"settings": [
+				{
+				"type": "text",
+				"id": "title",
+				"label": "Title"
+				},
+				{
+				"type": "textarea",
+				"id": "description",
+				"label": "Description"
+				},
+				{
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image"
+			}
+			]
+				}
+	],
+		"presets": [
+		{
+		"name": "Science Steps"
+		}
+		]
+		}
+	{% endschema %}

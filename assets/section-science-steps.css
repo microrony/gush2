@@ -1,0 +1,42 @@
+.science-steps > h2 {
+	font-size: 64px !important;
+	border-top: 1px solid #E1D5C6;
+	padding-top: 3rem;
+	color: #302112;
+}
+
+.science-steps > h3 {
+	max-width: 652px;
+	line-height: 110% !important;
+	color: #302112;
+}
+
+
+.science-steps .the-problem-block {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	align-items: center;
+}
+
+.science-steps .the-problem-block.last-block {
+	margin-top: 60px;
+ }
+
+.science-steps .the-problem-block.last-block .content{
+ order: 2;
+ margin-left: 80px;
+}
+
+.science-steps .the-problem-block .content p{
+	white-space: pre-line;
+ }
+
+.science-steps .the-problem-block.last-block .image {
+	order: 1;
+ }
+
+.science-steps .the-problem-block .image img {
+	width: 100%;
+	height: auto;
+	object: cover;
+}
