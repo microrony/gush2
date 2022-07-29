@@ -27,6 +27,11 @@
  margin-left: 80px;
 }
 
+.science-steps .the-problem-block .content > p{
+	margin-right: 80px;
+	white-space: pre-line;
+ }
+
 .science-steps .the-problem-block .content p{
 	white-space: pre-line;
  }
