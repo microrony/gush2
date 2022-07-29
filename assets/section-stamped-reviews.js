@@ -41,6 +41,8 @@ const stampedReviewsHTML = stampedReviewsArr.map(review => {
   const reviewContent =
     review.childNodes[3].childNodes[5].childNodes[3].textContent;
 
+		// console.log(review.childNodes[3].childNodes[3].textContent.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase()));
+
   const sliderHTML = `<div class="swiper-slide">
 									<div class="swiper-slide__card">
 											<h3 class="gush-font-p1">${reviewTitle}</h3>
@@ -59,6 +61,14 @@ const stampedReviewsHTML = stampedReviewsArr.map(review => {
 });
 
 stampedContent.innerHTML += `<div class='stamped-slider-reviews'>
+
+// <div class='stamped-reviews_tabs'>
+// <ul>
+// <li>Option 1</li>
+// <li>Option 2</li>
+// <li>Option 3</li>
+// </ul>
+// </div>
         
 <!-- Swiper -->
 	<div class="swiper stampedSliderSwiper">
