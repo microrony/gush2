@@ -64,6 +64,28 @@
     },
     "1659073882562a9fbf": {
       "type": "science-steps",
+      "blocks": {
+        "153e3e81-abfd-43a7-a5d2-b53509add15b": {
+          "type": "reports-block",
+          "settings": {
+            "title": "Study",
+            "description": "The effects of high formaldehyde levels to our cognitive functions",
+            "number": "05.20.20"
+          }
+        },
+        "41f9dc34-365d-4ce5-8a2f-83f44cbb4010": {
+          "type": "reports-block",
+          "settings": {
+            "title": "Study",
+            "description": "Product efficacy against common household pollutants",
+            "number": "05.20.20"
+          }
+        }
+      },
+      "block_order": [
+        "153e3e81-abfd-43a7-a5d2-b53509add15b",
+        "41f9dc34-365d-4ce5-8a2f-83f44cbb4010"
+      ],
       "settings": {
         "title": "04 Reports",
         "description": "We conducted various third-party tests to certify our product’s efficacy against VOCs, bacteria and mold growth as shown below:"

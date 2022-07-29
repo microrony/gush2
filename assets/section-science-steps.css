@@ -40,3 +40,27 @@
 	height: auto;
 	object: cover;
 }
+
+/* Reports Section Styles */
+.science-steps .reports-blocks {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 3rem;
+}
+
+.science-steps .reports-block {
+	background-color: #00FF00;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	color: #302112;
+}
+
+.science-steps .reports-block h3 {
+	color: #302112;
+	margin: 0;
+	padding: 0;
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+	max-width: 400px;
+}

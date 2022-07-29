@@ -1,12 +1,16 @@
 {{ 'section-science-steps.css' | asset_url | stylesheet_tag }}
 
+{% assign the_problem_blocks = section.blocks | where: 'type', 'the-problem-block' %}
+{% assign reports_blocks = section.blocks | where: 'type', 'reports-block' %}
+
+
 <div class="science-steps page-width">
 	<h2 class="gush-font-h2">{{section.settings.title}}</h2>
 	<h3 class="gush-font-h3">{{section.settings.description}}</h3>
+
 	<div>
-		{% for block in section.blocks %}
-  {% case block.type %}
-    {% when 'the-problem-block' %}
+	{% for block in the_problem_blocks %}
+    
       <div class="the-problem-block {% if forloop.last -%}
 			last-block
 	 {%- endif -%}" {{ block.shopify_attributes }}>
@@ -18,9 +22,23 @@
         {{ block.settings.image | image_url: width: 1280 | image_tag }}
 			</div>
       </div>
-  {% endcase %}
-{% endfor %}
+  {% endfor %}
 	</div>
+	
+	
+	<div class="reports-blocks">
+	{% for block in reports_blocks %}
+      <div class="reports-block {% if forloop.last -%}
+			last-block
+	 {%- endif -%}" {{ block.shopify_attributes }}>
+				<span class="gush-font-p2">{{block.settings.title}}</span>
+				<h3 class="gush-font-h3">{{block.settings.description}}</h3>
+				<span class="gush-font-p2">{{block.settings.number}}</span>
+			
+      </div>
+  {% endfor %}
+	</div>
+	
 </div>
 
 
@@ -98,10 +116,10 @@
 			"label": "Description"
 			},
 			{
-			"type": "image_picker",
-			"id": "image",
-			"label": "Image"
-		}
+				"type": "text",
+				"id": "number",
+				"label": "Number"
+				}
 		]
 			},
 			{
