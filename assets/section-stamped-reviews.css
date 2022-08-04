@@ -21,7 +21,7 @@
   .stamped-header
   .stamped-summary-actions {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   z-index: 50;
   left: 50%;
   transform: translateX(-50%);
@@ -104,6 +104,7 @@
   padding: 60px;
   border-radius: 16px;
   margin-top: 10px;
+	padding-top: 20px;
   padding-bottom: 120px;
 }
 
