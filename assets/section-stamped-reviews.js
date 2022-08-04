@@ -158,7 +158,6 @@ stampedContent.innerHTML += `<div class='stamped-slider-reviews'>
 			<div class='option' data-filter='option1'>Option 1</div>
 			<div class='option' data-filter='option2'>Option 2</div>
 			<div class='option' data-filter='option3'>Option 3</div>
-			<div class='option' data-filter='option4'>Option 4</div>
 	</div>
 	<!-- Swiper -->
 	<div class="swiper stampedSliderSwiper">
