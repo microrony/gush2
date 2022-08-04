@@ -270,11 +270,19 @@ transform: rotate(90deg);
 
 .stamped-reviews_filter .option.active {
 	color: #302112;
+	position: relative;
 }
 
 .stamped-reviews_filter .option.active::before {
-	content: 'g'
-	color: #302112;
+	content: '';
+	background-color: #302112;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	border-radius: 50%;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 /*  Needed for filters */
