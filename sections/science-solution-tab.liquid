@@ -1,0 +1,154 @@
+<style>
+	.the-solution-tab {
+		padding: 100px 5rem;
+	}
+
+	.the-solution-tab .tab-contents .tab-content.active {
+		display: grid !important;
+	}
+
+	.the-solution-tab .tab-content {
+		display: none;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		background-color: #F9F4F0;
+		padding: 80px;
+	}
+
+	.the-solution-tab .tab-content {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	align-items: center;
+}
+
+.the-solution-tab .tab-content.last-block {
+	margin-top: 60px;
+ }
+
+.the-solution-tab .tab-content.last-block .content{
+ order: 2;
+ margin-left: 80px;
+}
+
+.the-solution-tab .tab-content .content > p{
+	margin-right: 80px;
+	white-space: pre-line;
+ }
+
+.the-solution-tab .tab-content .content p{
+	white-space: pre-line;
+ }
+
+.the-solution-tab .tab-content.last-block .image {
+	order: 1;
+ }
+
+.the-solution-tab .tab-content .image img {
+	width: 100%;
+	height: auto;
+	object: cover;
+}
+
+	.the-solution-tab .tabs {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.the-solution-tab .tabs .tab{
+		cursor: pointer;
+		padding: 18px 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.the-solution-tab .tabs .tab.active{
+		border-bottom: 2px solid #FF42EF;
+	}
+</style>
+
+<div class="the-solution-tab page-width">
+	<div class="tabs">
+		{% for block in section.blocks %}
+				<div class="tab {% if forloop.first -%}
+				active
+		 {%- endif -%}" data-tab-target="#{{block.settings.tab_title}}" {{ block.shopify_attributes }}>
+					<div>{{block.settings.tab_title}}</div>
+				</div>
+		{% endfor %}
+		</div>
+
+	<div class="tab-contents">
+		{% for block in section.blocks %}
+		<div class="tab-content {% if forloop.last -%}
+		last-block
+ {%- endif -%}" {{ block.shopify_attributes }}>
+		<div class="content">
+			<h2>{{block.settings.title}}</h2>
+			<p class="gush-font-p1">{{block.settings.description}}</p>
+		</div>
+		<div class="image">
+			{{ block.settings.image | image_url: width: 1280 | image_tag }}
+		</div>
+		</div>
+		{% endfor %}
+		</div>
+</div>
+
+{% javascript %}
+const tabs = document.querySelectorAll('.the-problem-tab .tab')
+const tabContents = document.querySelectorAll('.the-problem-tab .tab-content')
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
+	
+{% endjavascript %}
+
+
+	{% schema %}
+	{
+		"name": "Science Solution Tab",
+		"tag": "section",
+			"blocks": [
+				{
+					"type": "block",
+					"name": "block",
+					"settings": [
+					{
+						"type": "text",
+						"id": "tab_title",
+						"label": "Tab Title"
+						},
+					{
+						"type": "text",
+						"id": "title",
+						"label": "Title"
+						},
+						{
+						"type": "textarea",
+						"id": "description",
+						"label": "Description"
+						},
+						{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image"
+					}
+					]
+				}
+			],"presets": [
+			{
+			"name": "Science Solution Tab"
+			}
+			]
+		}
+		
+	{% endschema %}
