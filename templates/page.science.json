@@ -79,13 +79,32 @@
         "c5f3fb64-36db-4528-a100-9b63aa56f3d8": {
           "type": "the-solution-block",
           "settings": {
-            "title": "",
-            "description": ""
+            "title": "Doesn’t use energy",
+            "description": "Unlike air purifiers, Gush paints remove pollutants without any electrical costs",
+            "image": "shopify:\/\/shop_images\/Group_1784.png"
+          }
+        },
+        "7e834f7e-5753-4b35-ab5d-d8474a6c182c": {
+          "type": "the-solution-block",
+          "settings": {
+            "title": "Air-purifying walls",
+            "description": "Gush paint transforms the largest surface area in your space into passive air purifiers",
+            "image": "shopify:\/\/shop_images\/Group_1783.png"
+          }
+        },
+        "4affb962-ae07-4abb-80c2-8dd3eb66fea3": {
+          "type": "the-solution-block",
+          "settings": {
+            "title": "Clean air, 24\/7",
+            "description": "Our air-purifying features operate even without light, protecting your air day & night",
+            "image": "shopify:\/\/shop_images\/Group_1785.png"
           }
         }
       },
       "block_order": [
-        "c5f3fb64-36db-4528-a100-9b63aa56f3d8"
+        "c5f3fb64-36db-4528-a100-9b63aa56f3d8",
+        "7e834f7e-5753-4b35-ab5d-d8474a6c182c",
+        "4affb962-ae07-4abb-80c2-8dd3eb66fea3"
       ],
       "settings": {
         "title": "02 The Solution",
@@ -99,16 +118,24 @@
           "type": "block",
           "settings": {
             "tab_title": "Gush Proprietary Catalyst (GPC)",
-            "title": "VOCs don’t stand a chance",
-            "description": "Our GPC’s catalytic agents have an activation energy of more than 120 kcal\/mol. This cuts the organic chemical bonds in most VOCs."
+            "first_title": "VOCs don’t stand a chance",
+            "first_description": "Our GPC’s catalytic agents have an activation energy of more than 120 kcal\/mol. This cuts the organic chemical bonds in most VOCs.",
+            "first_image": "shopify:\/\/shop_images\/Group_1825.png",
+            "second_title": "Say goodbye to odors",
+            "second_description": "Our GPC breaks down 99% of VOCs and deodorizes your space of chemical fumes, within 21 hours.",
+            "second_image": "shopify:\/\/shop_images\/Group_1827.png"
           }
         },
         "2fb4a410-85e0-49ee-b377-278638c5f9ca": {
           "type": "block",
           "settings": {
             "tab_title": "Gush Absorption Element (GAE)",
-            "title": "",
-            "description": ""
+            "first_title": "Stops microbial growth",
+            "first_description": "The GAE’s absorption capacity of 19.64 g\/m² deprives mold spores and bacteria of water to sprout on the painted surface.",
+            "first_image": "shopify:\/\/shop_images\/Group_1982.png",
+            "second_title": "Clean air, more quickly",
+            "second_description": "The GAE’s hygroscopic nature draws pollutants to the wall, increasing the rate of contact so more pollutants are broken down in less time.",
+            "second_image": "shopify:\/\/shop_images\/Group_1944.png"
           }
         }
       },

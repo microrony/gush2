@@ -46,6 +46,22 @@
 	object: cover;
 }
 
+/* Solution Section Styles */
+.the-solution-blocks {
+	display: flex;
+}
+
+.the-solution-blocks img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.the-solution-blocks .image {
+	width: 200px;
+	height: auto;
+}
+
 /* Reports Section Styles */
 .science-steps .reports-blocks {
 	display: grid;

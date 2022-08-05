@@ -1,6 +1,7 @@
 {{ 'section-science-steps.css' | asset_url | stylesheet_tag }}
 
 {% assign the_problem_blocks = section.blocks | where: 'type', 'the-problem-block' %}
+{% assign the_solution_blocks = section.blocks | where: 'type', 'the-solution-block' %}
 {% assign reports_blocks = section.blocks | where: 'type', 'reports-block' %}
 
 
@@ -10,7 +11,6 @@
 
 	<div>
 	{% for block in the_problem_blocks %}
-    
       <div class="the-problem-block {% if forloop.last -%}
 			last-block
 	 {%- endif -%}" {{ block.shopify_attributes }}>
@@ -24,6 +24,22 @@
       </div>
   {% endfor %}
 	</div>
+
+	<div class="the-solution-blocks">
+		{% for block in the_solution_blocks %}
+				<div class="solution-block {% if forloop.last -%}
+				last-block
+		 {%- endif -%}" {{ block.shopify_attributes }}>
+		 <div class="image">
+			{{ block.settings.image | image_url: width: 1280 | image_tag }}
+		</div>
+		 <div class="content">
+			<h2>{{block.settings.title}}</h2>
+			<p class="gush-font-p1">{{block.settings.description}}</p>
+		</div>
+				</div>
+		{% endfor %}
+		</div>
 	
 	
 	<div class="reports-blocks">
@@ -38,7 +54,6 @@
       </div>
   {% endfor %}
 	</div>
-	
 </div>
 
 
