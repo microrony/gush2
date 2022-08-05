@@ -1,0 +1,115 @@
+.the-problem-tab {
+  padding: 100px 5rem;
+	color: #302112;
+}
+
+.tab-contents .tab-content.active {
+  display: grid !important;
+}
+
+.the-problem-tab .tab-content {
+  display: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  background-color: #f9f4f0;
+  padding: 80px;
+  position: relative;
+}
+
+.the-problem-tab .tab-content .left-content h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.the-problem-tab .tabs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.the-problem-tab .tabs .tab {
+  cursor: pointer;
+  padding: 18px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.the-problem-tab .tabs .tab.active {
+  border-top: 2px solid #ff42ef;
+}
+
+.the-problem-tab .name_formula {
+  display: flex;
+  gap: 3rem;
+  position: relative;
+}
+
+.the-problem-tab .name_formula {
+  display: flex;
+  gap: 3rem;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.the-problem-tab img {
+  width: 100%;
+  height: auto;
+}
+
+.the-problem-tab .image_formula {
+  position: absolute;
+  right: 33%;
+}
+
+.the-problem-tab .image_structure {
+  width: 70%;
+}
+
+.the-problem-tab .odor_appearance {
+  display: flex;
+  gap: 8rem;
+}
+
+.the-problem-tab .odor p,
+.the-problem-tab .appearance p,
+.the-problem-tab .how_it_harm p,
+.the-problem-tab .effects_of_exposure p {
+	margin: 0;
+  padding: 0;
+	max-width: 400px;
+}
+
+.the-problem-tab .odor p,
+.the-problem-tab .appearance p {
+  font-weight: 400 !important;
+	
+}
+
+.the-problem-tab .odor p:first-child,
+.the-problem-tab .appearance p:first-child,
+.the-problem-tab .how_it_harm p:first-child,
+.the-problem-tab .effects_of_exposure p:first-child  {
+  font-size: 12px !important;
+	letter-spacing: initial !important;
+}
+
+.the-problem-tab .found_in {
+	font-family: 'GTAmerica' !important;
+  font-weight: 500 !important;
+	font-size: 24px !important;
+	max-width: 400px;
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+
+.the-problem-tab .how_it_harm {
+	margin-bottom: 33px;
+	color: #000;
+}
+
+.the-problem-tab .effects_of_exposure   {
+  color: #000;
+}
+
+.the-problem-tab .how_it_harm p:first-child,
+.the-problem-tab .effects_of_exposure p:first-child  {
+  margin-bottom: 10px;
+}

@@ -1,5 +1,5 @@
 <style>
-	.the-problem-tab {
+	.the-testing-tab {
 		padding: 100px 5rem;
 	}
 
@@ -7,36 +7,36 @@
 		display: grid !important;
 	}
 
-	.the-problem-tab .tab-content {
+	.the-testing-tab .tab-content {
 		display: none;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		background-color: #F9F4F0;
 		padding: 80px;
 	}
 
-	.the-problem-tab .tab-content .left-content h2 {
+	.the-testing-tab .tab-content .left-content h2 {
 		margin: 0;
 		padding: 0; 
 	}
 
-	.tabs {
+	.the-testing-tab .tabs {
 		display: flex;
 		justify-content: space-around;
 	}
 
-	.tabs .tab{
+	.the-testing-tab .tabs .tab{
 		cursor: pointer;
 		padding: 18px 0;
 		width: 100%;
 		text-align: center;
 	}
 
-	.tabs .tab.active{
+	.the-testing-tab .tabs .tab.active{
 		border-top: 2px solid #FF42EF;
 	}
 </style>
 
-<div class="the-problem-tab page-width">
+<div class="the-testing-tab page-width">
 	<div class="tab-contents">
 		{% for block in section.blocks %}
 				<div class="tab-content {% if forloop.first -%}

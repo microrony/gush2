@@ -1,40 +1,4 @@
-<style>
-	.the-problem-tab {
-		padding: 100px 5rem;
-	}
-
-	.tab-contents .tab-content.active {
-		display: grid !important;
-	}
-
-	.the-problem-tab .tab-content {
-		display: none;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		background-color: #F9F4F0;
-		padding: 80px;
-	}
-
-	.the-problem-tab .tab-content .left-content h2 {
-		margin: 0;
-		padding: 0; 
-	}
-
-	.tabs {
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.tabs .tab{
-		cursor: pointer;
-		padding: 18px 0;
-		width: 100%;
-		text-align: center;
-	}
-
-	.tabs .tab.active{
-		border-top: 2px solid #FF42EF;
-	}
-</style>
+{{ 'section-problem-tab.css' | asset_url | stylesheet_tag }}
 
 <div class="the-problem-tab page-width">
 	<div class="tab-contents">
@@ -43,33 +7,35 @@
 				active
 		 {%- endif -%}" id="{{block.settings.chemical_name}}" {{ block.shopify_attributes }}>
 		 <div class="left-content">
+			<div class="name_formula">
 				<h2 class="gush-font-h1">{{block.settings.chemical_name}}</h2>
 				<div class="image_formula">
-					{{ block.settings.chemical_formula | image_url: width: 80 | image_tag }}
+					{{ block.settings.chemical_formula | image_url: width: 280 | image_tag }}
 				</div>
+			</div>
 				<div class="image_structure">
-					{{ block.settings.chemical_structure | image_url: width: 80 | image_tag }}
+					{{ block.settings.chemical_structure | image_url: width: 800 | image_tag }}
 				</div>
 			</div>
 			<div class="right-content">
-				<div>
-					<div class="odor">
+				<div class="odor_appearance">
+					<div class="odor gush-font-p2">
 						<p>Odor</p>
 						<p>{{block.settings.odor}}</p>
 					</div>
-					<div class="appearance">
+					<div class="appearance gush-font-p2">
 						<p>Appearance</p>
 						<p>{{block.settings.appearance}}</p>
 					</div>
 			</div>
 
-			<h4>{{block.settings.found_in}}</h4>
+			<h4 class="gush-font-h2 found_in">{{block.settings.found_in}}</h4>
 
-			<div class="how_it_harm">
+			<div class="how_it_harm gush-font-p2">
 				<p>How does it harm the body?</p>
 				<p>{{block.settings.how_it_harm}}</p>
 			</div>
-			<div class="effects_of_exposure">
+			<div class="effects_of_exposure gush-font-p2">
 				<p>How does it harm the body?</p>
 				<p>{{block.settings.effects_of_exposure}}</p>
 			</div>
