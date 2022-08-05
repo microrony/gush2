@@ -49,6 +49,7 @@
 /* Solution Section Styles */
 .the-solution-blocks {
 	display: flex;
+	gap: 7.5rem;
 }
 
 .the-solution-blocks img {
@@ -59,7 +60,12 @@
 
 .the-solution-blocks .image {
 	width: 200px;
-	height: auto;
+	height: 200px;
+}
+
+.the-solution-blocks .content {
+	margin-top: 10rem;
+
 }
 
 /* Reports Section Styles */
