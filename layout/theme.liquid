@@ -30,8 +30,8 @@
     {% render 'meta-tags' %}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-		<script src="{{ 'section-stamped-reviews.js' | asset_url }}" defer="defer"></script>
-    {% comment %} <script src="{{ 'base-animations.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+		 {% comment %}<script src="{{ 'section-stamped-reviews.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'base-animations.js' | asset_url }}" defer="defer"></script> {% endcomment %}
     {{ content_for_header }}
 
     {%- liquid

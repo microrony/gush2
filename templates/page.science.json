@@ -36,6 +36,43 @@
         "description": ""
       }
     },
+    "16596023041a9f5c71": {
+      "type": "science-problem-tab",
+      "blocks": {
+        "118d9143-8dde-439a-a97c-478585eae289": {
+          "type": "chemical",
+          "settings": {
+            "chemical_name": "Benzene",
+            "chemical_formula": "shopify:\/\/shop_images\/Group_1658.png",
+            "chemical_structure": "shopify:\/\/shop_images\/Group_1842.png",
+            "odor": "Sweet, gasoline-like",
+            "appearance": "Clear to light yellow",
+            "found_in": "Found in glues, paints, furniture wax, detergents and cigarette smoke",
+            "how_it_harm": "Benzene stops the bone marrow from producing enough red blood cells, which can cause anemia. It damages ones’ immune system by reducing antibodies’ levels, causing a drop white blood cells.",
+            "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy and respiratory ailments"
+          }
+        },
+        "c11c89d9-f322-4ca2-93a5-4844a3362067": {
+          "type": "chemical",
+          "settings": {
+            "chemical_name": "Formaldehyde",
+            "chemical_formula": "shopify:\/\/shop_images\/Group_1658.png",
+            "chemical_structure": "shopify:\/\/shop_images\/Group_1842.png",
+            "odor": "Pungent, vinegar-like",
+            "appearance": "Colourless",
+            "found_in": "Found in Building and decor materials, hair products, nail polish, cigarette smoke",
+            "how_it_harm": "Formaldehyde damages the liver, lungs, kidneys, central nervous systems and increases the risk of cancer. It aggravates respiratory conditions.",
+            "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy"
+          }
+        }
+      },
+      "block_order": [
+        "118d9143-8dde-439a-a97c-478585eae289",
+        "c11c89d9-f322-4ca2-93a5-4844a3362067"
+      ],
+      "settings": {
+      }
+    },
     "1659072861edce4799": {
       "type": "science-steps",
       "blocks": {
@@ -102,6 +139,7 @@
   "order": [
     "hero",
     "1659063469c000ddf6",
+    "16596023041a9f5c71",
     "1659072861edce4799",
     "16590738719506d830",
     "1659073882562a9fbf",
