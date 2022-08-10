@@ -189,6 +189,31 @@
     },
     "16590738922962dd01": {
       "type": "science-steps",
+      "blocks": {
+        "2a6a8cc3-f128-4acf-9b56-282c99a0897e": {
+          "type": "accreditation-block",
+          "settings": {
+            "title": "Accreditations",
+            "description": "<li>U.S. Green Building Council Member<\/li>\n<li>GreenLabel Singapore Product<\/li>\n<li>Singapore Alliance for Action (AfA) on Sustainable Spaces: Member<\/li>",
+            "image1": "shopify:\/\/shop_images\/greenbuilding.png",
+            "image2": "shopify:\/\/shop_images\/Group_2.png"
+          }
+        },
+        "ef4b61de-f073-453e-959b-467366df9ed8": {
+          "type": "accreditation-block",
+          "settings": {
+            "title": "Certifications",
+            "description": "<li>GreenGUARD Gold<\/li>\n<li>International Organization for Standardization: 14001 &amp; 9001<\/li>\n<li>Singapore Green Building Council:Leader Rating<\/li>",
+            "image1": "shopify:\/\/shop_images\/greenguard_black_2x_1.png",
+            "image2": "shopify:\/\/shop_images\/ISO14001_1ed8dba6-6dd5-479f-941f-a3d247d0ab6e.png",
+            "image3": "shopify:\/\/shop_images\/ISO9001.png"
+          }
+        }
+      },
+      "block_order": [
+        "2a6a8cc3-f128-4acf-9b56-282c99a0897e",
+        "ef4b61de-f073-453e-959b-467366df9ed8"
+      ],
       "settings": {
         "title": "05 Accreditations",
         "description": "We’ve got a suite of accreditations and awards from respected institutions, so that you can be sure you’re getting nothing but the best."

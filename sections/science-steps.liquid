@@ -3,12 +3,14 @@
 {% assign the_problem_blocks = section.blocks | where: 'type', 'the-problem-block' %}
 {% assign the_solution_blocks = section.blocks | where: 'type', 'the-solution-block' %}
 {% assign reports_blocks = section.blocks | where: 'type', 'reports-block' %}
+{% assign accreditation_blocks = section.blocks | where: 'type', 'accreditation-block' %}
 
 
 <div class="science-steps page-width">
 	<h2 class="gush-font-h2">{{section.settings.title}}</h2>
 	<h3 class="gush-font-h3">{{section.settings.description}}</h3>
 
+	{% if the_problem_blocks != empty %}
 	<div>
 	{% for block in the_problem_blocks %}
       <div class="the-problem-block {% if forloop.last -%}
@@ -24,7 +26,10 @@
       </div>
   {% endfor %}
 	</div>
+	{% endif %}
 
+	
+	{% if the_solution_blocks != empty %}
 	<div class="the-solution-blocks">
 		{% for block in the_solution_blocks %}
 				<div class="solution-block" {{ block.shopify_attributes }}>
@@ -38,8 +43,9 @@
 				</div>
 		{% endfor %}
 		</div>
+		{% endif %}
 	
-	
+		{% if reports_blocks != empty %}
 	<div class="reports-blocks">
 	{% for block in reports_blocks %}
       <div class="reports-block {% if forloop.last -%}
@@ -52,6 +58,45 @@
       </div>
   {% endfor %}
 	</div>
+	{% endif %}
+
+	{% if accreditation_blocks != empty %}
+	<div class="accreditation-blocks">
+		{% for block in accreditation_blocks %}
+				<div class="accreditation-block {% if forloop.last -%}
+				last-block
+		 {%- endif -%}" {{ block.shopify_attributes }}>
+		 <div class="images">
+			{% if block.settings.image1 != nil %}
+			<div class="image">
+				{{ block.settings.image1 | image_url: width: 600 | image_tag }}
+			</div>
+			{% endif %}
+
+			{% if block.settings.image2 != nil %}
+			<div class="image">
+				{{ block.settings.image2 | image_url: width: 600 | image_tag }}
+			</div>
+			{% endif %}
+
+			{% if block.settings.image3 != nil %}
+			<div class="image">
+				{{ block.settings.image3 | image_url: width: 600 | image_tag }}
+			</div>
+			{% endif %}
+			
+			{% if block.settings.image4 != nil %}
+			<div class="image">
+				{{ block.settings.image4 | image_url: width: 600 | image_tag }}
+			</div>
+{% endif %}
+		 </div>
+					<h2 class="gush-font-h2">{{block.settings.title}}</h2>
+					<ul class="gush-font-p2">{{block.settings.description}}</ul>
+				</div>
+		{% endfor %}
+		</div>
+	{% endif %}
 </div>
 
 
@@ -115,7 +160,7 @@
 	]
 		},
 		{
-			"name": "Reports",
+			"name": "Report",
 			"type": "reports-block",
 			"settings": [
 			{
@@ -136,8 +181,8 @@
 		]
 			},
 			{
-				"name": "Accreditations",
-				"type": "accreditations-block",
+				"name": "Accreditation",
+				"type": "accreditation-block",
 				"settings": [
 				{
 				"type": "text",
@@ -145,14 +190,29 @@
 				"label": "Title"
 				},
 				{
-				"type": "textarea",
+				"type": "html",
 				"id": "description",
 				"label": "Description"
 				},
-				{
+			{
 				"type": "image_picker",
-				"id": "image",
-				"label": "Image"
+				"id": "image1",
+				"label": "Image One"
+			},
+			{
+				"type": "image_picker",
+				"id": "image2",
+				"label": "Image Two"
+			},
+			{
+				"type": "image_picker",
+				"id": "image3",
+				"label": "Image Three"
+			},
+			{
+				"type": "image_picker",
+				"id": "image4",
+				"label": "Image Four"
 			}
 			]
 				}
