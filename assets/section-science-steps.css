@@ -54,8 +54,15 @@
 
 .the-solution-blocks img {
 	width: 100%;
-	height: auto;
+	height: 200px;
 	object-fit: contain;
+}
+
+.the-solution-blocks .solution-block {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 17rem;
 }
 
 .the-solution-blocks .image {
@@ -64,8 +71,12 @@
 }
 
 .the-solution-blocks .content {
-	margin-top: 10rem;
+	margin-top: 2rem;
+	color: #302112 !important;
+}
 
+.the-solution-blocks .content h2 {
+	color: #302112 !important;
 }
 
 /* Reports Section Styles */
