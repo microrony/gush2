@@ -69,7 +69,7 @@
 		{% for block in section.blocks %}
 				<div class="tab {% if forloop.first -%}
 				active
-		 {%- endif -%}" data-tab-target="#{{block.settings.tab_title}}" {{ block.shopify_attributes }}>
+		 {%- endif -%}" data-tab-target="#tab{{forloop.index}}" {{ block.shopify_attributes }}>
 					<div>{{block.settings.tab_title}}</div>
 				</div>
 		{% endfor %}
@@ -79,7 +79,7 @@
 		{% for block in section.blocks %}
 		<div class="tab-content {% if forloop.first -%}
 		active
- {%- endif -%}" {{ block.shopify_attributes }}>
+ {%- endif -%}" id="tab{{forloop.index}}" {{ block.shopify_attributes }}>
  <div class="image">
 	{{ block.settings.first_image | image_url: width: 1280 | image_tag }}
 </div>
