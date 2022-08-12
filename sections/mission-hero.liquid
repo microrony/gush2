@@ -2,24 +2,33 @@
 	.mission-hero {
 		padding: 100px 5rem;
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		background-color: #302112;
 	}
 
 	.mission-hero h1 {
 		margin: 0;
 		padding: 0;
+		color: #FF5500;
 	}
 
 	.mission-hero p {
 		max-width: 511px;
+		color: #fff;
 	}
 </style>
 
-<div class="mission-hero page-width">
+
+<div class="mission-hero">
+	<div class="page-width">
 	<div>
 		<h1 class="gush-font-display">{{ section.settings.title }}</h1>
 		<p class="gush-font-p1">{{ section.settings.description }}</p>
+		<div class="image">
+			{{ section.settings.image | image_url: width: 1280 | image_tag }}
+		</div>
 	</div>
+</div>
 </div>
 
 
@@ -29,7 +38,7 @@
 		"tag": "section",
 		"settings": [
 		{
-		"type": "text",
+		"type": "textarea",
 		"id": "title",
 		"label": "Title"
 		},

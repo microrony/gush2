@@ -1,10 +1,47 @@
 {
   "sections": {
     "hero": {
-      "type": "mission-hero"
+      "type": "mission-hero",
+      "settings": {
+        "title": "We believe in better spaces for a better future.",
+        "description": "That’s why we design innovative products rooted in science to transform lives and your well-being.",
+        "image": "shopify:\/\/shop_images\/image_132.jpg"
+      }
+    },
+    "1660277929380061a2": {
+      "type": "true-wellness",
+      "settings": {
+        "title": "But, true wellness is plural, not singular.",
+        "description": "We have to go beyond the surface and do better with our planet in mind. Sustainability starts with us acting now for our tomorrow."
+      }
+    },
+    "1660277939c188d308": {
+      "type": "lets-care",
+      "settings": {
+        "title": "Let’s Care.",
+        "description": ""
+      }
+    },
+    "16602779494e6fecdf": {
+      "type": "our-commitment",
+      "settings": {
+        "title": "Our commitment is in the loop.",
+        "description": "We have to go beyond the surface and do better with our planet in mind. Sustainability starts with us acting now for our tomorrow."
+      }
+    },
+    "1660277963cff88234": {
+      "type": "discover-science",
+      "settings": {
+        "title": "Let’s create a world we can gush about.",
+        "description": ""
+      }
     }
   },
   "order": [
-    "hero"
+    "hero",
+    "1660277929380061a2",
+    "1660277939c188d308",
+    "16602779494e6fecdf",
+    "1660277963cff88234"
   ]
 }
