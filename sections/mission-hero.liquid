@@ -1,0 +1,53 @@
+<style>
+	.science-hero {
+		padding: 100px 5rem;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.science-hero h1 {
+		margin: 0;
+		padding: 0;
+	}
+
+	.science-hero p {
+		max-width: 511px;
+	}
+</style>
+
+<div class="science-hero page-width">
+	<div>
+		<h1 class="gush-font-display">{{ section.settings.title }}</h1>
+		<p class="gush-font-p1">{{ section.settings.description }}</p>
+	</div>
+</div>
+
+
+	{% schema %}
+	{
+		"name": "Science Hero",
+		"tag": "section",
+		"settings": [
+		{
+		"type": "text",
+		"id": "title",
+		"label": "Title"
+		},
+		{
+			"type": "textarea",
+			"id": "description",
+			"label": "Description"
+			},
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image"
+			}
+		],
+		"presets": [
+		{
+		"name": "Science Hero"
+		}
+		]
+		}
+	{% endschema %}
