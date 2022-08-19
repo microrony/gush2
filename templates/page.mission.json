@@ -20,9 +20,37 @@
     },
     "1660277939c188d308": {
       "type": "lets-care",
+      "blocks": {
+        "af5a26ea-210c-4dc3-8a5c-122b9254c00e": {
+          "type": "tab_content",
+          "settings": {
+            "tab_title": "Problem",
+            "text1": "Climate Change",
+            "text2": "Air Pollution",
+            "text3": "Lack of wellbeing",
+            "image1": "shopify:\/\/shop_images\/image_118.jpg",
+            "image2": "shopify:\/\/shop_images\/image_119.jpg",
+            "image3": "shopify:\/\/shop_images\/image_119-1.jpg"
+          }
+        },
+        "06bac6a9-a342-49ae-aca9-78d90766a5d6": {
+          "type": "tab_content",
+          "settings": {
+            "tab_title": "Solution",
+            "text1": "Climate",
+            "text2": "Air Pollution",
+            "text3": "",
+            "image1": "shopify:\/\/shop_images\/image_119.jpg",
+            "image2": "shopify:\/\/shop_images\/image_119-1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "af5a26ea-210c-4dc3-8a5c-122b9254c00e",
+        "06bac6a9-a342-49ae-aca9-78d90766a5d6"
+      ],
       "settings": {
-        "title": "Let’s Care.",
-        "description": ""
+        "title": "Let’s <span>Care.<\/span>"
       }
     },
     "16602779494e6fecdf": {
