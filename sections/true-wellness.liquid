@@ -10,13 +10,13 @@
 		position: relative;
 	}
 
-	.true-wellness h1, .true-wellness p {
+	.true-wellness h2, .true-wellness p {
 		margin: 0;
 		padding: 0;
 		color: #fff;
 	}
 
-	.true-wellness h1 {
+	.true-wellness h2 {
 		max-width: 700px;
 		margin-bottom: 16px;
 	}
@@ -54,7 +54,7 @@
 
 <div class="true-wellness">
 	<div class="content page-width">
-		<h1 class="gush-font-h1">{{ section.settings.title }}</h1>
+		<h2 class="gush-font-h1">{{ section.settings.title }}</h2>
 		<p class="gush-font-p1">{{ section.settings.description }}</p>
 		<div class="image_1">
 			{{ section.settings.image1 | image_url: width: 1280 | image_tag }}

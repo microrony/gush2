@@ -15,7 +15,7 @@
         "description": "We have to go beyond the surface and do better with our planet in mind. Sustainability starts with us acting now for our tomorrow.",
         "image1": "shopify:\/\/shop_images\/image_117.jpg",
         "image2": "shopify:\/\/shop_images\/image_120.jpg",
-        "image3": "shopify:\/\/shop_images\/image_123.jpg"
+        "image3": "shopify:\/\/shop_images\/image_133.jpg"
       }
     },
     "1660277939c188d308": {
@@ -36,7 +36,9 @@
       "type": "discover-science",
       "settings": {
         "title": "Let’s create a world we can gush about.",
-        "description": ""
+        "button_label": "Discover our science",
+        "button_url": "shopify:\/\/pages\/science",
+        "image": "shopify:\/\/shop_images\/gush_logo_v4_1.png"
       }
     }
   },

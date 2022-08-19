@@ -1,24 +1,44 @@
 <style>
 	.our-commitment {
-		padding: 100px 5rem;
-		display: grid;
-		grid-template-columns: repeat(1, minmax(0, 1fr));
+	background-color: #E8E0DB;	
+	padding-top: 200px;
+	padding-bottom: 200px;
 	}
 
-	.our-commitment h1 {
+	.our-commitment .content {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		align-items: center;
+	}
+
+	.our-commitment h2,  .our-commitment p {
 		margin: 0;
 		padding: 0;
+		max-width: 466px;
+		color: #796E62;
 	}
 
-	.our-commitment p {
-		max-width: 511px;
+	.our-commitment h2 {
+		margin-bottom: 20px;
+	}
+
+	.our-commitment iframe {
+		width: 646px;
+		height: 496px;
+		border: 0;
+		outline: 0;
+		background-color: #E8E0DB;	
 	}
 </style>
 
-<div class="our-commitment page-width">
-	<div>
-		<h1 class="gush-font-display">{{ section.settings.title }}</h1>
-		<p class="gush-font-p1">{{ section.settings.description }}</p>
+<div class="our-commitment">
+	<div class="content page-width">
+		<div><iframe src="https://my.spline.design/untitled-75255dd84590febfc23f92e6da59730e/" title="spline design"></iframe></div>
+		<div>
+			<h2 class="gush-font-h1">{{ section.settings.title }}</h2>
+			<p class="gush-font-p1">{{ section.settings.description }}</p>
+		</div>
+		
 	</div>
 </div>
 

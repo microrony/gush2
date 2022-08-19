@@ -1,24 +1,56 @@
 <style>
 	.discover-science {
-		padding: 100px 5rem;
-		display: grid;
-		grid-template-columns: repeat(1, minmax(0, 1fr));
+		padding-top: 100px;
+		padding-bottom: 100px;
+		background-color: #F9F4F0;
 	}
 
-	.discover-science h1 {
+	.discover-science .content {
+		position: relative;
+	}
+
+	.discover-science .content .text_button {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 5rem;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); 
+	}
+
+	.discover-science h2 {
 		margin: 0;
 		padding: 0;
+		z-index: 10;
+		color: #FF5500;
+		max-width: 625px;
+		text-align: center;
 	}
 
-	.discover-science p {
-		max-width: 511px;
+	.discover-science .image img {
+		object-fit: contain;
 	}
+
+	
+
+
 </style>
 
-<div class="discover-science page-width">
-	<div>
-		<h1 class="gush-font-display">{{ section.settings.title }}</h1>
-		<p class="gush-font-p1">{{ section.settings.description }}</p>
+<div class="discover-science">
+	<div class="content page-width">
+	<div class="text_button">
+		<h2 class="gush-font-display">{{ section.settings.title }}</h2>
+		<a{% if section.settings.button_url==blank %} role="link" aria-disabled="true" {% else %}
+						href="{{ section.settings.button_url }}" {% endif %}
+						class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} gush-font-p2-16 button--primary{% endif %}">
+						<span>{{ section.settings.button_label | escape }}</span>{% render 'arrow-dotted' %}</a>
+					</div>
+		<div class="image">
+			{{ section.settings.image | image_url: width: 1280 | image_tag }}
+		</div>
 	</div>
 </div>
 
@@ -34,9 +66,14 @@
 		"label": "Title"
 		},
 		{
-			"type": "textarea",
-			"id": "description",
-			"label": "Description"
+		"type": "text",
+		"id": "button_label",
+		"label": "Button Label"
+		},
+		{
+			"type": "url",
+			"id": "button_url",
+			"label": "Button URL"
 			},
 			{
 				"type": "image_picker",
