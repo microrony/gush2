@@ -3,6 +3,9 @@
 		padding: 100px 5rem;
 		display: grid;
 		grid-template-columns: repeat(1, minmax(0, 1fr));
+		z-index: 2;
+		position: relative;
+		background-color: #B6AC9E;
 	}
 
 	.lets-care h1 {
@@ -15,8 +18,8 @@
 	}
 </style>
 
-<div class="lets-care page-width">
-	<div>
+<div class="lets-care">
+	<div class="page-width">
 		<h1 class="gush-font-display">{{ section.settings.title }}</h1>
 		<p class="gush-font-p1">{{ section.settings.description }}</p>
 	</div>

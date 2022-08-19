@@ -1,24 +1,70 @@
 <style>
 	.true-wellness {
-		padding: 100px 5rem;
-		display: grid;
-		grid-template-columns: repeat(1, minmax(0, 1fr));
+		background-color: #796E62;
+		position: relative;
+		z-index: 1;
+	}
+
+	.true-wellness .content {
+		padding: 35rem 19rem;
+		position: relative;
+	}
+
+	.true-wellness h1, .true-wellness p {
+		margin: 0;
+		padding: 0;
+		color: #fff;
 	}
 
 	.true-wellness h1 {
-		margin: 0;
-		padding: 0;
+		max-width: 700px;
+		margin-bottom: 16px;
 	}
 
 	.true-wellness p {
-		max-width: 511px;
+		max-width: 480px;
+	}
+
+	.true-wellness img{
+		width: 320px;
+		height: 320px;
+		border-radius: 50%;
+		object-fit: cover;
+		
+	}
+
+	.true-wellness .image_1, .true-wellness .image_2, .true-wellness .image_3 {
+		position: absolute;
+	}
+
+	.true-wellness .image_1{
+		top: 100px;
+		left: -150px;
+	}
+
+	.true-wellness .image_2{
+		top: 4px;
+		right: 0px;
+	}
+	.true-wellness .image_3{
+		bottom: -35px;
+		right: 80px;
 	}
 </style>
 
-<div class="true-wellness page-width">
-	<div>
-		<h1 class="gush-font-display">{{ section.settings.title }}</h1>
+<div class="true-wellness">
+	<div class="content page-width">
+		<h1 class="gush-font-h1">{{ section.settings.title }}</h1>
 		<p class="gush-font-p1">{{ section.settings.description }}</p>
+		<div class="image_1">
+			{{ section.settings.image1 | image_url: width: 1280 | image_tag }}
+		</div>
+		<div class="image_2">
+			{{ section.settings.image2 | image_url: width: 1280 | image_tag }}
+		</div>
+		<div class="image_3">
+			{{ section.settings.image3 | image_url: width: 1280 | image_tag }}
+		</div>
 	</div>
 </div>
 
@@ -40,8 +86,18 @@
 			},
 			{
 				"type": "image_picker",
-				"id": "image",
-				"label": "Image"
+				"id": "image1",
+				"label": "Image 1"
+			},
+			{
+				"type": "image_picker",
+				"id": "image2",
+				"label": "Image 2"
+			},
+			{
+				"type": "image_picker",
+				"id": "image3",
+				"label": "Image 3"
 			}
 		],
 		"presets": [

@@ -1,33 +1,55 @@
 <style>
 	.mission-hero {
-		padding: 100px 5rem;
-		display: grid;
-		grid-template-columns: repeat(1, minmax(0, 1fr));
+		padding-top: 100px;
+		padding-bottom: 24px;
 		background-color: #302112;
 	}
 
-	.mission-hero h1 {
+	.mission-hero .content {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		align-items: flex-start;
+		margin-bottom: 10rem;
+		gap: 20rem;
+	}
+
+	.mission-hero h1, .mission-hero p {
 		margin: 0;
 		padding: 0;
+	}
+
+	.mission-hero h1 {
 		color: #FF5500;
 	}
 
 	.mission-hero p {
-		max-width: 511px;
+		max-width: 480px;
 		color: #fff;
+	}
+
+	.mission-hero .image img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: 1rem;
+	}
+
+	.mission-hero .image {
+		max-width: 1500px;
+		margin: 0 auto;
 	}
 </style>
 
 
 <div class="mission-hero">
 	<div class="page-width">
-	<div>
-		<h1 class="gush-font-display">{{ section.settings.title }}</h1>
+	<div class="content">
+		<h1 class="gush-font-h1">{{ section.settings.title }}</h1>
 		<p class="gush-font-p1">{{ section.settings.description }}</p>
-		<div class="image">
-			{{ section.settings.image | image_url: width: 1280 | image_tag }}
-		</div>
 	</div>
+</div>
+<div class="image">
+	{{ section.settings.image | image_url: width: 1280 | image_tag }}
 </div>
 </div>
 
