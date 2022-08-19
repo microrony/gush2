@@ -50,7 +50,6 @@
 	}
 
 	.lets-care .tab-content li span {
-		list-style: none;
 		display: flex;
 		align-items: center;
 		margin: 2rem 0;
@@ -59,7 +58,6 @@
 	.lets-care .tab-content img {
 		width: 80px;
 		height: 80px;
-		aspect-ratio: 1/1;
 		border-radius: 50%;
 		flex-shrink: 0;
 	}
@@ -79,6 +77,16 @@
 	.lets-care .tabs .tab.active {
 		color: #302112;
 	}
+
+	.lets-care .lets_care-swiper img{
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	.lets_care_title {
+		margin-bottom: 5rem;
+	}
 </style>
 
 {% assign slider_image_blocks = section.blocks | where: 'type', 'slider_image' %}
@@ -88,14 +96,18 @@
 	<div class="page-width">
 		<div class="lets_care_title gush-font-h1">{{ section.settings.title }}</div>
 		{% if slider_image_blocks != empty %}
-		<div>
-		{% for block in slider_image_blocks %}
-				<div class="slider_image-block" {{ block.shopify_attributes }}>
+		<div class="swiper lets_care-swiper">
+      <div class="swiper-wrapper">
+				{% for block in slider_image_blocks %}
+				<div class="swiper-slide" {{ block.shopify_attributes }}>
 				<div class="image">
 					{{ block.settings.image | image_url: width: 1280 | image_tag }}
 				</div>
 				</div>
 		{% endfor %}
+      </div>
+    </div>
+		<div>
 		</div>
 		{% endif %}
 
@@ -154,6 +166,9 @@
 	</div>
 </div>
 
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
 {% javascript %}
 const tabs = document.querySelectorAll('.lets-care .tab')
 const tabContents = document.querySelectorAll('.lets-care .tab-content')
@@ -171,6 +186,11 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+
+var swiper = new Swiper(".lets_care-swiper", {
+	slidesPerView: 3,
+	spaceBetween: 30,
+});
 	
 {% endjavascript %}
 

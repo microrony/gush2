@@ -115,7 +115,7 @@
   visibility: hidden;
 }
 
-.swiper {
+#stamped-main-widget .swiper {
   width: 85%;
   height: 100%;
 }

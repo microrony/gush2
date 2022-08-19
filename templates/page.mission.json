@@ -43,11 +43,32 @@
             "image1": "shopify:\/\/shop_images\/image_119.jpg",
             "image2": "shopify:\/\/shop_images\/image_119-1.jpg"
           }
+        },
+        "2b9eee5d-fe56-4396-a025-32fb40da935c": {
+          "type": "slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_135.jpg"
+          }
+        },
+        "6ed94df8-541b-4fb1-a049-79c24a633d47": {
+          "type": "slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_134.jpg"
+          }
+        },
+        "5e32fdf9-e7bd-4a7a-9062-6733991e253e": {
+          "type": "slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_136.jpg"
+          }
         }
       },
       "block_order": [
         "af5a26ea-210c-4dc3-8a5c-122b9254c00e",
-        "06bac6a9-a342-49ae-aca9-78d90766a5d6"
+        "06bac6a9-a342-49ae-aca9-78d90766a5d6",
+        "2b9eee5d-fe56-4396-a025-32fb40da935c",
+        "6ed94df8-541b-4fb1-a049-79c24a633d47",
+        "5e32fdf9-e7bd-4a7a-9062-6733991e253e"
       ],
       "settings": {
         "title": "Let’s <span>Care.<\/span>"
