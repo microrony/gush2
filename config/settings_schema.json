@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "4.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/en\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/support.shopify.com\/"
+    "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
+    "theme_support_url": "https://support.shopify.com/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -34,15 +34,39 @@
         "label": "t:settings_schema.colors.settings.gradient_accent_1.label"
       },
       {
+        "id": "gradient_accent_2",
+        "type": "color_background",
+        "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
+      },
+      {
         "type": "color",
         "id": "colors_accent_2",
         "default": "#334FB4",
         "label": "t:settings_schema.colors.settings.colors_accent_2.label"
       },
       {
-        "id": "gradient_accent_2",
-        "type": "color_background",
-        "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
+        "type": "color",
+        "id": "gush_orange",
+        "default": "#FF5500",
+        "label": "Gush Orange"
+      },
+      {
+        "type": "color",
+        "id": "gush_fuschia",
+        "default": "#FF42EF",
+        "label": "Gush Fuschia"
+      },
+      {
+        "type": "color",
+        "id": "gush_green",
+        "default": "#00FF00",
+        "label": "Gush Green"
+      },
+      {
+        "type": "color",
+        "id": "gush_yellow",
+        "default": "#FFC900",
+        "label": "Gush Yellow"
       },
       {
         "type": "header",
@@ -83,6 +107,42 @@
         "id": "gradient_background_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+      },
+      {
+        "type": "color",
+        "id": "secondary_1",
+        "default": "#F9F4F0",
+        "label": "Secondary 1"
+      },
+      {
+        "type": "color",
+        "id": "secondary_2",
+        "default": "#EAE4DF",
+        "label": "Secondary 2"
+      },
+      {
+        "type": "color",
+        "id": "secondary_3",
+        "default": "#E1D5C6",
+        "label": "Secondary 3"
+      },
+      {
+        "type": "color",
+        "id": "secondary_4",
+        "default": "#B6AC9E",
+        "label": "Secondary 4"
+      },
+      {
+        "type": "color",
+        "id": "secondary_5",
+        "default": "#796E62",
+        "label": "Secondary 5"
+      },
+      {
+        "type": "color",
+        "id": "secondary_6",
+        "default": "#302112",
+        "label": "Secondary 6"
       }
     ]
   },
