@@ -17,16 +17,16 @@
 
 .rte > p:first-child {
   padding-top: 0;
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .multicolumn-card__info .rte p {
   font-family: 'GTAmerica';
   font-style: normal;
-  font-weight: 300;
-  line-height: 130%;
-  letter-spacing: -0.0115em;
-  color: #666666;
+  font-weight: 300 ;
+  font-size: 20px  ;
+  line-height: 160% ;
+  letter-spacing: -0.02em;
 }
 
 .multicolumn-card__info > p:nth-child(1) {
@@ -109,6 +109,7 @@ a.product-image-circle img {
 	
 	.multicolumn-card__info > .rte p:nth-child(2) {
 		font-size: 12px;
+		font-weight: 400;
 	}
 }
 
@@ -191,14 +192,19 @@ a.product-image-circle img {
     width: 100%;
   }
 
+	/* .multicolumn-list .gush-selling-paints img {
+		width: 190px;
+		height: 190px;
+	} */
+
   .multicolumn-list__item {
     margin: 0 0 var(--grid-mobile-vertical-spacing);
     padding: 0;
   }
 
   .multicolumn-list:not(.slider) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0;
+    padding-right:0;
   }
 }
 

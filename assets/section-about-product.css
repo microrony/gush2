@@ -73,7 +73,8 @@
   .about-product__icon-text {
     margin: 0;
     width: 74%;
-    padding: 16px 0;
+		padding-top: 16px;
+    padding-bottom: 30px;
     text-align: center;
   }
   .about-product__icon-text p {

@@ -1591,7 +1591,7 @@ button.shopify-payment-button__button--unbranded {
   /* transform: scale(1.02); */
 }
 
-.cta-button.cta-button__orange:hover {
+.cta-button.cta-button__orange:hover, .cta-button.cta-button__fuschia:hover {
   transform: scale(1.02);
 }
 
@@ -1604,8 +1604,17 @@ button.shopify-payment-button__button--unbranded {
   fill: rgba(var(--color-gush-fuschia));
 }
 
-.cta-button.cta-button__primary {
+.cta-button.cta-button__fuschia svg,
+.cta-button.cta-button__fuschia svg * {
+  fill: #fff;
+}
+
+.cta-button.cta-button__fuschia {
   background-color: rgba(var(--color-gush-fuschia));
+}
+
+.cta-button.cta-button__orange {
+  background-color: rgba(var(--color-gush-orange));
 }
 
 .cta-button.cta-button__orange {

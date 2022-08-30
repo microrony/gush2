@@ -6,17 +6,17 @@
   }
 {%- endstyle -%}
 <section class="paint-product isolate section-{{ section.id }}-padding section section-primary section-wrapper">
-    <div class="paint-product__main page-width">
+    <div class="paint-product__main gush-page-width">
         <div class="paint-product__heading">
-            <h2>{{section.settings.heading}}</h2>
+            <h2 class="gush-font-h3">{{section.settings.heading}}</h2>
         </div>
         <div class="paint-product__card-wrapper">
         <div class="paint-product__card card-section">
             <div class="card-section__heading">
-                <h3>{{section.settings.heading1}} <a href="#">{% render 'arrow-dotted-black' %}</a></h3>
+                <h3 class="gush-font-h1">{{section.settings.heading1}} <a href="#">{% render 'arrow-dotted-black' %}</a></h3>
             </div>
             <div class="paint-product__card-content">
-            <div class="card-section__para">
+            <div class="card-section__para gush-font-p1">
              {{section.settings.para}}
             </div>
             <div class="card-section__image">
@@ -26,7 +26,7 @@
         </div>
         <div class="paint-product__card card-section">
             <div class="card-section__heading">
-                <h3>{{section.settings.heading2}} <a href="#">{% render 'arrow-dotted-black' %}</a></h3>
+                <h3 class="gush-font-h1">{{section.settings.heading2}} <a href="#">{% render 'arrow-dotted-black' %}</a></h3>
             </div>
             <div class="paint-product__card-content">
             <div class="card-section__para">

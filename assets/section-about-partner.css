@@ -4,6 +4,7 @@
 .about-partner__logos {
     display: flex;
     justify-content: space-around;
+		gap: 1.6rem;
 }
 .about-partner__heading h2 {
     text-align: center;
@@ -12,16 +13,14 @@
     margin: 0 0 20px;
     font-weight: 400;
 }
-.about-partner__padding{
-    padding:4%;
-}
+
 .about-partner__heading {
     margin-bottom: 4%;
 }
 
 @media screen and (max-width: 767px){
     .about-partner__logos-img img {
-        width: 90%;
+        width: 100%;
     }
     .about-partner__heading h2{
         font-size: 18px;

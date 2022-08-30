@@ -59,7 +59,7 @@ section.paint-product {
   display: block;
   position: absolute;
   top: 0;
-  background: #b4aca0;
+  background: #B6AC9E;
   z-index: 999;
 }
 .paint-product__card-content {
@@ -91,7 +91,7 @@ section.paint-product {
 
 @media screen and (max-width: 767px) {
   section.paint-product {
-    padding: 27px 20px;
+    padding: 0px;
   }
   .paint-product__card-wrapper {
     display: flex;
