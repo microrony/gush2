@@ -1609,6 +1609,10 @@ button.shopify-payment-button__button--unbranded {
   fill: #fff;
 }
 
+.cta-button.cta-button__primary {
+  background-color: rgba(var(--color-gush-fuschia));
+}
+
 .cta-button.cta-button__fuschia {
   background-color: rgba(var(--color-gush-fuschia));
 }
