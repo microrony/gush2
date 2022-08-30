@@ -11,7 +11,7 @@ background: {{ section.settings.color }};
 {%- endstyle -%}
 
 <section class="about-product isolate section-{{ section.id }}-padding">
-	<div class="about-product__main">
+	<div class="about-product__main gush-page-width">
 		<div class="about-product__heading-left">
 			<h2>{{section.settings.heading}}</h2>
 		</div>
@@ -19,22 +19,22 @@ background: {{ section.settings.color }};
 			<div class="about-product__icon">
 				<img src="{{section.settings.image1 | img_url: 'medium'}}" alt="Image">
 				<div class="about-product__icon-text">
-					<h3>{{section.settings.heading1}}</h3>
-					<p>{{section.settings.text1}}</p>
+					<h3 class="gush-font-h3">{{section.settings.heading1}}</h3>
+					<p class="gush-font-p1">{{section.settings.text1}}</p>
 				</div>
 			</div>
 			<div class="about-product__icon">
 				<img src="{{section.settings.image2 | img_url: 'medium'}}" alt="Image">
 				<div class="about-product__icon-text">
-					<h3>{{section.settings.heading2}}</h3>
-					<p>{{section.settings.text2}}</p>
+					<h3 class="gush-font-h3">{{section.settings.heading2}}</h3>
+					<p class="gush-font-p1">{{section.settings.text2}}</p>
 				</div>
 			</div>
 			<div class="about-product__icon">
 				<img src="{{section.settings.image3 | img_url: 'medium'}}" alt="Image">
 				<div class="about-product__icon-text">
-					<h3>{{section.settings.heading3}}</h3>
-					<p>{{section.settings.text3}}</p>
+					<h3 class="gush-font-h3">{{section.settings.heading3}}</h3>
+					<p class="gush-font-p1">{{section.settings.text3}}</p>
 				</div>
 			</div>
 		</div>
@@ -67,7 +67,7 @@ background: {{ section.settings.color }};
 "label": "t:sections.about-product.settings.heading1.label"
 },
 {
-"type": "text",
+"type": "textarea",
 "id": "text1",
 "label": "t:sections.about-product.settings.text1.label"
 },
@@ -82,7 +82,7 @@ background: {{ section.settings.color }};
 "label": "t:sections.about-product.settings.heading2.label"
 },
 {
-"type": "text",
+"type": "textarea",
 "id": "text2",
 "label": "t:sections.about-product.settings.text2.label"
 },
@@ -97,7 +97,7 @@ background: {{ section.settings.color }};
 "label": "t:sections.about-product.settings.heading3.label"
 },
 {
-"type": "text",
+"type": "textarea",
 "id": "text3",
 "label": "t:sections.about-product.settings.text3.label"
 },
