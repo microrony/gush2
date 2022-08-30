@@ -240,7 +240,7 @@ opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
 					{%- if block.settings.button_label_1 != blank -%}
 					<a{% if block.settings.button_link_1==blank %} role="link" aria-disabled="true" {% else %}
 						href="{{ block.settings.button_link_1 }}" {% endif %}
-						class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} gush-font-p2-16 button--primary{% endif %}">
+						class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} gush-font-p2 button--primary{% endif %}">
 						<span>{{ block.settings.button_label_1 | escape }}</span>{% render 'arrow-dotted' %}</a>
 						{%- endif -%}
 						{%- if block.settings.button_label_2 != blank -%}
