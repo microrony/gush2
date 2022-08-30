@@ -281,7 +281,7 @@ html.no-js .no-js-hidden {
 .gush-page-width {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 5rem 3rem;
+  padding: 5rem 3rem !important;
 }
 
 .page-width-desktop {
@@ -295,7 +295,7 @@ html.no-js .no-js-hidden {
   }
 
 	.gush-page-width {
-    padding: 10rem;
+    padding: 10rem !important;
   }
 
   .page-width--narrow {

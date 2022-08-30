@@ -8,7 +8,7 @@
 }
 
 section.paint-product {
-  padding: 100px 1rem;
+  padding: 100px 0;
 }
 .paint-product__heading h2 {
   font-size: 35px;
