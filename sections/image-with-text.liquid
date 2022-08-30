@@ -126,7 +126,7 @@
               <div class="image-with-text__text rte gush-font-p1 {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="cta-button{% if block.settings.button_style_secondary %} button--secondary{% else %} gush-font-teritary cta-button__orange{% endif %}" {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}{% render 'arrow-dotted' %}
                 </a>
               {%- endif -%}

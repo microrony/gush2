@@ -428,7 +428,7 @@ noscript .localization-selector.link {
 }
 
 .localization-selector option {
-  color: #000000;
+  color: rgba(var(--color-secondary-6));
 }
 
 .localization-selector+.disclosure__list-wrapper {
@@ -616,7 +616,7 @@ noscript .localization-selector.link {
 }
 
 .back_to_top__text {
-  color: #000;
+  color: rgba(var(--color-secondary-6));
   padding: 0;
   font-family: GTAmerica;
 }

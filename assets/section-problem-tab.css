@@ -103,11 +103,11 @@
 
 .the-problem-tab .how_it_harm {
 	margin-bottom: 33px;
-	color: #000;
+	color: rgba(var(--color-secondary-6));
 }
 
 .the-problem-tab .effects_of_exposure   {
-  color: #000;
+  color: rgba(var(--color-secondary-6));
 }
 
 .the-problem-tab .how_it_harm p:first-child,

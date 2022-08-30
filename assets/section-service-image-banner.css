@@ -17,12 +17,12 @@ h2.service-banner__heading.banner__heading span {
 .banner__buttons a{
     background: #FF5DED;
 }
-.banner__text.body span {font-size: 17px;line-height: 30px;color: #000; font-family: 'GTAmerica';}
+.banner__text.body span {font-size: 17px;line-height: 30px;color: rgba(var(--color-secondary-6)); font-family: 'GTAmerica';}
 .banner__buttons.banner__buttons--multiple a.button--primary {background: #FF5DED;}
 .banner__buttons.banner__buttons--multiple a.button--primary::before { border: none; }
 .banner__buttons.banner__buttons--multiple a.button--primary::after { border: none; }
 .banner__buttons.banner__buttons--multiple a.button--primary{color: #fff;}
-.banner__buttons.banner__buttons--multiple a.button--secondary {color: #000;}
+.banner__buttons.banner__buttons--multiple a.button--secondary {color: rgba(var(--color-secondary-6));}
 .banner__buttons.banner__buttons--multiple a.button{
   justify-content: start;
   font-family: 'GTAmerica';
@@ -54,7 +54,7 @@ h2.service-banner__heading.banner__heading span {
 @media screen and (max-width: 767px){
     h2.banner__heading span {
         font-size: 40px;
-        color: #000;
+        color: rgba(var(--color-secondary-6));
     }
     .banner__text.body span {
         font-size: 14px;
@@ -77,7 +77,7 @@ h2.service-banner__heading.banner__heading span {
   @media screen and (min-width: 768px) and (max-width:990px){
   	h2.banner__heading span {
         font-size: 46px;
-        color: #000;
+        color: rgba(var(--color-secondary-6));
     }
   }
 @media screen and (min-width:350px) {

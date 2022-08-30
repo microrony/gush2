@@ -350,7 +350,7 @@
   content: '';
   position: absolute;
   top: 0;
-  background: #000000;
+  background: rgba(var(--color-secondary-6));
   opacity: 0;
   z-index: 1;
   width: 100%;

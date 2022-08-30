@@ -1,7 +1,7 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 <style>
 	h2.banner__heading {
-		color: #000;
+		color: rgba(var(--color-secondary-6));
 	}
 
 	.banner--desktop-transparent .banner__box {
@@ -25,7 +25,7 @@
 	}
 
 	.banner__text span {
-		color: #000;
+		color: rgba(var(--color-secondary-6));
 	}
 
 	.banner__text {
@@ -49,7 +49,7 @@
 	}
 
 	.banner__buttons.banner__buttons--multiple a.button--secondary {
-		color: #000;
+		color: rgba(var(--color-secondary-6));
 	}
 
 	.banner__buttons.banner__buttons--multiple a.button {
@@ -94,7 +94,7 @@
 	@media screen and (max-width: 767px) {
 		h2.banner__heading.h0 span {
 			font-size: 64px;
-			color: #000;
+			color: rgba(var(--color-secondary-6));
 			line-height: 64px;
 		}
 
@@ -140,7 +140,7 @@
 	@media screen and (min-width: 768px) and (max-width:990px) {
 		h2.banner__heading.h0 span {
 			font-size: 72px;
-			color: #000;
+			color: rgba(var(--color-secondary-6));
 			line-height: 72px;
 		}
 	}
@@ -240,13 +240,13 @@ opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
 					{%- if block.settings.button_label_1 != blank -%}
 					<a{% if block.settings.button_link_1==blank %} role="link" aria-disabled="true" {% else %}
 						href="{{ block.settings.button_link_1 }}" {% endif %}
-						class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} gush-font-p2 button--primary{% endif %}">
+						class="cta-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} gush-font-teritary cta-button__primary{% endif %}">
 						<span>{{ block.settings.button_label_1 | escape }}</span>{% render 'arrow-dotted' %}</a>
 						{%- endif -%}
 						{%- if block.settings.button_label_2 != blank -%}
 						<a{% if block.settings.button_link_2==blank %} role="link" aria-disabled="true" {% else %}
 							href="{{ block.settings.button_link_2 }}" {% endif %}
-							class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">
+							class="cta-button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} gush-font-teritary cta-button__primary{% endif %}">
 							<span>{{ block.settings.button_label_2 | escape }}</span>{% render 'arrow-dotted-black' %}</a>
 							{%- endif -%}
 

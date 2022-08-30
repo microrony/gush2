@@ -373,3 +373,7 @@
     margin-left: 0;
   }
 }
+
+.img_with_txt_content .image-with-text__text {
+	margin-bottom: 2.5rem;
+}

@@ -51,8 +51,8 @@
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: -1.15%;
-  border: 0.5px solid rgba(0, 0, 0, 0.5);
-  color: black;
+  border: 0.5px solid rgba(var(--color-secondary-6), 0.5);
+  color: rgba(var(--color-secondary-6));
   cursor: pointer;
 }
 

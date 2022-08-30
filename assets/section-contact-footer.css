@@ -18,7 +18,7 @@
     font-size: 32px;
     line-height: 44px;
     width: 80%;
-    color: #000;
+    color: rgba(var(--color-secondary-6));
     margin-top: 5%;
     font-family: 'RecklessNeue';
     font-weight: 400;
@@ -45,7 +45,7 @@
 .footer-contact__form .contact__button button {
     background: transparent;
     border: 1px solid;
-    color: #000;
+    color: rgba(var(--color-secondary-6));
     justify-content: flex-start;
     position: relative;
     font-family: 'GTAmerica';

@@ -20,7 +20,7 @@ a.featured-about__btn-secondary.button.button--secondary {
   justify-content: flex-start;
   border: 1px solid #c4cdd5;
   background: transparent;
-  color: #000;
+  color: rgba(var(--color-secondary-6));
   font-family: GTAmerica;
 }
 

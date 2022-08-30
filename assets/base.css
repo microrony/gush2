@@ -358,7 +358,7 @@ body,
 .color-inverse,
 .color-accent-1,
 .color-accent-2 {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
 
@@ -552,15 +552,15 @@ h5,
 
 h6,
 .h6 {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground));
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
 }
 
 blockquote {
   font-style: italic;
-  color: rgba(var(--color-foreground), 0.75);
-  border-left: 0.2rem solid rgba(var(--color-foreground), 0.2);
+  color: rgba(var(--color-foreground));
+  border-left: 0.2rem solid rgba(var(--color-foreground));
   padding-left: 1rem;
 }
 
@@ -1562,6 +1562,13 @@ button.shopify-payment-button__button--unbranded {
 	position: relative;
 	border: none;
 	outline: none;
+	color: #fff;
+	text-decoration: none;
+	gap: 8.2rem;
+}
+
+.cta-button > * {
+  z-index: 1;
 }
 
 .cta-button:before {
@@ -1577,16 +1584,16 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .cta-button:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.02); */
 }
 
 .cta-button:hover * {
-  color: #000 !important;
+	color: rgba(var(--color-gush-fuschia)) !important;
 }
 
 .cta-button:hover svg,
 .cta-button:hover svg * {
-  fill: #000;
+  fill: rgba(var(--color-gush-fuschia));
 }
 
 .cta-button:hover:before {
@@ -1595,6 +1602,21 @@ button.shopify-payment-button__button--unbranded {
 
 .cta-button.cta-button__primary {
   background-color: rgba(var(--color-gush-fuschia));
+}
+
+.cta-button.cta-button__orange {
+  background-color: rgba(var(--color-gush-orange));
+}
+
+@media screen and (max-width: 767px) {
+  .cta-button {
+    width: 168px;
+    height: 40px;
+  }
+	.cta-button svg {
+		height: 16px;
+	}
+
 }
 
 /* Button - other */
@@ -3268,8 +3290,8 @@ h4,
 	}
 
 	.gush-font-teritary {
-		font-size: 9px; !important;
-		line-height: 1.5;
+		font-size: 9px !important;
+		line-height: 1.5 !important;
 	}
 
 /* check for flexbox gap in older Safari versions */
@@ -3384,3 +3406,7 @@ h4,
 	transform-origin: 0% 50%;
 	will-change: transform;
 } */
+
+body {
+	color: rgba(var(--color-secondary-6));
+}
