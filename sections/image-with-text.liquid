@@ -42,9 +42,15 @@
   @media screen and (max-width: 767px){
   .img_with_txt_content {
     width: 100%;
-    margin: 0;
+		margin: 0;
     text-align:center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 }
+
+
     .image-with-text__media{
     	min-height: 300px;
     }
@@ -55,7 +61,7 @@
     min-width: 168px;
     height: 40px;
 }
-.image-with-text__text.rte.body {margin: 2rem 0 1rem 0; }
+
 .rte>p:first-child{
   font-size: 14px;
 }
@@ -127,7 +133,7 @@
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
                 <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="cta-button{% if block.settings.button_style_secondary %} button--secondary{% else %} gush-font-teritary cta-button__orange{% endif %}" {{ block.shopify_attributes }}>
-                  {{ block.settings.button_label | escape }}{% render 'arrow-dotted' %}
+                  <span>{{ block.settings.button_label | escape }}</span>{% render 'arrow-dotted' %}
                 </a>
               {%- endif -%}
               

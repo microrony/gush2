@@ -1571,7 +1571,7 @@ button.shopify-payment-button__button--unbranded {
   z-index: 1;
 }
 
-.cta-button:before {
+.cta-button.cta-button__primary:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -1583,21 +1583,25 @@ button.shopify-payment-button__button--unbranded {
   transition: top ease 350ms;
 }
 
+.cta-button.cta-button__primary:hover:before {
+  top: 0;
+}
+
 .cta-button:hover {
   /* transform: scale(1.02); */
 }
 
-.cta-button:hover * {
+.cta-button.cta-button__orange:hover {
+  transform: scale(1.02);
+}
+
+.cta-button.cta-button__primary:hover * {
 	color: rgba(var(--color-gush-fuschia)) !important;
 }
 
-.cta-button:hover svg,
-.cta-button:hover svg * {
+.cta-button.cta-button__primary:hover svg,
+.cta-button.cta-button__primary:hover svg * {
   fill: rgba(var(--color-gush-fuschia));
-}
-
-.cta-button:hover:before {
-  top: 0;
 }
 
 .cta-button.cta-button__primary {
