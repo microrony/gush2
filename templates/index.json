@@ -279,7 +279,7 @@
       "settings": {
         "heading": "Our Mission",
         "image": "shopify:\/\/shop_images\/Group.png",
-        "content": "Gush makes advanced materials for the built environment. Beyond sprucing up your home, our products support your wellbeing and help the Earth too.  \n\nYour choices, however small, can drive purposeful change.",
+        "content": "Gush makes <span>innovative materials<\/span> for the built environment.\nBeyond sprucing up your home,\nour products support <span>your wellbeing<\/span> and help the Earth too.  \n\nWe believe your choices,\nhowever small, can drive\npurposeful change.",
         "btn-text-1": "Learn more",
         "link_first_btn": "#",
         "btn-text-2": "",
@@ -291,7 +291,7 @@
     "1651127831a7c71699": {
       "type": "footer-contact",
       "settings": {
-        "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada mi venenatis, semper quam eget.",
+        "heading": "Got a question?\nOur team’s here to help.",
         "content": "",
         "padding_top": 36,
         "padding_bottom": 36

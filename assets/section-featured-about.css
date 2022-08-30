@@ -45,6 +45,7 @@ a.featured-about__btn-secondary.button.button--secondary svg.icon.arrow-black {
 .featured-about__content p {
   line-height: 45.5px !important;
   margin: 1rem 0;
+	white-space: pre-line;
 }
 
 @media screen and (max-width: 767px) {

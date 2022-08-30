@@ -13,7 +13,7 @@
 .footer-contact__main-text {
     width: 50%;
 }
-.footer-contact__main-heading h2 {font-family: 'GTAmerica';}
+.footer-contact__main-heading h2 {font-family: 'GTAmerica'; white-space: pre-line;}
 .footer-contact__main-para p {
     font-size: 32px;
     line-height: 44px;
