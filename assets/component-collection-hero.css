@@ -1,5 +1,8 @@
+.collection-hero {
+	background-color: transparent;
+}
+
 .collection-tabs__gush {
-	padding-bottom: 50px;
 	border-bottom: 1px solid rgba(0,0, 0, 0.5) !important;
 }
 
@@ -11,6 +14,11 @@
 .collection-hero--with-image .collection-hero__inner {
   margin-bottom: 0;
   padding-bottom: 2rem;
+}
+
+.collection-hero__title {
+	margin-top: 90px;
+	margin-bottom: 25px;
 }
 
 @media screen and (min-width: 750px) {
@@ -40,11 +48,11 @@
     flex-direction: row;
     padding-bottom: 0;
   }
-}
 
-.collection-hero__title {
-	margin-top: 100px;
-	margin-bottom: 80px;
+	.collection-hero__title {
+		margin-top: 100px;
+		margin-bottom: 80px;
+	}
 }
 
 .collection-hero__title + .collection-hero__description {

@@ -24,8 +24,15 @@
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}
+			<div class="collection-tabs collection-tabs__gush">
+        {% for item in section.settings.collectionList.links %}
+        <div class="collection-tabs__name gush-font-p1">{{- item.title | escape -}}</div>
+       
+<!--         <div class="collection-tabs__name"></div> -->
+        {% endfor %}
+      </div>
       {%- endcomment -%}
-      
+
     </div>
 
     {%- if section.settings.show_collection_image and collection.image -%}
