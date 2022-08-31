@@ -47,7 +47,7 @@
 		<h2 class="gush-font-display">{{ section.settings.title }}</h2>
 		<a{% if section.settings.button_url==blank %} role="link" aria-disabled="true" {% else %}
 						href="{{ section.settings.button_url }}" {% endif %}
-						class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} gush-font-p2-16 button--primary{% endif %}">
+						class="cta-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} cta-button__fuschia gush-font-teritary{% endif %}">
 						<span>{{ section.settings.button_label | escape }}</span>{% render 'arrow-dotted' %}</a>
 					</div>
 		<div class="image">

@@ -1556,7 +1556,7 @@ button.shopify-payment-button__button--unbranded {
 	height: 64px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	overflow: hidden;
   transition: transform ease 350ms;
 	position: relative;
@@ -1564,7 +1564,7 @@ button.shopify-payment-button__button--unbranded {
 	outline: none;
 	color: #fff;
 	text-decoration: none;
-	gap: 10.6rem;
+	padding: 0 2rem;
 }
 
 .cta-button > * {
@@ -1629,6 +1629,7 @@ button.shopify-payment-button__button--unbranded {
   .cta-button {
     width: 168px;
     height: 40px;
+		padding: 0 1rem;
   }
 	.cta-button svg {
 		height: 16px;
