@@ -30,7 +30,7 @@ margin-top: 0 !important;
 			<div class="faq__main-content">
 				<div class="faq__categories">
 					{% for block in section.blocks %}
-					<div class="faq-category {{ custom_classes }}"
+					<div class="faq-category gush-font-teritary {{ custom_classes }}"
 						data-category-id="faq-category-{{  block.settings.category | downcase | replace: ' ', '-' }}">
 						{{ block.settings.category }}
 					</div>
