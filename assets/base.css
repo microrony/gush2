@@ -2903,11 +2903,6 @@ details[open] > .header__menu-item .icon-caret {
     var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
     rgba(var(--color-shadow), var(--popup-shadow-opacity));
 }
-
-.header__submenu.list-menu {
-  padding: 2.4rem 0;
-}
-
 .header__submenu .header__submenu {
   background-color: rgba(var(--color-foreground), 0.03);
   padding: 0.5rem 0;
@@ -3246,6 +3241,11 @@ h4,
   letter-spacing: 0;
 }
 
+.header__submenu.list-menu {
+	padding: 0;
+	border-radius: 6px;
+}
+
 
 @media screen and (max-width: 767px) {
   .gush-h1,
@@ -3311,6 +3311,8 @@ h4,
 		font-size: 9px !important;
 		line-height: 1.5 !important;
 	}
+
+}
 
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
@@ -3424,7 +3426,3 @@ h4,
 	transform-origin: 0% 50%;
 	will-change: transform;
 } */
-
-body {
-	color: rgba(var(--color-secondary-6));
-}
