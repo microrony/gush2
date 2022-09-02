@@ -137,6 +137,33 @@
             "question": "Is it advisable to strip the old paint every time I want to repaint?",
             "answer": "We do not recommend stripping off old paint as this would worsen the wall condition. Your best bet is to get a professional plastering service to repair the wall before you repaint it."
           }
+        },
+        "9bc02023-9146-4f86-b780-ce9b819ea037": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "Paint Application",
+            "question": "I am looking to paint on wood surfaces. Which paint would be a better choice – Air-Purifying or Washable paint?",
+            "answer": "\"Currently, our paints are not ideal for wood surfaces as they are water-based with matte-finishing. When applied to wood, it might cause scratches, dirt marks or peel over time. We recommend using other oil or latex-based paints instead.\nIf you still wish to use our paints on wood, make sure to apply a layer of sealer first to get the best result.\""
+          }
+        },
+        "4c3fbab4-1f54-432b-a53f-51bfcd6b681a": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paint",
+            "type": "Paint Application",
+            "question": "Can I use a sealer from another brand together with Gush Air-purifying paint?",
+            "answer": "Yes, that’s possible. But our interior paints still give the best results when paired with the Gush sealer."
+          }
+        },
+        "70f1abd3-13db-4f9f-a450-eaa37fec547e": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "Paint Application",
+            "question": "What material surface can Gush Air-purifying interior paint be applied to?",
+            "answer": "\"Wood\nApplication on wooden surfaces is possible, but not recommended. Our paint is unable to replicate the natural beauty of wooden surfaces due to its matte-texture finish. If you wish to paint gush on wood, do apply a layer of sealer first.\n\nPlastic\nApplication on plastic surfaces is possible, but not recommended. If you wish to paint gush on plastic, apply a layer of sealer first to help the paint coat bind to the surface better.\n\nMetal\nGush interior paints should not be applied to metal surfaces as it is a water-based, latex paint that may cause the metal surface to rust.\n\nExterior walls\nIt should not be used as a replacement for exterior paint. As Gush interior paints are specifically formulated for interior environments, they do not perform the same in outdoor conditions.\""
+          }
         }
       },
       "block_order": [
@@ -154,7 +181,10 @@
         "8ed8eca1-e100-4fb3-b42b-3bb9cce77834",
         "580beeb2-dbbd-414f-8b01-2f08c818766c",
         "6f43b6d7-bdde-4cfe-98ab-e5b2363d8375",
-        "1ccf06f9-a4fb-4dc4-8a30-224b4d7324c9"
+        "1ccf06f9-a4fb-4dc4-8a30-224b4d7324c9",
+        "9bc02023-9146-4f86-b780-ce9b819ea037",
+        "4c3fbab4-1f54-432b-a53f-51bfcd6b681a",
+        "70f1abd3-13db-4f9f-a450-eaa37fec547e"
       ],
       "settings": {
         "heading": "FAQ",
