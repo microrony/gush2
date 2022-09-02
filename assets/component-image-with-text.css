@@ -325,6 +325,16 @@ div.image-with-text {
   z-index: 2;
 }
 
+
+@media screen and (max-width: 750px) {
+  .image-with-text:not(.collapse-corners, .image-with-text--overlap)
+  .image-with-text__media-item {
+  height: 350px;
+	z-index: 0;
+	margin-top: -110px;
+}
+}
+
 .image-with-text__content {
   border-radius: var(--text-boxes-radius);
   box-shadow: var(--text-boxes-shadow-horizontal-offset)
@@ -380,4 +390,5 @@ div.image-with-text {
 
 .img_with_txt_content .image-with-text__text {
 	margin: 2.5rem 0;
+	max-width: 430px;
 }

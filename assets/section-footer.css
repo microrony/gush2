@@ -221,6 +221,7 @@ li.list-social__item a {
   font-size: calc(var(--font-heading-scale) * 1.6rem);
 	z-index: 2;
 	position: relative;
+	text-align: left;
 }
 
 @media screen and (min-width: 990px) {
