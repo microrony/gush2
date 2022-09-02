@@ -37,7 +37,7 @@
      var swiper = new Swiper(".mySwiper", {
         {% comment %} slidesPerView: 3, {% endcomment %}
         spaceBetween: 15,
-        slidesPerView: 2.5,
+				slidesPerView: 2,
         centeredSlides: true,
         loop: true,
         centerInsufficientSlides: true,
@@ -50,21 +50,30 @@
             641: {
               spaceBetween: 35
             },
+						// when window width is >= 750px
+						750: {
+							slidesPerView: 2.5
+            },
             // when window width is >= 640px
             991: {
-              spaceBetween: 45
+              spaceBetween: 45,
+							slidesPerView: 2.5
+  
             },
             // when window width is >= 1281px
             1281: {
-                spaceBetween: 55
+                spaceBetween: 55,
+								slidesPerView: 2.5
             },
             // when window width is >= 1440
             1441: {
-              spaceBetween: 65
+              spaceBetween: 65,
+							slidesPerView: 2.5
             },
             // when window width is >= 1440
             1981: {
-              spaceBetween: 90
+              spaceBetween: 90,
+							slidesPerView: 2.5
             }
         },
         pagination: {
