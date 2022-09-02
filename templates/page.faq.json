@@ -200,24 +200,6 @@
             "question": "Is there a special application method to use Gush Interior paints?",
             "answer": "Nope! Even with its air-purifying features, both Air-purifying and Washable paints can be applied like every other paint on the market. We recommend applying two coats of paint for the best results."
           }
-        },
-        "8a70db75-4783-4588-97c6-477a067a0b2d": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Window Films",
-            "type": "General Questions",
-            "question": "How much are Gush window films?",
-            "answer": "Gush window films are currently selling at $14\/sqft. \n\nYou can reach out to our sales representatives here for more information."
-          }
-        },
-        "ae77f209-e6fd-4d6c-b57a-738c28a5319c": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Window Films",
-            "type": "General Questions",
-            "question": "Will there be additional charges for installation?",
-            "answer": "Installation is included in the price of the window films. However, there will be additional fees for: \n- windows with invisible grilles\n- removal of installed old window films\n- transport"
-          }
         }
       },
       "block_order": [
@@ -242,9 +224,7 @@
         "01062041-7443-4323-88b8-a61d0143d9c9",
         "0a6cf9a9-9f30-4a26-b428-ae07e190569c",
         "97779afe-e007-4a6e-82da-c8bc6640cc4a",
-        "86038881-83c8-4e03-931a-3428bae6626a",
-        "8a70db75-4783-4588-97c6-477a067a0b2d",
-        "ae77f209-e6fd-4d6c-b57a-738c28a5319c"
+        "86038881-83c8-4e03-931a-3428bae6626a"
       ],
       "settings": {
         "heading": "FAQ",
