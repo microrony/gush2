@@ -106,7 +106,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Health & Safety",
+            "type": "Health and Safety",
             "question": "Is it safe to stay in the house while the painting is done?",
             "answer": "Yes, that’s the beauty of using our odourless, toxic-free paints. It’s safe for pregnant women and children to stay as well. You can stay in another room while the painting is done, so the wet walls don’t get touched."
           }
@@ -115,7 +115,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Health & Safety",
+            "type": "Health and Safety",
             "question": "Is the paint safe for people with asthma or respiratory illnesses?",
             "answer": "Yes, Gush paints are odourless and do not emit any toxic fumes."
           }
@@ -124,7 +124,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Paint Applications",
+            "type": "Paint Application",
             "question": "Do I have to use a white base first if I am painting a dark-coloured wall with a lighter colour?",
             "answer": "We recommend applying a layer of sealer instead. Besides already being white in colour, the sealer helps your paint coat bind to the wall better and prevents cracking and peeling."
           }
