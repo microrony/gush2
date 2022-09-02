@@ -173,6 +173,51 @@
             "question": "Do I mix need to mix water with my paints?",
             "answer": "No, you don’t need to. Adding too much water will reduce our paints’ air-purifying effectiveness and finish. Give the paint a thorough stir before use so that the pigments are evenly mixed, and you’re good to go.\nIf the paint is too sticky for you, you can dilute it with water, but just a little. The amount of water you add should not exceed 15% of the overall paint solution as this would severely reduce the paints’ efficacy. Only use clean water so the paint doesn’t get contaminated."
           }
+        },
+        "0a6cf9a9-9f30-4a26-b428-ae07e190569c": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "Paint Application",
+            "question": "Do I need to use a sealer?",
+            "answer": "Using a sealer neutralises existing alkalis on the wall which typically causes paint to peel, discolour or crack. It also seals off excess moisture trapped within the wall, preventing mold and efflorescence growth. Sealer also makes the paint adhere to the wall better.\n\nWe always recommend using sealer, especially if you face any of these situations:\n\n- Wall-related issues like stubborn marks due to stains, grease or patched-up areas\n- If the wall was previously painted with oil-based, emulsion paint\n- You’re changing the wall from a dark to light colour \n- This is the first paint layer being applied to a new wall \n- It has been five years since the wall was last painted"
+          }
+        },
+        "97779afe-e007-4a6e-82da-c8bc6640cc4a": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "Paint Application",
+            "question": "Do you have a guide for painting with Air-purifying paints?",
+            "answer": "Yes we do. Check out this instructional video by our friend, Inch Chua. We hope you have as much fun painting your walls as she did!"
+          }
+        },
+        "86038881-83c8-4e03-931a-3428bae6626a": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "Paint Application",
+            "question": "Is there a special application method to use Gush Interior paints?",
+            "answer": "Nope! Even with its air-purifying features, both Air-purifying and Washable paints can be applied like every other paint on the market. We recommend applying two coats of paint for the best results."
+          }
+        },
+        "8a70db75-4783-4588-97c6-477a067a0b2d": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Window Films",
+            "type": "General Questions",
+            "question": "How much are Gush window films?",
+            "answer": "Gush window films are currently selling at $14\/sqft. \n\nYou can reach out to our sales representatives here for more information."
+          }
+        },
+        "ae77f209-e6fd-4d6c-b57a-738c28a5319c": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Window Films",
+            "type": "General Questions",
+            "question": "Will there be additional charges for installation?",
+            "answer": "Installation is included in the price of the window films. However, there will be additional fees for: \n- windows with invisible grilles\n- removal of installed old window films\n- transport"
+          }
         }
       },
       "block_order": [
@@ -194,7 +239,12 @@
         "9bc02023-9146-4f86-b780-ce9b819ea037",
         "4c3fbab4-1f54-432b-a53f-51bfcd6b681a",
         "70f1abd3-13db-4f9f-a450-eaa37fec547e",
-        "01062041-7443-4323-88b8-a61d0143d9c9"
+        "01062041-7443-4323-88b8-a61d0143d9c9",
+        "0a6cf9a9-9f30-4a26-b428-ae07e190569c",
+        "97779afe-e007-4a6e-82da-c8bc6640cc4a",
+        "86038881-83c8-4e03-931a-3428bae6626a",
+        "8a70db75-4783-4588-97c6-477a067a0b2d",
+        "ae77f209-e6fd-4d6c-b57a-738c28a5319c"
       ],
       "settings": {
         "heading": "FAQ",
