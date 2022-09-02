@@ -47,6 +47,87 @@
             "question": "Where can I see your colours in person?",
             "answer": "\"You may visit us at our office at 2 Gambas Crescent, #01-35, Nordcom II, Singapore 757044, with an appointment. Please call us at 6692 9000 to arrange an appointment. \n\nVisiting hours: \nMon – Fri, except for P.Hs. \n9am - 12pm, 1pm – 5pm\n\""
           }
+        },
+        "f2cd53d9-ee3c-4fa4-aa5d-cc48b0259682": {
+          "type": "faqContent",
+          "settings": {
+            "category": "About Gush",
+            "type": "Contact Us",
+            "question": "How can I contact Gush?",
+            "answer": "You can send us an email at hello@gowithgush.com, or contact us via Whatsapp by using the ‘Chat’ button on our website."
+          }
+        },
+        "a558ef9f-633d-41cf-9482-302e4f20602c": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "General Questions",
+            "question": "What’s the difference between Air-purifying and Washable interior paint?",
+            "answer": "Both paints remove pollutants and have anti-molding capabilities, but the paint types each have their own unique feature.\n\nGush Air-purifying paint has a humidity control feature that maintains a healthy moisture level in your room.\n\nGush Washable paint lets you easily wipe off grime from your surfaces without damaging the paint coat. \n\nWe recommend using the Air-purifying interior paint for ceilings or areas with a lot of moisture, and the Washable option for walls and areas prone to dirt, stains and marks."
+          }
+        },
+        "da318201-0800-45d6-be0d-167d4776d0ae": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "General Questions",
+            "question": "Is your full colour range available on your website?",
+            "answer": "No, our website only features 65 curated colours. If you’re looking for a colour that is not on our website, please reach out to us at hello@gowithgush.com."
+          }
+        },
+        "d2ba89e7-e683-43fb-ae90-f50397468749": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "General Questions",
+            "question": "I've just got my walls painted. The colour appears to be darker in comparison to what's shown on your website.",
+            "answer": "While we’ve done our best to represent our colours accurately online, colour presentations can vary depending on the monitor and screen settings. To help in your decision-making, we recommend ordering our sample tubs to confirm your colour choice before proceeding with your paint order. This not only shows you the exact colour, but helps you visualise how it’s going to look on your wall."
+          }
+        },
+        "b6274ff2-6552-48d0-9bde-19979ccd3ccb": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "General Questions",
+            "question": "How much paint should I get?",
+            "answer": "\"You’ll get a good gauge using our handy Paint Calculator here*.\nBut as a general estimate, 1 litre of gush paint gets you 2 coats for a 5-6 m² surface area, approximately. \n*Kindly note that the calculated quantity may differ for your home, based on how many walls you’ll be painting.\""
+          }
+        },
+        "fd0c4478-00e0-4f20-86a7-4b090b7b3edc": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paint",
+            "type": "General Questions",
+            "question": "Do you provide colour books?",
+            "answer": "We don’t have a colour book for our online range, but you can get the sample tubs of the colours you’re interested in. You can do so by selecting ‘Sample’ under the product listing."
+          }
+        },
+        "8ed8eca1-e100-4fb3-b42b-3bb9cce77834": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "Health & Safety",
+            "question": "Is it safe to stay in the house while the painting is done?",
+            "answer": "Yes, that’s the beauty of using our odourless, toxic-free paints. It’s safe for pregnant women and children to stay as well. You can stay in another room while the painting is done, so the wet walls don’t get touched."
+          }
+        },
+        "580beeb2-dbbd-414f-8b01-2f08c818766c": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "Health & Safety",
+            "question": "Is the paint safe for people with asthma or respiratory illnesses?",
+            "answer": "Yes, Gush paints are odourless and do not emit any toxic fumes."
+          }
+        },
+        "6f43b6d7-bdde-4cfe-98ab-e5b2363d8375": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "Paint Applications",
+            "question": "Do I have to use a white base first if I am painting a dark-coloured wall with a lighter colour?",
+            "answer": "We recommend applying a layer of sealer instead. Besides already being white in colour, the sealer helps your paint coat bind to the wall better and prevents cracking and peeling."
+          }
         }
       },
       "block_order": [
@@ -54,7 +135,16 @@
         "42ab7d99-436b-4228-84d0-4631da7782b1",
         "b9e1ac44-ee2f-4d73-af28-b2b256fb131c",
         "feed0eec-5651-4931-a642-48af6d6a47c0",
-        "b417ac38-d91e-4ba0-92a2-5c0945e20374"
+        "b417ac38-d91e-4ba0-92a2-5c0945e20374",
+        "f2cd53d9-ee3c-4fa4-aa5d-cc48b0259682",
+        "a558ef9f-633d-41cf-9482-302e4f20602c",
+        "da318201-0800-45d6-be0d-167d4776d0ae",
+        "d2ba89e7-e683-43fb-ae90-f50397468749",
+        "b6274ff2-6552-48d0-9bde-19979ccd3ccb",
+        "fd0c4478-00e0-4f20-86a7-4b090b7b3edc",
+        "8ed8eca1-e100-4fb3-b42b-3bb9cce77834",
+        "580beeb2-dbbd-414f-8b01-2f08c818766c",
+        "6f43b6d7-bdde-4cfe-98ab-e5b2363d8375"
       ],
       "settings": {
         "heading": "FAQ",
