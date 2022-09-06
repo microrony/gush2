@@ -30,7 +30,7 @@
   h3.card__heading.h5 a {text-decoration: none;}
   .collection-tabs {display: flex;justify-content: space-between;border-bottom: 1px solid;}
   .collection-tabs__name {margin-bottom: 5%;}
-  .collectionBannerInner {display: flex;position: relative;width: 100%; min-height: 15rem; margin: 50px 0;}
+  .collectionBannerInner {display: flex;position: relative;width: 100%; min-height: 15rem;}
   .collectionBannerInner__content {display: flex;flex-direction: column;justify-content: center;padding: 5% 5%;}
   .collectionBannerInner__content svg {position: absolute;right: 3%;height: 19%;}
   .collectionBannerInner__content h2 {margin: 0; font-size: 2.26em;}
@@ -46,7 +46,7 @@
     {{ 'component-facets.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
     
-    <div class="page-width" id="main-collection-filters" data-id="{{ section.id }}">
+    <div class="gush-page-width" id="main-collection-filters" data-id="{{ section.id }}">
       <div class="collection-tabs collection-tabs__gush">
         {% for item in section.settings.collectionList.links %}
         <div class="collection-tabs__name gush-font-p1">{{- item.title | escape -}}</div>
@@ -62,7 +62,7 @@
   <div id="ProductGridContainer">
     {%- paginate collection.products by section.settings.products_per_page -%}
       {%- if collection.products.size == 0 -%}
-        <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
+        <div class="collection collection--empty gush-page-width" id="product-grid" data-id="{{ section.id }}">
           <div class="loading-overlay gradient"></div>
           <div class="title-wrapper center">
             <h2 class="title title--primary">
@@ -72,7 +72,7 @@
           </div>
         </div>
       {%- else -%}
-        <div class="collection page-width">
+        <div class="collection gush-page-width">
           <div class="loading-overlay gradient"></div>
   
           <ul id="product-grid" data-id="{{ section.id }}" class="
@@ -107,7 +107,8 @@
                   show_secondary_image: section.settings.show_secondary_image,
                   show_vendor: section.settings.show_vendor,
                   show_rating: section.settings.show_rating,
-                  lazy_load: lazy_load
+                  lazy_load: lazy_load,
+									styles: "collection-page_product"
                 %}
               </li>
               {% endif %}

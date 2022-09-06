@@ -25,6 +25,11 @@
 	.card_des span svg {
 		height: 12px;
   }
+
+	#main-collection-filters.gush-page-width, .collection.gush-page-width {
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+	}
 }
 
 @media screen and (max-width: 989px) {
@@ -49,6 +54,14 @@
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
+	#main-collection-filters.gush-page-width {
+		padding: 0px 10rem !important;
+	}
+
+	.collection.gush-page-width {
+		padding: 50px 10rem !important;
+	}
 }
 
 .collection.loading .loading-overlay {

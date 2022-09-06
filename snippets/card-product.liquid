@@ -97,7 +97,7 @@
         </div>
       </div>
       <div class="card__content">
-        <div class="card__information">
+        <div class="card__information {{ styles }}">
           <h3 class="card__heading gush-font-h4{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}">
             <a href="{{ card_product.url }}" class="full-unstyled-link">
               {{ card_product.title | escape }}

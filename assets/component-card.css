@@ -105,6 +105,11 @@
     padding-bottom: 1.7rem;
     padding-top: 1.7rem;
   }
+
+	.card__information.collection-page_product {
+    padding-bottom: 0px;
+    padding-top: 1.7rem;
+  }
 }
 
 .card__badge {
