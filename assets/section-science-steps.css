@@ -1,8 +1,9 @@
 .science-steps > h2 {
-	font-size: 64px !important;
 	border-top: 1px solid #E1D5C6;
-	padding-top: 3rem;
 	color: #302112;
+	padding-top: 3rem;
+	margin: 0;
+	padding-bottom: 5rem;
 }
 
 .science-steps > h3 {
@@ -27,9 +28,9 @@
  margin-left: 80px;
 }
 
-.science-steps .the-problem-block .content > p{
-	margin-right: 80px;
+.science-steps .the-problem-block .content > p {
 	white-space: pre-line;
+	max-width: 490px;
  }
 
 .science-steps .the-problem-block .content p{
@@ -142,4 +143,35 @@
 
 .science-steps .accreditation-block ul {
 	max-width: 330px;
+}
+
+@media screen and (max-width: 749px) {
+	.science-steps > h2 {
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+
+	.science-steps .the-problem-block {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+
+	.science-steps .the-problem-block.last-block {
+		margin-top: 20px;
+	 }
+
+	.science-steps .the-problem-block .image {
+		order: 1;
+	}
+
+	.science-steps .the-problem-block .content {
+		order: 2;
+		padding: 0;
+		margin-top: 20px;
+	}
+
+
+.science-steps .the-problem-block.last-block .content{
+	margin-left: 0px;
+ }
+ 
 }
