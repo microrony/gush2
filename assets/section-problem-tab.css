@@ -30,10 +30,16 @@
   width: 100%;
   text-align: center;
 	border-top: 1px solid #EAE4DF;
+	color: rgb(var(--color-secondary-3));
 }
 
 .the-problem-tab .tabs .tab.active {
   border-top: 2px solid #ff42ef;
+}
+
+.the-problem-tab .tabs .tab.active div {
+	color: rgb(var(--color-gush-fuschia));
+	font-weight: 500 !important;
 }
 
 .the-problem-tab .name_formula {
@@ -55,8 +61,7 @@
 }
 
 .the-problem-tab .image_formula {
-  position: absolute;
-  right: 33%;
+  transform: translateY(-1.5rem);
 }
 
 .the-problem-tab .image_structure {
