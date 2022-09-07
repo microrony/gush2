@@ -1,0 +1,52 @@
+{% comment %}
+    Renders a mobile dropdown
+
+    Accepts:
+    - blocks: Section blocks
+
+    Usage:
+    {% render 'mobile-dropdown', blocks: section.blocks %}
+{% endcomment %}
+
+{% style %}
+.mobile-dropdown {
+	margin-bottom: 2.5rem;
+}
+
+.mobile-dropdown summary {
+  width: 100%;
+	border: 1px solid rgba(var(--color-secondary-5), 0.5);
+	border-radius: 4px;
+	padding: 13px 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: rgb(var(--color-secondary-5));
+}
+
+.mobile-dropdown .options {
+  width: 100%;
+	border-radius: 4px;
+	padding: 13px 1rem;
+	color: rgb(var(--color-secondary-5));
+	border: 1px solid rgba(var(--color-secondary-3), 0.5);
+  margin-top: 1rem;
+}
+
+.mobile-dropdown .option {
+	padding: 4px 0rem;
+}
+{% endstyle %}
+
+<details class="mobile-dropdown">
+	<summary><span class="gush-font-p2">{{blocks[0].settings.chemical_name}}</span> {% render 'drop-down-icon' %}</summary>
+	<div class="options">
+	{% for block in blocks %}
+			<div class="option {% if forloop.first -%}
+			active
+	 {%- endif -%}" data-option-target="#{{block.settings.chemical_name}}"{{ block.shopify_attributes }}>
+				<div class="gush-font-p1">{{block.settings.chemical_name}}</div>
+			</div>
+	{% endfor %}
+</div>
+	</details>

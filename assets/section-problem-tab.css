@@ -20,7 +20,7 @@
 }
 
 .the-problem-tab .tabs {
-  display: flex;
+  display: none;
   justify-content: space-around;
 }
 
@@ -117,4 +117,14 @@
 .the-problem-tab .how_it_harm p:first-child,
 .the-problem-tab .effects_of_exposure p:first-child  {
   margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 750px) {
+	.the-problem-tab details {
+	 display: none;
+	}
+  .the-problem-tab .tabs {
+		display: flex;
+	}
 }

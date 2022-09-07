@@ -1,6 +1,8 @@
 {{ 'section-problem-tab.css' | asset_url | stylesheet_tag }}
 
 <div class="the-problem-tab gush-page-width">
+	{% render 'mobile-dropdown', blocks: section.blocks %}
+
 	<div class="tab-contents">
 		{% for block in section.blocks %}
 				<div class="tab-content {% if forloop.first -%}
@@ -56,8 +58,25 @@
 </div>
 
 {% javascript %}
-const tabs = document.querySelectorAll('.the-problem-tab .tab')
-const tabContents = document.querySelectorAll('.the-problem-tab .tab-content')
+const tabs = document.querySelectorAll('.the-problem-tab .tab');
+const dropDownOptions = document.querySelectorAll('.the-problem-tab .option');
+const tabContents = document.querySelectorAll('.the-problem-tab .tab-content');
+
+dropDownOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    const target = document.querySelector(option.dataset.optionTarget);
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active');
+    });
+    dropDownOptions.forEach(option => {
+      option.classList.remove('active');
+    });
+    option.classList.add('active');
+    target.classList.add('active');
+		document.querySelector('.the-problem-tab details').removeAttribute("open");
+		document.querySelector('.the-problem-tab summary span').textContent = option.textContent;
+  })
+})
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
