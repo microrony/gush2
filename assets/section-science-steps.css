@@ -3,13 +3,14 @@
 	color: #302112;
 	padding-top: 3rem;
 	margin: 0;
-	padding-bottom: 5rem;
+	padding-bottom: 6rem;
 }
 
 .science-steps > h3 {
 	max-width: 652px;
-	line-height: 110% !important;
 	color: #302112;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -153,8 +154,8 @@
 
 @media screen and (max-width: 749px) {
 	.science-steps > h2 {
-		padding-top: 2.5rem;
-		padding-bottom: 2.5rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 	}
 
 	.science-steps .the-problem-block {
