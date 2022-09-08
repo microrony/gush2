@@ -43,7 +43,7 @@
         "118d9143-8dde-439a-a97c-478585eae289": {
           "type": "chemical",
           "settings": {
-            "chemical_name": "Benzene",
+            "title": "Benzene",
             "chemical_formula": "shopify:\/\/shop_images\/Group_1658.png",
             "chemical_structure": "shopify:\/\/shop_images\/Group_1842.png",
             "odor": "Sweet, gasoline-like",
@@ -56,7 +56,7 @@
         "c11c89d9-f322-4ca2-93a5-4844a3362067": {
           "type": "chemical",
           "settings": {
-            "chemical_name": "Formaldehyde",
+            "title": "Formaldehyde",
             "chemical_formula": "shopify:\/\/shop_images\/Group_1658.png",
             "chemical_structure": "shopify:\/\/shop_images\/Group_1842.png",
             "odor": "Pungent, vinegar-like",
@@ -118,7 +118,7 @@
         "51a49eb1-0bb1-466b-946c-494db2112fa2": {
           "type": "block",
           "settings": {
-            "tab_title": "Gush Proprietary Catalyst (GPC)",
+            "title": "Gush Proprietary Catalyst (GPC)",
             "first_title": "VOCs don’t stand a chance",
             "first_description": "Our GPC’s catalytic agents have an activation energy of more than 120 kcal\/mol. This cuts the organic chemical bonds in most VOCs.",
             "first_image": "shopify:\/\/shop_images\/Group_1825.png",
@@ -130,7 +130,7 @@
         "2fb4a410-85e0-49ee-b377-278638c5f9ca": {
           "type": "block",
           "settings": {
-            "tab_title": "Gush Absorption Element (GAE)",
+            "title": "Gush Absorption Element (GAE)",
             "first_title": "Stops microbial growth",
             "first_description": "The GAE’s absorption capacity of 19.64 g\/m² deprives mold spores and bacteria of water to sprout on the painted surface.",
             "first_image": "shopify:\/\/shop_images\/Group_1982.png",

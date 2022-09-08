@@ -1,0 +1,33 @@
+.mobile-dropdown {
+	margin-bottom: 2.5rem;
+}
+
+.mobile-dropdown summary {
+  width: 100%;
+	border: 1px solid rgba(var(--color-secondary-5), 0.5);
+	border-radius: 4px;
+	padding: 13px 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: rgb(var(--color-secondary-5));
+}
+
+.mobile-dropdown .options {
+  width: 100%;
+	border-radius: 4px;
+	padding: 13px 1rem;
+	color: rgb(var(--color-secondary-5));
+	border: 1px solid rgba(var(--color-secondary-3), 0.5);
+  margin-top: 1rem;
+}
+
+.mobile-dropdown .option {
+	padding: 4px 0rem;
+}
+
+@media screen and (min-with: 750px) {
+	.mobile-dropdown {
+		display: none;
+	 }
+}

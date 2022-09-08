@@ -1,5 +1,4 @@
-<style>
-
+{% style %}
 	.the-solution-tab .tab-contents .tab-content.active {
 		display: block !important;
 	}
@@ -37,7 +36,7 @@
 	}
 
 	.the-solution-tab .tabs {
-		display: flex;
+		display: none;
 		justify-content: space-around;
 	}
 
@@ -52,15 +51,22 @@
 	.the-solution-tab .tabs .tab.active {
 		border-bottom: 2px solid #302112;
 	}
-</style>
+
+	@media screen and (min-width: 750px) {
+		.the-solution-tab .tabs {
+			display: flex;
+		}
+	}
+{% endstyle %}
 
 <div class="the-solution-tab gush-page-width">
+	{% render 'mobile-dropdown', blocks: section.blocks%}
 	<div class="tabs">
 		{% for block in section.blocks %}
 		<div class="tab {% if forloop.first -%}
 				active
-		 {%- endif -%}" data-tab-target="#tab{{forloop.index}}" {{ block.shopify_attributes }}>
-			<div>{{block.settings.tab_title}}</div>
+		 {%- endif -%}" data-tab-target="#{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+			<div>{{block.settings.title}}</div>
 		</div>
 		{% endfor %}
 	</div>
@@ -69,7 +75,7 @@
 		{% for block in section.blocks %}
 		<div class="tab-content {% if forloop.first -%}
 		active
- {%- endif -%}" id="tab{{forloop.index}}" {{ block.shopify_attributes }}>
+ {%- endif -%}" id="{{block.settings.title | handleize}}" {{ block.shopify_attributes }}>
 			<div class="first_image_text">
 				<div class="image">
 					{{ block.settings.first_image | image_url: width: 1280 | image_tag }}
@@ -96,6 +102,23 @@
 {% javascript %}
 const tabs = document.querySelectorAll('.the-solution-tab .tab')
 const tabContents = document.querySelectorAll('.the-solution-tab .tab-content')
+const dropDownOptions = document.querySelectorAll('.the-solution-tab .option');
+
+dropDownOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    const target = document.querySelector(option.dataset.optionTarget);
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active');
+    });
+    dropDownOptions.forEach(option => {
+      option.classList.remove('active');
+    });
+    option.classList.add('active');
+    target.classList.add('active');
+		document.querySelector('.the-solution-tab details').removeAttribute("open");
+		document.querySelector('.the-solution-tab summary span').textContent = option.textContent;
+  })
+})
 
 tabs.forEach(tab => {
 tab.addEventListener('click', () => {
@@ -125,7 +148,7 @@ target.classList.add('active')
 "settings": [
 {
 "type": "text",
-"id": "tab_title",
+"id": "title",
 "label": "Tab Title"
 },
 {

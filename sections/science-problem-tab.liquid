@@ -1,3 +1,4 @@
+{{ 'component-mobile-dropdown.css' | asset_url | stylesheet_tag }}
 {{ 'section-problem-tab.css' | asset_url | stylesheet_tag }}
 
 <div class="the-problem-tab gush-page-width">
@@ -7,10 +8,10 @@
 		{% for block in section.blocks %}
 				<div class="tab-content {% if forloop.first -%}
 				active
-		 {%- endif -%}" id="{{block.settings.chemical_name}}" {{ block.shopify_attributes }}>
+		 {%- endif -%}" id="{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
 		 <div class="left-content">
 			<div class="name_formula">
-				<h2 class="gush-font-h1">{{block.settings.chemical_name}}</h2>
+				<h2 class="gush-font-h1">{{block.settings.title}}</h2>
 				<div class="image_formula">
 					{{ block.settings.chemical_formula | image_url: width: 280 | image_tag }}
 				</div>
@@ -50,8 +51,8 @@
 			{% for block in section.blocks %}
 					<div class="tab {% if forloop.first -%}
 					active
-			 {%- endif -%}" data-tab-target="#{{block.settings.chemical_name}}" {{ block.shopify_attributes }}>
-						<div class="gush-font-p2">{{block.settings.chemical_name}}</div>
+			 {%- endif -%}" data-tab-target="#{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+						<div class="gush-font-p2">{{block.settings.title}}</div>
 					</div>
 			{% endfor %}
 			</div>
@@ -105,7 +106,7 @@ tabs.forEach(tab => {
 					"name": "Chemical",
 					"settings": [
 					{
-						"id": "chemical_name",
+						"id": "title",
 						"type": "text",
 						"label": "Chemical Name"
 					},
