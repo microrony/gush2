@@ -8,9 +8,8 @@
 
 .the-problem-tab .tab-content {
   display: none;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   background-color: #f9f4f0;
-  padding: 80px;
+	padding: 20px;
   position: relative;
 }
 
@@ -46,13 +45,8 @@
   display: flex;
   gap: 3rem;
   position: relative;
-}
-
-.the-problem-tab .name_formula {
-  display: flex;
-  gap: 3rem;
-  position: relative;
   margin-bottom: 3rem;
+	justify-content: space-between;
 }
 
 .the-problem-tab img {
@@ -61,16 +55,17 @@
 }
 
 .the-problem-tab .image_formula {
-  transform: translateY(-1.5rem);
+	width: 44px;
 }
 
 .the-problem-tab .image_structure {
-  width: 70%;
+  width: 100%;
 }
 
 .the-problem-tab .odor_appearance {
   display: flex;
-  gap: 8rem;
+	justify-content: space-between;
+	margin-top: 20px;
 }
 
 .the-problem-tab .odor p,
@@ -92,7 +87,7 @@
 .the-problem-tab .appearance p:first-child,
 .the-problem-tab .how_it_harm p:first-child,
 .the-problem-tab .effects_of_exposure p:first-child  {
-  font-size: 12px !important;
+  font-size: 8px !important;
 	letter-spacing: initial !important;
 }
 
@@ -101,12 +96,12 @@
   font-weight: 500 !important;
 	font-size: 24px !important;
 	max-width: 400px;
-	margin-top: 60px;
-	margin-bottom: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .the-problem-tab .how_it_harm {
-	margin-bottom: 33px;
+	margin-bottom: 20px;
 	color: rgba(var(--color-secondary-6));
 }
 
@@ -121,6 +116,50 @@
 
 
 @media screen and (min-width: 750px) {
+	.the-problem-tab .tab-content {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		padding: 80px;
+		gap: 14rem;
+	}
+
+	.the-problem-tab .name_formula {
+		margin-bottom: 3rem;
+		justify-content: initial;
+		align-items: initial;
+	}
+
+	.the-problem-tab .image_formula {
+		transform: translateY(-1.5rem);
+		width: auto;
+	}
+
+	.the-problem-tab .image_structure {
+		width: 390px;
+	}
+
+	.the-problem-tab .odor_appearance {
+		justify-content: initial;
+		gap: 8rem;
+		margin-top: 0px;
+	}
+
+	.the-problem-tab .found_in {
+		max-width: 400px;
+		margin-top: 60px;
+		margin-bottom: 50px;
+	}
+
+	.the-problem-tab .how_it_harm {
+		margin-bottom: 33px;
+	}
+
+	.the-problem-tab .odor p:first-child,
+.the-problem-tab .appearance p:first-child,
+.the-problem-tab .how_it_harm p:first-child,
+.the-problem-tab .effects_of_exposure p:first-child  {
+  font-size: 12px !important;
+}
+
 	.the-problem-tab details {
 	 display: none;
 	}
