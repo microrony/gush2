@@ -88,19 +88,19 @@
 }
 
 /* Reports Section Styles */
-.science-steps .reports-blocks {
+.science-steps .reports-blocks, .science-steps .accreditation-blocks {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 3rem;
+	gap: 1rem;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
-
 .science-steps .reports-block {
 	background-color: #00FF00;
 	padding: 4rem;
 	display: flex;
 	flex-direction: column;
 	color: #302112;
-	margin-top: 6rem;
+	margin-top: 0px;
 }
 
 .science-steps .reports-block h3 {
@@ -112,21 +112,16 @@
 	max-width: 400px;
 }
 
-/* Reports Section Styles */
-.science-steps .accreditation-blocks {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 3rem;
-}
+/* Accreditation Section Styles */
 
 .science-steps .accreditation-block {
 	background-color: #EAE4DF;
-	padding: 6rem;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	color: #302112;
-	margin-top: 6rem;
-	margin-bottom: 15rem;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .science-steps .accreditation-block h2, .science-steps .accreditation-block li  {
@@ -144,12 +139,12 @@
 .science-steps .accreditation-block .images {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
-	gap: 2.5rem;
-	margin-bottom: 2rem;
+	gap: 1rem;
 }
 
 .science-steps .accreditation-block ul {
 	max-width: 330px;
+	padding-left: 1.5rem;
 }
 
 @media screen and (max-width: 749px) {
@@ -203,5 +198,31 @@
 	.the-solution-blocks .content h2 {
 		margin-bottom: 20px;
 	}
+
+	/* Reports Section Styles */
+.science-steps .accreditation-blocks, .science-steps .reports-blocks {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 3rem;
+	margin-top: 0px;
+	margin-bottom: 100px;
+}
+
+.science-steps .reports-block {
+	margin-top: 6rem;
+}
+
+.science-steps .accreditation-block {
+	padding: 6rem;
+	margin-top: 6rem;
+}
+
+.science-steps .accreditation-block .images {
+	gap: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+.science-steps .accreditation-block ul {
+	padding-left: 3rem;
+}
 	
 }
