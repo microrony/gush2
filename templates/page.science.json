@@ -76,7 +76,6 @@
     },
     "1659072861edce4799": {
       "type": "science-steps",
-      "disabled": true,
       "blocks": {
         "c5f3fb64-36db-4528-a100-9b63aa56f3d8": {
           "type": "the-solution-block",
@@ -115,7 +114,6 @@
     },
     "1659662675096ed6b5": {
       "type": "science-solution-tab",
-      "disabled": true,
       "blocks": {
         "51a49eb1-0bb1-466b-946c-494db2112fa2": {
           "type": "block",
@@ -151,7 +149,6 @@
     },
     "16590738719506d830": {
       "type": "science-steps",
-      "disabled": true,
       "settings": {
         "title": "03 Testing",
         "description": "We conducted various third-party tests to certify our product’s efficacy against VOCs, bacteria and mold growth as shown below:"
@@ -159,13 +156,11 @@
     },
     "1659662699783d119b": {
       "type": "science-testing-tab",
-      "disabled": true,
       "settings": {
       }
     },
     "1659073882562a9fbf": {
       "type": "science-steps",
-      "disabled": true,
       "blocks": {
         "153e3e81-abfd-43a7-a5d2-b53509add15b": {
           "type": "reports-block",
@@ -195,7 +190,6 @@
     },
     "16590738922962dd01": {
       "type": "science-steps",
-      "disabled": true,
       "blocks": {
         "2a6a8cc3-f128-4acf-9b56-282c99a0897e": {
           "type": "accreditation-block",

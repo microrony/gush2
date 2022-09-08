@@ -159,10 +159,6 @@
 .the-problem-tab .effects_of_exposure p:first-child  {
   font-size: 12px !important;
 }
-
-	.the-problem-tab details {
-	 display: none;
-	}
   .the-problem-tab .tabs {
 		display: flex;
 	}
