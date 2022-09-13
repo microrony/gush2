@@ -1,0 +1,122 @@
+.tab-contents .tab-content.active {
+	display: block !important;
+}
+
+.the-testing-tab .tab-content {
+	display: none;
+	margin-top: 32px;
+}
+
+.the-testing-tab .tab-content .content {
+	background-color: #F9F4F0;
+	display: grid;
+	padding: 30px 15px;
+	place-items: center;
+	gap: 30px;
+}
+
+.the-testing-tab .tab-content .left-content h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.the-testing-tab .tab-content .right-content {
+	width: 100%;
+}
+
+.the-testing-tab .tab-content .right-content ul {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-family: 'ABCCamera';
+font-style: normal;
+font-weight: 400;
+font-size: 32.5152px;
+line-height: 130%;
+letter-spacing: -0.05em;
+}
+
+.the-testing-tab .tab-content .right-content li {
+	border-top: 1.37px solid rgb(var(--color-secondary-6));
+	padding: 10px 0;
+	display: flex;
+}
+
+.the-testing-tab .right-content li span {
+	display: block;
+	transform: rotate(90deg);
+	margin-right: 10px;
+}
+
+.the-testing-tab .right-content li span svg {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.the-testing-tab .tabs {
+	display: none;
+	justify-content: space-around;
+}
+
+.the-testing-tab .tabs .tab{
+	cursor: pointer;
+	padding: 18px 0;
+	width: 100%;
+	text-align: center;
+}
+
+.the-testing-tab .tabs .tab.active {
+	border-bottom: 2px solid #302112;
+}
+
+.the-testing-tab .left-content img {
+  width: 173px;
+	height: 173px;
+}
+
+.the-testing-tab .test_description p:first-child {
+  color: rgb(var(--color-secondary-4));
+	text-align: right;
+	margin: 2rem 0;
+}
+
+@media screen and (min-width: 750px) {
+	.the-testing-tab .tabs {
+		display: flex;
+	}
+
+	.the-testing-tab .tab-content .content {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		padding: 80px;
+	}
+
+	.the-testing-tab .left-content img {
+		width: 35rem;
+		height: 35rem;
+	}
+
+	.the-testing-tab .tab-content .right-content ul {
+		font-size: 65.8077px;
+	}
+
+	.the-testing-tab .right-content li span svg {
+		width: 4.6rem;
+		height: 4.6rem;
+	}
+
+	.the-testing-tab .right-content li span {
+		margin-right: 26px;
+	}
+
+	.the-testing-tab .test_description {
+	  display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	.the-testing-tab .test_description .description {
+	  max-width: 580px;
+	}
+	
+}

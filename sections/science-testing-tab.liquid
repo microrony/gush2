@@ -1,94 +1,88 @@
-<style>
-
-	.tab-contents .tab-content.active {
-		display: grid !important;
-	}
-
-	.the-testing-tab .tab-content {
-		display: none;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		background-color: #F9F4F0;
-		padding: 80px;
-	}
-
-	.the-testing-tab .tab-content .left-content h2 {
-		margin: 0;
-		padding: 0; 
-	}
-
-	.the-testing-tab .tabs {
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.the-testing-tab .tabs .tab{
-		cursor: pointer;
-		padding: 18px 0;
-		width: 100%;
-		text-align: center;
-	}
-
-	.the-testing-tab .tabs .tab.active{
-		border-top: 2px solid #FF42EF;
-	}
-</style>
+{{ 'component-mobile-dropdown.css' | asset_url | stylesheet_tag }}
+{{ 'section-the-testing-tab.css' | asset_url | stylesheet_tag }}
 
 <div class="the-testing-tab gush-page-width">
+	{% render 'mobile-dropdown', blocks: section.blocks%}
+	<div class="tabs">
+		{% for block in section.blocks %}
+		<div class="tab {% if forloop.first -%}
+				active
+		 {%- endif -%}" data-tab-target="#{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+			<div>{{block.settings.title}}</div>
+		</div>
+		{% endfor %}
+	</div>
+
 	<div class="tab-contents">
 		{% for block in section.blocks %}
-				<div class="tab-content {% if forloop.first -%}
+		{% case block.type %}
+      {% when 'removal' %}
+			<div class="tab-content {% if forloop.first -%}
 				active
-		 {%- endif -%}" id="{{block.settings.chemical_name}}" {{ block.shopify_attributes }}>
+		 {%- endif -%}" id="{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+		 <div class="content">
 		 <div class="left-content">
-				<h2 class="gush-font-h1">{{block.settings.chemical_name}}</h2>
-				<div class="image_formula">
-					{{ block.settings.chemical_formula | image_url: width: 80 | image_tag }}
-				</div>
-				<div class="image_structure">
-					{{ block.settings.chemical_structure | image_url: width: 80 | image_tag }}
-				</div>
+			<div class="image">
+				{{ block.settings.image | image_url: width: 800 | image_tag }}
+			</div>
 			</div>
 			<div class="right-content">
-				<div>
-					<div class="odor">
-						<p>Odor</p>
-						<p>{{block.settings.odor}}</p>
-					</div>
-					<div class="appearance">
-						<p>Appearance</p>
-						<p>{{block.settings.appearance}}</p>
-					</div>
-			</div>
-
-			<h4>{{block.settings.found_in}}</h4>
-
-			<div class="how_it_harm">
-				<p>How does it harm the body?</p>
-				<p>{{block.settings.how_it_harm}}</p>
-			</div>
-			<div class="effects_of_exposure">
-				<p>How does it harm the body?</p>
-				<p>{{block.settings.effects_of_exposure}}</p>
+			<ul>
+				{%if block.settings.item_1 != blank%}
+				<li><span>{% render "icon-arrow-right-gushi"%}</span>{{block.settings.item_1}}</li>
+				{% endif %}
+				{%if block.settings.item_2 != blank%}
+				<li><span>{% render "icon-arrow-right-gushi"%}</span>{{block.settings.item_2}}</li>
+				{% endif %}
+				{%if block.settings.item_3 != blank%}
+				<li><span>{% render "icon-arrow-right-gushi"%}</span>{{block.settings.item_3}}</li>
+				{% endif %}
+			</ul>
 			</div>
 		</div>
-				</div>
+		<div class="test_description">
+			<p class="gush-font-p1">{{block.settings.tested_by}}</p>
+			<p class="gush-font-p1 description">{{block.settings.short_description}}</p>
+		</div>
+		  </div>
+			{% else %}
+			<div class="tab-content {% if forloop.first -%}
+				active
+		 {%- endif -%}" id="{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+		 <div class="image">
+			{{ block.settings.image | image_url: width: 1280 | image_tag }}
+		</div>
+		<div class="test_description">
+			<p class="gush-font-p1">{{block.settings.tested_by}}</p>
+			<p class="gush-font-p1 description">{{block.settings.short_description}}</p>
+		</div>
+		  </div>
+		{% endcase %}
 		{% endfor %}
 		</div>
 
-		<div class="tabs">
-			{% for block in section.blocks %}
-					<div class="tab {% if forloop.first -%}
-					active
-			 {%- endif -%}" data-tab-target="#{{block.settings.chemical_name}}" {{ block.shopify_attributes }}>
-						<div>{{block.settings.chemical_name}}</div>
-					</div>
-			{% endfor %}
-			</div>
 </div>
 
 {% javascript %}
-const tabs = document.querySelectorAll('.the-problem-tab .tab')
-const tabContents = document.querySelectorAll('.the-problem-tab .tab-content')
+const tabs = document.querySelectorAll('.the-testing-tab .tab');
+const dropDownOptions = document.querySelectorAll('.the-testing-tab .option');
+const tabContents = document.querySelectorAll('.the-testing-tab .tab-content');
+
+dropDownOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    const target = document.querySelector(option.dataset.optionTarget);
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active');
+    });
+    dropDownOptions.forEach(option => {
+      option.classList.remove('active');
+    });
+    option.classList.add('active');
+    target.classList.add('active');
+		document.querySelector('.the-problem-tab details').removeAttribute("open");
+		document.querySelector('.the-problem-tab summary span').textContent = option.textContent;
+  })
+})
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -113,49 +107,70 @@ tabs.forEach(tab => {
 		"tag": "section",
 			"blocks": [
 				{
-					"type": "chemical",
-					"name": "Chemical",
+					"type": "removal",
+					"name": "Removal",
 					"settings": [
-					{
-						"id": "title",
-						"type": "text",
-						"label": "Chemical Name"
-					},
+					  {
+						  "id": "title",
+						  "type": "text",
+						  "label": "Tab title"
+					  },
 						{
-							"id": "chemical_formula",
-							"type": "image_picker",
-							"label": "Chemical Formula"
+						  "id": "image",
+						  "type": "image_picker",
+						  "label": "Image"
+					  },
+						{
+						  "id": "item_1",
+						  "type": "text",
+						  "label": "Item 1"
+					  },
+						{
+						  "id": "item_2",
+						  "type": "text",
+						  "label": "Item 2"
+					  },
+						{
+						  "id": "item_3",
+						  "type": "text",
+						  "label": "Item 3"
+					  },
+						{
+						  "id": "short_description",
+						  "type": "textarea",
+						  "label": "Short description"
+					  },
+						{
+						  "id": "tested_by",
+						  "type": "text",
+						  "label": "Tested By"
+					  }
+					]
+				},
+				{
+					"type": "visualization",
+					"name": "Visualization",
+					"settings": [
+					  {
+						  "id": "title",
+						  "type": "text",
+						  "label": "Tab title"
+					  },
+						{
+						  "id": "image",
+						  "type": "image_picker",
+						  "label": "Image"
 						},
 						{
-							"id": "chemical_structure",
-							"type": "image_picker",
-							"label": "Chemical Structure"
-						},
+						  "id": "short_description",
+						  "type": "textarea",
+						  "label": "Short description"
+					  },
 						{
-							"id": "odor",
-							"type": "text",
-							"label": "Odor"
-						},
-						{
-							"id": "appearance",
-							"type": "text",
-							"label": "Appearance"
-						},
-						{
-							"id": "found_in",
-							"type": "textarea",
-							"label": "Found In"
-						},
-						{
-							"id": "how_it_harm",
-							"type": "textarea",
-							"label": "How does it harm the body?"
-						},
-						{
-							"id": "effects_of_exposure",
-							"type": "textarea",
-							"label": "Effects of exposure"
-						}
+						  "id": "tested_by",
+						  "type": "text",
+						  "label": "Tested By"
+					  }
 					]
 				}
 			],"presets": [
@@ -166,3 +181,83 @@ tabs.forEach(tab => {
 		}
 		
 	{% endschema %}
+	{%- comment -%}
+
+	{
+		"type": "molding",
+		"name": "Molding",
+		"settings": [
+			{
+				"id": "title",
+				"type": "text",
+				"label": "Tab title"
+			},
+			{
+				"id": "text",
+				"type": "text",
+				"label": "Text"
+			},
+			{
+				"id": "text_1",
+				"type": "text",
+				"label": "Text 1"
+			},
+			{
+				"id": "image_1",
+				"type": "image_picker",
+				"label": "Image 1"
+			},
+			{
+				"id": "text_2",
+				"type": "text",
+				"label": "Text 2"
+			},
+			{
+				"id": "image_2",
+				"type": "image_picker",
+				"label": "Image 2"
+			},
+			{
+				"id": "item_1",
+				"type": "text",
+				"label": "Item 1"
+			},
+			{
+				"id": "item_1",
+				"type": "text",
+				"label": "Item 1"
+			},
+			{
+				"id": "item_2",
+				"type": "text",
+				"label": "Item 2"
+			},
+			{
+				"id": "item_3",
+				"type": "text",
+				"label": "Item 3"
+			},
+			{
+				"id": "item_3",
+				"type": "text",
+				"label": "Item 3"
+			},
+			{
+				"id": "circle_text",
+				"type": "html",
+				"label": "Circle Text"
+			},
+			{
+				"id": "short_description",
+				"type": "textarea",
+				"label": "Short description"
+			},
+			{
+				"id": "tested_by",
+				"type": "text",
+				"label": "Tested By"
+			}
+		]
+	}
+
+	{%- endcomment -%}
