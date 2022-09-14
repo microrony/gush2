@@ -2,7 +2,7 @@
 	color: #302112;
 }
 
-.tab-contents .tab-content.active {
+.the-problem-tab .tab-contents .tab-content.active {
   display: grid !important;
 }
 

@@ -148,29 +148,74 @@ tabs.forEach(tab => {
 					]
 				},
 				{
-					"type": "visualization",
-					"name": "Visualization",
+					"type": "molding",
+					"name": "Molding",
 					"settings": [
-					  {
-						  "id": "title",
-						  "type": "text",
-						  "label": "Tab title"
-					  },
 						{
-						  "id": "image",
-						  "type": "image_picker",
-						  "label": "Image"
+							"id": "title",
+							"type": "text",
+							"label": "Tab title"
 						},
 						{
-						  "id": "short_description",
-						  "type": "textarea",
-						  "label": "Short description"
-					  },
+							"id": "text",
+							"type": "text",
+							"label": "Text"
+						},
 						{
-						  "id": "tested_by",
-						  "type": "text",
-						  "label": "Tested By"
-					  }
+							"id": "uncoated_surface_text",
+							"type": "text",
+							"label": "Uncoated Surface Text"
+						},
+						{
+							"id": "uncoated_surface_image",
+							"type": "image_picker",
+							"label": "Uncoated Surface Image"
+						},
+						{
+							"id": "gush-coated_surface_text",
+							"type": "text",
+							"label": "Gush Coated Surface Text"
+						},
+						{
+							"id": "gush-coated_surface_image",
+							"type": "image_picker",
+							"label": "Gush Coated Surface Image"
+						},
+						{
+							"id": "environment",
+							"type": "html",
+							"label": "Environment"
+						},
+						{
+							"id": "temperature",
+							"type": "html",
+							"label": "Temperature"
+						},
+						{
+							"id": "testing_duration",
+							"type": "html",
+							"label": "Testing Duration"
+						},
+						{
+							"id": "surface_dimensions",
+							"type": "html",
+							"label": "Surface Dimensions"
+						},
+						{
+							"id": "molding_clearance",
+							"type": "image_picker",
+							"label": "Molding Clearance"
+						},
+						{
+							"id": "short_description",
+							"type": "textarea",
+							"label": "Short description"
+						},
+						{
+							"id": "tested_by",
+							"type": "text",
+							"label": "Tested By"
+						}
 					]
 				}
 			],"presets": [
@@ -181,83 +226,3 @@ tabs.forEach(tab => {
 		}
 		
 	{% endschema %}
-	{%- comment -%}
-
-	{
-		"type": "molding",
-		"name": "Molding",
-		"settings": [
-			{
-				"id": "title",
-				"type": "text",
-				"label": "Tab title"
-			},
-			{
-				"id": "text",
-				"type": "text",
-				"label": "Text"
-			},
-			{
-				"id": "text_1",
-				"type": "text",
-				"label": "Text 1"
-			},
-			{
-				"id": "image_1",
-				"type": "image_picker",
-				"label": "Image 1"
-			},
-			{
-				"id": "text_2",
-				"type": "text",
-				"label": "Text 2"
-			},
-			{
-				"id": "image_2",
-				"type": "image_picker",
-				"label": "Image 2"
-			},
-			{
-				"id": "item_1",
-				"type": "text",
-				"label": "Item 1"
-			},
-			{
-				"id": "item_1",
-				"type": "text",
-				"label": "Item 1"
-			},
-			{
-				"id": "item_2",
-				"type": "text",
-				"label": "Item 2"
-			},
-			{
-				"id": "item_3",
-				"type": "text",
-				"label": "Item 3"
-			},
-			{
-				"id": "item_3",
-				"type": "text",
-				"label": "Item 3"
-			},
-			{
-				"id": "circle_text",
-				"type": "html",
-				"label": "Circle Text"
-			},
-			{
-				"id": "short_description",
-				"type": "textarea",
-				"label": "Short description"
-			},
-			{
-				"id": "tested_by",
-				"type": "text",
-				"label": "Tested By"
-			}
-		]
-	}
-
-	{%- endcomment -%}
