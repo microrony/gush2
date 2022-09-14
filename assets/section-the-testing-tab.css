@@ -1,3 +1,8 @@
+.the-testing-tab img {
+	width: 100%;
+	height: auto;
+}
+
 .the-testing-tab .tab-contents .tab-content.active {
 	display: block !important;
 }
@@ -15,7 +20,12 @@
 	gap: 30px;
 }
 
-.the-testing-tab .tab-content .left-content h2 {
+.the-testing-tab .tab-content.molding .content {
+	display: block;
+	padding: 20px;
+}
+
+.the-testing-tab .tab-content p {
 	margin: 0;
 	padding: 0;
 }
@@ -81,6 +91,58 @@ letter-spacing: -0.05em;
 	margin: 2rem 0;
 }
 
+.the-testing-tab .tab-content.molding img {
+  width: 100%;
+	height: auto;
+}
+
+.the-testing-tab .tab-content.molding .surface_images {
+  padding: 0 20px;
+	margin-top: 20px;
+}
+
+.the-testing-tab .tab-content.molding .surface_images p {
+  margin-bottom: 5px;
+}
+
+.the-testing-tab .tab-content.molding .right-content {
+	position: relative;
+}
+
+.the-testing-tab .tab-content.molding .right-content .molding_clearance  {
+  position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 67px;
+	aspect-ratio: 1;
+}
+
+.the-testing-tab .tab-content.molding .test_details ul  {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0, 1fr));
+ gap: 1rem;
+ margin-top: 2rem;
+}
+
+.the-testing-tab .tab-content.molding .test_details ul li {
+	white-space: pre-line;
+	border: 1px solid rgba(var(--color-secondary-5), 0.5);
+	padding: 6px 5px;
+	background-color: #fff;
+ }
+
+ .the-testing-tab .tab-content.molding .test_details ul li span {
+	font-weight: 500;
+ }
+
+ .the-testing-tab .tab-content.molding .text {
+	font-size: 9px !important;
+}
+
+
 @media screen and (min-width: 750px) {
 	.the-testing-tab .tabs {
 		display: flex;
@@ -118,5 +180,46 @@ letter-spacing: -0.05em;
 	.the-testing-tab .test_description .description {
 	  max-width: 580px;
 	}
-	
+
+	.the-testing-tab .tab-content.molding .text {
+		white-space: pre-line;
+	 }
+
+	 .the-testing-tab .tab-content.molding .surface_images {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 40px;
+	}
+
+	.the-testing-tab .tab-content.molding .right-content .molding_clearance  {
+		width: 197px;
+		aspect-ratio: 1;
+	}
+
+	.the-testing-tab .tab-content.molding .test_details ul  {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 1rem;
+		margin-top: 7rem;
+	 }
+
+	 .the-testing-tab .tab-content.molding .test_details ul li {
+		padding: 6px 13px;
+	 }
+
+	 .the-testing-tab .tab-content.molding .surface_images {
+		padding: 0 60px;
+		margin-top: 52px;
+	}
+
+	.the-testing-tab .tab-content.molding .surface_images p {
+		font-size: 30px !important;
+	}
+
+	.the-testing-tab .tab-content.molding .content {
+		padding: 40px;
+	}
+
+	.the-testing-tab .tab-content.molding .text {
+		font-size: 20px !important;
+	}
 }

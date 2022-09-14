@@ -173,6 +173,7 @@
           "type": "removal",
           "settings": {
             "title": "Anti-bacterial",
+            "image": "shopify:\/\/shop_images\/Frame_322_1.png",
             "item_1": "E. Coli",
             "item_2": "S. aureus",
             "item_3": "",
@@ -180,11 +181,20 @@
             "tested_by": "Tested by Advanced Materials technology Centre"
           }
         },
-        "3ebcdc33-0a3b-4b66-a705-ce37ce97e0f7": {
-          "type": "visualization",
+        "09bdf50e-4059-406e-944c-ae87fc974387": {
+          "type": "molding",
           "settings": {
             "title": "Anti-molding",
-            "image": "shopify:\/\/shop_images\/Frame_351.png",
+            "text": "gush paint \nMold growth tests",
+            "uncoated_surface_text": "Uncoated surface",
+            "uncoated_surface_image": "shopify:\/\/shop_images\/Ellipse_816.png",
+            "gush_coated_surface_text": "Gush Coated Surface",
+            "gush_coated_surface_image": "shopify:\/\/shop_images\/Ellipse_816.png",
+            "environment": "<span>Environment<\/span>\nHumidity Indoor",
+            "temperature": "<span>Temperature<\/span>\nDifferentials",
+            "testing_duration": "<span>Testing Duration<\/span>\n3 months",
+            "surface_dimensions": "<span>Surface Dimensions<\/span>\n1m x 1m",
+            "molding_clearance": "shopify:\/\/shop_images\/Group_1652.png",
             "short_description": "99% reduction in bacteria count",
             "tested_by": "Tested by Nanyang Technological University"
           }
@@ -193,7 +203,7 @@
       "block_order": [
         "a130c5d6-8e9f-46d3-aa62-b63650d20f31",
         "10695d0d-230c-420c-9ea9-9114468a51fd",
-        "3ebcdc33-0a3b-4b66-a705-ce37ce97e0f7"
+        "09bdf50e-4059-406e-944c-ae87fc974387"
       ],
       "settings": {
       }

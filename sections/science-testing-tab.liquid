@@ -17,7 +17,7 @@
 		{% for block in section.blocks %}
 		{% case block.type %}
       {% when 'removal' %}
-			<div class="tab-content {% if forloop.first -%}
+			<div class="tab-content removal {% if forloop.first -%}
 				active
 		 {%- endif -%}" id="{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
 		 <div class="content">
@@ -28,13 +28,13 @@
 			</div>
 			<div class="right-content">
 			<ul>
-				{%if block.settings.item_1 != blank%}
+				{%if block.settings.item_1 != empty%}
 				<li><span>{% render "icon-arrow-right-gushi"%}</span>{{block.settings.item_1}}</li>
 				{% endif %}
-				{%if block.settings.item_2 != blank%}
+				{%if block.settings.item_2 != empty%}
 				<li><span>{% render "icon-arrow-right-gushi"%}</span>{{block.settings.item_2}}</li>
 				{% endif %}
-				{%if block.settings.item_3 != blank%}
+				{%if block.settings.item_3 != empty%}
 				<li><span>{% render "icon-arrow-right-gushi"%}</span>{{block.settings.item_3}}</li>
 				{% endif %}
 			</ul>
@@ -45,13 +45,46 @@
 			<p class="gush-font-p1 description">{{block.settings.short_description}}</p>
 		</div>
 		  </div>
-			{% else %}
-			<div class="tab-content {% if forloop.first -%}
+			{% when 'molding' %}
+			<div class="tab-content molding {% if forloop.first -%}
 				active
 		 {%- endif -%}" id="{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
-		 <div class="image">
-			{{ block.settings.image | image_url: width: 1280 | image_tag }}
-		</div>
+		 <div class="content">
+			<p class="gush-font-p1 text">{{ block.settings.text }}</p>
+			<div class="surface_images">
+			<div class="left-content">
+			 <p class="gush-font-p1">{{ block.settings.uncoated_surface_text }}</p>
+			 <div class="uncoated_surface_image">
+				 {{ block.settings.uncoated_surface_image | image_url: width: 800 | image_tag }}
+			 </div>
+			</div>
+			<div class="right-content">
+				<p class="gush-font-p1">{{ block.settings.gush_coated_surface_text }}</p>
+				<div class="gush_coated_surface_image">
+					{{ block.settings.gush_coated_surface_image | image_url: width: 800 | image_tag }}
+				</div>
+				<div class="molding_clearance">
+					{{ block.settings.molding_clearance | image_url: width: 800 | image_tag }}
+				</div>
+				</div>
+			</div>
+			 <div class="test_details">
+			 <ul>
+				 {%if block.settings.environment != empty%}
+				 <li class="gush-font-p1">{{block.settings.environment}}</li>
+				 {% endif %}
+				 {%if block.settings.temperature != empty%}
+				 <li class="gush-font-p1">{{block.settings.temperature}}</li>
+				 {% endif %}
+				 {%if block.settings.testing_duration != empty%}
+				 <li class="gush-font-p1">{{block.settings.testing_duration}}</li>
+				 {% endif %}
+				 {%if block.settings.surface_dimensions != empty%}
+				 <li class="gush-font-p1">{{block.settings.surface_dimensions}}</li>
+				 {% endif %}
+			 </ul>
+			 </div>
+		 </div>
 		<div class="test_description">
 			<p class="gush-font-p1">{{block.settings.tested_by}}</p>
 			<p class="gush-font-p1 description">{{block.settings.short_description}}</p>
@@ -79,8 +112,8 @@ dropDownOptions.forEach(option => {
     });
     option.classList.add('active');
     target.classList.add('active');
-		document.querySelector('.the-problem-tab details').removeAttribute("open");
-		document.querySelector('.the-problem-tab summary span').textContent = option.textContent;
+		document.querySelector('.the-testing-tab details').removeAttribute("open");
+		document.querySelector('.the-testing-tab summary span').textContent = option.textContent;
   })
 })
 
@@ -158,7 +191,7 @@ tabs.forEach(tab => {
 						},
 						{
 							"id": "text",
-							"type": "text",
+							"type": "textarea",
 							"label": "Text"
 						},
 						{
@@ -172,12 +205,12 @@ tabs.forEach(tab => {
 							"label": "Uncoated Surface Image"
 						},
 						{
-							"id": "gush-coated_surface_text",
+							"id": "gush_coated_surface_text",
 							"type": "text",
 							"label": "Gush Coated Surface Text"
 						},
 						{
-							"id": "gush-coated_surface_image",
+							"id": "gush_coated_surface_image",
 							"type": "image_picker",
 							"label": "Gush Coated Surface Image"
 						},
