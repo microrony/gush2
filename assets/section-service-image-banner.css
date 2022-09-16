@@ -97,3 +97,12 @@ h2.service-banner__heading.banner__heading span {
     right: 9%;
 }
 
+/* ******************** */
+
+.service-banner__content {
+	height: 95vh;
+}
+
+.banner__text span {
+	white-space: pre-line;
+}

@@ -6,14 +6,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Full Installation & Application Services",
+            "heading": "Clean air, at your service",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "For every space, for all your needs--we’ve got you covered.",
+            "text": "Your one-stop shop to meet  \nall your painting project needs.",
             "text_style": "body"
           }
         },
@@ -35,7 +35,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/image_34.png",
+        "image": "shopify:\/\/shop_images\/image_71.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
