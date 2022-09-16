@@ -33,12 +33,19 @@
 {%- style -%}
 {% if page.title == 'Services' %}
 .ingredient__main {
-  display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 10rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem;
 }
   .ingredient__accordion {}
   .faq_qus .qus-li img {width: auto;}
+
+	@media screen and (min-width: 750px) {
+		.ingredient__main {
+			grid-template-columns: 1fr 2fr;
+			gap: 10rem;
+		}
+	}
 {% endif %}
 {%- endstyle -%}
 
