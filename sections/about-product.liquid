@@ -10,7 +10,7 @@ background: {{ section.settings.color }};
 }
 {%- endstyle -%}
 
-<section class="about-product isolate section-{{ section.id }}-padding">
+<section class="about-product {% if section.settings.page == 'services' %}services-about-product{% endif %} isolate section-{{ section.id }}-padding">
 	<div class="about-product__main gush-page-width">
 		<div class="about-product__heading-left">
 			<h2 class="gush-font-h1">{{section.settings.heading}}</h2>
@@ -131,8 +131,23 @@ background: {{ section.settings.color }};
 "unit": "px",
 "label": "t:sections.all.padding.padding_bottom",
 "default": 36
+},
+{
+  "type": "select",
+  "id": "page",
+  "label": "Page",
+  "options": [
+    {
+      "value": "home",
+      "label": "Home"
+    },
+    {
+      "value": "services",
+      "label": "Services"
+    }
+  ],
+  "default": "home"
 }
-
 ],
 "presets": [
 {
