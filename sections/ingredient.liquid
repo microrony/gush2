@@ -32,16 +32,20 @@
 
 {%- style -%}
 {% if page.title == 'Services' %}
-  .ingredient__main{display:flex;justify-content:space-around;}
-  .ingredient__accordion {width: 55%;margin-left: 10%;}
+.ingredient__main {
+  display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 10rem;
+}
+  .ingredient__accordion {}
   .faq_qus .qus-li img {width: auto;}
 {% endif %}
 {%- endstyle -%}
 
-<section class="ingredient section-{{ section.id }}-padding section">
-  <div class="ingredient__main page-width">
+<section class="ingredient section-{{ section.id }}-padding section gush-page-width">
+  <div class="ingredient__main">
     <div class="ingredient__left-container">
-        <div class="ingredient__heading"><h2>{{ section.settings.heading }}</h2></div>
+        <div class="ingredient__heading"><h2 class="gush-font-h1">{{ section.settings.heading }}</h2></div>
         <div class="ingredient__link">{{ section.settings.link }}</div>
       {% if section.settings.btn_txt != blank %}
       <div class="ingredient__btn"><a class="button button-primary " href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}{% render 'arrow-dotted' %}</a></div>
@@ -59,7 +63,7 @@
                 
                 <div class="qus-li"><img src="{{ block.settings.faq_img | img_url: '80x80', crop: 'center'}}" alt="FAQ Image"> 
                     <div class="qus-li__inner">
-                      <h3>{{ block.settings.faq_qus }}</h3><p>{{ block.settings.faq_quality }}</p>
+                      <h3 class="gush-font-h3">{{ block.settings.title }}</h3><p>{{ block.settings.faq_quality }}</p>
                     </div>
                   </div>
                 
@@ -67,7 +71,7 @@
                 
               </div>
               <div class="question__ans">
-              <p class="faq_ans" id="faq_{{ forloop.index }}">
+              <p class="faq_ans gush-font-p1" id="faq_{{ forloop.index }}">
                 {{ block.settings.faq_ans }}
               </p>
             </div>
@@ -203,7 +207,7 @@
         },
         {
           "type": "text",
-          "id": "faq_qus",
+          "id": "title",
           "label": "Question"
         },
         {
@@ -212,7 +216,7 @@
           "label": "Quality"
         },
         {
-          "type": "text",
+          "type": "textarea",
           "id": "faq_ans",
           "label": "Answer"
         }

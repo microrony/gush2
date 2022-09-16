@@ -64,7 +64,8 @@
         "text3": "Get accurate quotations customized for your needs. Quality materials guaranteed.",
         "icon-margin": 0,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "page": "services"
       }
     },
     "165276808691ea54b2": {
@@ -74,7 +75,7 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/Group_1237.png",
-            "faq_qus": "Enquire & Book",
+            "title": "Enquire & Book",
             "faq_quality": "",
             "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
           }
@@ -82,8 +83,8 @@
         "5df8158b-c9e0-4d3e-b063-8605ab369147": {
           "type": "text",
           "settings": {
-            "faq_img": "shopify:\/\/shop_images\/Union.png",
-            "faq_qus": "Free Site Consultation",
+            "faq_img": "shopify:\/\/shop_images\/ICON_8a6e0c8f-792a-433e-83be-1415a43bd302.png",
+            "title": "Free Site Consultation",
             "faq_quality": "",
             "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
           }
@@ -92,7 +93,7 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/ICON.png",
-            "faq_qus": "Select Project Dates",
+            "title": "Select Project Dates",
             "faq_quality": "",
             "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
           }
@@ -101,7 +102,7 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/ICON_1.png",
-            "faq_qus": "Get Rolling",
+            "title": "Get Rolling",
             "faq_quality": "",
             "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
           }
@@ -110,7 +111,7 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/ICON_2.png",
-            "faq_qus": "Inspection & Touch Up",
+            "title": "Inspection & Touch Up",
             "faq_quality": "",
             "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
           }
@@ -125,7 +126,7 @@
       ],
       "settings": {
         "color": "#f9f4f0",
-        "heading": "The Flow",
+        "heading": "How it works",
         "link": "",
         "btn_text": "Shop Now",
         "btn_url": "shopify:\/\/collections\/all",
