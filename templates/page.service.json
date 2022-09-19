@@ -139,8 +139,9 @@
     "165276834663a5573d": {
       "type": "footer-contact",
       "settings": {
-        "heading": "Contact Us",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada mi venenatis, semper quam eget.",
+        "heading": "Ready to get started?",
+        "btn_text": "Contact us",
+        "btn_type": "secondary",
         "padding_top": 36,
         "padding_bottom": 36
       }

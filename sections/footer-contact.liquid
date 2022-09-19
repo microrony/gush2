@@ -79,8 +79,8 @@
         <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
       </div>
       <div class="">
-        <button type="submit" class="cta-button cta-button__fuschia gush-font-teritary">
-          Contact Us{% render 'arrow-dotted-black' %}
+        <button type="submit" class="cta-button gush-font-teritary {% if section.settings.btn_type == "primary"%}cta-button__fuschia{% else %}cta-button__secondary{% endif %}">
+          {{ section.settings.btn_text }}{% render 'arrow-dotted-black' %}
         </button>
       </div>
     {%- endform -%}
@@ -100,9 +100,25 @@
      },
      {
         "type": "text",
-        "id": "content",
-        "label": "Content"
+        "id": "btn_text",
+        "label": "Button Text"
      },
+		 {
+			"type": "select",
+			"id": "btn_type",
+			"label": "Button Type",
+			"options": [
+				{
+					"value": "primary",
+					"label": "Primary"
+				},
+				{
+					"value": "secondary",
+					"label": "Secondary"
+				}
+			],
+			"default": "primary"
+		  },
      {
        "type": "range",
        "id": "padding_top",
