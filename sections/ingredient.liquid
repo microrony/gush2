@@ -19,19 +19,13 @@
 {%- endstyle -%}
 
 <style>
-  a.button.button-primary {
-    padding: 0 10%;
-    background: {{ section.settings.button-color }};
-    color:{{ section.settings.button-text-color }};
-  }
   .faq_qus .qus-li img {
-    width: 70px;
     border-radius: {{ section.settings.radius }}%;
   }
 </style>
 
-{%- style -%}
 {% if page.title == 'Services' %}
+{%- style -%}
 .ingredient__main {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -46,16 +40,16 @@
 			gap: 10rem;
 		}
 	}
-{% endif %}
 {%- endstyle -%}
+{% endif %}
 
-<section class="ingredient section-{{ section.id }}-padding section gush-page-width">
-  <div class="ingredient__main">
+<section class="ingredient section-{{ section.id }}-padding section">
+  <div class="ingredient__main gush-page-width">
     <div class="ingredient__left-container">
         <div class="ingredient__heading"><h2 class="gush-font-h1">{{ section.settings.heading }}</h2></div>
         <div class="ingredient__link">{{ section.settings.link }}</div>
-      {% if section.settings.btn_txt != blank %}
-      <div class="ingredient__btn"><a class="button button-primary " href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}{% render 'arrow-dotted' %}</a></div>
+      {% if section.settings.btn_text != blank %}
+      <div class="ingredient__cta-desktop"><a class="cta-button cta-button__fuschia gush-font-teritary" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}{% render 'arrow-dotted' %}</a></div>
       {% endif %}
     </div>
     <div class="ingredient__accordion">
@@ -87,8 +81,8 @@
             {% endif %} {% endfor %}
           </div>
           <div class="ingredient__link-link">{{ section.settings.link }}</div>
-          {% if section.settings.btn_txt != blank %}
-          <div class="ingredient__btn-link"><a class="button button-primary " href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}{% render 'arrow-dotted' %}</a></div>
+          {% if section.settings.btn_text != blank %}
+          <div class="ingredient__cta-mobile"><a class="cta-button cta-button__fuschia gush-font-teritary" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}{% render 'arrow-dotted' %}</a></div>
           {% endif %}
     </div>
   </div>
@@ -155,16 +149,6 @@
       "type": "url",
       "id": "btn_url",
       "label": "Add a button link"
-    },
-    {
-      "type": "color",
-      "id": "button-color",
-      "label": "Add a button color"
-    },
-    {
-      "type": "color",
-      "id": "button-text-color",
-      "label": "Add a button text color"
     },
     {
       "type": "text",

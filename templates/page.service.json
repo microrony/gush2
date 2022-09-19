@@ -130,12 +130,10 @@
         "link": "",
         "btn_text": "Shop Now",
         "btn_url": "shopify:\/\/collections\/all",
-        "button-color": "#ff42ef",
-        "button-text-color": "",
         "sb-heading": "",
         "radius": 0,
-        "padding_top": 64,
-        "padding_bottom": 64
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "165276834663a5573d": {
