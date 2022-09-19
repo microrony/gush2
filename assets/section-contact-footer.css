@@ -1,3 +1,8 @@
+section.footer-contact {
+	padding-top: 100px;
+	padding-bottom: 0;
+}
+
 .footer-contact__main {
     display: flex;
 		gap: 15rem;
@@ -7,7 +12,7 @@
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 0rem 0 25rem 0;
+    padding: 0 0 37rem 0;
 }
 
 .footer-contact__main-text {
@@ -94,8 +99,11 @@
     }
 }
 @media screen and (max-width: 767px){
+	section.footer-contact {
+		padding-top: 85px;
+		padding-bottom: 0;
+	}
     .footer-contact__main {
-        display: flex;
         flex-direction: column;
     }
     .footer-contact__main-text{
@@ -112,6 +120,6 @@
         width: 50%;
     }
     .footer-contact__main {
-        padding: 0rem 0 7rem 0;
+        padding: 0rem 0 9rem 0;
     }
 }
