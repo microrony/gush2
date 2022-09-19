@@ -41,52 +41,6 @@ function generateStampedReviewsHTML(stampedReviewsArr) {
   return stampedReviewsHTML.join('\n');
 }
 
-// function toggleClass(elem, className) {
-//   if (elem.className.indexOf(className) !== -1) {
-//     elem.className = elem.className.replace(className, '');
-//   } else {
-//     elem.className = elem.className.replace(/\s+/g, ' ') + ' ' + className;
-//   }
-
-//   return elem;
-// }
-
-// function toggleDisplay(elem) {
-//   const curDisplayStyle = elem.style.display;
-
-//   if (curDisplayStyle === 'none' || curDisplayStyle === '') {
-//     elem.style.display = 'block';
-//   } else {
-//     elem.style.display = 'none';
-//   }
-// }
-
-// function toggleMenuDisplay(e) {
-//   const dropdown = e.currentTarget.parentNode;
-//   const menu = dropdown.querySelector('.menu');
-//   const icon = dropdown.querySelector('.fa-angle-right');
-
-//   toggleClass(menu, 'hide');
-//   toggleClass(icon, 'rotate-90');
-// }
-
-// function handleOptionSelected(e) {
-//   toggleClass(e.target.parentNode, 'hide');
-
-//   const id = e.target.id;
-//   const newValue = e.target.textContent + ' ';
-//   const titleElem = document.querySelector('.dropdown .title');
-//   const icon = document.querySelector('.dropdown .title .fa');
-
-//   titleElem.textContent = newValue;
-//   titleElem.appendChild(icon);
-
-//   //trigger custom event
-//   document.querySelector('.dropdown .title').dispatchEvent(new Event('change'));
-//   //setTimeout is used so transition is properly shown
-//   setTimeout(() => toggleClass(icon, 'rotate-90', 0));
-// }
-
 function handleFilter(e) {
 
 	filterOptions.forEach(filter => filter.classList.remove('active'))
@@ -194,33 +148,11 @@ stampedContent.innerHTML += `<div class='stamped-slider-reviews'>
 				</svg></div>
 	</div>`;
 
-// console.log(filteredArr)
-
-// const tab1 = document.getElementById('option1');
-// window.onload = function () {
-// 	tab1.click();
-// };
-
-//get elements
-// const dropdownTitle = document.querySelector('.dropdown .title');
 const filterOptions = document.querySelectorAll('.stamped-reviews_filter .option');
-
-//bind listeners to these elements
-// dropdownTitle.addEventListener('click', toggleMenuDisplay);
-
-// dropdownOptions.forEach(option =>
-//   option.addEventListener('click', handleOptionSelected)
-// );
 
 filterOptions.forEach(filter => {
   filter.addEventListener('click', handleFilter);
 });
-
-// document
-//   .querySelector('.dropdown .title')
-//   .addEventListener('change', handleTitleChange);
-
-// console.log(filteredArr)
 
 var stampedSliderSwiper = new Swiper('.stampedSliderSwiper', {
   slidesPerView: 3,
@@ -237,3 +169,25 @@ var stampedSliderSwiper = new Swiper('.stampedSliderSwiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// let username = 'pubkey-';
+// let password = 'key-';
+
+// var myHeaders = new Headers();
+// myHeaders.append('Authorization', 'Basic ' + btoa(username + ":" + password));
+// myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+
+// var urlencoded = new URLSearchParams();
+// urlencoded.append("productIds", "1");
+// urlencoded.append("productIds", "6549921987");
+
+// var requestOptions = {
+//   method: 'GET',
+//   headers: myHeaders,
+//   redirect: 'follow'
+// };
+
+// fetch("https://stamped.io/api/v2/{{storehash}}/dashboard/reviews/?search=&rating=&state=&dateFrom&dateTo", requestOptions)
+//   .then(response => response.json())
+//   .then(result => console.log(result))
+//   .catch(error => console.log('error', error));

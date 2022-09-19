@@ -254,10 +254,10 @@ transform: rotate(90deg);
 
 /*  Needed for filters */
 
-.stampedSliderSwiper .hide { /* You can play with the seconds to change the "animation" */
+.stampedSliderSwiper .hide { 
  display: none !important;
 }
-.stampedSliderSwiper .show { /* You can play with the seconds to change the "animation" */
+.stampedSliderSwiper .show {
  display: flex !important;
 }
 
