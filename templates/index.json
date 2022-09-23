@@ -294,9 +294,7 @@
       "settings": {
         "heading": "Got a question?\nOur team’s here to help.",
         "btn_text": "Contact us",
-        "btn_type": "primary",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "btn_type": "primary"
       }
     }
   },

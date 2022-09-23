@@ -206,7 +206,7 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/paint3.png",
-            "faq_qus": "Activitated Carbon",
+            "title": "",
             "faq_quality": "Low Cost",
             "faq_ans": "Activitated Carbon Content"
           }
@@ -215,7 +215,7 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/paint1.png",
-            "faq_qus": "Titanium Dioxide",
+            "title": "",
             "faq_quality": "Good Efficacy",
             "faq_ans": "Titanium Dioxide Content"
           }
@@ -224,7 +224,7 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/paint4.png",
-            "faq_qus": "Devil’s Ivy",
+            "title": "",
             "faq_quality": "No secondary Poulltions",
             "faq_ans": "No secondary Poulltions Content"
           }
@@ -233,7 +233,7 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/image_40_2.png",
-            "faq_qus": "Methylotorphic Bacteria",
+            "title": "",
             "faq_quality": "Enviromental Friendly",
             "faq_ans": "Methylotorphic Bacteria Content"
           }
@@ -251,8 +251,6 @@
         "link": "<p><a href=\"#\" title=\"#\">Full Ingredient details here<\/a><\/p>",
         "btn_text": "",
         "btn_url": "",
-        "button-color": "",
-        "button-text-color": "",
         "sb-heading": "Plant-based. VOC-Free. Non-toxic.",
         "radius": 49,
         "padding_top": 52,
@@ -262,6 +260,8 @@
     "1652439903eeaf17c8": {
       "type": "comparison",
       "settings": {
+        "section-title": "Don’t settle for\nanything less",
+        "section-des": "",
         "them-img": "shopify:\/\/shop_images\/paint4.png",
         "heading-img1": "Other paints",
         "us-img": "shopify:\/\/shop_images\/paint3.png",

@@ -141,9 +141,7 @@
       "settings": {
         "heading": "Ready to get started?",
         "btn_text": "Contact us",
-        "btn_type": "secondary",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "btn_type": "secondary"
       }
     },
     "1653548703a8d9cba4": {
