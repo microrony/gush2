@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product-gush",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -22,8 +15,8 @@
             "text_style": "subtitle"
           }
         },
-        "price": {
-          "type": "price",
+        "description": {
+          "type": "description",
           "settings": {
           }
         },
@@ -43,85 +36,15 @@
           "settings": {
             "show_dynamic_checkout": true
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "8ebdff30-e37c-4e7f-8454-4d90a479b42e": {
-          "type": "tab",
-          "settings": {
-            "tab_heading": "Why is it Special",
-            "tab_content": "Product introduction. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,"
-          }
-        },
-        "d31c5b0c-d7ac-4a4e-80cc-aca5b267f625": {
-          "type": "tab",
-          "settings": {
-            "tab_heading": "What is it",
-            "tab_content": "Product introduction. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,"
-          }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "caption",
-        "price",
+        "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share",
-        "8ebdff30-e37c-4e7f-8454-4d90a479b42e",
-        "d31c5b0c-d7ac-4a4e-80cc-aca5b267f625"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,

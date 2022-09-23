@@ -1,34 +1,3 @@
-/* CUSTOM STYLES */
-.product__info-wrapper__gush .product__desc-review {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #b4aca0;
-}
-
-.product__info-wrapper__gush .product_tabs {
-  margin: 0;
-  padding: 0;
-}
-
-.product__info-wrapper__gush .product_tabs .tabs {
-  margin: 0;
-  padding: 0;
-}
-
-.product__info-wrapper__gush
-  .product-form__quantity
-  .quantity__button:first-child {
-  padding-left: 1rem;
-}
-
-.product__info-wrapper__gush
-  .product-form__quantity
-  .quantity__button:last-child {
-  padding-right: 1rem;
-}
-
-/* ******** */
-
 .product {
   margin: 0;
 }
@@ -1285,3 +1254,65 @@ span.variant-price:before {
   display: block;
   padding-bottom: 100%;
 }
+
+/* CUSTOM STYLES */
+.product__info-wrapper__gush .product__desc-review {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #b4aca0;
+}
+
+.product__info-wrapper__gush .product_tabs {
+  margin: 0;
+  padding: 0;
+}
+
+.product__info-wrapper__gush .product_tabs .tabs {
+  margin: 0;
+  padding: 0;
+}
+
+.product__info-wrapper__gush
+  .product-form__quantity
+  .quantity__button:first-child {
+  padding-left: 1rem;
+}
+
+.product__info-wrapper__gush
+  .product-form__quantity
+  .quantity__button:last-child {
+  padding-right: 1rem;
+}
+
+/* Styles For Description Tab */
+
+.gush_product__description ul, .gush_product__description li {
+  padding: 0;
+	margin: 0;
+}
+
+.gush_product__description .tabs {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.gush_product__description .tabs li {
+	padding: 1.2rem 0;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.gush_product__description .tabs .active {
+	border-bottom: 1.38px solid rgb(var(--color-secondary-6));
+}
+
+.gush_product__description .tabs-content li {
+	display: none;
+}
+
+.gush_product__description .tabs-content li.active {
+	display: block;
+}
+/* ******** */
