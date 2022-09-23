@@ -31,6 +31,7 @@
 	grid-template-columns: 1fr;
 	gap: 3rem;
 }
+
   .ingredient__accordion {}
   .faq_qus .qus-li img {width: auto;}
 
@@ -42,11 +43,42 @@
 	}
 {%- endstyle -%}
 {% endif %}
+{% if section.settings.page == 'product' %}
+{%-style-%}
+.ingredient__main {
+	display: grid;
+	grid-template-columns: 40% auto;
+}
+.ingredient__heading {
+  padding-right:100px;
+}
+.ingredient__heading p{
+  white-space: pre-line;
+  padding-top:16px;
+}
+.ingredient__link a{
+  color:#302112;;
+  text-decoration: none !important;
+}
+.question__ans{
+  padding-left:95px;
+  
+}
+
+{%-endstyle-%}
+{% endif %}
+
 
 <section class="ingredient section-{{ section.id }}-padding section">
   <div class="ingredient__main gush-page-width">
     <div class="ingredient__left-container">
-        <div class="ingredient__heading"><h2 class="gush-font-h1">{{ section.settings.heading }}</h2></div>
+        <div class="ingredient__heading">
+          <h2 class="gush-font-h1">{{ section.settings.heading }}</h2>
+          {% if section.settings.page == 'product' %}
+          <p>{{ section.settings.sub-heading }}</p>
+        {% endif %}
+        </div>
+        
         <div class="ingredient__link">{{ section.settings.link }}</div>
       {% if section.settings.btn_text != blank %}
       <div class="ingredient__cta-desktop"><a class="cta-button cta-button__fuschia gush-font-teritary" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}{% render 'arrow-dotted' %}</a></div>
@@ -136,6 +168,11 @@
       "label": "Heading"
     },
     {
+      "type": "textarea",
+      "id": "sub-heading",
+      "label": "Sub Heading"
+    },
+    {
       "type": "richtext",
       "id": "link",
       "label": "Add a link"
@@ -184,6 +221,22 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "select",
+      "id": "page",
+      "label": "Page",
+      "options": [
+        {
+          "value": "product",
+          "label": "Product"
+        },
+        {
+          "value": "services",
+          "label": "Services"
+        }
+      ],
+      "default": "services"
     }
   ],
   "blocks": [

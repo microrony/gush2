@@ -206,17 +206,17 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/paint3.png",
-            "title": "",
-            "faq_quality": "Low Cost",
-            "faq_ans": "Activitated Carbon Content"
+            "title": "Gush proprietary catalyst",
+            "faq_quality": "",
+            "faq_ans": "This nifty stimulant excites the wall surface to break down pollutants into water and carbon dioxide. Removes 99% of pollutants in just 21 hours."
           }
         },
         "b3bf5e61-3ce4-49c8-a560-d9462466cd1b": {
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/paint1.png",
-            "title": "",
-            "faq_quality": "Good Efficacy",
+            "title": "Formaldehyde decomposers",
+            "faq_quality": "",
             "faq_ans": "Titanium Dioxide Content"
           }
         },
@@ -224,8 +224,8 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/paint4.png",
-            "title": "",
-            "faq_quality": "No secondary Poulltions",
+            "title": "No secondary Poulltions",
+            "faq_quality": "",
             "faq_ans": "No secondary Poulltions Content"
           }
         },
@@ -233,8 +233,8 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/image_40_2.png",
-            "title": "",
-            "faq_quality": "Enviromental Friendly",
+            "title": "Enviromental Friendly",
+            "faq_quality": "",
             "faq_ans": "Methylotorphic Bacteria Content"
           }
         }
@@ -247,14 +247,16 @@
       ],
       "settings": {
         "color": "#75fa4d",
-        "heading": "Ingredients",
+        "heading": "What's the secret? Science.",
+        "sub-heading": "We’re pushing the boundaries \nwith our special ingredients.",
         "link": "<p><a href=\"#\" title=\"#\">Full Ingredient details here<\/a><\/p>",
         "btn_text": "",
         "btn_url": "",
-        "sb-heading": "Plant-based. VOC-Free. Non-toxic.",
+        "sb-heading": "",
         "radius": 49,
         "padding_top": 52,
-        "padding_bottom": 52
+        "padding_bottom": 52,
+        "page": "product"
       }
     },
     "1652439903eeaf17c8": {
