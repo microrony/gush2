@@ -30,18 +30,18 @@
 {% endcomment %}
 <section class="comparison isolate section-{{ section.id }}-padding section section-primary section-wrapper">
 <div class="settel__container gush-page-width">
-<h1 class=".gush-font-h1">Don’t settle for <br /> anything less</h1>
+<h1 class="gush-font-h1">{{ section.settings.section-title }}</h1>
 <div class="settel__container_grid">
  <div class="text-content-gush">
-  <p class=".gush-font-p1">Gush paints pack a punch: you get six features in one tub. Say goodbye to toxic fumes for good.</p>
+  <p class="gush-font-p1">{{ section.settings.section-des }}</p>
  </div>
  <div class="center_content">
    <img src="{{ section.settings.circuler-img1 | img_url: 'medium'}}" alt="img2">
-   <h3 class=".gush-font-h3">{{ section.settings.heading-img1 }}</h3>
+   <h3 class="gush-font-h3">{{ section.settings.heading-img1 }}</h3>
  </div>
  <div class="center_content">
    <img src="{{ section.settings.circuler-img2 | img_url: 'medium'}}" alt="img2">
-   <h3 class=".gush-font-h3">{{ section.settings.heading-img2 }}</h3>
+   <h3 class="gush-font-h3">{{ section.settings.heading-img2 }}</h3>
  </div>
 </div>
 </div>
@@ -51,6 +51,16 @@
    "name": "About Comparison",
   "class": "section-comparison",
   "settings": [
+      {
+         "type": "textarea",
+         "id": "section-title",
+         "label": "section title h1"
+      },
+      {
+         "type": "textarea",
+         "id": "section-des",
+         "label": "section description p"
+      },
       {
          "type": "image_picker",
          "id": "them-img",

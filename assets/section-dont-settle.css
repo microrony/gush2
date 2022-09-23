@@ -1,10 +1,13 @@
+.settel__container h1 {
+  white-space: pre-line;
+}
 .settel__container_grid {
   display: grid;
   gap: 20px;
   grid-template-columns: 300px auto auto;
 }
 .text-content-gush {
-  padding-right: 50px;
+  padding-right: 20px;
 }
 .settel__container_grid img {
   width: 70%;
