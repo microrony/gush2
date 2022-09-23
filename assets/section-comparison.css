@@ -38,8 +38,7 @@
   margin-top: 17%;
 }
 
-
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .comparison__main {
     flex-direction: column-reverse;
   }

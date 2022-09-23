@@ -1,0 +1,24 @@
+.settel__container_grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 300px auto auto;
+}
+.text-content-gush {
+  padding-right: 50px;
+}
+.settel__container_grid img {
+  width: 70%;
+}
+.settel__container_grid h3 {
+  text-align: center;
+}
+.center_content {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .settel__container_grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

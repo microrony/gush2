@@ -1,4 +1,5 @@
 {{ 'section-comparison.css' | asset_url | stylesheet_tag }}
+{{ 'section-dont-settle.css' | asset_url | stylesheet_tag }}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -12,7 +13,7 @@
     }
   }
 {%- endstyle -%}
-
+{% comment %}
 <section class="comparison isolate section-{{ section.id }}-padding section section-primary section-wrapper">
     <div class="comparison__main page-width">
         <div class="comparison__img-section">
@@ -26,7 +27,25 @@
         </div>
     </div>
 </section>
-
+{% endcomment %}
+<section class="comparison isolate section-{{ section.id }}-padding section section-primary section-wrapper">
+<div class="settel__container gush-page-width">
+<h1 class=".gush-font-h1">Don’t settle for <br /> anything less</h1>
+<div class="settel__container_grid">
+ <div class="text-content-gush">
+  <p class=".gush-font-p1">Gush paints pack a punch: you get six features in one tub. Say goodbye to toxic fumes for good.</p>
+ </div>
+ <div class="center_content">
+   <img src="{{ section.settings.circuler-img1 | img_url: 'medium'}}" alt="img2">
+   <h3 class=".gush-font-h3">{{ section.settings.heading-img1 }}</h3>
+ </div>
+ <div class="center_content">
+   <img src="{{ section.settings.circuler-img2 | img_url: 'medium'}}" alt="img2">
+   <h3 class=".gush-font-h3">{{ section.settings.heading-img2 }}</h3>
+ </div>
+</div>
+</div>
+</section>
 {% schema %}
 {
    "name": "About Comparison",
@@ -35,6 +54,16 @@
       {
          "type": "image_picker",
          "id": "them-img",
+         "label": "Upload an image"
+      },
+      {
+         "type": "image_picker",
+         "id": "circuler-img1",
+         "label": "Upload an image"
+      },
+      {
+         "type": "image_picker",
+         "id": "circuler-img2",
          "label": "Upload an image"
       },
       {
