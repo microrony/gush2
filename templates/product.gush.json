@@ -261,13 +261,12 @@
       "type": "comparison",
       "settings": {
         "section-title": "Don’t settle for\nanything less",
-        "section-des": "",
-        "them-img": "shopify:\/\/shop_images\/paint4.png",
+        "section-des": "Gush paints pack a punch: you get six features in one tub. Say goodbye to toxic fumes for good.",
+        "circuler-img1": "shopify:\/\/shop_images\/Ellipse_816.png",
+        "circuler-img2": "shopify:\/\/shop_images\/Ellipse_816.png",
         "heading-img1": "Other paints",
-        "us-img": "shopify:\/\/shop_images\/paint3.png",
         "heading-img2": "Gush",
         "heading": "Us vs Them",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus.",
         "padding_top": 36,
         "padding_bottom": 36
       }

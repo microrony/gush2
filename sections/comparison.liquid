@@ -13,21 +13,6 @@
     }
   }
 {%- endstyle -%}
-{% comment %}
-<section class="comparison isolate section-{{ section.id }}-padding section section-primary section-wrapper">
-    <div class="comparison__main page-width">
-        <div class="comparison__img-section">
-            <div class="comparison__img-them about-image"><img src="{{ section.settings.them-img | img_url: 'medium'}}" alt="img1" ><h3>{{ section.settings.heading-img1 }}</h3></div>
-            
-            <div class="comparison__img-us about-image"><img src="{{ section.settings.us-img | img_url: 'medium'}}" alt="img2"><h3>{{ section.settings.heading-img2 }}</h3></div>
-        </div>
-        <div class="comparison__content">
-            <h2>{{ section.settings.heading }}</h2>
-            <p>{{ section.settings.content }}</p>
-        </div>
-    </div>
-</section>
-{% endcomment %}
 <section class="comparison isolate section-{{ section.id }}-padding section section-primary section-wrapper">
 <div class="settel__container gush-page-width">
 <h1 class="gush-font-h1">{{ section.settings.section-title }}</h1>
@@ -54,17 +39,12 @@
       {
          "type": "textarea",
          "id": "section-title",
-         "label": "section title h1"
+         "label": "Section title"
       },
       {
          "type": "textarea",
          "id": "section-des",
-         "label": "section description p"
-      },
-      {
-         "type": "image_picker",
-         "id": "them-img",
-         "label": "Upload an image"
+         "label": "Section description"
       },
       {
          "type": "image_picker",
@@ -82,11 +62,6 @@
         "label": "Image Heading"
      },
       {
-         "type": "image_picker",
-         "id": "us-img",
-         "label": "Upload an image"
-      },
-      {
         "type": "text",
         "id": "heading-img2",
         "label": "Image Heading"
@@ -95,11 +70,6 @@
          "type": "text",
          "id": "heading",
          "label": "Heading"
-      },
-      {
-         "type": "text",
-         "id": "content",
-         "label": "Write a content"
       },
       {
         "type": "range",
