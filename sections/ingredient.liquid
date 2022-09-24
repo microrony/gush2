@@ -24,7 +24,7 @@
   }
 </style>
 
-{% if page.title == 'Services' %}
+{% if section.settings.page == 'services' %}
 {%- style -%}
 .ingredient__main {
 	display: grid;
@@ -63,6 +63,16 @@
 .question__ans{
   padding-left:95px;
   
+}
+@media screen and (max-width: 750px) {
+  .ingredient__main {
+    grid-template-columns: 1fr;
+    gap: 10rem;
+  }
+  .question__ans{
+    padding-left:85px;
+    
+  }
 }
 
 {%-endstyle-%}
