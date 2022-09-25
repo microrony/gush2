@@ -1,27 +1,63 @@
+.settel__container :where(h1, h3, p) {
+	margin: 0;
+	padding: 0;
+}
+
+
 .settel__container h1 {
   white-space: pre-line;
 }
+
+.settel__container p {
+	margin-top: 20px;
+	max-width: 220px;
+}
+
+.settel__container h3 {
+  margin-top: 20px;
+}
+
 .settel__container_grid {
   display: grid;
-  gap: 20px;
-  grid-template-columns: 300px auto auto;
+  gap: 35px;
+	grid-template-columns: repeat(1, 1fr);
 }
 .text-content-gush {
   padding-right: 20px;
 }
 .settel__container_grid img {
-  width: 70%;
+  width: 100%;
 }
 .settel__container_grid h3 {
   text-align: center;
 }
 .center_content {
   text-align: center;
+	width: 100%;
 }
-@media screen and (max-width: 767px) {
+
+
+@media screen and (min-width: 750px) {
   .settel__container_grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+		margin-top: 50px;
   }
+
+	.settel__container h3 {
+		margin-top: 30px;
+	}
+	
+
+	.settel__container p {
+		margin-top: 30px;
+		max-width: none;
+	}
+}
+
+
+@media screen and (min-width: 990px) {
+  .settel__container_grid {
+		grid-template-columns: 300px auto auto;
+  }
+
 }
