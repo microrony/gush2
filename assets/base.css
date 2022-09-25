@@ -3218,7 +3218,7 @@ h4,
 
 	.gush-font-p2 {
 		font-size: 10px !important;
-		line-height: 1.5;
+		line-height: 1.5 !important;
 	}
 
 	.gush-font-teritary {

@@ -465,15 +465,15 @@ button.quantity__button {
                 </pickup-availability>
               </div>
             </div>
-          {%- when 'variant_picker' -%}
+						{%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
-                       
+                         {%- comment -%}
                         <legend class="form__label">{{ option.name }}</legend>
-                        
+                        {%- endcomment -%}
                         {%- for value in option.values -%}
                           <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                                 name="{{ option.name }}"
@@ -494,7 +494,7 @@ button.quantity__button {
               {%- else -%}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
-                    <div class="product-form__input product-form__input--dropdown"
+                    <div class="product-form__input product-form__input--dropdown">
                       <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
                         {{ option.name }}
                       </label>
