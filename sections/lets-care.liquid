@@ -87,6 +87,11 @@
 	.lets_care_title {
 		margin-bottom: 5rem;
 	}
+	.swiper-slide {
+        width: auto;
+        height: 480px;
+        object-fit: cover;
+      }
 </style>
 
 {% assign slider_image_blocks = section.blocks | where: 'type', 'slider_image' %}
@@ -188,7 +193,7 @@ tabs.forEach(tab => {
 })
 
 var swiper = new Swiper(".lets_care-swiper", {
-	slidesPerView: 3,
+	slidesPerView: "auto",
 	spaceBetween: 30,
 });
 	
