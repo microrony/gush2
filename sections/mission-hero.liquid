@@ -18,11 +18,12 @@
 	}
 
 	.mission-hero h1 {
+		max-width: 90%;
 		color: #FF5500;
 	}
 
 	.mission-hero p {
-		max-width: 480px;
+		max-width: 90%;
 		color: #fff;
 	}
 
@@ -38,6 +39,24 @@
 		margin: 0 auto;
 		padding: 0 15px;
 	}
+	@media screen and (max-width: 1000px) {
+		.mission-hero .content {
+		gap: 10rem;
+	}
+	/* .gush-page-width{
+		padding: 50px !important;
+	} */
+		.mission-hero h1 {
+		max-width: 90%;
+		color: #FF5500;
+		font-size: 48px !important;
+	}
+
+	.mission-hero p {
+		max-width: 90%;
+		color: #fff;
+	}
+	}
 	@media screen and (max-width: 750px) {
     .mission-hero .content {
 		display: grid;
@@ -48,6 +67,12 @@
 	}
 	.gush-page-width{
 		padding-bottom: 1.5rem !important;
+	}
+	.mission-hero h1{
+		max-width: 75%;
+	}
+	.mission-hero p {
+		max-width: 60%;
 	}
 	.mission-hero .image {
 		padding: 0 30px;

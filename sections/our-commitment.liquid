@@ -3,10 +3,10 @@
 	background-color: #E8E0DB;	
 	padding: 5rem 0 ;
 	}
-
+	
 	.our-commitment .content {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: repeat(2,1fr);
 		align-items: center;
 	}
 
@@ -14,6 +14,7 @@
 		margin: 0;
 		padding: 0;
 		max-width: 466px;
+		margin-right: 30px;
 		color: #796E62;
 	}
 
@@ -21,13 +22,29 @@
 		margin-bottom: 20px;
 	}
 
-	.our-commitment iframe {
-		width: 646px;
+	.iframe_container iframe {
+		width: 647px;
 		height: 496px;
 		border: 0;
 		outline: 0;
 		background-color: #E8E0DB;	
 	}
+	.mobile_responsive_image{
+		display: none;
+	}
+	@media screen and (max-width: 1000px) {
+		.iframe_container iframe {
+		width: 450px;
+		height: 496px;
+		border: 0;
+		outline: 0;
+		background-color: #E8E0DB;	
+	}
+	.our-commitment h2{
+		font-size: 48px !important;
+	}
+	}
+
 	@media screen and (max-width: 750px) {
 		.our-commitment .content {
 			grid-template-columns: repeat(1,1fr);
@@ -42,17 +59,31 @@
 			padding: 0 2.5rem !important;
 		}
 		.content h2{
-			max-width: 230px;
+			font-size: 32px !important;
+			max-width: 80%;
 			margin: 4px 0;
 		}
 		.content p{
-			max-width: 195px;
+			max-width: 60%;
 			margin:  0;
 		}
+		.iframe_container{
+			display: none;
+		}
+		.mobile_responsive_image{
+		display: block;
+		margin: 0 -25px !important;
+	}
+	.mobile_responsive_image img{
+		width: 100%;
+	}
 		.our-commitment iframe {
-			width: auto;
+			width: 100%;
 			margin: 30px 0;
 		}
+		.our-commitment {
+	padding-bottom: 0 ;
+	}
 	}
 
 </style>
@@ -60,6 +91,9 @@
 <div class="our-commitment">
 	<div class="content page-width">
 		<div class="iframe_container"><iframe src="https://my.spline.design/untitled-75255dd84590febfc23f92e6da59730e/" title="spline design"></iframe></div>
+		<div class="mobile_responsive_image">
+			<img src="{{ section.settings.image | image_url }}"/>
+		</div>
 		<div>
 			<h2 class="gush-font-h1">{{ section.settings.title }}</h2>
 			<p class="gush-font-p1">{{ section.settings.description }}</p>
