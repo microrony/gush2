@@ -30,22 +30,40 @@
             "answer": "We collect the following types of information about you:"
           }
         },
-        "93a08626-70eb-408c-bcd2-db82226dc296": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Cookie Policy",
-            "type": "How we use it",
-            "question": "1.2 We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:",
-            "answer": "We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation"
-          }
-        },
         "4e1825cd-dc5b-45c0-8670-82158924d4f4": {
           "type": "faqContent",
           "settings": {
             "category": "Privacy Policy",
-            "type": "Information sharing",
-            "question": "1.2 We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:",
-            "answer": "We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation"
+            "type": "How we use information we collect",
+            "question": "2.1 We only use your personal information where the law allows us to. We use your personal information only where:",
+            "answer": "(a) we need to perform the contract we have entered into (or are about to enter into) with you, including to operate our products or services, to provide customer support and personalised features, and to protect the safety and security of our Platform;\n(b) it satisfies a legitimate interest which is not overridden by your fundamental rights or data protection interests, for example for research and development, and in order to protect our legal rights and interests\n(c) you've given us consent to do so for a specific purpose, for example we may send you direct marketing materials or publish your information as part of our testimonials or customer stories to promote our products or services with your permission; or"
+          }
+        },
+        "674921ce-e5ff-4268-afa8-e160c5e4fa52": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Privacy Policy",
+            "type": "How we use information we collect",
+            "question": "2.2 If you have given us consent to use your personal information for a specific purpose, you have the right to withdraw your consent any time by contacting us (please refer to paragraph 8 for contact information)",
+            "answer": "But please note this will not affect any use of your information that has already taken place."
+          }
+        },
+        "ff644c46-ce6f-4f14-a483-c2b25e195291": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Privacy Policy",
+            "type": "How we use information we collect",
+            "question": "2.3 We do not share your personal information with any company outside our group for marketing purpose, unless with your express specific consent to do so.",
+            "answer": ""
+          }
+        },
+        "c3a5662e-617e-4537-8449-77359bd736cd": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Privacy Policy",
+            "type": "How we use information we collect",
+            "question": "2.4 For visitors to or users of our Platform who are located in the European Union, we have set out our legal bases for processing your information in the Legal Bases Table at the end of this policy.",
+            "answer": ""
           }
         }
       },
@@ -53,8 +71,10 @@
         "1dbac928-f4cc-4bfd-a1e9-87c271ff38f4",
         "672dc2e9-bf58-460d-a7f3-fb8389507845",
         "90a2a239-1eef-46e6-86f9-4d85b51b3389",
-        "93a08626-70eb-408c-bcd2-db82226dc296",
-        "4e1825cd-dc5b-45c0-8670-82158924d4f4"
+        "4e1825cd-dc5b-45c0-8670-82158924d4f4",
+        "674921ce-e5ff-4268-afa8-e160c5e4fa52",
+        "ff644c46-ce6f-4f14-a483-c2b25e195291",
+        "c3a5662e-617e-4537-8449-77359bd736cd"
       ],
       "settings": {
         "heading": "Privacy Policy & Cookie Policy",
