@@ -65,6 +65,33 @@
             "question": "2.4 For visitors to or users of our Platform who are located in the European Union, we have set out our legal bases for processing your information in the Legal Bases Table at the end of this policy.",
             "answer": ""
           }
+        },
+        "fe74eee3-a2bc-4ac8-a312-edb35242bf2d": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Privacy Policy",
+            "type": "How we share information we collect",
+            "question": "3.1 We may share personal information on aggregated or de-identified basis with third parties for research and analysis, profiling, and similar purposes to help us improve our products and services.",
+            "answer": ""
+          }
+        },
+        "8af2cb08-c658-4dd1-b957-f3ebefffb690": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Privacy Policy",
+            "type": "",
+            "question": "",
+            "answer": ""
+          }
+        },
+        "0977f9ae-9723-4096-a9bb-df1785c7db46": {
+          "type": "faqContent",
+          "settings": {
+            "category": "",
+            "type": "",
+            "question": "",
+            "answer": ""
+          }
         }
       },
       "block_order": [
@@ -74,7 +101,10 @@
         "4e1825cd-dc5b-45c0-8670-82158924d4f4",
         "674921ce-e5ff-4268-afa8-e160c5e4fa52",
         "ff644c46-ce6f-4f14-a483-c2b25e195291",
-        "c3a5662e-617e-4537-8449-77359bd736cd"
+        "c3a5662e-617e-4537-8449-77359bd736cd",
+        "fe74eee3-a2bc-4ac8-a312-edb35242bf2d",
+        "8af2cb08-c658-4dd1-b957-f3ebefffb690",
+        "0977f9ae-9723-4096-a9bb-df1785c7db46"
       ],
       "settings": {
         "heading": "Privacy Policy & Cookie Policy",
