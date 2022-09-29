@@ -25,7 +25,7 @@ margin-top: 0 !important;
 	<div class="faq page-width section-{{ section.id }}-padding">
 		<div class="rte faq__main">
 			<div class="faq__heading">
-				<h1 style="margin-top:{{ section.settings.top-margin }}px;">{{ section.settings.heading }}</h1>
+				<h1>{{ section.settings.heading }}</h1>
 			</div>
 			<div class="faq__main-content">
 				<div class="faq__categories">
@@ -51,7 +51,7 @@ margin-top: 0 !important;
 							<div class="question">
 								<div class="q-ans__block" id="faq__block">
 									<div class="faq_qus" id="faq_qus" data-content-id="faq_{{ forloop.index }}">
-										<p class="faq_q">{{ block.settings.question }}</p>
+										<p class="faq_q">{{ block.settings.title }}</p>
 										<span>{% render 'icon-plus-new' %}{% render 'icon-minus-new' %}</span>
 									</div>
 									<div class="question__ans">
@@ -79,16 +79,6 @@ margin-top: 0 !important;
 	"type": "text",
 	"id": "heading",
 	"label": "Section Main Heading"
-	},
-	{
-	"type": "range",
-	"id": "top-margin",
-	"min": 0,
-	"max": 100,
-	"step": 1,
-	"unit": "px",
-	"label": "Section Heading Margin Top",
-	"default": 50
 	},
 	{
 	"type": "range",
@@ -127,9 +117,9 @@ margin-top: 0 !important;
 	"label": "Type"
 	},
 	{
-	"id": "question",
-	"type": "html",
-	"label": "Question: "
+		"type": "textarea",
+		"id": "title",
+		"label": "Question"
 	},
 	{
 	"type": "html",

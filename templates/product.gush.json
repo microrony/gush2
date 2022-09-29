@@ -11,8 +11,7 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
+            "text": "{{ product.metafields.descriptors.subtitle.value }}"
           }
         },
         "description": {
@@ -52,9 +51,7 @@
         "media_size": "large",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 100,
-        "padding_bottom": 100
+        "enable_video_looping": false
       }
     },
     "product-recommendations": {
@@ -90,7 +87,7 @@
           "settings": {
             "tabheading": "VOC-Free",
             "tabimg": "shopify:\/\/shop_images\/paint3.png",
-            "tabdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum tincidunt auctor"
+            "tabdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus. Pellentesque habitant morbi tristique senectus et netus"
           }
         },
         "f1d18298-7896-4cb8-8f81-c79c2fd62c24": {
@@ -191,9 +188,7 @@
         "circuler-img2": "shopify:\/\/shop_images\/Ellipse_816.png",
         "heading-img1": "Other paints",
         "heading-img2": "Gush",
-        "heading": "Us vs Them",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Us vs Them"
       }
     },
     "16524399652ff3675c": {
