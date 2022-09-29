@@ -1,5 +1,5 @@
 {
-  "wrapper": "section#mission_page_id",
+  "wrapper": "section#mission_page_id.preload",
   "sections": {
     "hero": {
       "type": "mission-hero",

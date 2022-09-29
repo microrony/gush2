@@ -1,3 +1,7 @@
+var body = document.body;
+
+body.classList.add("preload");
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
@@ -900,8 +904,9 @@ customElements.define('variant-radios', VariantRadios);
 // script for changing background on mission page
 const mission_page = document.querySelector('#mission_page_id')
 
-mission_page.style.transition = "background .5s ease-in-out"
+
 mission_page.style.background = "#302112"
+mission_page.style.transition = "background .5s ease-in-out"
 
 const colors = ["#302112","#796E62","#B6AC9E","#E8E0DB","#F9F4F0"];
 
@@ -922,4 +927,8 @@ function onScroll() {
     .find((section) => section.rect.bottom >= (window.innerHeight * .7));
     mission_page.style.background = section.el.getAttribute('data-bg');
 }
+window.addEventListener('load', (event) => {
+  var body = document.body;
+  body.classList.remove("preload");
+});
 
