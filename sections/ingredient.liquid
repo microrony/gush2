@@ -22,6 +22,7 @@
   .faq_qus .qus-li img {
     border-radius: {{ section.settings.radius }}%;
   }
+  
 </style>
 
 {% if section.settings.page == 'services' %}
@@ -45,9 +46,16 @@
 {% endif %}
 {% if section.settings.page == 'product' %}
 {%-style-%}
+.ingredient{
+  padding: 0 ;
+}
 .ingredient__main {
-	display: grid;
-	grid-template-columns: 40% auto;
+	display: flex;
+  gap:10rem;
+  
+}
+.ingredient__left-container{
+  gap:25rem;
 }
 .ingredient__heading {
   padding-right:100px;
@@ -60,18 +68,51 @@
   color:#302112;;
   text-decoration: none !important;
 }
+.ingredient__accordion .q-ans__block {
+  padding: 20px 0 !important;
+}
+.question .q-ans__block p.faq_ans.is-active{
+  margin: 0 ;
+}
 .question__ans{
   padding-left:95px;
   
 }
+.qus-li__inner h3{
+  margin:0;
+}
+.qus-li{
+  gap:20px;
+}
+.ingredient__accordion{
+  margin-top:30px;
+  max-width:750px;
+}
+.qus-li img{
+  width:75px !important;
+  height:75px;
+}
+
 @media screen and (max-width: 750px) {
   .ingredient__main {
-    grid-template-columns: 1fr;
-    gap: 10rem;
+    padding:25px 25px 50px 25px !important;
+    gap: 1rem;
+  }
+  .qus-li img{
+    width:40px !important;
+    height:40px;
+  }
+  .qus-li__inner h3{
+    padding-right:20px;
   }
   .question__ans{
-    padding-left:85px;
-    
+    padding-left:60px;    
+  }
+  .ingredient__link-link{
+    margin-top: 85px;
+  }
+  .ingredient__link-link p a{
+    text-decoration: none;
   }
 }
 

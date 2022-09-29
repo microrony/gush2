@@ -3433,3 +3433,9 @@ h4,
 	transform-origin: 0% 50%;
 	will-change: transform;
 } */
+
+/* this is for removing  */
+.preload * {
+  transition: none !important;
+}
+
