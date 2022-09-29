@@ -11,7 +11,7 @@
 		let textArr = [];
 
 		const activeFaqTypes =  document.querySelectorAll('.faq-type.active');
-		
+
 		activeFaqTypes.forEach(function (d, i) {
       if (textArr.indexOf(d.innerText) > -1) {
         d.remove();

@@ -31,7 +31,7 @@ margin-top: 0 !important;
 				<div class="faq__categories">
 					{% for block in section.blocks %}
 					<div class="faq-category gush-font-teritary {{ custom_classes }}"
-						data-category-id="faq-category-{{  block.settings.category | downcase | replace: ' ', '-' }}">
+						data-category-id="faq-category-{{  block.settings.category | handleize }}">
 						{{ block.settings.category }}
 					</div>
 					{% endfor %}
@@ -39,15 +39,15 @@ margin-top: 0 !important;
 				<div class="faq__contents">
 					<div class="faq__types">
 						{% for block in section.blocks %}
-						<div class="faq-type faq-category-{{ block.settings.category | downcase | replace: ' ', '-' }}"
-							data-type-id="faq-type-{{  block.settings.type | downcase | replace: ' ', '-' }}">
+						<div class="faq-type faq-category-{{ block.settings.category | handleize }}"
+							data-type-id="faq-{{ block.settings.category | append: '-' | append: block.settings.type  | handleize }}">
 							{{ block.settings.type }}
 						</div>
 						{% endfor %}
 					</div>
 					<div class="faq__qas">
 						{% for block in section.blocks %}
-						<div class="faq-qa faq-type-{{  block.settings.type | downcase | replace: ' ', '-' }}">
+						<div class="faq-qa faq-{{ block.settings.category | append: '-' | append: block.settings.type  | handleize }}">
 							<div class="question">
 								<div class="q-ans__block" id="faq__block">
 									<div class="faq_qus" id="faq_qus" data-content-id="faq_{{ forloop.index }}">
