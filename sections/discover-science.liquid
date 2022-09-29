@@ -3,6 +3,7 @@
 		padding-top: 100px;
 		padding-bottom: 100px;
 		background-color: #F9F4F0;
+		overflow: hidden;
 	}
 
 	.discover-science .content {
@@ -31,11 +32,27 @@
 	}
 
 	.discover-science .image img {
-		object-fit: contain;
+		width: 100%;
+		object-fit: cover;
 	}
 
 	.discover-science	.button {
 		background-color: #FF42EF;
+	}
+	@media screen and (max-width: 750px) {
+		
+	.discover-science .image img {
+		width: 100%;
+		scale: 1.5;
+	}
+	.discover-science .content .text_button {
+		width: 300px;
+		gap: 1rem !important;
+		z-index: 1;
+	}
+	.gush-font-teritary {
+		padding: 0 1.5rem !important;
+	}
 	}
 
 
@@ -51,7 +68,8 @@
 						<span>{{ section.settings.button_label | escape }}</span>{% render 'arrow-dotted' %}</a>
 					</div>
 		<div class="image">
-			{{ section.settings.image | image_url: width: 1280 | image_tag }}
+			<img src="{{ section.settings.image | image_url }}" alt="">
+			
 		</div>
 	</div>
 </div>

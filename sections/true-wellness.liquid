@@ -6,8 +6,9 @@
 	}
 
 	.true-wellness .content {
-		padding: 35rem 19rem;
+		padding: 35rem 32rem;
 		position: relative;
+		overflow: hidden;
 	}
 
 	.true-wellness h2, .true-wellness p {
@@ -38,17 +39,62 @@
 	}
 
 	.true-wellness .image_1{
-		top: 100px;
-		left: -150px;
-	}
-
-	.true-wellness .image_2{
 		top: 4px;
 		right: 0px;
 	}
+	.true-wellness .image_2{
+		top: 100px;
+		left: -20px;
+	}
+
 	.true-wellness .image_3{
 		bottom: -35px;
 		right: 80px;
+	}
+	@media screen and (max-width: 1100px) {
+		.true-wellness img{
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+	}
+	.true-wellness .content {
+		padding: 27rem 24rem;
+		position: relative;
+		overflow: hidden;
+	}
+	}
+	@media screen and (max-width: 850px) {
+		.true-wellness .content {
+		padding: 20rem 10rem 20rem 2.5rem !important;
+		position: relative;
+	}
+	.true-wellness h2 {
+		max-width: 75% !important;
+	}
+	.true-wellness p {
+		max-width: 85% !important;
+	}
+
+	.true-wellness img{
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	.true-wellness .image_1{
+		top: -20px;
+		left: -60px;
+	}
+	.true-wellness .image_2{
+		margin-left: 80%;
+		top: 170px;
+		scale: .7;
+	}
+
+	.true-wellness .image_3{
+		bottom: -15px;
+		left: -40px;
+	}
 	}
 </style>
 
@@ -57,10 +103,10 @@
 		<h2 class="gush-font-h1">{{ section.settings.title }}</h2>
 		<p class="gush-font-p1">{{ section.settings.description }}</p>
 		<div class="image_1">
-			{{ section.settings.image1 | image_url: width: 1280 | image_tag }}
+			{{ section.settings.image2 | image_url: width: 1280 | image_tag }}
 		</div>
 		<div class="image_2">
-			{{ section.settings.image2 | image_url: width: 1280 | image_tag }}
+			{{ section.settings.image1 | image_url: width: 1280 | image_tag }}
 		</div>
 		<div class="image_3">
 			{{ section.settings.image3 | image_url: width: 1280 | image_tag }}
