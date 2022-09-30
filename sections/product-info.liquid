@@ -16,6 +16,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 
 <section class="product-info section-{{ section.id }}-padding section section-primary section-wrapper">
   <div class="product-info__main page-width ">
+    <p>Air-Purifying Paint</p>
     <div class="product-info__heading">
       <h2 class="gush-font-h1">{{ section.settings.heading }}</h2>
     </div>
@@ -24,8 +25,8 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     {% for block in section.blocks %}
     {% if block.type == 'product-info' %}
     {% capture product_info_Heading %}
-    <li class="tab-info product-info-tab gush-font-h2 {% if isActive == true %}isActive{% endif %}"
-      data-content-id="tab-img-content-{{ tabindex }}">{{ block.settings.tabheading }}</li>
+    <li class="tab-info product-info-tab {% if isActive == true %}isActive{% endif %}"
+      data-content-id="tab-img-content-{{ tabindex }}">{{ block.settings.title }}</li>
     {% endcapture %}
     {% assign tabInfo = tabInfo | append: product_info_Heading %}
     {% capture tabsDesc %}
@@ -45,10 +46,12 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 
           <div class="tab-dec">
             <li class="tab-info product-info-responsive product-info-tab {% if isActive == true %}isActive{% endif %}"
-              data-content-id="tab-img-content-{{ tabindex }}">{{ block.settings.tabheading }}</li>
+              data-content-id="tab-img-content-{{ tabindex }}">{{ block.settings.title }}</li>
             <div class=" product-info-desc gush-font-p1 ">{{ block.settings.tabdesc }}  
-              <div class="swiper-button-next">{% render 'icon-arrow-right-gushi' %}</div>
-            <div class="swiper-button-prev">{% render 'icon-arrow-left-gushi' %}</div></div>
+              
+            </div>
+            <div class="swiper-button-next"> {% render 'icon-arrow-right-gushi' %} </div>
+              <div class="swiper-button-prev"> {% if tabindex > 1%} {% render 'icon-arrow-left-gushi' %} {% endif %}</div>
           </div>
         </div>
       </div>
@@ -65,7 +68,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
       <div class="tab_headings">
         {{ tabInfo }}
       </div>
-
       <div class="tab_dsc">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -171,7 +173,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 "settings": [
 {
 "type": "text",
-"id": "tabheading",
+"id": "title",
 "label": "Heading",
 "info": "Please enter headig for tab"
 }, {

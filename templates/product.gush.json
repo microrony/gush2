@@ -11,8 +11,7 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
+            "text": "{{ product.metafields.descriptors.subtitle.value }}"
           }
         },
         "description": {
@@ -52,9 +51,7 @@
         "media_size": "large",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 100,
-        "padding_bottom": 100
+        "enable_video_looping": false
       }
     },
     "product-recommendations": {
@@ -80,33 +77,41 @@
         "c07957dd-18a2-43d1-82c2-ae93a37c6489": {
           "type": "product-info",
           "settings": {
-            "tabheading": "Air-Purifying",
-            "tabimg": "shopify:\/\/shop_images\/paint1.png",
-            "tabdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum tincidunt auctor"
+            "title": "Controls humidity",
+            "tabimg": "shopify:\/\/shop_images\/image_58.png",
+            "tabdesc": "Absorbs excess moisture so you can take it easy in comfort"
           }
         },
         "5fbea61b-e06f-4a95-b56b-938f9b84dc07": {
           "type": "product-info",
           "settings": {
-            "tabheading": "VOC-Free",
+            "title": "Removes pollutants",
             "tabimg": "shopify:\/\/shop_images\/paint3.png",
-            "tabdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum tincidunt auctor"
+            "tabdesc": "Example 2"
           }
         },
         "f1d18298-7896-4cb8-8f81-c79c2fd62c24": {
           "type": "product-info",
           "settings": {
-            "tabheading": "Anti-Molding",
+            "title": "Anti-molding",
             "tabimg": "shopify:\/\/shop_images\/paint2.png",
-            "tabdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum tincidunt auctor"
+            "tabdesc": "Example 3"
           }
         },
         "9e3f1e75-5c22-4786-be51-b27f2252aae0": {
           "type": "product-info",
           "settings": {
-            "tabheading": "Humidity Control",
+            "title": "Anti-bacterial",
             "tabimg": "shopify:\/\/shop_images\/paint4.png",
-            "tabdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor, urna quis tincidunt vestibulum, nisl tortor vehicula erat, quis facilisis odio dui eget purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum tincidunt auctor"
+            "tabdesc": "Example 4"
+          }
+        },
+        "5a382802-1239-4079-88fd-7b6522f78ab7": {
+          "type": "product-info",
+          "settings": {
+            "title": "Toxic-free",
+            "tabimg": "shopify:\/\/shop_images\/image_58.png",
+            "tabdesc": "Example 5"
           }
         }
       },
@@ -114,10 +119,11 @@
         "c07957dd-18a2-43d1-82c2-ae93a37c6489",
         "5fbea61b-e06f-4a95-b56b-938f9b84dc07",
         "f1d18298-7896-4cb8-8f81-c79c2fd62c24",
-        "9e3f1e75-5c22-4786-be51-b27f2252aae0"
+        "9e3f1e75-5c22-4786-be51-b27f2252aae0",
+        "5a382802-1239-4079-88fd-7b6522f78ab7"
       ],
       "settings": {
-        "heading": "The Benefits",
+        "heading": "Features",
         "padding_top": 100,
         "padding_bottom": 100
       }
@@ -191,9 +197,7 @@
         "circuler-img2": "shopify:\/\/shop_images\/Ellipse_816.png",
         "heading-img1": "Other paints",
         "heading-img2": "Gush",
-        "heading": "Us vs Them",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Us vs Them"
       }
     },
     "16524399652ff3675c": {
