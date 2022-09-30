@@ -7,8 +7,9 @@
           "type": "faqContent",
           "settings": {
             "category": "About Gush",
-            "type": "General Questions About Us",
+            "type": "General Questions",
             "question": "Who is Gush?",
+            "title": "Who is Gush?",
             "answer": "\"Gush makes innovative materials for the built environment. Beyond sprucing up your home, our products support your wellbeing and help the Earth too.\nWe believe your choices, however small, can drive purposeful change. When we bring our actions together, big or small – we’re walking the path of true wellness. If this resonates with you, come be a part of our community.\n\nFor more information about our mission, click here. \""
           }
         },
@@ -16,8 +17,9 @@
           "type": "faqContent",
           "settings": {
             "category": "About Gush",
-            "type": "General Questions About Us",
+            "type": "General Questions",
             "question": "\"I am a partner\/ Influencer, \nhow can I collaborate with you? \"",
+            "title": "\"I am a partner\/ Influencer, \nhow can I collaborate with you? \"",
             "answer": "We love working on shared ideas, and can’t wait to hear yours. You may reach out to us at hello@gowithgush.com."
           }
         },
@@ -25,8 +27,9 @@
           "type": "faqContent",
           "settings": {
             "category": "About Gush",
-            "type": "General Questions About Us",
+            "type": "General Questions",
             "question": "I’m interested in a career at Gush, \nwhere can I apply?",
+            "title": "I’m interested in a career at Gush, \nwhere can I apply?",
             "answer": "Visit our Hiring page to check out our currently available positions."
           }
         },
@@ -36,6 +39,7 @@
             "category": "About Gush",
             "type": "Contact Us",
             "question": "Do you have a physical store where I can walk in and make a purchase from?",
+            "title": "Do you have a physical store where I can walk in and make a purchase from?",
             "answer": "No, we don’t have a physical store. But if you need information or want to place an order, you can get in touch by phone, Whatsapp or email. Check out our contact page here for more details."
           }
         },
@@ -45,6 +49,7 @@
             "category": "About Gush",
             "type": "Contact Us",
             "question": "Where can I see your colours in person?",
+            "title": "Where can I see your colours in person?",
             "answer": "\"You may visit us at our office at 2 Gambas Crescent, #01-35, Nordcom II, Singapore 757044, with an appointment. Please call us at 6692 9000 to arrange an appointment. \n\nVisiting hours: \nMon – Fri, except for P.Hs. \n9am - 12pm, 1pm – 5pm\n\""
           }
         },
@@ -54,6 +59,7 @@
             "category": "About Gush",
             "type": "Contact Us",
             "question": "How can I contact Gush?",
+            "title": "How can I contact Gush?",
             "answer": "You can send us an email at hello@gowithgush.com, or contact us via Whatsapp by using the ‘Chat’ button on our website."
           }
         },
@@ -63,6 +69,7 @@
             "category": "Paints",
             "type": "General Questions",
             "question": "What’s the difference between Air-purifying and Washable interior paint?",
+            "title": "What’s the difference between Air-purifying and Washable interior paint?",
             "answer": "Both paints remove pollutants and have anti-molding capabilities, but the paint types each have their own unique feature.\n\nGush Air-purifying paint has a humidity control feature that maintains a healthy moisture level in your room.\n\nGush Washable paint lets you easily wipe off grime from your surfaces without damaging the paint coat. \n\nWe recommend using the Air-purifying interior paint for ceilings or areas with a lot of moisture, and the Washable option for walls and areas prone to dirt, stains and marks."
           }
         },
@@ -72,6 +79,7 @@
             "category": "Paints",
             "type": "General Questions",
             "question": "Is your full colour range available on your website?",
+            "title": "Is your full colour range available on your website?",
             "answer": "No, our website only features 65 curated colours. If you’re looking for a colour that is not on our website, please reach out to us at hello@gowithgush.com."
           }
         },
@@ -80,7 +88,8 @@
           "settings": {
             "category": "Paints",
             "type": "General Questions",
-            "question": "I've just got my walls painted. The colour appears to be darker in comparison to what's shown on your website.",
+            "question": "",
+            "title": "I've just got my walls painted. The colour appears to be darker in comparison to what's shown on your website.",
             "answer": "While we’ve done our best to represent our colours accurately online, colour presentations can vary depending on the monitor and screen settings. To help in your decision-making, we recommend ordering our sample tubs to confirm your colour choice before proceeding with your paint order. This not only shows you the exact colour, but helps you visualise how it’s going to look on your wall."
           }
         },
@@ -89,7 +98,8 @@
           "settings": {
             "category": "Paints",
             "type": "General Questions",
-            "question": "How much paint should I get?",
+            "question": "",
+            "title": "How much paint should I get?",
             "answer": "\"You’ll get a good gauge using our handy Paint Calculator here*.\nBut as a general estimate, 1 litre of gush paint gets you 2 coats for a 5-6 m² surface area, approximately. \n*Kindly note that the calculated quantity may differ for your home, based on how many walls you’ll be painting.\""
           }
         },
@@ -98,7 +108,8 @@
           "settings": {
             "category": "Paints",
             "type": "General Questions",
-            "question": "Do you provide colour books?",
+            "question": "",
+            "title": "Do you provide colour books?",
             "answer": "We don’t have a colour book for our online range, but you can get the sample tubs of the colours you’re interested in. You can do so by selecting ‘Sample’ under the product listing."
           }
         },
@@ -107,7 +118,8 @@
           "settings": {
             "category": "Paints",
             "type": "Health and Safety",
-            "question": "Is it safe to stay in the house while the painting is done?",
+            "question": "",
+            "title": "Is it safe to stay in the house while the painting is done?",
             "answer": "Yes, that’s the beauty of using our odourless, toxic-free paints. It’s safe for pregnant women and children to stay as well. You can stay in another room while the painting is done, so the wet walls don’t get touched."
           }
         },
@@ -117,6 +129,7 @@
             "category": "Paints",
             "type": "Health and Safety",
             "question": "Is the paint safe for people with asthma or respiratory illnesses?",
+            "title": "Is the paint safe for people with asthma or respiratory illnesses?",
             "answer": "Yes, Gush paints are odourless and do not emit any toxic fumes."
           }
         },
@@ -125,7 +138,8 @@
           "settings": {
             "category": "Paints",
             "type": "Paint Application",
-            "question": "Do I have to use a white base first if I am painting a dark-coloured wall with a lighter colour?",
+            "question": "",
+            "title": "Do I have to use a white base first if I am painting a dark-coloured wall with a lighter colour?",
             "answer": "We recommend applying a layer of sealer instead. Besides already being white in colour, the sealer helps your paint coat bind to the wall better and prevents cracking and peeling."
           }
         },
@@ -134,7 +148,8 @@
           "settings": {
             "category": "Paints",
             "type": "Paint Application",
-            "question": "Is it advisable to strip the old paint every time I want to repaint?",
+            "question": "",
+            "title": "Is it advisable to strip the old paint every time I want to repaint?",
             "answer": "We do not recommend stripping off old paint as this would worsen the wall condition. Your best bet is to get a professional plastering service to repair the wall before you repaint it."
           }
         },
@@ -143,7 +158,8 @@
           "settings": {
             "category": "Paints",
             "type": "Paint Application",
-            "question": "I am looking to paint on wood surfaces. Which paint would be a better choice – Air-Purifying or Washable paint?",
+            "question": "",
+            "title": "I am looking to paint on wood surfaces. Which paint would be a better choice – Air-Purifying or Washable paint?",
             "answer": "\"Currently, our paints are not ideal for wood surfaces as they are water-based with matte-finishing. When applied to wood, it might cause scratches, dirt marks or peel over time. We recommend using other oil or latex-based paints instead.\nIf you still wish to use our paints on wood, make sure to apply a layer of sealer first to get the best result.\""
           }
         },
@@ -152,7 +168,8 @@
           "settings": {
             "category": "Paints",
             "type": "Paint Application",
-            "question": "Can I use a sealer from another brand together with Gush Air-purifying paint?",
+            "question": "",
+            "title": "Can I use a sealer from another brand together with Gush Air-purifying paint?",
             "answer": "Yes, that’s possible. But our interior paints still give the best results when paired with the Gush sealer."
           }
         },
@@ -161,7 +178,8 @@
           "settings": {
             "category": "Paints",
             "type": "Paint Application",
-            "question": "What material surface can Gush Air-purifying interior paint be applied to?",
+            "question": "",
+            "title": "What material surface can Gush Air-purifying interior paint be applied to?",
             "answer": "Wood\nApplication on wooden surfaces is possible, but not recommended. Our paint is unable to replicate the natural beauty of wooden surfaces due to its matte-texture finish. If you wish to paint gush on wood, do apply a layer of sealer first.\n\nPlastic\nApplication on plastic surfaces is possible, but not recommended. If you wish to paint gush on plastic, apply a layer of sealer first to help the paint coat bind to the surface better.\n\nMetal\nGush interior paints should not be applied to metal surfaces as it is a water-based, latex paint that may cause the metal surface to rust.\n\nExterior walls\nIt should not be used as a replacement for exterior paint. As Gush interior paints are specifically formulated for interior environments, they do not perform the same in outdoor conditions."
           }
         },
@@ -170,7 +188,8 @@
           "settings": {
             "category": "Paints",
             "type": "Paint Application",
-            "question": "Do I mix need to mix water with my paints?",
+            "question": "",
+            "title": "Do I mix need to mix water with my paints?",
             "answer": "No, you don’t need to. Adding too much water will reduce our paints’ air-purifying effectiveness and finish. Give the paint a thorough stir before use so that the pigments are evenly mixed, and you’re good to go.\nIf the paint is too sticky for you, you can dilute it with water, but just a little. The amount of water you add should not exceed 15% of the overall paint solution as this would severely reduce the paints’ efficacy. Only use clean water so the paint doesn’t get contaminated."
           }
         },
@@ -179,7 +198,8 @@
           "settings": {
             "category": "Paints",
             "type": "Paint Application",
-            "question": "Do I need to use a sealer?",
+            "question": "",
+            "title": "Do I need to use a sealer?",
             "answer": "Using a sealer neutralises existing alkalis on the wall which typically causes paint to peel, discolour or crack. It also seals off excess moisture trapped within the wall, preventing mold and efflorescence growth. Sealer also makes the paint adhere to the wall better.\n\nWe always recommend using sealer, especially if you face any of these situations:\n\n- Wall-related issues like stubborn marks due to stains, grease or patched-up areas\n- If the wall was previously painted with oil-based, emulsion paint\n- You’re changing the wall from a dark to light colour \n- This is the first paint layer being applied to a new wall \n- It has been five years since the wall was last painted"
           }
         },
@@ -188,7 +208,8 @@
           "settings": {
             "category": "Paints",
             "type": "Paint Application",
-            "question": "Do you have a guide for painting with Air-purifying paints?",
+            "question": "",
+            "title": "Do you have a guide for painting with Air-purifying paints?",
             "answer": "Yes we do. Check out this instructional video by our friend, Inch Chua. We hope you have as much fun painting your walls as she did!"
           }
         },
@@ -197,7 +218,8 @@
           "settings": {
             "category": "Paints",
             "type": "Paint Application",
-            "question": "Is there a special application method to use Gush Interior paints?",
+            "question": "",
+            "title": "Is there a special application method to use Gush Interior paints?",
             "answer": "Nope! Even with its air-purifying features, both Air-purifying and Washable paints can be applied like every other paint on the market. We recommend applying two coats of paint for the best results."
           }
         }
@@ -228,9 +250,8 @@
       ],
       "settings": {
         "heading": "FAQ",
-        "top-margin": 50,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },

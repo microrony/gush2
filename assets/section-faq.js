@@ -7,6 +7,20 @@
 
   faqCategories[0].classList.add('active');
 
+	const removeDuplicateTypes = () => {
+		let textArr = [];
+
+		const activeFaqTypes =  document.querySelectorAll('.faq-type.active');
+
+		activeFaqTypes.forEach(function (d, i) {
+      if (textArr.indexOf(d.innerText) > -1) {
+        d.remove();
+      } else {
+        textArr.push(d.innerText);
+      }
+    });
+	}
+
   const removeDuplicateEl = () => {
     let textArr = [];
 
@@ -18,16 +32,8 @@
       }
     });
 
-    faqTypes.forEach(function (d, i) {
-      if (textArr.indexOf(d.innerText) > -1) {
-        d.remove();
-      } else {
-        textArr.push(d.innerText);
-      }
-    });
+		removeDuplicateTypes();
   };
-
-  removeDuplicateEl();
 
   const addInitialActiveClass = () => {
     faqCategories.forEach(category => {
@@ -91,6 +97,7 @@
             });
           }
         });
+				removeDuplicateTypes();
       });
     });
   };
@@ -151,4 +158,5 @@
   };
 
   accordion();
+	removeDuplicateEl();
 })(window);
