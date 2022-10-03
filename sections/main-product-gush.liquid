@@ -316,6 +316,26 @@ button.quantity__button {
             {%- endif -%}
             <div class="product__desc-review__rating gush-font-p2">  321 reviews</div>
           </div>
+					{%- when 'price' -%}
+            <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+            </div>
+            {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+              <div class="product__tax caption rte">
+                {%- if shop.taxes_included -%}
+                  {{ 'products.product.include_taxes' | t }}
+                {%- endif -%}
+                {%- if shop.shipping_policy.body != blank -%}
+                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            <div {{ block.shopify_attributes }}>
+              {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                {{ form | payment_terms }}
+              {%- endform -%}
+            </div>
 
 					{%- when 'description' -%}
          <div class="gush_product__description">{{ product.description }}</div>
@@ -424,7 +444,7 @@ button.quantity__button {
                               {{ 'products.product.sold_out' | t }}
                             {%- endif -%}
                           </span>
-                          <span class="variant-price">
+													<span class="variant-price">
                             {%-liquid
                               assign variant_price = product.selected_or_first_available_variant.price | money
                               if settings.currency_code_enabled
@@ -470,11 +490,12 @@ button.quantity__button {
               {%- if block.settings.picker_type == 'button' -%}
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
-                      <fieldset class="js product-form__input">
-                         {%- comment -%}
-                        <legend class="form__label">{{ option.name }}</legend>
-                        {%- endcomment -%}
-                        {%- for value in option.values -%}
+										<fieldset class="js product-form__input">
+										{% if option.name != 'Size' %}
+											<legend class="form__label">{{ option.name }}</legend>
+											<details>
+												<summary>{{ option.values[0] }}</summary>
+												{%- for value in option.values -%}
                           <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
@@ -485,7 +506,21 @@ button.quantity__button {
                             {{ value }}
                           </label>
                         {%- endfor -%}
-                      </fieldset>
+										</details>
+											{% else %}
+											{%- for value in option.values -%}
+												<input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+															name="{{ option.name }}"
+															value="{{ value | escape }}"
+															form="{{ product_form_id }}"
+															{% if option.selected_value == value %}checked{% endif %}
+												>
+												<label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+													{{ value }}
+												</label>
+											{%- endfor -%}
+										{% endif %}
+									</fieldset>
                   {%- endfor -%}
                   <script type="application/json">
                     {{ product.variants | json }}
@@ -803,6 +838,11 @@ target.classList.add('active')
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
+      "limit": 1
+    },
+		{
+      "type": "price",
+      "name": "t:sections.main-product.blocks.price.name",
       "limit": 1
     },
     {
