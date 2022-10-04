@@ -9,6 +9,32 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 <style>
+  .product_variant_details{
+    position: relative;
+
+  }
+  .product_variant_selection_summary{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    color: #776D62;
+    padding: 0 2rem;
+  }
+  .product_variant_selection_container{
+    position: absolute;
+    width: 100%;
+    max-height: 100px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    z-index: 999;
+    overflow-y: scroll;
+  }
+  .product_variant_selection_container label{
+    background: none !important;
+    color: black !important;
+    border: none !important;
+  }
   .product__desc-review .product__description {
     margin: 0;
     font-size: 14px;
@@ -87,10 +113,95 @@ button.quantity__button {
 .link-calculator{
       display: block;
     }
+    #price-template--15938850324673__main{
+      display: none !important;
+    }
+    .quantity_selection_box{
+      display: flex;
+    }
+    .quantity_selection_box div{
+      display: flex;
+      align-items: center;
+    }
+
+    .quantity_selection_box input{
+      position: static !important;
+      width: 14px !important;
+      height: 14px !important;
+      margin-top: 6px !important;
+    }
+    
+    .quantity_selection_box label{
+      background:none !important;
+      border: none !important;
+      color: #E1D5C6 !important;
+      padding-left: 10px !important;
+      font-family: 'GT America'!important;
+      font-style: normal!important;
+      font-weight: 300!important;
+      font-size: 16px!important;
+      line-height: 160%!important;
+    }
+    .quantity_selection_box input[type='radio']:checked + label{
+     color: #302112 !important;
+    }
+    .product__gush {
+    display: flex;
+    align-items:flex-start;
+  }
+  #product_title {
+    font-size: 36px !important;
+  }
+  .product-form__input>#select_label{
+    font-size: 16px !important;
+  }
+  .product_variant_details>p{
+    font-family: 'GT America';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+  }
+  .product_variant_details>label{
+    font-family: 'GT America';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+  }
+  #product__gush{
+    gap: 10rem;
+  }
+  #product__gush .product__info-wrapper{
+    padding: 0 !important;
+  }
+  #add_to_cart_btn button{
+  min-width: 150px !important;
+}
+
   @media screen and (max-width:767px){
+      #product__gush{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  #product_title{
+    margin-top: 0;
+  }
+  
+  
+    #add_to_cart_btn button  {
+      width: 100px;
+    }
+    #add_to_cart_btn button span{
+      font-size: 9px;
+    }
   	.product-form__input button.quantity__button {
     height: 40px;
   }
+  .product__info-container .product-form__buttons button{
+      height: auto;
+    }
     .quantity{
     	min-height:40px;
     }
@@ -140,8 +251,9 @@ button.quantity__button {
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<div class="gush-page-width section-{{ section.id }}-padding">
-  <div class="product product__gush product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+<div id="product_page_first_section">
+  <div class="gush-page-width section-{{ section.id }}-padding">
+  <div class="product product__gush product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }}  grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}" id="product__gush">
     <div class="grid__item product__media-wrapper  product__media-wrapper__gush">
       <media-gallery id="MediaGallery-{{ section.id }}" role="region" {% if section.settings.enable_sticky_info %}class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="{{ section.settings.gallery_layout }}">
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
@@ -304,7 +416,7 @@ button.quantity__button {
             {% render block %}
          
           {%- when 'title' -%}
-            <h1 class="product__title gush-font-h2" {{ block.shopify_attributes }}>
+            <h1 class="product__title gush-font-h2" id="product_title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
 
@@ -314,7 +426,7 @@ button.quantity__button {
                 {{ product.metafields.products.sub_title }}
               </div>
             {%- endif -%}
-            <div class="product__desc-review__rating gush-font-p2">  321 reviews</div>
+            {%- comment -%} <div class="product__desc-review__rating gush-font-p2">  321 reviews</div> {%- endcomment -%}
           </div>
 					{%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -391,7 +503,7 @@ button.quantity__button {
           {% endif %}
 					{%- endcomment -%}
           {%- when 'quantity_selector' -%}
-            <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
+            <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" id="quantity_and_add_to_cart_container" {{ block.shopify_attributes }}>
 							{% comment %}
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
@@ -430,7 +542,7 @@ button.quantity__button {
   
                   {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
-                    <div class="product-form__buttons">
+                    <div class="product-form__buttons" id="add_to_cart_btn">
                       <button
                         type="submit"
                         name="add"
@@ -492,11 +604,17 @@ button.quantity__button {
                   {%- for option in product.options_with_values -%}
 										<fieldset class="js product-form__input">
 										{% if option.name != 'Size' %}
-											<legend class="form__label">{{ option.name }}</legend>
-											<details>
-												<summary>{{ option.values[0] }}</summary>
+											<legend class="form__label" id="select_label">{{ option.name }}</legend>
+											<details class="product_variant_details">
+												<summary class="product_variant_selection_summary">
+                          <p id="selected_option_display">{{option.selected_value}}</p> 
+                          <p>{% render 'down-arrow' %}</p>
+                        </summary>
+                          <div class="product_variant_selection_container">
 												{%- for value in option.values -%}
-                          <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          
+                            <div class="selected_single_options">
+                              <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
                                 form="{{ product_form_id }}"
@@ -505,20 +623,27 @@ button.quantity__button {
                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                             {{ value }}
                           </label>
+                            </div>
                         {%- endfor -%}
+                          </div>
 										</details>
 											{% else %}
+												<div class="quantity_selection_box" >
 											{%- for value in option.values -%}
-												<input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          <div>
+                            <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
 															name="{{ option.name }}"
 															value="{{ value | escape }}"
 															form="{{ product_form_id }}"
 															{% if option.selected_value == value %}checked{% endif %}
 												>
+                        
 												<label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
 													{{ value }}
 												</label>
+                          </div>
 											{%- endfor -%}
+                        </div>
 										{% endif %}
 									</fieldset>
                   {%- endfor -%}
@@ -654,8 +779,20 @@ button.quantity__button {
     </modal-dialog>
   {%- endfor -%}
 </div>
+</div>
 
 {% javascript %}
+const options = document.querySelectorAll('.product_variant_selection_container div')
+const details = document.querySelector('.product_variant_details')
+const lable_display = document.querySelector('#selected_option_display')
+options.forEach(option=>{
+  option.addEventListener("click",()=>{
+    details.removeAttribute("open")
+    const text = option.textContent;
+    lable_display.innerText = text.trim()
+})
+})
+
   class ProductModal extends ModalDialog {
     constructor() {
       super();
@@ -788,6 +925,7 @@ target.classList.add('active')
     ]
   }
 </script>
+
 
 <!-- <script>
   window.addEventListener('resize', radioBtnForMobile);

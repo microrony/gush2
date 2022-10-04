@@ -1,6 +1,3 @@
-var body = document.body;
-
-body.classList.add("preload");
 
 function getFocusableElements(container) {
   return Array.from(
@@ -916,6 +913,7 @@ window.lastScrollTop = window.pageYOffset;
 
 window.addEventListener('scroll', onScroll);
 function onScroll() {
+  mission_page.classList.remove("preload");
   
   const section = window.sections
     .map((section, index) => {
@@ -927,8 +925,6 @@ function onScroll() {
     .find((section) => section.rect.bottom >= (window.innerHeight * .7));
     mission_page.style.background = section.el.getAttribute('data-bg');
 }
-window.addEventListener('load', (event) => {
-  var body = document.body;
-  body.classList.remove("preload");
-});
+
+
 
