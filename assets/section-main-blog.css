@@ -129,6 +129,11 @@ padding: 0;
 	flex-shrink: 0;
 }
 
+.main-blog .blog_details_button svg {
+	transform: rotate(-90deg);
+	height: 5px;
+}
+
 @media screen and (min-width: 750px) {
 	.main-blog .title_search input[type="text"] {
 		visibility: visible;
@@ -174,4 +179,8 @@ padding: 0;
 		width: 40px;
 		height: 40px;
 	}
+
+	.main-blog .blog_details_button svg {
+		height: 10px;
+}
 }
