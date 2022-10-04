@@ -59,3 +59,119 @@
     padding-bottom: 82.5rem;
   }
 }
+
+/* Custom Styles */
+.main-blog :where(h1, h3, h5, p) {
+margin: 0;
+padding: 0;
+}
+
+.main-blog {
+	padding-block: 3rem;
+}
+
+.main-blog .title_search {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-block-end: 5rem;
+	position: relative;
+}
+
+.main-blog .title_search input[type="text"] {
+	visibility: none;
+	height: 0;
+	width: 0;
+	border: none;
+	outline: none;
+}
+
+.main-blog .title_search button[type="submit"] {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.main-blog .title_search input[type="text"]:focus {
+	box-shadow: none;
+}
+
+
+.main-blog .article-card__image  {
+	aspect-ratio: 7/4;
+	overflow: hidden;
+}
+
+.main-blog .article-card__image  {
+	aspect-ratio: 7/4;
+	overflow: hidden;
+}
+
+.main-blog .main-article_card__content h5 {
+	margin-block-start: 2rem;
+}
+
+.main-blog .main-article_card__content h3 {
+	margin-block: 1rem;
+}
+
+.main-blog .blog_details_button {
+	text-decoration: none;
+	border: 1px solid rgba(var(--color-secondary-3));
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(var(--color-secondary-6));
+	margin-top: 4px;
+	flex-shrink: 0;
+}
+
+@media screen and (min-width: 750px) {
+	.main-blog .title_search input[type="text"] {
+		visibility: visible;
+		height: 6.4rem;
+		width: 22rem;
+		border: 1px solid rgba(var(--color-secondary-4));
+		border-radius: 1px;
+		background-color: transparent;
+		padding: 0 1rem;
+	}
+
+	.main-blog .title_search button[type="submit"] {
+		position: absolute;
+		top: 50%;
+		right: 1.5rem;
+		transform: translateY(-50%);
+	}
+	
+  .main-blog .card-wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 4rem;
+		align-items: flex-end;
+		border-top: 1px solid rgba(var(--color-secondary-4));
+		padding-top: 4rem;
+	}
+
+	.main-blog * {
+		text-align: left;
+	}
+
+	.main-blog .main-article_card__content h5 {
+		margin-block-end: 1.5rem;
+	}
+
+	.main-blog .main-article_card__content h3 {
+		margin-block-start: 0;
+		margin-block-end: 3rem;
+	}
+
+	.main-blog .blog_details_button {
+		margin-block: 4rem;
+		width: 40px;
+		height: 40px;
+	}
+}

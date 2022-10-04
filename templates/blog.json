@@ -1,7 +1,8 @@
 {
+  "wrapper": "div.blogs_listing_page",
   "sections": {
     "main": {
-      "type": "main-blog",
+      "type": "main-gush-blog",
       "settings": {
         "layout": "collage",
         "show_image": true,
