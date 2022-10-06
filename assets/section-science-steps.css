@@ -156,6 +156,18 @@
 	.science-steps .the-problem-block {
 		grid-template-columns: repeat(1, minmax(0, 1fr));
 	}
+	.science-steps .reports-block{
+		padding: 2rem;
+	}
+	.science-steps .reports-block h3{
+		padding-top: 1rem;
+	}
+	.science-steps > h2 {
+		font-size: 32px !important;
+	}
+	.reports-blocks{
+		margin: 25px 0 !important;
+	}
 
 	.science-steps .the-problem-block.last-block {
 		margin-top: 20px;
@@ -202,7 +214,7 @@
 	/* Reports Section Styles */
 .science-steps .accreditation-blocks, .science-steps .reports-blocks {
 	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 3rem;
+	gap: 4rem;
 	margin-top: 0px;
 	margin-bottom: 100px;
 }
