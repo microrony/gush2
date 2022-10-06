@@ -2,6 +2,81 @@
   margin-top: 5rem;
 }
 
+.article_top_container, .article_bottom_container{
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 4rem;
+}
+#article_top_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article_top_container .title_container{
+  margin: 0;
+  padding: 0;
+}
+#article_featured_image img{
+  width: 100% ;
+  height: auto;
+}
+.content_bottom_container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.article-template__social-sharing{
+  margin: 0 !important;
+}
+.blog_category_text{
+  margin: 0;
+}
+.content_bottom_container, .content_bottom_container .blog_tag, .article-template__social-sharing button{
+  font-family: 'GT America';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #FF5500;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.mobile_responsive_content_box{
+  display: none;
+}
+.hide_for_mobile_responvise{
+  display: block;
+}
+@media screen and (max-width: 750px) {
+  .article_top_container, .article_bottom_container{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2.5rem;
+  }
+  .article_bottom_container{
+    display: none;
+  }
+  .mobile_responsive_content_box{
+    display: block;
+  }
+  .mobile_responsive_content_box p{
+    margin: 0 0 2.5rem 0;
+  }
+  .hide_for_mobile_responvise{
+    display: none;
+  }
+  .content_bottom_container, .content_bottom_container .blog_tag, .article-template__social-sharing button{
+    font-size: 9px;
+  }
+  .horizontal_line{
+    margin: 2.5rem 0 1.5rem 0;
+  }
+  .horizontal_line2{
+    margin: 1.5rem 0 2.5rem 0;
+  }
+}
+
+
 @media screen and (min-width: 750px) {
   .article-template > *:first-child:not(.article-template__hero-container) {
     margin-top: calc(5rem + var(--page-width-margin));
