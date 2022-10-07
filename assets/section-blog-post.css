@@ -69,6 +69,12 @@
   font-size: 12px;
   text-decoration: none;
   display: flex;
+  font-family: 'GTAmerica' !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 12px  !important;
+  line-height: 160% !important;
+  letter-spacing: 0;
 }
 .article_content_container [title="button"]>span{
   background: none !important;
@@ -100,7 +106,10 @@
     grid-template-columns: auto;
     gap: 2.5rem;
   }
-  
+  .article_content_container [title="button"]{
+    font-size: 9px !important;
+		line-height: 1.5 !important;
+  }
   .mobile_responsive_content_box{
     display: block;
   }
