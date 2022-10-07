@@ -1,6 +1,19 @@
 .article-template > *:first-child:not(.article-template__hero-container) {
   margin-top: 5rem;
 }
+.article_content_container{
+  overflow: hidden;
+}
+.article_bottom_container{
+  position: relative;
+}
+.article_content_container h4{
+  position: absolute;
+  left: 0;
+}
+.article_content_container img{
+  width: 100%;
+}
 
 .article_top_container, .article_bottom_container{
   display: grid;
@@ -47,15 +60,47 @@
 .hide_for_mobile_responvise{
   display: block;
 }
+.article_content_container [title="button"]{
+  background: #FF42EF;
+  color: #ffffff;
+  padding: 2rem;
+  width: 220px;
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: none;
+  display: flex;
+}
+.article_content_container [title="button"]>span{
+  background: none !important;
+  color: #ffffff ;
+}
+.article_content_container [title="button"]::after{
+  content: "";
+  border: dotted white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 9px;
+  transform: rotate(-45deg);
+  margin-left: auto;
+}
+.article_content_container p{
+  margin: 3rem auto;
+}
+
+.horizontal_line2{
+  margin: 7rem 0 3rem 0 !important;
+}
+.horizontal_line3{
+  margin: 10rem 0 4rem 0;
+}
+
 @media screen and (max-width: 750px) {
   .article_top_container, .article_bottom_container{
     display: grid;
     grid-template-columns: auto;
     gap: 2.5rem;
   }
-  .article_bottom_container{
-    display: none;
-  }
+  
   .mobile_responsive_content_box{
     display: block;
   }
@@ -73,6 +118,9 @@
   }
   .horizontal_line2{
     margin: 1.5rem 0 2.5rem 0;
+  }
+  .article_content_container h4{
+    position: relative;
   }
 }
 
