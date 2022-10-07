@@ -1,0 +1,30 @@
+{
+    "sections": {
+        "hero": {
+            "type": "science-hero",
+            "settings": {
+              "title": "Science",
+              "description": "Peel back the curtain to see how our paint protects you and your loved ones from indoor air pollution – round the clock.",
+              "image": "shopify:\/\/shop_images\/gush_logo_v2.png"
+            }
+          },
+          "section2": {
+            "type": "science-steps",
+            "blocks": {
+              "a048d55b-dd40-4276-bf2f-40357a425873": {
+                "type": "the-problem-block",
+                "settings": {
+                  "title": "Indoor Air Pollution",
+                  "description": "We now spend more than 90% of our time indoors. When not at home, we’re huddled in offices, schools, malls – spaces prone to indoor pollutants.\n\nVOCs, viruses, bacteria, mold, allergens & chemical particles affect our physical health, well-being & productivity.",
+                  "image": "shopify:\/\/shop_images\/image_98.jpg"
+                }
+              }
+    }
+}
+    },
+        "order":[
+            "hero",
+            "section2"
+        ]
+    
+}
