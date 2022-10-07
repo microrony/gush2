@@ -2,7 +2,7 @@
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
 <div class="page-width">
-  <p class="gush-font-h4 blog_category_text">{{ blog.title}}</p>
+  <p class="gush-font-h4">{{ blog.title}}</p>
   <hr class="horizontal_line"/>
   <div class="article_top_container">
     <div id="article_top_content">
@@ -151,15 +151,7 @@
     {{ article.content }}
     </div>
   </div>
-  <hr class="horizontal_line3"/>
 </div>
-
-  <div class="article-template__back element-margin-top center">
-    <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
-      <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-      {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
-    </a>
-  </div>
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
       <div id="comments" class="page-width page-width--narrow">
