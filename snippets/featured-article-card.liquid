@@ -13,7 +13,7 @@
     - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
 
     Usage:
-    {% render 'main-article-card' blog: blog, article: article, show_image: section.settings.show_image %}
+    {% render 'featured-article-card' blog: blog, article: article, show_image: section.settings.show_image %}
 {% endcomment %}
 
 {%- if article and article != empty -%}
@@ -23,9 +23,8 @@
       assign ratio = media_aspect_ratio
     endif
   -%}
-  <div class="card-wrapper underline-links-hover">
+  <div class="featured-article_card_wrapper">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
-    
         {%- if article.image -%}
             <div class="article-card__image media media--hover-effect">
               <img
@@ -45,28 +44,19 @@
                 height="{{ article.image.height }}"
               >
             </div>
-         
         {%- endif -%}
         <div class="main-article_card__content">        
           <div class="main-article_card__information">
 						<div class="article_tags">
-							{%- for tag in article.tags -%}
-							<h5 class="gush-font-teritary">
-									{{ tag | escape | upcase }}{% unless forloop.last %}, {% endunless %}
-							</h5>
-							{%- endfor -%}
-							</div>
+						{%- for tag in article.tags -%}
+						<h5 class="gush-font-teritary">
+								{{ tag | escape | upcase }}{% unless forloop.last %}, {% endunless %}
+						</h5>
+					  {%- endfor -%}
+				    </div>
             <h3 class="gush-font-h3">
                 {{ article.title | truncate: 50 | escape }}
             </h3>
-            <div class="article-card__info caption-with-letter-spacing h5">
-              {%- if show_date -%}
-                <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
-              {%- endif -%}
-              {%- if show_author -%}
-                <span>{{ article.author }}</span>
-              {%- endif -%}
-            </div>
             {%- if show_excerpt -%}
               {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
                 <p class="gush-font-p2">
@@ -77,18 +67,8 @@
                   {%- endif -%}
                 </p>
               {%- endif -%}
-              <div class="article-card__footer">
-                {%- if article.comments_count > 0 and blog.comments_enabled? -%}
-                  <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
-                {%- endif -%}
-              </div>
             {%- endif -%}
           </div>
-          {%- if show_badge -%}
-            <div class="card__badge {{ settings.badge_position }}">
-              <span class="badge color-background-1">{{ 'blogs.article.blog' | t }}</span>
-            </div>
-          {%- endif -%}
 					<a href="{{ article.url }}" class="blog_details_button">
 					{% render 'down-arrow'%}
 					</a>

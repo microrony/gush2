@@ -1,9 +1,5 @@
 {{ 'section-about-product.css' | asset_url | stylesheet_tag }}
 {%- style -%}
-.section-{{ section.id }}-padding {
-padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-}
 section.about-product {
 background: {{ section.settings.color }};
 
@@ -111,26 +107,6 @@ background: {{ section.settings.color }};
 "default": 0,
 "label": "Margin Of Icon Section.",
 "info": "Please Select Margin Top of Icons"
-},
-{
-"type": "range",
-"id": "padding_top",
-"min": 0,
-"max": 100,
-"step": 4,
-"unit": "px",
-"label": "t:sections.all.padding.padding_top",
-"default": 36
-},
-{
-"type": "range",
-"id": "padding_bottom",
-"min": 0,
-"max": 100,
-"step": 4,
-"unit": "px",
-"label": "t:sections.all.padding.padding_bottom",
-"default": 36
 },
 {
   "type": "select",

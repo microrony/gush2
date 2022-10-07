@@ -1,0 +1,139 @@
+<link rel="stylesheet" href="{{ 'featured-article-card.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-featured-blog.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'featured-article-card.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="blog">
+	<div class="page-width section-{{ section.id }}-padding">
+		<div class="slider_heading">
+    {%- unless section.settings.heading == blank -%}
+        <h2 class="gush-font-h2">{{ section.settings.heading | escape }}</h2>
+    {%- endunless -%}
+		<div class="slider_nav">
+		<div class="featured-blog-prev">{% render 'icon-arrow-left-gushi' %}</div>
+		<div class="featured-blog-next">{% render 'icon-arrow-right-gushi' %}</div>
+	</div>
+	</div>
+    {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+			<div class="swiper gush_featured_blog">
+				<div class="swiper-wrapper">
+						{%- for article in section.settings.blog.articles -%}
+					<div class="swiper-slide" {{ block.shopify_attributes }}>
+								{% render 'featured-article-card', blog: section.settings.blog, article: article, media_aspect_ratio: 1.66, show_image: true, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
+					</div>
+			{% endfor %}
+				</div>
+			</div>
+    {%- else -%}
+      <div class="blog-placeholder">
+        <div class="placeholder media media--landscape">
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+        <div class="blog-placeholder__content">
+          <h2>
+            {{ 'sections.featured_blog.onboarding_title' | t }}
+          </h2>
+          <p class="rte-width">
+            {{ 'sections.featured_blog.onboarding_content' | t }}
+          </p>
+        </div>
+      </div>
+    {%- endif -%}
+	</div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" async="defer"></script>
+
+{% javascript %}
+	var swiper = new Swiper(".gush_featured_blog", {
+		slidesPerView: 1.8,
+		spaceBetween: 15,
+		centeredSlide:true,
+		loop: true,
+		navigation: {
+          nextEl: ".featured-blog-next",
+          prevEl: ".featured-blog-prev",
+        },
+    // Responsive breakpoints
+    breakpoints: {
+    750: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+		990: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+   }
+});
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Featured Blogs",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Sustainability",
+      "label": "t:sections.featured-blog.settings.heading.label"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "t:sections.featured-blog.settings.blog.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Blogs",
+      "settings": {
+        "blog": "Sustainability"
+      }
+    }
+  ]
+}
+{% endschema %}
