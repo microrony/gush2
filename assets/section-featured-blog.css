@@ -13,8 +13,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-top: 1px solid rgba(var(--color-secondary-4));
-	padding-top: 3rem;
 }
 
 .blog .slider_nav {
@@ -47,6 +45,11 @@
     width: 50%;
     margin: 0;
   }
+
+	.blog .slider_heading {
+		border-top: 1px solid rgba(var(--color-secondary-4));
+		padding-top: 3rem;
+	}
 
 	.blog .slider_nav {
 		padding-right: 0rem;
