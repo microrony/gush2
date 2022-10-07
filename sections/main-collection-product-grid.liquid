@@ -48,10 +48,15 @@
     
     <div class="gush-page-width" id="main-collection-filters" data-id="{{ section.id }}">
       <div class="collection-tabs collection-tabs__gush">
-        {% for item in section.settings.collectionList.links %}
+        {%- comment -%} {% for item in section.settings.collectionList.links %}
         <div class="collection-tabs__name gush-font-p1">{{- item.title | escape -}}</div>
        
 <!--         <div class="collection-tabs__name"></div> -->
+        {% endfor %} {%- endcomment -%}
+        {% for block in section.blocks %}
+        {% if block.type == 'text_block' %}
+          <div class="collection-tabs__name gush-font-p1">{{ block.settings.tab_title }}</div>
+        {% endif %}
         {% endfor %}
       </div>
 
@@ -294,6 +299,19 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "blocks":[
+    {
+      "type": "text_block",
+      "name": "Text block",
+      "settings":[
+        {
+          "type":"text",
+          "id":"tab_title",
+          "label":"Title"
+        }
+      ]
     }
   ]
 }

@@ -1,57 +1,31 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
-  {%- for block in section.blocks -%}
-    {%- case block.type -%}
-      {%- when '@app' -%}
-        <div class="page-width page-width--narrow">
-          {% render block %}
+<div class="page-width">
+  <p class="gush-font-h4 blog_category_text">{{ blog.title}}</p>
+  <hr class="horizontal_line"/>
+  <div class="article_top_container">
+    <div id="article_top_content">
+      <header class="title_container" {{ block.shopify_attributes }}>
+          <h1 class="article-template__title gush-font-h2" itemprop="headline">{{ article.title | escape }}</h1>
+      </header>
+      <div class="hide_for_mobile_responvise">
+        <p class="gush-font-p1">{{article.excerpt}}</p>
+      <div class="content_bottom_container">
+        <div>
+          {% assign reading_time = article.content | strip_html | split: ' ' | size | times: 1.0 | divided_by: 250 | ceil %}
+        {{ reading_time }} Min
         </div>
-      {%- when 'featured_image'-%}
-        {%- if article.image -%}
-          <div class="article-template__hero-container" {{ block.shopify_attributes }}>
-            <div class="article-template__hero-{{ block.settings.image_height }} media"
-              itemprop="image"
-              {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
-            >
-              <img
-                srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
-                  {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
-                  {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
-                  {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
-                  {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
-                  {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
-                  {{ article.image | image_url }} {{ article.image.width }}w"
-                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-                src="{{ article.image | image_url: width: 1100 }}"
-                loading="lazy"
-                width="{{ article.image.width }}"
-                height="{{ article.image.height }}"
-                alt="{{ article.image.alt | escape }}">
-            </div>
-          </div>
-        {%- endif -%}
-
-        {%- when 'title'-%}
-          <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
-            <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
-            {%- if block.settings.blog_show_date -%}
-              <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
-            {%- endif -%}
-            {%- if block.settings.blog_show_author -%}
-              <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <span itemprop="name">{{ article.author }}</span>
-              </span>
-            {%- endif -%}
-          </header>
-
-        {%- when 'content'-%}
-          <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
-              {{ article.content }}
-          </div>
-
-        {%- when 'share' -%}
-          <div class="article-template__social-sharing page-width page-width--narrow" {{ block.shopify_attributes }}>
+        <div>
+        {%- for tag in blog.all_tags -%}
+          <a class="blog_tag" href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag | capitalize }}</a>{% unless forloop.last %}, {% endunless %}
+        {%- endfor -%}
+      </div>
+      <div>
+        {%- for block in section.blocks -%}
+      {%- case block.type -%}
+      {%- when 'share' -%}
+      <div class="article-template__social-sharing" {{ block.shopify_attributes }}>
             <share-button class="share-button" {{ block.shopify_attributes }}>
               <button class="share-button__button hidden">
                 {% render 'icon-share' %}
@@ -89,8 +63,96 @@
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           </div>
-    {%- endcase -%}
-  {%- endfor -%}
+            {%- endcase -%}
+          {% endfor %}
+      </div>
+      </div> 
+      </div>      
+    </div>
+    <div id="article_featured_image">
+      <img srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+                    {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+                    {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+                    {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+                    {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+                    {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+                    {{ article.image | image_url }} {{ article.image.width }}w"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+                  src="{{ article.image | image_url: width: 1100 }}"
+                  loading="lazy"
+                  width="{{ article.image.width }}"
+                  height="{{ article.image.height }}"
+                  alt="{{ article.image.alt | escape }}">
+      </div>
+      <div class="mobile_responsive_content_box">
+      <p class="gush-font-p1">{{article.excerpt}}</p>
+      <div class="content_bottom_container">
+        <div>
+          {% assign reading_time = article.content | strip_html | split: ' ' | size | times: 1.0 | divided_by: 250 | ceil %}
+        {{ reading_time }} Min
+        </div>
+        <div>
+        {%- for tag in blog.all_tags -%}
+          <a class="blog_tag" href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag | capitalize }}</a>{% unless forloop.last %}, {% endunless %}
+        {%- endfor -%}
+      </div>
+      <div>
+        {%- for block in section.blocks -%}
+      {%- case block.type -%}
+      {%- when 'share' -%}
+      <div class="article-template__social-sharing" {{ block.shopify_attributes }}>
+            <share-button class="share-button" {{ block.shopify_attributes }}>
+              <button class="share-button__button hidden">
+                {% render 'icon-share' %}
+                {{ block.settings.share_label | escape }}
+              </button>
+              <details id="Details-{{ block.id }}-{{ section.id }}">
+                <summary class="share-button__button">
+                  {% render 'icon-share' %}
+                  {{ block.settings.share_label | escape }}
+                </summary>
+                <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
+                  <div class="field">
+                    <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
+                    </span>
+                    <input type="text"
+                          class="field__input"
+                          id="url"
+                          value="{{ request.origin | append: article.url }}"
+                          placeholder="{{ 'general.share.share_url' | t }}"
+                          onclick="this.select();"
+                          readonly
+                    >
+                    <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
+                  </div>
+                  <button class="share-button__close hidden no-js-hidden">
+                    {% render 'icon-close' %}
+                    <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
+                  </button>
+                  <button class="share-button__copy no-js-hidden">
+                    {% render 'icon-clipboard' %}
+                    <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
+                  </button>
+                </div>
+              </details>
+            </share-button>
+            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+          </div>
+            {%- endcase -%}
+          {% endfor %}
+      </div>
+      </div> 
+      </div>
+  </div>
+  <hr class="horizontal_line2"/>
+  <div class="article_bottom_container">
+  <div class="article_content_header_container"> </div>
+  <div class="article_content_container">
+    {{ article.content }}
+    </div>
+  </div>
+  <hr class="horizontal_line3"/>
+</div>
 
   <div class="article-template__back element-margin-top center">
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow">

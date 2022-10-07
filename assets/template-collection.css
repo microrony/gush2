@@ -1,4 +1,11 @@
 @media screen and (max-width: 749px) {
+  .collection-tabs__gush{
+    gap: 15px;
+    overflow-y: auto;
+  }
+  .collection-tabs__name{
+    white-space: nowrap;
+  }
   .collection .grid__item:only-child {
     flex: 0 0 100%;
     max-width: 100%;
@@ -18,7 +25,7 @@
 		width: 20px;
 		border-radius: 50%;
 		display: flex;
-		justify-centent: center;
+		justify-content: center;
 		align-items: center;
   }
 

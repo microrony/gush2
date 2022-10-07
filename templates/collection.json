@@ -10,6 +10,38 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "f356a29e-f088-47ec-9aa3-ff89d4edb0bd": {
+          "type": "text_block",
+          "settings": {
+            "tab_title": "Air purifying"
+          }
+        },
+        "40874156-9e14-4441-a824-c4b01dfde99c": {
+          "type": "text_block",
+          "settings": {
+            "tab_title": "Controls humidity"
+          }
+        },
+        "18efb770-1e31-4d04-a288-99f10754c721": {
+          "type": "text_block",
+          "settings": {
+            "tab_title": "Toxic-free"
+          }
+        },
+        "02f13b88-0429-4895-99b2-cbd58068bda3": {
+          "type": "text_block",
+          "settings": {
+            "tab_title": "Washable"
+          }
+        }
+      },
+      "block_order": [
+        "f356a29e-f088-47ec-9aa3-ff89d4edb0bd",
+        "40874156-9e14-4441-a824-c4b01dfde99c",
+        "18efb770-1e31-4d04-a288-99f10754c721",
+        "02f13b88-0429-4895-99b2-cbd58068bda3"
+      ],
       "settings": {
         "collectionList": "collection-all",
         "products_per_page": 18,

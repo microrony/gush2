@@ -1,8 +1,9 @@
 <style>
 	.science-hero {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
 		margin-top: 20px;
+	}
+	.text-content{
+		max-width: 60%;
 	}
 
 	.science-hero h1 {
@@ -11,6 +12,7 @@
 	}
 
 	.science-hero p {
+		margin-top: 60px;
 		max-width: 511px;
 	}
 
@@ -19,40 +21,72 @@
 		right: 0;
 		top: 15rem;
 		z-index: -1;
+		
 	}
+	.science-hero #text-content{
+			max-width: 40%;
+		}
 
 	.science-hero .image img {
-		width: 500px;
+		width: 400px;
 		height: auto;
 		object-fit: contain;
+	}
+	@media screen and (max-width: 990px) {
+		.science-hero .image img {
+		width: 300px;
+		height: auto;
+		object-fit: contain;
+	}
+	.science-hero #text-content{
+			max-width: 50%;
+		}
+	.science-hero h1 {
+		font-size: 64px !important;
+	}
 	}
 
 	@media screen and (max-width: 750px) {
 		.science-hero {
-      padding-top: 50px !important;
+			display: flex;
+			position: relative;
+			overflow: hidden;
+			margin-top: 0;
+			padding-bottom: 2.5rem !important;
+			padding-top: 50px !important;
 		}
+		.science-hero #text-content{
+			max-width: 70%;
+		}
+		.science-hero h1 {
+		font-size: 48px !important;
+		}
+		.science-hero p {
+		margin-top: 1.5rem;
+	}
 
 		.science-hero .image {
-		top: 10rem;
-		right: 0px;
+		top: 2rem;
+		right: -70px;
+		overflow: hidden;
 	}
 
 		.science-hero .image img {
 			width: 140px;
 	}
 	}
+	
 </style>
 
-
-<div class="science-hero gush-page-width">
-	<div>
+	<div class="science-hero gush-page-width">
+	<div id="text-content">
 		<h1 class="gush-font-display">{{ section.settings.title }}</h1>
 		<p class="gush-font-p1">{{ section.settings.description }}</p>
 	</div>
 	<div class="image">
 		{{ section.settings.image | image_url: width: 640 | image_tag }}
 	</div>
-</div>
+	</div>
 
 
 	{% schema %}
