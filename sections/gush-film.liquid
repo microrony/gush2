@@ -1,0 +1,27 @@
+<style>
+    #gush_film_image_container{
+        margin: 100px 0;
+    }
+    #gush_film_image_container img{
+        width: 100% ;
+        height: auto;
+        object-fit: cover;
+    }
+</style>
+<div class="page-width">
+    <div id="gush_film_image_container">
+        {{ section.settings.image | image_url: width: 1280 | image_tag }}
+    </div>
+</div>
+{% schema  %}
+{
+    "name":"gush-film",
+    "settings":[
+        {
+            "type":"image_picker",
+            "id":"image",
+            "label":"gush film image"
+        }
+    ]
+}
+{% endschema %}

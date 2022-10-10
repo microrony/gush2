@@ -1,30 +1,266 @@
 {
-    "sections": {
-        "hero": {
-            "type": "science-hero",
-            "settings": {
-              "title": "Science",
-              "description": "Peel back the curtain to see how our paint protects you and your loved ones from indoor air pollution – round the clock.",
-              "image": "shopify:\/\/shop_images\/gush_logo_v2.png"
-            }
-          },
-          "section2": {
-            "type": "science-steps",
-            "blocks": {
-              "a048d55b-dd40-4276-bf2f-40357a425873": {
-                "type": "the-problem-block",
-                "settings": {
-                  "title": "Indoor Air Pollution",
-                  "description": "We now spend more than 90% of our time indoors. When not at home, we’re huddled in offices, schools, malls – spaces prone to indoor pollutants.\n\nVOCs, viruses, bacteria, mold, allergens & chemical particles affect our physical health, well-being & productivity.",
-                  "image": "shopify:\/\/shop_images\/image_98.jpg"
-                }
-              }
-    }
-}
+  "sections": {
+    "hero": {
+      "type": "science-hero",
+      "settings": {
+        "title": "Film, uncovered",
+        "description": "See how our films create a thermal shield for your home and everyone in it – giving you protection, comfort and energy savings.",
+        "image": "shopify:\/\/shop_images\/gush_logo_v2.png"
+      }
     },
-        "order":[
-            "hero",
-            "section2"
-        ]
-    
+    "science-steps": {
+      "type": "science-steps",
+      "blocks": {
+        "12ce44fd-f24a-4cae-9457-ff4049de3e93": {
+          "type": "the-problem-block",
+          "settings": {
+            "title": "Urban Heat Island effect (UHI)",
+            "description": "As our world develops, buildings are replacing natural landscapes. Less greenery, more human activity and more heat-emitting building materials make cities hotspots that generate lots of heat. \nUrban infrastructure absorbs and re-emits heat, making it much hotter than surrounding areas. In Singapore, temperature differences are as high as 7°C.",
+            "image": "shopify:\/\/shop_images\/image_141.png"
+          }
+        },
+        "e0fcc9ea-dd20-4ca2-a6f7-8eec1ab0463d": {
+          "type": "the-problem-block",
+          "settings": {
+            "title": "More and more heat produced",
+            "description": "Using air-conditioning units and cooling systems releases more heat, making the outdoors even hotter. A vicious cycle ensues.The problem is: heat doesn’t come from sunlight alone. The solar spectrum also includes heat from Ultraviolet and infrared rays, which are produced by machine and human activities too.",
+            "image": "shopify:\/\/shop_images\/Rectangle_255.png"
+          }
+        }
+      },
+      "block_order": [
+        "12ce44fd-f24a-4cae-9457-ff4049de3e93",
+        "e0fcc9ea-dd20-4ca2-a6f7-8eec1ab0463d"
+      ],
+      "settings": {
+        "title": "01 The Problem",
+        "description": "",
+        "unbreakable_benefits": false
+      }
+    },
+    "parallel-text": {
+      "type": "parallel-text",
+      "settings": {
+        "title": "Heat comes from the solar spectrum",
+        "description": "In the right amounts, heat can be great for our body and mind. But too much of it, and things can get unpleasant.",
+        "color": "#302112",
+        "margin_top": 100,
+        "margin_bottom": 70
+      }
+    },
+    "574430cd-ac83-4341-a65d-812f7fd6ba34": {
+      "type": "science-problem-tab",
+      "blocks": {
+        "b638a4d0-90b3-4160-bb90-08e3b395987f": {
+          "type": "chemical",
+          "settings": {
+            "title": "Ultraviolet",
+            "chemical_formula": "shopify:\/\/shop_images\/Group_1658_305a8b1d-986d-458a-a9ed-6dfd66452265.png",
+            "chemical_structure": "shopify:\/\/shop_images\/UV_2-1440x700_1.png",
+            "solar_spectrum_range": "100 - 400nm",
+            "odor": "",
+            "appearance": "",
+            "found_in": "",
+            "this_is_great": "Increasing energy levels\n and improving mood\n. UV also kills germs, bacteria and viruses\n, and a limited exposure reduces redness, swelling and itchiness. But too much does the opposite - sunburn.",
+            "how_it_harm": "As a form of ionizing radiation, UV rays excite and disrupt molecules. This can damage DNA and cellular structure. It also causes building and furniture materials to discolour and deteriorate.",
+            "effects_of_exposure": "Premature aging, sunburn, skin cancer, reduced immunity"
+          }
+        },
+        "49ecd685-c524-4c6a-92a3-84865525a027": {
+          "type": "chemical",
+          "settings": {
+            "title": "Visible Light",
+            "chemical_structure": "shopify:\/\/shop_images\/Visble_light_2-1440x700_1.png",
+            "solar_spectrum_range": "400 - 750nm",
+            "odor": "",
+            "appearance": "",
+            "found_in": "",
+            "this_is_great": "Seeing the the beautiful world around us. Each colour differs in effect, but sunlight exposure increases vitamin D levels for strong bones\n. It also boosts our brain function and improves our mood.",
+            "how_it_harm": "Visible light transfers its heat upon exposure, making your body and space feel hotter. Too much light creates glare which impairs vision. Blue light can damage the retina. At night, it disrupts your sleep and health.",
+            "effects_of_exposure": "Discomfort, tiredness, sunburn, eye damage, degradation of furniture"
+          }
+        },
+        "09054af4-d227-4cf5-b1a6-85fe6b401ee5": {
+          "type": "chemical",
+          "settings": {
+            "title": "Near Infrared",
+            "chemical_formula": "shopify:\/\/shop_images\/Group_1658_1.png",
+            "chemical_structure": "shopify:\/\/shop_images\/IR_2-1440x700_1.png",
+            "solar_spectrum_range": "780nm -  3000nm",
+            "odor": "",
+            "appearance": "",
+            "found_in": "",
+            "this_is_great": "creating warmth for our bodies. It dilates our blood vessels, which improves blood circulation and speeds up wound and mucle healing. This also boosts our immune system.",
+            "how_it_harm": "Besides making you hot and sweaty, IR raises the internal temperature of the eyes and skin to damaging levels. IR makes 50% of the sun’s solar emissions – the largest percentage of the heat we face daily.",
+            "effects_of_exposure": "Eye damage, skin damage, discomfort, sweating, heat exhaustion, loss of concentration"
+          }
+        }
+      },
+      "block_order": [
+        "b638a4d0-90b3-4160-bb90-08e3b395987f",
+        "49ecd685-c524-4c6a-92a3-84865525a027",
+        "09054af4-d227-4cf5-b1a6-85fe6b401ee5"
+      ],
+      "settings": {
+      }
+    },
+    "38c33691-6e9f-4eae-8954-14b8bb926d38": {
+      "type": "science-steps",
+      "settings": {
+        "title": "02 The Solution",
+        "description": "Gush films reduce your cooling energy consumption, preserve your home and, of course, keep you cool. How? Nanoceramic technology.",
+        "unbreakable_benefits": false
+      }
+    },
+    "0604db89-1fee-47fb-a0e4-0358a593121f": {
+      "type": "parallel-text",
+      "settings": {
+        "title": "How it works",
+        "description": "The nanoceramic particles in Gush film are tuned through heterovalent doping. As electromagnetic wavelengths pass through the film, a phenomenon called Localised Surface Plasmon Resonance (LSPR) occurs. The doped nanoceramic particles absorb UV and NIR rays, while allowing visible light rays to pass through.",
+        "color": "#ff5500",
+        "margin_top": 100,
+        "margin_bottom": 100
+      }
+    },
+    "gush-film": {
+      "type": "gush-film",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_338.png"
+      }
+    },
+    "f7e16d98-e55d-4780-a3b3-1f36be135b44": {
+      "type": "science-steps",
+      "blocks": {
+        "9444684e-bd88-4832-9635-916e98b2669c": {
+          "type": "the-problem-block",
+          "settings": {
+            "title": "Cool rooms & clear views",
+            "description": "Our films give you high heat blocking efficacy without dyes or tints. Having one of the highest visible light transmission levels in the market, you can keep your views clear while your home stays cool.",
+            "image": "shopify:\/\/shop_images\/Frame_340.png"
+          }
+        },
+        "dc272394-330e-49cc-a561-0b93c43972ff": {
+          "type": "the-problem-block",
+          "settings": {
+            "title": "Easier on your wallet",
+            "description": "Gush films are produced using conventional polymer processing methods. No costly metallic nanoparticles or sputtering techniques needed – so you get effective, high-quality films at friendlier prices.",
+            "image": "shopify:\/\/shop_images\/Frame_341.png"
+          }
+        },
+        "ebe95e5f-8861-4f09-a457-3abbbc33cbad": {
+          "type": "the-problem-block",
+          "settings": {
+            "title": "Block more heat",
+            "description": "Remember how infrared rays make up 50% of the heat coming into our homes? Well, Gush films block up to 95% of near infrared rays, one of the highest standards in the market.",
+            "image": "shopify:\/\/shop_images\/Frame_342.png"
+          }
+        },
+        "521ad696-c719-4a1a-903b-d1d4734ece04": {
+          "type": "the-problem-block",
+          "settings": {
+            "title": "No Wi-fi interference",
+            "description": "Gush films don’t use metallic nanoparticles, so it won’t disrupt your home’s wireless connectivity. It won’t interfere with your electronics and radio devices either.",
+            "image": "shopify:\/\/shop_images\/Frame_343.png"
+          }
+        }
+      },
+      "block_order": [
+        "9444684e-bd88-4832-9635-916e98b2669c",
+        "dc272394-330e-49cc-a561-0b93c43972ff",
+        "ebe95e5f-8861-4f09-a457-3abbbc33cbad",
+        "521ad696-c719-4a1a-903b-d1d4734ece04"
+      ],
+      "settings": {
+        "title": "Unbreakable benefits",
+        "description": "",
+        "unbreakable_benefits": true
+      }
+    },
+    "a39be7b3-3cae-4433-8526-1fcf88528a12": {
+      "type": "science-steps",
+      "settings": {
+        "title": "03 Testing",
+        "description": "We conducted various third-party tests to certify our film’s efficacy, making sure your spaces look good while staying cool:",
+        "unbreakable_benefits": false
+      }
+    },
+    "209ee054-9d02-494e-a26c-96e15b9d29e4": {
+      "type": "science-testing-tab",
+      "blocks": {
+        "37f3521e-e63f-406b-bebe-49189ab80d75": {
+          "type": "removal",
+          "settings": {
+            "title": "Heating Blocking",
+            "image": "shopify:\/\/shop_images\/Group_1992.png",
+            "item_1": "",
+            "item_2": "",
+            "item_3": "",
+            "short_description": "Gush window films are able to block heat transmissions across the solar spectrum, but allow light wavelengths to pass through.",
+            "tested_by": "Test conducted by OTM Solutions Laboratory"
+          }
+        },
+        "6274f611-e3fb-46dc-bc1a-85befec32c3d": {
+          "type": "removal",
+          "settings": {
+            "title": "Energy Savings",
+            "image": "shopify:\/\/shop_images\/Frame_396.png",
+            "item_1": "",
+            "item_2": "",
+            "item_3": "",
+            "short_description": "Across an extended test period, our window films reduced average cooling energy consumption by 9.47%.",
+            "tested_by": "Test conducted by Built Environment Research and Innovation Institute"
+          }
+        }
+      },
+      "block_order": [
+        "37f3521e-e63f-406b-bebe-49189ab80d75",
+        "6274f611-e3fb-46dc-bc1a-85befec32c3d"
+      ],
+      "settings": {
+      }
+    },
+    "9789ee8d-e232-4ba5-8798-7c6ca053e32e": {
+      "type": "science-steps",
+      "blocks": {
+        "718f7976-706b-4af8-8081-17ddf3b0cfc9": {
+          "type": "reports-block",
+          "settings": {
+            "title": "Trial Study",
+            "description": "Reducing temperatures in glass-covered walkway (Nanyang Technological University)",
+            "number": "05.20.20"
+          }
+        },
+        "5b18b894-6888-45a3-9a1f-1cc9a411f380": {
+          "type": "reports-block",
+          "settings": {
+            "title": "Trial Study",
+            "description": "More comfort for diners while preserving views at rooftop restaurant",
+            "number": "05.20.20"
+          }
+        }
+      },
+      "block_order": [
+        "718f7976-706b-4af8-8081-17ddf3b0cfc9",
+        "5b18b894-6888-45a3-9a1f-1cc9a411f380"
+      ],
+      "settings": {
+        "title": "04 Reports",
+        "description": "Find out how our films performed in live locations:",
+        "unbreakable_benefits": false
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "science-steps",
+    "parallel-text",
+    "574430cd-ac83-4341-a65d-812f7fd6ba34",
+    "38c33691-6e9f-4eae-8954-14b8bb926d38",
+    "0604db89-1fee-47fb-a0e4-0358a593121f",
+    "gush-film",
+    "f7e16d98-e55d-4780-a3b3-1f36be135b44",
+    "a39be7b3-3cae-4433-8526-1fcf88528a12",
+    "209ee054-9d02-494e-a26c-96e15b9d29e4",
+    "9789ee8d-e232-4ba5-8798-7c6ca053e32e"
+  ]
 }

@@ -23,11 +23,10 @@
 .science-steps .the-problem-block.last-block {
 	margin-top: 60px;
  }
-
-.science-steps .the-problem-block.last-block .content{
- order: 2;
- margin-left: 80px;
-}
+ .science-steps .the-problem-block.last-block .content{
+	order: 2;
+	margin-left: 80px;
+   }
 
 .science-steps .the-problem-block .content > p {
 	white-space: pre-line;
@@ -41,6 +40,7 @@
 .science-steps .the-problem-block.last-block .image {
 	order: 1;
  }
+
 
 .science-steps .the-problem-block .image img {
 	width: 100%;
@@ -189,7 +189,25 @@
  }
 }
 
+
 @media screen and (min-width: 750px) {
+	/* problem section style for window film science page  */
+	.unbreakable_benefits{
+		margin-top: 6rem;
+	}
+	.unbreakable_benefits:first-child{
+		margin-top: 0;
+	}
+	.unbreakable_benefits:last-child{
+		margin-bottom: 100px;
+	}
+	.science-steps .the-problem-block.odd-block .image {
+		order: 1;
+	 }
+	.science-steps .the-problem-block.odd-block .content{
+		order: 2;
+		margin-left: 80px;
+	}
 	/* Solution Section Styles */
 	.the-solution-blocks {
 		gap: 7.5rem;
