@@ -8,6 +8,24 @@
 		line-height: 19px;
 	}
 </style>
+{% style  %}
+{% if page.title == "Window-film-science" %} 
+.the-problem-tab{
+	padding-top: 0 !important;
+	padding-bottom: 60px !important;
+}
+.tab-content{
+	padding: 70px !important;
+}
+.how_it_harm>p{
+	margin-bottom:5px !important;
+}
+.first_how_it_harm{
+	margin-bottom: 20px !important;
+}
+
+{% endif %}
+{% endstyle %}
 
 <div class="the-problem-tab gush-page-width">
 	{% render 'mobile-dropdown', blocks: section.blocks %}
@@ -54,7 +72,7 @@
 
 			<h4 class="gush-font-h2 found_in">{{block.settings.found_in}}</h4>
 			{%- if block.settings.this_is_great != blank  -%}
-			<div class="how_it_harm gush-font-p2">
+			<div class="how_it_harm gush-font-p2 first_how_it_harm">
 				<p>This is great for...</p>
 				<p>{{block.settings.this_is_great}}</p>
 			</div>

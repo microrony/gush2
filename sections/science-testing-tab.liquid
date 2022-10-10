@@ -10,6 +10,17 @@
 	width: 100% ;
 	height: auto;
 }
+.testing_tab_contents>.tab-content{
+	padding: 0 !important;
+	margin-top: 50px ;
+}
+.testing_tab_contents .content{
+	padding: 0 !important;
+}
+.testing_tab_contents .test_description{
+	margin-top: 50px !important;
+	margin-bottom: 10px !important;
+}
 {% endif %}
 {% endstyle %}
 
@@ -25,7 +36,7 @@
 		{% endfor %}
 	</div>
 
-	<div class="tab-contents">
+	<div class="tab-contents testing_tab_contents">
 		{% for block in section.blocks %}
 		{% case block.type %}
       {% when 'removal' %}

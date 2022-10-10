@@ -5,9 +5,22 @@
 {% assign reports_blocks = section.blocks | where: 'type', 'reports-block' %}
 {% assign accreditation_blocks = section.blocks | where: 'type', 'accreditation-block' %}
 
+{% style  %}
+@media screen and (min-width: 1050px){
+{% if page.title == "Window-film-science" %} 
+.science-steps > h2{
+	padding-bottom: 5rem;
+}
+.border_top_none{
+	border-top: none !important;
+	padding-top: 0 !important;
+}
+{% endif %}
+}
+{% endstyle %}
 
 <div class="science-steps page-width">
-	<h2 class="gush-font-h1">{{section.settings.title}}</h2>
+	<h2 class="gush-font-h1 {% if section.settings.unbreakable_benefits %} border_top_none {% endif %}">{{section.settings.title}}</h2>
 	<h3 class="gush-font-h3">{{section.settings.description}}</h3>
 
 	{% if the_problem_blocks != empty %}
