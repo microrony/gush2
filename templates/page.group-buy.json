@@ -1,10 +1,94 @@
 {
-    "sections": {
-        "community_group_banner":{
-            "type": "service-page-banner"
+  "sections": {
+    "community_group_banner": {
+      "type": "service-page-banner",
+      "blocks": {
+        "ba68abe8-60fe-43e7-8cfa-1a9621287c3f": {
+          "type": "heading",
+          "settings": {
+            "heading": "Community Group Buys",
+            "heading_size": "h0"
+          }
+        },
+        "a1fd7613-91cc-46e1-8ec9-765938383ddd": {
+          "type": "text",
+          "settings": {
+            "text": "Enjoy savings and create better homes with your neighbours.",
+            "text_style": "body"
+          }
+        },
+        "ce3e4621-5261-45d6-9bec-aa15957d761c": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Sign up now",
+            "button_link_1": "",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
+      },
+      "block_order": [
+        "ba68abe8-60fe-43e7-8cfa-1a9621287c3f",
+        "a1fd7613-91cc-46e1-8ec9-765938383ddd",
+        "ce3e4621-5261-45d6-9bec-aa15957d761c"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_432.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "page_name": "group_buy"
+      }
     },
-    "order": [
-        "community_group_banner"
-    ]
+    "reason_to_chose_gush": {
+      "type": "section-reason-to-chose-gush",
+      "blocks": {
+        "22a693ff-45dc-4579-b308-601ac90e8851": {
+          "type": "portfolio",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_332_2.png",
+            "portfolio_title": "Get a head start",
+            "portfolio_des": "Reduce your renovation costs while getting the best of Gush paints, window films and services."
+          }
+        },
+        "51e578e6-5b3b-40aa-b091-cdd07505abdc": {
+          "type": "portfolio",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_435.png",
+            "portfolio_title": "In good company",
+            "portfolio_des": "Meet your neighbours and start building healthy connections with your new community."
+          }
+        },
+        "8a43182e-fce6-4fbf-8d3c-d1119fbcf918": {
+          "type": "portfolio",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_332_1.png",
+            "portfolio_title": "Faster, better, together",
+            "portfolio_des": "Joining our group buy saves you time, money and energy, so we can get your home painted more quickly."
+          }
+        }
+      },
+      "block_order": [
+        "22a693ff-45dc-4579-b308-601ac90e8851",
+        "51e578e6-5b3b-40aa-b091-cdd07505abdc",
+        "8a43182e-fce6-4fbf-8d3c-d1119fbcf918"
+      ],
+      "settings": {
+        "section_title": "The more,\nthe merrier"
+      }
+    }
+  },
+  "order": [
+    "community_group_banner",
+    "reason_to_chose_gush"
+  ]
 }

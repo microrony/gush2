@@ -34,7 +34,6 @@
 {%- endif -%}
 {%- if section.settings.page_name == "group_buy" -%}
   {%- style -%}
-  @media screen and (min-width: 750px){
     .group_buy_title{
       font-family: 'ABCCamera';
       font-style: normal;
@@ -46,10 +45,17 @@
       font-family: 'GTAmerica';
       font-style: normal;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 24px !important;
       line-height: 130%;
       letter-spacing: -0.0115em;
       color: #302112;
+    }
+  @media screen and (max-width: 750px){
+    .group_buy_title{
+      font-size: 48px !important;
+    }
+    .group_buy_des{
+      font-size: 12px !important;
     }
   }
   {%- endstyle -%}

@@ -1,0 +1,38 @@
+.reason_to_chose_title{
+    margin: 0 0 50px 0;
+    white-space: pre;
+}
+.portfolio_card_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+}
+.gush_portfolio_card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.gush_portfolio_card h3{
+    margin: 0 0 20px 0;
+}
+.gush_portfolio_card h4{
+    margin: 0 ;
+    font-family: 'GTAmerica' !important;
+    font-style: normal;
+}
+@media screen and (max-width: 750px){
+    .portfolio_card_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .reason_to_chose_title{
+        margin: 0 0 30px 0;
+    }
+    .gush_portfolio_card img{
+        margin-bottom: 20px;
+    }
+    .gush_portfolio_card h3{
+        margin: 0 0 15px 0;
+    }
+}
