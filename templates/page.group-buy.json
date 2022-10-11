@@ -1,0 +1,10 @@
+{
+    "sections": {
+        "community_group_buys_banner":{
+            "type": "commutity-group-buys-banner"
+        }
+    },
+    "order": [
+        "community_group_buys_banner"
+    ]
+}
