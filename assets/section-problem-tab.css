@@ -115,12 +115,19 @@
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 750px) { 
+	.the-problem-tab .tab-content {
+		padding: 100px;
+	}
+}
 
-@media screen and (min-width: 750px) {
+
+@media screen and (min-width: 990px) {
 	.the-problem-tab .tab-content {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		padding: 80px;
 		gap: 14rem;
+		margin-top: 0rem;
 	}
 
 	.the-problem-tab .name_formula {

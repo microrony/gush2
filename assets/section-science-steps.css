@@ -90,8 +90,8 @@
 /* Reports Section Styles */
 .science-steps .reports-blocks, .science-steps .accreditation-blocks {
 	display: grid;
-	gap: 1rem;
-	margin-top: 50px;
+	gap: 1.5rem;
+	margin-top: 25px;
 	margin-bottom: 50px;
 }
 .science-steps .reports-block {
@@ -147,7 +147,7 @@
 	padding-left: 1.5rem;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 990px) {
 	.science-steps > h2 {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
@@ -155,18 +155,6 @@
 
 	.science-steps .the-problem-block {
 		grid-template-columns: repeat(1, minmax(0, 1fr));
-	}
-	.science-steps .reports-block{
-		padding: 2rem;
-	}
-	.science-steps .reports-block h3{
-		padding-top: 1rem;
-	}
-	.science-steps > h2 {
-		font-size: 32px !important;
-	}
-	.reports-blocks{
-		margin: 25px 0 !important;
 	}
 
 	.science-steps .the-problem-block.last-block {
@@ -190,6 +178,12 @@
 }
 
 @media screen and (min-width: 750px) {
+	.science-steps :is(.reports-blocks, .accreditation-blocks) {
+		gap: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 990px) {
 	/* Solution Section Styles */
 	.the-solution-blocks {
 		gap: 7.5rem;

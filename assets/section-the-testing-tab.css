@@ -145,7 +145,7 @@
   font-size: 9px !important;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
 	/* General Styles */
   .the-testing-tab .tabs {
     display: flex;
