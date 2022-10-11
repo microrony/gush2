@@ -32,6 +32,28 @@
   }
   {%- endstyle -%}
 {%- endif -%}
+{%- if section.settings.page_name == "group_buy" -%}
+  {%- style -%}
+  @media screen and (min-width: 750px){
+    .group_buy_title{
+      font-family: 'ABCCamera';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 84px !important;
+      color: #302112 !important;
+    }
+    .group_buy_des{
+      font-family: 'GTAmerica';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 130%;
+      letter-spacing: -0.0115em;
+      color: #302112;
+    }
+  }
+  {%- endstyle -%}
+{%- endif -%}
 
 
 
@@ -91,12 +113,12 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2 class="service-banner__heading banner__heading gush-font-display" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.heading | escape }}</span>
+              <span class="group_buy_title">{{ block.settings.heading | escape }}</span>
             </h2>
           <div class="banner_inner_box">
           {%- when 'text' -%}
             <div class="banner__text gush-font-p1 {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.text | escape }}</span>
+              <span class="group_buy_des">{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'buttons' -%}
             <div class="service-banner__button banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
@@ -303,7 +325,23 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
-    }
+    },
+    {
+				"type": "select",
+				"id": "page_name",
+				"label": "Select page name",
+				"options": [
+					{
+					"value": "group_buy",
+					"label": "Group Buy"
+					},
+					{
+					"value": "service",
+					"label": "Service"
+					}
+				],
+				"default": "service"
+			}
   ],
   "blocks": [
     {
