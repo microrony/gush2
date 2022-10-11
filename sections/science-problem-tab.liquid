@@ -9,7 +9,7 @@
 	}
 </style>
 {% style  %}
-{% if page.title == "Window-film-science" %} 
+{% if section.settings.page_name == "Window_film_science" %} 
 .the-problem-tab{
 	padding-top: 0 !important;
 	padding-bottom: 60px !important;
@@ -22,6 +22,11 @@
 }
 .first_how_it_harm{
 	margin-bottom: 20px !important;
+}
+@media screen and (max-width: 750px){
+	.the-problem-tab{
+	padding-bottom: 50px !important;
+}
 }
 
 {% endif %}
@@ -147,6 +152,24 @@ tabs.forEach(tab => {
 	{
 		"name": "Science Problem Tab",
 		"tag": "section",
+		"settings":[
+			{
+				"type": "select",
+				"id": "page_name",
+				"label": "Select page name",
+				"options": [
+					{
+					"value": "Window_film_science",
+					"label": "Window film science"
+					},
+					{
+					"value": "other",
+					"label": "Other"
+					}
+				],
+				"default": "other"
+			}
+		],
 			"blocks": [
 				{
 					"type": "chemical",

@@ -5,7 +5,8 @@
       "settings": {
         "title": "Film, uncovered",
         "description": "See how our films create a thermal shield for your home and everyone in it – giving you protection, comfort and energy savings.",
-        "image": "shopify:\/\/shop_images\/gush_logo_v2.png"
+        "image": "shopify:\/\/shop_images\/gush_logo_v2.png",
+        "page_name": "Window_film_science"
       }
     },
     "science-steps": {
@@ -35,6 +36,7 @@
       "settings": {
         "title": "01 The Problem",
         "description": "",
+        "page_name": "Window_film_science",
         "unbreakable_benefits": false
       }
     },
@@ -102,6 +104,7 @@
         "09054af4-d227-4cf5-b1a6-85fe6b401ee5"
       ],
       "settings": {
+        "page_name": "Window_film_science"
       }
     },
     "38c33691-6e9f-4eae-8954-14b8bb926d38": {
@@ -109,6 +112,7 @@
       "settings": {
         "title": "02 The Solution",
         "description": "Gush films reduce your cooling energy consumption, preserve your home and, of course, keep you cool. How? Nanoceramic technology.",
+        "page_name": "Window_film_science",
         "unbreakable_benefits": false
       }
     },
@@ -173,6 +177,7 @@
       "settings": {
         "title": "Unbreakable benefits",
         "description": "",
+        "page_name": "Window_film_science",
         "unbreakable_benefits": true
       }
     },
@@ -181,6 +186,7 @@
       "settings": {
         "title": "03 Testing",
         "description": "We conducted various third-party tests to certify our film’s efficacy, making sure your spaces look good while staying cool:",
+        "page_name": "Window_film_science",
         "unbreakable_benefits": false
       }
     },
@@ -217,6 +223,7 @@
         "6274f611-e3fb-46dc-bc1a-85befec32c3d"
       ],
       "settings": {
+        "page_name": "Window_film_science"
       }
     },
     "9789ee8d-e232-4ba5-8798-7c6ca053e32e": {
@@ -246,6 +253,7 @@
       "settings": {
         "title": "04 Reports",
         "description": "Find out how our films performed in live locations:",
+        "page_name": "Window_film_science",
         "unbreakable_benefits": false
       }
     }

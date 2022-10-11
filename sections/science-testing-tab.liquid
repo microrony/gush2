@@ -1,7 +1,7 @@
 {{ 'component-mobile-dropdown.css' | asset_url | stylesheet_tag }}
 {{ 'section-the-testing-tab.css' | asset_url | stylesheet_tag }}
 {% style  %}  
-{% if page.title == "Window-film-science"  %} 
+{% if section.settings.page_name == "Window_film_science"  %} 
 
 .tab-contents .content{
 	grid-template-columns: 1fr !important;
@@ -20,6 +20,25 @@
 .testing_tab_contents .test_description{
 	margin-top: 50px !important;
 	margin-bottom: 10px !important;
+}
+.test_description>.tested_by_text{
+	font-size: 16px !important; 
+}
+@media screen and (max-width: 750px){
+	.testing_tab_contents>.tab-content{
+	margin-top: 35px ;
+}
+	.test_description>.tested_by_text{
+	font-size: 9px !important; 
+}
+.testing_tab_contents .test_description{
+	margin-top: 10px !important;
+	margin-bottom: 0 !important;
+}
+.testing_tab_contents .test_description .tested_by_text{
+	margin-top: 0 !important;
+	margin-bottom: 20px !important;
+}
 }
 {% endif %}
 {% endstyle %}
@@ -42,7 +61,7 @@
       {% when 'removal' %}
 			<div class="tab-content removal {% if forloop.first -%}
 				active
-		 {%- endif -%}" id="{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+		 {%- endif -%} " id="{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
 		 <div class="content">
 		 <div class="left-content">
 			<div class="image">
@@ -64,7 +83,7 @@
 			</div>
 		</div>
 		<div class="test_description">
-			<p class="gush-font-p1">{{block.settings.tested_by}}</p>
+			<p class="gush-font-p1 tested_by_text">{{block.settings.tested_by}}</p>
 			<p class="gush-font-p1 description">{{block.settings.short_description}}</p>
 		</div>
 		  </div>
@@ -161,6 +180,24 @@ tabs.forEach(tab => {
 	{
 		"name": "Science Testing Tab",
 		"tag": "section",
+		"settings":[
+			{
+				"type": "select",
+				"id": "page_name",
+				"label": "Select page name",
+				"options": [
+					{
+					"value": "Window_film_science",
+					"label": "Window film science"
+					},
+					{
+					"value": "other",
+					"label": "Other"
+					}
+				],
+				"default": "other"
+			}
+		],
 			"blocks": [
 				{
 					"type": "removal",

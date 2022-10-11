@@ -1,8 +1,14 @@
 <style>
 
-    #parallel_text_container{
+   @media screen and (max-width: 750px){
+     #parallel_text_container{
         grid-template-columns: 1fr;
+        margin: 0;
     }
+    .parallel_des p{
+        margin: 0 0 25px 0 !important;
+    }
+   }
     @media screen and (min-width: 750px){
     #parallel_text_container{
         display: grid;
