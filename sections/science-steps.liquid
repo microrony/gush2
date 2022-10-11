@@ -5,20 +5,58 @@
 {% assign reports_blocks = section.blocks | where: 'type', 'reports-block' %}
 {% assign accreditation_blocks = section.blocks | where: 'type', 'accreditation-block' %}
 
+{% style  %}
+{% if section.settings.page_name == "Window_film_science" %} 
+@media screen and (max-width: 750px){
+	.the-problem-block{
+		margin-top: 0 !important;
+	}
+	.the_problem_block_content{
+		margin:25px 0 !important;
+	}
+	.unbreakable_benefits:last-child{
+		margin-bottom: 25px !important;
+	}
+	.content_title_for_problem{
+		margin-top:0 !important;
+		margin-bottom: 15px !important;
+	}
+	.content_des_for_problem{
+		margin: 0 auto !important;
+	}
+}
+
+@media screen and (min-width: 750px){
+	.science-steps > h2{
+	padding-bottom: 5rem;
+}
+.border_top_none{
+	border-top: none !important;
+	padding-top: 0 !important;
+}
+.content_des_for_problem{
+	padding-right: 2rem;
+}
+}
+{% endif %}
+{% endstyle %}
 
 <div class="science-steps page-width">
-	<h2 class="gush-font-h1">{{section.settings.title}}</h2>
+	<h2 class="gush-font-h1 {% if section.settings.unbreakable_benefits %} border_top_none {% endif %}">{{section.settings.title}}</h2>
 	<h3 class="gush-font-h3">{{section.settings.description}}</h3>
 
 	{% if the_problem_blocks != empty %}
 	<div>
 	{% for block in the_problem_blocks %}
-      <div class="the-problem-block {% if forloop.last -%}
-			last-block
-	 {%- endif -%}" {{ block.shopify_attributes }}>
-			<div class="content">
-				<h2 class="gush-font-h3">{{block.settings.title}}</h2>
-				<p class="gush-font-p1">{{block.settings.description}}</p>
+      <div class="the-problem-block {% if forloop.last and section.settings.unbreakable_benefits == false -%}
+			last-block 
+	 {%- endif -%} {% assign num = forloop.index | modulo: 2 %}
+	{% if num != 0 and section.settings.unbreakable_benefits %}
+		odd-block
+	{% endif %} {% if section.settings.unbreakable_benefits %} unbreakable_benefits {% endif %}" {{ block.shopify_attributes }}>
+			<div class="content the_problem_block_content">
+				<h2 class="gush-font-h3 content_title_for_problem">{{block.settings.title}}</h2>
+				<p class="gush-font-p1 content_des_for_problem">{{block.settings.description}}</p>
 			</div>
 			<div class="image">
         {{ block.settings.image | image_url: width: 1280 | image_tag }}
@@ -114,6 +152,28 @@
 			"type": "textarea",
 			"id": "description",
 			"label": "Description"
+			},
+			{
+				"type": "select",
+				"id": "page_name",
+				"label": "Select page name",
+				"options": [
+					{
+					"value": "Window_film_science",
+					"label": "Window film science"
+					},
+					{
+					"value": "science",
+					"label": "Science"
+					}
+				],
+				"default": "science"
+			},
+			{
+				"type": "checkbox",
+				"id": "unbreakable_benefits",
+				"label": "Unbreakable benefits section",
+				"default": false
 			}
 		],
 		"blocks":[

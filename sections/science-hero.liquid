@@ -3,7 +3,6 @@
 		margin-top: 20px;
 	}
 	#text-content h1{
-		white-space: pre !important;
 	}
 
 	.science-hero h1 {
@@ -24,7 +23,6 @@
 		
 	}
 	.science-hero #text-content{
-			max-width: 40%;
 		}
 
 	.science-hero .image img {
@@ -77,6 +75,18 @@
 	}
 	
 </style>
+{% style  %} 
+@media screen and (min-width: 1050px){
+{% if section.settings.page_name == "Window_film_science" %} 
+	#text-content h1{
+		font-size:  140px !important;
+	}
+	.science-hero p {
+		margin-top: 35px;
+	}
+ {% endif %}
+}
+{% endstyle %}
 
 	<div class="science-hero gush-page-width">
 	<div id="text-content">
@@ -108,6 +118,22 @@
 				"type": "image_picker",
 				"id": "image",
 				"label": "Image"
+			},
+			{
+				"type": "select",
+				"id": "page_name",
+				"label": "Select page name",
+				"options": [
+					{
+					"value": "Window_film_science",
+					"label": "Window film science"
+					},
+					{
+					"value": "science",
+					"label": "Science"
+					}
+				],
+				"default": "science"
 			}
 		],
 		"presets": [

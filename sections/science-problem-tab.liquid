@@ -1,5 +1,36 @@
 {{ 'component-mobile-dropdown.css' | asset_url | stylesheet_tag }}
 {{ 'section-problem-tab.css' | asset_url | stylesheet_tag }}
+<style>
+	.solar_spectrum_container{
+		margin-bottom: 3rem;
+	}
+	#solar_spectrum_title{
+		line-height: 19px;
+	}
+</style>
+{% style  %}
+{% if section.settings.page_name == "Window_film_science" %} 
+.the-problem-tab{
+	padding-top: 0 !important;
+	padding-bottom: 60px !important;
+}
+.tab-content{
+	padding: 70px !important;
+}
+.how_it_harm>p{
+	margin-bottom:5px !important;
+}
+.first_how_it_harm{
+	margin-bottom: 20px !important;
+}
+@media screen and (max-width: 750px){
+	.the-problem-tab{
+	padding-bottom: 50px !important;
+}
+}
+
+{% endif %}
+{% endstyle %}
 
 <div class="the-problem-tab gush-page-width">
 	{% render 'mobile-dropdown', blocks: section.blocks %}
@@ -12,9 +43,11 @@
 		 <div class="left-content">
 			<div class="name_formula">
 				<h2 class="gush-font-h1">{{block.settings.title}}</h2>
+				 {%- if block.settings.chemical_formula -%}
 				<div class="image_formula">
 					{{ block.settings.chemical_formula | image_url: width: 280 | image_tag }}
 				</div>
+				{%- endif -%}
 			</div>
 				<div class="image_structure">
 					{{ block.settings.chemical_structure | image_url: width: 800 | image_tag }}
@@ -22,24 +55,43 @@
 			</div>
 			<div class="right-content">
 				<div class="odor_appearance">
+					{%- if block.settings.solar_spectrum_range != blank -%}
+					<div class="odor gush-font-p2 solar_spectrum_container">
+						<p id="solar_spectrum_title">Solar spectrum range</p>
+						<p id="solar_spectrum">{{block.settings.solar_spectrum_range }}</p>
+					</div>
+					{%- endif -%}
+					{%- if block.settings.odor != blank -%}
 					<div class="odor gush-font-p2">
 						<p>Odor</p>
-						<p>{{block.settings.odor}}</p>
+						<p>{{block.settings.odor }}</p>
 					</div>
+					{%- endif -%}
+					{%- if block.settings.appearance != blank  -%}
 					<div class="appearance gush-font-p2">
 						<p>Appearance</p>
 						<p>{{block.settings.appearance}}</p>
 					</div>
+					{%- endif -%}
 			</div>
 
 			<h4 class="gush-font-h2 found_in">{{block.settings.found_in}}</h4>
-
+			{%- if block.settings.this_is_great != blank  -%}
+			<div class="how_it_harm gush-font-p2 first_how_it_harm">
+				<p>This is great for...</p>
+				<p>{{block.settings.this_is_great}}</p>
+			</div>
+			{%- endif -%}
 			<div class="how_it_harm gush-font-p2">
 				<p>How does it harm the body?</p>
 				<p>{{block.settings.how_it_harm}}</p>
 			</div>
 			<div class="effects_of_exposure gush-font-p2">
+				{%- if page.title == "Science"  -%}
 				<p>How does it harm the body?</p>
+				{%- else page.title -%}
+				<p>Effects of prolonged exposure</p>
+				{%- endif -%}
 				<p>{{block.settings.effects_of_exposure}}</p>
 			</div>
 		</div>
@@ -100,6 +152,24 @@ tabs.forEach(tab => {
 	{
 		"name": "Science Problem Tab",
 		"tag": "section",
+		"settings":[
+			{
+				"type": "select",
+				"id": "page_name",
+				"label": "Select page name",
+				"options": [
+					{
+					"value": "Window_film_science",
+					"label": "Window film science"
+					},
+					{
+					"value": "science",
+					"label": "Science"
+					}
+				],
+				"default": "science"
+			}
+		],
 			"blocks": [
 				{
 					"type": "chemical",
@@ -121,6 +191,11 @@ tabs.forEach(tab => {
 							"label": "Chemical Structure"
 						},
 						{
+							"id": "solar_spectrum_range",
+							"type": "text",
+							"label": "Solar spectrum range"
+						},
+						{
 							"id": "odor",
 							"type": "text",
 							"label": "Odor"
@@ -136,6 +211,11 @@ tabs.forEach(tab => {
 							"label": "Found In"
 						},
 						{
+							"id": "this_is_great",
+							"type": "textarea",
+							"label": "This is great"
+						},
+						{
 							"id": "how_it_harm",
 							"type": "textarea",
 							"label": "How does it harm the body?"
@@ -145,6 +225,7 @@ tabs.forEach(tab => {
 							"type": "textarea",
 							"label": "Effects of exposure"
 						}
+						
 					]
 				}
 			],"presets": [
