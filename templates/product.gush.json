@@ -83,6 +83,7 @@
         "c07957dd-18a2-43d1-82c2-ae93a37c6489": {
           "type": "product-info",
           "settings": {
+            "title": "",
             "tabimg": "shopify:\/\/shop_images\/image_58.png",
             "tabdesc": "Absorbs excess moisture so you can take it easy in comfort"
           }
@@ -90,6 +91,7 @@
         "5fbea61b-e06f-4a95-b56b-938f9b84dc07": {
           "type": "product-info",
           "settings": {
+            "title": "",
             "tabimg": "shopify:\/\/shop_images\/paint3.png",
             "tabdesc": "Example 2"
           }
@@ -97,6 +99,7 @@
         "f1d18298-7896-4cb8-8f81-c79c2fd62c24": {
           "type": "product-info",
           "settings": {
+            "title": "",
             "tabimg": "shopify:\/\/shop_images\/paint2.png",
             "tabdesc": "Example 3"
           }
@@ -104,6 +107,7 @@
         "9e3f1e75-5c22-4786-be51-b27f2252aae0": {
           "type": "product-info",
           "settings": {
+            "title": "",
             "tabimg": "shopify:\/\/shop_images\/paint4.png",
             "tabdesc": "Example 4"
           }
@@ -111,6 +115,7 @@
         "5a382802-1239-4079-88fd-7b6522f78ab7": {
           "type": "product-info",
           "settings": {
+            "title": "",
             "tabimg": "shopify:\/\/shop_images\/image_58.png",
             "tabdesc": "Example 5"
           }
@@ -186,6 +191,7 @@
         "radius": 49,
         "padding_top": 52,
         "padding_bottom": 52,
+        "show_sub_title": true,
         "page": "product"
       }
     },

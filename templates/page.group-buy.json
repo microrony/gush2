@@ -55,7 +55,7 @@
         "22a693ff-45dc-4579-b308-601ac90e8851": {
           "type": "portfolio",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_332_2.png",
+            "image": "shopify:\/\/shop_images\/Frame_332_1.png",
             "portfolio_title": "Get a head start",
             "portfolio_des": "Reduce your renovation costs while getting the best of Gush paints, window films and services."
           }
@@ -63,7 +63,7 @@
         "51e578e6-5b3b-40aa-b091-cdd07505abdc": {
           "type": "portfolio",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_435.png",
+            "image": "shopify:\/\/shop_images\/Frame_332_2.png",
             "portfolio_title": "In good company",
             "portfolio_des": "Meet your neighbours and start building healthy connections with your new community."
           }
@@ -71,7 +71,7 @@
         "8a43182e-fce6-4fbf-8d3c-d1119fbcf918": {
           "type": "portfolio",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_332_1.png",
+            "image": "shopify:\/\/shop_images\/Frame_435.png",
             "portfolio_title": "Faster, better, together",
             "portfolio_des": "Joining our group buy saves you time, money and energy, so we can get your home painted more quickly."
           }
@@ -85,10 +85,101 @@
       "settings": {
         "section_title": "The more,\nthe merrier"
       }
+    },
+    "cdb51a37-bda3-4e98-9a91-3cfb474f2de8": {
+      "type": "ingredient",
+      "blocks": {
+        "21d96d48-0267-40a6-8878-ec207f99e2bd": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_1237_d1ace0e7-6273-4f96-a745-c1313e3232c5.png",
+            "title": "2 coats of Gush paint",
+            "faq_quality": "",
+            "faq_ans": "Live in the full benefits of our air-purifying paint, with smooth, professionally-painted walls and ceilings."
+          }
+        },
+        "488b63cd-e863-4429-a174-f3cea2ecb3fb": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_1240.png",
+            "title": "Free colour consultation",
+            "faq_quality": "",
+            "faq_ans": "Our colour experts help you pick shades and palettes you’ll love, to get your home looking its best"
+          }
+        },
+        "656ec867-5e2b-4856-8e2c-a96edc3dcff2": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_750.png",
+            "title": "Select up to 4 colours",
+            "faq_quality": "",
+            "faq_ans": "Besides white, you can use up to 4 different colours from our full colour range."
+          }
+        },
+        "0fe55fe9-42a6-4dbe-a7e5-4ed05a440867": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_747.png",
+            "title": "1 complimentary touch up",
+            "faq_quality": "",
+            "faq_ans": "We’ll make sure your walls and ceilings are perfectly painted – no patchy spots or iffy areas overlooked."
+          }
+        },
+        "293dacdb-0fad-4f64-bcd7-376bdb85d384": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_1233.png",
+            "title": "2-year warranty",
+            "faq_quality": "",
+            "faq_ans": "No mold troubles for you – our services include a2-year anti-mold warranty."
+          }
+        }
+      },
+      "block_order": [
+        "21d96d48-0267-40a6-8878-ec207f99e2bd",
+        "488b63cd-e863-4429-a174-f3cea2ecb3fb",
+        "656ec867-5e2b-4856-8e2c-a96edc3dcff2",
+        "0fe55fe9-42a6-4dbe-a7e5-4ed05a440867",
+        "293dacdb-0fad-4f64-bcd7-376bdb85d384"
+      ],
+      "settings": {
+        "color": "#ffc900",
+        "heading": "Gush with big savings",
+        "sub-heading": "Our group buy service packages get you our full suite of paint products, services and window film installation at exclusive rates. Let’s get your new home gushing over with goodness.",
+        "link": "",
+        "btn_text": "",
+        "btn_url": "",
+        "sb-heading": "",
+        "radius": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_sub_title": true,
+        "page": "services"
+      }
+    },
+    "b985e53e-d67c-4cec-855b-ea3e6459c597": {
+      "type": "parallel-text",
+      "settings": {
+        "title": "Come home to \nclean air. Let’s \nthrive together.",
+        "description": "Explore properties with Gush group buys happening now. Don’t miss out on discounts for your new home.",
+        "bg_color": "#eae4df",
+        "color": "#ff5500",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "page_name": "group_buy"
+      }
+    },
+    "group_buy_slider":{
+      "type": "group-buy-slider"
     }
   },
   "order": [
     "community_group_banner",
-    "reason_to_chose_gush"
+    "reason_to_chose_gush",
+    "cdb51a37-bda3-4e98-9a91-3cfb474f2de8",
+    "b985e53e-d67c-4cec-855b-ea3e6459c597",
+    "group_buy_slider"
   ]
 }

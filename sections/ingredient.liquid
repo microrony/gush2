@@ -9,12 +9,18 @@
   .ingredient{
     background-color: {{ section.settings.color }};
   }
+  .ingrediant_sub_heading{
+    padding-top: 10px !important;
+  }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+    .ingrediant_sub_heading{
+    padding-top: 15px !important;
+  }
   }
 {%- endstyle -%}
 
@@ -125,8 +131,8 @@
     <div class="ingredient__left-container">
         <div class="ingredient__heading">
           <h2 class="gush-font-h1">{{ section.settings.heading }}</h2>
-          {% if section.settings.page == 'product' %}
-          <p>{{ section.settings.sub-heading }}</p>
+          {% if section.settings.show_sub_title %}
+          <p class="ingrediant_sub_heading">{{ section.settings.sub-heading }}</p>
         {% endif %}
         </div>
         
@@ -272,6 +278,12 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type":"checkbox",
+      "id":"show_sub_title",
+      "label":"Sub title show hide",
+      "default": false
     },
     {
       "type": "select",
