@@ -5,21 +5,48 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  {%- if section.settings.page_name == "group_buy" -%}
+  .about-partner{
+    background-color: #EAE4DF !important;
+  }
+  .group_buy{
+    padding-bottom: 20rem !important;
+  }
+  .about-partner__heading {
+    margin-bottom: 5rem;
+  }
+  @media screen and (max-width: 750px){
+    .about-partner__heading {
+    margin-bottom: 3rem;
+    }
+    .group_buy{
+    padding-bottom: 5rem !important;
+    }
+  }
+  {%- endif -%}
 {%- endstyle -%}
 
+
+
 <section class="about-partner isolate section-{{ section.id }}-padding section section-primary section-wrapper">
-  <div class="grid--gapless grid--1-col grid--2-col-tablet about-partner__padding gush-page-width">
+  <div class="grid--gapless grid--1-col grid--2-col-tablet about-partner__padding gush-page-width group_buy">
     <div class="about-partner__heading gush-font-h3">
       <h2>{{ section.settings.heading }}</h2>
     </div>
     <div class="about-partner__logos">
 
-     <div class="about-partner__logos-img"><img src="{{ section.settings.image1 | img_url: 'medium' }}" alt="logo"></div>
-     <div class="about-partner__logos-img"><img src="{{ section.settings.image2 | img_url: 'medium' }}" alt="logo"></div>
-     <div class="about-partner__logos-img"><img src="{{ section.settings.image3 | img_url: 'medium' }}" alt="logo"></div>
-     
-   
+     {%- if section.settings.page_name != "group_buy" -%}
+      <div class="about-partner__logos-img"><img src="{{ section.settings.image1 | img_url: 'medium' }}" alt="logo"></div>
+      <div class="about-partner__logos-img"><img src="{{ section.settings.image2 | img_url: 'medium' }}" alt="logo"></div>
+      <div class="about-partner__logos-img"><img src="{{ section.settings.image3 | img_url: 'medium' }}" alt="logo"></div>
+     {%- endif -%}
+
     </div>
+    <div class="group_buy_brand_img_container">
+      {% for block in section.blocks  %} 
+          <div class="about-partner__logos-img"><img src="{{ block.settings.brand_img | img_url: 'medium' }}" alt="logo"></div>
+      {% endfor %}
+      </div>
   </div>
 </section>
 
@@ -67,7 +94,35 @@
   "unit": "px",
   "label": "t:sections.all.padding.padding_bottom",
   "default": 36
+},
+{
+  "type":"select",
+  "id":"page_name",
+  "label":"Page name",
+  "options":[
+    {
+      "value":"home",
+      "label":"Home"
+    },
+    {
+      "value":"group_buy",
+      "label":"Group buy"
+    }
+  ]
 }
+],
+"blocks":[
+  {
+    "type":"image",
+    "name":"image",
+    "settings":[
+      {
+        "type":"image_picker",
+        "id":"brand_img",
+        "label":"Image"
+      }
+    ]
+  }
 ],
 "presets": [
     {

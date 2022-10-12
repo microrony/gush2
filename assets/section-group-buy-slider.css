@@ -3,6 +3,7 @@
 }
 .group-buy-slider__heading h2{
     margin: 0;
+    user-select: none;
 }
 .slider_top{
     display: flex;

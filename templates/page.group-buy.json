@@ -171,8 +171,106 @@
         "page_name": "group_buy"
       }
     },
-    "group_buy_slider":{
-      "type": "group-buy-slider"
+    "group_buy_slider": {
+      "type": "group-buy-slider",
+      "blocks": {
+        "84e3d980-3f48-4b78-a811-3042f7d33808": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/image_160.png",
+            "title": "Parc Botannia",
+            "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
+          }
+        },
+        "b80e44f1-a907-4152-848d-0aa53c0a2db4": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/image_161.png",
+            "title": "Stirling Residences",
+            "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
+          }
+        },
+        "490617d0-4f96-489c-af77-6c86d3cc1130": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/Whistler-Grand-Condo-Gym_1.png",
+            "title": "Whistler Grand",
+            "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
+          }
+        },
+        "e1bf1d61-91e4-4718-a483-fa4f76290995": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/image_160.png",
+            "title": "Stirling Residences",
+            "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
+          }
+        }
+      },
+      "block_order": [
+        "84e3d980-3f48-4b78-a811-3042f7d33808",
+        "b80e44f1-a907-4152-848d-0aa53c0a2db4",
+        "490617d0-4f96-489c-af77-6c86d3cc1130",
+        "e1bf1d61-91e4-4718-a483-fa4f76290995"
+      ],
+      "settings": {
+        "heading": "Ongoing projects"
+      }
+    },
+    "58c42b95-bd00-4331-9e67-bc6b3c632d07": {
+      "type": "section-about-partner",
+      "blocks": {
+        "6f1fb3b1-1da9-4aef-9486-1fb801dd4bfd": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_154.png"
+          }
+        },
+        "19604d63-bc3b-4b61-bfd5-9fd07a84c603": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_155.png"
+          }
+        },
+        "f2bac977-f5c0-4a01-9d6e-bee976dee923": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_159.png"
+          }
+        },
+        "5c0b8605-2414-4b17-b747-fd26d3f8aed5": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_156.png"
+          }
+        },
+        "8a501607-6a1a-4204-86b8-27847c9d34a0": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_157.png"
+          }
+        },
+        "a7874066-7f78-48b2-8999-67903e8cc84d": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_158.png"
+          }
+        }
+      },
+      "block_order": [
+        "6f1fb3b1-1da9-4aef-9486-1fb801dd4bfd",
+        "19604d63-bc3b-4b61-bfd5-9fd07a84c603",
+        "f2bac977-f5c0-4a01-9d6e-bee976dee923",
+        "5c0b8605-2414-4b17-b747-fd26d3f8aed5",
+        "8a501607-6a1a-4204-86b8-27847c9d34a0",
+        "a7874066-7f78-48b2-8999-67903e8cc84d"
+      ],
+      "settings": {
+        "heading": "Past Projects",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "page_name": "group_buy"
+      }
     }
   },
   "order": [
@@ -180,6 +278,7 @@
     "reason_to_chose_gush",
     "cdb51a37-bda3-4e98-9a91-3cfb474f2de8",
     "b985e53e-d67c-4cec-855b-ea3e6459c597",
-    "group_buy_slider"
+    "group_buy_slider",
+    "58c42b95-bd00-4331-9e67-bc6b3c632d07"
   ]
 }
