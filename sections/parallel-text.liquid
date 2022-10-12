@@ -42,6 +42,19 @@
         font-family: 'GTAmerica' !important;
         font-style: normal;
     }
+    @media screen and (max-width:750px){
+        .section-{{ section.id }}-padding{
+            padding-top : 50px ;
+            padding-bottom : 0 ;
+        }
+        .section-{{ section.id }} h1{
+            margin-top : 0 ;
+            margin-bottom : 20px ;
+        }
+        .parallel_des p{
+        margin-bottom: 0 !important;
+        }
+    }
     {% endif %}
     
 {% endstyle %}

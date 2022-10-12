@@ -271,6 +271,9 @@
         "padding_bottom": 0,
         "page_name": "group_buy"
       }
+    },
+    "image_with_text_group_buy":{
+      "type":"group_buy_image_with_text"
     }
   },
   "order": [
@@ -279,6 +282,7 @@
     "cdb51a37-bda3-4e98-9a91-3cfb474f2de8",
     "b985e53e-d67c-4cec-855b-ea3e6459c597",
     "group_buy_slider",
-    "58c42b95-bd00-4331-9e67-bc6b3c632d07"
+    "58c42b95-bd00-4331-9e67-bc6b3c632d07",
+    "image_with_text_group_buy"
   ]
 }
