@@ -68,7 +68,7 @@
 	flex-direction: column;
 }
 
-.the-solution-blocks .image {
+.the-solution-blocks :is(.image, #lottie-container) {
 	width: 200px;
 	height: 200px;
 }

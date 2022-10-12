@@ -5,7 +5,8 @@
       "settings": {
         "title": "Science",
         "description": "Peel back the curtain to see how our paint protects you and your loved ones from indoor air pollution – round the clock.",
-        "image": "shopify:\/\/shop_images\/gush_logo_v2.png"
+        "image": "shopify:\/\/shop_images\/gush_logo_v2.png",
+        "page_name": "science"
       }
     },
     "1659063469c000ddf6": {
@@ -34,7 +35,9 @@
       ],
       "settings": {
         "title": "01 The Problem",
-        "description": ""
+        "description": "",
+        "page_name": "science",
+        "unbreakable_benefits": false
       }
     },
     "16596023041a9f5c71": {
@@ -46,9 +49,11 @@
             "title": "Benzene",
             "chemical_formula": "shopify:\/\/shop_images\/Group_1658.png",
             "chemical_structure": "shopify:\/\/shop_images\/Group_1842.png",
+            "solar_spectrum_range": "",
             "odor": "Sweet, gasoline-like",
             "appearance": "Clear to light yellow",
             "found_in": "Found in glues, paints, furniture wax, detergents and cigarette smoke",
+            "this_is_great": "",
             "how_it_harm": "Benzene stops the bone marrow from producing enough red blood cells, which can cause anemia. It damages ones’ immune system by reducing antibodies’ levels, causing a drop white blood cells.",
             "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy and respiratory ailments"
           }
@@ -59,9 +64,11 @@
             "title": "Formaldehyde",
             "chemical_formula": "shopify:\/\/shop_images\/Group_1658.png",
             "chemical_structure": "shopify:\/\/shop_images\/Group_1842.png",
+            "solar_spectrum_range": "",
             "odor": "Pungent, vinegar-like",
             "appearance": "Colourless",
             "found_in": "Found in Building and decor materials, hair products, nail polish, cigarette smoke",
+            "this_is_great": "",
             "how_it_harm": "Formaldehyde damages the liver, lungs, kidneys, central nervous systems and increases the risk of cancer. It aggravates respiratory conditions.",
             "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy"
           }
@@ -72,6 +79,7 @@
         "c11c89d9-f322-4ca2-93a5-4844a3362067"
       ],
       "settings": {
+        "page_name": "science"
       }
     },
     "1659072861edce4799": {
@@ -82,7 +90,8 @@
           "settings": {
             "title": "Doesn’t use energy",
             "description": "Unlike air purifiers, Gush paints remove pollutants without any electrical costs",
-            "image": "shopify:\/\/shop_images\/Group_1784.png"
+            "image": "shopify:\/\/shop_images\/Group_1784.png",
+            "lottie_file_name": "not-selected"
           }
         },
         "7e834f7e-5753-4b35-ab5d-d8474a6c182c": {
@@ -90,7 +99,8 @@
           "settings": {
             "title": "Air-purifying walls",
             "description": "Gush paint transforms the largest surface area in your space into passive air purifiers",
-            "image": "shopify:\/\/shop_images\/Group_1783.png"
+            "image": "shopify:\/\/shop_images\/Group_1783.png",
+            "lottie_file_name": "air-purifying-walls.json"
           }
         },
         "4affb962-ae07-4abb-80c2-8dd3eb66fea3": {
@@ -98,7 +108,8 @@
           "settings": {
             "title": "Clean air, 24\/7",
             "description": "Our air-purifying features operate even without light, protecting your air day & night",
-            "image": "shopify:\/\/shop_images\/Group_1785.png"
+            "image": "shopify:\/\/shop_images\/Group_1785.png",
+            "lottie_file_name": "not-selected"
           }
         }
       },
@@ -109,7 +120,9 @@
       ],
       "settings": {
         "title": "02 The Solution",
-        "description": "We’ve teamed up with leading scientists and research partners to make a proven paint formulation that rids the air of pollutants."
+        "description": "We’ve teamed up with leading scientists and research partners to make a proven paint formulation that rids the air of pollutants.",
+        "page_name": "science",
+        "unbreakable_benefits": false
       }
     },
     "1659662675096ed6b5": {
@@ -151,7 +164,9 @@
       "type": "science-steps",
       "settings": {
         "title": "03 Testing",
-        "description": "We conducted various third-party tests to certify our product’s efficacy against VOCs, bacteria and mold growth as shown below:"
+        "description": "We conducted various third-party tests to certify our product’s efficacy against VOCs, bacteria and mold growth as shown below:",
+        "page_name": "science",
+        "unbreakable_benefits": false
       }
     },
     "1659662699783d119b": {
@@ -206,6 +221,7 @@
         "09bdf50e-4059-406e-944c-ae87fc974387"
       ],
       "settings": {
+        "page_name": "science"
       }
     },
     "1659073882562a9fbf": {
@@ -234,7 +250,9 @@
       ],
       "settings": {
         "title": "04 Reports",
-        "description": "We conducted various third-party tests to certify our product’s efficacy against VOCs, bacteria and mold growth as shown below:"
+        "description": "We conducted various third-party tests to certify our product’s efficacy against VOCs, bacteria and mold growth as shown below:",
+        "page_name": "science",
+        "unbreakable_benefits": false
       }
     },
     "16590738922962dd01": {
@@ -266,7 +284,9 @@
       ],
       "settings": {
         "title": "05 Accreditations",
-        "description": "We’ve got a suite of accreditations and awards from respected institutions, so that you can be sure you’re getting nothing but the best."
+        "description": "We’ve got a suite of accreditations and awards from respected institutions, so that you can be sure you’re getting nothing but the best.",
+        "page_name": "science",
+        "unbreakable_benefits": false
       }
     }
   },
