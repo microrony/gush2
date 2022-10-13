@@ -3,15 +3,19 @@
     grid-template-columns: 60% auto;
     padding: 10rem 0;
     gap: 20px;
+    align-items: center;
 }
 .group_image_with_text h2{
     margin: 0;
     font-family: 'RecklessNeue' !important;
+    white-space: pre;
 }
 .group_image_with_text h4{
     margin: 25px 0;
     font-family: 'GTAmerica' !important;
     font-style: normal;
+    line-height: 130% !important;
+    letter-spacing: -0.0115em;
 }
 .left_image_section img{
     max-width: 95%;
@@ -33,6 +37,13 @@
     font-family: 'GTAmerica';
     font-style: normal;
     font-weight: 400;
+    transition: .3s;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    }
+    .group_image_with_text a:hover{
+        scale: 1.01;
     }
 
 @media screen and (max-width: 750px){
@@ -43,15 +54,21 @@
     }
     .group_image_with_text a{
         font-size: 10px;
+        line-height: 150%;
         padding: 1.5rem;
         margin: 0 auto;
         margin-top: 30px;
-
+        width: 200px;
     }
     .group_image_with_text h2{
         font-size: 32px !important;
+        letter-spacing: -0.04em !important;
     }
     .group_image_with_text h4{
         margin: 15px 0;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        line-height: 150% !important;
+        letter-spacing: -0.02em;
     }
 }

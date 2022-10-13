@@ -21,8 +21,8 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Sign up now",
-            "button_link_1": "",
-            "button_style_secondary_1": true,
+            "button_link_1": "shopify:\/\/pages\/contact",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -154,6 +154,7 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "show_sub_title": true,
+        "group_buy_page": true,
         "page": "services"
       }
     },
@@ -272,8 +273,34 @@
         "page_name": "group_buy"
       }
     },
-    "image_with_text_group_buy":{
-      "type":"group_buy_image_with_text"
+    "image_with_text_group_buy": {
+      "type": "group_buy_image_with_text",
+      "blocks": {
+        "17758f2a-44c2-4acb-843a-008ce290fa49": {
+          "type": "button",
+          "settings": {
+            "btn_text": "Start a group buy",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "17758f2a-44c2-4acb-843a-008ce290fa49"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_1636.png",
+        "heading": "All set and \nready to go?",
+        "description": "Can’t find your property? Start your own group buy today. Get your neighbours enjoying clean, safe homes together with you; special rates included just for you."
+      }
+    },
+    "cb5e433c-c809-42c5-b549-a358067777a8": {
+      "type": "footer-contact",
+      "settings": {
+        "heading": "Ready to get started? Tell us your details and we’ll reach out to you directly.",
+        "btn_text": "Send enquiry",
+        "btn_type": "primary",
+        "page_name": "group_buy"
+      }
     }
   },
   "order": [
@@ -283,6 +310,7 @@
     "b985e53e-d67c-4cec-855b-ea3e6459c597",
     "group_buy_slider",
     "58c42b95-bd00-4331-9e67-bc6b3c632d07",
-    "image_with_text_group_buy"
+    "image_with_text_group_buy",
+    "cb5e433c-c809-42c5-b549-a358067777a8"
   ]
 }

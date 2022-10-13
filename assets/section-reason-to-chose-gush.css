@@ -19,6 +19,8 @@
     margin: 0 ;
     font-family: 'GTAmerica' !important;
     font-style: normal;
+    line-height: 130% !important;
+    letter-spacing: -0.0115em;
 }
 @media screen and (max-width: 750px){
     .portfolio_card_container{

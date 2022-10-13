@@ -5,8 +5,8 @@
         <div class="right_info_section">
             <h2 class="gush-font-h2">{{ section.settings.heading }}</h2>
             <h4 class="gush-font-h4">{{ section.settings.description }}</h4>
-            <a>
-                <span>{{ section.settings.btn_text | escape }}</span> {% render 'arrow-dotted' %}
+            <a role="link" aria-disabled="true" href="{{ section.blocks[0].settings.button_link }}">
+                <span>{{ section.blocks[0].settings.btn_text | escape }}</span> {% render 'arrow-dotted' %}
             </a>
         </div>
     </div>
@@ -30,11 +30,25 @@
             "type":"textarea",
             "id":"description",
             "label":"Description"
-        },
+        }
+    ],
+    "blocks":[
         {
-            "type":"text",
-            "id":"btn_text",
-            "label":"Button text"
+            "type": "button",
+            "name": "Button",
+            "limit": 1,
+            "settings": [
+                {
+                "type": "text",
+                "id": "btn_text",
+                "label":"Button text"
+                },
+                {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button url"
+                }
+            ]
         }
     ]
 }
