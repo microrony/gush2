@@ -1,0 +1,49 @@
+{{ 'section-reason-to-chose-gush.css' |asset_url | stylesheet_tag }}
+<div class="page-width gush-page-width">
+        <h1 class="gush-font-h1 reason_to_chose_title">{{ section.settings.section_title }}</h1>
+        <div class="portfolio_card_container">
+            {%- for block in section.blocks -%} 
+                <div class="gush_portfolio_card">
+                    {{ block.settings.image | image_url: width: 380 | image_tag }}
+                    <h3 class="gush-font-h3">{{ block.settings.portfolio_title }}</h3>
+                    <h4 class="gush-font-h4">{{ block.settings.portfolio_des }}</h4>
+                </div>
+            {%- endfor -%}
+        </div>
+</div>
+
+{% schema  %}
+{
+    "name":"Reason to chose gush",
+    "settings":[
+        {
+            "type":"textarea",
+            "id":"section_title",
+            "label":"Title"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"portfolio",
+            "name":"Portfolio card",
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "id":"image",
+                    "label":"Image"
+                },
+                {
+                    "type":"textarea",
+                    "id":"portfolio_title",
+                    "label":"Title"
+                },
+                {
+                    "type":"textarea",
+                    "id":"portfolio_des",
+                    "label":"Description"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

@@ -1,10 +1,316 @@
 {
-    "sections": {
-        "community_group_buys_banner":{
-            "type": "commutity-group-buys-banner"
+  "sections": {
+    "community_group_banner": {
+      "type": "service-page-banner",
+      "blocks": {
+        "ba68abe8-60fe-43e7-8cfa-1a9621287c3f": {
+          "type": "heading",
+          "settings": {
+            "heading": "Community Group Buys",
+            "heading_size": "h0"
+          }
+        },
+        "a1fd7613-91cc-46e1-8ec9-765938383ddd": {
+          "type": "text",
+          "settings": {
+            "text": "Enjoy savings and create better homes with your neighbours.",
+            "text_style": "body"
+          }
+        },
+        "ce3e4621-5261-45d6-9bec-aa15957d761c": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Sign up now",
+            "button_link_1": "shopify:\/\/pages\/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
+      },
+      "block_order": [
+        "ba68abe8-60fe-43e7-8cfa-1a9621287c3f",
+        "a1fd7613-91cc-46e1-8ec9-765938383ddd",
+        "ce3e4621-5261-45d6-9bec-aa15957d761c"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_432.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "page_name": "group_buy"
+      }
     },
-    "order": [
-        "community_group_buys_banner"
-    ]
+    "reason_to_chose_gush": {
+      "type": "section-reason-to-chose-gush",
+      "blocks": {
+        "22a693ff-45dc-4579-b308-601ac90e8851": {
+          "type": "portfolio",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_332_1.png",
+            "portfolio_title": "Get a head start",
+            "portfolio_des": "Reduce your renovation costs while getting the best of Gush paints, window films and services."
+          }
+        },
+        "51e578e6-5b3b-40aa-b091-cdd07505abdc": {
+          "type": "portfolio",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_332_2.png",
+            "portfolio_title": "In good company",
+            "portfolio_des": "Meet your neighbours and start building healthy connections with your new community."
+          }
+        },
+        "8a43182e-fce6-4fbf-8d3c-d1119fbcf918": {
+          "type": "portfolio",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_435.png",
+            "portfolio_title": "Faster, better, together",
+            "portfolio_des": "Joining our group buy saves you time, money and energy, so we can get your home painted more quickly."
+          }
+        }
+      },
+      "block_order": [
+        "22a693ff-45dc-4579-b308-601ac90e8851",
+        "51e578e6-5b3b-40aa-b091-cdd07505abdc",
+        "8a43182e-fce6-4fbf-8d3c-d1119fbcf918"
+      ],
+      "settings": {
+        "section_title": "The more,\nthe merrier"
+      }
+    },
+    "cdb51a37-bda3-4e98-9a91-3cfb474f2de8": {
+      "type": "ingredient",
+      "blocks": {
+        "21d96d48-0267-40a6-8878-ec207f99e2bd": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_1237_d1ace0e7-6273-4f96-a745-c1313e3232c5.png",
+            "title": "2 coats of Gush paint",
+            "faq_quality": "",
+            "faq_ans": "Live in the full benefits of our air-purifying paint, with smooth, professionally-painted walls and ceilings."
+          }
+        },
+        "488b63cd-e863-4429-a174-f3cea2ecb3fb": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_1240.png",
+            "title": "Free colour consultation",
+            "faq_quality": "",
+            "faq_ans": "Our colour experts help you pick shades and palettes you’ll love, to get your home looking its best"
+          }
+        },
+        "656ec867-5e2b-4856-8e2c-a96edc3dcff2": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_750.png",
+            "title": "Select up to 4 colours",
+            "faq_quality": "",
+            "faq_ans": "Besides white, you can use up to 4 different colours from our full colour range."
+          }
+        },
+        "0fe55fe9-42a6-4dbe-a7e5-4ed05a440867": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_747.png",
+            "title": "1 complimentary touch up",
+            "faq_quality": "",
+            "faq_ans": "We’ll make sure your walls and ceilings are perfectly painted – no patchy spots or iffy areas overlooked."
+          }
+        },
+        "293dacdb-0fad-4f64-bcd7-376bdb85d384": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/Group_1233.png",
+            "title": "2-year warranty",
+            "faq_quality": "",
+            "faq_ans": "No mold troubles for you – our services include a2-year anti-mold warranty."
+          }
+        }
+      },
+      "block_order": [
+        "21d96d48-0267-40a6-8878-ec207f99e2bd",
+        "488b63cd-e863-4429-a174-f3cea2ecb3fb",
+        "656ec867-5e2b-4856-8e2c-a96edc3dcff2",
+        "0fe55fe9-42a6-4dbe-a7e5-4ed05a440867",
+        "293dacdb-0fad-4f64-bcd7-376bdb85d384"
+      ],
+      "settings": {
+        "color": "#ffc900",
+        "heading": "Gush with big savings",
+        "sub-heading": "Our group buy service packages get you our full suite of paint products, services and window film installation at exclusive rates. Let’s get your new home gushing over with goodness.",
+        "link": "",
+        "btn_text": "",
+        "btn_url": "",
+        "sb-heading": "",
+        "radius": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_sub_title": true,
+        "group_buy_page": true,
+        "page": "services"
+      }
+    },
+    "b985e53e-d67c-4cec-855b-ea3e6459c597": {
+      "type": "parallel-text",
+      "settings": {
+        "title": "Come home to \nclean air. Let’s \nthrive together.",
+        "description": "Explore properties with Gush group buys happening now. Don’t miss out on discounts for your new home.",
+        "bg_color": "#eae4df",
+        "color": "#ff5500",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "page_name": "group_buy"
+      }
+    },
+    "group_buy_slider": {
+      "type": "group-buy-slider",
+      "blocks": {
+        "84e3d980-3f48-4b78-a811-3042f7d33808": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/image_160.png",
+            "title": "Parc Botannia",
+            "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
+          }
+        },
+        "b80e44f1-a907-4152-848d-0aa53c0a2db4": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/image_161.png",
+            "title": "Stirling Residences",
+            "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
+          }
+        },
+        "490617d0-4f96-489c-af77-6c86d3cc1130": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/Whistler-Grand-Condo-Gym_1.png",
+            "title": "Whistler Grand",
+            "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
+          }
+        },
+        "e1bf1d61-91e4-4718-a483-fa4f76290995": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/image_160.png",
+            "title": "Stirling Residences",
+            "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
+          }
+        }
+      },
+      "block_order": [
+        "84e3d980-3f48-4b78-a811-3042f7d33808",
+        "b80e44f1-a907-4152-848d-0aa53c0a2db4",
+        "490617d0-4f96-489c-af77-6c86d3cc1130",
+        "e1bf1d61-91e4-4718-a483-fa4f76290995"
+      ],
+      "settings": {
+        "heading": "Ongoing projects"
+      }
+    },
+    "58c42b95-bd00-4331-9e67-bc6b3c632d07": {
+      "type": "section-about-partner",
+      "blocks": {
+        "6f1fb3b1-1da9-4aef-9486-1fb801dd4bfd": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_154.png"
+          }
+        },
+        "19604d63-bc3b-4b61-bfd5-9fd07a84c603": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_155.png"
+          }
+        },
+        "f2bac977-f5c0-4a01-9d6e-bee976dee923": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_159.png"
+          }
+        },
+        "5c0b8605-2414-4b17-b747-fd26d3f8aed5": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_156.png"
+          }
+        },
+        "8a501607-6a1a-4204-86b8-27847c9d34a0": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_157.png"
+          }
+        },
+        "a7874066-7f78-48b2-8999-67903e8cc84d": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_158.png"
+          }
+        }
+      },
+      "block_order": [
+        "6f1fb3b1-1da9-4aef-9486-1fb801dd4bfd",
+        "19604d63-bc3b-4b61-bfd5-9fd07a84c603",
+        "f2bac977-f5c0-4a01-9d6e-bee976dee923",
+        "5c0b8605-2414-4b17-b747-fd26d3f8aed5",
+        "8a501607-6a1a-4204-86b8-27847c9d34a0",
+        "a7874066-7f78-48b2-8999-67903e8cc84d"
+      ],
+      "settings": {
+        "heading": "Past Projects",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "page_name": "group_buy"
+      }
+    },
+    "image_with_text_group_buy": {
+      "type": "group_buy_image_with_text",
+      "blocks": {
+        "17758f2a-44c2-4acb-843a-008ce290fa49": {
+          "type": "button",
+          "settings": {
+            "btn_text": "Start a group buy",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "17758f2a-44c2-4acb-843a-008ce290fa49"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_1636.png",
+        "heading": "All set and \nready to go?",
+        "description": "Can’t find your property? Start your own group buy today. Get your neighbours enjoying clean, safe homes together with you; special rates included just for you."
+      }
+    },
+    "cb5e433c-c809-42c5-b549-a358067777a8": {
+      "type": "footer-contact",
+      "settings": {
+        "heading": "Ready to get started? Tell us your details and we’ll reach out to you directly.",
+        "btn_text": "Send enquiry",
+        "btn_type": "primary",
+        "page_name": "group_buy"
+      }
+    }
+  },
+  "order": [
+    "community_group_banner",
+    "reason_to_chose_gush",
+    "cdb51a37-bda3-4e98-9a91-3cfb474f2de8",
+    "b985e53e-d67c-4cec-855b-ea3e6459c597",
+    "group_buy_slider",
+    "58c42b95-bd00-4331-9e67-bc6b3c632d07",
+    "image_with_text_group_buy",
+    "cb5e433c-c809-42c5-b549-a358067777a8"
+  ]
 }

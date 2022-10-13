@@ -3,7 +3,13 @@
 <section class="footer-contact page-width isolate section-{{ section.id }}-bg">
     <div class="footer-contact__main">
         <div class="footer-contact__main-text">
-            <div class="footer-contact__main-heading"><h2 class="gush-font-h2">{{section.settings.heading}}</h2></div>
+            <div class="footer-contact__main-heading">
+              <h2 class="{%- if section.settings.page_name == "group_buy" -%}
+                gush-font-h3
+                {% else  %}
+                gush-font-h2
+              {%- endif -%}">{{section.settings.heading}}</h2>
+            </div>
             <!-- <div class="footer-contact__main-para"><p>{{section.settings.content}}</p>
                 <a href="#">{% render 'icon-arrow-right' %}</a>
             </div> -->
@@ -59,6 +65,7 @@
         <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
         <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
       </div>
+      {%- if section.settings.page_name != "group_buy" -%}
       <div class="field">
         <textarea
           rows="10"
@@ -71,6 +78,20 @@
         </textarea>
         <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
       </div>
+      {% else  %}
+      <div class="field">
+        <textarea
+          rows="10"
+          id="ContactForm-project_details"
+          class="text-area field__input"
+          name="contact[project_details]"
+          placeholder="Project details"
+        >
+          {{- form.project_details -}}
+        </textarea>
+        <label class="form__label field__label" for="ContactForm-project_details">Project Details</label>
+      </div>
+      {%- endif -%}
       <div class="">
         <button type="submit" class="cta-button gush-font-teritary {% if section.settings.btn_type == "primary"%}cta-button__fuschia{% else %}cta-button__secondary{% endif %}">
           {{ section.settings.btn_text }}{% render 'arrow-dotted-black' %}
@@ -111,6 +132,22 @@
 				}
 			],
 			"default": "primary"
+		  },
+		 {
+			"type": "select",
+			"id": "page_name",
+			"label": "Page name",
+			"options": [
+				{
+					"value": "home",
+					"label": "Home"
+				},
+				{
+					"value": "group_buy",
+					"label": "Group buy"
+				}
+			],
+			"default": "home"
 		  }
  ],
 "presets": [

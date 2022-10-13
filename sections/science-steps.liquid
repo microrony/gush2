@@ -1,14 +1,13 @@
 {{ 'section-science-steps.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
-   assign the_problem_blocks = section.blocks | where: 'type', 'the-problem-block' 
-   assign the_solution_blocks = section.blocks | where: 'type', 'the-solution-block' 
-   assign reports_blocks = section.blocks | where: 'type', 'reports-block'
-   assign accreditation_blocks = section.blocks | where: 'type', 'accreditation-block'
-  -%}
+     assign the_problem_blocks = section.blocks | where: 'type', 'the-problem-block' 
+     assign the_solution_blocks = section.blocks | where: 'type', 'the-solution-block' 
+     assign reports_blocks = section.blocks | where: 'type', 'reports-block'
+     assign accreditation_blocks = section.blocks | where: 'type', 'accreditation-block'
+    -%}
 
 {% style %}
-
   {% if section.settings.page_name == "Window_film_science" %}
     @media screen and (max-width: 750px) {
       .the-problem-block {
@@ -40,6 +39,9 @@
       .content_des_for_problem {
         padding-right: 2rem;
       }
+      .reports-block {
+        margin-top: 50px !important;
+      }
     }
   {% endif %}
 {% endstyle %}
@@ -54,11 +56,11 @@
     <div>
       {% for block in the_problem_blocks %}
         <div class="the-problem-block {% if forloop.last and section.settings.unbreakable_benefits == false -%}
-          			last-block
-          	 {%- endif -%} {% assign num = forloop.index | modulo: 2 %}
-          	{% if num != 0 and section.settings.unbreakable_benefits %}
-          		odd-block
-          	{% endif %} {% if section.settings.unbreakable_benefits %} unbreakable_benefits {% endif %}" {{ block.shopify_attributes }}>
+                    			last-block
+                    	 {%- endif -%} {% assign num = forloop.index | modulo: 2 %}
+                    	{% if num != 0 and section.settings.unbreakable_benefits %}
+                    		odd-block
+                    	{% endif %} {% if section.settings.unbreakable_benefits %} unbreakable_benefits {% endif %}" {{ block.shopify_attributes }}>
           <div class="content the_problem_block_content">
             <h2 class="gush-font-h3 content_title_for_problem">{{ block.settings.title }}
             </h2>
@@ -78,13 +80,13 @@
     <div class="the-solution-blocks">
       {% for block in the_solution_blocks %}
         <div class="solution-block" {{ block.shopify_attributes }}>
-					{% if block.settings.lottie_file_name != 'not-selected' %}
-						<div id="lottie-container" data-lottie-file-path="{{ block.settings.lottie_file_name | asset_url }}"></div>
-						{% else %}
-					<div class="image">
-						{{ block.settings.image | image_url: width: 1280 | image_tag }}
-					</div>
-				{% endif %}
+          {% if block.settings.lottie_file_name != 'not-selected' %}
+            <div id="lottie-container" data-lottie-file-path="{{ block.settings.lottie_file_name | asset_url }}"></div>
+          {% else %}
+            <div class="image">
+              {{ block.settings.image | image_url: width: 1280 | image_tag }}
+            </div>
+          {% endif %}
           <div class="content">
             <h2 class="gush-font-h3">{{ block.settings.title }}
             </h2>
@@ -100,8 +102,8 @@
     <div class="reports-blocks">
       {% for block in reports_blocks %}
         <div class="reports-block {% if forloop.last -%}
-          			last-block
-          	 {%- endif -%}" {{ block.shopify_attributes }}>
+                    			last-block
+                    	 {%- endif -%}" {{ block.shopify_attributes }}>
           <span class="gush-font-p2">{{ block.settings.title }}
           </span>
           <h3 class="gush-font-h3">{{ block.settings.description }}
@@ -118,8 +120,8 @@
     <div class="accreditation-blocks">
       {% for block in accreditation_blocks %}
         <div class="accreditation-block {% if forloop.last -%}
-          				last-block
-          		 {%- endif -%}" {{ block.shopify_attributes }}>
+                    				last-block
+                    		 {%- endif -%}" {{ block.shopify_attributes }}>
           <div class="images">
             {% if block.settings.image1 != nil %}
               <div class="image">
@@ -158,23 +160,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js" integrity="sha512-yAr4fN9WZH6hESbOwoFZGtSgOP+LSZbs/JeoDr02pOX4yUFfI++qC9YwIQXIGffhnzliykJtdWTV/v3PxSz8aw==" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
 
 {% if the_solution_blocks != empty %}
-<script>
-  var lottieContainer = document.getElementById('lottie-container');
-  var lottieFilePath = lottieContainer.dataset.lottieFilePath;
+  <script>
+    var lottieContainer = document.getElementById('lottie-container');
+    var lottieFilePath = lottieContainer.dataset.lottieFilePath;
 
-  var animation = bodymovin.loadAnimation({
+    var animation = bodymovin.loadAnimation({
 
-    // animationData: { /* ... */ },
-    container: lottieContainer, // required
-    path: lottieFilePath, // required
-    renderer: 'svg', // required
-    loop: true, // optional
-    autoplay: true, // optional
-    name: "Lottie Animation", // optional
-  });
+      // animationData: { /* ... */ },
+      container: lottieContainer, // required
+      path: lottieFilePath, // required
+      renderer: 'svg', // required
+      loop: true, // optional
+      autoplay: true, // optional
+      name: "Lottie Animation", // optional
+    });
 
-	animation.setSpeed(.5);
-</script>
+    animation.setSpeed(.5);
+  </script>
 {% endif %}
 
 

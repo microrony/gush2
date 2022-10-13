@@ -4,7 +4,7 @@
 .about-partner__logos {
     display: flex;
     justify-content: space-around;
-		gap: 1.6rem;
+	gap: 1.6rem;
 }
 .about-partner__heading h2 {
     text-align: center;
@@ -17,6 +17,17 @@
 .about-partner__heading {
     margin-bottom: 4%;
 }
+/* styled by Abdurrahman */
+.group_buy_brand_img_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    justify-items: center;
+}
+.group_buy_brand_img_container img{
+    max-width: 100%;
+}
 
 @media screen and (max-width: 767px){
     .about-partner__logos-img img {
@@ -24,5 +35,10 @@
     }
     .about-partner__heading h2{
         font-size: 18px;
+    }
+    /* styled by abdurrahman */
+    .group_buy_brand_img_container{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
     }
 }

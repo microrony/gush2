@@ -89,6 +89,23 @@
     }
   }
 {%- endstyle -%}
+{% style  %} 
+{% if section.settings.page_name == "group_buy" %}
+    .group_buy_p_text{
+      font-family: 'GTAmerica' !important;
+      font-style: normal;
+    }
+    @media screen and (max-width: 750px){
+    .group_buy_page_img{
+      width: 100% !important;
+      height: auto !important;
+    }
+    .image-with-text{
+      padding: 25px 20px 35px 20px !important;
+    }
+    }
+{% endif %}
+{% endstyle %}
 
 <div class="image-with-text gush-page-width image-with-text--{{ section.settings.content_layout }} page-width isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
   <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
@@ -97,7 +114,7 @@
         {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
         {%- if section.settings.image != blank -%}
-          <img
+          <img class="group_buy_page_img"
             srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
               {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
               {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
@@ -123,13 +140,13 @@
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
-              <h1 class="gush-font-h1 image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+              <h1 class="{% if section.settings.page_name == "group_buy" %}gush-font-h2 {% endif %} gush-font-h1 image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | escape }}
               </h1>
             {%- when 'caption' -%}
               <p class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.caption | escape }}</p>
             {%- when 'text' -%}
-              <div class="image-with-text__text rte gush-font-p1 {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              <div class="{% if section.settings.page_name == "group_buy" %}gush-font-h4 group_buy_p_text{% else  %} gush-font-p1 {% endif %} image-with-text__text rte  {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
                 <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="cta-button{% if block.settings.button_style_secondary %} button--secondary{% else %} gush-font-teritary cta-button__orange{% endif %}" {{ block.shopify_attributes }}>
@@ -300,6 +317,21 @@
     {
       "type": "header",
       "content": "Mobile layout"
+    },
+    {
+      "type":"select",
+      "id":"page_name",
+      "label":"Page name",
+      "options":[
+        {
+          "value":"home",
+          "label":"Home"
+        },
+        {
+          "value":"group_buy",
+          "label":"Group buy"
+        }
+      ]
     },
     {
       "type": "select",
