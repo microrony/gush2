@@ -6,22 +6,22 @@
         "469bf2e4-b998-49e5-8d47-dfe9c488233c": {
           "type": "text",
           "settings": {
-            "heading": "Privacy Policy",
-            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+            "heading": "These Terms",
+            "content": "<ol>\n    <li>These are the terms and conditions on which we supply gush paint (“Products”) to you through our website (our “Platform”).<\/li>\n    <li>Please read these terms carefully before you submit your order to us. These terms tell you who we are, how we will provide Products to you, how you and we may change or end the contract, what to do if there is a problem and other important information. If you think that there is a mistake in these terms or require any changes, please contact us to discuss.<\/li>\n    <li>By using our Platform, you agree to these terms. If you are using our Platform as a representative of an entity, you are agreeing to these terms on behalf of that entity.<\/li>\n<\/ol>"
           }
         },
         "953c2df9-5ae3-45c3-91da-e0038a177aa2": {
           "type": "text",
           "settings": {
-            "heading": "Privacy Policy",
-            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+            "heading": "About Us and How to Contact Us",
+            "content": "<ol>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ol>"
           }
         },
         "094123c6-d2e5-4de0-a33f-2fd5e6b70d66": {
           "type": "text",
           "settings": {
-            "heading": "Privacy Policy",
-            "content": "<ul>\n    <li>our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<\/ul>"
+            "heading": "Our Contract With You",
+            "content": "<ol>\n    <li>You may place orders with us as instructed on our Platform. Our acceptance of your order will take place when we email you to accept it, at which point a contract will come into existence between you and us.<\/li>\n<li>If we are unable to accept your order, we will let you know in writing and will not charge you for the Product ordered. This might be because:\n<ol>\n\t<li>the Product ordered is out of stock;<\/li>\n\t<li>there are unexpected limits on our resources which we could not reasonably plan for;<\/li>\n\t<li>we have identified an error in the price or description of the Product; or<\/li>\n\t<li>we are unable to meet a delivery deadline you have specified.<\/li>\n<\/ol>\n<\/li>\n<li>We will assign an order number to each order. Please tell us the order number whenever you contact us about your order.<\/li>\n<li>Our Platform is solely for the promotion of our Products in Singapore.<\/li>\n<\/ol>"
           }
         }
       },
@@ -32,6 +32,7 @@
       ],
       "settings": {
         "heading": "Terms &\nCondition",
+        "secondary-heading": "Terms and conditions for online sales of products",
         "padding_top": 100,
         "padding_bottom": 100
       }
