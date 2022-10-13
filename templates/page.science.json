@@ -137,7 +137,8 @@
             "first_image": "shopify:\/\/shop_images\/Group_1825.png",
             "second_title": "Say goodbye to odors",
             "second_description": "Our GPC breaks down 99% of VOCs and deodorizes your space of chemical fumes, within 21 hours.",
-            "second_image": "shopify:\/\/shop_images\/Group_1827.png"
+            "second_image": "shopify:\/\/shop_images\/Group_1827.png",
+            "second_lottie_file_name": "not-selected"
           }
         },
         "2fb4a410-85e0-49ee-b377-278638c5f9ca": {
@@ -149,7 +150,8 @@
             "first_image": "shopify:\/\/shop_images\/Group_1982.png",
             "second_title": "Clean air, more quickly",
             "second_description": "The GAE’s hygroscopic nature draws pollutants to the wall, increasing the rate of contact so more pollutants are broken down in less time.",
-            "second_image": "shopify:\/\/shop_images\/Group_1944.png"
+            "second_image": "shopify:\/\/shop_images\/Group_1944.png",
+            "second_lottie_file_name": "clean-air-more-quickly.json"
           }
         }
       },
