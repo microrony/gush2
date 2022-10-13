@@ -1,7 +1,7 @@
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding-inline: 2.5rem;
 }
 
 .gush-page-width {
@@ -12,7 +12,7 @@
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 10rem;
+    padding-inline: 10rem;
   }
 
 	.gush-page-width {
