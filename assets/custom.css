@@ -1,36 +1,53 @@
-:is(.gush-font-display, .gush-font-h1, .gush-font-h2, .gush-font-h3, .gush-font-h4, .gush-font-p1, .gush-font-p2, .gush-font-teritary, .gush-font-p3 ) {
+.gush-font-display,
+.gush-font-h1,
+.gush-font-h2,
+.gush-font-h3,
+.gush-font-h4,
+.gush-font-p1,
+.gush-font-p2,
+.gush-font-teritary,
+.gush-font-p3 {
   font-style: normal;
 }
 
-:is(.gush-font-display, .gush-font-h1) {
+.gush-font-display,
+.gush-font-h1 {
   font-family: 'ABCCamera';
   line-height: 1 !important;
   font-weight: 400 !important;
 }
 
-:is(.gush-font-display, .gush-font-p1, .gush-font-p2, .gush-font-p3 ) {
+.gush-font-display,
+.gush-font-p1,
+.gush-font-p2,
+.gush-font-p3 {
   letter-spacing: -0.02em;
 }
 
-:is(.gush-font-h2, .gush-font-h3, .gush-font-h4) {
+.gush-font-h2,
+.gush-font-h3,
+.gush-font-h4 {
   font-family: 'RecklessNeue' !important;
   font-weight: 400 !important;
   line-height: 1.1 !important;
   letter-spacing: -0.03em;
 }
 
-:is(.gush-font-p1, .gush-font-p2, .gush-font-teritary) {
+.gush-font-p1,
+.gush-font-p2,
+.gush-font-teritary {
   font-family: 'GTAmerica' !important;
   font-weight: 300 !important;
   line-height: 1.5 !important;
 }
 
-:is(.gush-font-p1, .gush-font-p2) {
+.gush-font-p1,
+.gush-font-p2 {
   letter-spacing: -0.02em;
 }
 
 .gush-font-display {
-	font-size: 48px !important;
+  font-size: 48px !important;
 }
 
 .gush-font-h1 {
@@ -39,77 +56,81 @@
 }
 
 .gush-font-h2 {
-	font-size: 24px !important;
+  font-size: 24px !important;
 }
 
 .gush-font-h3 {
-	font-size: 18px !important;
+  font-size: 18px !important;
 }
 
 .gush-font-h4 {
-	font-size: 14px !important;
+  font-size: 14px !important;
 }
 
 .gush-font-p1 {
-	font-size: 12px !important;
+  font-size: 12px !important;
 }
 
-.gush-font-p2, .gush-font-p3 {
-	font-size: 10px !important;
+.gush-font-p2,
+.gush-font-p3 {
+  font-size: 10px !important;
 }
 
 .gush-font-p3 {
-	font-family: 'GTAmerica';
-	font-weight: 400;
-	line-height: 1.5;
-	letter-spacing: normal;
+  font-family: 'GTAmerica';
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
 }
 
 .gush-font-teritary {
-	font-size: 9px !important;
-	letter-spacing: 0;
+  font-size: 9px !important;
+  letter-spacing: 0;
 }
 
 @media screen and (min-width: 750px) {
-	.gush-font-display {
-		font-size: 96px !important;
-	}
+  .gush-font-display {
+    font-size: 96px !important;
+  }
 
-	.gush-font-h1 {
+  .gush-font-h1 {
     font-size: 64px !important;
   }
 
-	.gush-font-h2 {
-		font-size: 48px !important;
-	}
+  .gush-font-h2 {
+    font-size: 48px !important;
+  }
 
-	.gush-font-h3 {
-		font-size: 36px !important;
-	}
+  .gush-font-h3 {
+    font-size: 36px !important;
+  }
 
-	.gush-font-h4 {
-		font-size: 24px !important;
-	}
+  .gush-font-h4 {
+    font-size: 24px !important;
+  }
 
-	.gush-font-p1 {
-		font-size: 20px !important;
-	}
+  .gush-font-p1 {
+    font-size: 20px !important;
+  }
 
-	.gush-font-p2 {
-		font-size: 16px !important;
-	}
+  .gush-font-p2 {
+    font-size: 16px !important;
+  }
 
-	.gush-font-teritary, .gush-font-p3 {
-		font-size: 12px !important;
-	}
+  .gush-font-teritary,
+  .gush-font-p3 {
+    font-size: 12px !important;
+  }
 
-	.gush-font-p3 {
+  .gush-font-p3 {
+  }
 
-	}
-
-	:is(.gush-font-p1, .gush-font-p2, .gush-font-teritary, .gush-font-p3) {
-		line-height: 1.6 !important;
-	}
+  .gush-font-p1,
+  .gush-font-p2,
+  .gush-font-teritary,
+  .gush-font-p3 {
+    line-height: 1.6 !important;
+  }
 }
 
 .header__submenu.list-menu {
