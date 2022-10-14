@@ -24,10 +24,10 @@
         "623940fe-d206-4e82-8ef9-8d88ab5443ca": {
           "type": "faqContent",
           "settings": {
-            "category": "",
-            "type": "",
-            "title": "",
-            "answer": ""
+            "category": "Privacy Policy",
+            "type": "What information we collect about you",
+            "title": "We do not collect sensitive data or special category data about you.",
+            "answer": "This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation."
           }
         }
       },
