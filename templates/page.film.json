@@ -95,16 +95,94 @@
         "heading": "Beat the heat without\ncompromising on aesthetics",
         "sub_heading": "For city-dwellers who want a cooler home, unblocked views, lower energy bills and sustainable home solutions – our window films do it all.",
         "warranty_year": 12,
-        "ingredient_heading": "What makes ClearCool films powerful"
+        "ingredient_heading": "What makes ClearCool films powerful",
+        "btn_text": "",
+        "button_link": ""
       }
     },
-    "film_offers":{
-      "type": "section-film-offers"
+    "film_offers": {
+      "type": "section-film-offers",
+      "blocks": {
+        "365144db-eaf6-4166-bc6d-5860593e6e62": {
+          "type": "offer_block",
+          "settings": {
+            "discount": 50.8,
+            "discount_des": "Less solar transmissions",
+            "image": "shopify:\/\/shop_images\/Group_2364.png"
+          }
+        },
+        "b73e52f2-e897-42af-9711-150f3e6fef63": {
+          "type": "offer_block",
+          "settings": {
+            "discount": 14.8,
+            "discount_des": "Savings on cooling energy",
+            "image": "shopify:\/\/shop_images\/Group_2233.png"
+          }
+        },
+        "0a14753b-d864-427c-8d30-ffefa8799cf9": {
+          "type": "offer_block",
+          "settings": {
+            "discount": 10,
+            "discount_des": "Savings on your monthly bills",
+            "image": "shopify:\/\/shop_images\/Group_2234.png"
+          }
+        }
+      },
+      "block_order": [
+        "365144db-eaf6-4166-bc6d-5860593e6e62",
+        "b73e52f2-e897-42af-9711-150f3e6fef63",
+        "0a14753b-d864-427c-8d30-ffefa8799cf9"
+      ],
+      "settings": {
+        "heading": "Keep your home cool \nat lower costs"
+      }
+    },
+    "film_transparency": {
+      "type": "section-film-transparency",
+      "blocks": {
+        "912c582b-228f-486e-944d-e8390128b6ff": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_160_1.png",
+            "card_heading": "ClearCool 5",
+            "card_info": "5% light transmission",
+            "card_des": "Made for more privacy."
+          }
+        },
+        "1cd84c0e-0c17-4010-abf4-68bc7d13efea": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_160_1.png",
+            "card_heading": "ClearCool 35",
+            "card_info": "35% light transmission",
+            "card_des": "Not too bright,\nnot too dark."
+          }
+        },
+        "8b8d449b-33b1-48eb-ae08-cacbab17ff9b": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_160_1.png",
+            "card_heading": "ClearCool 76",
+            "card_info": "76% light transmission",
+            "card_des": "For sunlit aesthetics \nand clear views."
+          }
+        }
+      },
+      "block_order": [
+        "912c582b-228f-486e-944d-e8390128b6ff",
+        "1cd84c0e-0c17-4010-abf4-68bc7d13efea",
+        "8b8d449b-33b1-48eb-ae08-cacbab17ff9b"
+      ],
+      "settings": {
+        "heading": "3 Transparency Levels",
+        "sub_heading": "Looking for privacy? Or prefer to keep your views crystal clear? Our films come in different light transmission levels to suit your needs."
+      }
     }
   },
   "order": [
     "ea28b89c-cc6a-43b8-85a5-0617f4d79bf8",
     "film_warranty",
-    "film_offers"
+    "film_offers",
+    "film_transparency"
   ]
 }

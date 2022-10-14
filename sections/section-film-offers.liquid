@@ -1,4 +1,5 @@
 {{ 'section-film-offers.css' | asset_url | stylesheet_tag }}
+<div class="film-main-offers-container">
 <div class="page-width film-offers-container">
     <div class="offer-heading">
         <h2 class="gush-font-h2">{{ section.settings.heading }}</h2>
@@ -12,6 +13,7 @@
         </div>
     </div>
     {% endfor %}
+</div>
 </div>
 
 {% schema  %} 

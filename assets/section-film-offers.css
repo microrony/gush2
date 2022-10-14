@@ -1,5 +1,8 @@
+.film-main-offers-container{
+    background: #F9F4F0;
+}
 .film-offers-container{
-    padding: 8.5rem 10rem 10rem 10rem !important;
+padding: 8.5rem 10rem 10rem 10rem !important;
 }
 .offer-heading h2{
     white-space: pre;
