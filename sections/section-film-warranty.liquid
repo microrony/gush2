@@ -1,0 +1,207 @@
+{{ 'section-film-warranty.css' | asset_url | stylesheet_tag}}
+{{ 'section-ingredient.css' | asset_url | stylesheet_tag}}
+<style>
+    .ingredient__main {
+      padding: 0 !important;
+    }
+    .ingredient__accordion{
+      max-width: 575px;
+      padding: 0 !important;
+      margin-left: auto;
+    }
+    .ingredient_heading_h3{
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      padding-bottom: 3rem;
+      margin: 0;
+    }
+    .qus-li__inner h3{
+      margin: 0 !important;
+    }
+    .question .q-ans__block{
+      padding: 3rem 0 !important;
+    }
+    .ingredient_bottom_btn a{
+      font-family: 'GTAmerica' !important;
+      font-style: normal ;
+      font-weight: 400 !important;
+      font-size: 16px !important;
+      line-height: 160% !important;
+      letter-spacing: -0.02em !important;
+      margin-top: 2rem;
+      background: #FF5500 !important;
+    }
+     @media screen and (max-width: 950px){
+      .warranty-heading-sub-heading h1{
+        font-size: 48px !important;
+      }
+    }
+    
+    @media screen and (max-width: 750px){
+      .ingredient_heading_h3{
+        padding-bottom: 1.2rem;
+      }
+      .question .q-ans__block{
+        padding: 2rem 0 !important;
+      }
+      .ingredient_bottom_btn a{
+        font-size: 10px !important;
+        line-height: 150% !important;
+        margin-top: 1.5rem ;
+      }
+      .warranty-heading-sub-heading h1{
+        font-size: 32px !important;
+      }
+    }
+   
+    
+</style>
+<div class="film-warranty-container">
+    <div class="film-page-width">
+        <div class="warranty-heading-sub-heading">
+            <h1 class="gush-font-h1 warranty-heading">{{ section.settings.heading }}</h1>
+            <p class="gush-font-p1 warranty-sub-heading">{{ section.settings.sub_heading }}</p>
+        </div>
+        <div>
+            <div class="warranty-year-box">
+                <h1 class="gush-font-h1">{{ section.settings.warranty_year }}</h1>
+                <p>year</p>
+                <p>warranty</p>
+            </div>
+        </div>
+        <div class="ingredient__main gush-page-width">
+            
+        <div class="ingredient__accordion">
+        <div class="question">
+            <h1 class="gush-font-h3 ingredient_heading_h3">{{ section.settings.ingredient_heading }}</h1>
+          {% for block in section.blocks %} {% if block.type == 'text' %}
+            <div class="q-ans__block" id="faq__block">
+              
+              <div class="faq_qus" id="faq_qus" data-content-id="faq_{{ forloop.index }}">
+                
+                <div class="qus-li">
+                    <div class="qus-li__inner">
+                      <h3 class="gush-font-p1">{{ block.settings.title }}</h3><p>{{ block.settings.faq_quality }}</h3>
+                    </div>
+                  </div>
+                
+                <span>{% render 'solid-plus-icon' %}{% render 'solid-minus-icon' %}</span>
+                
+              </div>
+              <div class="question__ans">
+              <p class="faq_ans gush-font-p2" id="faq_{{ forloop.index }}">
+                {{ block.settings.faq_ans }}
+              </p>
+            </div>
+              
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+          {% if section.settings.btn_text != blank %}
+            <div class="ingredient_bottom_btn">
+              <a class="cta-button cta-button__fuschia gush-font-teritary" href="{{ section.settings.button_link }}">
+              {{ section.settings.btn_text }} {% render 'arrow-dotted' %}
+              </a>
+            </div>
+          {% endif %}
+        </div>
+    </div>
+    </div>
+</div>
+
+<script>  
+  let Faqplus = document.querySelectorAll(".faq_qus .icon-plus-new");
+  let Faqminus = document.querySelectorAll(".faq_qus .icon-minus-new");
+  let Faqquestions = document.querySelectorAll(".faq_qus");
+  let Faqanswers = document.querySelectorAll(".faq_ans");
+   
+  Faqquestions.forEach((question) => {
+    question.addEventListener("click", (ele) => {
+      let ans_id = question.dataset.contentId;
+      let ans = document.getElementById(ans_id);
+
+      let FaqiconPlus = question.querySelector(".icon-plus-new");
+      let FaqiconMinus = question.querySelector(".icon-minus-new");
+       
+      if(!FaqiconMinus.classList.contains('is-active')) {       
+        FaqiconPlus.classList.remove("is-active");
+        FaqiconPlus.classList.add("not-active");
+        FaqiconMinus.classList.add("is-active");
+        FaqiconMinus.classList.remove("not-active");
+        ans.classList.add("is-active");
+      } else {
+        FaqiconMinus.classList.remove("is-active");
+        FaqiconMinus.classList.add("not-active");
+        FaqiconPlus.classList.add("is-active");
+        FaqiconPlus.classList.remove("not-active");
+        ans.classList.remove("is-active");
+      }
+     });
+     
+   });
+ </script>
+{% schema  %} 
+{
+    "name":"Film warranty",
+    "settings":[
+        {
+            "type":"textarea",
+            "id":"heading",
+            "label":"Heading"
+        },
+        {
+            "type":"textarea",
+            "id":"sub_heading",
+            "label":"Sub heading"
+        },
+        {
+            "type":"number",
+            "id":"warranty_year",
+            "label":"Warranty year"
+        },
+        {
+            "type":"textarea",
+            "id":"ingredient_heading",
+            "label":"Ingredient heading"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label":"Button text"
+            },
+            {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button url"
+            }
+    ],
+    "blocks":[
+        {
+            "name": "Text Block",
+            "type": "text",
+            "settings": [
+                {
+                "type": "image_picker",
+                "id": "faq_img",
+                "label": "Upload an Image"
+                },
+                {
+                "type": "text",
+                "id": "title",
+                "label": "Question"
+                },
+                {
+                "type": "text",
+                "id": "faq_quality",
+                "label": "Quality"
+                },
+                {
+                "type": "textarea",
+                "id": "faq_ans",
+                "label": "Answer"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
