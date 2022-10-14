@@ -3,20 +3,20 @@
     "6fd7aaa0-e901-4124-8a44-f17c20d9c3fd": {
       "type": "terms-and-condition",
       "blocks": {
-        "bd5b8d67-a05a-4c77-93e9-f0cc95f09c67": {
+        "29ef2cb6-6d96-4b70-b42a-79853cfd089c": {
           "type": "text",
           "settings": {
-            "heading": "wd",
-            "content": ""
+            "heading": "What information we collect about you",
+            "content": "<ol>\n<li>We collect the following types of information about you:\n<ol>\n<li>account and profile information that you provide when you register for an account or sign up for our products or services, for example your name, email address, telephone number(s) (collectively, “<strong>Account Data<\/strong>”);<\/li>\n<li>information you provide through support channels, for example when you report a problem to us or interact with our support team, including any contact information, documentation, or screenshots (collectively, “<strong>Support Data<\/strong>”);<\/li>\n<li>communication, marketing, and other preferences that you provide us when you participate in a survey or a questionnaire that we send you (collectively, “<strong>Preference Data<\/strong>”);<\/li>\n<li>information about your device or connection, for example your internet protocol (IP) address and information we collect through cookies and other data collection technologies (please read our Cookies Policy for details) (collectively, “<strong>Technical Data<\/strong>”); and<\/li>\n<li>Information about your use of or visit to our Platform, for example length of visits to certain pages, and page interaction information (collectively, “<strong>Usage Data<\/strong>”).<\/li>\n<\/ol>\n<\/li>\n<li>We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:ur personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;<\/li>\n<li>We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation.<\/li>\n<\/ol>"
           }
         }
       },
       "block_order": [
-        "bd5b8d67-a05a-4c77-93e9-f0cc95f09c67"
+        "29ef2cb6-6d96-4b70-b42a-79853cfd089c"
       ],
       "settings": {
         "heading": "Privacy\nPolicy",
-        "secondary-heading": "<p>This policy sets out: <\/p>\n<br>\n<ol>\n<li>the information we collect about you when you visit our website, use our products or services, or otherwise interact with us;<\/li>\n<li>how we use, share, store, and secure the information; and<\/li>\n<li>how you may access and control the information. <\/li>\n<\/ol>",
+        "secondary-heading": "This policy sets out: \n<br>\n\n<ol>\n<li>the information we collect about you when you visit our website, use our products or services, or otherwise interact with us;<\/li>\n<li>how we use, share, store, and secure the information; and<\/li>\n<li>how you may access and control the information. <\/li>\n<\/ol>\n<br>\n<p>In this policy, “<strong>Gush International Pte. Ltd.”<\/strong> or “<strong>we<\/strong>” refers to Gush International Pte. Ltd., a company registered in Singapore. Our Unique Entity Number is 202036327G and our registered office is at 2 GAMBAS CRESCENT #01-35, NORDCOM II, SINGAPORE 757044. “<strong>Platform<\/strong>” means our website at www.gowithgush.com.<\/p>\n<p><br>In this policy, “<strong>personal information<\/strong>” refers to any data, information, or combination of data and information that is provided by you to us, or through your use of our products or services, that relates to an identifiable individual.<\/p>",
         "padding_top": 36,
         "padding_bottom": 36
       }
