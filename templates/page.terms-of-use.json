@@ -1,156 +1,52 @@
 {
   "sections": {
-    "main": {
+    "e019c603-da61-4779-b5cc-47e1bdaf8c7d": {
       "type": "terms-and-condition",
       "blocks": {
-        "469bf2e4-b998-49e5-8d47-dfe9c488233c": {
+        "1b2f4150-1183-4526-895c-4a3627c13217": {
           "type": "text",
           "settings": {
-            "heading": "These Terms",
-            "content": "<ol>\n<li>These are the terms and conditions on which we supply gush cair interior paint (“<strong>Products<\/strong>”) to you through our website (our “<strong>Platform<\/strong>”).<\/li>\n<li>Please read these terms carefully before you submit your order to us. These terms tell you who we are, how we will provide Products to you, how you and we may change or end the contract, what to do if there is a problem and other important information. If you think that there is a mistake in these terms or require any changes, please contact us to discuss. <\/li>\n<li>\n<strong>By using our Platform, you agree to these terms.<\/strong> If you are using our Platform as a representative of an entity, you are agreeing to these terms on behalf of that entity.<\/li>\n<\/ol>"
+            "heading": "These terms",
+            "content": "<ol>\n<li>These terms of use govern your use and access to our services, including our website(s), our application(s), our application programming interfaces (APIs), our notifications and any information or content appearing therein (collectively our “<strong>Platform<\/strong>”). <\/li>\n<li>By using our Platform, you agree to these terms regardless of whether you are paying user or a non-paying visitor. If you are using our Platform as a representative of an entity, you are agreeing to these terms on behalf of that entity.<\/li>\n<li>You should also read our Privacy Policy which sets out how we collect and use your personal information.<\/li>\n<\/ol>"
           }
         },
-        "953c2df9-5ae3-45c3-91da-e0038a177aa2": {
+        "a4baa3ab-556b-45ec-a787-a69d0eb17e09": {
           "type": "text",
           "settings": {
-            "heading": "Information about us and how to contact us",
-            "content": "<ol>\n<li>We are Gush International Pte. Ltd., a company registered in Singapore. Our Unique Entity Number is 202036327G and our registered office is at 2 GAMBAS CRESCENT #01-35, NORDCOM II, SINGAPORE 757044. <\/li>\n<li>For any questions or problems relating to our Platform, our Products, or these terms, you can contact us by emailing us@gowithgush.com.  <\/li>\n<li>We are the data controller in relation to our Platform and are responsible for your personal data. Please refer to Clause 14 and our privacy policy which is available at X for information about what personal data we collect and what we do with it. It is important that you read our privacy policy, which may be updated from time to time, and understand how we use your information and the rights that you have about your information.<\/li>\n<li>If we have to contact you, we will do so by telephone or by writing to you at the email address or postal address you provided to us. <\/li>\n<li>When we use the words \"writing\" or \"written\" in these terms, this includes emails.<\/li>\n<\/ol>"
+            "heading": "About us and how to contact us",
+            "content": "<ol>\n<li>We are Gush International Pte. Ltd., a company registered in Singapore. Our Unique Entity Number is 202036327G and our registered office is at 2 GAMBAS CRESCENT #01-35, NORDCOM II, SINGAPORE 757044. <\/li>\n<li>For any questions or problems relating to our Platform, our Products, or these terms, you can contact us by emailing us@gowithgush.com.<\/li>\n<li>We are the data controller in relation to our Platform and are responsible for your personal data. Please refer to our Privacy Policy which is available at x for information about what personal data we collect and what we do with it. It is important that you read our privacy policy, which may be updated from time to time, and understand how we use your information and the rights that you have about your information.<\/li>\n<li>If we have to contact you, we will do so by telephone or by writing to you at the email address or postal address you provided to us. <\/li>\n<li>When we use the words \"writing\" or \"written\" in these terms, this includes emails.<\/li>\n<\/ol>"
           }
         },
-        "094123c6-d2e5-4de0-a33f-2fd5e6b70d66": {
+        "4ff0cd5c-1259-4f61-93e2-bbc1ba21de60": {
           "type": "text",
           "settings": {
-            "heading": "Our Contract With You",
-            "content": "<ol>\n<li>You may place orders with us as instructed on our Platform. Our acceptance of your order will take place when we email you to accept it, at which point a contract will come into existence between you and us. <\/li>\n<li>If we are unable to accept your order, we will let you know in writing and will not charge you for the Product ordered. This might be because:\n<ol>\n<li>the Product ordered is out of stock;<\/li>\n<li>there are unexpected limits on our resources which we could not reasonably plan for;<\/li>\n<li>we have identified an error in the price or description of the Product; or <\/li>\n<li>we are unable to meet a delivery deadline you have specified. <\/li>\n<\/ol>\n<ol>\n<li>We will assign an order number to each order. Please tell us the order number whenever you contact us about your order.<\/li>\n<li>Our Platform is solely for the promotion of our Products in Singapore.<\/li>\n<\/ol>\n<\/li>\n<\/ol>"
+            "heading": "Changes of terms",
+            "content": "<ol>\n<li>We may amend these terms from time to time by posting the updated terms on our Platform. If we make material changes, we will notify you of the changes before they become effective. By continuing to use our Platform and our services after the changes come into effect means that you agree to be bound by the revised policy. <\/li>\n<\/ol>"
           }
         },
-        "50c8bb87-3799-42ef-a2f7-e5c4ed40ad7b": {
+        "e8bab10f-1eed-48bf-bdb4-1e8b8d47ad61": {
           "type": "text",
           "settings": {
-            "heading": "Our products",
-            "content": "<ol>\n<li>The images of the Products on our Platform are for illustrative purposes only. Although we have made every effort to display the colours accurately, we cannot guarantee that a device's display of the colours accurately reflects the colour of the Products. Products that you purchase may vary slightly from those images. <\/li>\n<li>The packaging of the Products may vary from that shown in images on our Platform. <\/li>\n<\/ol>"
-          }
-        },
-        "d6ad8688-3800-4aa0-afe9-f4b6ab6a7255": {
-          "type": "text",
-          "settings": {
-            "heading": "Your rights to make changes",
-            "content": "<ol>\n<li>\nIf you wish to make a change to the Product you have ordered, please contact us. We have full discretion whether or not to accept the changes. We will let you know about any changes to the price of the product, the timing of supply or anything else which would be necessary as a result of your requested change and ask you to confirm whether you wish to go ahead with the change. If we cannot make the change or the consequences of making the change are unacceptable to you, you may want to end the contract (see Clause 8 - Your rights to end the contract).\n<\/li>\n<\/ol>"
-          }
-        },
-        "0e36f97f-d11e-41ee-863a-d50d87c79991": {
-          "type": "text",
-          "settings": {
-            "heading": "Changes to our product or these terms",
-            "content": "<ol>\n<li>We may make minor changes to the Product from time to time in order to: <ol>\n<li>reflect changes in relevant laws and regulatory requirements; and<\/li>\n<li>implement minor technical adjustments and improvements, for example to address a security threat. These changes will not affect your use of the product.<\/li>\n<\/ol>\n<\/li>\n\n<li>If we make significant changes to these terms or the Product, we will notify you and you may then contact us to end the contract before the changes take effect and receive a refund for any Products paid for but not received.<\/li>\n<\/ol>"
-          }
-        },
-        "239ab431-38bc-494e-91de-7d9a772a9d49": {
-          "type": "text",
-          "settings": {
-            "heading": "Providing the products",
-            "content": "<ol>\n<li>We will deliver the Products to the address as specified in your order as soon as reasonably possible and in any event within seven business (7) days after the day on which we accept your order.  The costs of delivery will be as displayed to you on our Platform.<\/li>\n<li>If our supply of the Products is delayed by an event outside our control, then we will contact you as soon as possible to let you know and we will take steps to minimise the effect of the delay. Provided we do this, we will not be liable for delays caused by the event, but if there is a risk of substantial delay, you may contact us to end the contract and receive a refund for any products you have paid for but not received. <\/li>\n<li>If we miss the delivery deadline for any Product, then you may treat the contract as at an end straight away if any of the following apply:<br>\n<ol>\n<li>we have refused to deliver the Products;<\/li>\n<li>delivery within the delivery deadline was essential (considering all the relevant circumstances); or<\/li>\n<li>you told us before we accepted your order that delivery within the delivery deadline was essential.<\/li>\n<\/ol>\n<\/li>\n<li>If you do not wish to treat the contract as at an end straight away, or do not have the right to do so under Clause 7.3, you can give us a new deadline for delivery, which must be reasonable, and you can treat the contract as at an end if we do not meet the new deadline.<\/li>\n<li>If you do choose to treat the contract as at an end for late delivery under Clause 7.6 or Clause 7.4, you can cancel your order for any of the Products or reject Products that have been delivered. If you wish, you can reject or cancel the order for some of those Products (not all of them), unless splitting them up would significantly reduce their value. After that we will refund any sums, you have paid to us for the cancelled Products and their delivery.  If the Products have been delivered to you, you must either return them in person to where you bought them, post them back to us or (if they are not suitable for posting) allow us to collect them from you. We will pay the costs of postage or collection. Please email us at us@gowithgush.com for a return label or to arrange collection.<\/li>\n<li>A Product will be your responsibility from the time we deliver the Product to the delivery location you specified or you (or a carrier organised by you) collect it from us.<\/li>\n<li>You own a Product once we have received payment in full.<\/li>\n<li>We may need certain information from you so that we can supply the Products to you. If so, this will have been stated in the description of the Products on our Platform. We will contact you to ask for this information. If you do not give us this information within a reasonable time of us asking for it, or if you give us incomplete or incorrect information, we may either end the contract (and Clause 10.2 will apply) or make an additional charge of a reasonable sum to compensate us for any extra work that is required as a result. We will not be responsible for supplying the Products late or not supplying any part of them if this is caused by you not giving us the information, we need within a reasonable time of us asking for it. <\/li>\n<li>We may have to suspend the supply of a Product to:\n<ol>\n<li>deal with technical problems or make minor technical changes;<\/li>\n<li>update the Product to reflect changes in relevant laws and regulatory requirements; or<\/li>\n<li>make changes to the Product as requested by you or notified by us to you (see Clause 6).<\/li>\n<\/ol>\n<\/li>\n<li>We will contact you in advance to tell you we will be suspending supply of the Product unless the problem is urgent or an emergency. If we have to suspend the Product, we will adjust the price so that you do not pay for Products while they are suspended. You may contact us to end the contract for a Product if we suspend it, or tell you we are going to suspend it, in each case for a period of more than one (1) month and we will refund any sums you have paid in advance for the Product in respect of the period after you end the contract.<\/li>\n<li>If you do not pay us for the Products when you are supposed to (see Clause 12.4) and you still do not make payment within two (2) weeks of us reminding you that payment is due, we may suspend supply of the Products until you have paid us the outstanding amounts. We will contact you to tell you we are suspending supply of the Products. We will not suspend the Products where you dispute the unpaid invoice (see Clause 12.6). We will not charge you for the Products during the period for which they are suspended. As well as suspending the Products we can also charge you interest on your overdue payments (see Clause 12.5).<\/li>\n<li> <\/li>\n<\/ol>"
-          }
-        },
-        "3f8c1a5e-8b62-4dbb-bbdd-1d4b5b50a228": {
-          "type": "text",
-          "settings": {
-            "heading": "Your rights to end the contract",
-            "content": "<ol>\n<li>\n<strong>You can always end your contract with us<\/strong>.  Your rights when you end the contract will depend on what you have bought, whether there is anything wrong with it, how we are performing and when you decide to end the contract:\n<ol>\n<li>If what you have bought is faulty or misdescribed you may have a right to end the contract<strong> <\/strong>or to get the Product repaired or replaced or to get some or all of your money back, see<strong> <\/strong>Clause 11;<\/li>\n<li>If you want to end the contract because of something we have done or have told you we are going to do, see Clause 8.2;<\/li>\n<li>In all other cases, see Clause 8.4 and Clause 8.5.<\/li>\n<\/ol>\n<\/li>\n<li>If you are ending a contract for a reason set out below the contract will end immediately, we will refund you in full for any Products which have not been provided and you may also be entitled to compensation:\n<ol>\n<li>we have told you about an upcoming change to the Product or these terms which you do not agree to (see Clause 6.2);<\/li>\n<li>we have told you about an error in the price or description of the Product you have ordered, and you do not wish to proceed;<\/li>\n<li>you have a legal right to end the contract because of something we have done wrong (including because we have delivered late (see Clause 7.3));<\/li>\n<li>there is a risk that supply of the Products may be significantly delayed because of events outside our control; or<\/li>\n<li>we have suspended supply of the Products for technical reasons or notify you we are going to suspend them for technical reasons, in each case for a period of more than one (1) month.<\/li>\n<\/ol>\n<\/li>\n<li>Even if we are not at fault, you can still end the contract before it is completed (i.e., when the Product is delivered and paid for) by giving us notice in writing. In such case, the contract will end one (1) calendar month after the day on which you contact us. We will refund any advance payment you have made for Products which will not be provided to you.<\/li>\n<li>To end the contract with us, please fill in our online return form, or email our customer services at us@gowithgush.com.<\/li>\n<li>If you end the contract with us, we will refund you the price you paid for the Products including delivery costs, but we may make the following deductions from the price:\n<ol>\n<li>deductions to reflect any deduction in value of the Products caused by you handling them in a way which would not be permitted in a shop (if we refund you before we are able to inspect the Products and later discover that you have handled them in an unacceptable way, you must pay us the appropriate amount); and<\/li>\n<li>deductions to reflect the difference between the least expensive delivery method we offer, and the delivery method chosen by you for the Products.<\/li>\n<\/ol>\n<\/li>\n<li>We will make any refunds due to you as soon as possible. <\/li>\n\n<\/ol>"
-          }
-        },
-        "47d62bb1-7cad-47ab-b2de-ec56f3585b86": {
-          "type": "text",
-          "settings": {
-            "heading": "Return of products upon end of contract",
-            "content": "<ol>\n<li>If you end the contract for any reason after Products have been delivered to you, you must return them to us within seven (7) business days.<\/li>\n<li>We will pay the costs of return (or our collection) of the Products only if:\n<ol>\n<li>the Products are faulty or misdescribed; or<\/li>\n<li>you are ending the contract because we have told you of an upcoming change to the Product or these terms, an error in pricing or description, a delay in delivery due to events outside our control or because you have a legal right to do so as a result of something we have done wrong.<\/li>\n<li>In all other circumstances you must pay the costs of return (or our collection) of the Products.<\/li>\n<\/ol>\n<\/li>\n<\/ol>"
-          }
-        },
-        "fd291e94-5ba5-4efd-b28d-f4211ad8904c": {
-          "type": "text",
-          "settings": {
-            "heading": "Our rights to end the contract",
-            "content": "<ol>\n<li>We may end the contract for a Product at any time by writing to you if:\n<ol>\n<li>you do not, within a reasonable time of us asking for it, provide us with information that is necessary for us to provide the Products, for example, address, quantity, and colour;<\/li>\n<li>you do not, within a reasonable time, allow us to deliver the Products to you or collect them from us; or<\/li>\n<li>you do not make any payment to us when it is due, and you still do not make payment within one (1) month of us reminding you that payment is due.<\/li>\n<\/ol>\n<\/li>\n<li>If we end the contract in the situations set out in Clause 10.1, we will refund any money you have paid in advance for Products we have not provided but we may deduct or charge you reasonable compensation for the net costs we will incur as a result of your breaking the contract.<\/li>\n<li>We may write to you to let you know that we are going to stop providing the Product. We will let you know at least two (2) weeks in advance of our stopping the supply of the Product and will refund any sums you have paid in advance for Products which will not be provided.<\/li>\n<\/ol>"
-          }
-        },
-        "46f3b509-ae99-4a2c-be42-b4b0a1e9c132": {
-          "type": "text",
-          "settings": {
-            "heading": "Product defects",
-            "content": "<ol>\n<li>We warrant that on delivery, the Products will:\n<ol>\n<li>be of merchantable or satisfactory quality;<\/li>\n<li>be fit for purpose held out by us;<\/li>\n<li>be free from material defects in design, material, and workmanship; and<\/li>\n<li>conform with their description given on our Platform in all material aspects.<\/li>\n<\/ol>\n<\/li>\n<li>Any warranty given by us under this clause does not apply to any defect in the Products arising from:\n<ol>\n<li>fair wear and tear;<\/li>\n<li>wilful damage, abnormal storage or working conditions, accident, or negligence by you or by any third party;<\/li>\n<li>your failure to operate or use the Products in accordance with any instructions (including instructions relating to storage, installation, use and maintenance) given by us;<\/li>\n<li>any alteration or repair by you or by a third party; or<\/li>\n<li>us following any of your specification or requests.<\/li>\n<\/ol>\n<\/li>\n<li>If you become aware of any defect in all or part of the Products delivered, you must:\n<ol>\n<li>give notice in writing to us as soon as practicable; and<\/li>\n<li>return the allegedly defective Products to us (either by posting the Products to us or allow us to collect them from you).<\/li>\n<\/ol>\n<\/li>\n<li>Where the Products returned under Clause 11.3 are found to be defective, we will, at our option, repair or replace the defective Products, or refund the price of such defective Products in full. We have no further liability to you for defective Products upon replacement, repair, or refund of the defective Products.<\/li>\n<li>If you have any questions or complaints about any Product, please email customer services us at us@gowithgush.com.<\/li>\n<\/ol>"
-          }
-        },
-        "b970bd73-9c75-481d-bef9-bb3b1708e249": {
-          "type": "text",
-          "settings": {
-            "heading": "Price and payment",
-            "content": "<ol>\n<li>The price of the Product will be the price indicated on the order pages when you placed your order. We take all reasonable care to ensure that the price of the Product advised to you is correct. However please see Clause 12.2 for what happens if we discover an error in the price of the Product you order. <\/li>\n<li>It is always possible that, despite our best efforts, some of the products we sell may be incorrectly priced. If the correct price for the Product at your order date is less than the price stated to you, we will charge the lower amount; but if it is higher than the price stated to you, we will contact you for your instructions before we accept your order. <\/li>\n<li>We accept payment by bank transfer, online payment methods and major credit and debit cards.<\/li>\n<li>You must pay for the Products before we despatch them.<\/li>\n<li>If you do not make any payment to us by the due date, we may charge interest to you on the overdue amount at the rate of 1.5% per month. This interest shall accrue on a daily basis from the due date until the date of actual payment of the overdue amount, whether before or after judgment. You must pay us interest together with any overdue amount.<\/li>\n<li>If you think an invoice is wrong, please contact us promptly to let us know. You will not have to pay any interest until the dispute is resolved. Once the dispute is resolved we will charge you interest on correctly invoiced sums from the original due date.<\/li>\n<\/ol>"
-          }
-        },
-        "404da538-d649-4c55-a526-0aacdbe35a59": {
-          "type": "text",
-          "settings": {
-            "heading": "Our responsibility for loss or damage suffered by you",
-            "content": "<ol>\n<li>Subject to clause 13.2:\n<ol>\n<li>all other warranties, conditions, or terms relating to fitness for purpose, quality, or condition of the Products, whether express or implied by statute or common law or otherwise, are expressly excluded;<\/li>\n<li>we shall not be liable to you (whether in contract, tort or otherwise) for any loss of profit or any indirect or consequential loss arising from or in connection with the provision of the Products; and<\/li>\n<li>our total liability to you for all losses arising from or in connection with the provision of the Products shall be limited to the total sums received by us for the Products.<\/li>\n<\/ol>\n<\/li>\n<li>Nothing in these terms will limit or exclude our liability for: \n<ol>\n<li>death or personal injury caused by our negligence, or the negligence of our employees, agents, or subcontractors (where applicable); <\/li>\n<li>fraud or fraudulent misrepresentation; or<\/li>\n<li>any matter in respect of which it would be unlawful for us to exclude or restrict liability.<\/li>\n<\/ol>\n<\/li>\n<\/ol>"
-          }
-        },
-        "b18ce4bd-6739-4874-9617-dc900cbb7c93": {
-          "type": "text",
-          "settings": {
-            "heading": "Use of your personal information",
-            "content": "<ol><li>When you register or otherwise use our Platform, you provide us with personal data which is collected and used in accordance with the terms of our privacy policy which is accessible at X. It is important that you read our privacy policy, which may be updated from time to time, and understand how we use your information and the rights that you have about your information.\n<\/li><\/ol>"
-          }
-        },
-        "e5540299-50ae-4ea8-8f6b-b2ce4ce92ef2": {
-          "type": "text",
-          "settings": {
-            "heading": "Entire agreement",
-            "content": "<ol>\n<li>These terms constitute the entire agreement between us in relation to your purchase. These terms supersede and extinguish all other agreements, promises, assurances, warranties, representations, and understandings between us, whether written or oral, in relation to your purchase.<\/li>\n<li>You acknowledge that you will have no remedies in respect of any statement, representation, assurance, or warranty (whether made innocently or negligently) that is not set out in these terms.<\/li>\n<\/ol>"
-          }
-        },
-        "0af07f8c-277b-411d-9ede-a4964f7688e1": {
-          "type": "text",
-          "settings": {
-            "heading": "Other important terms",
-            "content": "<ol>\n<li>We may transfer our rights and obligations under these terms to another organisation. We will contact you to let you know if we plan to do this. If you do not wish to continue the contract with the transferee, you may contact us to end the contract within one (1) calendar month of us informing you of the proposed transfer and we will refund you any payments you have made in advance for Products not provided.<\/li>\n<li>You may only transfer your rights or your obligations under these terms to another person if we agree to this in writing.<\/li>\n<li>This contract is between you and us. Nobody else has any rights under this contract. No other person shall have any rights to enforce any of its term.<\/li>\n<li>If a court finds part of this contract illegal, the rest will continue in force. Each of the paragraphs of these terms operates separately. If any court or relevant authority decides that any of them are unlawful, the remaining paragraphs will remain in full force and effect.<\/li>\n<li>Even if we delay in enforcing this contract, we can still enforce it later. If we do not insist immediately that you do anything you are required to do under these terms, or if we delay in taking steps against you in respect of your breaking this contract, that will not mean that you do not have to do those things and it will not prevent us taking steps against you at a later date. For example, if you miss a payment and we do not chase you, but we continue to provide the Products, we can still require you to make the payment at a later date.<\/li>\n<\/ol>"
-          }
-        },
-        "f870ed10-3687-4dbb-bc4d-454c33662171": {
-          "type": "text",
-          "settings": {
-            "heading": "Governing law and dispute resolution",
-            "content": "<ol>\n<li>This Agreement and any dispute or claim arising out of or in connection with it or its subject matter or formation (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of the Republic of Singapore.<\/li>\n<li>Alternative dispute resolution is a process where an independent body considers the facts of a dispute and seeks to resolve it, without you having to go to court. If you are not happy with how we have handled any complaint, you may want to contact the alternative dispute resolution provider we use. You can submit a complaint to Singapore International Arbitration Centre (SIAC) via their website at http:\/\/www.siac.org.sg\/. Singapore International Arbitration Centre (SIAC) will not charge you for making a complaint and if you are not satisfied with the outcome, you can still bring legal proceedings.<\/li>\n<\/ol>"
+            "heading": "Availability of our services",
+            "content": "<ol>\n<li>We are constantly changing and improving our Platform and the products or services we provide. We may from time to time change or discontinue any of the products or services we offer, or add or remove functionalities or features, and we may suspend or stop certain products, services, functionalities or features altogether. If we discontinue certain products, services, functionalities, or features, we will give you advance notice where reasonably possible.<\/li>\n<li>We may release products, services, functionalities or features that we are still testing and evaluating. We will label such services as “beta”, “preview”, “early access” or “trial” or any words or phrases with similar meanings. You understand that these beta services are not as reliable as other products or services we offer. <\/li>\n<li>We try our best to ensure that our Platform is always available, but we do not guarantee that the operation of or access to our Platform will be uninterrupted or continuous. Our Platform may be interrupted for maintenance, repairs, upgrades, network, or equipment failures.<\/li>\n<li>You are responsible for configuring your information technology, computer programmes and platform or system in order to access our Platform. We do not guarantee that our Platform will be free from bugs or viruses. <\/li>\n<\/ol>"
           }
         }
       },
       "block_order": [
-        "469bf2e4-b998-49e5-8d47-dfe9c488233c",
-        "953c2df9-5ae3-45c3-91da-e0038a177aa2",
-        "094123c6-d2e5-4de0-a33f-2fd5e6b70d66",
-        "50c8bb87-3799-42ef-a2f7-e5c4ed40ad7b",
-        "d6ad8688-3800-4aa0-afe9-f4b6ab6a7255",
-        "0e36f97f-d11e-41ee-863a-d50d87c79991",
-        "239ab431-38bc-494e-91de-7d9a772a9d49",
-        "3f8c1a5e-8b62-4dbb-bbdd-1d4b5b50a228",
-        "47d62bb1-7cad-47ab-b2de-ec56f3585b86",
-        "fd291e94-5ba5-4efd-b28d-f4211ad8904c",
-        "46f3b509-ae99-4a2c-be42-b4b0a1e9c132",
-        "b970bd73-9c75-481d-bef9-bb3b1708e249",
-        "404da538-d649-4c55-a526-0aacdbe35a59",
-        "b18ce4bd-6739-4874-9617-dc900cbb7c93",
-        "e5540299-50ae-4ea8-8f6b-b2ce4ce92ef2",
-        "0af07f8c-277b-411d-9ede-a4964f7688e1",
-        "f870ed10-3687-4dbb-bc4d-454c33662171"
+        "1b2f4150-1183-4526-895c-4a3627c13217",
+        "a4baa3ab-556b-45ec-a787-a69d0eb17e09",
+        "4ff0cd5c-1259-4f61-93e2-bbc1ba21de60",
+        "e8bab10f-1eed-48bf-bdb4-1e8b8d47ad61"
       ],
       "settings": {
-        "heading": "Terms &\nCondition",
-        "secondary-heading": "Terms and conditions for online sales of products",
+        "heading": "Terms of Use",
+        "secondary-heading": "",
         "padding_top": 100,
         "padding_bottom": 100
       }
     }
   },
   "order": [
-    "main"
+    "e019c603-da61-4779-b5cc-47e1bdaf8c7d"
   ]
 }
