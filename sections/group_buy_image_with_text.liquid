@@ -1,4 +1,57 @@
 {{ 'section-group-buy-image-with-text.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.page_name == "film" -%}
+<style>
+    .group_image_with_text{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .right_info_section{
+        order: 1;
+        max-width: 40rem;
+    }
+    .left_image_section{
+        order: 2;
+    }
+    .right_info_section h2{
+        font-family: 'ABCCamera' !important;
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 64px !important;
+        line-height: 100% !important; 
+        letter-spacing: -0.04em !important;
+        color: #000000 !important;
+    }
+    .right_info_section h4{
+        font-family: 'GTAmerica' !important;
+        font-style: normal;
+        font-weight: 300 !important;
+        font-size: 20px !important;
+        line-height: 160% !important; 
+        letter-spacing: -0.02em !important;
+        color: #000000 !important;
+    }
+    @media screen and (max-width: 750px){
+        .group_image_with_text{
+            grid-template-columns: 1fr;
+        }
+        .right_info_section{
+            order: 2;
+            margin: 0 auto;
+        }
+        .left_image_section{
+            order: 1;
+        }
+        .right_info_section h2{
+            font-size: 32px !important;
+        }
+        .right_info_section h4{
+            font-weight: 400 !important;
+            font-size: 12px !important;
+            line-height: 150% !important; 
+        }
+
+    }
+</style>
+{%- endif -%}
 <div class="page-width">
     <div class="group_image_with_text">
         <div class="left_image_section">{{ section.settings.image | image_url: width: 550 | image_tag }}</div>
@@ -30,6 +83,21 @@
             "type":"textarea",
             "id":"description",
             "label":"Description"
+        },
+        {
+            "type":"select",
+            "id":"page_name",
+            "label":"Page name",
+            "options":[
+                {
+                    "value":"group_buy",
+                    "label":"Group buy"
+                },
+                {
+                    "value":"film",
+                    "label":"Film"
+                }
+            ]
         }
     ],
     "blocks":[
@@ -50,6 +118,11 @@
                 }
             ]
         }
-    ]
+    ],
+    "presets": [
+    {
+        "name":"Group buy Image with text"
+    }
+]
 }
 {% endschema %}

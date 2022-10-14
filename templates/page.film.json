@@ -96,8 +96,8 @@
         "sub_heading": "For city-dwellers who want a cooler home, unblocked views, lower energy bills and sustainable home solutions – our window films do it all.",
         "warranty_year": 12,
         "ingredient_heading": "What makes ClearCool films powerful",
-        "btn_text": "",
-        "button_link": ""
+        "btn_text": "Learn more",
+        "button_link": "shopify:\/\/collections\/all"
       }
     },
     "film_offers": {
@@ -177,12 +177,44 @@
         "heading": "3 Transparency Levels",
         "sub_heading": "Looking for privacy? Or prefer to keep your views crystal clear? Our films come in different light transmission levels to suit your needs."
       }
+    },
+    "30533aca-a6e6-4880-b7d2-4eb08cdf37e0": {
+      "type": "group_buy_image_with_text",
+      "blocks": {
+        "849f5c4e-809d-41a2-94c0-cbb8a5dec7ca": {
+          "type": "button",
+          "settings": {
+            "btn_text": "Find out more",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "849f5c4e-809d-41a2-94c0-cbb8a5dec7ca"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_2167.png",
+        "heading": "Need help with\ninstallation?",
+        "description": "Don’t sweat putting on our window films. Our in-house teams conduct onsite assessment reports so that film installation is smooth and quick.",
+        "page_name": "film"
+      }
+    },
+    "44c7b10c-52e7-4d58-b848-17b29578f4ae": {
+      "type": "footer-contact",
+      "settings": {
+        "heading": "Let’s get you started. \nBook your free, \nnon-obligatory \nsite inspection.",
+        "btn_text": "Send enquiry",
+        "btn_type": "primary",
+        "page_name": "home"
+      }
     }
   },
   "order": [
     "ea28b89c-cc6a-43b8-85a5-0617f4d79bf8",
     "film_warranty",
     "film_offers",
-    "film_transparency"
+    "film_transparency",
+    "30533aca-a6e6-4880-b7d2-4eb08cdf37e0",
+    "44c7b10c-52e7-4d58-b848-17b29578f4ae"
   ]
 }
