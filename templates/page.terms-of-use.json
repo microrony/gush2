@@ -93,6 +93,13 @@
             "heading": "Other important terms",
             "content": "<ol>\n<li>We may transfer our rights and obligations under these terms to another organisation. We will contact you to let you know if we plan to do this. If you do not wish to continue the contract with the transferee, you may contact us to end the contract within one (1) calendar month of us informing you of the proposed transfer and we will refund you any payments you have made in advance for any products not provided.<\/li>\n<li>You may only transfer your rights or your obligations under these terms to another person if we agree to this in writing. <\/li>\n<li>If a court finds part of this contract illegal, the rest will continue in force. Each of the paragraphs of these terms operates separately. If any court or relevant authority decides that any of them are unlawful, the remaining paragraphs will remain in full force and effect.<\/li>\n<li>Even if we delay in enforcing this contract, we can still enforce it later. If we do not insist immediately that you do anything you are required to do under these terms, or if we delay in taking steps against you in respect of your breaking this contract, that will not mean that you do not have to do those things and it will not prevent us taking steps against you at a later date. For example, if you miss a payment and we do not chase you, but we continue to provide the products, we can still require you to make the payment at a later date.<\/li>\n<\/ol>"
           }
+        },
+        "fe8dc31c-ed4c-488f-911a-23d5414a71af": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact",
+            "content": "<ol><li>\nIf you have any questions about these terms or the Acceptable Use Policy, please contact us by us@gowithgush.com.\n<\/li><\/ol>"
+          }
         }
       },
       "block_order": [
@@ -108,7 +115,8 @@
         "0c2330ca-8e10-424f-a686-4f8693303a02",
         "a5e65569-258a-4b48-8f15-7e4b0177e758",
         "4d970302-2209-4b6c-b962-64bd778a7d92",
-        "43832066-28ba-4171-8266-1b4ed73ca01c"
+        "43832066-28ba-4171-8266-1b4ed73ca01c",
+        "fe8dc31c-ed4c-488f-911a-23d5414a71af"
       ],
       "settings": {
         "heading": "Terms of Use",
