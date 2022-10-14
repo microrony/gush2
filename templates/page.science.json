@@ -215,12 +215,25 @@
             "short_description": "99% reduction in bacteria count",
             "tested_by": "Tested by Nanyang Technological University"
           }
+        },
+        "46adcdc4-ae72-4c7c-9363-9bf520fec470": {
+          "type": "analysis",
+          "settings": {
+            "title": "Air quality",
+            "text": "CO2 Analysis",
+            "second_image": "shopify:\/\/shop_images\/Group_1939.png",
+            "svg_file_name": "co2-analysis",
+            "lottie_file_name": "co2-analysis.json",
+            "short_description": "99% reduction in bacteria count",
+            "tested_by": "Tested by Nanyang Technological University"
+          }
         }
       },
       "block_order": [
         "a130c5d6-8e9f-46d3-aa62-b63650d20f31",
         "10695d0d-230c-420c-9ea9-9114468a51fd",
-        "09bdf50e-4059-406e-944c-ae87fc974387"
+        "09bdf50e-4059-406e-944c-ae87fc974387",
+        "46adcdc4-ae72-4c7c-9363-9bf520fec470"
       ],
       "settings": {
         "page_name": "science"

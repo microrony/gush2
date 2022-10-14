@@ -191,16 +191,34 @@
 	var solutionTabLottieContainer = document.getElementById('solution-tab-lottie-container');
 	var lottieFilePath = solutionTabLottieContainer.dataset.lottieFilePath;
 
-	var animation = bodymovin.loadAnimation({
+	var solutionTabAnimation = bodymovin.loadAnimation({
 		container: solutionTabLottieContainer, // required
 		path: lottieFilePath, // required
 		renderer: 'svg', // required
-		loop: true, // optional
-		autoplay: true, // optional
+		loop: false, // optional
+		autoplay: false, // optional
 		name: "Lottie Animation", // optional
 	});
 
-	animation.setSpeed(1);
+	solutionTabAnimation.setSpeed(1);
+
+	const solutionTabLottieViewport = function() {
+		let options = {
+			rootMargin: '-100px',
+			threshold: .5
+		}
+
+		let solutionTabObserver = new IntersectionObserver(entries => {
+			entries[0].isIntersecting === true
+				? solutionTabAnimation.play()
+				: solutionTabAnimation.goToAndStop(0, 0);
+				if(entries[0].isIntersecting) solutionTabObserver.unobserve(entries[0].target);
+		}, options);
+
+		solutionTabObserver.observe(document.querySelector('#solution-tab-lottie-container'));
+	}
+
+	solutionTabLottieViewport();
 </script>
 
 

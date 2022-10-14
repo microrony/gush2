@@ -1,11 +1,11 @@
 {{ 'section-science-steps.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
-         assign the_problem_blocks = section.blocks | where: 'type', 'the-problem-block' 
-         assign the_solution_blocks = section.blocks | where: 'type', 'the-solution-block' 
-         assign reports_blocks = section.blocks | where: 'type', 'reports-block'
-         assign accreditation_blocks = section.blocks | where: 'type', 'accreditation-block'
-        -%}
+             assign the_problem_blocks = section.blocks | where: 'type', 'the-problem-block' 
+             assign the_solution_blocks = section.blocks | where: 'type', 'the-solution-block' 
+             assign reports_blocks = section.blocks | where: 'type', 'reports-block'
+             assign accreditation_blocks = section.blocks | where: 'type', 'accreditation-block'
+            -%}
 
 {% style %}
   {% if section.settings.page_name == "Window_film_science" %}
@@ -56,11 +56,11 @@
     <div>
       {% for block in the_problem_blocks %}
         <div class="the-problem-block {% if forloop.last and section.settings.unbreakable_benefits == false -%}
-                                        			last-block
-                                        	 {%- endif -%} {% assign num = forloop.index | modulo: 2 %}
-                                        	{% if num != 0 and section.settings.unbreakable_benefits %}
-                                        		odd-block
-                                        	{% endif %} {% if section.settings.unbreakable_benefits %} unbreakable_benefits {% endif %}" {{ block.shopify_attributes }}>
+                                                            			last-block
+                                                            	 {%- endif -%} {% assign num = forloop.index | modulo: 2 %}
+                                                            	{% if num != 0 and section.settings.unbreakable_benefits %}
+                                                            		odd-block
+                                                            	{% endif %} {% if section.settings.unbreakable_benefits %} unbreakable_benefits {% endif %}" {{ block.shopify_attributes }}>
           <div class="content the_problem_block_content">
             <h2 class="gush-font-h3 content_title_for_problem">{{ block.settings.title }}
             </h2>
@@ -102,8 +102,8 @@
     <div class="reports-blocks">
       {% for block in reports_blocks %}
         <div class="reports-block {% if forloop.last -%}
-                                        			last-block
-                                        	 {%- endif -%}" {{ block.shopify_attributes }}>
+                                                            			last-block
+                                                            	 {%- endif -%}" {{ block.shopify_attributes }}>
           <span class="gush-font-p2">{{ block.settings.title }}
           </span>
           <h3 class="gush-font-h3">{{ block.settings.description }}
@@ -120,8 +120,8 @@
     <div class="accreditation-blocks">
       {% for block in accreditation_blocks %}
         <div class="accreditation-block {% if forloop.last -%}
-                                        				last-block
-                                        		 {%- endif -%}" {{ block.shopify_attributes }}>
+                                                            				last-block
+                                                            		 {%- endif -%}" {{ block.shopify_attributes }}>
           <div class="images">
             {% if block.settings.image1 != nil %}
               <div class="image">
@@ -162,179 +162,182 @@
     var solutionLottieContainer = document.getElementById('solution-lottie-container');
     var lottieFilePath = solutionLottieContainer.dataset.lottieFilePath;
 
-    var animation = bodymovin.loadAnimation({
+    var solutionAnimation = bodymovin.loadAnimation({
       container: solutionLottieContainer, // required
       path: lottieFilePath, // required
       renderer: 'svg', // required
       loop: true, // optional
-      autoplay: true, // optional
+      autoplay: false, // optional
       name: "Lottie Animation", // optional
     });
 
-    animation.setSpeed(.5);
+    solutionAnimation.setSpeed(.5);
+
+    // "listen" & check when header is out of viewport
+    // (i set 50% = visible => threshold: 0.5 (to set))
+    const solutionLottieViewport = function() {
+      let options = {
+        rootMargin: '-100px',
+        threshold: .5
+      }
+
+      let solutionObserver = new IntersectionObserver(entries => {
+        entries[0].isIntersecting === true
+          ? solutionAnimation.play()
+          : solutionAnimation.goToAndStop(0, 0);
+					if(entries[0].isIntersecting) solutionObserver.unobserve(entries[0].target);
+      }, options);
+
+      solutionObserver.observe(document.querySelector('#solution-lottie-container'));
+    }
+
+    solutionLottieViewport();
   </script>
 {% endif %}
 
 
 {% schema %}
-{
-  "name": "Science Steps",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title"
-    },
-    {
-      "type": "textarea",
-      "id": "description",
-      "label": "Description"
-    },
-    {
-      "type": "select",
-      "id": "page_name",
-      "label": "Select page name",
-      "options": [
-        {
-          "value": "Window_film_science",
-          "label": "Window film science"
-        },
-        {
-          "value": "science",
-          "label": "Science"
-        }
-      ],
-      "default": "science"
-    },
-    {
-      "type": "checkbox",
-      "id": "unbreakable_benefits",
-      "label": "Unbreakable benefits section",
-      "default": false
-    }
-  ],
-  "blocks": [
-    {
-      "name": "The Problem",
-      "type": "the-problem-block",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "textarea",
-          "id": "description",
-          "label": "Description"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        }
-      ]
-    },
-    {
-      "name": "The Solution",
-      "type": "the-solution-block",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "textarea",
-          "id": "description",
-          "label": "Description"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "select",
-          "id": "lottie_file_name",
-          "label": "Select Lottie file",
-          "options": [
-            {
-              "value": "not-selected",
-              "label": "Not Selected"
-            },
-            {
-              "value": "air-purifying-walls.json",
-              "label": "Air-purifying walls"
-            }
-          ],
-          "default": "not-selected"
-        }
-      ]
-    },
-    {
-      "name": "Report",
-      "type": "reports-block",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "textarea",
-          "id": "description",
-          "label": "Description"
-        },
-        {
-          "type": "text",
-          "id": "number",
-          "label": "Number"
-        }
-      ]
-    },
-    {
-      "name": "Accreditation",
-      "type": "accreditation-block",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "html",
-          "id": "description",
-          "label": "Description"
-        },
-        {
-          "type": "image_picker",
-          "id": "image1",
-          "label": "Image One"
-        },
-        {
-          "type": "image_picker",
-          "id": "image2",
-          "label": "Image Two"
-        },
-        {
-          "type": "image_picker",
-          "id": "image3",
-          "label": "Image Three"
-        },
-        {
-          "type": "image_picker",
-          "id": "image4",
-          "label": "Image Four"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Science Steps"
-    }
-  ]
-}
+  {
+    "name": "Science Steps",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      }, {
+        "type": "select",
+        "id": "page_name",
+        "label": "Select page name",
+        "options": [
+          {
+            "value": "Window_film_science",
+            "label": "Window film science"
+          }, {
+            "value": "science",
+            "label": "Science"
+          }
+        ],
+        "default": "science"
+      }, {
+        "type": "checkbox",
+        "id": "unbreakable_benefits",
+        "label": "Unbreakable benefits section",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "name": "The Problem",
+        "type": "the-problem-block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }, {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }, {
+        "name": "The Solution",
+        "type": "the-solution-block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }, {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "select",
+            "id": "lottie_file_name",
+            "label": "Select Lottie file",
+            "options": [
+              {
+                "value": "not-selected",
+                "label": "Not Selected"
+              }, {
+                "value": "air-purifying-walls.json",
+                "label": "Air-purifying walls"
+              }
+            ],
+            "default": "not-selected"
+          }
+        ]
+      }, {
+        "name": "Report",
+        "type": "reports-block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }, {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          }, {
+            "type": "text",
+            "id": "number",
+            "label": "Number"
+          }
+        ]
+      }, {
+        "name": "Accreditation",
+        "type": "accreditation-block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "html",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Image One"
+          },
+          {
+            "type": "image_picker",
+            "id": "image2",
+            "label": "Image Two"
+          }, {
+            "type": "image_picker",
+            "id": "image3",
+            "label": "Image Three"
+          }, {
+            "type": "image_picker",
+            "id": "image4",
+            "label": "Image Four"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Science Steps"
+      }
+    ]
+  }
 {% endschema %}

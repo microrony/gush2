@@ -1,321 +1,454 @@
 {{ 'component-mobile-dropdown.css' | asset_url | stylesheet_tag }}
 {{ 'section-the-testing-tab.css' | asset_url | stylesheet_tag }}
-{% style  %}  
-{% if section.settings.page_name == "Window_film_science"  %} 
+{% style %}
+  {% if section.settings.page_name == "Window_film_science" %}
 
-.tab-contents .content{
-	grid-template-columns: 1fr !important;
-}
-.tab-contents .content img{
-	width: 100% ;
-	height: auto;
-}
-.testing_tab_contents>.tab-content{
-	padding: 0 !important;
-	margin-top: 50px ;
-}
-.testing_tab_contents .content{
-	padding: 0 !important;
-}
-.testing_tab_contents .test_description{
-	margin-top: 50px !important;
-	margin-bottom: 10px !important;
-}
-.test_description>.tested_by_text{
-	font-size: 16px !important; 
-}
-@media screen and (max-width: 750px){
-	.testing_tab_contents>.tab-content{
-	margin-top: 35px ;
-}
-	.test_description>.tested_by_text{
-	font-size: 9px !important; 
-}
-.testing_tab_contents .test_description{
-	margin-top: 10px !important;
-	margin-bottom: 0 !important;
-}
-.testing_tab_contents .test_description .tested_by_text{
-	margin-top: 0 !important;
-	margin-bottom: 20px !important;
-}
-}
-{% endif %}
+    .tab-contents .content {
+      grid-template-columns: 1fr !important;
+    }
+    .tab-contents .content img {
+      width: 100%;
+      height: auto;
+    }
+    .testing_tab_contents > .tab-content {
+      padding: 0 !important;
+      margin-top: 50px;
+    }
+    .testing_tab_contents .content {
+      padding: 0 !important;
+    }
+    .testing_tab_contents .test_description {
+      margin-top: 50px !important;
+      margin-bottom: 10px !important;
+    }
+    .test_description > .tested_by_text {
+      font-size: 16px !important;
+    }
+    @media screen and (max-width: 750px) {
+      .testing_tab_contents > .tab-content {
+        margin-top: 35px;
+      }
+      .test_description > .tested_by_text {
+        font-size: 9px !important;
+      }
+      .testing_tab_contents .test_description {
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+      }
+      .testing_tab_contents .test_description .tested_by_text {
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
+      }
+    }
+  {% endif %}
 {% endstyle %}
 
 <div class="the-testing-tab gush-page-width">
-	{% render 'mobile-dropdown', blocks: section.blocks%}
-	<div class="tabs">
-		{% for block in section.blocks %}
-		<div class="tab {% if forloop.first -%}
-				active
-		 {%- endif -%}" data-tab-target="#{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
-			<div>{{block.settings.title}}</div>
-		</div>
-		{% endfor %}
-	</div>
+  {% render 'mobile-dropdown', blocks: section.blocks %}
+  <div class="tabs">
+    {% for block in section.blocks %}
+      <div class="tab {% if forloop.first -%}
+        				active
+        		 {%- endif -%}" data-tab-target="#{{ block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+        <div>{{ block.settings.title }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 
-	<div class="tab-contents testing_tab_contents">
-		{% for block in section.blocks %}
-		{% case block.type %}
-      {% when 'removal' %}
-			<div class="tab-content removal {% if forloop.first -%}
-				active
-		 {%- endif -%} " id="{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
-		 <div class="content">
-		 <div class="left-content">
-			<div class="image">
-				{{ block.settings.image | image_url: width: 1280 | image_tag }}
-			</div>
-			</div>
-			<div class="right-content">
-			<ul>
-				{%if block.settings.item_1 != empty%}
-				<li><span>{% render "icon-arrow-right-gushi"%}</span>{{block.settings.item_1}}</li>
-				{% endif %}
-				{%if block.settings.item_2 != empty%}
-				<li><span>{% render "icon-arrow-right-gushi"%}</span>{{block.settings.item_2}}</li>
-				{% endif %}
-				{%if block.settings.item_3 != empty%}
-				<li><span>{% render "icon-arrow-right-gushi"%}</span>{{block.settings.item_3}}</li>
-				{% endif %}
-			</ul>
-			</div>
-		</div>
-		<div class="test_description">
-			<p class="gush-font-p1 tested_by_text">{{block.settings.tested_by}}</p>
-			<p class="gush-font-p1 description">{{block.settings.short_description}}</p>
-		</div>
-		  </div>
-			{% when 'molding' %}
-			<div class="tab-content molding {% if forloop.first -%}
-				active
-		 {%- endif -%}" id="{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
-		 <div class="content">
-			<p class="gush-font-p1 text">{{ block.settings.text }}</p>
-			<div class="surface_images">
-			<div class="left-content">
-			 <p class="gush-font-p1">{{ block.settings.uncoated_surface_text }}</p>
-			 <div class="uncoated_surface_image">
-				 {{ block.settings.uncoated_surface_image | image_url: width: 800 | image_tag }}
-			 </div>
-			</div>
-			<div class="right-content">
-				<p class="gush-font-p1">{{ block.settings.gush_coated_surface_text }}</p>
-				<div class="gush_coated_surface_image">
-					{{ block.settings.gush_coated_surface_image | image_url: width: 800 | image_tag }}
-				</div>
-				<div class="molding_clearance">
-					{{ block.settings.molding_clearance | image_url: width: 800 | image_tag }}
-				</div>
-				</div>
-			</div>
-			 <div class="test_details">
-			 <ul>
-				 {%if block.settings.environment != empty%}
-				 <li class="gush-font-p1">{{block.settings.environment}}</li>
-				 {% endif %}
-				 {%if block.settings.temperature != empty%}
-				 <li class="gush-font-p1">{{block.settings.temperature}}</li>
-				 {% endif %}
-				 {%if block.settings.testing_duration != empty%}
-				 <li class="gush-font-p1">{{block.settings.testing_duration}}</li>
-				 {% endif %}
-				 {%if block.settings.surface_dimensions != empty%}
-				 <li class="gush-font-p1">{{block.settings.surface_dimensions}}</li>
-				 {% endif %}
-			 </ul>
-			 </div>
-		 </div>
-		<div class="test_description">
-			<p class="gush-font-p1">{{block.settings.tested_by}}</p>
-			<p class="gush-font-p1 description">{{block.settings.short_description}}</p>
-		</div>
-		  </div>
-		{% endcase %}
-		{% endfor %}
-		</div>
+  <div class="tab-contents testing_tab_contents">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'removal' %}
+          <div class="tab-content removal {% if forloop.first -%}
+            				active
+            		 {%- endif -%} " id="{{ block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+            <div class="content">
+              <div class="left-content">
+                <div class="image">
+                  {{ block.settings.image | image_url: width: 1280 | image_tag }}
+                </div>
+              </div>
+              <div class="right-content">
+                <ul>
+                  {% if block.settings.item_1 != empty %}
+                    <li>
+                      <span>{% render "icon-arrow-right-gushi" %}
+                      </span>
+                      {{ block.settings.item_1 }}
+                    </li>
+                  {% endif %}
+                  {% if block.settings.item_2 != empty %}
+                    <li>
+                      <span>{% render "icon-arrow-right-gushi" %}
+                      </span>
+                      {{ block.settings.item_2 }}
+                    </li>
+                  {% endif %}
+                  {% if block.settings.item_3 != empty %}
+                    <li>
+                      <span>{% render "icon-arrow-right-gushi" %}
+                      </span>
+                      {{ block.settings.item_3 }}
+                    </li>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+            <div class="test_description">
+              <p class="gush-font-p1 tested_by_text">{{ block.settings.tested_by }}
+              </p>
+              <p class="gush-font-p1 description">{{ block.settings.short_description }}
+              </p>
+            </div>
+          </div>
+        {% when 'molding' %}
+          <div class="tab-content molding {% if forloop.first -%}
+            				active
+            		 {%- endif -%}" id="{{ block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+            <div class="content">
+              <p class="gush-font-p1 text">{{ block.settings.text }}
+              </p>
+              <div class="surface_images">
+                <div class="left-content">
+                  <p class="gush-font-p1">{{ block.settings.uncoated_surface_text }}
+                  </p>
+                  <div class="uncoated_surface_image">
+                    {{ block.settings.uncoated_surface_image | image_url: width: 800 | image_tag }}
+                  </div>
+                </div>
+                <div class="right-content">
+                  <p class="gush-font-p1">{{ block.settings.gush_coated_surface_text }}
+                  </p>
+                  <div class="gush_coated_surface_image">
+                    {{ block.settings.gush_coated_surface_image | image_url: width: 800 | image_tag }}
+                  </div>
+                  <div class="molding_clearance">
+                    {{ block.settings.molding_clearance | image_url: width: 800 | image_tag }}
+                  </div>
+                </div>
+              </div>
+              <div class="test_details">
+                <ul>
+                  {% if block.settings.environment != empty %}
+                    <li class="gush-font-p1">{{ block.settings.environment }}
+                    </li>
+                  {% endif %}
+                  {% if block.settings.temperature != empty %}
+                    <li class="gush-font-p1">{{ block.settings.temperature }}
+                    </li>
+                  {% endif %}
+                  {% if block.settings.testing_duration != empty %}
+                    <li class="gush-font-p1">{{ block.settings.testing_duration }}
+                    </li>
+                  {% endif %}
+                  {% if block.settings.surface_dimensions != empty %}
+                    <li class="gush-font-p1">{{ block.settings.surface_dimensions }}
+                    </li>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+            <div class="test_description">
+              <p class="gush-font-p1">{{ block.settings.tested_by }}
+              </p>
+              <p class="gush-font-p1 description">{{ block.settings.short_description }}
+              </p>
+            </div>
+          </div>
+        {% when 'analysis' %}
+          <div class="tab-content analysis {% if forloop.first -%}
+            					active
+            			 {%- endif -%}" id="{{ block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+            <div class="content">
+              <p class="gush-font-p1 text">{{ block.settings.text }}
+              </p>
+							{% if block.settings.lottie_file_name != 'not-selected' %}
+								<div id="testing-tab-lottie-container" data-lottie-file-path="{{ block.settings.lottie_file_name | asset_url }}"></div>
+							{% else if block.settings.svg_file_name != 'not-selected' %}
+							<div class="analysis_svg">
+								{% render "co2-analysis" %}
+							</div>
+							{% else %}
+							<div class="image">
+								{{ block.settings.second_image | image_url: width: 1280 | image_tag }}
+							</div>
+							{% endif %}
+            </div>
+            <div class="test_description">
+              <p class="gush-font-p1">{{ block.settings.tested_by }}
+              </p>
+              <p class="gush-font-p1 description">{{ block.settings.short_description }}
+              </p>
+            </div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
 
 </div>
 
 {% javascript %}
-const tabs = document.querySelectorAll('.the-testing-tab .tab');
-const dropDownOptions = document.querySelectorAll('.the-testing-tab .option');
-const tabContents = document.querySelectorAll('.the-testing-tab .tab-content');
+  const tabs = document.querySelectorAll('.the-testing-tab .tab');
+  const dropDownOptions = document.querySelectorAll('.the-testing-tab .option');
+  const tabContents = document.querySelectorAll('.the-testing-tab .tab-content');
 
-dropDownOptions.forEach(option => {
-  option.addEventListener('click', () => {
-    const target = document.querySelector(option.dataset.optionTarget);
-    tabContents.forEach(tabContent => {
-      tabContent.classList.remove('active');
-    });
-    dropDownOptions.forEach(option => {
-      option.classList.remove('active');
-    });
-    option.classList.add('active');
-    target.classList.add('active');
-		document.querySelector('.the-testing-tab details').removeAttribute("open");
-		document.querySelector('.the-testing-tab summary span').textContent = option.textContent;
+  dropDownOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      const target = document.querySelector(option.dataset.optionTarget);
+      tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active');
+      });
+      dropDownOptions.forEach(option => {
+        option.classList.remove('active');
+      });
+      option.classList.add('active');
+      target.classList.add('active');
+      document.querySelector('.the-testing-tab details').removeAttribute("open");
+      document.querySelector('.the-testing-tab summary span').textContent = option.textContent;
+    })
+  })
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = document
+        .querySelector(tab.dataset.tabTarget)
+        tabContents
+        .forEach(tabContent => {
+          tabContent.classList.remove('active')
+        })
+        tabs
+        .forEach(tab => {
+          tab.classList.remove('active')
+        })
+        tab
+        .classList
+        .add('active')
+      target
+      .classList
+      .add('active')
   })
 })
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.tabTarget)
-    tabContents.forEach(tabContent => {
-      tabContent.classList.remove('active')
-    })
-    tabs.forEach(tab => {
-      tab.classList.remove('active')
-    })
-    tab.classList.add('active')
-    target.classList.add('active')
-  })
-})
-	
 {% endjavascript %}
 
+<script>
+	var testingTabLottieContainer = document.getElementById('testing-tab-lottie-container');
+	var lottieFilePath = testingTabLottieContainer.dataset.lottieFilePath;
 
-	{% schema %}
-	{
-		"name": "Science Testing Tab",
-		"tag": "section",
-		"settings":[
-			{
-				"type": "select",
-				"id": "page_name",
-				"label": "Select page name",
-				"options": [
-					{
-					"value": "Window_film_science",
-					"label": "Window film science"
-					},
-					{
-					"value": "science",
-					"label": "Science"
-					}
-				],
-				"default": "science"
-			}
-		],
-			"blocks": [
-				{
-					"type": "removal",
-					"name": "Removal",
-					"settings": [
-					  {
-						  "id": "title",
-						  "type": "text",
-						  "label": "Tab title"
-					  },
-						{
-						  "id": "image",
-						  "type": "image_picker",
-						  "label": "Image"
-					  },
-						{
-						  "id": "item_1",
-						  "type": "text",
-						  "label": "Item 1"
-					  },
-						{
-						  "id": "item_2",
-						  "type": "text",
-						  "label": "Item 2"
-					  },
-						{
-						  "id": "item_3",
-						  "type": "text",
-						  "label": "Item 3"
-					  },
-						{
-						  "id": "short_description",
-						  "type": "textarea",
-						  "label": "Short description"
-					  },
-						{
-						  "id": "tested_by",
-						  "type": "text",
-						  "label": "Tested By"
-					  }
-					]
-				},
-				{
-					"type": "molding",
-					"name": "Molding",
-					"settings": [
-						{
-							"id": "title",
-							"type": "text",
-							"label": "Tab title"
-						},
-						{
-							"id": "text",
-							"type": "textarea",
-							"label": "Text"
-						},
-						{
-							"id": "uncoated_surface_text",
-							"type": "text",
-							"label": "Uncoated Surface Text"
-						},
-						{
-							"id": "uncoated_surface_image",
-							"type": "image_picker",
-							"label": "Uncoated Surface Image"
-						},
-						{
-							"id": "gush_coated_surface_text",
-							"type": "text",
-							"label": "Gush Coated Surface Text"
-						},
-						{
-							"id": "gush_coated_surface_image",
-							"type": "image_picker",
-							"label": "Gush Coated Surface Image"
-						},
-						{
-							"id": "environment",
-							"type": "html",
-							"label": "Environment"
-						},
-						{
-							"id": "temperature",
-							"type": "html",
-							"label": "Temperature"
-						},
-						{
-							"id": "testing_duration",
-							"type": "html",
-							"label": "Testing Duration"
-						},
-						{
-							"id": "surface_dimensions",
-							"type": "html",
-							"label": "Surface Dimensions"
-						},
-						{
-							"id": "molding_clearance",
-							"type": "image_picker",
-							"label": "Molding Clearance"
-						},
-						{
-							"id": "short_description",
-							"type": "textarea",
-							"label": "Short description"
-						},
-						{
-							"id": "tested_by",
-							"type": "text",
-							"label": "Tested By"
-						}
-					]
-				}
-			],"presets": [
-			{
-			"name": "Science Testing Tab"
-			}
-			]
+	var testingTabAnimation = bodymovin.loadAnimation({
+		container: testingTabLottieContainer, // required
+		path: lottieFilePath, // required
+		renderer: 'svg', // required
+		loop: false, // optional
+		autoplay: false, // optional
+		name: "Lottie Animation", // optional
+	});
+
+	testingTabAnimation.setSpeed(.5);
+
+	const testingTabLottieViewport = function() {
+		let options = {
+			rootMargin: '-100px',
+			threshold: .5
 		}
-		
-	{% endschema %}
+
+		let testingTabObserver = new IntersectionObserver(entries => {
+			entries[0].isIntersecting === true
+				? testingTabAnimation.play()
+				: testingTabAnimation.goToAndStop(0, 0);
+				if(entries[0].isIntersecting) testingTabObserver.unobserve(entries[0].target);
+		}, options);
+
+		testingTabObserver.observe(document.querySelector('#testing-tab-lottie-container'));
+	}
+
+	testingTabLottieViewport();
+</script>
+
+
+{% schema %}
+  {
+    "name": "Science Testing Tab",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "select",
+        "id": "page_name",
+        "label": "Select page name",
+        "options": [
+          {
+            "value": "Window_film_science",
+            "label": "Window film science"
+          }, {
+            "value": "science",
+            "label": "Science"
+          }
+        ],
+        "default": "science"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "removal",
+        "name": "Removal",
+        "settings": [
+          {
+            "id": "title",
+            "type": "text",
+            "label": "Tab title"
+          },
+          {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Image"
+          },
+          {
+            "id": "item_1",
+            "type": "text",
+            "label": "Item 1"
+          },
+          {
+            "id": "item_2",
+            "type": "text",
+            "label": "Item 2"
+          }, {
+            "id": "item_3",
+            "type": "text",
+            "label": "Item 3"
+          }, {
+            "id": "short_description",
+            "type": "textarea",
+            "label": "Short description"
+          }, {
+            "id": "tested_by",
+            "type": "text",
+            "label": "Tested By"
+          }
+        ]
+      }, {
+        "type": "molding",
+        "name": "Molding",
+        "settings": [
+          {
+            "id": "title",
+            "type": "text",
+            "label": "Tab title"
+          },
+          {
+            "id": "text",
+            "type": "textarea",
+            "label": "Text"
+          },
+          {
+            "id": "uncoated_surface_text",
+            "type": "text",
+            "label": "Uncoated Surface Text"
+          },
+          {
+            "id": "uncoated_surface_image",
+            "type": "image_picker",
+            "label": "Uncoated Surface Image"
+          }, {
+            "id": "gush_coated_surface_text",
+            "type": "text",
+            "label": "Gush Coated Surface Text"
+          }, {
+            "id": "gush_coated_surface_image",
+            "type": "image_picker",
+            "label": "Gush Coated Surface Image"
+          }, {
+            "id": "environment",
+            "type": "html",
+            "label": "Environment"
+          }, {
+            "id": "temperature",
+            "type": "html",
+            "label": "Temperature"
+          }, {
+            "id": "testing_duration",
+            "type": "html",
+            "label": "Testing Duration"
+          }, {
+            "id": "surface_dimensions",
+            "type": "html",
+            "label": "Surface Dimensions"
+          }, {
+            "id": "molding_clearance",
+            "type": "image_picker",
+            "label": "Molding Clearance"
+          }, {
+            "id": "short_description",
+            "type": "textarea",
+            "label": "Short description"
+          }, {
+            "id": "tested_by",
+            "type": "text",
+            "label": "Tested By"
+          }
+        ]
+      }, {
+        "type": "analysis",
+        "name": "Analysis",
+        "settings": [
+          {
+            "id": "title",
+            "type": "text",
+            "label": "Tab title"
+          },
+          {
+            "id": "text",
+            "type": "textarea",
+            "label": "Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "second_image",
+            "label": "Second Image"
+          },
+          {
+            "type": "select",
+            "id": "svg_file_name",
+            "label": "Select SVG file",
+            "options": [
+              {
+                "value": "not-selected",
+                "label": "Not Selected"
+              }, {
+                "value": "co2-analysis",
+                "label": "CO2 Analysis"
+              }
+            ],
+            "default": "not-selected"
+          }, {
+            "type": "select",
+            "id": "lottie_file_name",
+            "label": "Select Lottie file",
+            "options": [
+              {
+                "value": "not-selected",
+                "label": "Not Selected"
+              }, {
+                "value": "co2-analysis.json",
+                "label": "CO2 Analysis"
+              }
+            ],
+            "default": "not-selected"
+          }, {
+            "id": "short_description",
+            "type": "textarea",
+            "label": "Short description"
+          }, {
+            "id": "tested_by",
+            "type": "text",
+            "label": "Tested By"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Science Testing Tab"
+      }
+    ]
+  }
+{% endschema %}
