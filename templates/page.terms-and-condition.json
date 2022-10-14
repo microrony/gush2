@@ -93,6 +93,34 @@
             "heading": "Our responsibility for loss or damage suffered by you",
             "content": "<ol>\n<li>Subject to clause 13.2:\n<ol>\n<li>all other warranties, conditions, or terms relating to fitness for purpose, quality, or condition of the Products, whether express or implied by statute or common law or otherwise, are expressly excluded;<\/li>\n<li>we shall not be liable to you (whether in contract, tort or otherwise) for any loss of profit or any indirect or consequential loss arising from or in connection with the provision of the Products; and<\/li>\n<li>our total liability to you for all losses arising from or in connection with the provision of the Products shall be limited to the total sums received by us for the Products.<\/li>\n<\/ol>\n<\/li>\n<li>Nothing in these terms will limit or exclude our liability for: \n<ol>\n<li>death or personal injury caused by our negligence, or the negligence of our employees, agents, or subcontractors (where applicable); <\/li>\n<li>fraud or fraudulent misrepresentation; or<\/li>\n<li>any matter in respect of which it would be unlawful for us to exclude or restrict liability.<\/li>\n<\/ol>\n<\/li>\n<\/ol>"
           }
+        },
+        "b18ce4bd-6739-4874-9617-dc900cbb7c93": {
+          "type": "text",
+          "settings": {
+            "heading": "Use of your personal information",
+            "content": "<ol><li>When you register or otherwise use our Platform, you provide us with personal data which is collected and used in accordance with the terms of our privacy policy which is accessible at X. It is important that you read our privacy policy, which may be updated from time to time, and understand how we use your information and the rights that you have about your information.\n<\/li><\/ol>"
+          }
+        },
+        "e5540299-50ae-4ea8-8f6b-b2ce4ce92ef2": {
+          "type": "text",
+          "settings": {
+            "heading": "Entire agreement",
+            "content": "<ol>\n<li>These terms constitute the entire agreement between us in relation to your purchase. These terms supersede and extinguish all other agreements, promises, assurances, warranties, representations, and understandings between us, whether written or oral, in relation to your purchase.<\/li>\n<li>You acknowledge that you will have no remedies in respect of any statement, representation, assurance, or warranty (whether made innocently or negligently) that is not set out in these terms.<\/li>\n<\/ol>"
+          }
+        },
+        "0af07f8c-277b-411d-9ede-a4964f7688e1": {
+          "type": "text",
+          "settings": {
+            "heading": "Other important terms",
+            "content": "<ol>\n<li>We may transfer our rights and obligations under these terms to another organisation. We will contact you to let you know if we plan to do this. If you do not wish to continue the contract with the transferee, you may contact us to end the contract within one (1) calendar month of us informing you of the proposed transfer and we will refund you any payments you have made in advance for Products not provided.<\/li>\n<li>You may only transfer your rights or your obligations under these terms to another person if we agree to this in writing.<\/li>\n<li>This contract is between you and us. Nobody else has any rights under this contract. No other person shall have any rights to enforce any of its term.<\/li>\n<li>If a court finds part of this contract illegal, the rest will continue in force. Each of the paragraphs of these terms operates separately. If any court or relevant authority decides that any of them are unlawful, the remaining paragraphs will remain in full force and effect.<\/li>\n<li>Even if we delay in enforcing this contract, we can still enforce it later. If we do not insist immediately that you do anything you are required to do under these terms, or if we delay in taking steps against you in respect of your breaking this contract, that will not mean that you do not have to do those things and it will not prevent us taking steps against you at a later date. For example, if you miss a payment and we do not chase you, but we continue to provide the Products, we can still require you to make the payment at a later date.<\/li>\n<\/ol>"
+          }
+        },
+        "f870ed10-3687-4dbb-bc4d-454c33662171": {
+          "type": "text",
+          "settings": {
+            "heading": "Governing law and dispute resolution",
+            "content": "<ol>\n<li>This Agreement and any dispute or claim arising out of or in connection with it or its subject matter or formation (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of the Republic of Singapore.<\/li>\n<li>Alternative dispute resolution is a process where an independent body considers the facts of a dispute and seeks to resolve it, without you having to go to court. If you are not happy with how we have handled any complaint, you may want to contact the alternative dispute resolution provider we use. You can submit a complaint to Singapore International Arbitration Centre (SIAC) via their website at http:\/\/www.siac.org.sg\/. Singapore International Arbitration Centre (SIAC) will not charge you for making a complaint and if you are not satisfied with the outcome, you can still bring legal proceedings.<\/li>\n<\/ol>"
+          }
         }
       },
       "block_order": [
@@ -108,7 +136,11 @@
         "fd291e94-5ba5-4efd-b28d-f4211ad8904c",
         "46f3b509-ae99-4a2c-be42-b4b0a1e9c132",
         "b970bd73-9c75-481d-bef9-bb3b1708e249",
-        "404da538-d649-4c55-a526-0aacdbe35a59"
+        "404da538-d649-4c55-a526-0aacdbe35a59",
+        "b18ce4bd-6739-4874-9617-dc900cbb7c93",
+        "e5540299-50ae-4ea8-8f6b-b2ce4ce92ef2",
+        "0af07f8c-277b-411d-9ede-a4964f7688e1",
+        "f870ed10-3687-4dbb-bc4d-454c33662171"
       ],
       "settings": {
         "heading": "Terms &\nCondition",
