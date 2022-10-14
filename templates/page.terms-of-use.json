@@ -30,13 +30,45 @@
             "heading": "Availability of our services",
             "content": "<ol>\n<li>We are constantly changing and improving our Platform and the products or services we provide. We may from time to time change or discontinue any of the products or services we offer, or add or remove functionalities or features, and we may suspend or stop certain products, services, functionalities or features altogether. If we discontinue certain products, services, functionalities, or features, we will give you advance notice where reasonably possible.<\/li>\n<li>We may release products, services, functionalities or features that we are still testing and evaluating. We will label such services as “beta”, “preview”, “early access” or “trial” or any words or phrases with similar meanings. You understand that these beta services are not as reliable as other products or services we offer. <\/li>\n<li>We try our best to ensure that our Platform is always available, but we do not guarantee that the operation of or access to our Platform will be uninterrupted or continuous. Our Platform may be interrupted for maintenance, repairs, upgrades, network, or equipment failures.<\/li>\n<li>You are responsible for configuring your information technology, computer programmes and platform or system in order to access our Platform. We do not guarantee that our Platform will be free from bugs or viruses. <\/li>\n<\/ol>"
           }
+        },
+        "1e50725a-d394-4840-bce0-ff703dae0d75": {
+          "type": "text",
+          "settings": {
+            "heading": "Use of the platform",
+            "content": "<ol>\n<li>You must comply with the Acceptable Use Policy and all applicable laws and regulatory requirements, including privacy laws and intellectual property laws in using or accessing the Platform.<\/li>\n<li>We give you a personal, worldwide, royalty-free, non-assignable, non-transferrable, non-sublicensable, non-exclusive and revocable licence to access and use our Platform, including any software or application as part of the services we offer. This licence is for the sole purpose of enabling you to use and enjoy the benefit of our Platform as provided by us and in the manner as permitted by these terms.<\/li>\n<li>This licence to use our Platform will terminate if you do not comply with these terms or other additional terms or conditions imposed by us from time to time.<\/li>\n<li>You must not copy, modify, distribute, sell, lease, loan or trade any access to the Platform or any data or information on it.<\/li>\n<\/ol>"
+          }
+        },
+        "fff3ee0c-b577-4d73-817a-fa1f64324173": {
+          "type": "text",
+          "settings": {
+            "heading": "Our rights",
+            "content": "<ol>\n<li>All intellectual property rights subsisting in the Platform or the products or services we provide belong to us or have been lawfully licensed to us. All rights under applicable laws are hereby reserved. You must not upload, post, publish, reproduce, transmit or distribute any content or component of our Platform in any way, or create any derivative works with respect to any such content or component.<\/li>\n<li>Our name “gush” and our marks and logos are our trademarks (be it registered or unregistered) and may not be used without our express prior written consent.<\/li>\n<\/ol>"
+          }
+        },
+        "6183c26b-304d-4ccc-a835-55b35fd2bc7e": {
+          "type": "text",
+          "settings": {
+            "heading": "Feedback",
+            "content": "<ol>\n<li>We value and welcome feedback on our Platform. You agree that we are free to use, disclose, adopt and\/or modify any feedback and any information (including any ideas, concepts, proposals, suggestions, or comments) provided by you to use in connection with our Platform or any products or services we offer, without any payment to you.<\/li>\n<li>You hereby waive and agree to waive any rights to claim for any fees, royalties, charges, or other payments in relation to our use, disclosure, adoption and\/or modification of any of your feedback.<\/li>\n<\/ol>"
+          }
+        },
+        "ab5ea942-2799-454b-9748-eee6ab52a615": {
+          "type": "text",
+          "settings": {
+            "heading": "Limitation on liabilities",
+            "content": "<ol>\n<li>Some countries or jurisdictions may not allow the disclaimers in this clause, in which case these disclaimers will not apply to you.<\/li>\n<li>To the fullest extent permitted by law, we (including our holding company(ies), subsidiaries, affiliates, directors, officers, employees, agents, representatives, partners, and licensors (collectively, “<strong>Our Entities<\/strong>”)) expressly limit our liabilities in connection with or arising out of the provision of the Platform as follows:\n<ol>\n<li>we provide the Platform and any products or services we offer on an “as is” and “as available” basis, and your access to or use of our Platform is at your own risk;<\/li>\n<li>we give no assurance, representation, or warranty of any kind (whether express or implied) about the Platform and any products or services we provide;<\/li>\n<li>we do not guarantee that the information or content you find on the Platform is always accurate, truthful, complete, and up to date;<\/li>\n<li>we expressly disclaim all warranties and representations (for example, warranties of merchantability, fitness for a particular purpose, and non-infringement); <\/li>\n<li>we are not responsible for any delay or disruption in our Platform or any defect, viruses, bugs, or errors; and<\/li>\n<li>we are not responsible for the conduct of, or any content or information submitted or posted by any user of the Platform (whether online or offline).<\/li>\n<\/ol>\n<\/li>\n<li>To the fullest extent permitted by law, Our Entities are not liable to you or others for:\n<ol>\n<li>any indirect, incidental, special, exemplary, consequential, or punitive damages; or<\/li>\n<li>any loss of data, business, opportunities, reputation, profits, or revenues,<\/li>\n<li>relating to the use of our Platform or any products or services we offer.  <\/li>\n<\/ol>\n<\/li>\n<li>We do not exclude or limit our liability to you where it would be illegal to do so. This includes any of our liability for fraud or making fraudulent misrepresentation in operating the Platform or providing the products or services we offer.<\/li>\n<li>If you are using the Platform as a consumer, in some countries or jurisdictions you may have certain legal rights as a consumer. In such cases, nothing in these terms limit your legal rights as a consumer that may not be waived by contract.<\/li>\n<li>Other than the types of liabilities that we cannot limit by law, the liabilities of Our Entities to you (on aggregate) are limited to the amount you have paid us (if any) for the use of our Platform or for any products or services we offer over the last twelve (12) months.<\/li>\n<\/ol>"
+          }
         }
       },
       "block_order": [
         "1b2f4150-1183-4526-895c-4a3627c13217",
         "a4baa3ab-556b-45ec-a787-a69d0eb17e09",
         "4ff0cd5c-1259-4f61-93e2-bbc1ba21de60",
-        "e8bab10f-1eed-48bf-bdb4-1e8b8d47ad61"
+        "e8bab10f-1eed-48bf-bdb4-1e8b8d47ad61",
+        "1e50725a-d394-4840-bce0-ff703dae0d75",
+        "fff3ee0c-b577-4d73-817a-fa1f64324173",
+        "6183c26b-304d-4ccc-a835-55b35fd2bc7e",
+        "ab5ea942-2799-454b-9748-eee6ab52a615"
       ],
       "settings": {
         "heading": "Terms of Use",
