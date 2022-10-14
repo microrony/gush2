@@ -8,6 +8,7 @@
           "settings": {
             "category": "Privacy Policy",
             "type": "What information we collect",
+            "title": "We collect the following types of information about you:",
             "answer": "(a) account and profile information that you provide when you register for an account or sign up for our products or services, for example your name, email address, telephone number(s) (collectively, “Account Data”);\n(b) information you provide through support channels, for example when you report a problem to us or interact with our support team, including any contact information, documentation, or screenshots (collectively, “Support Data”);\n(c) communication, marketing, and other preferences that you provide us when you participate in a survey or a questionnaire that we send you (collectively, “Preference Data”);\n(d) information about your device or connection, for example your internet protocol (IP) address and information we collect through cookies and other data collection technologies (please read our Cookies Policy for details) (collectively, “Technical Data”); and\n(e) Information about your use of or visit to our Platform, for example length of visits to certain pages, and page interaction information (collectively, “Usage Data”).\n(f) We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:\n(g) our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;\n(h) We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation."
           }
         },
@@ -16,70 +17,16 @@
           "settings": {
             "category": "Privacy Policy",
             "type": "What information we collect",
-            "answer": "We do not collect sensitive data or special category data about you. This includes details about your race, ethnic origin, politics, religion, trade union membership, genetics, biometrics, health, or sexual orientation"
+            "title": "We collect the above information when you provide it to us or when you use or visit our Platform. We may also receive information about you from other sources, including:",
+            "answer": "our personnel, agents, advisors, consultants, and contractors based in Singapore in connection with our operations or services, for example our staff engaged in the fulfilment of your order, processing of your payment, and provision of support services;"
           }
         },
-        "90a2a239-1eef-46e6-86f9-4d85b51b3389": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Privacy Policy",
-            "type": "What information we collect",
-            "answer": "We collect the following types of information about you:"
-          }
-        },
-        "4e1825cd-dc5b-45c0-8670-82158924d4f4": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Privacy Policy",
-            "type": "How we use information we collect",
-            "answer": "(a) we need to perform the contract we have entered into (or are about to enter into) with you, including to operate our products or services, to provide customer support and personalised features, and to protect the safety and security of our Platform;\n(b) it satisfies a legitimate interest which is not overridden by your fundamental rights or data protection interests, for example for research and development, and in order to protect our legal rights and interests\n(c) you've given us consent to do so for a specific purpose, for example we may send you direct marketing materials or publish your information as part of our testimonials or customer stories to promote our products or services with your permission; or"
-          }
-        },
-        "674921ce-e5ff-4268-afa8-e160c5e4fa52": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Privacy Policy",
-            "type": "How we use information we collect",
-            "answer": "But please note this will not affect any use of your information that has already taken place."
-          }
-        },
-        "ff644c46-ce6f-4f14-a483-c2b25e195291": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Privacy Policy",
-            "type": "How we use information we collect",
-            "answer": ""
-          }
-        },
-        "c3a5662e-617e-4537-8449-77359bd736cd": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Privacy Policy",
-            "type": "How we use information we collect",
-            "answer": ""
-          }
-        },
-        "fe74eee3-a2bc-4ac8-a312-edb35242bf2d": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Privacy Policy",
-            "type": "How we share information we collect",
-            "answer": ""
-          }
-        },
-        "8af2cb08-c658-4dd1-b957-f3ebefffb690": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Privacy Policy",
-            "type": "",
-            "answer": ""
-          }
-        },
-        "0977f9ae-9723-4096-a9bb-df1785c7db46": {
+        "623940fe-d206-4e82-8ef9-8d88ab5443ca": {
           "type": "faqContent",
           "settings": {
             "category": "",
             "type": "",
+            "title": "",
             "answer": ""
           }
         }
@@ -87,14 +34,7 @@
       "block_order": [
         "1dbac928-f4cc-4bfd-a1e9-87c271ff38f4",
         "672dc2e9-bf58-460d-a7f3-fb8389507845",
-        "90a2a239-1eef-46e6-86f9-4d85b51b3389",
-        "4e1825cd-dc5b-45c0-8670-82158924d4f4",
-        "674921ce-e5ff-4268-afa8-e160c5e4fa52",
-        "ff644c46-ce6f-4f14-a483-c2b25e195291",
-        "c3a5662e-617e-4537-8449-77359bd736cd",
-        "fe74eee3-a2bc-4ac8-a312-edb35242bf2d",
-        "8af2cb08-c658-4dd1-b957-f3ebefffb690",
-        "0977f9ae-9723-4096-a9bb-df1785c7db46"
+        "623940fe-d206-4e82-8ef9-8d88ab5443ca"
       ],
       "settings": {
         "heading": "Privacy Policy & Cookie Policy",
