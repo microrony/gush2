@@ -58,6 +58,20 @@
             "heading": "Limitation on liabilities",
             "content": "<ol>\n<li>Some countries or jurisdictions may not allow the disclaimers in this clause, in which case these disclaimers will not apply to you.<\/li>\n<li>To the fullest extent permitted by law, we (including our holding company(ies), subsidiaries, affiliates, directors, officers, employees, agents, representatives, partners, and licensors (collectively, “<strong>Our Entities<\/strong>”)) expressly limit our liabilities in connection with or arising out of the provision of the Platform as follows:\n<ol>\n<li>we provide the Platform and any products or services we offer on an “as is” and “as available” basis, and your access to or use of our Platform is at your own risk;<\/li>\n<li>we give no assurance, representation, or warranty of any kind (whether express or implied) about the Platform and any products or services we provide;<\/li>\n<li>we do not guarantee that the information or content you find on the Platform is always accurate, truthful, complete, and up to date;<\/li>\n<li>we expressly disclaim all warranties and representations (for example, warranties of merchantability, fitness for a particular purpose, and non-infringement); <\/li>\n<li>we are not responsible for any delay or disruption in our Platform or any defect, viruses, bugs, or errors; and<\/li>\n<li>we are not responsible for the conduct of, or any content or information submitted or posted by any user of the Platform (whether online or offline).<\/li>\n<\/ol>\n<\/li>\n<li>To the fullest extent permitted by law, Our Entities are not liable to you or others for:\n<ol>\n<li>any indirect, incidental, special, exemplary, consequential, or punitive damages; or<\/li>\n<li>any loss of data, business, opportunities, reputation, profits, or revenues,<\/li>\n<li>relating to the use of our Platform or any products or services we offer.  <\/li>\n<\/ol>\n<\/li>\n<li>We do not exclude or limit our liability to you where it would be illegal to do so. This includes any of our liability for fraud or making fraudulent misrepresentation in operating the Platform or providing the products or services we offer.<\/li>\n<li>If you are using the Platform as a consumer, in some countries or jurisdictions you may have certain legal rights as a consumer. In such cases, nothing in these terms limit your legal rights as a consumer that may not be waived by contract.<\/li>\n<li>Other than the types of liabilities that we cannot limit by law, the liabilities of Our Entities to you (on aggregate) are limited to the amount you have paid us (if any) for the use of our Platform or for any products or services we offer over the last twelve (12) months.<\/li>\n<\/ol>"
           }
+        },
+        "7cf6ffe4-ad36-4e71-8e63-03b15ebf4891": {
+          "type": "text",
+          "settings": {
+            "heading": "Your representation",
+            "content": "<ol>\n<li>Our Platform is not intended for and may not be used by minors. By using our Platform, you represent that you are an adult and that you are able to legally enter into contractual agreements. <\/li>\n<li>If you are using the Platform on behalf of an entity, by using the Platform you represent that you have the necessary rights and authority to agree to these terms (and our Privacy Policy, Acceptable Use Policy and other documents referred to herein) on behalf of that entity.<\/li>\n<\/ol>"
+          }
+        },
+        "0c2330ca-8e10-424f-a686-4f8693303a02": {
+          "type": "text",
+          "settings": {
+            "heading": "Indemnity",
+            "content": "<ol>\n<li>You agree to indemnify and hold Our Entities harmless from and against all liabilities, damages, claims, costs (including legal fees and costs), and expenses in connection with or arising from (i) your breach of these terms, (ii) your use of our Platform and\/or (iii) any misrepresentation made by you. <\/li>\n<li>You also agree to fully co-operate with us in the defence or settlement of any claim in relation to or arising out of our Platform or these terms.<\/li>\n<\/ol>"
+          }
         }
       },
       "block_order": [
@@ -68,7 +82,9 @@
         "1e50725a-d394-4840-bce0-ff703dae0d75",
         "fff3ee0c-b577-4d73-817a-fa1f64324173",
         "6183c26b-304d-4ccc-a835-55b35fd2bc7e",
-        "ab5ea942-2799-454b-9748-eee6ab52a615"
+        "ab5ea942-2799-454b-9748-eee6ab52a615",
+        "7cf6ffe4-ad36-4e71-8e63-03b15ebf4891",
+        "0c2330ca-8e10-424f-a686-4f8693303a02"
       ],
       "settings": {
         "heading": "Terms of Use",
