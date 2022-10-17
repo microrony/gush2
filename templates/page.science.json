@@ -137,7 +137,8 @@
             "first_image": "shopify:\/\/shop_images\/Group_1825.png",
             "second_title": "Say goodbye to odors",
             "second_description": "Our GPC breaks down 99% of VOCs and deodorizes your space of chemical fumes, within 21 hours.",
-            "second_image": "shopify:\/\/shop_images\/Group_1827.png"
+            "second_image": "shopify:\/\/shop_images\/Group_1827.png",
+            "second_lottie_file_name": "not-selected"
           }
         },
         "2fb4a410-85e0-49ee-b377-278638c5f9ca": {
@@ -149,7 +150,8 @@
             "first_image": "shopify:\/\/shop_images\/Group_1982.png",
             "second_title": "Clean air, more quickly",
             "second_description": "The GAE’s hygroscopic nature draws pollutants to the wall, increasing the rate of contact so more pollutants are broken down in less time.",
-            "second_image": "shopify:\/\/shop_images\/Group_1944.png"
+            "second_image": "shopify:\/\/shop_images\/Group_1944.png",
+            "second_lottie_file_name": "clean-air-more-quickly.json"
           }
         }
       },
@@ -213,12 +215,25 @@
             "short_description": "99% reduction in bacteria count",
             "tested_by": "Tested by Nanyang Technological University"
           }
+        },
+        "46adcdc4-ae72-4c7c-9363-9bf520fec470": {
+          "type": "analysis",
+          "settings": {
+            "title": "Air quality",
+            "text": "CO2 Analysis",
+            "second_image": "shopify:\/\/shop_images\/Group_1939.png",
+            "svg_file_name": "co2-analysis",
+            "lottie_file_name": "co2-analysis.json",
+            "short_description": "99% reduction in bacteria count",
+            "tested_by": "Tested by Nanyang Technological University"
+          }
         }
       },
       "block_order": [
         "a130c5d6-8e9f-46d3-aa62-b63650d20f31",
         "10695d0d-230c-420c-9ea9-9114468a51fd",
-        "09bdf50e-4059-406e-944c-ae87fc974387"
+        "09bdf50e-4059-406e-944c-ae87fc974387",
+        "46adcdc4-ae72-4c7c-9363-9bf520fec470"
       ],
       "settings": {
         "page_name": "science"

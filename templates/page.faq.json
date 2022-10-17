@@ -17,7 +17,7 @@
           "settings": {
             "category": "About Gush",
             "type": "General Questions",
-            "title": "\"I am a partner\/ Influencer, \nhow can I collaborate with you? \"",
+            "title": "I am a partner\/ Influencer, \nhow can I collaborate with you?",
             "answer": "We love working on shared ideas, and can’t wait to hear yours. You may reach out to us at hello@gowithgush.com."
           }
         },
@@ -26,7 +26,7 @@
           "settings": {
             "category": "About Gush",
             "type": "General Questions",
-            "title": "I’m interested in a career at Gush, \nwhere can I apply?",
+            "title": "I’m interested in a career at Gush, where can I apply?",
             "answer": "Visit our Hiring page to check out our currently available positions."
           }
         },
@@ -45,7 +45,7 @@
             "category": "About Gush",
             "type": "Contact Us",
             "title": "Where can I see your colours in person?",
-            "answer": "\"You may visit us at our office at 2 Gambas Crescent, #01-35, Nordcom II, Singapore 757044, with an appointment. Please call us at 6692 9000 to arrange an appointment. \n\nVisiting hours: \nMon – Fri, except for P.Hs. \n9am - 12pm, 1pm – 5pm\n\""
+            "answer": "You may visit us at our office at 2 Gambas Crescent, #01-35, Nordcom II, Singapore 757044, with an appointment. Please call us at 6692 9000 to arrange an appointment. \n\nVisiting hours: \nMon – Fri, except for P.Hs. \n9am - 12pm, 1pm – 5pm"
           }
         },
         "f2cd53d9-ee3c-4fa4-aa5d-cc48b0259682": {
@@ -144,7 +144,7 @@
             "category": "Paints",
             "type": "Paint Application",
             "title": "I am looking to paint on wood surfaces. Which paint would be a better choice – Air-Purifying or Washable paint?",
-            "answer": "\"Currently, our paints are not ideal for wood surfaces as they are water-based with matte-finishing. When applied to wood, it might cause scratches, dirt marks or peel over time. We recommend using other oil or latex-based paints instead.\nIf you still wish to use our paints on wood, make sure to apply a layer of sealer first to get the best result.\""
+            "answer": "Currently, our paints are not ideal for wood surfaces as they are water-based with matte-finishing. When applied to wood, it might cause scratches, dirt marks or peel over time. We recommend using other oil or latex-based paints instead.\nIf you still wish to use our paints on wood, make sure to apply a layer of sealer first to get the best result."
           }
         },
         "4c3fbab4-1f54-432b-a53f-51bfcd6b681a": {
@@ -200,6 +200,222 @@
             "title": "Is there a special application method to use Gush Interior paints?",
             "answer": "Nope! Even with its air-purifying features, both Air-purifying and Washable paints can be applied like every other paint on the market. We recommend applying two coats of paint for the best results."
           }
+        },
+        "3ea538e4-c668-4614-87fa-644fc3495e89": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "GENERAL QUESTIONS",
+            "title": "How much are Gush window films?",
+            "answer": "\"Gush window films are currently selling at $14\/sqft. \n\nYou can reach out to our sales representatives here for more information.\""
+          }
+        },
+        "063e6ab1-8a91-435e-99f5-8981a3a939b0": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "GENERAL QUESTIONS",
+            "title": "Will there be additional charges for installation?",
+            "answer": "\"Installation is included in the price of the window films. However, there will be additional fees for: \n- windows with invisible grilles\n- removal of installed old window films\n- transport \""
+          }
+        },
+        "f25c10bd-1256-4470-996c-88d910b06381": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "GENERAL QUESTIONS",
+            "title": "What’s the price for a 4-room BTO?",
+            "answer": "\"We’ll need more information to give you a specific price, as HDB units vary in build and window design. It also depends on the number of windows you want to cover.\nBut based on our past engagements, here’s a rough estimation* you may refer to: \n\n— Older units with small windows (~80-98 sqft): $1000 - $1500 \n— Newer units with medium-sized windows (~90-110sqft): $1200 - $1700\n*For living room\/bedroom windows only.\n\nReach out to us here to get a more detailed estimate. \""
+          }
+        },
+        "8e23c869-b879-4f49-9e24-60ccdaa14812": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "GENERAL QUESTIONS",
+            "title": "How do I purchase the window films?",
+            "answer": "Drop us an enquiry here and we’ll be in touch with you promptly."
+          }
+        },
+        "76f35a58-181f-4da1-acce-111d77c7179a": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "GENERAL QUESTIONS",
+            "title": "How can I find out more about Gush window films?",
+            "answer": "You can learn more about the science and effectiveness of our window films here. If you have more questions, drop us an enquiry here and we’ll get in touch to help you."
+          }
+        },
+        "a8bde0e0-9f4c-4280-9310-0060ceb720b4": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "GENERAL QUESTIONS",
+            "title": "Is this window film a Gush product?",
+            "answer": "You bet! Solar films might seem a world away from paints, but they’re both innovated to give you safer, cleaner and better environments—and that’s what we’re all about."
+          }
+        },
+        "2a56dfd1-77dc-4158-b988-1471a343177f": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "GENERAL QUESTIONS",
+            "title": "Do you provide services to remove existing solar films?",
+            "answer": "Yes we do! Our removal services are priced at $1.20 per sqft, and will be factored into your overall quotation."
+          }
+        },
+        "e97a2cbf-68ba-42be-a108-eb44ff6190bf": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "GENERAL QUESTIONS",
+            "title": "Do the window films come in customizable shapes and sizes?",
+            "answer": "Our films can be cut to your required dimensions, but do inform us beforehand. If your windows are non-rectangular or have non-traditional features (e.g. textured, not flat), enquire here and we’ll see what we can do."
+          }
+        },
+        "4eb2b219-5990-4305-bef5-2ba5d9988e1f": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "GENERAL QUESTIONS",
+            "title": "What are the different types of window films you provide?",
+            "answer": "\"Our window films currently have 5 different transparency levels: 75, 50, 35, 15, 5. The lower the number, the darker the film is.\n\nWe are still expanding our range of films, so if you’re on the lookout for more options, follow our socials for the latest updates.\n\""
+          }
+        },
+        "06cfdb71-b87b-40ba-ba95-3bf197d07af6": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS INSTALLATION",
+            "title": "Can Gush’s window films be installed outdoors\/exposed to weather?",
+            "answer": "Our window films are built for indoor installation, so installing them outdoors will cause quicker wear and tear."
+          }
+        },
+        "bdf0d849-8fe2-4094-95a2-406ad1e0cc88": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS INSTALLATION",
+            "title": "How long does the installation takes?",
+            "answer": "\"We take 1-2 hours for one set of windows, but it varies by the number of windows and if there are existing films to remove. \n\nYou can get a more specific estimate from our sales representative by dropping us an enquiry here \n\""
+          }
+        },
+        "66f85998-d735-4a39-9cc4-be574acf76ed": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS INSTALLATION",
+            "title": "Which stage of renovation should I install window films?",
+            "answer": "It’s best to install window films after all major renovation works are completed (i.e. hacking and drilling) and before any curtains, blinds or grille installation. This period is ideal as the site needs to be clean and dust-free for the best workmanship."
+          }
+        },
+        "8fe99947-093a-4fae-88d3-09969bb25e22": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS INSTALLATION",
+            "title": "How does the installation work? Do I need to prepare anything?",
+            "answer": "\"We use a cleaning solution to remove any stains and dirt marks before applying the films.\n\nYou can wipe your windows before the installation date to reduce stubborn dust and dirt. This helps make the installation smoother.\""
+          }
+        },
+        "2ca5fdf9-887c-4bd3-ab3a-9f6e6eaff8c2": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS PERFORMANCE",
+            "title": "What’s the benefit of your window films over other brands?",
+            "answer": "\"Let’s start with a cool fact: heat doesn’t just come from light. It comes from a thermal spectrum that includes UV and infrared heat.\n\nOur window films block out heat across a larger range of this spectrum than traditional films. What’s more, Gush window films allow for more visible light to pass through. \n\nIn short, our films block more outside heat, and let more light in. If you want more details, drop us an enquiry here and our sales representative will be glad to give you a better understanding.\""
+          }
+        },
+        "98348d44-0fdc-4358-ae82-3e6bb94310b4": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS PERFORMANCE",
+            "title": "Is it scratch resistant? How do I clean it?",
+            "answer": "Gush window films aren’t scratch resistant, but can be cleaned easily with water and a microfiber cloth. Avoid using abrasive-type cleaning agents or bristle brushes as these will scratch the film."
+          }
+        },
+        "d14b1b3a-d9f9-4a14-9153-ffe026299df9": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS PERFORMANCE",
+            "title": "Does the window film reduce indoor temperature?",
+            "answer": "Yes. With the films’ ability to block more heat out, your indoor temperature can be cooler by up to 9ºC. Learn more here about the science behind our films."
+          }
+        },
+        "6e60d7d1-fa57-4c83-ac5c-cf4b32a68d91": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS PERFORMANCE",
+            "title": "How much UV does the window film block out?",
+            "answer": "Gush window films block out 99% of UV rays. Overall, it blocks out 50.8% of total solar energy (UV rays, visible light heat and infrared radiation)"
+          }
+        },
+        "b771026e-824f-46f2-8c14-891ad2fd52e6": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS PERFORMANCE",
+            "title": "Does the window film help with energy saving?",
+            "answer": "Yes. We worked with Singapore’s Building Construction Authority (BCA) to test the effects of window films on a room’s energy savings. From the test, it has been proven to generate 9.47% of energy savings. Read more about the test here."
+          }
+        },
+        "9dab2c9e-7add-45e4-8ec4-2ea460aae716": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS MAINTENANCE",
+            "title": "Does the window film require special cleaning and care?",
+            "answer": "Not at all, a simple wipe with a damp microfiber cloth is good enough for cleaning. Avoid using scrubs or abrasive cleaning agents as they will damage the film. Also, close your windows when it rains, as frequent water contact may affect the films too."
+          }
+        },
+        "02851d80-5ef3-4ced-bf18-57af9a6e1d8a": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS MAINTENANCE",
+            "title": "Are the window films backed by warranty?",
+            "answer": "Yes. Our warranty periods differ according to the type of window (sliding panel, casement windows, etc.). Please refer here for the full details."
+          }
+        },
+        "4e09d811-8b46-49b8-9a25-4378eb16838c": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS MAINTENANCE",
+            "title": "How long can the window films last?",
+            "answer": "Gush window films are effective for up to 12 years. You can refer to our warranty here for more information."
+          }
+        },
+        "a9796796-44e6-40c6-9b1d-51f29e5bdb17": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS AESTHETICS",
+            "title": "Will I be able to see through my window clearly with the window films?",
+            "answer": "Yes, our films are designed to block outside heat while allowing more visible light to pass through. You’ll still have clear views and enjoy a cooler room temperature!"
+          }
+        },
+        "d3fc7c61-a684-4651-8392-40e1c2ab63b0": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS AESTHETICS",
+            "title": "Will the window film darken my indoor space?",
+            "answer": "It will be slightly darker, but you’ll still get plenty of natural light compared to other films, as Gush window films are designed to have a higher transparency."
+          }
+        },
+        "7b66c44f-1934-4d27-acb5-78b0f31db789": {
+          "type": "faqContent",
+          "settings": {
+            "category": "WINDOW FILMS",
+            "type": "WINDOW FILMS AESTHETICS",
+            "title": "Does the window film change \/ fade overtime?",
+            "answer": "\"With proper care, Gush window films can last up to 12 years without discolouring or fading.\n\""
+          }
         }
       },
       "block_order": [
@@ -224,7 +440,31 @@
         "01062041-7443-4323-88b8-a61d0143d9c9",
         "0a6cf9a9-9f30-4a26-b428-ae07e190569c",
         "97779afe-e007-4a6e-82da-c8bc6640cc4a",
-        "86038881-83c8-4e03-931a-3428bae6626a"
+        "86038881-83c8-4e03-931a-3428bae6626a",
+        "3ea538e4-c668-4614-87fa-644fc3495e89",
+        "063e6ab1-8a91-435e-99f5-8981a3a939b0",
+        "f25c10bd-1256-4470-996c-88d910b06381",
+        "8e23c869-b879-4f49-9e24-60ccdaa14812",
+        "76f35a58-181f-4da1-acce-111d77c7179a",
+        "a8bde0e0-9f4c-4280-9310-0060ceb720b4",
+        "2a56dfd1-77dc-4158-b988-1471a343177f",
+        "e97a2cbf-68ba-42be-a108-eb44ff6190bf",
+        "4eb2b219-5990-4305-bef5-2ba5d9988e1f",
+        "06cfdb71-b87b-40ba-ba95-3bf197d07af6",
+        "bdf0d849-8fe2-4094-95a2-406ad1e0cc88",
+        "66f85998-d735-4a39-9cc4-be574acf76ed",
+        "8fe99947-093a-4fae-88d3-09969bb25e22",
+        "2ca5fdf9-887c-4bd3-ab3a-9f6e6eaff8c2",
+        "98348d44-0fdc-4358-ae82-3e6bb94310b4",
+        "d14b1b3a-d9f9-4a14-9153-ffe026299df9",
+        "6e60d7d1-fa57-4c83-ac5c-cf4b32a68d91",
+        "b771026e-824f-46f2-8c14-891ad2fd52e6",
+        "9dab2c9e-7add-45e4-8ec4-2ea460aae716",
+        "02851d80-5ef3-4ced-bf18-57af9a6e1d8a",
+        "4e09d811-8b46-49b8-9a25-4378eb16838c",
+        "a9796796-44e6-40c6-9b1d-51f29e5bdb17",
+        "d3fc7c61-a684-4651-8392-40e1c2ab63b0",
+        "7b66c44f-1934-4d27-acb5-78b0f31db789"
       ],
       "settings": {
         "heading": "FAQ",

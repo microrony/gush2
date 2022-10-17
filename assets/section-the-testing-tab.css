@@ -145,6 +145,16 @@
   font-size: 9px !important;
 }
 
+/* Analysis Block Styles */
+.the-testing-tab .tab-content.analysis .content {
+  display: block;
+  padding: 20px;
+}
+.the-testing-tab .tab-content.analysis .text {
+  font-size: 9px !important;
+}
+
+
 @media screen and (min-width: 990px) {
 	/* General Styles */
   .the-testing-tab .tabs {
@@ -231,5 +241,25 @@
 
   .the-testing-tab .tab-content.molding .text {
     font-size: 20px !important;
+  }
+
+	/* Analysis Block Styles */
+	.the-testing-tab .tab-content.analysis .content {
+    padding: 40px;
+		position: relative
+  }
+
+	.the-testing-tab .tab-content.analysis .text {
+    white-space: pre-line;
+  }
+
+	.the-testing-tab .tab-content.analysis .text {
+    font-size: 20px !important;
+  }
+
+	.the-testing-tab .tab-content.analysis #testing-tab-lottie-container {
+    max-width: 1000px;
+		height: 700px;
+		margin-inline: auto;
   }
 }

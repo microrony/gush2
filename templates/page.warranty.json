@@ -1,0 +1,52 @@
+{
+  "sections": {
+    "e62b00f8-1831-4efc-8db8-a63cb17c3506": {
+      "type": "terms-and-condition",
+      "blocks": {
+        "990087a5-adae-4199-8239-571036210a1c": {
+          "type": "text",
+          "settings": {
+            "heading": "Who this Limited Lifetime Warranty for Paint Extends To",
+            "content": "<ol><li>This limited warranty extends to the original purchaser of any Paint. The “Original Purchaser,” for the purposes of this warranty, is the first purchaser of the Paint from gush who owns or rents their home and who applies (or who has a painting contractor apply) the Paint to their home. All references to “you” or “your” herein refer only to original purchasers. gush limited warranties are not transferable. All gush warranties are valid only for the duration the original purchaser of the Paint owns or rents their home. A copy of your invoice is required to determine warranty applicability.\n<\/li><\/ol>"
+          }
+        },
+        "d2834eef-5f1f-4ca1-bdb7-55253347c07f": {
+          "type": "text",
+          "settings": {
+            "heading": "gush’s Limited Lifetime Warranty for Paint and Responsibilities",
+            "content": "<ol>\n<li>\ngush warrants the Paint in its original packaging sold to the Original Purchaser against Paint Defects (as defined in Section C below), so long as the Paint is used normally in accordance with instructions on the label and the product Technical Data Sheets.\n<\/li>\n<\/ol>"
+          }
+        },
+        "c93722ad-f5c3-4594-98c6-13a597fe7170": {
+          "type": "text",
+          "settings": {
+            "heading": "What this Limited Lifetime Warranty for Paint Covers",
+            "content": "<ol>\n<li>\nTHIS LIMITED LIFETIME WARRANTY APPLIES SOLELY TO THE FOLLOWING DEFECTS:\n<ol>\n<li>\nCracking, chipping, blistering, or peeling from properly prepared surfaces; and\n<\/li>\n<li>\nWearing down to expose the underlying surface of properly prepared surfaces (collectively, the “Paint Defects”).\n<\/li>\n<\/ol>\n<\/li>\n<\/ol>"
+          }
+        },
+        "596cdd96-ea6c-497c-b3c8-18948f3c1fe0": {
+          "type": "text",
+          "settings": {
+            "heading": "What this Limited Lifetime Warranty for Paint Excludes",
+            "content": "<ol>\n<li>THIS LIMITED LIFETIME WARRANTY DOES NOT COVER:\n<ol>\n<li>Normal color fading, gloss loss, or chalking caused by exposure to sunlight, wind, or water;<\/li>\n<li>Abrasion or burnishing due to scrubbing, traffic, or other wear and tear;<\/li>\n<li>Cracking, chipping, blistering, or peeling caused by structural expansion and contraction, settling, or other movement of building components, by excessive heat exposure, or by water intrusion;<\/li>\n<li>Film degradation or discoloration due to mold or mildew; or<\/li>\n<li>Damages resulting from improper surface preparation or coating application, extraordinary or catastrophic events, or failure to perform recommended maintenance.<\/li>\n<\/ol>\n<\/li>\n<\/ol>"
+          }
+        }
+      },
+      "block_order": [
+        "990087a5-adae-4199-8239-571036210a1c",
+        "d2834eef-5f1f-4ca1-bdb7-55253347c07f",
+        "c93722ad-f5c3-4594-98c6-13a597fe7170",
+        "596cdd96-ea6c-497c-b3c8-18948f3c1fe0"
+      ],
+      "settings": {
+        "heading": "gush Limited\nLifetime Warranty",
+        "secondary-heading": "Last Updated: 18 March 2020\n<br><br>\nYour gush interior paint is covered by a Limited Lifetime Warranty, subject to the terms and conditions set forth herein. This limited warranty gives you specific legal rights.\nThis limited warranty extends to any paint products manufactured by LivinWall Pte. Ltd. (“gush”) and purchased directly from gush (the “Paint”).",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "e62b00f8-1831-4efc-8db8-a63cb17c3506"
+  ]
+}

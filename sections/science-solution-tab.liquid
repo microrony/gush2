@@ -1,230 +1,294 @@
 {{ 'component-mobile-dropdown.css' | asset_url | stylesheet_tag }}
 
 {% style %}
-	.the-solution-tab .tab-contents .tab-content.active {
-		display: block !important;
-	}
+  .the-solution-tab .tab-contents .tab-content.active {
+    display: block !important;
+  }
 
-	.the-solution-tab .tab-content {
-		display: none;
-		margin-top: 32px;
-	}
+  .the-solution-tab .tab-content {
+    display: none;
+    margin-top: 32px;
+  }
 
-	.the-solution-tab .tab-content .first_image_text, .the-solution-tab .tab-content .second_image_text{
-		display: grid;
-		gap: 3.2rem;
-		color: #302112 !important;
-		place-items: center;
-	}
+  .the-solution-tab .tab-content :is(.first_image_text, .second_image_text) {
+    display: grid;
+    gap: 3.2rem;
+    color: #302112 !important;
+    place-items: center;
+  }
 
-	.the-solution-tab .tab-content .first_image_text {
-		margin-bottom: 3.2rem;
-	}
+  .the-solution-tab .tab-content .first_image_text {
+    margin-bottom: 3.2rem;
+  }
 
-	.the-solution-tab .tab-content .content p {
-		white-space: pre-line;
-		max-width: 430px;
-	}
+  .the-solution-tab .tab-content .content p {
+    white-space: pre-line;
+    max-width: 430px;
+  }
 
-	.the-solution-tab .tab-content .content h2, .the-solution-tab .tab-content .content p {
-		margin: 0;
-		padding: 0;
-	}
+  .the-solution-tab .tab-content .content :is(h2, p) {
+    margin: 0;
+    padding: 0;
+  }
 
-	.the-solution-tab .tab-content .content h2 {
-		margin-bottom: 10px;
-	}
+  .the-solution-tab .tab-content .content h2 {
+    margin-bottom: 10px;
+  }
 
-	.the-solution-tab .tab-content .image {
-		width: 65%;
-		height: 100%;
-	}
+  .the-solution-tab .tab-content :is(.image, #solution-tab-lottie-container) {
+    width: 65%;
+    height: 100%;
+  }
 
-	.the-solution-tab .tab-content .image img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
+  .the-solution-tab .tab-content .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 
-	.the-solution-tab .tabs {
-		display: none;
-		justify-content: space-around;
-	}
+  .the-solution-tab .tabs {
+    display: none;
+    justify-content: space-around;
+  }
 
-	.the-solution-tab .tabs .tab {
-		cursor: pointer;
-		padding: 18px 0;
-		width: 100%;
-		text-align: center;
-		border-bottom: 1px solid #EAE4DF;
-	}
+  .the-solution-tab .tabs .tab {
+    cursor: pointer;
+    padding: 18px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #EAE4DF;
+  }
 
-	.the-solution-tab .tabs .tab.active {
-		border-bottom: 2px solid #302112;
-	}
+  .the-solution-tab .tabs .tab.active {
+    border-bottom: 2px solid #302112;
+  }
 
-	@media screen and (min-width: 990px) {
-		.the-solution-tab .tabs {
-			display: flex;
-		}
+  @media screen and (min-width: 990px) {
+    .the-solution-tab .tabs {
+      display: flex;
+    }
 
-		.the-solution-tab .tab-content {
-			padding: 8rem;
-		}
+    .the-solution-tab .tab-content {
+      padding: 8rem;
+    }
 
-		.the-solution-tab .tab-content .first_image_text, .the-solution-tab .tab-content .second_image_text{
-			gap: 10rem;
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-		}
+    .the-solution-tab .tab-content :is(.first_image_text, .second_image_text) {
+      gap: 10rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-		.the-solution-tab .tab-content .first_image_text {
-			margin-bottom: 13rem;
-		}
+    .the-solution-tab .tab-content .first_image_text {
+      margin-bottom: 13rem;
+    }
 
-		.the-solution-tab .second_image_text .content {
-			order: 1;
-		}
+    .the-solution-tab .second_image_text .content {
+      order: 1;
+    }
 
-		.the-solution-tab .second_image_text .image {
-			order: 2;
-			
-		}
+    .the-solution-tab .second_image_text :is(.image, #solution-tab-lottie-container) {
+      order: 2;
+    }
 
-		.the-solution-tab .tab-content .image {
-			width: 100%;
-		}
-	}
+    .the-solution-tab .tab-content :is(.image, #solution-tab-lottie-container) {
+      width: 100%;
+    }
+  }
 {% endstyle %}
 
 <div class="the-solution-tab gush-page-width">
-	{% render 'mobile-dropdown', blocks: section.blocks%}
-	<div class="tabs">
-		{% for block in section.blocks %}
-		<div class="tab {% if forloop.first -%}
-				active
-		 {%- endif -%}" data-tab-target="#{{block.settings.title | handleize }}" {{ block.shopify_attributes }}>
-			<div>{{block.settings.title}}</div>
-		</div>
-		{% endfor %}
-	</div>
+  {% render 'mobile-dropdown', blocks: section.blocks %}
+  <div class="tabs">
+    {% for block in section.blocks %}
+      <div class="tab {% if forloop.first -%}
+        				active
+        		 {%- endif -%}" data-tab-target="#{{ block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+        <div>{{ block.settings.title }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 
-	<div class="tab-contents">
-		{% for block in section.blocks %}
-		<div class="tab-content {% if forloop.first -%}
-		active
- {%- endif -%}" id="{{block.settings.title | handleize}}" {{ block.shopify_attributes }}>
-			<div class="first_image_text">
-				<div class="image">
-					{{ block.settings.first_image | image_url: width: 1280 | image_tag }}
-				</div>
-				<div class="content">
-					<h2 class="gush-font-h2">{{block.settings.first_title}}</h2>
-					<p class="gush-font-p1">{{block.settings.first_description}}</p>
-				</div>
-			</div>
-			<div class="second_image_text">
-				<div class="image">
-					{{ block.settings.second_image | image_url: width: 1280 | image_tag }}
-				</div>
-				<div class="content">
-					<h2 class="gush-font-h2">{{block.settings.second_title}}</h2>
-					<p class="gush-font-p1">{{block.settings.second_description}}</p>
-				</div>
-			</div>
-		</div>
-		{% endfor %}
-	</div>
+  <div class="tab-contents">
+    {% for block in section.blocks %}
+      <div class="tab-content {% if forloop.first -%}
+        		active
+         {%- endif -%}" id="{{ block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+        <div class="first_image_text">
+          <div class="image">
+            {{ block.settings.first_image | image_url: width: 1280 | image_tag }}
+          </div>
+          <div class="content">
+            <h2 class="gush-font-h2">{{ block.settings.first_title }}
+            </h2>
+            <p class="gush-font-p1">{{ block.settings.first_description }}
+            </p>
+          </div>
+        </div>
+        <div class="second_image_text">
+					{% if block.settings.second_lottie_file_name != 'not-selected' %}
+            <div id="solution-tab-lottie-container" data-lottie-file-path="{{ block.settings.second_lottie_file_name | asset_url }}"></div>
+          {% else %}
+					<div class="image">
+            {{ block.settings.second_image | image_url: width: 1280 | image_tag }}
+          </div>
+          {% endif %}
+          <div class="content">
+            <h2 class="gush-font-h2">{{ block.settings.second_title }}
+            </h2>
+            <p class="gush-font-p1">{{ block.settings.second_description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 {% javascript %}
-const tabs = document.querySelectorAll('.the-solution-tab .tab')
-const tabContents = document.querySelectorAll('.the-solution-tab .tab-content')
-const dropDownOptions = document.querySelectorAll('.the-solution-tab .option');
+  const tabs = document.querySelectorAll('.the-solution-tab .tab')
+  const tabContents = document.querySelectorAll('.the-solution-tab .tab-content')
+  const dropDownOptions = document.querySelectorAll('.the-solution-tab .option');
 
-dropDownOptions.forEach(option => {
-  option.addEventListener('click', () => {
-    const target = document.querySelector(option.dataset.optionTarget);
-    tabContents.forEach(tabContent => {
-      tabContent.classList.remove('active');
-    });
-    dropDownOptions.forEach(option => {
-      option.classList.remove('active');
-    });
-    option.classList.add('active');
-    target.classList.add('active');
-		document.querySelector('.the-solution-tab details').removeAttribute("open");
-		document.querySelector('.the-solution-tab summary span').textContent = option.textContent;
+  dropDownOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      const target = document.querySelector(option.dataset.optionTarget);
+      tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active');
+      });
+      dropDownOptions.forEach(option => {
+        option.classList.remove('active');
+      });
+      option.classList.add('active');
+      target.classList.add('active');
+      document.querySelector('.the-solution-tab details').removeAttribute("open");
+      document.querySelector('.the-solution-tab summary span').textContent = option.textContent;
+    })
+  })
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = document
+        .querySelector(tab.dataset.tabTarget)
+        tabContents
+        .forEach(tabContent => {
+          tabContent.classList.remove('active')
+        })
+        tabs
+        .forEach(tab => {
+          tab.classList.remove('active')
+        })
+        tab
+        .classList
+        .add('active')
+      target
+      .classList
+      .add('active')
   })
 })
-
-tabs.forEach(tab => {
-tab.addEventListener('click', () => {
-const target = document.querySelector(tab.dataset.tabTarget)
-tabContents.forEach(tabContent => {
-tabContent.classList.remove('active')
-})
-tabs.forEach(tab => {
-tab.classList.remove('active')
-})
-tab.classList.add('active')
-target.classList.add('active')
-})
-})
-
 {% endjavascript %}
+
+<script>
+	var solutionTabLottieContainer = document.getElementById('solution-tab-lottie-container');
+	var lottieFilePath = solutionTabLottieContainer.dataset.lottieFilePath;
+
+	var solutionTabAnimation = bodymovin.loadAnimation({
+		container: solutionTabLottieContainer, // required
+		path: lottieFilePath, // required
+		renderer: 'svg', // required
+		loop: false, // optional
+		autoplay: false, // optional
+		name: "Lottie Animation", // optional
+	});
+
+	solutionTabAnimation.setSpeed(1);
+
+	const solutionTabLottieViewport = function() {
+		let options = {
+			rootMargin: '-100px',
+			threshold: .5
+		}
+
+		let solutionTabObserver = new IntersectionObserver(entries => {
+			entries[0].isIntersecting === true
+				? solutionTabAnimation.play()
+				: solutionTabAnimation.goToAndStop(0, 0);
+				if(entries[0].isIntersecting) solutionTabObserver.unobserve(entries[0].target);
+		}, options);
+
+		solutionTabObserver.observe(document.querySelector('#solution-tab-lottie-container'));
+	}
+
+	solutionTabLottieViewport();
+</script>
 
 
 {% schema %}
 {
-"name": "Science Solution Tab",
-"tag": "section",
-"blocks": [
-{
-"type": "block",
-"name": "block",
-"settings": [
-{
-"type": "text",
-"id": "title",
-"label": "Tab Title"
-},
-{
-"type": "text",
-"id": "first_title",
-"label": "First Title"
-},
-{
-"type": "textarea",
-"id": "first_description",
-"label": "First Description"
-},
-{
-"type": "image_picker",
-"id": "first_image",
-"label": "First Image"
-},
-{
-"type": "text",
-"id": "second_title",
-"label": "Second Title"
-},
-{
-"type": "textarea",
-"id": "second_description",
-"label": "Second Description"
-},
-{
-"type": "image_picker",
-"id": "second_image",
-"label": "Second Image"
+  "name": "Science Solution Tab",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "block",
+      "name": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Tab Title"
+        },
+        {
+          "type": "text",
+          "id": "first_title",
+          "label": "First Title"
+        },
+        {
+          "type": "textarea",
+          "id": "first_description",
+          "label": "First Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "first_image",
+          "label": "First Image"
+        },
+        {
+          "type": "text",
+          "id": "second_title",
+          "label": "Second Title"
+        },
+        {
+          "type": "textarea",
+          "id": "second_description",
+          "label": "Second Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "second_image",
+          "label": "Second Image"
+        },
+				{
+          "type": "select",
+          "id": "second_lottie_file_name",
+          "label": "Select Lottie file",
+          "options": [
+						{
+              "value": "not-selected",
+              "label": "Not Selected"
+            },
+            {
+              "value": "clean-air-more-quickly.json",
+              "label": "Clean air, more quickly"
+            }
+          ],
+          "default": "not-selected"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Science Solution Tab"
+    }
+  ]
 }
-]
-}
-],"presets": [
-{
-"name": "Science Solution Tab"
-}
-]
-}
-
 {% endschema %}
