@@ -34,7 +34,7 @@
 {%- endif -%}
 {%- if section.settings.page_name == "group_buy" -%}
   {%- style -%}
-    .group_buy_title{
+    .image_banner_heading_title{
       font-family: 'ABCCamera';
       font-style: normal;
       font-weight: 400;
@@ -47,7 +47,7 @@
     .banner_inner_box{
       margin-top: 25px !important;
     }
-    .group_buy_des{
+    .service_banner_subtitle_des{
       font-family: 'GTAmerica';
       font-style: normal;
       font-weight: 400;
@@ -60,13 +60,13 @@
         margin-top: 35px;
     }
   @media screen and (max-width: 750px){
-    .group_buy_title{
+    .image_banner_heading_title{
       font-size: 48px !important;
     }
     .banner_inner_box{
       margin-top: 15px !important;
     }
-    .group_buy_des{
+    .service_banner_subtitle_des{
       font-size: 12px !important;
     }
     .banner__buttons {
@@ -74,6 +74,72 @@
     }
   }
   {%- endstyle -%}
+{%- endif -%}
+{%- if section.settings.page_name == "film" -%}
+    <style>
+    .service-banner__button{
+      margin-top: 50px !important;
+    }
+    .service-banner__button a{
+      background: #FF5500 !important;
+      font-family: 'GTAmerica' !important;
+      font-style: normal;
+      font-weight: 400 !important;
+      font-size: 16px !important;
+      line-height: 160% !important ;
+      letter-spacing: -0.02em !important;
+    }
+    .service-banner__media img{
+      object-fit: none ;
+      object-position: 0 -150px;
+    }
+    .image_banner_heading_title{
+      font-family: 'ABCCamera' ;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 96px !important;
+      line-height: 100%;
+      letter-spacing: -0.04em;
+      color: #302112;
+    }
+    .service_banner_subtitle_des{
+      font-family: 'GTAmerica' !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 24px !important;
+      line-height: 130% !important;
+      letter-spacing: -0.0115em !important;
+      color: #302112 !important;
+    }
+    .banner_inner_box{
+      margin-top: 30px !important ;
+    }
+    @media screen and (max-width: 750px){
+      .image_banner_heading_title{
+      font-size: 48px !important;
+      
+    }
+    .service_banner_subtitle_des{
+      font-size: 12px !important;
+      line-height: 150% !important;
+      letter-spacing: -0.02em !important;
+    }
+    .service-banner__media img{
+      object-fit: cover !important;
+      object-position: top ;
+    }
+    
+    .banner_inner_box{
+      margin-top: 10px !important ;
+    }
+    .service-banner__button{
+      margin-top: 15px !important;
+    }
+    .service-banner__button a{
+      font-size: 10px !important;
+    }
+    }
+    </style>
 {%- endif -%}
 
 
@@ -134,12 +200,12 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2 class="service-banner__heading banner__heading gush-font-display" {{ block.shopify_attributes }}>
-              <span class="group_buy_title">{{ block.settings.heading | escape }}</span>
+              <span class="image_banner_heading_title">{{ block.settings.heading | escape }}</span>
             </h2>
           <div class="banner_inner_box">
           {%- when 'text' -%}
             <div class="banner__text gush-font-p1 {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <span class="group_buy_des">{{ block.settings.text | escape }}</span>
+              <span class="service_banner_subtitle_des">{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'buttons' -%}
             <div class="service-banner__button banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
@@ -359,6 +425,10 @@
 					{
 					"value": "service",
 					"label": "Service"
+					},
+					{
+					"value": "film",
+					"label": "Film"
 					}
 				],
 				"default": "service"

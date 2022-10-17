@@ -1,0 +1,53 @@
+{{ 'section-film-offers.css' | asset_url | stylesheet_tag }}
+<div class="film-main-offers-container">
+<div class="page-width film-offers-container">
+    <div class="offer-heading">
+        <h2 class="gush-font-h2">{{ section.settings.heading }}</h2>
+    </div>
+    {% for block in section.blocks  %} 
+    <div class="offer-box">
+        <h1 class="gush-font-display">{{ block.settings.discount }}%</h1>
+        <div>
+            <p class="gush-font-p1">{{ block.settings.discount_des }}</p>
+            {{ block.settings.image | image_url: width: 100 | image_tag }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+{% schema  %} 
+{
+    "name":"film offers",
+    "settings":[
+        {
+            "type":"textarea",
+            "id":"heading",
+            "label":"Heading"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"offer_block",
+            "name":"Offer block",
+            "settings":[
+                {
+                    "type":"number",
+                    "id":"discount",
+                    "label":"Discount"
+                },
+                {
+                    "type":"textarea",
+                    "id":"discount_des",
+                    "label":"Description"
+                },
+                {
+                    "type":"image_picker",
+                    "id":"image",
+                    "label":"Image"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

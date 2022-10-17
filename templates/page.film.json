@@ -1,14 +1,220 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "ea28b89c-cc6a-43b8-85a5-0617f4d79bf8": {
+      "type": "service-page-banner",
+      "blocks": {
+        "template--15986193137857__ea28b89c-cc6a-43b8-85a5-0617f4d79bf8-16656423128b5ff5ee-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Gush ClearCool Films",
+            "heading_size": "h0"
+          }
+        },
+        "template--15986193137857__ea28b89c-cc6a-43b8-85a5-0617f4d79bf8-16656423128b5ff5ee-1": {
+          "type": "text",
+          "settings": {
+            "text": "Keep your home cool while reducing your energy billswith eco-friendly nanoceramic technology",
+            "text_style": "body"
+          }
+        },
+        "template--15986193137857__ea28b89c-cc6a-43b8-85a5-0617f4d79bf8-16656423128b5ff5ee-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Enquire Now",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15986193137857__ea28b89c-cc6a-43b8-85a5-0617f4d79bf8-16656423128b5ff5ee-0",
+        "template--15986193137857__ea28b89c-cc6a-43b8-85a5-0617f4d79bf8-16656423128b5ff5ee-1",
+        "template--15986193137857__ea28b89c-cc6a-43b8-85a5-0617f4d79bf8-16656423128b5ff5ee-2"
+      ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "image": "shopify:\/\/shop_images\/sunder-muthukumaran-7xed5PqcbIQ-unsplash_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "page_name": "film"
+      }
+    },
+    "film_warranty": {
+      "type": "section-film-warranty",
+      "blocks": {
+        "df0931d8-0955-4c3b-841f-9818cf50d828": {
+          "type": "text",
+          "settings": {
+            "title": "Resilient cooling solution",
+            "faq_quality": "",
+            "faq_ans": "Leveraging ceramic nanotechnology, ClearCool can reduce indoor temperatures by up to 25ºC  and is built to withstand years of sunlight exposure without discolouring."
+          }
+        },
+        "180278ad-341e-4a5b-ac29-20b03334e2a3": {
+          "type": "text",
+          "settings": {
+            "title": "Uncompromising views",
+            "faq_quality": "",
+            "faq_ans": "Clearcool is so clear that it does not sacrifice visibility for cooler spaces, promising scenic views and thermal comfort – the best of both worlds."
+          }
+        },
+        "c4e709fa-60fc-48a9-9e9e-0735a2bb2be8": {
+          "type": "text",
+          "settings": {
+            "title": "Healthier indoor spaces",
+            "faq_quality": "",
+            "faq_ans": "Even indoors, you are not safe from UV rays which expedite aging and cause skin cancer. By virtually blocking out all UV rays, Clearcool protects you from the sun’s harmful effects."
+          }
+        },
+        "992c4e5c-3a33-4711-b2cc-4f70432c3114": {
+          "type": "text",
+          "settings": {
+            "title": "Kinder to the enviroment",
+            "faq_quality": "",
+            "faq_ans": "Clearcool is an eco-friendly solution of lowering temperatures – as opposed to other cooling solutions like air-conditioning units that generate heat and greenhouse gases, worsening global warming."
+          }
+        }
+      },
+      "block_order": [
+        "df0931d8-0955-4c3b-841f-9818cf50d828",
+        "180278ad-341e-4a5b-ac29-20b03334e2a3",
+        "c4e709fa-60fc-48a9-9e9e-0735a2bb2be8",
+        "992c4e5c-3a33-4711-b2cc-4f70432c3114"
+      ],
+      "settings": {
+        "heading": "Beat the heat without\ncompromising on aesthetics",
+        "sub_heading": "For city-dwellers who want a cooler home, unblocked views, lower energy bills and sustainable home solutions – our window films do it all.",
+        "warranty_year": 12,
+        "ingredient_heading": "What makes ClearCool films powerful",
+        "btn_text": "Learn more",
+        "button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "film_offers": {
+      "type": "section-film-offers",
+      "blocks": {
+        "365144db-eaf6-4166-bc6d-5860593e6e62": {
+          "type": "offer_block",
+          "settings": {
+            "discount": 50.8,
+            "discount_des": "Less solar transmissions",
+            "image": "shopify:\/\/shop_images\/Group_2364.png"
+          }
+        },
+        "b73e52f2-e897-42af-9711-150f3e6fef63": {
+          "type": "offer_block",
+          "settings": {
+            "discount": 14.8,
+            "discount_des": "Savings on cooling energy",
+            "image": "shopify:\/\/shop_images\/Group_2233.png"
+          }
+        },
+        "0a14753b-d864-427c-8d30-ffefa8799cf9": {
+          "type": "offer_block",
+          "settings": {
+            "discount": 10,
+            "discount_des": "Savings on your monthly bills",
+            "image": "shopify:\/\/shop_images\/Group_2234.png"
+          }
+        }
+      },
+      "block_order": [
+        "365144db-eaf6-4166-bc6d-5860593e6e62",
+        "b73e52f2-e897-42af-9711-150f3e6fef63",
+        "0a14753b-d864-427c-8d30-ffefa8799cf9"
+      ],
+      "settings": {
+        "heading": "Keep your home cool \nat lower costs"
+      }
+    },
+    "film_transparency": {
+      "type": "section-film-transparency",
+      "blocks": {
+        "912c582b-228f-486e-944d-e8390128b6ff": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_160_1.png",
+            "card_heading": "ClearCool 5",
+            "card_info": "5% light transmission",
+            "card_des": "Made for more privacy."
+          }
+        },
+        "1cd84c0e-0c17-4010-abf4-68bc7d13efea": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_160_1.png",
+            "card_heading": "ClearCool 35",
+            "card_info": "35% light transmission",
+            "card_des": "Not too bright,\nnot too dark."
+          }
+        },
+        "8b8d449b-33b1-48eb-ae08-cacbab17ff9b": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_160_1.png",
+            "card_heading": "ClearCool 76",
+            "card_info": "76% light transmission",
+            "card_des": "For sunlit aesthetics \nand clear views."
+          }
+        }
+      },
+      "block_order": [
+        "912c582b-228f-486e-944d-e8390128b6ff",
+        "1cd84c0e-0c17-4010-abf4-68bc7d13efea",
+        "8b8d449b-33b1-48eb-ae08-cacbab17ff9b"
+      ],
+      "settings": {
+        "heading": "3 Transparency Levels",
+        "sub_heading": "Looking for privacy? Or prefer to keep your views crystal clear? Our films come in different light transmission levels to suit your needs."
+      }
+    },
+    "30533aca-a6e6-4880-b7d2-4eb08cdf37e0": {
+      "type": "group_buy_image_with_text",
+      "blocks": {
+        "849f5c4e-809d-41a2-94c0-cbb8a5dec7ca": {
+          "type": "button",
+          "settings": {
+            "btn_text": "Find out more",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "849f5c4e-809d-41a2-94c0-cbb8a5dec7ca"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_2167.png",
+        "heading": "Need help with\ninstallation?",
+        "description": "Don’t sweat putting on our window films. Our in-house teams conduct onsite assessment reports so that film installation is smooth and quick.",
+        "page_name": "film"
+      }
+    },
+    "44c7b10c-52e7-4d58-b848-17b29578f4ae": {
+      "type": "footer-contact",
+      "settings": {
+        "heading": "Let’s get you started. \nBook your free, \nnon-obligatory \nsite inspection.",
+        "btn_text": "Send enquiry",
+        "btn_type": "primary",
+        "page_name": "home"
       }
     }
   },
   "order": [
-    "main"
+    "ea28b89c-cc6a-43b8-85a5-0617f4d79bf8",
+    "film_warranty",
+    "film_offers",
+    "film_transparency",
+    "30533aca-a6e6-4880-b7d2-4eb08cdf37e0",
+    "44c7b10c-52e7-4d58-b848-17b29578f4ae"
   ]
 }

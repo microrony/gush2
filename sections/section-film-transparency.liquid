@@ -1,0 +1,67 @@
+{{ 'section-film-transparency.css' | asset_url | stylesheet_tag }}
+<div class="film-transparency-main">
+<div class="page-width film-transparency-container">
+    <div class="top_info">
+        <h1 class="gush-font-h1">{{ section.settings.heading }}</h1>
+        <p class="gush-font-p1">{{ section.settings.sub_heading }}</p>
+    </div>
+    <div class="transparency-card-container">
+        {% for block in section.blocks  %} 
+        <div class="transparency-card">
+                {{ block.settings.image | image_url: width: 500 | image_tag }}
+            <div>
+                <h3 class="gush-font-h3">{{block.settings.card_heading }}</h3>
+                <p class="gush-font-p2 card-info">{{block.settings.card_info }}</p>
+                <p class="gush-font-p1">{{block.settings.card_des }}</p>
+                </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+
+{% schema  %} 
+{
+    "name":"film offers",
+    "settings":[
+        {
+            "type":"textarea",
+            "id":"heading",
+            "label":"Heading"
+        },
+        {
+            "type":"textarea",
+            "id":"sub_heading",
+            "label":"Sub deading"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"card",
+            "name":"Card block",
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "id":"image",
+                    "label":"Image"
+                },
+                {
+                    "type":"textarea",
+                    "id":"card_heading",
+                    "label":"Card heading"
+                },
+                {
+                    "type":"textarea",
+                    "id":"card_info",
+                    "label":"Card info"
+                },
+                {
+                    "type":"textarea",
+                    "id":"card_des",
+                    "label":"Card Des"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
