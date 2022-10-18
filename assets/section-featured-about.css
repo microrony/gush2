@@ -76,3 +76,8 @@ a.featured-about__btn-secondary.button.button--secondary svg.icon.arrow-black {
     width: calc(55% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
+
+/* Custom Styles */
+.featured-about__buttons a.cta-button__secondary {
+	margin-top: 1rem;
+}

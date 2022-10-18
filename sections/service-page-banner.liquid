@@ -213,8 +213,14 @@
                 <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="cta-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} cta-button__primary gush-font-teritary{% endif %}"><span>{{ block.settings.button_label_1 | escape }}</span>{% render 'arrow-dotted' %}</a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
-                <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}{% render 'arrow-dotted-black' %}</a>
-              {%- endif -%}
+								<a {% if block.settings.button_link_2 == blank %}role="link" aria-disabled="true" {% else %}
+									href="{{ block.settings.button_link_2 }}" {% endif %}
+									class="cta-button gush-font-teritary cta-button__secondary">
+									<span>{{ block.settings.button_label_2 | escape }}
+									</span>
+									{% render 'arrow-dotted-black' %}
+								</a>
+							{%- endif -%}
 
             </div>
           </div>
@@ -414,25 +420,25 @@
       "label": "t:sections.image-banner.settings.show_text_below.label"
     },
     {
-				"type": "select",
-				"id": "page_name",
-				"label": "Select page name",
-				"options": [
-					{
-					"value": "group_buy",
-					"label": "Group Buy"
-					},
-					{
-					"value": "service",
-					"label": "Service"
-					},
-					{
-					"value": "film",
-					"label": "Film"
-					}
-				],
-				"default": "service"
-			}
+      "type": "select",
+      "id": "page_name",
+      "label": "Select page name",
+      "options": [
+        {
+          "value": "group_buy",
+          "label": "Group Buy"
+        },
+        {
+          "value": "service",
+          "label": "Service"
+        },
+        {
+          "value": "film",
+          "label": "Film"
+        }
+      ],
+      "default": "service"
+    }
   ],
   "blocks": [
     {
@@ -440,34 +446,34 @@
       "name": "t:sections.image-banner.blocks.heading.name",
       "limit": 1,
       "settings": [
-      {
-        "type": "text",
-        "id": "heading",
-        "default": "Image banner",
-        "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
-      },
-      {
-        "type": "select",
-        "id": "heading_size",
-        "options": [
-          {
-            "value": "h2",
-            "label": "t:sections.all.heading_size.options__1.label"
-          },
-          {
-            "value": "h1",
-            "label": "t:sections.all.heading_size.options__2.label"
-          },
-          {
-            "value": "h0",
-            "label": "t:sections.all.heading_size.options__3.label"
-          }
-        ],
-        "default": "h1",
-        "label": "t:sections.all.heading_size.label"
-      }
-    ]
-  },
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        }
+      ]
+    },
     {
       "type": "text",
       "name": "t:sections.image-banner.blocks.text.name",
@@ -519,12 +525,6 @@
           "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
         },
         {
-          "type": "checkbox",
-          "id": "button_style_secondary_1",
-          "default": false,
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
-        },
-        {
           "type": "text",
           "id": "button_label_2",
           "default": "Button label",
@@ -535,12 +535,6 @@
           "type": "url",
           "id": "button_link_2",
           "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "button_style_secondary_2",
-          "default": false,
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
         }
       ]
     }

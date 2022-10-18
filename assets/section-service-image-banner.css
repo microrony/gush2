@@ -14,9 +14,7 @@ h2.service-banner__heading.banner__heading span {
 .banner__buttons {
     margin-top: 8%;
 }
-.banner__buttons a{
-    background: #FF5DED;
-}
+
 .banner__text.body span {font-size: 17px;line-height: 30px;color: rgba(var(--color-secondary-6)); font-family: 'GTAmerica';}
 .banner__buttons.banner__buttons--multiple a.button--primary {background: #FF5DED;}
 .banner__buttons.banner__buttons--multiple a.button--primary::before { border: none; }
@@ -86,8 +84,6 @@ h2.service-banner__heading.banner__heading span {
     }
 }
 .banner_inner_box .banner__buttons a{
-    background-color: #FF42EF;
-    color: #fff;
     display: flex;
     justify-content: flex-start;
     font-size: 16px;
