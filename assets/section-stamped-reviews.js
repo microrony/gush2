@@ -41,7 +41,7 @@ const camalize = function camalize(str) {
           
           return sliderHTML;
         })
-      cb(stampedReviewsHTML.join("\n"))
+      cb(stampedReviewsHTML)
     }).catch(error=>{
       console.log(error)
     })
@@ -192,15 +192,14 @@ stampedContent.innerHTML += `<div class='stamped-slider-reviews'>
 				</svg></div>
 	</div>`;
   const swiper_wrapper = stampedContent.querySelector('.swiper-wrapper')
-  // swiper_wrapper.innerHTML = `
-  // <div  class="swiper-slide" data-filter="all">slider -1</div>
-  // <div  class="swiper-slide" data-filter="all">slider -2</div>
-  // <div  class="swiper-slide" data-filter="all">slider -3</div>
-  // <div  class="swiper-slide" data-filter="all">slider -4</div>
-  // <div  class="swiper-slide" data-filter="all">slider -5</div>
-  // <div  class="swiper-slide" data-filter="all">slider -6</div>
-  // `
-  // console.log(swiper_wrapper)
+  swiper_wrapper.innerHTML = `
+  <div  class="swiper-slide" data-filter="all">slider -1</div>
+  <div  class="swiper-slide" data-filter="all">slider -2</div>
+  <div  class="swiper-slide" data-filter="all">slider -3</div>
+  <div  class="swiper-slide" data-filter="all">slider -4</div>
+  <div  class="swiper-slide" data-filter="all">slider -5</div>
+  <div  class="swiper-slide" data-filter="all">slider -6</div>
+  `
 
 const filterOptions = document.querySelectorAll('.stamped-reviews_filter .option');
 
@@ -224,4 +223,5 @@ var stampedSliderSwiper = new Swiper('.stampedSliderSwiper', {
   },
 });
 
-generateStampedReviewsHTML(cb=>console.log(cb))
+const swipper = generateStampedReviewsHTML(cb=>cb)
+console.log(swipper)

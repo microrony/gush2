@@ -196,7 +196,12 @@
         "image": "shopify:\/\/shop_images\/Group_2167.png",
         "heading": "Need help with\ninstallation?",
         "description": "Don’t sweat putting on our window films. Our in-house teams conduct onsite assessment reports so that film installation is smooth and quick.",
-        "page_name": "film"
+        "page_name": "group_buy"
+      }
+    },
+    "e8fef480-1000-4022-adef-7504ca82c76d": {
+      "type": "section-stamped-review",
+      "settings": {
       }
     },
     "44c7b10c-52e7-4d58-b848-17b29578f4ae": {
@@ -215,6 +220,7 @@
     "film_offers",
     "film_transparency",
     "30533aca-a6e6-4880-b7d2-4eb08cdf37e0",
+    "e8fef480-1000-4022-adef-7504ca82c76d",
     "44c7b10c-52e7-4d58-b848-17b29578f4ae"
   ]
 }

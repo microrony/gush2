@@ -1,0 +1,221 @@
+.stamped-review-main{
+    background: #FFC900;
+    padding: 5rem 0 10rem 0;
+}
+.stamped_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5.5rem;
+}
+.review_giving_container{
+    display: none;
+}
+.review_name_and_email_input{
+    display: flex;
+    gap: 3rem;
+}
+.input_group {
+    margin-bottom: 1.5rem;
+}
+.input_group p{
+    margin: 0;
+}
+.input_group input{
+    padding: .7rem;
+    min-width: 250px;
+}
+.full_width_input{
+    width: 100%;
+}
+.category_option input{
+    display: inline-block;
+    min-width: 20px !important;
+    margin-top: 1.5rem;
+}
+/* rating design  */
+
+.rating_container{
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+  }
+  
+  .rating_container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .rating_container label:last-child {
+    position: static;
+  }
+  
+  .rating_container label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .rating_container label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .rating_container label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .rating_container label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .rating_container label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .rating_container label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rating_container label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  .rating_container label:last-child .icon {
+    color: #000;
+  }
+  
+  .rating_container:not(:hover) label input:checked ~ .icon,
+  .rating_container:hover label:hover input ~ .icon {
+    color: orange;
+  }
+  
+  .rating_container label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+  }
+
+/* rating design  */
+
+.stamped-reviews-filter-container .option {
+	cursor: pointer;
+}
+
+.stamped-reviews-filter-container .option.active {
+	color: #302112;
+	position: relative;
+}
+
+.stamped-reviews-filter-container .option.active::before {
+	content: '';
+	background-color: #302112;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	border-radius: 50%;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.stamped_top p{
+    margin: 0;
+}
+.stamped_top h1{
+    margin: 0;
+}
+.stamped-reviews-slider-container{
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 5rem 6rem;
+}
+.slider-content-main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stamped-reviews-filter-container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+.slider-content-main .mySwiper2{
+    margin: 0 4rem;
+    padding: 0 1rem;
+}
+.review-swiper-btn{
+    position: static !important;
+    
+}
+.review-swiper-btn::after{
+    display: none;
+}
+.stamped-review-slide__card{
+    height: 400px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5rem 3rem 3rem 3rem;
+    border: 1px solid #FFC900;
+    border-radius: 10px;
+}
+.stamped-review-slide__card_inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.stamped-review-slide__card h3{
+    
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.stamped-review-slide__card p{
+    margin: 0;
+}
+.review_body_text{
+    margin: 2rem 0 !important;
+}
+
+.fa-regular{
+    color: lightgray;
+}
+.colored_star{
+    color: orange ;
+}
+.gray_star{
+    color: rgb(204, 204, 204) !important;
+}
+.top_review_info{
+    text-align: end;
+}
+.stamped_top .colored_star::before{
+    font-size: 28px;
+    color: black !important;
+}
+.stamped_top .fa-regular::before{
+    font-size: 28px;
+    color: rgb(114, 113, 113);
+}
+
+.mySwiper2 .fa-star::before{
+    font-size: 33px;
+}
+.leave_review_btn_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.leave_review_btn{
+    display: inline-block;
+    border-bottom: 1px solid #302112;
+    margin: 0;
+    cursor: pointer;
+}

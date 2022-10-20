@@ -1,0 +1,339 @@
+{{ "section-stamped-review.css" | asset_url | stylesheet_tag }}
+
+{% style  %} 
+.swiper-slide:not(.isActive) {
+    display: block !important;
+}
+.swiper-slide_full_width{
+    width: 260px !important;
+}
+.swiper-slide_half_width{
+    width: 260px !important;
+}
+{% endstyle %}
+<div class="stamped-review-main">
+    <div class="page-width">
+        
+        <div class="stamped_top">
+            <div>
+                <p class="gush-font-p2">Overall Rating</p>
+                <h1 class="gush-font-h1 average_rating"></h1>
+            </div>
+            <div class="top_review_info">
+                <p class="gush-font-p2 total_reviews">Reviews</p>
+                <p class="gush-font-p1 top_star_container">
+                    
+                </p>
+            </div>
+        </div>
+    <div class='stamped-reviews-slider-container'>
+        <div class="review_giving_container">
+            <form id="review_form">
+                <div class="review_name_and_email_input">
+                <div class="input_group">
+                <p>Name</p>
+                <input id="name" type="text" name="name" placeholder="Enter your name" />
+                </div>
+                <div class="input_group">
+                    <p>Email</p>
+                    <input id="email" type="email" name="email" placeholder="Enter your email" />
+                </div>
+                </div>
+                <div class="input_group">
+                    <p>Rating</p>
+                        <div class="rating_container">
+                    <label>
+                        <input type="radio" name="stars" value="1" />
+                        <span class="icon">★</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="2" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="3" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>   
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="4" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="5" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                    </label>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <p>Product Id</p>
+                    <input id="productId" type="text" name="productId" placeholder="{{ product.id | escape }}" value="{{ product.id | escape }}" />
+                </div>
+                <div class="input_group">
+                    <p>Title of Review</p>
+                    <input id="title" class="full_width_input" type="text" name="title" placeholder="Give your review a title" />
+                </div>
+                <div class="input_group">
+                    <p>How was your overall experience?</p>
+                    <textarea id="body" class="full_width_input" name="body" rows="10" cols="50" ></textarea>
+                </div>
+                <div class="input_group category_option">
+                    <p>Category :</p>
+                    <input type="radio" id="option1" name="option" value="Option 1"/>
+                    <label for="option1">Option 1</label>
+                    <input type="radio" id="option2" name="option" value="Option 2"/>
+                    <label for="option2">Option 2</label>
+                    <input type="radio" id="option3" name="option" value="Option 3"/>
+                    <label for="option3">Option 3</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class='stamped-reviews-filter-container gush-font-p1'>
+                <div class='option active' data-filter='all'>All Reviews</div>
+                <div class='option' data-filter='Option 1'>Option 1</div>
+                <div class='option' data-filter='Option 2'>Option 2</div>
+                <div class='option' data-filter='Option 3'>Option 3</div>
+        </div>
+        <!-- Swiper -->
+        <div class="slider-content-main">
+            <div class="swiper-button-prev review-swiper-btn">{% render 'icon-arrow-left-gushi' %}</div>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper"></div>
+            </div>
+           <div class="swiper-button-next review-swiper-btn">{% render 'icon-arrow-right-gushi' %}</div>
+        </div>
+        <div class="leave_review_btn_container">
+            <p class="gush-font-p1 leave_review_btn">Leave a Review</p>
+        </div>
+        </div>
+    </div>
+	</div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const form = document.getElementById("review_form");
+    const name = document.querySelector('#review_form #name');
+    const email = document.querySelector('#review_form #email');
+    const productId = document.querySelector('#review_form #productId');
+    const title = document.querySelector('#review_form #title');
+    const body = document.querySelector('#review_form #body');
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault()
+        const formData = {
+            productId: productId.value,
+            author: name.value,
+            email: email.value,
+            reviewRating: getRatingValue("stars") == undefined ? 1 : getRatingValue("stars"),
+            reviewTitle: title.value,
+            reviewMessage: body.value,
+            category: getRatingValue("option") == undefined ? "all" : getRatingValue("option")
+        }
+        postReview(formData)
+        console.log(formData)
+
+    })
+    let allReviews = [];
+    let filtered_reviews = [];
+    let show_review_container = false;
+    const filterOptions = document.querySelectorAll('.stamped-reviews-filter-container .option');
+    filterOptions.forEach(filter => {
+        filter.addEventListener('click', (e)=>{
+
+            filterOptions.forEach(filter => {
+                filter.classList.remove('active')
+            })
+            e.target.classList.add('active');
+            let selectedFilter = e.target.getAttribute('data-filter');
+             filtered_reviews = allReviews.filter((review)=> {
+                if(selectedFilter=="all"){
+                    return true;
+                }else{
+                    return review.review.optionsList[0]?.value == selectedFilter;
+                }
+            })
+            reviewArraToHtml(filtered_reviews)
+            let itemsToShow = document.querySelectorAll(`.mySwiper2 .swiper-slide`);
+            itemsToShow.forEach( item => {
+                if(filtered_reviews.length == 1){
+                    item.classList.add('swiper-slide_full_width')
+                }
+                if(filtered_reviews.length == 2){
+                    item.classList.add('swiper-slide_half_width')
+                }
+            })
+        });
+    });
+    const camalize = function camalize(str) {
+    return str
+        .toLowerCase()
+        .replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+    };
+    let pubkey = 'pubkey-AO91DKEz2x93p9q306GOxS9WrDNZ6k';
+    let password = 'key-67RLw0h5WNIe0o3Bp9Yn3rE73xkYi5';
+    let storeHash = "261547"
+
+    var myHeaders = new Headers();
+    myHeaders.append('Authorization', 'Basic ' + btoa(pubkey + ":" + password));
+    myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+
+
+    var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+    };
+        // fetch all published review
+        fetch(`https://stamped.io/api/v2/${storeHash}/dashboard/reviews/?search=&rating=&state=published&dateFrom&dateTo`, requestOptions)
+        .then(response => response.json())
+        .then(data => {
+            allReviews = data?.results;
+            reviewArraToHtml(data.results)
+            const total_review = document.querySelector(".top_review_info .total_reviews")
+            const average_rating = document.querySelector(".stamped_top .average_rating")
+            const top_star_container = document.querySelector(".top_star_container")
+            total_review.innerText = `${data.total} Reviews`;
+            average_rating.innerText = overallRating(data);
+            top_star_container.innerHTML = ratingBuilder(overallRating(data));
+            })
+        .catch(error=>console.log(error))
+        // post a review
+        function postReview(body){
+            var formdata = new FormData(form);
+            formdata.append("productId", "4024388163");
+            formdata.append("author", "John Doh");
+            formdata.append("email", "john.doh@example.com");
+            formdata.append("location", "United States");
+            formdata.append("reviewRating", "5");
+            formdata.append("reviewTitle", "This is a test review title");
+            formdata.append("reviewMessage", "This is a test review message");
+            formdata.append("reviewRecommendProduct", "true");
+            formdata.append("productName", "Product's Title");
+            formdata.append("productSKU", "Product's Sku");
+            formdata.append("productImageUrl", "https://example.com/image/product-image.png");
+            formdata.append("productUrl", "https://example.com/products/product-image.png");
+            formdata.append("reviewSource", "api");
+
+            var postRequestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: body,
+            redirect: 'follow'
+            };
+            fetch(`https://stamped.io/api/reviews3?apiKey=${pubkey}&sId=${storeHash}`, postRequestOptions)
+            .then(response => response.json())
+            .then( postResult => console.log({postResult}))
+            .catch(postError=> console.log({postError}))
+        }
+    // review array tto html
+    function reviewArraToHtml(arr){
+        const stampedReviewsHTML = arr.map(review=>{
+            const { title, rating, body, author, optionsList } = review.review;
+            const sliderHTML = `<div class="swiper-slide" data-filter="${camalize(
+            optionsList?.length == 0 ? "all" : optionsList[0].value
+                )}">
+                        <div class="stamped-review-slide__card swiper-slide">
+                           <div class="stamped-review-slide__card_inner">
+                            <div>
+                             <h3 class="gush-font-p1">${title}</h3>
+                            ${ratingBuilder(rating)}
+                            <p class="gush-font-p2 review_body_text">“${
+                                body.length > 100
+                                ? body.slice(0, 100) + '...'
+                                : body
+                            }”</p>
+                           </div>
+                            <p class="gush-font-p1 client-name">${author}</p>
+                           </div>
+                        </div>
+                    </div>
+            `;
+            
+            return sliderHTML;
+            })
+
+        const swiper_wrapper = document.querySelector('.slider-content-main .swiper-wrapper')
+        swiper_wrapper.innerHTML =  stampedReviewsHTML.join('\n');
+    }
+        //number to rating builder
+        function ratingBuilder(rating){
+            let rating_element ='';
+            for(let i=1;i<6;i++){
+                if(i<=rating){
+                    rating_element+=`<span class="fa-regular fa-star colored_star"></span>`
+                }else{
+                    if(rating>=`${i-1}.5`){
+                        rating_element+=`<span class="fa-regular fa-star colored_star"></span>`
+                    }else{
+                        rating_element+=`<span class="fa-regular fa-star"></span>`
+                    }
+                }
+            }
+            return rating_element;
+        }
+        // avarage rating calculating function
+        function overallRating(data){
+            const average_rating = data.results.reduce((accu, result)=>{
+                accu += result.review.rating;
+                return accu;
+            },0)
+            return (average_rating/data.total).toFixed(1);
+        }
+        // get rating value
+        function getRatingValue(name){
+            const stars = document.getElementsByName(name);
+            for(i = 0; i < stars.length; i++) {
+                if(stars[i].checked)
+                return (stars[i].value)
+            }
+        }
+        
+        document.querySelector(".leave_review_btn").addEventListener("click",(e)=>{
+            show_review_container = (!show_review_container)
+            const review_container = document.querySelector('.review_giving_container')
+            if(show_review_container){
+                review_container.style.display = "block";
+                name.focus();
+            }else{
+                review_container.style.display = "none"
+            }
+        })
+        // swiper settings
+        var stampedSliderSwiper = new Swiper('.mySwiper2', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: false,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+
+    
+</script>
+
+{% schema  %} 
+{
+    "presets": [
+		{
+		    "name": "Stamped review"
+		}
+    ]
+}
+{% endschema %}

@@ -192,6 +192,7 @@
         "padding_top": 52,
         "padding_bottom": 52,
         "show_sub_title": true,
+        "group_buy_page": false,
         "page": "product"
       }
     },
@@ -298,6 +299,11 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "72a7f502-2042-444c-a966-2f640303a58c": {
+      "type": "section-stamped-review",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -307,6 +313,7 @@
     "16524396805057076a",
     "1652439903eeaf17c8",
     "16524399652ff3675c",
-    "1658208654922c2830"
+    "1658208654922c2830",
+    "72a7f502-2042-444c-a966-2f640303a58c"
   ]
 }
