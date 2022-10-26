@@ -1,61 +1,9 @@
-{{ 'section-film-warranty.css' | asset_url | stylesheet_tag}}
-{{ 'section-ingredient.css' | asset_url | stylesheet_tag}}
-<style>
-    .ingredient__main {
-      padding: 0 !important;
-    }
-    .ingredient__accordion{
-      max-width: 575px;
-      padding: 0 !important;
-      margin-left: auto;
-    }
-    .ingredient_heading_h3{
-      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-      padding-bottom: 3rem;
-      margin: 0;
-    }
-    .qus-li__inner h3{
-      margin: 0 !important;
-    }
-    .question .q-ans__block{
-      padding: 3rem 0 !important;
-    }
-    .ingredient_bottom_btn a{
-      font-family: 'GTAmerica' !important;
-      font-style: normal ;
-      font-weight: 400 !important;
-      font-size: 16px !important;
-      line-height: 160% !important;
-      letter-spacing: -0.02em !important;
-      margin-top: 2rem;
-      background: #FF5500 !important;
-    }
-     @media screen and (max-width: 950px){
-      .warranty-heading-sub-heading h1{
-        font-size: 48px !important;
-      }
-    }
-    
-    @media screen and (max-width: 750px){
-      .ingredient_heading_h3{
-        padding-bottom: 1.2rem;
-      }
-      .question .q-ans__block{
-        padding: 2rem 0 !important;
-      }
-      .ingredient_bottom_btn a{
-        font-size: 10px !important;
-        line-height: 150% !important;
-        margin-top: 1.5rem ;
-      }
-      .warranty-heading-sub-heading h1{
-        font-size: 32px !important;
-      }
-    }
-   
-    
-</style>
+{{ 'section-film-warranty.css' | asset_url | stylesheet_tag }}
+{{ 'section-ingredient.css' | asset_url | stylesheet_tag }}
+{%- comment -%} <script type="module" src="{{ 'section-film-warranty.js' | asset_url }}" async></script> {%- endcomment -%}
+
 <div class="film-warranty-container">
+	{%- comment -%} <canvas data-img-url="{{ 'stripesb.jpg' | asset_url }}" id="glCanvas" width="640" height="480"></canvas> {%- endcomment -%}
     <div class="film-page-width">
         <div class="warranty-heading-sub-heading">
             <h1 class="gush-font-h1 warranty-heading">{{ section.settings.heading }}</h1>
@@ -109,99 +57,97 @@
     </div>
 </div>
 
-<script>  
-  let Faqplus = document.querySelectorAll(".faq_qus .icon-plus-new");
-  let Faqminus = document.querySelectorAll(".faq_qus .icon-minus-new");
-  let Faqquestions = document.querySelectorAll(".faq_qus");
-  let Faqanswers = document.querySelectorAll(".faq_ans");
-   
-  Faqquestions.forEach((question) => {
-    question.addEventListener("click", (ele) => {
-      let ans_id = question.dataset.contentId;
-      let ans = document.getElementById(ans_id);
+{% javascript %}
+let Faqquestions = document.querySelectorAll(".faq_qus");
+ 
+Faqquestions.forEach((question) => {
+	question.addEventListener("click", (ele) => {
+		let ans_id = question.dataset.contentId;
+		let ans = document.getElementById(ans_id);
 
-      let FaqiconPlus = question.querySelector(".icon-plus-new");
-      let FaqiconMinus = question.querySelector(".icon-minus-new");
-       
-      if(!FaqiconMinus.classList.contains('is-active')) {       
-        FaqiconPlus.classList.remove("is-active");
-        FaqiconPlus.classList.add("not-active");
-        FaqiconMinus.classList.add("is-active");
-        FaqiconMinus.classList.remove("not-active");
-        ans.classList.add("is-active");
-      } else {
-        FaqiconMinus.classList.remove("is-active");
-        FaqiconMinus.classList.add("not-active");
-        FaqiconPlus.classList.add("is-active");
-        FaqiconPlus.classList.remove("not-active");
-        ans.classList.remove("is-active");
-      }
-     });
-     
-   });
- </script>
-{% schema  %} 
+		let FaqiconPlus = question.querySelector(".icon-plus-new");
+		let FaqiconMinus = question.querySelector(".icon-minus-new");
+		 
+		if(!FaqiconMinus.classList.contains('is-active')) {       
+			FaqiconPlus.classList.remove("is-active");
+			FaqiconPlus.classList.add("not-active");
+			FaqiconMinus.classList.add("is-active");
+			FaqiconMinus.classList.remove("not-active");
+			ans.classList.add("is-active");
+		} else {
+			FaqiconMinus.classList.remove("is-active");
+			FaqiconMinus.classList.add("not-active");
+			FaqiconPlus.classList.add("is-active");
+			FaqiconPlus.classList.remove("not-active");
+			ans.classList.remove("is-active");
+		}
+	 });
+ });
+{% endjavascript %}
+
+
+{% schema %}
 {
-    "name":"Film warranty",
-    "settings":[
+  "name": "Film warranty",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "sub_heading",
+      "label": "Sub heading"
+    },
+    {
+      "type": "number",
+      "id": "warranty_year",
+      "label": "Warranty year"
+    },
+    {
+      "type": "textarea",
+      "id": "ingredient_heading",
+      "label": "Ingredient heading"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button url"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Text Block",
+      "type": "text",
+      "settings": [
         {
-            "type":"textarea",
-            "id":"heading",
-            "label":"Heading"
+          "type": "image_picker",
+          "id": "faq_img",
+          "label": "Upload an Image"
         },
         {
-            "type":"textarea",
-            "id":"sub_heading",
-            "label":"Sub heading"
+          "type": "text",
+          "id": "title",
+          "label": "Question"
         },
         {
-            "type":"number",
-            "id":"warranty_year",
-            "label":"Warranty year"
+          "type": "text",
+          "id": "faq_quality",
+          "label": "Quality"
         },
         {
-            "type":"textarea",
-            "id":"ingredient_heading",
-            "label":"Ingredient heading"
-        },
-        {
-            "type": "text",
-            "id": "btn_text",
-            "label":"Button text"
-            },
-            {
-            "type": "url",
-            "id": "button_link",
-            "label": "Button url"
-            }
-    ],
-    "blocks":[
-        {
-            "name": "Text Block",
-            "type": "text",
-            "settings": [
-                {
-                "type": "image_picker",
-                "id": "faq_img",
-                "label": "Upload an Image"
-                },
-                {
-                "type": "text",
-                "id": "title",
-                "label": "Question"
-                },
-                {
-                "type": "text",
-                "id": "faq_quality",
-                "label": "Quality"
-                },
-                {
-                "type": "textarea",
-                "id": "faq_ans",
-                "label": "Answer"
-                }
-            ]
+          "type": "textarea",
+          "id": "faq_ans",
+          "label": "Answer"
         }
-    ]
+      ]
+    }
+  ]
 }
 {% endschema %}
