@@ -31,7 +31,6 @@
 .category_option input{
     display: inline-block;
     min-width: 20px !important;
-    margin-top: 1.5rem;
 }
 /* rating design  */
 
@@ -218,4 +217,166 @@
     border-bottom: 1px solid #302112;
     margin: 0;
     cursor: pointer;
+}
+#review_form button[type="submit"]{
+    width: 200px;
+    background: #000;
+    color: #FFFFFF;
+    padding: 1rem;
+    margin: 3rem auto 5rem auto;
+    margin-left: auto;
+}
+.review-form-submit-btn-container{
+    text-align: end;
+}
+.mobile_review_btn_show{
+    display: none !important;
+}
+.stamped_review_mobile_droopdown{
+    display: none;
+}
+.mobile-reviews-container{
+    display: none;
+}
+.pagination_box{
+    display: none;
+}
+/* #stamped-main-widget #stamped-reviews-tab{
+    display: none !important;
+}
+#stamped-main-widget .stamped-summary{
+    display: none !important;
+}
+#stamped-main-widget .stamped-header-title{
+    display: none !important;
+} */
+@media screen and (max-width: 750px){
+    .stamped-review-main{
+        background: #FFC900;
+        padding: 5rem 0;
+    }
+    .stamped-reviews-slider-container{
+        padding: 2rem 2rem 0 2rem;
+        border-radius: 8px;
+    }
+    .review_name_and_email_input{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .input_group input{
+        padding: .7rem;
+        min-width: 100%;
+    }
+    .review-form-submit-btn-container{
+        text-align: center;
+    }
+    .stamped-reviews-filter-container, .slider-content-main, .leave_review_btn{
+        display: none;
+    }
+    .stamped_top{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .top_review_info{
+        text-align: center;
+    }
+    .stamped_top .fa-regular::before{
+        font-size: 12px;
+    }
+    .stamped_top .average_rating{
+        margin-top: 10px;
+    }
+    .leave_review_btn_container{
+        margin-top: 2rem;
+    }
+    .mobile_review_btn_show{
+        display: block !important;
+    }
+    .stamped_review_mobile_droopdown{
+        display: block;
+        position: relative;
+    }
+    .review-mobile-dropdown summary{
+        border: 1px solid rgba(var(--color-secondary-5), 0.5);
+        border-radius: 4px;
+        padding: 11px 13px;
+        font-family: 'GTAmerica';
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: #302112;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .review-mobile-dropdown .options{
+        margin-top: 10px;
+        border: 1px solid rgba(var(--color-secondary-3), 0.5);
+        padding: 11px 13px;
+        border-radius: 4px;
+        /* position: absolute;
+        width: 100%;
+        background: #ffffff; */
+    }
+    .review-mobile-dropdown .option{
+        padding: 4px 0;
+    }
+    .mobile-reviews-container{
+        display: block;
+    }
+    .mobile_responsive_review_box{
+        margin-top: 2rem;
+        padding-bottom: 10px;
+        border-bottom: 0.5px solid #ffc80083;
+    }
+    .mobile_responsive_review_box p{
+        margin: 0;
+    }
+    .mobile_review_box_top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile_review_box_top p{
+        font-weight: 400 !important;
+    }
+    .mobile_review_box_top span::before{
+        width: 11px !important;
+        height: 11px !important;
+    }
+    .mobile_responsive_review_box .mobile_review_body{
+        margin: 1.5rem 0 1rem 0;
+        color: #796E62;
+        font-weight: 400;
+    }
+    .mobile_responsive_review_box .author{
+        color: #302112;
+        font-weight: 400 !important;
+    }
+    .pagination_box{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pagination_box li{
+        color: #302112;
+        opacity: 0.2;
+        list-style-type: none;
+        padding-right: 8px;
+    }
+    .pagination_box .pagination-active{
+        opacity: 1 !important;
+    }
+    .pagination_next_btn{
+        border: none;
+        background: none;
+        padding: 0;
+    }
 }

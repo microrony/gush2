@@ -83,7 +83,7 @@
         "c07957dd-18a2-43d1-82c2-ae93a37c6489": {
           "type": "product-info",
           "settings": {
-            "title": "",
+            "title": "Controls humidity",
             "tabimg": "shopify:\/\/shop_images\/image_58.png",
             "tabdesc": "Absorbs excess moisture so you can take it easy in comfort"
           }
@@ -91,7 +91,7 @@
         "5fbea61b-e06f-4a95-b56b-938f9b84dc07": {
           "type": "product-info",
           "settings": {
-            "title": "",
+            "title": "Removes pollutants",
             "tabimg": "shopify:\/\/shop_images\/paint3.png",
             "tabdesc": "Example 2"
           }
@@ -99,7 +99,7 @@
         "f1d18298-7896-4cb8-8f81-c79c2fd62c24": {
           "type": "product-info",
           "settings": {
-            "title": "",
+            "title": "Anti-molding",
             "tabimg": "shopify:\/\/shop_images\/paint2.png",
             "tabdesc": "Example 3"
           }
@@ -107,7 +107,7 @@
         "9e3f1e75-5c22-4786-be51-b27f2252aae0": {
           "type": "product-info",
           "settings": {
-            "title": "",
+            "title": "Anti-bacterial",
             "tabimg": "shopify:\/\/shop_images\/paint4.png",
             "tabdesc": "Example 4"
           }
@@ -115,7 +115,7 @@
         "5a382802-1239-4079-88fd-7b6522f78ab7": {
           "type": "product-info",
           "settings": {
-            "title": "",
+            "title": "Toxic-free",
             "tabimg": "shopify:\/\/shop_images\/image_58.png",
             "tabdesc": "Example 5"
           }
@@ -302,6 +302,38 @@
     },
     "72a7f502-2042-444c-a966-2f640303a58c": {
       "type": "section-stamped-review",
+      "blocks": {
+        "86efca96-87a5-4590-bcc1-603732a4f205": {
+          "type": "review_category",
+          "settings": {
+            "title": "All Reviews"
+          }
+        },
+        "41f19529-855a-4c94-b201-8d22e4acfb83": {
+          "type": "review_category",
+          "settings": {
+            "title": "Option 1"
+          }
+        },
+        "eb811e8b-33a4-4246-ae7e-0d1fd358b67a": {
+          "type": "review_category",
+          "settings": {
+            "title": "Option 2"
+          }
+        },
+        "6850f52c-b7af-4632-a4e3-a448c324356f": {
+          "type": "review_category",
+          "settings": {
+            "title": "Option 3"
+          }
+        }
+      },
+      "block_order": [
+        "86efca96-87a5-4590-bcc1-603732a4f205",
+        "41f19529-855a-4c94-b201-8d22e4acfb83",
+        "eb811e8b-33a4-4246-ae7e-0d1fd358b67a",
+        "6850f52c-b7af-4632-a4e3-a448c324356f"
+      ],
       "settings": {
       }
     }
