@@ -25,7 +25,7 @@
  }
  .science-steps .the-problem-block.last-block .content{
 	order: 2;
-	margin-left: 80px;
+	margin-left: 90px;
    }
 
 .science-steps .the-problem-block .content > p {
@@ -200,7 +200,7 @@
 	 }
 	.science-steps .the-problem-block.odd-block .content{
 		order: 2;
-		margin-left: 80px;
+		margin-left: 90px;
 	}
 	/* Solution Section Styles */
 	.the-solution-blocks {

@@ -196,7 +196,44 @@
         "image": "shopify:\/\/shop_images\/Group_2167.png",
         "heading": "Need help with\ninstallation?",
         "description": "Don’t sweat putting on our window films. Our in-house teams conduct onsite assessment reports so that film installation is smooth and quick.",
-        "page_name": "film"
+        "page_name": "group_buy"
+      }
+    },
+    "e8fef480-1000-4022-adef-7504ca82c76d": {
+      "type": "section-stamped-review",
+      "blocks": {
+        "575d0a25-77ea-44db-a722-bc64c4fc4f84": {
+          "type": "review_category",
+          "settings": {
+            "title": "All Reviews"
+          }
+        },
+        "1683ebf2-4aeb-43bb-abb8-d99f42b78711": {
+          "type": "review_category",
+          "settings": {
+            "title": "Option 1"
+          }
+        },
+        "b3f3188e-4fdd-44a9-9f09-040d13cb106b": {
+          "type": "review_category",
+          "settings": {
+            "title": "Option 2"
+          }
+        },
+        "c2d0de44-6990-4b20-85ad-c7395e1833a9": {
+          "type": "review_category",
+          "settings": {
+            "title": "Option 3"
+          }
+        }
+      },
+      "block_order": [
+        "575d0a25-77ea-44db-a722-bc64c4fc4f84",
+        "1683ebf2-4aeb-43bb-abb8-d99f42b78711",
+        "b3f3188e-4fdd-44a9-9f09-040d13cb106b",
+        "c2d0de44-6990-4b20-85ad-c7395e1833a9"
+      ],
+      "settings": {
       }
     },
     "44c7b10c-52e7-4d58-b848-17b29578f4ae": {
@@ -215,6 +252,7 @@
     "film_offers",
     "film_transparency",
     "30533aca-a6e6-4880-b7d2-4eb08cdf37e0",
+    "e8fef480-1000-4022-adef-7504ca82c76d",
     "44c7b10c-52e7-4d58-b848-17b29578f4ae"
   ]
 }

@@ -4,41 +4,86 @@ const camalize = function camalize(str) {
     .replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
 };
 
-function generateStampedReviewsHTML(stampedReviewsArr) {
-  const stampedReviewsHTML = stampedReviewsArr.map(review => {
-    const reviewTitle = review.querySelector(
-      '.stamped-review-header-title'
-    ).textContent;
-    const reviewStar = review.querySelector(
-      '.stamped-review-header-starratings'
-    ).outerHTML;
-    const reviewAuthor = review.querySelector('.author').textContent;
-    const reviewContent = review.querySelector(
-      '.stamped-review-content-body'
-    ).textContent;
-    const category =
-      review.querySelector(
-        '.stamped-review-options .stamped-review-option-radio span'
-      )?.textContent ?? '';
+ function generateStampedReviewsHTML(cb) {
+  let username = 'pubkey-AO91DKEz2x93p9q306GOxS9WrDNZ6k';
+  let password = 'key-67RLw0h5WNIe0o3Bp9Yn3rE73xkYi5';
 
-    const sliderHTML = `<div class="swiper-slide" data-filter="${camalize(
-      category
-    )}">
-									 <div class="swiper-slide__card">
-											 <h3 class="gush-font-p1">${reviewTitle}</h3>
-											 ${reviewStar}
-											 <p class="gush-font-p2">“${
-                         reviewContent.length > 140
-                           ? reviewContent.slice(0, 190) + '...'
-                           : reviewContent
-                       }”</p>
-											 <p class="gush-font-p1 client-name">${reviewAuthor}</p>
-									 </div>
-							 </div>
-			 `;
-    return sliderHTML;
-  });
-  return stampedReviewsHTML.join('\n');
+  var myHeaders = new Headers();
+  myHeaders.append('Authorization', 'Basic ' + btoa(username + ":" + password));
+  myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+
+
+  var requestOptions = {
+    method: 'GET',
+    headers: myHeaders,
+    redirect: 'follow'
+  };
+    fetch("https://stamped.io/api/v2/261547/dashboard/reviews/?search=&rating=&state=published&dateFrom&dateTo", requestOptions)
+    .then(response => response.json())
+    .then(data => {
+        const stampedReviewsHTML = data.results.map(review=>{
+        const { title, rating, body, author, optionsList } = review.review;
+        const sliderHTML = `<div class="swiper-slide" data-filter="${camalize(
+          optionsList?.length == 0 ? "all" : optionsList[0].value
+            )}">
+                      <div class="swiper-slide__card">
+                          <h3 class="gush-font-p1">${title}</h3>
+                          ${rating}
+                          <p class="gush-font-p2">“${
+                            body.length > 140
+                              ? body.slice(0, 190) + '...'
+                              : body
+                          }”</p>
+                          <p class="gush-font-p1 client-name">${author}</p>
+                      </div>
+                  </div>
+          `;
+          
+          return sliderHTML;
+        })
+      cb(stampedReviewsHTML)
+    }).catch(error=>{
+      console.log(error)
+    })
+
+
+
+
+
+  // const stampedReviewsHTML = stampedReviewsArr.map(review => {
+  //   const reviewTitle = review.querySelector(
+  //     '.stamped-review-header-title'
+  //   ).textContent;
+  //   const reviewStar = review.querySelector(
+  //     '.stamped-review-header-starratings'
+  //   ).outerHTML;
+  //   const reviewAuthor = review.querySelector('.author').textContent;
+  //   const reviewContent = review.querySelector(
+  //     '.stamped-review-content-body'
+  //   ).textContent;
+  //   const category =
+  //     review.querySelector(
+  //       '.stamped-review-options .stamped-review-option-radio span'
+  //     )?.textContent ?? '';
+
+  //   const sliderHTML = `<div class="swiper-slide" data-filter="${camalize(
+  //     category
+  //   )}">
+	// 								 <div class="swiper-slide__card">
+	// 										 <h3 class="gush-font-p1">${reviewTitle}</h3>
+	// 										 ${reviewStar}
+	// 										 <p class="gush-font-p2">“${
+  //                        reviewContent.length > 140
+  //                          ? reviewContent.slice(0, 190) + '...'
+  //                          : reviewContent
+  //                      }”</p>
+	// 										 <p class="gush-font-p1 client-name">${reviewAuthor}</p>
+	// 								 </div>
+	// 						 </div>
+	// 		 `;
+  //   return sliderHTML;
+  // });
+  
 }
 
 function handleFilter(e) {
@@ -102,7 +147,6 @@ const stampedReviews = document.querySelectorAll(
 const stampedContent = document.querySelector(
   '#stamped-main-widget .stamped-content'
 );
-
 const stampedReviewsNodeArr = Array.from(stampedReviews);
 
 stampedContent.innerHTML += `<div class='stamped-slider-reviews'>
@@ -115,9 +159,9 @@ stampedContent.innerHTML += `<div class='stamped-slider-reviews'>
 	</div>
 	<!-- Swiper -->
 	<div class="swiper stampedSliderSwiper">
-			<div class="swiper-wrapper">${generateStampedReviewsHTML(
-        stampedReviewsNodeArr
-      )}</div>
+  <div class="swiper-wrapper">
+    ${generateStampedReviewsHTML((swiper_sliders)=>swiper_sliders)}
+  </div>
 			</div><div class="swiper-button-next"><svg class="icon icon-arrow-right-slide" xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 48 40" fill="none">
 			<circle cx="46" cy="20" r="2" fill="#2D2014"/>
 			<circle cx="34" cy="20" r="2" fill="#2D2014"/>
@@ -147,6 +191,15 @@ stampedContent.innerHTML += `<div class='stamped-slider-reviews'>
 				<circle r="2" transform="matrix(-1 0 0 1 20 2)" fill="#2D2014"/>
 				</svg></div>
 	</div>`;
+  const swiper_wrapper = stampedContent.querySelector('.swiper-wrapper')
+  swiper_wrapper.innerHTML = `
+  <div  class="swiper-slide" data-filter="all">slider -1</div>
+  <div  class="swiper-slide" data-filter="all">slider -2</div>
+  <div  class="swiper-slide" data-filter="all">slider -3</div>
+  <div  class="swiper-slide" data-filter="all">slider -4</div>
+  <div  class="swiper-slide" data-filter="all">slider -5</div>
+  <div  class="swiper-slide" data-filter="all">slider -6</div>
+  `
 
 const filterOptions = document.querySelectorAll('.stamped-reviews_filter .option');
 
@@ -170,24 +223,5 @@ var stampedSliderSwiper = new Swiper('.stampedSliderSwiper', {
   },
 });
 
-// let username = 'pubkey-';
-// let password = 'key-';
-
-// var myHeaders = new Headers();
-// myHeaders.append('Authorization', 'Basic ' + btoa(username + ":" + password));
-// myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-
-// var urlencoded = new URLSearchParams();
-// urlencoded.append("productIds", "1");
-// urlencoded.append("productIds", "6549921987");
-
-// var requestOptions = {
-//   method: 'GET',
-//   headers: myHeaders,
-//   redirect: 'follow'
-// };
-
-// fetch("https://stamped.io/api/v2/{{storehash}}/dashboard/reviews/?search=&rating=&state=&dateFrom&dateTo", requestOptions)
-//   .then(response => response.json())
-//   .then(result => console.log(result))
-//   .catch(error => console.log('error', error));
+const swipper = generateStampedReviewsHTML(cb=>cb)
+console.log(swipper)
