@@ -178,6 +178,15 @@ button.quantity__button {
   #add_to_cart_btn button{
   min-width: 150px !important;
 }
+.product__description {
+  display: flex;
+  gap: 10px;
+}
+.product__description span, .product__description li{
+  color: #302112;
+  font-weight: 400 !important;
+}
+
 
   @media screen and (max-width:767px){
       #product__gush{
@@ -430,7 +439,14 @@ button.quantity__button {
             <div class="product__desc-review">
             {%- if product.description != blank -%}
               <div class="product__description rte gush-font-p2">
-                {{ product.metafields.products.sub_title }}
+                {%- for option in product.options_with_values -%}
+                {% if option.name != 'Size' %}
+                <span class="current_selected_product_variant gush-font-teritary"> {{option.selected_value}}</span>
+                {%- endif -%}
+                {% if option.name != 'Type' %}
+                <span><li class="current_selected_product_size gush-font-teritary"> {{option.selected_value}}</li></span>
+                {%- endif -%}
+                {%- endfor -%}
               </div>
             {%- endif -%}
             {%- comment -%} <div class="product__desc-review__rating gush-font-p2">  321 reviews</div> {%- endcomment -%}
@@ -790,13 +806,23 @@ button.quantity__button {
 
 {% javascript %}
 const options = document.querySelectorAll('.product_variant_selection_container div')
+const quantity_box = document.querySelectorAll('.quantity_selection_box div')
 const details = document.querySelector('.product_variant_details')
+const product_variant = document.querySelector('.current_selected_product_variant')
+const product_size = document.querySelector('.current_selected_product_size')
 const lable_display = document.querySelector('#selected_option_display')
+
+quantity_box.forEach(box=> {
+  box.addEventListener("click",()=>{
+    product_size.innerText = box.innerText.trim()
+  })
+})
 options.forEach(option=>{
   option.addEventListener("click",()=>{
     details.removeAttribute("open")
     const text = option.textContent;
     lable_display.innerText = text.trim()
+    product_variant.innerText = text.trim()
 })
 })
 
