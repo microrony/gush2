@@ -22,10 +22,8 @@
           "settings": {
             "button_label_1": "Shop Now",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
             "button_label_2": "",
-            "button_link_2": "#",
-            "button_style_secondary_2": true
+            "button_link_2": "#"
           }
         }
       },
@@ -45,7 +43,8 @@
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "page_name": "service"
       }
     },
     "165276794068d36259": {
@@ -125,13 +124,17 @@
       "settings": {
         "color": "#f9f4f0",
         "heading": "How it works",
+        "sub-heading": "",
         "link": "",
         "btn_text": "Shop Now",
         "btn_url": "shopify:\/\/collections\/all",
         "sb-heading": "",
         "radius": 0,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "show_sub_title": false,
+        "group_buy_page": false,
+        "page": "services"
       }
     },
     "165276834663a5573d": {
@@ -139,7 +142,8 @@
       "settings": {
         "heading": "Ready to get started?",
         "btn_text": "Contact us",
-        "btn_type": "secondary"
+        "btn_type": "secondary",
+        "page_name": "home"
       }
     },
     "1653548703a8d9cba4": {
@@ -292,27 +296,9 @@
         "padding_bottom": 36
       }
     },
-    "16572557682a26b2f0": {
-      "type": "apps",
-      "blocks": {
-        "316151b6-7a30-481d-9150-ee05be6be912": {
-          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "animation": true,
-            "tags_exclude": "",
-            "tags_include": "",
-            "search": "",
-            "linkify": true,
-            "use_metafields": true,
-            "sku_tagtype": "sku"
-          }
-        }
-      },
-      "block_order": [
-        "316151b6-7a30-481d-9150-ee05be6be912"
-      ],
+    "ce111c94-3a0b-4427-b1b9-35a03f8e5477": {
+      "type": "section-stamped-review",
       "settings": {
-        "include_margins": false
       }
     }
   },
@@ -323,6 +309,6 @@
     "165276834663a5573d",
     "1653548703a8d9cba4",
     "1653548855ee6a3260",
-    "16572557682a26b2f0"
+    "ce111c94-3a0b-4427-b1b9-35a03f8e5477"
   ]
 }
