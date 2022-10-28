@@ -94,15 +94,14 @@
   padding: 0 ;
 }
 .ingredient__main {
-	display: flex;
+	display: grid;
+  grid-template-columns: 1fr 2fr;
   gap:10rem;
-  
 }
 .ingredient__left-container{
   gap:25rem;
 }
 .ingredient__heading {
-  padding-right:100px;
 }
 .ingredient__heading p{
   white-space: pre-line;
@@ -140,6 +139,7 @@
 @media screen and (max-width: 750px) {
   .ingredient__main {
     padding:25px 25px 50px 25px !important;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
   .qus-li img{
