@@ -50,8 +50,8 @@ filterOptions.forEach(filter => {
         return review.review.body.match(/\[[^\][]*]$/)[0].match(/\[(.*?)\]/)[1] == selectedFilter;
       }
     });
-    reviewArraToHtml([]);
-    setTimeout(()=> reviewArraToHtml(filtered_reviews), 100)
+    reviewArrayToHtml([]);
+    setTimeout(()=> reviewArrayToHtml(filtered_reviews), 100)
     mobileReviewHtmlGenaretor(filtered_reviews);
     mobile_review_html(filtered_reviews);
     let itemsToShow = document.querySelectorAll(`.mySwiper2 .swiper-slide`);
