@@ -196,7 +196,7 @@
           contents[0].click()
           // updating mobile details summary 
           const activeCategory = document.querySelector(".mobile-faq-category.active");
-          categorySummary.innerText = activeCategory.innerText;
+          categorySummary.innerText = `${activeCategory.textContent.trim().length > 12 ? `${activeCategory.textContent.trim().slice(0,12)}..` : activeCategory.textContent.trim() }`;
           categoryDetails.removeAttribute("open")
         });
       }
@@ -246,7 +246,7 @@
 
         type.classList.add('selected');
         typeDetails.removeAttribute("open")
-        TypeSummary.innerText = type.textContent.trim();
+        TypeSummary.innerText = `${type.textContent.trim().length > 12 ? `${type.textContent.trim().slice(0,12)}..` : type.textContent.trim() }`;
       });
     });
   };
