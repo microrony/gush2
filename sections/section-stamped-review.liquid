@@ -1,174 +1,172 @@
 {{ "section-stamped-review.css" | asset_url | stylesheet_tag }}
 
-{% style  %} 
-.stamped-reviews-slider-container .swiper-slide:not(.isActive) {
+{% style %}
+  .stamped-reviews-slider-container .swiper-slide:not(.isActive) {
     display: block !important;
-}
-.swiper-slide_full_width{
+  }
+  .swiper-slide_full_width {
     width: 260px !important;
-}
-.swiper-slide_half_width{
+  }
+  .swiper-slide_half_width {
     width: 260px !important;
-}
+  }
 {% endstyle %}
-<div class="stamped-review-main">
-    <div class="page-width">
-        
-        <div class="stamped_top">
-            <div>
-                <p class="gush-font-p2">Overall Rating</p>
-                <h1 class="gush-font-h1 average_rating"></h1>
-            </div>
-            <div class="top_review_info">
-                <p class="gush-font-p2 total_reviews">Reviews</p>
-                <p class="gush-font-p1 top_star_container">
-                    
-                </p>
-            </div>
-        </div>
-    <div class='stamped-reviews-slider-container'>
-        <div class="review_giving_container">
-            <form id="review_form">
-                <div class="review_name_and_email_input">
-                <div class="input_group">
-                <p>Name</p>
-                <input id="name" type="text" name="name" placeholder="Enter your name" />
-                </div>
-                <div class="input_group">
-                    <p>Email</p>
-                    <input id="email" type="email" name="email" placeholder="Enter your email" />
-                </div>
-                </div>
-                <div class="input_group">
-                    <p>Rating</p>
-                        <div class="rating_container">
-                    <label>
-                        <input type="radio" name="stars" value="1" />
-                        <span class="icon">★</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="stars" value="2" />
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="stars" value="3" />
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>   
-                    </label>
-                    <label>
-                        <input type="radio" name="stars" value="4" />
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="stars" value="5" />
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                    </label>
-                    </div>
-                </div>
-                <div class="input_group">
-                    <p>Title of Review</p>
-                    <input id="title" class="full_width_input" type="text" name="title" placeholder="Give your review a title" />
-                </div>
-                <div class="input_group">
-                    <p>How was your overall experience?</p>
-                    <textarea id="body" class="full_width_input" name="body" rows="10" cols="50" ></textarea>
-                </div>
-                <div class="input_group category_option">
-                    <p>Category :</p>
-                    <div>
-                        <input type="radio" id="option1" name="option" value="Option 1"/>
-                        <label for="option1">Option 1</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="option2" name="option" value="Option 2"/>
-                        <label for="option2">Option 2</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="option3" name="option" value="Option 3"/>
-                        <label for="option3">Option 3</label>
-                    </div>
-                </div>
+<div class="stamped-review-main" data-product-id="{{ product.id }}">
+  <div class="page-width">
 
-                <div class="review-form-submit-btn-container">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-        
-        <div class='stamped-reviews-filter-container gush-font-p1'>
-            {% for block in section.blocks %} 
-                <div class='option {% if forloop.first %} active {% endif %}' data-filter="{{block.settings.title}}">{{ block.settings.title }}</div>
-            {% endfor %}
-        </div>
-        <!-- Swiper -->
-        <div class="slider-content-main">
-            <div class="swiper-button-prev review-swiper-btn">{% render 'icon-arrow-left-gushi' %}</div>
-            <div class="swiper mySwiper2">
-                <div class="swiper-wrapper"></div>
-            </div>
-           <div class="swiper-button-next review-swiper-btn">{% render 'icon-arrow-right-gushi' %}</div>
-        </div>
-        <div class="stamped_review_mobile_droopdown">
-            <details class="review-mobile-dropdown">
-                <summary><span class="gush-font-p2 mobile_review_filter_option">{{ section.blocks[0].settings.title }}</span> {% render 'drop-down-icon' %}</summary>
-                <div class="options">
-                {% for block in section.blocks %}
-                        <div class="option {% if forloop.first -%}
-                        active
-                {%- endif -%}">
-                        <div class="gush-font-p1" data-filter="{{block.settings.title}}">{{ block.settings.title }}</div>
-                        </div>
-                {% endfor %} 
-                </div>
-            </details>
-        </div>
-        <div >
-            <div class="mobile-reviews-container">
-
-            </div>
-            <div class="mobile_review_pagination">
-            </div>
-        </div>
-        <div class="leave_review_btn_container">
-            <p class="gush-font-p1 leave_review_btn">Leave a Review</p>
-        </div>
-        </div>
-        <div class="leave_review_btn_container">
-            <p class="gush-font-p1 leave_review_btn mobile_review_btn_show">Leave a Review</p>
-        </div>
+    <div class="stamped_top">
+      <div>
+        <p class="gush-font-p2">Overall Rating</p>
+        <h1 class="gush-font-h1 average_rating"></h1>
+      </div>
+      <div class="top_review_info">
+        <p class="gush-font-p2 total_reviews">Reviews</p>
+        <p class="gush-font-p1 top_star_container"></p>
+      </div>
     </div>
-	</div>
+    <div class='stamped-reviews-slider-container'>
+      <div class="review_giving_container">
+        <form id="review_form">
+          <div class="review_name_and_email_input">
+            <div class="input_group">
+              <p>Name</p>
+              <input id="name" type="text" name="author" placeholder="Enter your name"/>
+            </div>
+            <div class="input_group">
+              <p>Email</p>
+              <input id="email" type="email" name="email" placeholder="Enter your email"/>
+            </div>
+          </div>
+          <div class="input_group">
+            <p>Rating</p>
+            <div class="rating_container">
+              <label>
+                <input type="radio" name="stars" value="1"/>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="stars" value="2"/>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="stars" value="3"/>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="stars" value="4"/>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="stars" value="5"/>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+            </div>
+          </div>
+          <div class="input_group">
+            <p>Title of Review</p>
+            <input id="title" class="full_width_input" type="text" name="reviewTitle" placeholder="Give your review a title"/>
+          </div>
+          <div class="input_group">
+            <p>How was your overall experience?</p>
+            <textarea id="body" class="full_width_input" name="reviewMessage" rows="10" cols="50"></textarea>
+          </div>
+          <div class="input_group category_option">
+            <p>Category :</p>
+            <div>
+              <input type="radio" id="option1" name="option" value="services"/>
+              <label for="option1">Services</label>
+            </div>
+            <div>
+              <input type="radio" id="option2" name="option" value="experience"/>
+              <label for="option2">Experience</label>
+            </div>
+            <div>
+              <input type="radio" id="option3" name="option" value="air-purifying"/>
+              <label for="option3">Air-Purifying</label>
+            </div>
+          </div>
+
+          <div class="review-form-submit-btn-container">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class='stamped-reviews-filter-container gush-font-p1'>
+        {% for block in section.blocks %}
+          <div class='option {% if forloop.first %} active {% endif %}' data-filter="{{ block.settings.title }}">{{ block.settings.title }}</div>
+        {% endfor %}
+      </div>
+      <!-- Swiper -->
+      <div class="slider-content-main">
+        <div class="swiper-button-prev review-swiper-btn">{% render 'icon-arrow-left-gushi' %}</div>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper"></div>
+        </div>
+        <div class="swiper-button-next review-swiper-btn">{% render 'icon-arrow-right-gushi' %}</div>
+      </div>
+      <div class="stamped_review_mobile_droopdown">
+        <details class="review-mobile-dropdown">
+          <summary>
+            <span class="gush-font-p2 mobile_review_filter_option">{{ section.blocks[0].settings.title }}</span>
+            {% render 'drop-down-icon' %}</summary>
+          <div class="options">
+            {% for block in section.blocks %}
+              <div class="option {% if forloop.first -%}
+                                          active
+                                  {%- endif -%}">
+                <div class="gush-font-p1" data-filter="{{ block.settings.title }}">{{ block.settings.title }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </details>
+      </div>
+      <div>
+        <div class="mobile-reviews-container"></div>
+        <div class="mobile_review_pagination"></div>
+      </div>
+      <div class="leave_review_btn_container">
+        <p class="gush-font-p1 leave_review_btn">Leave a Review</p>
+      </div>
+    </div>
+    <div class="leave_review_btn_container">
+      <p class="gush-font-p1 leave_review_btn mobile_review_btn_show">Leave a Review</p>
+    </div>
+  </div>
+</div>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="{{ 'section-stamped-review-custom.js' | asset_url }}" async></script>
 
-{% schema  %} 
-{   "name":"stamped review section",
-    "blocks":[
+{% schema %}
+{
+  "name": "stamped review section",
+  "blocks": [
+    {
+      "type": "review_category",
+      "name": "Review category",
+      "settings": [
         {
-            "type":"review_category",
-            "name":"Review category",
-            "settings":[
-                {
-                    "id": "title",
-                    "type": "text",
-                    "label": "Category name"
-                }
-            ]
+          "id": "title",
+          "type": "text",
+          "label": "Category name"
         }
-    ],
-    "presets": [
-		{
-		    "name": "Stamped review"
-		}
-    ]
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stamped review"
+    }
+  ]
 }
 {% endschema %}

@@ -289,19 +289,19 @@
         "41f19529-855a-4c94-b201-8d22e4acfb83": {
           "type": "review_category",
           "settings": {
-            "title": "Option 1"
+            "title": "Services"
           }
         },
         "eb811e8b-33a4-4246-ae7e-0d1fd358b67a": {
           "type": "review_category",
           "settings": {
-            "title": "Option 2"
+            "title": "Experience"
           }
         },
         "6850f52c-b7af-4632-a4e3-a448c324356f": {
           "type": "review_category",
           "settings": {
-            "title": "Option 3"
+            "title": "Air-Purifying"
           }
         }
       },
