@@ -7,7 +7,7 @@
   line-height: 100%;
   letter-spacing: -0.04em;
   width: 48%;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 	margin-top: 0;
 }
 
@@ -43,6 +43,11 @@
   color: #fff;
   border: none;
 }
+.mobile-faq-category.active {
+  background-color: #ff42ef;
+  color: #fff;
+  border: none;
+}
 
 .faq-category {
   padding: 1.5rem;
@@ -63,6 +68,11 @@
 
 .faq-type.selected {
   color: #ff42ef;
+}
+.mobile-faq-type.selected {
+  background-color: #ff42ef;
+  color: #fff;
+  border: none;
 }
 
 .faq-type {
@@ -124,8 +134,14 @@ svg.icon.icon-minus-new.is-active {
 .faq__contents .faq-type {
   display: none;
 }
+.faq__contents .mobile-faq-type {
+  display: none;
+}
 
 .faq__contents .faq-type.active {
+  display: block;
+}
+.faq__contents .mobile-faq-type.active {
   display: block;
 }
 
@@ -168,8 +184,26 @@ svg.icon.icon-minus-new.is-active {
 p.faq_ans.is-active {
   border-bottom: 1px solid rgba(45, 32, 20, 0.5);
 }
+.faq-mobile-dropdown-container{
+  display: none;
+}
 
-@media screen and (min-width: 350px) and (max-width: 990px) {
+@media screen and (max-width: 990px) {
+  .faq {
+    padding-top: 40px !important;
+  }
+  .mobile-faq-type {
+    display: none;
+  }
+  .faq__main-content{
+    padding-top: 2rem;
+  }
+  .faq__heading h1{ 
+    margin-bottom: 3rem !important;
+  }
+  .mobile-faq-type.active {
+    display: block;
+  }
   .faq__heading h1 {
     font-size: 6rem;
     width: 100%;
@@ -193,8 +227,9 @@ p.faq_ans.is-active {
   }
 
   .faq__contents {
+    margin-top: 0;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
   }
 
   .faq__types {
@@ -203,5 +238,53 @@ p.faq_ans.is-active {
 
   .faq__qas {
     width: 100%;
+  }
+  /* mobile details dropdown style  */
+  .faq__categories{
+    display: none;
+  }
+  .faq__types{
+    display: none;
+  }
+  .faq-mobile-dropdown-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+  }
+  .faq_mobile_select_container summary span{
+    white-space: pre;
+  }
+  .faq_mobile_select_container summary{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-categories-container, .mobile-types-container{
+    margin-top: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+  }
+  .faq-mobile-dropdown-container .option{
+    padding: 4px 12px;
+  }
+  .icon{
+    width: 9px;
+    height: 9px;
+  }
+  .faq_qus{
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(45, 32, 20, 0.177);
+  }
+  p.faq_ans.is-active {
+    border-bottom: 1px solid rgba(45, 32, 20, 0.177);
+  }
+  .faq__qas {
+    border-top: 1px solid rgba(45, 32, 20, 0.177);
+  }
+  .faq_qus p{
+    margin: 0;
   }
 }

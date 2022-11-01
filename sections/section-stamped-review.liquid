@@ -1,15 +1,11 @@
-{{ "section-stamped-review.css" | asset_url | stylesheet_tag }}
+{{ "section-stamped-review-custom.css" | asset_url | stylesheet_tag }}
 
 {% style %}
   .stamped-reviews-slider-container .swiper-slide:not(.isActive) {
     display: block !important;
-  }
-  .swiper-slide_full_width {
-    width: 260px !important;
-  }
-  .swiper-slide_half_width {
-    width: 260px !important;
-  }
+}
+
+
 {% endstyle %}
 <div class="stamped-review-main" data-product-id="{{ product.id }}">
   <div class="page-width">

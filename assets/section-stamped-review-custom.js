@@ -50,16 +50,20 @@ filterOptions.forEach(filter => {
         return review.review.body.match(/\[[^\][]*]$/)[0].match(/\[(.*?)\]/)[1] == selectedFilter;
       }
     });
-    reviewArrayToHtml(filtered_reviews);
+    reviewArraToHtml([]);
+    setTimeout(()=> reviewArraToHtml(filtered_reviews), 100)
     mobileReviewHtmlGenaretor(filtered_reviews);
     mobile_review_html(filtered_reviews);
     let itemsToShow = document.querySelectorAll(`.mySwiper2 .swiper-slide`);
     itemsToShow.forEach(item => {
       if (filtered_reviews.length == 1) {
-        item.classList.add('swiper-slide_full_width');
+        item.classList.add('swiper-slide_custom_width');
       }
       if (filtered_reviews.length == 2) {
-        item.classList.add('swiper-slide_half_width');
+        item.classList.add('swiper-slide_custom_width');
+      }
+      if(filtered_reviews.length > 2){
+        item.classList.remove('swiper-slide_custom_width');
       }
     });
   });
@@ -164,7 +168,6 @@ function reviewArrayToHtml(arr) {
 
     return sliderHTML;
   });
-
   const swiper_wrapper = document.querySelector(
     '.slider-content-main .swiper-wrapper'
   );
@@ -302,11 +305,28 @@ function leaveReviewBtnHandler(e) {
 
 // swiper settings
 var stampedSliderSwiper = new Swiper('.mySwiper2', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
-  slidesPerGroup: 3,
+  slidesPerGroup: 1,
   loop: false,
   loopFillGroupWithBlank: true,
+  breakpoints: {
+    750: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1
+    },
+    990: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2
+    },
+    1150: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3
+    },
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

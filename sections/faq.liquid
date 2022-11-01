@@ -25,9 +25,10 @@ margin-top: 0 !important;
 	<div class="faq page-width section-{{ section.id }}-padding">
 		<div class="rte faq__main">
 			<div class="faq__heading">
-				<h1>{{ section.settings.heading }}</h1>
+				<h1 class="gush-font-h1">{{ section.settings.heading }}</h1>
 			</div>
 			<div class="faq__main-content">
+				
 				<div class="faq__categories">
 					{% for block in section.blocks %}
 					<div class="faq-category gush-font-teritary"
@@ -36,14 +37,39 @@ margin-top: 0 !important;
 					</div>
 					{% endfor %}
 				</div>
+					
 				<div class="faq__contents">
-					<div class="faq__types">
+					<div class="faq__types"> 
 						{% for block in section.blocks %}
-						<div class="faq-type faq-category-{{ block.settings.category | handleize }}"
+						<div class="faq-type gush-font-p1 faq-category-{{ block.settings.category | handleize }}"
 							data-type-id="faq-{{ block.settings.category | append: '-' | append: block.settings.type  | handleize }}">
 							{{ block.settings.type }}
 						</div>
 						{% endfor %}
+					</div>
+					<div class="faq-mobile-dropdown-container">
+						<details class="faq_mobile_select_container category_selection_details">
+						<summary><span class="active-category-mobile gush-font-teritary"></span> {% render 'drop-down-icon' %}</summary>
+							<div class="mobile-categories-container">
+								{% for block in section.blocks %}
+									<div class="mobile-faq-category gush-font-teritary option"
+									data-category-id="mobile-faq-category-{{ block.settings.category | handleize }}">
+										{{ block.settings.category }}
+									</div>
+								{% endfor %}
+							</div>
+						</details>
+						<details class="faq_mobile_select_container type_selection_details">
+							<summary><span class="active-type-mobile gush-font-teritary"></span> {% render 'drop-down-icon' %}</summary>
+							<div class="mobile-types-container">
+								{% for block in section.blocks %}
+									<div class="gush-font-teritary mobile-faq-type mobile-faq-category-{{ block.settings.category | handleize }} option"
+										data-type-id="faq-{{ block.settings.category | append: '-' | append: block.settings.type  | handleize }}">
+										{{ block.settings.type }}
+									</div>
+								{% endfor %}
+							</div>
+						</details>
 					</div>
 					<div class="faq__qas">
 						{% for block in section.blocks %}
@@ -51,11 +77,11 @@ margin-top: 0 !important;
 							<div class="question">
 								<div class="q-ans__block" id="faq__block">
 									<div class="faq_qus" id="faq_qus" data-content-id="faq_{{ forloop.index }}">
-										<p class="faq_q">{{ block.settings.title }}</p>
+										<p class="faq_q gush-font-p2">{{ block.settings.title }}</p>
 										<span>{% render 'icon-plus-new' %}{% render 'icon-minus-new' %}</span>
 									</div>
 									<div class="question__ans">
-										<p class="faq_ans" id="faq_{{ forloop.index }}">
+										<p class="faq_ans gush-font-p2" id="faq_{{ forloop.index }}">
 											{{ block.settings.answer }}
 										</p>
 									</div>
