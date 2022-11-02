@@ -32,13 +32,40 @@
   .collection-tabs {display: flex;justify-content: space-between;border-bottom: 1px solid;}
   .collection-tabs__name {margin-bottom: 45px;}
   .collectionBannerInner {display: flex;position: relative;width: 100%; min-height: 15rem;}
-  .collectionBannerInner__content {display: flex;flex-direction: column;justify-content: center;padding: 5% 5%;}
+  .collectionBannerInner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 5%;
+  }
   .collectionBannerInner__content svg {position: absolute;right: 3%;height: 19%;}
   .collectionBannerInner__content h2 {margin: 0; font-size: 2.26em;}
   .collectionBannerInner__img img {height: 100%;width: 100%;}
   .collectionBannerInner__content p {width: 80%;margin: 2% 0; color: rgba(var(--color-secondary-6))}
   .collection-tabs a{text-decoration: none;color: rgba(var(--color-secondary-6));}
   .collection-tabs a.bottom_line{border-bottom:2px solid #FF5DED;}
+  @media screen and (max-width: 750px){
+    .collectionBannerInner__content svg {
+      display: none;
+    }
+     .collectionBannerInner__content {
+      padding: 10px 15px;
+    }
+    .collectionBannerInner {
+      min-height: 10rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    .collectionBannerInner__img img {
+    }
+    .collectionBannerInner__content h2 {
+      font-size: 14px !important;
+    }
+    .collectionBannerInner__content p {
+      font-size: 10px !important;
+      margin-top: 5px;
+    }
+  }
 
 </style>
 
