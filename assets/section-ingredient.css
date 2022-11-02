@@ -22,9 +22,11 @@
   /* display: none; */
   visibility: hidden;
   max-height: 0;
+	/* height: 0; */
   opacity: 0;
   transition: all ease 250ms;
   margin: 0;
+	white-space: pre-line;
 }
 
 .question .q-ans__block p.faq_ans.is-active {
@@ -32,6 +34,7 @@
   visibility: visible;
   opacity: 1;
   max-height: 400px;
+	/* height: 100%; */
   margin: 15px 0;
 }
 
