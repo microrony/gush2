@@ -248,6 +248,12 @@ p.faq_ans.is-active {
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
   }
+  .faq_mobile_select_container {
+    position: relative;
+  }
+  .type_selection_details {
+    position: relative;
+  }
   .faq_mobile_select_container summary span{
     white-space: pre;
   }
@@ -260,9 +266,13 @@ p.faq_ans.is-active {
     align-items: center;
   }
   .mobile-categories-container, .mobile-types-container{
+    position: absolute;
+    background: #ffffff;
+    z-index: 1;
     margin-top: 5px;
     border: 1px solid gainsboro;
     border-radius: 4px;
+    width: 100%;
   }
   .faq-mobile-dropdown-container .option{
     padding: 4px 12px;
