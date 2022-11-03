@@ -290,6 +290,7 @@ function leaveReviewBtnHandler(e) {
   const name = document.querySelector('#review_form #name');
   if (show_review_container) {
     review_container.style.display = 'block';
+    const name = form.querySelector("#name");
     name.focus();
   } else {
     review_container.style.display = 'none';
