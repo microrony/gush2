@@ -5,7 +5,7 @@ class FacetFiltersForm extends HTMLElement {
 
     this.debouncedOnSubmit = debounce((event) => {
       this.onSubmitHandler(event);
-    }, 500);
+    }, 200);
 
     this.querySelector('form').addEventListener('input', this.debouncedOnSubmit.bind(this));
 
@@ -14,6 +14,7 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   static setListeners() {
+    
     const onHistoryChange = (event) => {
       const searchParams = event.state ? event.state.searchParams : FacetFiltersForm.searchParamsInitial;
       if (searchParams === FacetFiltersForm.searchParamsPrev) return;
@@ -90,7 +91,6 @@ class FacetFiltersForm extends HTMLElement {
 
   static renderFilters(html, event) {
     const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
-
     const facetDetailsElements =
       parsedHTML.querySelectorAll('#FacetFiltersForm .js-filter, #FacetFiltersFormMobile .js-filter');
     const matchesIndex = (element) => {
@@ -105,7 +105,6 @@ class FacetFiltersForm extends HTMLElement {
     });
 
     FacetFiltersForm.renderActiveFacets(parsedHTML);
-    FacetFiltersForm.renderAdditionalElements(parsedHTML);
 
     if (countsToRender) FacetFiltersForm.renderCounts(countsToRender, event.target.closest('.js-filter'));
   }
@@ -120,17 +119,6 @@ class FacetFiltersForm extends HTMLElement {
     })
 
     FacetFiltersForm.toggleActiveFacets(false);
-  }
-
-  static renderAdditionalElements(html) {
-    const mobileElementSelectors = ['.mobile-facets__open', '.mobile-facets__count', '.sorting'];
-
-    mobileElementSelectors.forEach((selector) => {
-      if (!html.querySelector(selector)) return;
-      document.querySelector(selector).innerHTML = html.querySelector(selector).innerHTML;
-    });
-
-    document.getElementById('FacetFiltersFormMobile').closest('menu-drawer').bindEvents();
   }
 
   static renderCounts(source, target) {
@@ -223,3 +211,22 @@ class FacetRemove extends HTMLElement {
 }
 
 customElements.define('facet-remove', FacetRemove);
+
+// for closing details tag when click outside of it
+const detailsContainer = document.querySelector('.sort_details_container');
+document.addEventListener('click', function handleClickOutsideBox(event) {
+  if (!detailsContainer.contains(event.target)) {
+    detailsContainer.removeAttribute("open");
+  }
+});
+// updating sort filter title text
+const filterHeading = document.querySelector("#sort_filter_title");
+const sortList = document.querySelectorAll("#sort_options_container label");
+sortList.forEach(list=>{
+  list.addEventListener("click", ()=>{
+    sortList.forEach(l=>l.classList.remove("active"))
+    list.classList.add("active")
+    filterHeading.innerText = list.textContent.trim()
+    detailsContainer.removeAttribute("open");
+    })
+})

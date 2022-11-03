@@ -1,0 +1,100 @@
+#FacetFiltersForm{
+  gap: 3rem;
+}
+.sort_details_container{
+  position: relative;
+}
+.sort_details_container ul{
+    width: 35rem;
+    position: absolute;
+    z-index: 9999;
+    border: 1px solid #c9c9c96e;
+    margin-top: 5px;
+  }
+  .sort_details_container .active{
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .sort_details_container input{
+    appearance: none;
+  }
+  .sort_details_container ul{
+    background: #ffffff;
+    padding: 1rem 2rem;
+  }
+  #sort_details_summary{
+    padding: 0 2rem ;
+    min-width: 200px;
+  }
+  .active-facets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin: 20px 0 20px 0 !important;
+  }
+  .active-facets a{
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: var(--badge-corner-radius);
+    transition: .1s;
+  }
+  .active-facets a:hover{
+    background: red;
+  }
+  .active-facets a:hover .facet_filter_title{
+    display: none;
+  }
+  .active-facets a:hover .facet_hover_text{
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+  }
+  .clear_all_facets a{
+    background: none;
+    color: #000000 ;
+    padding: 10px 20px;
+    text-decoration: underline;
+  }
+  .clear_all_facets a:hover{
+    background: none;
+  }
+  .facet_hover_text{
+    display: none;
+  }
+  @media screen and (max-width: 750px) {
+    #FacetFiltersForm{
+      width: 100%;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 50% 50%
+    }
+    #FacetFiltersForm details{
+      width: 100%;
+    }
+    #FacetFiltersForm summary{
+      padding: 8px 10px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #796e6281;
+    }
+    #sort_details_summary{
+      padding: 0 2rem ;
+      min-width: 100%;
+    }
+    .facets__disclosure{
+      position: relative !important;
+    }
+    .facets__display{
+      width: calc(200% + 10px) !important;
+      left: 0 !important;
+    }
+    #sort_options_container{
+      width: calc(200% + 10px);
+      right: 0;
+    }
+  }
