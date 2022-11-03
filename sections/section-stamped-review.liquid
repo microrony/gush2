@@ -1,10 +1,10 @@
 {{ "section-stamped-review-custom.css" | asset_url | stylesheet_tag }}
+<script src="{{ 'section-stamped-review-custom.js' | asset_url }}" type="module" async></script>
 
 {% style %}
   .stamped-reviews-slider-container .swiper-slide:not(.isActive) {
     display: block !important;
 }
-
 
 {% endstyle %}
 <div class="stamped-review-main" data-product-id="{{ product.id }}">
@@ -140,8 +140,9 @@
     </div>
   </div>
 </div>
+
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="{{ 'section-stamped-review-custom.js' | asset_url }}" async></script>
+
 
 {% schema %}
 {
