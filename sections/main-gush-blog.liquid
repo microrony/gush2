@@ -25,7 +25,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 </div>
 
 	<div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-		{%- for article in blog.articles -%}
+		{%- for article in blog.articles limit: 1 -%}
 		<div class="blog-articles__article article">
 			{%- render 'main-article-card',
 			article: article,
