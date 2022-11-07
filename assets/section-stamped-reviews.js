@@ -6,7 +6,6 @@ import {
   ratingBuilder,
   paginationGenerator,
 } from './helpers.js';
-import data from './reviews.js';
 
 const PUBKEY = 'pubkey-AO91DKEz2x93p9q306GOxS9WrDNZ6k';
 const PASSWORD = 'key-67RLw0h5WNIe0o3Bp9Yn3rE73xkYi5';
@@ -274,7 +273,7 @@ const initialize = reviews => {
 
     total_review.innerText = `${reviews.length} Reviews`;
     average_rating.innerText = overallRating(reviews);
-    top_star_container.innerHTML = ratingBuilder(overallRating(data));
+    top_star_container.innerHTML = ratingBuilder(overallRating(reviews));
   };
 
   overallRatingReviews();
@@ -303,8 +302,8 @@ fetch(getReviewsAPIUrl, requestOptions)
     }
     return response.json();
   })
-  .then(data => {
-    const reviews = data.results.map(
+  .then(json => {
+    const reviews = json.results.map(
       ({ review: { title, author, body, rating } }) => ({
         title,
         author,
