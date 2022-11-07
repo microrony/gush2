@@ -1,5 +1,5 @@
 {{ "section-stamped-review-custom.css" | asset_url | stylesheet_tag }}
-<script src="{{ 'section-stamped-review-custom.js' | asset_url }}" type="module" async></script>
+<script src="{{ 'section-stamped-reviews.js' | asset_url }}" type="module" async></script>
 
 {% style %}
   .stamped-reviews-slider-container .swiper-slide:not(.isActive) {
@@ -100,7 +100,7 @@
 
       <div class='stamped-reviews-filter-container gush-font-p1'>
         {% for block in section.blocks %}
-          <div class='option {% if forloop.first %} active {% endif %}' data-filter="{{ block.settings.title }}">{{ block.settings.title }}</div>
+          <div class='option{% if forloop.first %} active{% endif %}' data-filter="{{ block.settings.title | handleize }}">{{ block.settings.title }}</div>
         {% endfor %}
       </div>
       <!-- Swiper -->
