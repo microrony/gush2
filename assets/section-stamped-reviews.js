@@ -1,14 +1,88 @@
-import {
-  handleize,
-  overallRating,
-  getRatingValue,
-  ratingBuilder,
-  paginationGenerator,
-} from './helpers.js';
-
 const PUBKEY = 'pubkey-AO91DKEz2x93p9q306GOxS9WrDNZ6k';
 const PASSWORD = 'key-67RLw0h5WNIe0o3Bp9Yn3rE73xkYi5';
 const STOREHASH = '261547';
+
+// Helpers Functions
+// Shopify handleize in JavaScript
+const handleize = (str) => {
+	str = str.toLowerCase();
+
+	var toReplace = ['"', "'", "\\", "(", ")", "[", "]"];
+
+	// For the old browsers
+	for (var i = 0; i < toReplace.length; ++i) {
+		str = str.replace(toReplace[i], "");
+	}
+
+	str = str.replace(/\W+/g, "-");
+
+	if (str.charAt(str.length - 1) == "-") {
+		str = str.replace(/-+\z/, "");
+	}
+
+	if (str.charAt(0) == "-") {
+		str = str.replace(/\A-+/, "");
+	}
+
+	return str;
+};
+
+// avarage rating calculating function
+const overallRating = (data) => {
+  const average_rating = data.reduce((accu, result) => {
+    accu += result.rating;
+    return accu;
+  }, 0);
+  return (average_rating / data.length).toFixed(1);
+}
+
+// get rating value
+const getRatingValue = (name) => {
+  const stars = document.getElementsByName(name);
+  for (let i = 0; i < stars.length; i++) {
+    if (stars[i].checked) return stars[i].value;
+  }
+}
+
+// number to rating builder
+const  ratingBuilder = (rating) => {
+	let rating_element = '';
+	for (let i = 1; i < 6; i++) {
+		if (i <= rating) {
+			rating_element += `<span class="fa-regular fa-star colored_star"></span>`;
+		} else {
+			if (rating >= `${i - 1}.5`) {
+				rating_element += `<span class="fa-regular fa-star colored_star"></span>`;
+			} else {
+				rating_element += `<span class="fa-regular fa-star"></span>`;
+			}
+		}
+	}
+	return rating_element;
+}
+
+// pagination generator
+const paginationGenerator = (pCount) => {
+  let paginationList = '';
+
+  for (let i = 1; i <= pCount + 1; i++) {
+    if (i <= pCount) {
+      paginationList += `<li class="gush-font-teritary ${
+        i == 1 && 'pagination-active'
+      }" pagination-page="${i}">${i}</li>`;
+    } else {
+      paginationList += `<button class="pagination_next_btn" pagination-page="next" >></button>`;
+    }
+  }
+  return paginationList;
+}
+
+const category = (reviewMessage) => {
+	return reviewMessage.match(/\[[^\][]*]$/)
+? reviewMessage.match(/\[[^\][]*]$/)[0].match(/\[(.*?)\]/)[1]
+: 'all'
+}
+// ****************
 
 const initialize = reviews => {
   const swiperWrapper = document.querySelector(
@@ -301,9 +375,7 @@ fetch(getReviewsAPIUrl, requestOptions)
         author,
         rating,
         reviewMessage: body.replace(/\[[^\][]*]$/, ''),
-        category: handleize(body.match(/\[[^\][]*]$/)
-				? body.match(/\[[^\][]*]$/)[0].match(/\[(.*?)\]/)[1]
-				: 'all'),
+        category: handleize(category(body)),
       })
     );
 
