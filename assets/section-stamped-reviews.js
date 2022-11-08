@@ -302,7 +302,9 @@ fetch(getReviewsAPIUrl, requestOptions)
         author,
         rating,
         reviewMessage: body.replace(/\[[^\][]*]$/, ''),
-        category: handleize(category(body)),
+        category: handleize(body.match(/\[[^\][]*]$/)
+				? body.match(/\[[^\][]*]$/)[0].match(/\[(.*?)\]/)[1]
+				: 'all'),
       })
     );
 
