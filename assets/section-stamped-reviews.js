@@ -2,7 +2,6 @@ import {
   handleize,
   overallRating,
   getRatingValue,
-  category,
   ratingBuilder,
   paginationGenerator,
 } from './helpers.js';
