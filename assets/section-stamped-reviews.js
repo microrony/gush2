@@ -33,6 +33,8 @@ const initialize = reviews => {
   let lastCategory = activeCategory;
   let finalGroup;
 
+	// Not refactored
+
   leave_review_btn.addEventListener('click', leaveReviewBtnHandler);
   mobile_leave_review_btn.addEventListener('click', leaveReviewBtnHandler);
 
@@ -108,6 +110,8 @@ const initialize = reviews => {
     }
   }
 
+	// ***********
+
   const postReview = formData => {
     let myPostHeaders = new Headers();
     myPostHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -172,7 +176,7 @@ const initialize = reviews => {
         .textContent
     );
 
-    // ***************
+    // Not refactored
     document.querySelector('.review-mobile-dropdown').removeAttribute('open');
     let selectedFilter = handleize(e.target.getAttribute('data-filter'));
     const review_mobile_selected_filter = document.querySelector(
@@ -180,7 +184,7 @@ const initialize = reviews => {
     );
     review_mobile_selected_filter.innerText =
       e.target.getAttribute('data-filter');
-    // ***************
+    // *************
 
     if (activeCategory === lastCategory) {
       return;
@@ -197,7 +201,7 @@ const initialize = reviews => {
 
         updateDisplay();
         stampedSliderSwiper.update();
-        // ********************
+        // Not refactored
         mobileReviewHtmlGenaretor(finalGroup);
         mobile_review_html(finalGroup);
       } else {
@@ -207,6 +211,9 @@ const initialize = reviews => {
 
         updateDisplay();
         stampedSliderSwiper.update();
+				// Not refactored
+				mobileReviewHtmlGenaretor(finalGroup);
+        mobile_review_html(finalGroup);
       }
     }
   };
