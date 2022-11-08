@@ -15,9 +15,7 @@ const initialize = reviews => {
   const swiperWrapper = document.querySelector(
     '.slider-content-main .swiper-wrapper'
   );
-  const categories = document.querySelectorAll(
-    '.stamped-reviews-filter-container .option'
-  );
+  const categories = document.querySelectorAll('.stamped-review-main .option');
   const form = document.getElementById('review_form');
   const leave_review_btn = document.querySelector('.leave_review_btn');
   const mobile_leave_review_btn = document.querySelector(
@@ -26,14 +24,13 @@ const initialize = reviews => {
 
   let page = 1;
   let show_review_container = false;
-  let activeCategory = handleize(
-    document.querySelector('.stamped-reviews-filter-container .option.active')
-      .textContent
-  );
-  let lastCategory = activeCategory;
+  let selectedCategory = document.querySelector(
+    '.stamped-review-main .option.active'
+  ).dataset.filter;
+  let lastCategory = selectedCategory;
   let finalGroup;
 
-	// Not refactored
+  // Not refactored
 
   leave_review_btn.addEventListener('click', leaveReviewBtnHandler);
   mobile_leave_review_btn.addEventListener('click', leaveReviewBtnHandler);
@@ -110,7 +107,7 @@ const initialize = reviews => {
     }
   }
 
-	// ***********
+  // ***********
 
   const postReview = formData => {
     let myPostHeaders = new Headers();
@@ -154,10 +151,8 @@ const initialize = reviews => {
       .productId;
 
     formData.productId = productId;
-    formData.reviewRating =
-      getRatingValue('stars') == undefined ? 1 : getRatingValue('stars');
-    formData.category =
-      getRatingValue('option') == undefined ? 'all' : getRatingValue('option');
+    formData.reviewRating = getRatingValue('stars');
+    formData.category = getRatingValue('option') ?? 'all';
 
     postReview(formData);
   };
@@ -171,32 +166,23 @@ const initialize = reviews => {
       category.classList.remove('active');
     });
     e.target.classList.add('active');
-    activeCategory = handleize(
-      document.querySelector('.stamped-reviews-filter-container .option.active')
-        .textContent
-    );
+
+    const selectedCategory = e.target.dataset.filter;
 
     // Not refactored
     document.querySelector('.review-mobile-dropdown').removeAttribute('open');
-    let selectedFilter = handleize(e.target.getAttribute('data-filter'));
     const review_mobile_selected_filter = document.querySelector(
       '.mobile_review_filter_option'
     );
-    review_mobile_selected_filter.innerText =
-      e.target.getAttribute('data-filter');
+    review_mobile_selected_filter.innerText = e.target.textContent;
     // *************
 
-    if (activeCategory === lastCategory) {
+    if (selectedCategory === lastCategory) {
       return;
     } else {
-      activeCategory = handleize(
-        document.querySelector(
-          '.stamped-reviews-filter-container .option.active'
-        ).textContent
-      );
-      lastCategory = activeCategory;
+      lastCategory = e.target.dataset.filter;
 
-      if (activeCategory === 'all-reviews') {
+      if (selectedCategory === 'all-reviews') {
         finalGroup = reviews;
 
         updateDisplay();
@@ -206,13 +192,13 @@ const initialize = reviews => {
         mobile_review_html(finalGroup);
       } else {
         finalGroup = reviews.filter(
-          review => review.category === activeCategory
+          review => review.category === selectedCategory
         );
 
         updateDisplay();
         stampedSliderSwiper.update();
-				// Not refactored
-				mobileReviewHtmlGenaretor(finalGroup);
+        // Not refactored
+        mobileReviewHtmlGenaretor(finalGroup);
         mobile_review_html(finalGroup);
       }
     }
