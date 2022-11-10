@@ -20,7 +20,12 @@
              {{section.settings.para}}
             </div>
             <div class="card-section__image">
-                <img src="{{section.settings.image1 | img_url: 'medium'}}" alt="image">
+                {{ section.settings.image1 | image_url: width: nil | image_tag:
+                  loading: 'lazy',
+                  width: section.settings.image1.width,
+                  widths: '375, 550, 750, 1100, 1500',
+                  alt: section.settings.image1.alt | escape
+                }}
             </div>
           </div>
         </div>
@@ -33,7 +38,12 @@
                {{section.settings.para2}}
             </div>
             <div class="card-section__image">
-                <img src="{{section.settings.image2 | img_url: 'medium'}}" alt="image">
+                {{ section.settings.image2 | image_url: width: nil | image_tag:
+                  loading: 'lazy',
+                  width: section.settings.image2.width,
+                  widths: '375, 550, 750, 1100, 1500',
+                  alt: section.settings.image2.alt | escape
+                }}
             </div>
         </div>
       </div>

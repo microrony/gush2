@@ -44,9 +44,30 @@
     <div class="about-partner__logos">
 
      {%- if section.settings.page_name != "group_buy" -%}
-      <div class="about-partner__logos-img"><img src="{{ section.settings.image1 | img_url: 'medium' }}" alt="logo"></div>
-      <div class="about-partner__logos-img"><img src="{{ section.settings.image2 | img_url: 'medium' }}" alt="logo"></div>
-      <div class="about-partner__logos-img"><img src="{{ section.settings.image3 | img_url: 'medium' }}" alt="logo"></div>
+      <div class="about-partner__logos-img">
+        {{ section.settings.image1 | image_url: width: 300 | image_tag:
+          loading: 'lazy',
+          width: section.settings.image1.width,
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image1.alt | escape
+        }}
+      </div>
+      <div class="about-partner__logos-img">
+        {{ section.settings.image2 | image_url: width: 300 | image_tag:
+          loading: 'lazy',
+          width: section.settings.image2.width,
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image2.alt | escape
+        }}
+      </div>
+      <div class="about-partner__logos-img">
+        {{ section.settings.image3 | image_url: width: 300 | image_tag:
+          loading: 'lazy',
+          width: section.settings.image3.width,
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image3.alt | escape
+        }}
+      </div>
      {%- endif -%}
 
     </div>

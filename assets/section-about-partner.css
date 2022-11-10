@@ -4,6 +4,7 @@
 .about-partner__logos {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 	gap: 1.6rem;
 }
 .about-partner__heading h2 {
