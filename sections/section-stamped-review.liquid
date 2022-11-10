@@ -1,10 +1,10 @@
 {{ "section-stamped-review-custom.css" | asset_url | stylesheet_tag }}
+<script src="{{ 'section-stamped-reviews.js' | asset_url }}" type="module" async></script>
 
 {% style %}
   .stamped-reviews-slider-container .swiper-slide:not(.isActive) {
     display: block !important;
 }
-
 
 {% endstyle %}
 <div class="stamped-review-main" data-product-id="{{ product.id }}">
@@ -26,18 +26,18 @@
           <div class="review_name_and_email_input">
             <div class="input_group">
               <p>Name</p>
-              <input id="name" type="text" name="author" placeholder="Enter your name"/>
+              <input id="name" type="text" name="author" placeholder="Enter your name" required/>
             </div>
             <div class="input_group">
               <p>Email</p>
-              <input id="email" type="email" name="email" placeholder="Enter your email"/>
+              <input id="email" type="email" name="email" placeholder="Enter your email" required/>
             </div>
           </div>
           <div class="input_group">
             <p>Rating</p>
             <div class="rating_container">
               <label>
-                <input type="radio" name="stars" value="1"/>
+                <input type="radio" name="stars" value="1" checked/>
                 <span class="icon">★</span>
               </label>
               <label>
@@ -70,11 +70,11 @@
           </div>
           <div class="input_group">
             <p>Title of Review</p>
-            <input id="title" class="full_width_input" type="text" name="reviewTitle" placeholder="Give your review a title"/>
+            <input id="title" class="full_width_input" type="text" name="reviewTitle" placeholder="Give your review a title" required/>
           </div>
           <div class="input_group">
             <p>How was your overall experience?</p>
-            <textarea id="body" class="full_width_input" name="reviewMessage" rows="10" cols="50"></textarea>
+            <textarea id="body" class="full_width_input" name="reviewMessage" rows="10" cols="50" required></textarea>
           </div>
           <div class="input_group category_option">
             <p>Category :</p>
@@ -100,7 +100,7 @@
 
       <div class='stamped-reviews-filter-container gush-font-p1'>
         {% for block in section.blocks %}
-          <div class='option {% if forloop.first %} active {% endif %}' data-filter="{{ block.settings.title }}">{{ block.settings.title }}</div>
+          <div class='option{% if forloop.first %} active{% endif %}' data-filter="{{ block.settings.title | handleize }}">{{ block.settings.title }}</div>
         {% endfor %}
       </div>
       <!-- Swiper -->
@@ -118,10 +118,8 @@
             {% render 'drop-down-icon' %}</summary>
           <div class="options">
             {% for block in section.blocks %}
-              <div class="option {% if forloop.first -%}
-                                          active
-                                  {%- endif -%}">
-                <div class="gush-font-p1" data-filter="{{ block.settings.title }}">{{ block.settings.title }}</div>
+              <div class="option{% if forloop.first %} active{% endif %}">
+                <div class="gush-font-p1" data-filter="{{ block.settings.title | handleize }}">{{ block.settings.title }}</div>
               </div>
             {% endfor %}
           </div>
@@ -140,8 +138,9 @@
     </div>
   </div>
 </div>
+
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="{{ 'section-stamped-review-custom.js' | asset_url }}" async></script>
+
 
 {% schema %}
 {
