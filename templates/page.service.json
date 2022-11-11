@@ -298,6 +298,17 @@
     },
     "ce111c94-3a0b-4427-b1b9-35a03f8e5477": {
       "type": "section-stamped-review",
+      "blocks": {
+        "74af1450-7cd6-4d12-adb7-3497ad30ed98": {
+          "type": "review_category",
+          "settings": {
+            "title": "All Reviews"
+          }
+        }
+      },
+      "block_order": [
+        "74af1450-7cd6-4d12-adb7-3497ad30ed98"
+      ],
       "settings": {
       }
     }
