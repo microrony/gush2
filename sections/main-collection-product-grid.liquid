@@ -67,7 +67,7 @@
     }
   }
 
-</style>
+</style> 
 
 <div class="section-{{ section.id }}-padding">
   {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
@@ -115,9 +115,7 @@
               grid--{{ section.settings.columns_desktop }}-col-desktop
             {% endif %} event-container">
             {% assign counter = 0 %}
- 
             {%- for product in collection.products -%}
-          
             {% if counter == section.settings.ad_product_count %} 
               <div class="collectionBannerInner" style= "background-color:{{ section.settings.bg_color }};">
                 <div class="collectionBannerInner__img"><img src="{{ section.settings.bg_img | img_url: 'medium'}}" alt="BG Image"></div>
@@ -159,7 +157,6 @@
     {%- endpaginate -%}
   </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script>
 const accessToken="0e59226f7349d1302e2b493ec3e45c59";
 async function apiCall(query) {

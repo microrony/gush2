@@ -23,7 +23,8 @@
                 {{ section.settings.image1 | image_url: width: nil | image_tag:
                   loading: 'lazy',
                   width: section.settings.image1.width,
-                  widths: '375, 550, 750, 1100, 1500',
+                  height: section.settings.image1.height,
+                  widths: '100,200,300,400',
                   alt: section.settings.image1.alt | escape
                 }}
             </div>
@@ -41,7 +42,8 @@
                 {{ section.settings.image2 | image_url: width: nil | image_tag:
                   loading: 'lazy',
                   width: section.settings.image2.width,
-                  widths: '375, 550, 750, 1100, 1500',
+                  height: section.settings.image2.height,
+                  widths: '100,200,300,400',
                   alt: section.settings.image2.alt | escape
                 }}
             </div>
