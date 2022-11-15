@@ -416,6 +416,15 @@
             "title": "Does the window film change \/ fade overtime?",
             "answer": "With proper care, Gush window films can last up to 12 years without discolouring or fading."
           }
+        },
+        "304d024a-d24d-4d36-a991-4c2cfd7df26f": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paint Information",
+            "type": "Why Paint?",
+            "title": "Question",
+            "answer": "Answer"
+          }
         }
       },
       "block_order": [
@@ -464,7 +473,8 @@
         "4e09d811-8b46-49b8-9a25-4378eb16838c",
         "a9796796-44e6-40c6-9b1d-51f29e5bdb17",
         "d3fc7c61-a684-4651-8392-40e1c2ab63b0",
-        "7b66c44f-1934-4d27-acb5-78b0f31db789"
+        "7b66c44f-1934-4d27-acb5-78b0f31db789",
+        "304d024a-d24d-4d36-a991-4c2cfd7df26f"
       ],
       "settings": {
         "heading": "FAQ",
