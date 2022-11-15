@@ -141,7 +141,7 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/paint3.png",
-            "title": "Gush proprietary catalyst",
+            "title": "The delights of {{ product.title }}",
             "faq_quality": "",
             "faq_ans": "This nifty stimulant excites the wall surface to break down pollutants into water and carbon dioxide. Removes 99% of pollutants in just 21 hours."
           }
