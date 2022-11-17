@@ -178,7 +178,7 @@
 <div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
-      <img srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
+      {%- comment -%} <img srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
                   {%- if section.settings.image.width >= 550 -%}{{ section.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
                   {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
                   {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
@@ -187,7 +187,21 @@
                   {%- if section.settings.image.width >= 2000 -%}{{ section.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
                   {%- if section.settings.image.width >= 3000 -%}{{ section.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
                   {%- if section.settings.image.width >= 3840 -%}{{ section.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
-                  {{ section.settings.image | image_url }} {{ section.settings.image.width }}w" sizes="{% if section.settings.image_2 != blank and section.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif section.settings.image_2 != blank %}50vw{% else %}100vw{% endif %}" src="{{ section.settings.image | image_url: width: 1500 }}" loading="lazy" alt="{{ section.settings.image.alt | escape }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}" {% if section.settings.image_2 != blank %}class="banner__media-image-half"{% endif %}>
+                  {{ section.settings.image | image_url }} {{ section.settings.image.width }}w" sizes="{% if section.settings.image_2 != blank and section.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif section.settings.image_2 != blank %}50vw{% else %}100vw{% endif %}" src="{{ section.settings.image | image_url: width: 1500 }}" alt="{{ section.settings.image.alt | escape }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}" {% if section.settings.image_2 != blank %}class="banner__media-image-half"{% endif %}> {%- endcomment -%}
+
+          {%- assign height_img1 = section.settings.image.width | divided_by: section.settings.image.aspect_ratio  -%}
+          {% if section.settings.image_2 == blank %}
+          {%- assign class_img1 = "banner__media-image-half" -%}
+          {% endif %}
+          {% if section.settings.image_2 != blank and section.settings.stack_images_on_mobile %}{%- assign sizes_img1 = "(min-width: 750px) 50vw, 100vw" -%}{% elsif section.settings.image_2 != blank %}{%- assign sizes_img1 = "50vw" -%}{% else %}{%- assign sizes_img1 = "100vw" -%}{% endif %}
+
+            {{ section.settings.image | image_url: width: 1440 | image_tag:
+              class: class_img1,
+              width: section.settings.image.width,
+              height: height_img1,
+              widths: '200,400,800,1200,1440',
+              sizes: sizes_img1
+            }} 
     </div>
   {%- elsif section.settings.image_2 == blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">

@@ -11,7 +11,15 @@
     <div class="grid grid--gapless grid--1-col grid--2-col-tablet">
         <div class="grid__item featured-about_left">
             <div class="featured-about__heading"><h2 class="gush-font-h1">{{section.settings.heading}}</h2></div>
-            <div class="featured-about__image"><img src="{{section.settings.image | img_url: 'large'}}" alt="Image"></div>
+            <div class="featured-about__image">
+              {{ section.settings.image | image_url: width: 400 | image_tag:
+                loading: 'lazy',
+                width: section.settings.image.width,
+                height: section.settings.image.height,
+                widths: '100,200,300,400'
+              }}
+              
+            </div>
         </div>
         <div class="grid__item featured-about__content__wrapper">
             <div class="featured-about__content"><p class="gush-font-h3">{{section.settings.content}}</p></div>

@@ -1,35 +1,41 @@
 /* Fonts */
 @font-face {
   font-family: 'ABCCamera';
+  font-display: swap;
   src: url('ABCCamera-Regular.otf');
 }
 
 @font-face {
   font-family: 'GTAmerica';
+  font-display: swap;
   src: url('gt-america-light.ttf');
   font-weight: 100;
 }
 
 @font-face {
   font-family: 'GTAmerica';
+  font-display: swap;
   src: url('gt-america-standard-regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'GTAmerica';
+  font-display: swap;
   src: url('gt-america-standard-medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'GTAmerica';
+  font-display: swap;
   src: url('GT-America-Standard-Bold.ttf');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'GTAmerica';
+  font-display: swap;
   src: url('GT-America-Standard-Bold-Italic.ttf');
   font-weight: 600;
   font-style: italic;
@@ -37,12 +43,14 @@
 
 @font-face {
   font-family: 'RecklessNeue';
+  font-display: swap;
   src: url('RecklessNeue-Light.otf');
   font-weight: 100;
 }
 
 @font-face {
   font-family: 'RecklessNeue';
+  font-display: swap;
   src: url('RecklessNeue-Regular.otf');
   font-weight: 400;
 }

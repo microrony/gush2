@@ -1,0 +1,27 @@
+{
+  "wrapper": "div.blogs_listing_page",
+  "sections": {
+    "0311d073-c616-4a03-ad81-fdf3dba193a6": {
+      "type": "gush-featured-blog",
+      "settings": {
+        "heading": "Sustainability",
+        "blog": "sustainability",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    },
+    "74727b5e-97ab-409a-b543-8c8ddf5c14ac": {
+      "type": "gush-featured-blog",
+      "settings": {
+        "heading": "Wellness",
+        "blog": "sustainability",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "0311d073-c616-4a03-ad81-fdf3dba193a6",
+    "74727b5e-97ab-409a-b543-8c8ddf5c14ac"
+  ]
+}

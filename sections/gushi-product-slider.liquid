@@ -22,7 +22,15 @@
                             <div class="slider_round" style="background-color:{{block.settings.clr}}">
                                 <p style="color:{{block.settings.txt_clr}}">{{block.settings.text}}</p>
                             </div>
-                            <div class="swiper-slide__img--wrapper">{{block.settings.slider-image | img_url: '400x400', crop: 'center' | img_tag }}</div>
+                            <div class="swiper-slide__img--wrapper">
+                              {%- comment -%} {{block.settings.slider-image | img_url: '400x400', crop: 'center' | img_tag }} {%- endcomment -%}
+                              {{ block.settings.slider-image | image_url: width: 400, height: 400 | image_tag:
+                                loading: 'lazy',
+                                width: block.settings.slider-image.width,
+                                height: block.settings.slider-image.height,
+                                widths: '100,200,300,400'
+                              }}
+                            </div>
                         </div>
                     </div>
                 {%- endfor -%}
