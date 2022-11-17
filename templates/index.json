@@ -22,10 +22,8 @@
           "settings": {
             "button_label_1": "Shop Now",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
             "button_label_2": "",
-            "button_link_2": "#",
-            "button_style_secondary_2": false
+            "button_link_2": "#"
           }
         }
       },
@@ -101,7 +99,7 @@
           "type": "button",
           "settings": {
             "button_label": "Explore More",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": ""
           }
         }
       },
@@ -119,6 +117,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
+        "page_name": "home",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -132,7 +131,8 @@
         "image2": "shopify:\/\/shop_images\/logo-forbes-png-transparent-11_1.png",
         "image3": "shopify:\/\/shop_images\/Thingtesting_1.png",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "page_name": "home"
       }
     },
     "165051844120a95e3b": {
@@ -292,7 +292,8 @@
       "settings": {
         "heading": "Got a question?\nOur team’s here to help.",
         "btn_text": "Contact us",
-        "btn_type": "primary"
+        "btn_type": "primary",
+        "page_name": "home"
       }
     }
   },
