@@ -159,6 +159,7 @@ const query = `{
 apiCall(query).then((d)=>{
   const lists = document.querySelectorAll(".multicolumn-list__item")
   d.forEach((product,ind)=>{
+  const title = product.node.title;
   const handle = product.node.handle;
   const img_url = product.node.images.edges[0]?.node?.transformedSrc;
   const des = product.node.description.length > 35 ? `${product.node.description.slice(0,35)}..` : product.node.description;
@@ -167,7 +168,7 @@ apiCall(query).then((d)=>{
   lists[ind].querySelector('a').setAttribute("href", `/products/${handle}`)
   lists[ind].querySelector('img').src = img_url;
   lists[ind].querySelector('img').alt = handle;
-  lists[ind].querySelector('h3>a').innerText = handle;
+  lists[ind].querySelector('h3>a').innerText = title;
   lists[ind].querySelector('h3>a').setAttribute("href", `/products/${handle}`);
   lists[ind].querySelector('.description').innerText = des;
   lists[ind].querySelector('.price').innerText = `$${price} | ${variant.split('/')[1]}`;
