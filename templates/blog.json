@@ -30,11 +30,21 @@
         "padding_top": 0,
         "padding_bottom": 50
       }
+    },
+    "57c22d07-1019-496f-a138-3f8e9d7dbff4": {
+      "type": "gush-featured-blog",
+      "settings": {
+        "heading": "Sustainability",
+        "blog": "sustainability",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
     "main",
     "a6af7545-d491-41d3-92a5-d3d76c6cd332",
-    "e7d17191-c8ca-40a4-b99c-76ac4d25c389"
+    "e7d17191-c8ca-40a4-b99c-76ac4d25c389",
+    "57c22d07-1019-496f-a138-3f8e9d7dbff4"
   ]
 }
