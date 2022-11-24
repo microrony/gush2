@@ -305,7 +305,6 @@
 }
 
 .banner__box {
-  padding: 4rem 3.5rem;
   position: relative;
   height: fit-content;
   align-items: center;
@@ -405,8 +404,7 @@
 
 .banner__buttons {
   display: inline-flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   max-width: 45rem;
   word-break: break-word;
 }

@@ -1,0 +1,149 @@
+{{ 'section-ingrediant-impact.css' | asset_url | stylesheet_tag }}
+{% style  %} 
+    .ingrediant-impact-container{
+        background: {{ section.settings.background_color }};
+    }
+    {% for block in section.blocks %} 
+        .circle-{{ forloop.index }}{
+            position: absolute;
+            left: {{ block.settings.left }}%;
+            top: {{ block.settings.top }}%;
+        }
+    {% endfor %}
+{% endstyle %}
+<div class="ingrediant-impact-container">
+    <div class="ingrediant-impact-inner page-width">
+        <div class="info-box">
+            <div class="formula-circle-container">
+                {% for block in section.blocks %} 
+                    <span class="circle circle-{{ forloop.index }} {% if forloop.first %} active {% endif %}"></span>
+                {% endfor %}
+            </div>
+            {% for block in section.blocks %} 
+                <div class="formula-card card-{{ forloop.index }} {% if forloop.first %} active {% endif %}">
+                    <div class="formula-info-card">
+                        <div>
+                            {{ block.settings.img | image_url: width: 90 | image_tag }}
+                        </div>
+                        <div>
+                            <h1 class="gush-font-h1">{{ block.settings.heading }}</h1>
+                            <p class="gush-font-p1 sub-title">{{ block.settings.sub_heading }}</p>
+                            <div class="odor-appearance-container">
+                                <div>
+                                    <p class="gush-font-teritary">odor</p>
+                                    <p class="gush-font-p2">{{ block.settings.odor }}</p>
+                                </div>
+                                <div>
+                                    <p class="gush-font-teritary">Appearance</p>
+                                    <p class="gush-font-p2">{{ block.settings.appearance }}</p>
+                                </div>
+                            </div>
+                            <p class="gush-font-p1">{{ block.settings.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="ingrediant-impact-info">
+            <h3 class="gush-font-h3 ingrediant-impact-title">{{ section.settings.title }}</h3>
+            <p class="gush-font-p2">{{ section.settings.description }}</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const circles = document.querySelectorAll(".circle");
+    const cards = document.querySelectorAll(".formula-card");
+    circles.forEach(( circle,ind )=>{
+        circle.addEventListener("click", ()=>{
+            circles.forEach(crl=>{
+                crl.classList.remove("active")
+            })
+            circle.classList.add("active")
+            cards.forEach(( card,cardInd )=>{
+                if(ind != cardInd){
+                    card.classList.remove("active")
+                }else{
+                    card.classList.add("active")
+                }
+            })
+        })
+    })
+</script>
+{% schema  %} 
+{
+ "name":"Ingrediant Impact",
+ "settings":[
+    {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+    },
+    {
+        "type":"textarea",
+        "id":"description",
+        "label":"Description"
+    },
+    {
+        "type":"color",
+        "id":"background_color",
+        "label":"Background color"
+    }
+ ],
+ "blocks":[
+    {
+        "type":"formula",
+        "name":"Formula",
+        "settings":[
+            {
+                "type":"number",
+                "id":"left",
+                "label":"Position left",
+                "info":"dot position from left in percentage"
+            },
+            {
+                "type":"number",
+                "id":"top",
+                "label":"Position top",
+                "info":"dot position from top in percentage"
+            },
+            {
+                "type":"image_picker",
+                "id":"img",
+                "label":"Formula name"
+            },
+            {
+                "type":"text",
+                "id":"heading",
+                "label":"Heading"
+            },
+            {
+                "type":"textarea",
+                "id":"sub_heading",
+                "label":"Sub heading"
+            },
+            {
+                "type":"textarea",
+                "id":"odor",
+                "label":"Odor"
+            },
+            {
+                "type":"textarea",
+                "id":"appearance",
+                "label":"Appearance"
+            },
+            {
+                "type":"textarea",
+                "id":"description",
+                "label":"Description"
+            }
+        ]
+    }
+ ],
+ "presets":[
+    {
+        "name":"Ingrediant Impact"
+    }
+ ]
+}
+{% endschema %}

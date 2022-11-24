@@ -7,6 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "Paint Reimagined",
+            "heading_color": "#000000",
             "heading_size": "h0"
           }
         },

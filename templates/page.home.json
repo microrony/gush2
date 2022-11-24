@@ -1,10 +1,197 @@
 {
-    "sections": {
-        "test":{
-            "type":"test"
+  "sections": {
+    "6ff782c6-f777-4520-9053-9a135fb2b9df": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16032460800193__6ff782c6-f777-4520-9053-9a135fb2b9df-16690814089a6b9c66-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Paint That Goes Beyond Surface",
+            "heading_color": "#ff42ef",
+            "heading_size": "h1"
+          }
+        },
+        "template--16032460800193__6ff782c6-f777-4520-9053-9a135fb2b9df-16690814089a6b9c66-1": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "template--16032460800193__6ff782c6-f777-4520-9053-9a135fb2b9df-16690814089a6b9c66-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify:\/\/collections",
+            "button_label_2": "Let us help you",
+            "button_link_2": "shopify:\/\/pages\/contact"
+          }
         }
+      },
+      "block_order": [
+        "template--16032460800193__6ff782c6-f777-4520-9053-9a135fb2b9df-16690814089a6b9c66-0",
+        "template--16032460800193__6ff782c6-f777-4520-9053-9a135fb2b9df-16690814089a6b9c66-1",
+        "template--16032460800193__6ff782c6-f777-4520-9053-9a135fb2b9df-16690814089a6b9c66-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/01_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
     },
-    "order": [
-        "test"
-    ]
+    "74a74acc-f9e6-4d8d-b74e-d8bec517ce01": {
+      "type": "ingrediant-impact",
+      "blocks": {
+        "f07bef0c-1554-4e8f-a232-b29f541157f6": {
+          "type": "formula",
+          "settings": {
+            "left": 30,
+            "top": 50,
+            "img": "shopify:\/\/shop_images\/Group_2448.png",
+            "heading": "Formaldehyde",
+            "sub_heading": "Found in building materials, hair products and nail polish.",
+            "odor": "Sharp, sweet",
+            "appearance": "Clear, colourless",
+            "description": "It damages your liver, kidneys and respiratory system, and increases the risk of cancer."
+          }
+        },
+        "9348712a-d45a-4c6d-9554-e7186cea9e58": {
+          "type": "formula",
+          "settings": {
+            "left": 10,
+            "top": 15,
+            "img": "shopify:\/\/shop_images\/Group_2448.png",
+            "heading": "Toluene",
+            "sub_heading": "Found in metal cleaners, varnishes, glue and printing ink.",
+            "odor": "Sharp, sweet",
+            "appearance": "Clear, colourless",
+            "description": "It poisons your central nervous system and damages your heart and liver."
+          }
+        },
+        "d03c2e4d-99a9-48ba-9812-8eaeffa06569": {
+          "type": "formula",
+          "settings": {
+            "left": 44,
+            "top": 33,
+            "img": "shopify:\/\/shop_images\/Group_2448.png",
+            "heading": "Xylene",
+            "sub_heading": "Found in furniture finishes, thinners and lacquers.",
+            "odor": "Sweet",
+            "appearance": "Colourless",
+            "description": "Xylene slows down nerve cell function and reduces muscle coordination\n."
+          }
+        },
+        "762beb12-694b-44ae-aba1-ed73d699e68a": {
+          "type": "formula",
+          "settings": {
+            "left": 66,
+            "top": 70,
+            "img": "shopify:\/\/shop_images\/Group_2448.png",
+            "heading": "Benzene",
+            "sub_heading": "Found in metal cleaners, varnishes, glue and printing ink.",
+            "odor": "Sweet like gasoline",
+            "appearance": "Clear to light yellow",
+            "description": "It poisons your central nervous system and damages your heart and liver."
+          }
+        },
+        "00ba2a39-5db0-411e-8e0c-ea67503a570e": {
+          "type": "formula",
+          "settings": {
+            "left": 90,
+            "top": 10,
+            "img": "shopify:\/\/shop_images\/Group_2448.png",
+            "heading": "Acetaldehyde",
+            "sub_heading": "Found in ripe fruits, vegetables, diesel and flooring materials.",
+            "odor": "Pungent, fruity",
+            "appearance": "Colourless",
+            "description": "It lowers your brain and motor functions, and causes cellular damage and scar tissue."
+          }
+        }
+      },
+      "block_order": [
+        "f07bef0c-1554-4e8f-a232-b29f541157f6",
+        "9348712a-d45a-4c6d-9554-e7186cea9e58",
+        "d03c2e4d-99a9-48ba-9812-8eaeffa06569",
+        "762beb12-694b-44ae-aba1-ed73d699e68a",
+        "00ba2a39-5db0-411e-8e0c-ea67503a570e"
+      ],
+      "settings": {
+        "title": "By removing pollutants from your air.",
+        "description": "Click to discover what’s\nin the air around you.",
+        "background_color": "#e1d5c6"
+      }
+    },
+    "5a44ca41-997e-4a85-a054-4cb4d273dceb": {
+      "type": "paint-details-slider",
+      "blocks": {
+        "810a145c-0536-4e9e-b6d4-6a467e851fe5": {
+          "type": "slide",
+          "settings": {
+            "category": "Gush Core",
+            "Description": "Low VOC, toxic-free, \nno-frills paint for a healthier indoors.",
+            "img": "shopify:\/\/shop_images\/Frame_2251.png"
+          }
+        },
+        "b7f04872-dddf-4314-bc8c-2c1ac94c5acb": {
+          "type": "slide",
+          "settings": {
+            "category": "Gush Cair",
+            "Description": "The paint that purifies your indoor air of pollutants. 24\/7.",
+            "img": "shopify:\/\/shop_images\/Frame_2252.png"
+          }
+        },
+        "7248d00e-b4a3-49da-883a-0d18242402ee": {
+          "type": "slide",
+          "settings": {
+            "category": "Gush Cair Fresh",
+            "Description": "Our washable and air-purifying paint. Great for kids’ rooms.",
+            "img": "shopify:\/\/shop_images\/Frame_2251.png"
+          }
+        },
+        "f159043c-e089-4764-8f9f-902a91d26ded": {
+          "type": "slide",
+          "settings": {
+            "category": "Gush Prepair",
+            "Description": "Our toxic-free sealer refreshes your wall before painting.",
+            "img": "shopify:\/\/shop_images\/kid.png"
+          }
+        }
+      },
+      "block_order": [
+        "810a145c-0536-4e9e-b6d4-6a467e851fe5",
+        "b7f04872-dddf-4314-bc8c-2c1ac94c5acb",
+        "7248d00e-b4a3-49da-883a-0d18242402ee",
+        "f159043c-e089-4764-8f9f-902a91d26ded"
+      ],
+      "settings": {
+        "heading": "With a coat of paint, you get healthy indoor air quality."
+      }
+    },
+    "7a90053e-69af-4a87-9650-ebd2c6f0fd2a": {
+      "type": "section-about-partner",
+      "settings": {
+        "heading": "As seen on",
+        "image1": "shopify:\/\/shop_images\/Entrepreneur_logo_1.png",
+        "image2": "shopify:\/\/shop_images\/logo-forbes-png-transparent-11_1.png",
+        "image3": "shopify:\/\/shop_images\/Thingtesting_1.png",
+        "padding_top": 16,
+        "padding_bottom": 0,
+        "page_name": "home"
+      }
+    }
+  },
+  "order": [
+    "6ff782c6-f777-4520-9053-9a135fb2b9df",
+    "74a74acc-f9e6-4d8d-b74e-d8bec517ce01",
+    "5a44ca41-997e-4a85-a054-4cb4d273dceb",
+    "7a90053e-69af-4a87-9650-ebd2c6f0fd2a"
+  ]
 }
