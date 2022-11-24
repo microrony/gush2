@@ -14,11 +14,11 @@
         "padding_bottom": 70
       }
     },
-    "a6af7545-d491-41d3-92a5-d3d76c6cd332": {
+    "f93380c4-6ed8-4cca-b6b6-3eff810a3c29": {
       "type": "gush-featured-blog",
       "settings": {
-        "heading": "Sustainability",
-        "blog": "sustainability",
+        "heading": "Science",
+        "blog": "science",
         "padding_top": 0,
         "padding_bottom": 50
       }
@@ -28,6 +28,15 @@
       "settings": {
         "heading": "Wellness",
         "blog": "wellness",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    },
+    "a6af7545-d491-41d3-92a5-d3d76c6cd332": {
+      "type": "gush-featured-blog",
+      "settings": {
+        "heading": "Sustainability",
+        "blog": "sustainability",
         "padding_top": 0,
         "padding_bottom": 50
       }
@@ -58,23 +67,14 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "f93380c4-6ed8-4cca-b6b6-3eff810a3c29": {
-      "type": "gush-featured-blog",
-      "settings": {
-        "heading": "Science",
-        "blog": "science",
-        "padding_top": 0,
-        "padding_bottom": 50
-      }
     }
   },
   "order": [
     "main",
-    "a6af7545-d491-41d3-92a5-d3d76c6cd332",
+    "f93380c4-6ed8-4cca-b6b6-3eff810a3c29",
     "e7d17191-c8ca-40a4-b99c-76ac4d25c389",
+    "a6af7545-d491-41d3-92a5-d3d76c6cd332",
     "aac405e0-80e1-46c7-93ec-5b574d57a2cf",
-    "098459de-06d3-4cf2-a0b0-0fb7ef24f76b",
-    "f93380c4-6ed8-4cca-b6b6-3eff810a3c29"
+    "098459de-06d3-4cf2-a0b0-0fb7ef24f76b"
   ]
 }
