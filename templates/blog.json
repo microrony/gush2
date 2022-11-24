@@ -34,6 +34,7 @@
     },
     "a6af7545-d491-41d3-92a5-d3d76c6cd332": {
       "type": "gush-featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Sustainability",
         "blog": "sustainability",
