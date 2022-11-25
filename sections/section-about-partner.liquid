@@ -2,8 +2,14 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  @media screen and (max-width: 750px){
+    .section-{{ section.id }}-padding {
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
   }
 
   {%- if section.settings.page_name == "group_buy" -%}
@@ -36,9 +42,9 @@
 {%- endstyle -%}
 
 
-
+ 
 <section class="about-partner isolate section-{{ section.id }}-padding section section-primary section-wrapper">
-  <div class="grid--gapless grid--1-col grid--2-col-tablet about-partner__padding gush-page-width group_buy">
+  <div class="grid--gapless grid--1-col grid--2-col-tablet about-partner__padding page-width group_buy">
     <div class="about-partner__heading gush-font-h3">
       <h2>{{ section.settings.heading }}</h2>
     </div>
@@ -46,26 +52,23 @@
 
      {%- if section.settings.page_name != "group_buy" -%}
       <div class="about-partner__logos-img">
-        {{ section.settings.image1 | image_url: width: 300 | image_tag:
+        {{ section.settings.image1 | image_url: width: 400 | image_tag:
           loading: 'lazy',
           width: section.settings.image1.width,
-          widths: '100, 200, 300',
           alt: section.settings.image1.alt | escape
         }}
       </div>
       <div class="about-partner__logos-img">
-        {{ section.settings.image2 | image_url: width: 300 | image_tag:
+        {{ section.settings.image2 | image_url: width: 400 | image_tag:
           loading: 'lazy',
           width: section.settings.image2.width,
-          widths: '100, 200, 300',
           alt: section.settings.image2.alt | escape
         }}
       </div>
       <div class="about-partner__logos-img">
-        {{ section.settings.image3 | image_url: width: 300 | image_tag:
+        {{ section.settings.image3 | image_url: width: 400 | image_tag:
           loading: 'lazy',
           width: section.settings.image3.width,
-          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
           alt: section.settings.image3.alt | escape
         }}
       </div>
@@ -109,7 +112,7 @@
   "type": "range",
   "id": "padding_top",
   "min": 0,
-  "max": 100,
+  "max": 140,
   "step": 4,
   "unit": "px",
   "label": "t:sections.all.padding.padding_top",
@@ -119,7 +122,7 @@
   "type": "range",
   "id": "padding_bottom",
   "min": 0,
-  "max": 100,
+  "max": 140,
   "step": 4,
   "unit": "px",
   "label": "t:sections.all.padding.padding_bottom",
