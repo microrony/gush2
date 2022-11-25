@@ -1,0 +1,103 @@
+{{ "paint-details-slider.css" | asset_url | stylesheet_tag }}
+
+<div class="page-width paint-slider-contianer">
+    <h2 class="gush-font-h2">{{ section.settings.heading }}</h2> 
+    <div class="slider-container">
+    <div class="swiper-button-prev slider-arrow"><span class="">{% render 'icon-arrow-left-gushi' %}</span></div>
+    <div thumbsSlider="" class="swiper mySwiper ">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %} 
+            <div class="swiper-slide thumb-slide">
+                <p class="gush-font-p1">{{ block.settings.category }}</p>
+                <h4 class="gush-font-h4">{{ block.settings.Description }}</h4>
+            </div>
+        {% endfor %} 
+      </div>
+    </div>
+    <div class="paint-swiper">
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %} 
+            <div class="swiper-slide">
+              <div class="swiper-button-prev mobile-arrow left "><span class="">{% render 'mobile-arrow-left' %}</span></div>
+              {{ block.settings.img | image_url: width: 600, height: 600 | image_tag }}
+              <div class="swiper-button-next mobile-arrow right"><span class="">{% render 'mobile-arrow-right' %}</span></div>
+            </div>
+        {% endfor %}
+      </div>
+    </div>
+    </div>
+      <div class="swiper-button-next slider-arrow"><span class="">{% render 'icon-arrow-right-gushi' %}</span></div>
+    </div>
+</div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween:20,
+        slidesPerView: 1,
+        loop: true,
+        watchSlidesProgress: true
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 30,
+        slidesPerView: 2,
+        loop: true,
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+          },
+          750: {
+            slidesPerView: 2,
+          }
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        thumbs: {
+          swiper: swiper
+        }
+      });
+    </script>
+{% schema  %} 
+{
+    "name":"Paint details slider",
+    "settings":[
+        {
+            "type":"text",
+            "id":"heading",
+            "label":"Heading"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"slide",
+            "name":"Slide",
+            "settings":[
+                {
+                    "type":"text",
+                    "id":"category",
+                    "label":"Category"
+                },
+                {
+                    "type":"textarea",
+                    "id":"Description",
+                    "label":"Description"
+                },
+                {
+                    "type":"image_picker",
+                    "id":"img",
+                    "label":"Image"
+                }
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"Paint details slider"
+        }
+    ]
+}
+{% endschema %}

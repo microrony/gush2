@@ -22,10 +22,8 @@
           "settings": {
             "button_label_1": "Sign up now",
             "button_link_1": "shopify:\/\/pages\/contact",
-            "button_style_secondary_1": false,
             "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_link_2": ""
           }
         }
       },
@@ -268,8 +266,8 @@
       ],
       "settings": {
         "heading": "Past Projects",
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "page_name": "group_buy"
       }
     },
@@ -290,7 +288,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_1636.png",
         "heading": "All set and \nready to go?",
-        "description": "Can’t find your property? Start your own group buy today. Get your neighbours enjoying clean, safe homes together with you; special rates included just for you."
+        "description": "Can’t find your property? Start your own group buy today. Get your neighbours enjoying clean, safe homes together with you; special rates included just for you.",
+        "page_name": "group_buy"
       }
     },
     "cb5e433c-c809-42c5-b549-a358067777a8": {

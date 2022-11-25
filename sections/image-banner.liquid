@@ -5,10 +5,6 @@
     height: 95vh;
   }
 
-  h2.banner__heading {
-    color: rgba(var(--color-secondary-6));
-  }
-
   .banner--desktop-transparent .banner__box {
     max-width: 100%;
     width: 100%;
@@ -71,7 +67,6 @@
     position: absolute;
     right: 25px;
   }
-
   /* .banner__text.body {margin: 0 0 8%;} */
   .banner__text.body {
     margin: auto;
@@ -168,6 +163,18 @@
     }
   {%- endstyle -%}
 {%- endif -%}
+
+{% for block in section.blocks %} 
+  {%- case block.type -%}
+    {%- when 'heading' -%}
+  {% style  %} 
+    h2.banner__heading {
+    color: {{ block.settings.heading_color }};
+    letter-spacing: -0.04em ;
+  }
+  {% endstyle %}
+  {%- endcase -%}
+{% endfor %}
 
 {%- style -%}
   #Banner-{{ section.id }}::after {
@@ -466,6 +473,11 @@
           "id": "heading",
           "default": "Image banner",
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        },
+        {
+          "type":"color",
+          "id":"heading_color",
+          "label":"Heading Color"
         },
         {
           "type": "select",
