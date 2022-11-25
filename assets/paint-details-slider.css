@@ -8,7 +8,7 @@
       .mySwiper2 img{
         object-fit: cover;
         max-width: 100%;
-        height: 30vw;
+        height: 32vw;
         border-radius: 50%;
       }
       .swiper-button-prev::after, .swiper-button-next::after{

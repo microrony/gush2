@@ -186,12 +186,123 @@
         "padding_bottom": 0,
         "page_name": "home"
       }
+    },
+    "fbc38505-915e-4308-950b-bccaf2634d33": {
+      "type": "paint-details-circle",
+      "blocks": {
+        "36169f81-3e75-4ae0-be54-183ef4fcf471": {
+          "type": "block",
+          "settings": {
+            "top": 48,
+            "left": 73,
+            "info": "We breathe 11,000 litres of air every day."
+          }
+        },
+        "b3f68452-a105-49fb-a027-b1d91d6055b1": {
+          "type": "block",
+          "settings": {
+            "top": 37,
+            "left": 31,
+            "info": "info-2"
+          }
+        },
+        "44077800-869a-4004-8ad9-dbaf5ffc2d84": {
+          "type": "block",
+          "settings": {
+            "top": 5,
+            "left": 45,
+            "info": "info -3"
+          }
+        }
+      },
+      "block_order": [
+        "36169f81-3e75-4ae0-be54-183ef4fcf471",
+        "b3f68452-a105-49fb-a027-b1d91d6055b1",
+        "44077800-869a-4004-8ad9-dbaf5ffc2d84"
+      ],
+      "settings": {
+        "heading": "Our built-in features give you a safer, healthier home.",
+        "header_padding_top": 100,
+        "header_padding_bottom": 108,
+        "img": "shopify:\/\/shop_images\/wellness3.jpg",
+        "category": "Air purifying",
+        "title": "Say goodbye to pesky air pollutants.",
+        "desc": "Gush-painted walls and ceilings break down pollutants so they don’t affect your health and well-being.",
+        "link_text": "See the science behind our paints.",
+        "bottom_circle_txt": "Our air-purifying function works 24\/7, even at night.",
+        "info_position": "left",
+        "padding_bottom": 0
+      }
+    },
+    "96b991d2-402b-4fde-9f7c-578b3c2508bb": {
+      "type": "paint-details-circle",
+      "blocks": {
+        "93c1b259-449c-421a-b55d-e759477da892": {
+          "type": "block",
+          "settings": {
+            "top": 38,
+            "left": 31,
+            "info": "Test -1"
+          }
+        }
+      },
+      "block_order": [
+        "93c1b259-449c-421a-b55d-e759477da892"
+      ],
+      "settings": {
+        "heading": "",
+        "header_padding_top": 0,
+        "header_padding_bottom": 0,
+        "img": "shopify:\/\/shop_images\/Frame_2250.png",
+        "category": "Anti-molding",
+        "title": "Keep your walls clear of mold growth.",
+        "desc": "Anti-microbial agents in our paint break down mold spores and stop their spread.",
+        "link_text": "",
+        "bottom_circle_txt": "Our paints remove 99% of pollutants in 21 hours.",
+        "info_position": "right",
+        "padding_bottom": 0
+      }
+    },
+    "58f92b37-f7c7-41c1-b5e7-bd64400574b8": {
+      "type": "paint-details-circle",
+      "settings": {
+        "heading": "",
+        "header_padding_top": 0,
+        "header_padding_bottom": 0,
+        "img": "shopify:\/\/shop_images\/Frame_2248.png",
+        "category": "Toxic-free & odourless",
+        "title": "Avoid harmful fumes, before and after painting.",
+        "desc": "Our paints are VOC-free certified, made with natural ingredients and don’t release any toxic odours. Breathe easy.",
+        "link_text": "",
+        "bottom_circle_txt": "Furniture & many household materials release pollutants.",
+        "info_position": "left",
+        "padding_bottom": 108
+      }
+    },
+    "1069a742-eb58-4cca-a316-b2cb1f0314ff": {
+      "type": "featured-about",
+      "settings": {
+        "heading": "Our mission",
+        "bg_color": "#f9f4f0",
+        "image": "shopify:\/\/shop_images\/Group_732b7434-2b50-4580-9af1-c9732c83410f.png",
+        "content": "Gush makes <span>innovative materials<\/span> for the built environment.\nBeyond sprucing up your home,\nour products support <span>your wellbeing<\/span> and help the Earth too.  \n\nWe believe your choices,\nhowever small, can drive\npurposeful change.",
+        "btn-text-1": "Learn more",
+        "link_first_btn": "",
+        "btn-text-2": "Read our manifesto",
+        "link_second_btn": "",
+        "padding_top": 124,
+        "padding_bottom": 136
+      }
     }
   },
   "order": [
     "6ff782c6-f777-4520-9053-9a135fb2b9df",
     "74a74acc-f9e6-4d8d-b74e-d8bec517ce01",
     "5a44ca41-997e-4a85-a054-4cb4d273dceb",
-    "7a90053e-69af-4a87-9650-ebd2c6f0fd2a"
+    "7a90053e-69af-4a87-9650-ebd2c6f0fd2a",
+    "fbc38505-915e-4308-950b-bccaf2634d33",
+    "96b991d2-402b-4fde-9f7c-578b3c2508bb",
+    "58f92b37-f7c7-41c1-b5e7-bd64400574b8",
+    "1069a742-eb58-4cca-a316-b2cb1f0314ff"
   ]
 }

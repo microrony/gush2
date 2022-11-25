@@ -1,0 +1,143 @@
+.paint-details-circle-container{
+    padding: 10rem;
+}
+.paint-content-container{
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    gap: 10%;
+    align-items: center;
+}
+.paint-content-container img{
+    width: 100%;
+    border-radius: 50%;
+    height: 36vw;
+}
+.paint-info-title{
+    margin: 5px 0 10px 0;
+}
+.image-box{
+    position: relative;
+}
+.paint-info-box{
+    width: 37%;
+    height: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    background: #00ff00;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.paint-info-box::-webkit-scrollbar {
+    display: none;
+}
+.top-info-box{
+    top: 0;
+    left: -70px;
+}
+.bottom-info-box{
+    bottom: -10px;
+    right: -50px;
+}
+.paint-circle-dot{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #00ff00;
+    z-index: 2;
+}
+.paint-circle-dot.active{
+    outline: 3px dashed #00FF00;
+    outline-offset: 12px;
+}
+.top-info-box{
+    display: none;
+}
+.top-info-box.active{
+    display: flex;
+}
+@media screen and (max-width: 991px){
+    .paint-content-container{
+        grid-template-columns: 3fr 5fr 3fr;
+        gap: 5%;
+    }
+    .heading{
+        margin: 0 5%;
+    }
+    .top-info-box{
+        top: 0;
+        left: -20px;
+    }
+    .bottom-info-box{
+        bottom: -10px;
+        right: -20px;
+    }
+    .paint-circle-dot{
+        width: 27px;
+        height: 27px;
+    }
+    .paint-circle-dot.active{
+        outline-offset: 9px;
+    }
+
+}
+@media screen and (max-width: 750px){
+    .paint-content-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .paint-info-box{
+        width: 40%;
+        height: 40%;
+        padding: 20px;
+    }
+    
+    .paint-content-container img{
+        width: 100%;
+        height: auto;
+    }
+    .paint-circle-dot{
+        width: 18px;
+        height: 18px;
+    }
+    .paint-circle-dot.active{
+        outline: 2px dashed #00FF00;
+        outline-offset: 6px;
+    }
+    .heading{
+        padding: 50px 0 25px 0;
+        margin: 0;
+        text-align: left;
+        max-width: 210px;
+    }
+    .first-div h4{
+        max-width: 50%;
+    }
+    .first-div p{
+        max-width: 60%;
+    }
+    .third-div a{
+        position: initial;
+    }
+    .first-div, .second-div, .third-div {
+        order: initial ;
+    }
+    .paint-content-container{
+        padding-bottom: 40px;
+    }
+    .top-info-box{
+        top: -50px;
+        left: auto ;
+        right: -10px;
+    }
+    .bottom-info-box{
+        bottom: -10px;
+        right: auto;
+    }
+
+}
