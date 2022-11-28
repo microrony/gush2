@@ -106,7 +106,7 @@
           "settings": {
             "discount": 50.8,
             "discount_des": "Less solar transmissions",
-            "image": "shopify:\/\/shop_images\/Group_2364.png"
+            "image": "shopify:\/\/shop_images\/Group_2263.png"
           }
         },
         "b73e52f2-e897-42af-9711-150f3e6fef63": {
@@ -114,7 +114,7 @@
           "settings": {
             "discount": 14.8,
             "discount_des": "Savings on cooling energy",
-            "image": "shopify:\/\/shop_images\/Group_2233.png"
+            "image": "shopify:\/\/shop_images\/Group_2414.png"
           }
         },
         "0a14753b-d864-427c-8d30-ffefa8799cf9": {
@@ -122,7 +122,7 @@
           "settings": {
             "discount": 10,
             "discount_des": "Savings on your monthly bills",
-            "image": "shopify:\/\/shop_images\/Group_2234.png"
+            "image": "shopify:\/\/shop_images\/Group_2697_1.png"
           }
         }
       },
@@ -194,7 +194,7 @@
         "image": "shopify:\/\/shop_images\/Group_2167.png",
         "heading": "Need help with\ninstallation?",
         "description": "Don’t sweat putting on our window films. Our in-house teams conduct onsite assessment reports so that film installation is smooth and quick.",
-        "page_name": "group_buy"
+        "page_name": "film"
       }
     },
     "e8fef480-1000-4022-adef-7504ca82c76d": {
@@ -237,6 +237,7 @@
     "44c7b10c-52e7-4d58-b848-17b29578f4ae": {
       "type": "footer-contact",
       "settings": {
+        "title": "",
         "heading": "Let’s get you started. \nBook your free, \nnon-obligatory \nsite inspection.",
         "btn_text": "Send enquiry",
         "btn_type": "primary",
