@@ -295,8 +295,8 @@
     "cb5e433c-c809-42c5-b549-a358067777a8": {
       "type": "footer-contact",
       "settings": {
-        "title": "",
-        "heading": "Ready to get started? Tell us your details and we’ll reach out to you directly.",
+        "title": "Ready to get started? Tell us your details and we’ll reach out to you directly.",
+        "heading": "",
         "btn_text": "Send enquiry",
         "btn_type": "primary",
         "page_name": "group_buy"
