@@ -1,18 +1,75 @@
 {{ 'section-contact-footer.css' | asset_url | stylesheet_tag }}
+{% if section.settings.page_name == "new_home" %} 
+{% style  %} 
+.new_home_footer_title{
+    font-family: 'GTAmerica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.footer-contact-heading{
+  margin: 26px 0 60px 0 ;
+  font-family: 'RecklessNeue' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 40px !important;
+  line-height: 45px !important;
+  color: #000000 !important;
+}
+.footer-contact__main-para svg{
+  width: 48px;
+  height: 48px;
+}
+.field__label{
+  text-transform: uppercase;
+}
+@media screen and (max-width: 750px){
+  .footer-contact__main{
+    gap: 0;
+  }
+  .footer-contact-main{
+    padding-top: 50px !important;
+  }
+  .new_home_footer_title{
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+  .footer-contact-heading{
+    margin: 20px 0 35px 0 ;
+    font-size: 20px !important;
+    line-height: 22px !important;
+  }
+  .footer-contact__main-para svg{
+    width: 26px;
+    height: 26px;
+  }
+  .field__label{
+    font-size: 12px !important;
+  }
+}
+{% endstyle %}
+{% endif %}
 
-<section class="footer-contact page-width isolate section-{{ section.id }}-bg">
+<section class="footer-contact page-width isolate section-{{ section.id }}-bg footer-contact-main">
     <div class="footer-contact__main">
         <div class="footer-contact__main-text">
             <div class="footer-contact__main-heading">
-              <h2 class="{%- if section.settings.page_name == "group_buy" -%}
+              <h3 class="new_home_footer_title">{{ section.settings.title }}</h3>
+              <h2 class="footer-contact-heading {%- if section.settings.page_name == "group_buy" -%}
                 gush-font-h3
                 {% else  %}
                 gush-font-h2
-              {%- endif -%}">{{section.settings.heading}}</h2>
+              {%- endif -%} ">{{section.settings.heading}}</h2>
             </div>
-            <!-- <div class="footer-contact__main-para"><p>{{section.settings.content}}</p>
+            {% if section.settings.page_name == "new_home" %} 
+            <div class="footer-contact__main-para">
                 <a href="#">{% render 'icon-arrow-right' %}</a>
-            </div> -->
+            </div>
+            {% endif %}
         </div>
         <div class="footer-contact__form">
             {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
@@ -108,6 +165,11 @@
   "class": "footer-contact section",
  "settings": [
      {
+       "type": "text",
+       "id": "title",
+       "label": "Title"
+     },
+     {
        "type": "textarea",
        "id": "heading",
        "label": "Heading"
@@ -141,6 +203,10 @@
 				{
 					"value": "home",
 					"label": "Home"
+				},
+				{
+					"value": "new_home",
+					"label": "New home"
 				},
 				{
 					"value": "group_buy",
