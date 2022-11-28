@@ -40,6 +40,12 @@
           "settings": {
             "show_dynamic_checkout": true
           }
+        },
+        "f7b72321-2d1c-4b7f-a229-2b9e36a1f762": {
+          "type": "text",
+          "settings": {
+            "text": "awvawvwv"
+          }
         }
       },
       "block_order": [
@@ -49,7 +55,8 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "f7b72321-2d1c-4b7f-a229-2b9e36a1f762"
       ],
       "settings": {
         "enable_sticky_info": true,
