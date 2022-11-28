@@ -135,4 +135,8 @@
         background: #00ff00;
         color: #302112;
     }
+    .science-wonder-middle .dot{
+        width: 18px;
+        height: 18px;
+    }
 }

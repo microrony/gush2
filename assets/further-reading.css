@@ -1,6 +1,6 @@
 .further-reading-card{
     margin-top: 71px;
-    height: 230px;
+    min-height: 250px;
     border-left: 1px solid black;
     padding-left: 40px;
     position: relative;
@@ -30,7 +30,7 @@
     }
     .further-reading-card{
         margin-top: 20px;
-        height: 150px;
+        min-height: 150px;
         padding-left: 20px;
     }
     .further-reading-main{

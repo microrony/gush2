@@ -1,0 +1,313 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Paint Reimagined",
+            "heading_color": "#000000",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Refresh your home with air purifying, odorless pigments",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_label_2": "",
+            "button_link_2": "#"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_34.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "1651126244fe532c69": {
+      "type": "about-product",
+      "settings": {
+        "heading": "Breathe easy \nwith Gush paints",
+        "color": "#ff5ded",
+        "image1": "shopify:\/\/shop_images\/Rectangle_156_1.png",
+        "heading1": "Cleans the air",
+        "text1": "Rids your rooms of pollutants \nlike formaldehyde",
+        "image2": "shopify:\/\/shop_images\/Rectangle_157.png",
+        "heading2": "Odorless",
+        "text2": "Set your mind at rest in \na home free of toxic fumes",
+        "image3": "shopify:\/\/shop_images\/Rectangle_6.png",
+        "heading3": "Prevents molding",
+        "text3": "Stops bacteria and fungi from\nforming on your sparkling walls",
+        "icon-margin": 20,
+        "page": "home"
+      }
+    },
+    "16511265613364656e": {
+      "type": "paint-product",
+      "settings": {
+        "heading": "Our Indoor Paints",
+        "heading1": "Air purifying",
+        "para": "Controls humidity<br>\nRemoves pollutants<br>\nAnti-molding<br>\nAnti-bacterial<br>\nOdorless<br>\nToxic-free",
+        "image1": "shopify:\/\/shop_images\/PAINT.png",
+        "heading2": "Washable",
+        "para2": "Cleans easily<br>\nRemoves pollutants<br>\nAnti-molding<br>\nAnti-bacterial<br>\nOdorless<br>\nToxic-free",
+        "image2": "shopify:\/\/shop_images\/PAINT_1.png",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1650518045272c9009": {
+      "type": "image-with-text",
+      "blocks": {
+        "16505180454be19213-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Services",
+            "heading_size": "h0"
+          }
+        },
+        "16505180454be19213-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your spaces now. With our start-to-end suite of professional services, we’ve got you covered.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "16505180454be19213-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16505180454be19213-0",
+        "16505180454be19213-1",
+        "16505180454be19213-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_265_1.png",
+        "height": "large",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "page_name": "home",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165112669837ed6592": {
+      "type": "section-about-partner",
+      "settings": {
+        "heading": "As seen on",
+        "image1": "shopify:\/\/shop_images\/Entrepreneur_logo_1.png",
+        "image2": "shopify:\/\/shop_images\/logo-forbes-png-transparent-11_1.png",
+        "image3": "shopify:\/\/shop_images\/Thingtesting_1.png",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "page_name": "home"
+      }
+    },
+    "165051844120a95e3b": {
+      "type": "multicolumn",
+      "blocks": {
+        "1650518441c335474f-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_40_1.png",
+            "title": "Cosmonaut",
+            "text": "<p>Every side is your good side.<\/p><p>$99 | 1 Gallon<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1650518441c335474f-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_40.png",
+            "title": "Tutu Kueh",
+            "text": "<p>Every side is your good side.<\/p><p>$99 | 1 Gallon<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1650518441c335474f-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_40_2.png",
+            "title": "50 Dollars",
+            "text": "<p>Every side is your good side.<\/p><p>$99 | 1 Gallon<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650518441c335474f-0",
+        "1650518441c335474f-1",
+        "1650518441c335474f-2"
+      ],
+      "settings": {
+        "title": "Top Selling Paints",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "1651132771eba2e452": {
+      "type": "gushi-product-slider",
+      "blocks": {
+        "346a05f1-15fa-451d-a6b6-0b6ee9d29398": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint3.png",
+            "text": "ABC",
+            "clr": "#6b785a",
+            "txt_clr": "#ffffff"
+          }
+        },
+        "210b2cd5-5810-4bce-847f-daf590e3201f": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint2.png",
+            "text": "EDF",
+            "clr": "#bba993",
+            "txt_clr": "#ffffff"
+          }
+        },
+        "f0dd692a-519a-41f9-969e-b8863263cb7c": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/clr.jpg",
+            "text": "ERT",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
+        "e79519eb-eb46-48e3-822b-b2b5cffbde55": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint4.png",
+            "text": "gush 2",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
+        "61f9e5a0-c5b8-4d22-82b4-5eb68b81c1b4": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint1.png",
+            "text": "Gush 3",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
+        "2d2c5023-fe39-4573-8394-c55e801eeca0": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint4.png",
+            "text": "Gush 4",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
+        "a5e76b13-c6a8-4d2f-bf8e-a2c6b178ace0": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/paint2.png",
+            "text": "Gush 5",
+            "clr": "",
+            "txt_clr": ""
+          }
+        }
+      },
+      "block_order": [
+        "346a05f1-15fa-451d-a6b6-0b6ee9d29398",
+        "210b2cd5-5810-4bce-847f-daf590e3201f",
+        "f0dd692a-519a-41f9-969e-b8863263cb7c",
+        "e79519eb-eb46-48e3-822b-b2b5cffbde55",
+        "61f9e5a0-c5b8-4d22-82b4-5eb68b81c1b4",
+        "2d2c5023-fe39-4573-8394-c55e801eeca0",
+        "a5e76b13-c6a8-4d2f-bf8e-a2c6b178ace0"
+      ],
+      "settings": {
+        "heading": "Past Projects",
+        "padding_top": 68,
+        "padding_bottom": 100
+      }
+    },
+    "1651126988fd36cd2b": {
+      "type": "featured-about",
+      "settings": {
+        "heading": "Our Mission",
+        "bg_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/Group.png",
+        "content": "Gush makes <span>innovative materials<\/span> for the built environment.\nBeyond sprucing up your home,\nour products support <span>your wellbeing<\/span> and help the Earth too.  \n\nWe believe your choices,\nhowever small, can drive\npurposeful change.",
+        "btn-text-1": "Learn more",
+        "link_first_btn": "#",
+        "btn-text-2": "",
+        "link_second_btn": "#",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "1651127831a7c71699": {
+      "type": "footer-contact",
+      "settings": {
+        "heading": "Got a question?\nOur team’s here to help.",
+        "btn_text": "Contact us",
+        "btn_type": "primary",
+        "page_name": "home"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "1651126244fe532c69",
+    "16511265613364656e",
+    "1650518045272c9009",
+    "165112669837ed6592",
+    "165051844120a95e3b",
+    "1651132771eba2e452",
+    "1651126988fd36cd2b",
+    "1651127831a7c71699"
+  ]
+}
