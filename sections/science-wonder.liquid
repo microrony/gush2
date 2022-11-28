@@ -1,0 +1,170 @@
+{{ "science-wonder.css" | asset_url | stylesheet_tag}}
+<style>
+    .section-{{ section.id }} {
+        padding: {{ section.settings.padding_top }}px {{ section.settings.padding_right }}px {{ section.settings.padding_bottom }}px {{ section.settings.padding_left }}px;
+    }
+</style>
+<div class="page-width science-wonder-container section-{{ section.id }}">
+    <p class="gush-font-p1 title-text">{{ section.settings.title }}</p>
+    <h4 class="gush-font-h4 wonder-science-heading">{{ section.settings.heading }}</h4>
+    <div class="science-wonder-inner-container"> 
+    <div class="science-wonder-left">
+        <div class="left-img-text">
+            <p class="gush-font-p2 left-txt">{{ section.settings.left_txt }}</p>
+            {{ section.settings.left_img | image_url: width:400 | image_tag}}
+        </div>
+    </div>
+    <div class="science-wonder-middle">
+        {{ section.settings.img | image_url: width:500 | image_tag}}
+        <div class="dot dot-1 active mobile-active"> </div>
+        <div class="dot dot-2 active"> </div>
+    </div>
+    <div class="science-wonder-right">
+        <div class="right-img-text">
+            {{ section.settings.right_img | image_url: width:400 | image_tag}}
+            <p class="gush-font-p2 right-txt">{{ section.settings.right_txt }}</p>
+        </div>
+        <div class="science-window-mobile active">
+            {{ section.settings.left_img | image_url: width:100 | image_tag}}
+            <p class="gush-font-p2 info-txt">{{ section.settings.left_txt }}</p>
+        </div>
+        <div class="science-window-mobile">
+            {{ section.settings.right_img | image_url: width:100 | image_tag}}
+            <p class="gush-font-p2 info-txt">{{ section.settings.right_txt }}</p>
+        </div>
+        <a href="{{ section.settings.button_link }}" class="gush-font-p2 cta-button science-wonder-btn">{{ section.settings.button_label }} {% render 'arrow-dotted-black' %}</a>
+    </div>
+    </div>
+</div>
+<script>
+    let tracker = true;
+    const wonderScienceDots = document.querySelectorAll(".science-wonder-middle .dot");
+    const mobileDivs = document.querySelectorAll(".science-wonder-container .science-window-mobile");
+    const leftImgText = document.querySelector(".science-wonder-container .left-img-text");
+    const rightImgText = document.querySelector(".science-wonder-container .right-img-text");
+    wonderScienceDots[0].addEventListener("click",()=>{
+                mobileDivs[0].classList.add("active");
+                mobileDivs[1].classList.remove("active");
+                wonderScienceDots[0].classList.add("mobile-active");
+                wonderScienceDots[1].classList.remove("mobile-active");
+            if (leftImgText.style.visibility === "hidden") {
+                leftImgText.style.visibility = "visible";
+                wonderScienceDots[0].classList.add("active");
+            } else {
+                leftImgText.style.visibility = "hidden";
+                wonderScienceDots[0].classList.remove("active")
+            }
+        })
+    wonderScienceDots[1].addEventListener("click",()=>{
+                mobileDivs[1].classList.add("active");
+                mobileDivs[0].classList.remove("active");
+                wonderScienceDots[1].classList.add("mobile-active");
+                wonderScienceDots[0].classList.remove("mobile-active");
+            if (rightImgText.style.visibility === "hidden") {
+                rightImgText.style.visibility = "visible";
+                wonderScienceDots[1].classList.add("active")
+            } else {
+                rightImgText.style.visibility = "hidden"; 
+                wonderScienceDots[1].classList.remove("active")
+            }
+        })
+</script>
+{% schema  %} 
+{
+    "name":"science-wonder",
+    "settings":[
+        {
+            "type":"text",
+            "id":"title",
+            "label":"Title"
+        },
+        {
+            "type":"textarea",
+            "id":"heading",
+            "label":"Heading"
+        },
+        {
+            "type":"textarea",
+            "id":"left_txt",
+            "label":"Left side text"
+        },
+        {
+            "type":"image_picker",
+            "id":"left_img",
+            "label":"Left side image"
+        },
+        {
+            "type":"image_picker",
+            "id":"img",
+            "label":"Middle image"
+        },
+        {
+            "type":"textarea",
+            "id":"right_txt",
+            "label":"Right side text"
+        },
+        {
+            "type":"image_picker",
+            "id":"right_img",
+            "label":"Right side image"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 140,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 36
+            },
+            {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 140,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 36
+            },
+            {
+            "type": "range",
+            "id": "padding_left",
+            "min": 0,
+            "max": 140,
+            "step": 2,
+            "unit": "px",
+            "label": "Left padding",
+            "default": 36
+            },
+            {
+            "type": "range",
+            "id": "padding_right",
+            "min": 0,
+            "max": 140,
+            "step": 2,
+            "unit": "px",
+            "label": "Right padding",
+            "default": 36
+            }
+            
+    ],
+    "presets":[
+        {
+            "name":"science-wonder"
+        }
+    ]
+}
+{% endschema %}
