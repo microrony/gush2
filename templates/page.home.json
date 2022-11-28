@@ -311,6 +311,17 @@
         "padding_left": 90,
         "padding_right": 72
       }
+    },
+    "623e4ef7-e449-4a33-9c59-cd8e1ba10658": {
+      "type": "further-reading",
+      "settings": {
+        "title": "Further reading",
+        "blogs": "wellness",
+        "article_limit": 6,
+        "bg_color": "#00ff00",
+        "padding_top": 50,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
@@ -322,6 +333,7 @@
     "96b991d2-402b-4fde-9f7c-578b3c2508bb",
     "58f92b37-f7c7-41c1-b5e7-bd64400574b8",
     "1069a742-eb58-4cca-a316-b2cb1f0314ff",
-    "5e785e84-068f-42a0-876b-2a306e0760a6"
+    "5e785e84-068f-42a0-876b-2a306e0760a6",
+    "623e4ef7-e449-4a33-9c59-cd8e1ba10658"
   ]
 }
