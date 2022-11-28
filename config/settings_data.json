@@ -99,19 +99,6 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "e6224d3e-54f7-4018-aba7-dad96d5ed68d": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "background-1",
-              "link": "shopify:\/\/pages\/films"
-            }
-          }
-        },
-        "block_order": [
-          "e6224d3e-54f7-4018-aba7-dad96d5ed68d"
-        ],
         "settings": {
         }
       },
