@@ -33,7 +33,7 @@
         "ce3e4621-5261-45d6-9bec-aa15957d761c"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_432.png",
+        "image": "shopify:\/\/shop_images\/Frame_432_60b03cd5-f920-43be-ac25-9a959d7c3999.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -295,6 +295,7 @@
     "cb5e433c-c809-42c5-b549-a358067777a8": {
       "type": "footer-contact",
       "settings": {
+        "title": "",
         "heading": "Ready to get started? Tell us your details and we’ll reach out to you directly.",
         "btn_text": "Send enquiry",
         "btn_type": "primary",
