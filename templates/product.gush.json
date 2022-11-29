@@ -140,8 +140,8 @@
         "cdfe81e2-cf4d-472e-bec0-8ab9619936b7": {
           "type": "text",
           "settings": {
-            "faq_img": "shopify:\/\/shop_images\/paint3.png",
-            "title": "The delights of {{ product.title }}",
+            "faq_img": "shopify:\/\/shop_images\/image_2022-11-29_081952029.png",
+            "title": "Gush proprietary catalyst",
             "faq_quality": "",
             "faq_ans": "This nifty stimulant excites the wall surface to break down pollutants into water and carbon dioxide. Removes 99% of pollutants in just 21 hours."
           }
@@ -149,36 +149,16 @@
         "b3bf5e61-3ce4-49c8-a560-d9462466cd1b": {
           "type": "text",
           "settings": {
-            "faq_img": "shopify:\/\/shop_images\/paint1.png",
+            "faq_img": "shopify:\/\/shop_images\/image_2022-11-29_082017880.png",
             "title": "Formaldehyde decomposers",
             "faq_quality": "",
-            "faq_ans": "Titanium Dioxide Content"
-          }
-        },
-        "1ad7b02a-2065-4fab-82ec-485f4e416d27": {
-          "type": "text",
-          "settings": {
-            "faq_img": "shopify:\/\/shop_images\/paint4.png",
-            "title": "No secondary Poulltions",
-            "faq_quality": "",
-            "faq_ans": "No secondary Poulltions Content"
-          }
-        },
-        "cedf5a43-0fd4-475f-bc51-205715b69abd": {
-          "type": "text",
-          "settings": {
-            "faq_img": "shopify:\/\/shop_images\/image_40_2.png",
-            "title": "Enviromental Friendly",
-            "faq_quality": "",
-            "faq_ans": "Methylotorphic Bacteria Content"
+            "faq_ans": "Our paint’s got a unique porous coating that absorbs moisture in the air and spreads it across the surface for speedy evaporation."
           }
         }
       },
       "block_order": [
         "cdfe81e2-cf4d-472e-bec0-8ab9619936b7",
-        "b3bf5e61-3ce4-49c8-a560-d9462466cd1b",
-        "1ad7b02a-2065-4fab-82ec-485f4e416d27",
-        "cedf5a43-0fd4-475f-bc51-205715b69abd"
+        "b3bf5e61-3ce4-49c8-a560-d9462466cd1b"
       ],
       "settings": {
         "color": "#75fa4d",
