@@ -17,7 +17,7 @@
           "settings": {
             "title": "Indoor Air Pollution",
             "description": "We now spend more than 90% of our time indoors. When not at home, we’re huddled in offices, schools, malls – spaces prone to indoor pollutants.\n\nVOCs, viruses, bacteria, mold, allergens & chemical particles affect our physical health, well-being & productivity.",
-            "image": "shopify:\/\/shop_images\/image_98.jpg"
+            "image": "shopify:\/\/shop_images\/image_2022-11-29_071804809.png"
           }
         },
         "498af38d-3010-480a-bb98-c9cdae0a0e5c": {
@@ -25,7 +25,7 @@
           "settings": {
             "title": "VOCs: the biggest culprit",
             "description": "Volatile Organic Compounds (VOCs) are gases released from products or chemical processes.\n\nMany products release VOCs: cleaning liquids, aerosols, furniture, post-renovation odors, electronics – even our bodies.",
-            "image": "shopify:\/\/shop_images\/Rectangle_255.jpg"
+            "image": "shopify:\/\/shop_images\/image_2022-11-29_071929450.png"
           }
         }
       },
@@ -61,7 +61,7 @@
         "c11c89d9-f322-4ca2-93a5-4844a3362067": {
           "type": "chemical",
           "settings": {
-            "title": "Formaldehyde test",
+            "title": "Formaldehyde",
             "chemical_formula": "shopify:\/\/shop_images\/Group_1658.png",
             "chemical_structure": "shopify:\/\/shop_images\/Group_1842.png",
             "solar_spectrum_range": "",
@@ -72,11 +72,42 @@
             "how_it_harm": "Formaldehyde damages the liver, lungs, kidneys, central nervous systems and increases the risk of cancer. It aggravates respiratory conditions.",
             "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy"
           }
+        },
+        "22b53e56-e001-42b8-9a4d-9fc33f69e5e0": {
+          "type": "chemical",
+          "settings": {
+            "title": "Acetaldehyde",
+            "chemical_formula": "shopify:\/\/shop_images\/image_2022-11-29_072101352.png",
+            "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_072135763.png",
+            "solar_spectrum_range": "",
+            "odor": "Pungent, fruity",
+            "appearance": "Clear, colourless liquid",
+            "found_in": "Comes from plants, ripe fruits and vegetables, cigarette smoke, diesel, perfumes, flooring",
+            "this_is_great": "",
+            "how_it_harm": "The effects of acetaldehyde are similar to a hangover. Besides impairing brain, motor and memory functions, it also damages DNA and cell membranes, causing scar tissue.",
+            "effects_of_exposure": "Irritated eyes, skin and respiratory tract; lightheadness, skin rashes, coughing"
+          }
+        },
+        "2c7c919c-dda7-4b64-8a7a-efb7ac25b686": {
+          "type": "chemical",
+          "settings": {
+            "title": "Toluene",
+            "chemical_formula": "shopify:\/\/shop_images\/image_2022-11-29_072329250.png",
+            "solar_spectrum_range": "",
+            "odor": "",
+            "appearance": "",
+            "found_in": "",
+            "this_is_great": "",
+            "how_it_harm": "",
+            "effects_of_exposure": ""
+          }
         }
       },
       "block_order": [
         "118d9143-8dde-439a-a97c-478585eae289",
-        "c11c89d9-f322-4ca2-93a5-4844a3362067"
+        "c11c89d9-f322-4ca2-93a5-4844a3362067",
+        "22b53e56-e001-42b8-9a4d-9fc33f69e5e0",
+        "2c7c919c-dda7-4b64-8a7a-efb7ac25b686"
       ],
       "settings": {
         "page_name": "science"
