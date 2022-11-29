@@ -176,7 +176,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "1762459649": {
+        "type": "shopify:\/\/apps\/facebook-pixel-&-tiktok-pixel\/blocks\/one-pixel\/fbbf7f1f-cacf-481b-802e-aa7043758c9c",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
