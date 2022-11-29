@@ -13,7 +13,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Your one-stop shop to meet  \nall your painting project needs.",
+            "text": "Your one-stop shop to meet\nall your painting project needs.",
             "text_style": "body"
           }
         },
@@ -50,7 +50,7 @@
     "165276794068d36259": {
       "type": "about-product",
       "settings": {
-        "heading": "Job done. \nFast and easy.",
+        "heading": "Job done.\nFast and easy.",
         "color": "#ff5500",
         "image1": "shopify:\/\/shop_images\/Rectangle_156.png",
         "heading1": "Dedicated painters",
@@ -140,6 +140,7 @@
     "165276834663a5573d": {
       "type": "footer-contact",
       "settings": {
+        "title": "",
         "heading": "Ready to get started?",
         "btn_text": "Contact us",
         "btn_type": "secondary",
@@ -218,84 +219,6 @@
         "padding_bottom": 52
       }
     },
-    "1653548855ee6a3260": {
-      "type": "testimonials-gush",
-      "disabled": true,
-      "blocks": {
-        "cafd2dca-d820-4337-9a8b-f3dd8bf7acbf": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        },
-        "6066deea-d403-4f4a-a942-b9d96791b10e": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        },
-        "d51b4dc0-b495-4462-9087-fcb732b0aeae": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "134 Reviews"
-          }
-        },
-        "cddd51cb-d46d-4654-8f9e-26b96b3467bb": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        },
-        "2e71b791-f1f8-49f7-b64d-91440b631c54": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        },
-        "e3bfa381-21c4-4767-a717-607bd69edea9": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        },
-        "fee3b351-32fb-47af-b5bd-65f05fad45ac": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        }
-      },
-      "block_order": [
-        "cafd2dca-d820-4337-9a8b-f3dd8bf7acbf",
-        "6066deea-d403-4f4a-a942-b9d96791b10e",
-        "d51b4dc0-b495-4462-9087-fcb732b0aeae",
-        "cddd51cb-d46d-4654-8f9e-26b96b3467bb",
-        "2e71b791-f1f8-49f7-b64d-91440b631c54",
-        "e3bfa381-21c4-4767-a717-607bd69edea9",
-        "fee3b351-32fb-47af-b5bd-65f05fad45ac"
-      ],
-      "settings": {
-        "review_heading": "Overall rating",
-        "review_num": "4.98",
-        "review_count": "134 Reviews",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "ce111c94-3a0b-4427-b1b9-35a03f8e5477": {
       "type": "section-stamped-review",
       "blocks": {
@@ -319,7 +242,6 @@
     "165276808691ea54b2",
     "165276834663a5573d",
     "1653548703a8d9cba4",
-    "1653548855ee6a3260",
     "ce111c94-3a0b-4427-b1b9-35a03f8e5477"
   ]
 }
