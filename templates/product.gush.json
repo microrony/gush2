@@ -181,80 +181,11 @@
       "settings": {
         "section-title": "Don’t settle for\nanything less",
         "section-des": "Gush paints pack a punch: you get six features in one tub. Say goodbye to toxic fumes for good.",
-        "circuler-img1": "shopify:\/\/shop_images\/Ellipse_816.png",
-        "circuler-img2": "shopify:\/\/shop_images\/Ellipse_816.png",
+        "circuler-img1": "shopify:\/\/shop_images\/image_2022-11-29_082119507.png",
+        "circuler-img2": "shopify:\/\/shop_images\/image_2022-11-29_082136625.png",
         "heading-img1": "Other paints",
         "heading-img2": "Gush",
         "heading": "Us vs Them"
-      }
-    },
-    "16524399652ff3675c": {
-      "type": "testimonials-gush",
-      "disabled": true,
-      "blocks": {
-        "dde958b8-ccdb-4a9f-830c-c8e8f8cb17b9": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Client 1"
-          }
-        },
-        "6d1c47cc-d51f-4038-b331-4514023b48ce": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Client 2"
-          }
-        },
-        "d35ac7a1-aef7-4430-8e45-df5ce33bd98a": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Client 3"
-          }
-        },
-        "c27ecbf7-0622-4d67-a612-3d192b712ff3": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Client 4"
-          }
-        },
-        "62e86f71-6216-431a-8747-29a5b38eb301": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Client 5"
-          }
-        },
-        "d79bcb2f-a4a9-4a64-826f-17cdb4ca2fb2": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Client 5"
-          }
-        }
-      },
-      "block_order": [
-        "dde958b8-ccdb-4a9f-830c-c8e8f8cb17b9",
-        "6d1c47cc-d51f-4038-b331-4514023b48ce",
-        "d35ac7a1-aef7-4430-8e45-df5ce33bd98a",
-        "c27ecbf7-0622-4d67-a612-3d192b712ff3",
-        "62e86f71-6216-431a-8747-29a5b38eb301",
-        "d79bcb2f-a4a9-4a64-826f-17cdb4ca2fb2"
-      ],
-      "settings": {
-        "review_heading": "",
-        "review_num": "",
-        "review_count": "",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "72a7f502-2042-444c-a966-2f640303a58c": {
@@ -301,7 +232,6 @@
     "1652439533f0dc6359",
     "16524396805057076a",
     "1652439903eeaf17c8",
-    "16524399652ff3675c",
     "72a7f502-2042-444c-a966-2f640303a58c"
   ]
 }
