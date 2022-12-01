@@ -183,6 +183,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "13080609507722906876": {
+        "type": "shopify:\/\/apps\/related-blog-posts\/blocks\/app-embed\/7e18cab2-c869-4042-bc07-288e9bb4e22d",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
