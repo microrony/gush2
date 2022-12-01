@@ -243,7 +243,7 @@
           "settings": {
             "top": 38,
             "left": 31,
-            "info": "Test -1"
+            "info": "Our paints remove 99% of pollutants in 21 hours."
           }
         }
       },
@@ -254,13 +254,13 @@
         "heading": "",
         "header_padding_top": 0,
         "header_padding_bottom": 0,
-        "img": "shopify:\/\/shop_images\/Frame_2250.png",
+        "img": "shopify:\/\/shop_images\/image_2022-12-01_144526487.png",
         "category": "Anti-molding",
         "title": "Keep your walls clear of mold growth.",
         "desc": "Anti-microbial agents in our paint break down mold spores and stop their spread.",
         "link_text": "",
         "url": "",
-        "bottom_circle_txt": "Our paints remove 99% of pollutants in 21 hours.",
+        "bottom_circle_txt": "",
         "info_position": "right",
         "padding_bottom": 0
       }
