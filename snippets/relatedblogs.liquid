@@ -57,17 +57,8 @@
     {%- unless ex_frmpool_id contains article.id -%}
 
     
-      {%- assign atitle_temp = article.title | remove : " " | split: "" -%}
-      {%- assign flag = "false" -%}
-      {%- for word in atitle_temp -%}
-      {%- if article_title_arr contains word -%}
-      {%- assign flag = "true" -%}
-      {%- break -%}
-      {%- endif -%}
-      {%- endfor -%}
-
-      {%- if flag == "true" -%}
-      {%- assign related_posts = related_posts | append:article.id | append : "," -%}
+      {%- if article_author ==  article.author -%}
+      {%- assign related_posts = related_posts | append:article.id | append : ","-%}
       {%- endif -%}
 
     
