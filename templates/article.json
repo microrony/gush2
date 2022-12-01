@@ -37,20 +37,10 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "d7a22904-f8e5-456c-a031-21455e18bce9": {
-      "type": "gush-featured-blog",
-      "settings": {
-        "heading": "Science",
-        "blog": "science",
-        "padding_top": 0,
-        "padding_bottom": 50
-      }
     }
   },
   "order": [
     "main",
-    "1669874193b00c7089",
-    "d7a22904-f8e5-456c-a031-21455e18bce9"
+    "1669874193b00c7089"
   ]
 }
