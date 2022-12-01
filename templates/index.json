@@ -205,20 +205,11 @@
             "left": 31,
             "info": "info-2"
           }
-        },
-        "44077800-869a-4004-8ad9-dbaf5ffc2d84": {
-          "type": "block",
-          "settings": {
-            "top": 5,
-            "left": 45,
-            "info": "info -3"
-          }
         }
       },
       "block_order": [
         "36169f81-3e75-4ae0-be54-183ef4fcf471",
-        "b3f68452-a105-49fb-a027-b1d91d6055b1",
-        "44077800-869a-4004-8ad9-dbaf5ffc2d84"
+        "b3f68452-a105-49fb-a027-b1d91d6055b1"
       ],
       "settings": {
         "heading": "Our built-in features give you a safer, healthier home.",
