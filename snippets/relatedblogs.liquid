@@ -9,7 +9,7 @@
 
   {%- assign blog_ids = "85477687489,84905525441,83841450177,85477654721,84646297793,85477720257"  -%}
 
-      {%- assign blog_handle_arr = "brand,journal,news,science,sustainability,wellness" | split: "," -%}
+      {%- assign blog_handle_arr = blog.handle -%}
   
 {%- assign blog_flag = "false" -%}
 
@@ -66,17 +66,10 @@
       {%- endif -%}
       {%- endfor -%}
 
-      {%- assign t_flag = "false" -%}
-      {%- for tag in current_post_tags -%}
-      {%- if article.tags contains tag -%}
-      {%- assign t_flag = "true" -%}
-      {%- break -%}
+      {%- if flag == "true" -%}
+      {%- assign related_posts = related_posts | append:article.id | append : "," -%}
       {%- endif -%}
-      {%- endfor -%}
 
-      {%- if t_flag == "true"  or article_author ==  article.author or flag == "true" -%}
-      {%- assign related_posts = related_posts | append:article.id | append : ","-%}
-      {%- endif -%}
     
     {%- endunless -%}
     {%- endfor -%}
