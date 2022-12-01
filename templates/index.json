@@ -267,17 +267,30 @@
     },
     "58f92b37-f7c7-41c1-b5e7-bd64400574b8": {
       "type": "paint-details-circle",
+      "blocks": {
+        "c52bd44b-ddf0-4a46-9dcf-a3d88d27ccc9": {
+          "type": "block",
+          "settings": {
+            "top": 29,
+            "left": 21,
+            "info": "Furniture & many household materials release pollutants."
+          }
+        }
+      },
+      "block_order": [
+        "c52bd44b-ddf0-4a46-9dcf-a3d88d27ccc9"
+      ],
       "settings": {
         "heading": "",
         "header_padding_top": 0,
         "header_padding_bottom": 0,
-        "img": "shopify:\/\/shop_images\/Frame_2248.png",
+        "img": "shopify:\/\/shop_images\/image_2022-12-01_143930910.png",
         "category": "Toxic-free & odourless",
         "title": "Avoid harmful fumes, before and after painting.",
         "desc": "Our paints are VOC-free certified, made with natural ingredients and don’t release any toxic odours. Breathe easy.",
         "link_text": "",
         "url": "",
-        "bottom_circle_txt": "Furniture & many household materials release pollutants.",
+        "bottom_circle_txt": "",
         "info_position": "left",
         "padding_bottom": 108
       }
