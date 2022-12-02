@@ -33,7 +33,7 @@
         "ce3e4621-5261-45d6-9bec-aa15957d761c"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_432.png",
+        "image": "shopify:\/\/shop_images\/Frame_432_60b03cd5-f920-43be-ac25-9a959d7c3999.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -286,7 +286,7 @@
         "17758f2a-44c2-4acb-843a-008ce290fa49"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Group_1636.png",
+        "image": "shopify:\/\/shop_images\/image_163.png",
         "heading": "All set and \nready to go?",
         "description": "Can’t find your property? Start your own group buy today. Get your neighbours enjoying clean, safe homes together with you; special rates included just for you.",
         "page_name": "group_buy"
@@ -295,7 +295,8 @@
     "cb5e433c-c809-42c5-b549-a358067777a8": {
       "type": "footer-contact",
       "settings": {
-        "heading": "Ready to get started? Tell us your details and we’ll reach out to you directly.",
+        "title": "Ready to get started? Tell us your details and we’ll reach out to you directly.",
+        "heading": "",
         "btn_text": "Send enquiry",
         "btn_type": "primary",
         "page_name": "group_buy"

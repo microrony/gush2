@@ -34,7 +34,7 @@
         "template--16032460800193__6ff782c6-f777-4520-9053-9a135fb2b9df-16690814089a6b9c66-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/01_1.png",
+        "image": "shopify:\/\/shop_images\/Group_2710.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
@@ -138,7 +138,7 @@
           "settings": {
             "category": "Gush Core",
             "Description": "Low VOC, toxic-free, \nno-frills paint for a healthier indoors.",
-            "img": "shopify:\/\/shop_images\/Frame_2251.png"
+            "img": "shopify:\/\/shop_images\/image_2022-12-01_154448966.png"
           }
         },
         "b7f04872-dddf-4314-bc8c-2c1ac94c5acb": {
@@ -146,7 +146,7 @@
           "settings": {
             "category": "Gush Cair",
             "Description": "The paint that purifies your indoor air of pollutants. 24\/7.",
-            "img": "shopify:\/\/shop_images\/Frame_2252.png"
+            "img": "shopify:\/\/shop_images\/image_2022-12-01_154553976.png"
           }
         },
         "7248d00e-b4a3-49da-883a-0d18242402ee": {
@@ -206,20 +206,11 @@
             "left": 31,
             "info": "info-2"
           }
-        },
-        "44077800-869a-4004-8ad9-dbaf5ffc2d84": {
-          "type": "block",
-          "settings": {
-            "top": 5,
-            "left": 45,
-            "info": "info -3"
-          }
         }
       },
       "block_order": [
         "36169f81-3e75-4ae0-be54-183ef4fcf471",
-        "b3f68452-a105-49fb-a027-b1d91d6055b1",
-        "44077800-869a-4004-8ad9-dbaf5ffc2d84"
+        "b3f68452-a105-49fb-a027-b1d91d6055b1"
       ],
       "settings": {
         "heading": "Our built-in features give you a safer, healthier home.",
@@ -244,7 +235,7 @@
           "settings": {
             "top": 38,
             "left": 31,
-            "info": "Test -1"
+            "info": "Our paints remove 99% of pollutants in 21 hours."
           }
         }
       },
@@ -255,30 +246,43 @@
         "heading": "",
         "header_padding_top": 0,
         "header_padding_bottom": 0,
-        "img": "shopify:\/\/shop_images\/Frame_2250.png",
+        "img": "shopify:\/\/shop_images\/image_2022-12-01_144526487.png",
         "category": "Anti-molding",
         "title": "Keep your walls clear of mold growth.",
         "desc": "Anti-microbial agents in our paint break down mold spores and stop their spread.",
         "link_text": "",
         "url": "",
-        "bottom_circle_txt": "Our paints remove 99% of pollutants in 21 hours.",
+        "bottom_circle_txt": "",
         "info_position": "right",
         "padding_bottom": 0
       }
     },
     "58f92b37-f7c7-41c1-b5e7-bd64400574b8": {
       "type": "paint-details-circle",
+      "blocks": {
+        "c52bd44b-ddf0-4a46-9dcf-a3d88d27ccc9": {
+          "type": "block",
+          "settings": {
+            "top": 29,
+            "left": 21,
+            "info": "Furniture & many household materials release pollutants."
+          }
+        }
+      },
+      "block_order": [
+        "c52bd44b-ddf0-4a46-9dcf-a3d88d27ccc9"
+      ],
       "settings": {
         "heading": "",
         "header_padding_top": 0,
         "header_padding_bottom": 0,
-        "img": "shopify:\/\/shop_images\/Frame_2248.png",
+        "img": "shopify:\/\/shop_images\/image_2022-12-01_143930910.png",
         "category": "Toxic-free & odourless",
         "title": "Avoid harmful fumes, before and after painting.",
         "desc": "Our paints are VOC-free certified, made with natural ingredients and don’t release any toxic odours. Breathe easy.",
         "link_text": "",
         "url": "",
-        "bottom_circle_txt": "Furniture & many household materials release pollutants.",
+        "bottom_circle_txt": "",
         "info_position": "left",
         "padding_bottom": 108
       }
@@ -330,7 +334,7 @@
     "5edad96d-b76d-483a-87fd-8949efadfad3": {
       "type": "gush-service-banner",
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Frame_432.png",
+        "bg_image": "shopify:\/\/shop_images\/Frame_2271.jpg",
         "title": "Gush painting services",
         "heading": "Fulfil all your paint job needs at one go. By expert painters only.",
         "desc": "Transform your spaces now with our start-to-end suite of professional services, customisable to your needs.",

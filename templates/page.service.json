@@ -13,7 +13,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Your one-stop shop to meet  \nall your painting project needs.",
+            "text": "Your one-stop shop to meet\nall your painting project needs.",
             "text_style": "body"
           }
         },
@@ -50,15 +50,15 @@
     "165276794068d36259": {
       "type": "about-product",
       "settings": {
-        "heading": "Job done. \nFast and easy.",
+        "heading": "Job done.\nFast and easy.",
         "color": "#ff5500",
-        "image1": "shopify:\/\/shop_images\/Rectangle_156.png",
+        "image1": "shopify:\/\/shop_images\/Frame_2324.png",
         "heading1": "Dedicated painters",
         "text1": "Seasoned professionals will cover every inch – even the nooks and crannies.",
-        "image2": "shopify:\/\/shop_images\/Rectangle_157_55df86fb-6d4f-439a-b2a6-baa988f412c7.png",
+        "image2": "shopify:\/\/shop_images\/image_2022-12-01_110738453.png",
         "heading2": "From start to finish",
-        "text2": "Plastering, wall repair, mold treatment,  room disinfection – fulfil all your paint job  needs at one go.",
-        "image3": "shopify:\/\/shop_images\/Rectangle_6_fdd2b7f2-30d4-45b1-b8b6-c85bdf0f3a45.png",
+        "text2": "Plastering, wall repair, mold treatment, room disinfection – fulfil all your paint job needs at one go.",
+        "image3": "shopify:\/\/shop_images\/image_2022-12-01_110759419.png",
         "heading3": "Flexible packages",
         "text3": "Get accurate quotations customized for your needs. Quality materials guaranteed.",
         "icon-margin": 0,
@@ -74,7 +74,7 @@
             "faq_img": "shopify:\/\/shop_images\/Group_1237.png",
             "title": "Enquire & Book",
             "faq_quality": "",
-            "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            "faq_ans": "Let us know about your painting needs by filling up our enquiry form below."
           }
         },
         "5df8158b-c9e0-4d3e-b063-8605ab369147": {
@@ -83,7 +83,7 @@
             "faq_img": "shopify:\/\/shop_images\/ICON_8a6e0c8f-792a-433e-83be-1415a43bd302.png",
             "title": "Free Site Consultation",
             "faq_quality": "",
-            "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            "faq_ans": "We'll arrange a non-obligatory site visit with you to assess the condition of your space and offer colour recommendations."
           }
         },
         "09d5098f-9c57-4b01-b3f0-463b287da0a8": {
@@ -92,7 +92,7 @@
             "faq_img": "shopify:\/\/shop_images\/ICON.png",
             "title": "Select Project Dates",
             "faq_quality": "",
-            "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            "faq_ans": "After inspection, we'll confirm your job requirements and when you'd like to get your space transformed."
           }
         },
         "fc4c32ee-f225-49d6-b45c-84275372cae9": {
@@ -101,7 +101,7 @@
             "faq_img": "shopify:\/\/shop_images\/ICON_1.png",
             "title": "Get Rolling",
             "faq_quality": "",
-            "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            "faq_ans": "Our painting process includes furniture protection, 2 coats of Gush Paint for walls and ceilings, and disinfection services too, if you like."
           }
         },
         "445a3435-b1e0-4c7f-bdd6-99b83bc0666d": {
@@ -110,7 +110,7 @@
             "faq_img": "shopify:\/\/shop_images\/ICON_2.png",
             "title": "Inspection & Touch Up",
             "faq_quality": "",
-            "faq_ans": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            "faq_ans": "After painting is completed, we conduct a final inspection for touch-ups."
           }
         }
       },
@@ -140,6 +140,7 @@
     "165276834663a5573d": {
       "type": "footer-contact",
       "settings": {
+        "title": "",
         "heading": "Ready to get started?",
         "btn_text": "Contact us",
         "btn_type": "secondary",
@@ -218,84 +219,6 @@
         "padding_bottom": 52
       }
     },
-    "1653548855ee6a3260": {
-      "type": "testimonials-gush",
-      "disabled": true,
-      "blocks": {
-        "cafd2dca-d820-4337-9a8b-f3dd8bf7acbf": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        },
-        "6066deea-d403-4f4a-a942-b9d96791b10e": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        },
-        "d51b4dc0-b495-4462-9087-fcb732b0aeae": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "134 Reviews"
-          }
-        },
-        "cddd51cb-d46d-4654-8f9e-26b96b3467bb": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        },
-        "2e71b791-f1f8-49f7-b64d-91440b631c54": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        },
-        "e3bfa381-21c4-4767-a717-607bd69edea9": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        },
-        "fee3b351-32fb-47af-b5bd-65f05fad45ac": {
-          "type": "text",
-          "settings": {
-            "heading": "THE BESTTTTT",
-            "content": "“cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident”",
-            "name": "Dexter"
-          }
-        }
-      },
-      "block_order": [
-        "cafd2dca-d820-4337-9a8b-f3dd8bf7acbf",
-        "6066deea-d403-4f4a-a942-b9d96791b10e",
-        "d51b4dc0-b495-4462-9087-fcb732b0aeae",
-        "cddd51cb-d46d-4654-8f9e-26b96b3467bb",
-        "2e71b791-f1f8-49f7-b64d-91440b631c54",
-        "e3bfa381-21c4-4767-a717-607bd69edea9",
-        "fee3b351-32fb-47af-b5bd-65f05fad45ac"
-      ],
-      "settings": {
-        "review_heading": "Overall rating",
-        "review_num": "4.98",
-        "review_count": "134 Reviews",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "ce111c94-3a0b-4427-b1b9-35a03f8e5477": {
       "type": "section-stamped-review",
       "blocks": {
@@ -319,7 +242,6 @@
     "165276808691ea54b2",
     "165276834663a5573d",
     "1653548703a8d9cba4",
-    "1653548855ee6a3260",
     "ce111c94-3a0b-4427-b1b9-35a03f8e5477"
   ]
 }

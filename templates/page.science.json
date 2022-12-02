@@ -17,7 +17,7 @@
           "settings": {
             "title": "Indoor Air Pollution",
             "description": "We now spend more than 90% of our time indoors. When not at home, we’re huddled in offices, schools, malls – spaces prone to indoor pollutants.\n\nVOCs, viruses, bacteria, mold, allergens & chemical particles affect our physical health, well-being & productivity.",
-            "image": "shopify:\/\/shop_images\/image_98.jpg"
+            "image": "shopify:\/\/shop_images\/image_2022-11-29_071804809.png"
           }
         },
         "498af38d-3010-480a-bb98-c9cdae0a0e5c": {
@@ -25,7 +25,7 @@
           "settings": {
             "title": "VOCs: the biggest culprit",
             "description": "Volatile Organic Compounds (VOCs) are gases released from products or chemical processes.\n\nMany products release VOCs: cleaning liquids, aerosols, furniture, post-renovation odors, electronics – even our bodies.",
-            "image": "shopify:\/\/shop_images\/Rectangle_255.jpg"
+            "image": "shopify:\/\/shop_images\/image_2022-11-29_071929450.png"
           }
         }
       },
@@ -61,9 +61,9 @@
         "c11c89d9-f322-4ca2-93a5-4844a3362067": {
           "type": "chemical",
           "settings": {
-            "title": "Formaldehyde test",
-            "chemical_formula": "shopify:\/\/shop_images\/Group_1658.png",
-            "chemical_structure": "shopify:\/\/shop_images\/Group_1842.png",
+            "title": "Formaldehyde",
+            "chemical_formula": "shopify:\/\/shop_images\/image_2022-11-29_073022201.png",
+            "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_072942167.png",
             "solar_spectrum_range": "",
             "odor": "Pungent, vinegar-like",
             "appearance": "Colourless",
@@ -72,11 +72,59 @@
             "how_it_harm": "Formaldehyde damages the liver, lungs, kidneys, central nervous systems and increases the risk of cancer. It aggravates respiratory conditions.",
             "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy"
           }
+        },
+        "22b53e56-e001-42b8-9a4d-9fc33f69e5e0": {
+          "type": "chemical",
+          "settings": {
+            "title": "Acetaldehyde",
+            "chemical_formula": "shopify:\/\/shop_images\/image_2022-11-29_072101352.png",
+            "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_072135763.png",
+            "solar_spectrum_range": "",
+            "odor": "Pungent, fruity",
+            "appearance": "Clear, colourless liquid",
+            "found_in": "Comes from plants, ripe fruits and vegetables, cigarette smoke, diesel, perfumes, flooring",
+            "this_is_great": "",
+            "how_it_harm": "The effects of acetaldehyde are similar to a hangover. Besides impairing brain, motor and memory functions, it also damages DNA and cell membranes, causing scar tissue.",
+            "effects_of_exposure": "Irritated eyes, skin and respiratory tract; lightheadness, skin rashes, coughing"
+          }
+        },
+        "2c7c919c-dda7-4b64-8a7a-efb7ac25b686": {
+          "type": "chemical",
+          "settings": {
+            "title": "Toluene",
+            "chemical_formula": "shopify:\/\/shop_images\/image_2022-11-29_072329250.png",
+            "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_072427330.png",
+            "solar_spectrum_range": "",
+            "odor": "Sharp, sweet",
+            "appearance": "Clear, colourless",
+            "found_in": "Found in metal cleaners, varnishes, shellac, nail polish, glues, rust preventives, printing inks",
+            "this_is_great": "",
+            "how_it_harm": "Toluene damages the heart, liver, kidney and lungs. It causes numbness in the hands or feet. It also affects babies’ development in the womb. Exposure can induce confusion and anxiety.",
+            "effects_of_exposure": "Irritated eyes, nose and throat; dry or cracked skin, headaches, dizziness, stupor"
+          }
+        },
+        "138674f6-fdde-4590-b8ca-e147e70f3bde": {
+          "type": "chemical",
+          "settings": {
+            "title": "Xylene",
+            "chemical_formula": "shopify:\/\/shop_images\/image_2022-11-29_072515146.png",
+            "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_072523212.png",
+            "solar_spectrum_range": "",
+            "odor": "Sweet",
+            "appearance": "Colourless",
+            "found_in": "Found in furniture refinishers, paint thinners, solvents, lacquers",
+            "this_is_great": "Xylene slows the nervous system’s responsiveness and disrupts the functioning of nerve cells. It slows reaction time and reduces muscle coordination.",
+            "how_it_harm": "",
+            "effects_of_exposure": "Irritated eyes, nose, skin and throat; headaches, slow reaction time, loss of muscle coordination"
+          }
         }
       },
       "block_order": [
         "118d9143-8dde-439a-a97c-478585eae289",
-        "c11c89d9-f322-4ca2-93a5-4844a3362067"
+        "c11c89d9-f322-4ca2-93a5-4844a3362067",
+        "22b53e56-e001-42b8-9a4d-9fc33f69e5e0",
+        "2c7c919c-dda7-4b64-8a7a-efb7ac25b686",
+        "138674f6-fdde-4590-b8ca-e147e70f3bde"
       ],
       "settings": {
         "page_name": "science"
@@ -204,9 +252,9 @@
             "title": "Anti-molding",
             "text": "gush paint \nMold growth tests",
             "uncoated_surface_text": "Uncoated surface",
-            "uncoated_surface_image": "shopify:\/\/shop_images\/Ellipse_816.png",
+            "uncoated_surface_image": "shopify:\/\/shop_images\/image_2022-11-29_073713092.png",
             "gush_coated_surface_text": "Gush Coated Surface",
-            "gush_coated_surface_image": "shopify:\/\/shop_images\/Ellipse_816.png",
+            "gush_coated_surface_image": "shopify:\/\/shop_images\/image_2022-11-29_073759894.png",
             "environment": "<span>Environment<\/span>\nHumidity Indoor",
             "temperature": "<span>Temperature<\/span>\nDifferentials",
             "testing_duration": "<span>Testing Duration<\/span>\n3 months",

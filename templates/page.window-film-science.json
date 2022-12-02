@@ -6,7 +6,7 @@
         "title": "Film, uncovered",
         "description": "See how our films create a thermal shield for your home and everyone in it – giving you protection, comfort and energy savings.",
         "image": "shopify:\/\/shop_images\/gush_logo_v2.png",
-        "page_name": "Window_film_science"
+        "page_name": "science"
       }
     },
     "science-steps": {
@@ -25,7 +25,7 @@
           "settings": {
             "title": "More and more heat produced",
             "description": "Using air-conditioning units and cooling systems releases more heat, making the outdoors even hotter. A vicious cycle ensues.The problem is: heat doesn’t come from sunlight alone. The solar spectrum also includes heat from Ultraviolet and infrared rays, which are produced by machine and human activities too.",
-            "image": "shopify:\/\/shop_images\/Rectangle_255.png"
+            "image": "shopify:\/\/shop_images\/image_2022-11-29_074629637.png"
           }
         }
       },
@@ -45,9 +45,13 @@
       "settings": {
         "title": "Heat comes from the solar spectrum",
         "description": "In the right amounts, heat can be great for our body and mind. But too much of it, and things can get unpleasant.",
+        "bg_color": "#ffffff",
         "color": "#302112",
         "margin_top": 100,
-        "margin_bottom": 70
+        "margin_bottom": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "page_name": "window_film_science"
       }
     },
     "574430cd-ac83-4341-a65d-812f7fd6ba34": {
@@ -58,7 +62,7 @@
           "settings": {
             "title": "Ultraviolet",
             "chemical_formula": "shopify:\/\/shop_images\/Group_1658_305a8b1d-986d-458a-a9ed-6dfd66452265.png",
-            "chemical_structure": "shopify:\/\/shop_images\/UV_2-1440x700_1.png",
+            "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_074717338.png",
             "solar_spectrum_range": "100 - 400nm",
             "odor": "",
             "appearance": "",
@@ -72,7 +76,7 @@
           "type": "chemical",
           "settings": {
             "title": "Visible Light",
-            "chemical_structure": "shopify:\/\/shop_images\/Visble_light_2-1440x700_1.png",
+            "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_074812568.png",
             "solar_spectrum_range": "400 - 750nm",
             "odor": "",
             "appearance": "",
@@ -87,7 +91,7 @@
           "settings": {
             "title": "Near Infrared",
             "chemical_formula": "shopify:\/\/shop_images\/Group_1658_1.png",
-            "chemical_structure": "shopify:\/\/shop_images\/IR_2-1440x700_1.png",
+            "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_074853464.png",
             "solar_spectrum_range": "780nm -  3000nm",
             "odor": "",
             "appearance": "",
@@ -121,9 +125,13 @@
       "settings": {
         "title": "How it works",
         "description": "The nanoceramic particles in Gush film are tuned through heterovalent doping. As electromagnetic wavelengths pass through the film, a phenomenon called Localised Surface Plasmon Resonance (LSPR) occurs. The doped nanoceramic particles absorb UV and NIR rays, while allowing visible light rays to pass through.",
+        "bg_color": "#ffffff",
         "color": "#ff5500",
         "margin_top": 100,
-        "margin_bottom": 100
+        "margin_bottom": 100,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "page_name": "window_film_science"
       }
     },
     "gush-film": {
