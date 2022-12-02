@@ -99,6 +99,19 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
+        "blocks": {
+          "779cad96-a3a6-4fc3-afe6-1e88621fb3e5": {
+            "type": "announcement",
+            "settings": {
+              "text": "OUT OF STOCK: All Cair and Cair Fresh orders will be delayed until further notice. Thank you for your patience.",
+              "color_scheme": "inverse",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "779cad96-a3a6-4fc3-afe6-1e88621fb3e5"
+        ],
         "settings": {
         }
       },
