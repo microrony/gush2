@@ -209,27 +209,20 @@
         "1683ebf2-4aeb-43bb-abb8-d99f42b78711": {
           "type": "review_category",
           "settings": {
-            "title": "Option 1"
+            "title": "Product"
           }
         },
         "b3f3188e-4fdd-44a9-9f09-040d13cb106b": {
           "type": "review_category",
           "settings": {
-            "title": "Option 2"
-          }
-        },
-        "c2d0de44-6990-4b20-85ad-c7395e1833a9": {
-          "type": "review_category",
-          "settings": {
-            "title": "Option 3"
+            "title": "Services"
           }
         }
       },
       "block_order": [
         "575d0a25-77ea-44db-a722-bc64c4fc4f84",
         "1683ebf2-4aeb-43bb-abb8-d99f42b78711",
-        "b3f3188e-4fdd-44a9-9f09-040d13cb106b",
-        "c2d0de44-6990-4b20-85ad-c7395e1833a9"
+        "b3f3188e-4fdd-44a9-9f09-040d13cb106b"
       ],
       "settings": {
       }
