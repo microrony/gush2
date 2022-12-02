@@ -1,3 +1,12 @@
+@media screen and (min-width:1400px){
+    .science-wonder-container .dot-2.active::after{
+        height: 330px !important;
+    }
+    .science-wonder-container .dot-1.active::before{
+        height: 200px !important;
+        transform-origin: -200px 55% !important;
+    }
+}
 .science-wonder-inner-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);

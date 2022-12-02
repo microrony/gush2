@@ -22,17 +22,26 @@
       "settings": {
       }
     },
-    "1669874193b00c7089": {
+    "d7a22904-f8e5-456c-a031-21455e18bce9": {
+      "type": "gush-featured-blog",
+      "settings": {
+        "heading": "Science",
+        "blog": "science",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    },
+    "1669874768cfc2ea98": {
       "type": "apps",
       "blocks": {
-        "f3d1d65c-d224-4d04-b75e-742330a36f8b": {
+        "9147f660-71d0-4746-bf72-0e059eb3c5ec": {
           "type": "shopify:\/\/apps\/related-blog-posts\/blocks\/app-block\/7e18cab2-c869-4042-bc07-288e9bb4e22d",
           "settings": {
           }
         }
       },
       "block_order": [
-        "f3d1d65c-d224-4d04-b75e-742330a36f8b"
+        "9147f660-71d0-4746-bf72-0e059eb3c5ec"
       ],
       "settings": {
         "include_margins": true
@@ -41,6 +50,7 @@
   },
   "order": [
     "main",
-    "1669874193b00c7089"
+    "d7a22904-f8e5-456c-a031-21455e18bce9",
+    "1669874768cfc2ea98"
   ]
 }

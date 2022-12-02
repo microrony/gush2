@@ -200,10 +200,10 @@
     },
     "contact": {
       "form": {
-        "name": "Your Name",
-        "email": "Email Address",
+        "name": "Your name",
+        "email": "Email address",
         "phone": "Mobile",
-        "comment": "Enquiry Type",
+        "comment": "Enquiry type",
         "send": "Send",
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "error_heading": "Please adjust the following:"

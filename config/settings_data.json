@@ -87,7 +87,8 @@
     "social_facebook_link": "https:\/\/facebook.com",
     "social_pinterest_link": "https:\/\/pinterest.com",
     "social_instagram_link": "http:\/\/instagram.com",
-    "social_tiktok_link": "https:\/\/tiktok.com",
+    "social_tiktok_link": "",
+    "social_linkedin_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
     "social_youtube_link": "",
@@ -100,17 +101,17 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "779cad96-a3a6-4fc3-afe6-1e88621fb3e5": {
+          "e6224d3e-54f7-4018-aba7-dad96d5ed68d": {
             "type": "announcement",
             "settings": {
-              "text": "OUT OF STOCK: All Cair and Cair Fresh orders will be delayed until further notice. Thank you for your patience.",
-              "color_scheme": "inverse",
-              "link": ""
+              "text": "Welcome to our store",
+              "color_scheme": "background-1",
+              "link": "shopify:\/\/pages\/films"
             }
           }
         },
         "block_order": [
-          "779cad96-a3a6-4fc3-afe6-1e88621fb3e5"
+          "e6224d3e-54f7-4018-aba7-dad96d5ed68d"
         ],
         "settings": {
         }
@@ -191,12 +192,6 @@
 
     ],
     "blocks": {
-      "1762459649": {
-        "type": "shopify:\/\/apps\/facebook-pixel-&-tiktok-pixel\/blocks\/one-pixel\/fbbf7f1f-cacf-481b-802e-aa7043758c9c",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "13080609507722906876": {
         "type": "shopify:\/\/apps\/related-blog-posts\/blocks\/app-embed\/7e18cab2-c869-4042-bc07-288e9bb4e22d",
         "disabled": false,
@@ -295,6 +290,7 @@
       "social_pinterest_link": "",
       "social_instagram_link": "",
       "social_tiktok_link": "",
+      "social_linkedin_link": "",
       "social_tumblr_link": "",
       "social_snapchat_link": "",
       "social_youtube_link": "",
