@@ -22,23 +22,6 @@
       "settings": {
       }
     },
-    "1669874768cfc2ea98": {
-      "type": "apps",
-      "blocks": {
-        "9147f660-71d0-4746-bf72-0e059eb3c5ec": {
-          "type": "shopify:\/\/apps\/related-blog-posts\/blocks\/app-block\/7e18cab2-c869-4042-bc07-288e9bb4e22d",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "9147f660-71d0-4746-bf72-0e059eb3c5ec"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "5e4998fe-bbe3-46e9-8a86-6ec4fb804455": {
       "type": "gush-related-blogs",
       "settings": {
@@ -50,7 +33,6 @@
   },
   "order": [
     "main",
-    "1669874768cfc2ea98",
     "5e4998fe-bbe3-46e9-8a86-6ec4fb804455"
   ]
 }
