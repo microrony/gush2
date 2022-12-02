@@ -207,10 +207,24 @@
           "settings": {
             "title": "All Reviews"
           }
+        },
+        "5569848c-f1bf-4713-8e2c-be245d6bda7e": {
+          "type": "review_category",
+          "settings": {
+            "title": "Product"
+          }
+        },
+        "0028e728-0d80-4d58-a93e-2b5533b43ad4": {
+          "type": "review_category",
+          "settings": {
+            "title": "Service"
+          }
         }
       },
       "block_order": [
-        "74af1450-7cd6-4d12-adb7-3497ad30ed98"
+        "74af1450-7cd6-4d12-adb7-3497ad30ed98",
+        "5569848c-f1bf-4713-8e2c-be245d6bda7e",
+        "0028e728-0d80-4d58-a93e-2b5533b43ad4"
       ],
       "settings": {
       }
