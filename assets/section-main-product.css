@@ -1296,16 +1296,33 @@ span.variant-price:before {
 	justify-content: space-around;
 	list-style: none;
 }
+.gush_product__description .tabs-content {
+	font-family: 'GTAmerica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  color: #302112;
+}
 
 .gush_product__description .tabs li {
-	padding: 1.2rem 0;
+  font-family: 'GTAmerica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  color: #B6AC9E;
+	padding: 1.4rem 0;
 	width: 100%;
 	text-align: center;
 	cursor: pointer;
 }
 
 .gush_product__description .tabs .active {
-	border-bottom: 1.38px solid rgb(var(--color-secondary-6));
+  color: #302112;
+	border-bottom: 2px solid #302112;
 }
 
 .gush_product__description .tabs-content li {

@@ -87,7 +87,8 @@
     "social_facebook_link": "https:\/\/facebook.com",
     "social_pinterest_link": "https:\/\/pinterest.com",
     "social_instagram_link": "http:\/\/instagram.com",
-    "social_tiktok_link": "https:\/\/tiktok.com",
+    "social_tiktok_link": "",
+    "social_linkedin_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
     "social_youtube_link": "",
@@ -189,7 +190,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "13080609507722906876": {
+        "type": "shopify:\/\/apps\/related-blog-posts\/blocks\/app-embed\/7e18cab2-c869-4042-bc07-288e9bb4e22d",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
@@ -281,6 +290,7 @@
       "social_pinterest_link": "",
       "social_instagram_link": "",
       "social_tiktok_link": "",
+      "social_linkedin_link": "",
       "social_tumblr_link": "",
       "social_snapchat_link": "",
       "social_youtube_link": "",

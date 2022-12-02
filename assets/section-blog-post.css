@@ -15,6 +15,9 @@
 .article_content_container {
   overflow: hidden;
 }
+.article_content_container a{
+  color: #ff5500;
+}
 .article_bottom_container {
   position: relative;
 }

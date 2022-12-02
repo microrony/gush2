@@ -1096,10 +1096,10 @@ customElements.define('variant-radios', VariantRadios);
 const mission_page = document.querySelector('#mission_page_id');
 
 const missionBgTransition = () => {
-  mission_page.style.background = '#302112';
+  mission_page.style.background = '#FF5500';
   mission_page.style.transition = 'background .5s ease-in-out';
 
-  const colors = ['#302112', '#796E62', '#B6AC9E', '#E8E0DB', '#F9F4F0'];
+  const colors = ['#FF5500', '#796E62', '#FFC900', '#E8E0DB', '#F9F4F0'];
 
   window.sections = [...document.querySelectorAll('#mission_page_id section')];
   window.lastScrollTop = window.pageYOffset;
@@ -1115,7 +1115,7 @@ const missionBgTransition = () => {
         el.setAttribute('data-bg', colors[index]);
         return { el, rect };
       })
-      .find(section => section.rect.bottom >= window.innerHeight * 0.7);
+      .find(section => section.rect.bottom >= window.innerHeight * 0.3);
     mission_page.style.background = section.el.getAttribute('data-bg');
   }
 };
@@ -1123,3 +1123,13 @@ const missionBgTransition = () => {
 if (mission_page !== null) {
   missionBgTransition();
 }
+// fix height of  paint circle image
+const paintCircleImages = document.querySelectorAll(".paint-content-container img");
+paintCircleImages.forEach(image=>{
+  image.style.height = `${image.offsetWidth}px`;
+})
+window.addEventListener("resize", () => { 
+  paintCircleImages.forEach(image=>{
+    image.style.height = `${image.offsetWidth}px`;
+});
+});

@@ -23,12 +23,12 @@
       assign ratio = media_aspect_ratio
     endif
   -%}
-  <div class="card-wrapper underline-links-hover">
+  <div class="card-wrapper">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
     
         {%- if article.image -%}
-            <div class="article-card__image media media--hover-effect">
-              <img
+            <a href="{{ article.url }}" class="article-card__image media media--hover-effect">
+                <img
                 srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
                   {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
                   {%- if article.image.src.width >= 533 -%}{{ article.image.src | image_url: width: 533 }} 533w,{%- endif -%}
@@ -44,7 +44,7 @@
                 width="{{ article.image.width }}"
                 height="{{ article.image.height }}"
               >
-            </div>
+            </a>
          
         {%- endif -%}
         <div class="main-article_card__content">        
@@ -57,7 +57,10 @@
 							{%- endfor -%}
 							</div>
             <h3 class="gush-font-h3">
-                {{ article.title | truncate: 50 | escape }}
+                {%- comment -%} {{ article.title | truncate: 50 | escape }} {%- endcomment -%}
+                <a href="{{ article.url }}" class="full-unstyled-link">
+                    {{ article.title | truncate: 50 | escape }}
+                </a>
             </h3>
             <div class="article-card__info caption-with-letter-spacing h5">
               {%- if show_date -%}
