@@ -104,9 +104,9 @@
           "e6224d3e-54f7-4018-aba7-dad96d5ed68d": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "background-1",
-              "link": "shopify:\/\/pages\/films"
+              "text": "OUT OF STOCK: All Cair and Cair Fresh orders will be delayed until further notice. Thank you for your patience.",
+              "color_scheme": "accent-1",
+              "link": ""
             }
           }
         },
