@@ -23,6 +23,12 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
+<!-- Avada Boost Sales Script -->
+{% include 'avada-boost-sales' %}
+<!-- /Avada Boost Sales Script -->
+
+
+
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
