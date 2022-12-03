@@ -113,8 +113,8 @@
             "odor": "Sweet",
             "appearance": "Colourless",
             "found_in": "Found in furniture refinishers, paint thinners, solvents, lacquers",
-            "this_is_great": "Xylene slows the nervous system’s responsiveness and disrupts the functioning of nerve cells. It slows reaction time and reduces muscle coordination.",
-            "how_it_harm": "",
+            "this_is_great": "",
+            "how_it_harm": "Xylene slows the nervous system’s responsiveness and disrupts the functioning of nerve cells. It slows reaction time and reduces muscle coordination.",
             "effects_of_exposure": "Irritated eyes, nose, skin and throat; headaches, slow reaction time, loss of muscle coordination"
           }
         }

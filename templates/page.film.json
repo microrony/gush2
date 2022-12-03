@@ -23,6 +23,8 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Enquire Now",
+            "btn_bg_color": "",
+            "btn_color": "",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_label_2": "",
             "button_link_2": ""
@@ -211,19 +213,19 @@
         "1683ebf2-4aeb-43bb-abb8-d99f42b78711": {
           "type": "review_category",
           "settings": {
-            "title": "Option 1"
+            "title": "Services"
           }
         },
         "b3f3188e-4fdd-44a9-9f09-040d13cb106b": {
           "type": "review_category",
           "settings": {
-            "title": "Option 2"
+            "title": "Experience"
           }
         },
         "c2d0de44-6990-4b20-85ad-c7395e1833a9": {
           "type": "review_category",
           "settings": {
-            "title": "Option 3"
+            "title": "Air-Purifying"
           }
         }
       },

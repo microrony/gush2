@@ -63,13 +63,13 @@
 					{%- endif -%}
 					{%- if block.settings.odor != blank -%}
 					<div class="odor gush-font-p2">
-						<p>Odor</p>
+						<p style="font-weight:500 !important">Odor</p>
 						<p>{{block.settings.odor }}</p>
 					</div>
 					{%- endif -%}
 					{%- if block.settings.appearance != blank  -%}
 					<div class="appearance gush-font-p2">
-						<p>Appearance</p>
+						<p style="font-weight:500 !important">Appearance</p>
 						<p>{{block.settings.appearance}}</p>
 					</div>
 					{%- endif -%}
@@ -78,19 +78,19 @@
 			<h4 class="gush-font-h2 found_in">{{block.settings.found_in}}</h4>
 			{%- if block.settings.this_is_great != blank  -%}
 			<div class="how_it_harm gush-font-p2 first_how_it_harm">
-				<p>This is great for...</p>
+				<p style="font-weight:500 !important">This is great for...</p>
 				<p>{{block.settings.this_is_great}}</p>
 			</div>
 			{%- endif -%}
 			<div class="how_it_harm gush-font-p2">
-				<p>How does it harm the body?</p>
+				<p style="font-weight:500 !important">How does it harm the body?</p>
 				<p>{{block.settings.how_it_harm}}</p>
 			</div>
 			<div class="effects_of_exposure gush-font-p2">
 				{%- if page.title == "Science"  -%}
-				<p>How does it harm the body?</p>
+				<p style="font-weight:500 !important">Effects of exposure</p>
 				{%- else page.title -%}
-				<p>Effects of prolonged exposure</p>
+				<p style="font-weight:500 !important">Effects of prolonged exposure</p>
 				{%- endif -%}
 				<p>{{block.settings.effects_of_exposure}}</p>
 			</div>
