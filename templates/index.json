@@ -208,7 +208,7 @@
           "settings": {
             "top": 37,
             "left": 31,
-            "info": "info-2"
+            "info": "Our air-purifying function works 24\/7, even at night."
           }
         }
       },
@@ -226,7 +226,7 @@
         "desc": "Gush-painted walls and ceilings break down pollutants so they don’t affect your health and well-being.",
         "link_text": "See the science behind our paints.",
         "url": "shopify:\/\/pages\/science",
-        "bottom_circle_txt": "Our air-purifying function works 24\/7, even at night.",
+        "bottom_circle_txt": "",
         "info_position": "left",
         "padding_bottom": 0
       }
@@ -313,7 +313,7 @@
         "heading": "Meet the scientific wonders that help our paint clear your air.",
         "left_txt": "The Gush Proprietary Catalyst (GPC) creates the conditions to actively break down air pollutants into harmless byproducts – water and carbon dioxide.",
         "left_img": "shopify:\/\/shop_images\/Frame_2254.png",
-        "img": "shopify:\/\/shop_images\/PAINT.png",
+        "img": "shopify:\/\/shop_images\/image_2022-12-01_113644883.png",
         "right_txt": "The Gush Absorption Element (GAE) draws moisture from the air into the painted surface, to keep your indoor air comfortably dry.",
         "right_img": "shopify:\/\/shop_images\/Frame_2253.png",
         "button_label": "Learn more",

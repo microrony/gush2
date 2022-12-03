@@ -145,7 +145,7 @@
         "912c582b-228f-486e-944d-e8390128b6ff": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_160_1.png",
+            "image": "shopify:\/\/shop_images\/image_2022-12-02_133328006.png",
             "card_heading": "ClearCool 5",
             "card_info": "5% light transmission",
             "card_des": "Made for more privacy."
@@ -154,7 +154,7 @@
         "1cd84c0e-0c17-4010-abf4-68bc7d13efea": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_160_1.png",
+            "image": "shopify:\/\/shop_images\/image_2022-12-02_133340367.png",
             "card_heading": "ClearCool 35",
             "card_info": "35% light transmission",
             "card_des": "Not too bright,\nnot too dark."
@@ -163,7 +163,7 @@
         "8b8d449b-33b1-48eb-ae08-cacbab17ff9b": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_160_1.png",
+            "image": "shopify:\/\/shop_images\/image_2022-12-02_133358938.png",
             "card_heading": "ClearCool 76",
             "card_info": "76% light transmission",
             "card_des": "For sunlit aesthetics \nand clear views."
@@ -195,7 +195,7 @@
         "849f5c4e-809d-41a2-94c0-cbb8a5dec7ca"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Group_2167.png",
+        "image": "shopify:\/\/shop_images\/image_2022-12-02_133138249.png",
         "heading": "Need help with\ninstallation?",
         "description": "Don’t sweat putting on our window films. Our in-house teams conduct onsite assessment reports so that film installation is smooth and quick.",
         "page_name": "film"
@@ -232,8 +232,7 @@
       "block_order": [
         "575d0a25-77ea-44db-a722-bc64c4fc4f84",
         "1683ebf2-4aeb-43bb-abb8-d99f42b78711",
-        "b3f3188e-4fdd-44a9-9f09-040d13cb106b",
-        "c2d0de44-6990-4b20-85ad-c7395e1833a9"
+        "b3f3188e-4fdd-44a9-9f09-040d13cb106b"
       ],
       "settings": {
       }

@@ -33,7 +33,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/image_71.jpg",
+        "image": "shopify:\/\/shop_images\/06_3.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
@@ -150,6 +150,15 @@
     "1653548703a8d9cba4": {
       "type": "gushi-product-slider",
       "blocks": {
+        "3b58b5f3-086f-4181-9aa2-8db72ce9c5cd": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/image_2022-12-02_134958607.png",
+            "text": "Tutu Kueh",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
         "452c641b-1cfe-4e5b-8027-acc719d7b7db": {
           "type": "image",
           "settings": {
@@ -159,38 +168,11 @@
             "txt_clr": ""
           }
         },
-        "3b58b5f3-086f-4181-9aa2-8db72ce9c5cd": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/paint2.png",
-            "text": "Gush 2",
-            "clr": "",
-            "txt_clr": ""
-          }
-        },
-        "57b1de1e-efd0-45bb-8a59-353350e3036b": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/paint3.png",
-            "text": "Gush 3",
-            "clr": "",
-            "txt_clr": ""
-          }
-        },
         "c07edf85-e99d-403c-9095-8e80bdf2abd0": {
           "type": "image",
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/paint1.png",
             "text": "Gush 4",
-            "clr": "",
-            "txt_clr": ""
-          }
-        },
-        "e19725da-20da-4b19-b157-e6f3e5b0631f": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/color.jpg",
-            "text": "Gush 5",
             "clr": "",
             "txt_clr": ""
           }
@@ -206,15 +188,13 @@
         }
       },
       "block_order": [
-        "452c641b-1cfe-4e5b-8027-acc719d7b7db",
         "3b58b5f3-086f-4181-9aa2-8db72ce9c5cd",
-        "57b1de1e-efd0-45bb-8a59-353350e3036b",
+        "452c641b-1cfe-4e5b-8027-acc719d7b7db",
         "c07edf85-e99d-403c-9095-8e80bdf2abd0",
-        "e19725da-20da-4b19-b157-e6f3e5b0631f",
         "0043d3e9-32bc-43ef-91b8-ac115cc5d845"
       ],
       "settings": {
-        "heading": "Past Projects",
+        "heading": "Top Selling Colours",
         "padding_top": 36,
         "padding_bottom": 52
       }
@@ -227,10 +207,24 @@
           "settings": {
             "title": "All Reviews"
           }
+        },
+        "5569848c-f1bf-4713-8e2c-be245d6bda7e": {
+          "type": "review_category",
+          "settings": {
+            "title": "Product"
+          }
+        },
+        "0028e728-0d80-4d58-a93e-2b5533b43ad4": {
+          "type": "review_category",
+          "settings": {
+            "title": "Service"
+          }
         }
       },
       "block_order": [
-        "74af1450-7cd6-4d12-adb7-3497ad30ed98"
+        "74af1450-7cd6-4d12-adb7-3497ad30ed98",
+        "5569848c-f1bf-4713-8e2c-be245d6bda7e",
+        "0028e728-0d80-4d58-a93e-2b5533b43ad4"
       ],
       "settings": {
       }
