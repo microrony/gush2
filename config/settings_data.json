@@ -308,7 +308,8 @@
               "settings": {
                 "text": "Welcome to our store",
                 "color_scheme": "background-1",
-                "link": ""
+                "link": "",
+                "text_clr": "#ff5500"
               }
             }
           },

@@ -222,7 +222,7 @@
             "title": "Experience"
           }
         },
-        "c2d0de44-6990-4b20-85ad-c7395e1833a9": {
+        "7cb0b271-bc21-40f8-803e-b228e78e3967": {
           "type": "review_category",
           "settings": {
             "title": "Air-Purifying"
@@ -232,7 +232,8 @@
       "block_order": [
         "575d0a25-77ea-44db-a722-bc64c4fc4f84",
         "1683ebf2-4aeb-43bb-abb8-d99f42b78711",
-        "b3f3188e-4fdd-44a9-9f09-040d13cb106b"
+        "b3f3188e-4fdd-44a9-9f09-040d13cb106b",
+        "7cb0b271-bc21-40f8-803e-b228e78e3967"
       ],
       "settings": {
       }
