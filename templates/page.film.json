@@ -7,6 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "Gush ClearCool Films",
+            "heading_color": "#ffffff",
             "heading_size": "h0"
           }
         },
@@ -14,6 +15,7 @@
           "type": "text",
           "settings": {
             "text": "Keep your home cool while reducing your energy billswith eco-friendly nanoceramic technology",
+            "color": "#ffffff",
             "text_style": "body"
           }
         },
@@ -33,7 +35,7 @@
         "template--15986193137857__ea28b89c-cc6a-43b8-85a5-0617f4d79bf8-16656423128b5ff5ee-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sunder-muthukumaran-7xed5PqcbIQ-unsplash_1.png",
+        "image": "shopify:\/\/shop_images\/Frame_395_6342b8b1-e175-432b-a0fc-f571ca7a74d3.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,

@@ -87,14 +87,16 @@
  {% endif %}
 }
 {% endstyle %}
-
+	{% assign img_url = "science_top.svg" | asset_url %}
 	<div class="science-hero gush-page-width">
 	<div id="text-content">
 		<h1 class="gush-font-display">{{ section.settings.title }}</h1>
 		<p class="gush-font-p1">{{ section.settings.description }}</p>
 	</div>
 	<div class="image">
-		{{ section.settings.image | image_url: width: 640 | image_tag }}
+		<img src="{{img_url}}" alt="">
+		{%- comment -%} {{ section.settings.image | image_url: width: 640 | image_tag }} {%- endcomment -%}
+
 	</div>
 	</div>
 
