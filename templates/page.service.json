@@ -7,6 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "Clean air, at your service",
+            "heading_color": "#000000",
             "heading_size": "h1"
           }
         },
@@ -14,6 +15,7 @@
           "type": "text",
           "settings": {
             "text": "Your one-stop shop to meet\nall your painting project needs.",
+            "color": "#000000",
             "text_style": "body"
           }
         },
@@ -21,6 +23,8 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop Now",
+            "btn_bg_color": "",
+            "btn_color": "",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_label_2": "",
             "button_link_2": "#"
@@ -219,12 +223,19 @@
           "settings": {
             "title": "Service"
           }
+        },
+        "283b8936-927b-4e9f-8684-0ad6668cb3f3": {
+          "type": "review_category",
+          "settings": {
+            "title": "Air-Purifying"
+          }
         }
       },
       "block_order": [
         "74af1450-7cd6-4d12-adb7-3497ad30ed98",
         "5569848c-f1bf-4713-8e2c-be245d6bda7e",
-        "0028e728-0d80-4d58-a93e-2b5533b43ad4"
+        "0028e728-0d80-4d58-a93e-2b5533b43ad4",
+        "283b8936-927b-4e9f-8684-0ad6668cb3f3"
       ],
       "settings": {
       }

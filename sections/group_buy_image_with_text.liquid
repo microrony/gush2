@@ -52,13 +52,19 @@
     }
 </style>
 {%- endif -%}
+{% style  %} 
+    .button-{{ section.blocks[0].id }}{
+        color: {{ section.blocks[0].settings.btn_color }} !important;
+        background: {{ section.blocks[0].settings.btn_bg_color }} !important;
+    }
+{% endstyle %}
 <div class="page-width">
     <div class="group_image_with_text">
         <div class="left_image_section">{{ section.settings.image | image_url: width: 550 | image_tag }}</div>
         <div class="right_info_section">
             <h2 class="gush-font-h2">{{ section.settings.heading }}</h2>
             <h4 class="gush-font-h4">{{ section.settings.description }}</h4>
-            <a role="link" aria-disabled="true" href="{{ section.blocks[0].settings.button_link }}">
+            <a role="link" class="button-{{ section.blocks[0].id }}" aria-disabled="true" href="{{ section.blocks[0].settings.button_link }}">
                 <span>{{ section.blocks[0].settings.btn_text | escape }}</span> {% render 'arrow-dotted' %}
             </a>
         </div>
@@ -110,6 +116,16 @@
                 "type": "text",
                 "id": "btn_text",
                 "label":"Button text"
+                },
+                {
+                "type":"color",
+                "id":"btn_color",
+                "label":"Button color"
+                },
+                {
+                "type":"color",
+                "id":"btn_bg_color",
+                "label":"Button background color"
                 },
                 {
                 "type": "url",

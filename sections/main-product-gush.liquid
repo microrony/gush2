@@ -11,7 +11,7 @@
 <style>
   .product_variant_details{
     position: relative;
-
+    max-width: 30rem;
   }
   .product_variant_selection_summary{
     display: flex;
@@ -97,9 +97,6 @@ button.quantity__button {
   }
   .product__info-container .product-form__buttons {
     max-width: 100%;
-    position: absolute;
-    right: 0;
-    top: -89px;
     }
     .product__info-container .product-form__buttons button{
       margin: 0;
@@ -128,6 +125,12 @@ button.quantity__button {
     display: block;
     position: relative;
 }
+    .product-form form{
+    display: grid;
+    grid-template-columns: 95px auto;
+    gap: 20px;
+
+}
 .link-calculator{
       display: block;
     }
@@ -136,6 +139,7 @@ button.quantity__button {
     }
     .quantity_selection_box{
       display: flex;
+      flex-wrap: wrap;
     }
     .quantity_selection_box div{
       display: flex;
@@ -202,6 +206,8 @@ button.quantity__button {
     padding: 0 !important;
   }
   #add_to_cart_btn button{
+    width: 100%;
+    min-width: min-content;
 }
 .product__description {
   display: flex;
@@ -226,9 +232,6 @@ button.quantity__button {
     max-width: 100% !important;
   }
   
-    #add_to_cart_btn button  {
-      width: 100px;
-    }
     #add_to_cart_btn button span{
       font-size: 9px;
     }
@@ -558,24 +561,7 @@ button.quantity__button {
               </label>
 							{%- endcomment -%}
 
-              <quantity-input class="quantity">
-                <button class="quantity__button no-js-hidden" name="minus" type="button">
-                  <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
-                  {% render 'icon-minus' %}
-                </button>
-                <input class="quantity__input"
-                    type="number"
-                    name="quantity"
-                    id="Quantity-{{ section.id }}"
-                    min="1"
-                    value="1"
-                    form="{{ product_form_id }}"
-                  >
-                <button class="quantity__button no-js-hidden" name="plus" type="button">
-                  <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
-                  {% render 'icon-plus' %}
-                </button>
-              </quantity-input>
+
               <div {{ block.shopify_attributes }}>
                 <product-form class="product-form">
                   <div class="product-form__error-message-wrapper" role="alert" hidden>
@@ -590,6 +576,24 @@ button.quantity__button {
   
                   {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+                    <quantity-input class="quantity">
+                      <button class="quantity__button no-js-hidden" name="minus" type="button">
+                        <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                        {% render 'icon-minus' %}
+                      </button>
+                      <input class="quantity__input"
+                          type="number"
+                          name="quantity"
+                          id="Quantity-{{ section.id }}"
+                          min="1"
+                          value="1"
+                          form="{{ product_form_id }}"
+                        >
+                      <button class="quantity__button no-js-hidden" name="plus" type="button">
+                        <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                        {% render 'icon-plus' %}
+                      </button>
+                    </quantity-input>
                     <div class="product-form__buttons" id="add_to_cart_btn">
                       <button
                         type="submit"
