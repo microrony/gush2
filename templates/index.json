@@ -204,7 +204,7 @@
           "settings": {
             "top": 37,
             "left": 31,
-            "info": "info-2"
+            "info": "Our air-purifying function works 24\/7, even at night."
           }
         }
       },
@@ -222,7 +222,7 @@
         "desc": "Gush-painted walls and ceilings break down pollutants so they don’t affect your health and well-being.",
         "link_text": "See the science behind our paints.",
         "url": "shopify:\/\/pages\/science",
-        "bottom_circle_txt": "Our air-purifying function works 24\/7, even at night.",
+        "bottom_circle_txt": "",
         "info_position": "left",
         "padding_bottom": 0
       }
