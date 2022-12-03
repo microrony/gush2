@@ -9,6 +9,23 @@
   .service-banner__heading span{
   	color: rgba(var(--color-secondary-6));
   }
+  {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+            #heading-{{ block.id }}{
+              color: {{ block.settings.heading_color }};
+            }
+          {%- when 'text' -%}
+            #ser_bnr_sub__heading-{{ block.id }}{
+              color: {{ block.settings.color }} !important;
+            }
+          {%- when 'buttons' -%}
+            #serv_bnr_button-{{block.id}}{
+              background: {{ block.settings.btn_bg_color }} !important;
+              color: {{ block.settings.btn_color }} !important;
+            }
+            {%- endcase -%}
+      {%- endfor -%}
 </style>
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
   {%- style -%}
@@ -88,10 +105,6 @@
       font-size: 16px !important;
       line-height: 160% !important ;
       letter-spacing: -0.02em !important;
-    }
-    .service-banner__media img{
-      object-fit: none ;
-      object-position: 0 -150px;
     }
     .image_banner_heading_title{
       font-family: 'ABCCamera' ;
@@ -200,22 +213,22 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2 class="service-banner__heading banner__heading gush-font-display" {{ block.shopify_attributes }}>
-              <span class="image_banner_heading_title">{{ block.settings.heading | escape }}</span>
+              <span class="image_banner_heading_title" id="heading-{{ block.id }}">{{ block.settings.heading | escape }}</span>
             </h2>
           <div class="banner_inner_box">
           {%- when 'text' -%}
             <div class="banner__text gush-font-p1 {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <span class="service_banner_subtitle_des">{{ block.settings.text | escape }}</span>
+              <span class="service_banner_subtitle_des" id="ser_bnr_sub__heading-{{ block.id }}">{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'buttons' -%}
             <div class="service-banner__button banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
-                <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="cta-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} cta-button__primary gush-font-teritary{% endif %}"><span>{{ block.settings.button_label_1 | escape }}</span>{% render 'arrow-dotted' %}</a>
+                <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="cta-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} cta-button__primary gush-font-teritary{% endif %}" id="serv_bnr_button-{{block.id}}"><span>{{ block.settings.button_label_1 | escape }}</span>{% render 'arrow-dotted' %}</a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
 								<a {% if block.settings.button_link_2 == blank %}role="link" aria-disabled="true" {% else %}
 									href="{{ block.settings.button_link_2 }}" {% endif %}
-									class="cta-button gush-font-teritary cta-button__secondary">
+									class="cta-button gush-font-teritary cta-button__secondary" >
 									<span>{{ block.settings.button_label_2 | escape }}
 									</span>
 									{% render 'arrow-dotted-black' %}
@@ -453,6 +466,12 @@
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
         },
         {
+          "type":"color",
+          "id":"heading_color",
+          "label":"Heading color",
+          "default":"#000000"
+        },
+        {
           "type": "select",
           "id": "heading_size",
           "options": [
@@ -484,6 +503,12 @@
           "id": "text",
           "default": "Give customers details about the banner image(s) or content on the template.",
           "label": "t:sections.image-banner.blocks.text.settings.text.label"
+        },
+        {
+          "type":"color",
+          "id":"color",
+          "label":"Text color",
+          "default":"#000000"
         },
         {
           "type": "select",
@@ -518,6 +543,16 @@
           "default": "Button label",
           "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
           "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type":"color",
+          "id":"btn_bg_color",
+          "label":"Button background color"
+        },
+        {
+          "type":"color",
+          "id":"btn_color",
+          "label":"Button text color"
         },
         {
           "type": "url",

@@ -39,8 +39,12 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
         <div class="tab-content-container tab-content-info {% if isActive == true %}isActive{% endif %}"
           id="tab-img-content-{{ tabindex }}">
           <div class="tab-imgs">
-            <div>
-              <img src="{{ block.settings.tabimg | img_url: 'medium' }}" alt="Image">
+            <div class="product-info-tab-image-container">
+              {% if block.settings.lottiefile == blank %} 
+                <img src="{{ block.settings.tabimg | img_url: 'medium' }}" alt="Image">
+                {% else  %}
+                <div class="product-info-lottie-container" data-lottie-file-path="{{ block.settings.lottiefile | asset_url }}"></div>
+              {% endif %}
             </div>
           </div>
 
@@ -75,28 +79,32 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           </div>
         </div>
       </div>
-
     </div>
 
   </div>
 </section>
-
 <script>
+  // lottiefiles initialize
+  const productLottieContainers = document.querySelectorAll(".product-info-lottie-container");
+  productLottieContainers.forEach(productLottieContainer=>{
+    lottieFileInitializ(productLottieContainer)
+  })
 
   tabsInfo = document.querySelectorAll('.tab-info');
   tabImgContents = document.querySelectorAll('.tab-content-info');
   tabsInfo.forEach(tab => {
     tab.addEventListener('click', function () {
-      console.log(this);
       // console.log(this.dataset);
       contentId = this.dataset.contentId;
       content = document.getElementById(contentId);
       const contentContainerEle = content.closest('.swiper-slide')
-      console.log(content);
       tabImgContents.forEach(function (content) {
         const contentContainer = content.closest('.swiper-slide');
         contentContainer.classList.remove('isActive');
         content.classList.remove('isActive');
+        // lottie files
+        const productLottieContainer = content.querySelector(".product-info-lottie-container")
+        lottieFileInitializ(productLottieContainer)
       });
       tabsInfo.forEach(function (tab) {
         tab.classList.remove('isActive');
@@ -106,7 +114,20 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
       contentContainerEle.classList.add('isActive')
     });
   });
-
+function lottieFileInitializ(productLottieContainer){
+  if(productLottieContainer){
+      const svgs = productLottieContainer.querySelectorAll("svg")
+      svgs.forEach(svg=>svg.remove())
+      var infoAnimation = bodymovin.loadAnimation({
+      container: productLottieContainer, // required
+      path: productLottieContainer.dataset.lottieFilePath, // required
+      renderer: 'svg', // required
+      loop: true, // optional
+      autoplay: true, // optional
+      name: "Product Info Lottie", // optional
+    });
+  }
+}
 </script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
@@ -176,7 +197,14 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 "id": "title",
 "label": "Heading",
 "info": "Please enter headig for tab"
-}, {
+},
+{
+  "type":"text",
+  "id":"lottiefile",
+  "label":"Lottifile name",
+  "info":"example-lottiefile.json (file should have in asset folder)"
+},
+{
 "type": "image_picker",
 "id": "tabimg",
 "label": "Image for heading",

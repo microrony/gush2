@@ -180,9 +180,13 @@
       "type": "section-about-partner",
       "settings": {
         "heading": "As seen on",
+        "url": "",
         "image1": "shopify:\/\/shop_images\/Entrepreneur_logo_1.png",
+        "img1_url": "",
         "image2": "shopify:\/\/shop_images\/logo-forbes-png-transparent-11_1.png",
+        "img2_url": "",
         "image3": "shopify:\/\/shop_images\/Thingtesting_1_a09d69e8-ad1e-4440-9e03-3eb14cb5c444.png",
+        "img3_url": "",
         "padding_top": 112,
         "padding_bottom": 132,
         "page_name": "home"

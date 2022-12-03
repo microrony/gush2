@@ -11,13 +11,14 @@
 	}
 	.swiper-wrapper{
 		width: 100%-50px;
-	  }
-	.lets-care h1{
-		margin: 0 auto 5rem 14rem;
 	}
-	.lets-care .lets_care_title {
-		color: #fff;
-		font-size: 84px !important;
+	.top-info-section{
+		display: grid;
+		grid-template-columns: 7fr 5fr;
+		align-items: center;
+		gap: 10rem;
+		padding: 0 10rem;
+		margin-bottom: 16rem;
 	}
 
 	.lets-care .lets_care_title span{
@@ -161,10 +162,16 @@
 	  
 	  @media screen and (max-width: 600px) {
 		.lets-care h1{
-			margin: 0 auto 3rem 0;
+			margin: 0 auto 1rem 0;
+		}
+		.top-info-section{
+			grid-template-columns: 1fr;
+			gap: 0;
+			padding: 0;
+			margin-bottom: 4rem;
 		}
 		.lets-care .lets_care_title{
-		font-size: 48px !important;
+		font-size: 32px !important;
 		}
 		.tab_container{
 		padding: 0  ;
@@ -202,7 +209,10 @@
 
 <div class="lets-care">
 	<div class="page-width">
-	<h1 class="lets_care_title gush-font-h1">{{ section.settings.title }}</h1>
+	<div class="top-info-section">
+		<h1 class="lets_care_title gush-font-h1">{{ section.settings.title }}</h1>
+		<p class="gush-font-p1">{{ section.settings.sub_title }}</p>
+	</div>
 	
 		{% if slider_image_blocks != empty %}
 		<div class="swiper lets_care-swiper">
@@ -307,6 +317,11 @@ var swiper = new Swiper(".lets_care-swiper", {
 		"type": "html",
 		"id": "title",
 		"label": "Title"
+		},
+		{
+		"type": "textarea",
+		"id": "sub_title",
+		"label": "Sub Title"
 		}
 		],
 		"blocks": [

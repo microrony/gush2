@@ -46,18 +46,21 @@
 <section class="about-partner isolate section-{{ section.id }}-padding section section-primary section-wrapper">
   <div class="grid--gapless grid--1-col grid--2-col-tablet about-partner__padding page-width group_buy">
     <div class="about-partner__heading gush-font-h3">
-      <h2>{{ section.settings.heading }}</h2>
+      <h2><a href="{{ section.settings.url }}" class="full-unstyled-link">{{ section.settings.heading }}</a></h2>
     </div>
     <div class="about-partner__logos">
 
      {%- if section.settings.page_name != "group_buy" -%}
-      <div class="about-partner__logos-img">
+      <a href="{{ section.settings.img1_url }}">
+        <div class="about-partner__logos-img">
         {{ section.settings.image1 | image_url: width: 400 | image_tag:
           loading: 'lazy',
           width: section.settings.image1.width,
           alt: section.settings.image1.alt | escape
         }}
       </div>
+      </a>
+      <a href="{{ section.settings.img2_url }}">
       <div class="about-partner__logos-img">
         {{ section.settings.image2 | image_url: width: 400 | image_tag:
           loading: 'lazy',
@@ -65,6 +68,8 @@
           alt: section.settings.image2.alt | escape
         }}
       </div>
+      </a>
+      <a href="{{ section.settings.img3_url }}">
       <div class="about-partner__logos-img">
         {{ section.settings.image3 | image_url: width: 400 | image_tag:
           loading: 'lazy',
@@ -72,12 +77,13 @@
           alt: section.settings.image3.alt | escape
         }}
       </div>
+      </a>
      {%- endif -%}
 
     </div>
     <div class="group_buy_brand_img_container">
       {% for block in section.blocks  %} 
-          <div class="about-partner__logos-img"><img src="{{ block.settings.brand_img | img_url: 'medium' }}" alt="logo"></div>
+          <div class="about-partner__logos-img"><a href="{{ block.settings.url }}"><img src="{{ block.settings.brand_img | img_url: 'medium' }}" alt="logo"></a></div>
       {% endfor %}
       </div>
   </div>
@@ -94,9 +100,19 @@
   "label": "t:sections.about-partner.settings.heading.label"
 },
 {
+  "type":"url",
+  "id": "url",
+  "label":"Url"
+},
+{
   "type": "image_picker",
   "id": "image1",
   "label": "t:sections.about-partner.settings.image.label"
+},
+{
+  "type":"url",
+  "id": "img1_url",
+  "label":"Image 1 url"
 },
 {
   "type": "image_picker",
@@ -104,9 +120,19 @@
   "label": "t:sections.about-partner.settings.image.label"
 },
 {
+  "type":"url",
+  "id": "img2_url",
+  "label":"Image 2 url"
+},
+{
   "type": "image_picker",
   "id": "image3",
   "label": "t:sections.about-partner.settings.image.label"
+},
+{
+  "type":"url",
+  "id": "img3_url",
+  "label":"Image 3 url"
 },
 {
   "type": "range",
@@ -153,6 +179,11 @@
         "type":"image_picker",
         "id":"brand_img",
         "label":"Image"
+      },
+      {
+        "type":"url",
+        "id": "url",
+        "label":"URL"
       }
     ]
   }

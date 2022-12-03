@@ -1,3 +1,13 @@
+{% style  %} 
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'announcement' -%}
+    .color-{{block.id}}{
+      color: {{ block.settings.text_clr }} ;
+    }
+  {%- endcase -%}
+{%- endfor -%}
+{% endstyle %}
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
@@ -6,7 +16,7 @@
           {%- if block.settings.link != blank -%}
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
-              <p class="announcement-bar__message h5">
+              <p class="announcement-bar__message color-{{block.id}} h5 gush-font-p1">
                 {{ block.settings.text | escape }}
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
@@ -34,6 +44,12 @@
           "id": "text",
           "default": "Welcome to our store",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "color",
+          "id": "text_clr",
+          "default": "#ff5500",
+          "label": "Text color"
         },
         {
           "type": "select",

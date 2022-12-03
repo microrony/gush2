@@ -1099,7 +1099,7 @@ const missionBgTransition = () => {
   mission_page.style.background = '#FF5500';
   mission_page.style.transition = 'background .5s ease-in-out';
 
-  const colors = ['#FF5500', '#796E62', '#FFC900', '#E8E0DB', '#F9F4F0'];
+  const colors = ['#FF5500', '#F9F4F0', '#FFC900', '#E8E0DB', '#F9F4F0'];
 
   window.sections = [...document.querySelectorAll('#mission_page_id section')];
   window.lastScrollTop = window.pageYOffset;
@@ -1115,7 +1115,7 @@ const missionBgTransition = () => {
         el.setAttribute('data-bg', colors[index]);
         return { el, rect };
       })
-      .find(section => section.rect.bottom >= window.innerHeight * 0.3);
+      .find(section => section.rect.bottom >= window.innerHeight * 0.4);
     mission_page.style.background = section.el.getAttribute('data-bg');
   }
 };
