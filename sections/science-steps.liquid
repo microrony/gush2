@@ -81,7 +81,11 @@
             <div id="solution-lottie-container" data-lottie-file-path="{{ block.settings.lottie_file_name | asset_url }}"></div>
           {% else %}
             <div class="image">
-              {{ block.settings.image | image_url: width: 1280 | image_tag }}
+              {% if block.settings.svg != blank %} 
+                <img src="{{ block.settings.svg | asset_url }}" alt="" >
+              {% else  %}
+                {{ block.settings.image | image_url: width: 1280 | image_tag }}
+              {% endif %}
             </div>
           {% endif %}
           <div class="content">
@@ -262,7 +266,14 @@
             "type": "image_picker",
             "id": "image",
             "label": "Image"
-          }, {
+          },
+          {
+							"type":"text",
+							"id":"svg",
+							"label":"SVG File name",
+							"info":"Use svg instead of png/jpg svg file must be in asset folder ( example.svg )"
+					},
+          {
             "type": "select",
             "id": "lottie_file_name",
             "label": "Select Lottie file",

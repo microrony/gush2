@@ -49,6 +49,7 @@
             "title": "Benzene",
             "chemical_formula": "shopify:\/\/shop_images\/Group_1658.png",
             "chemical_structure": "shopify:\/\/shop_images\/Group_1842.png",
+            "svg": "benzen-structure.svg",
             "solar_spectrum_range": "",
             "odor": "Sweet, gasoline-like",
             "appearance": "Clear to light yellow",
@@ -64,6 +65,7 @@
             "title": "Formaldehyde",
             "chemical_formula": "shopify:\/\/shop_images\/image_2022-11-29_073022201.png",
             "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_072942167.png",
+            "svg": "",
             "solar_spectrum_range": "",
             "odor": "Pungent, vinegar-like",
             "appearance": "Colourless",
@@ -79,6 +81,7 @@
             "title": "Acetaldehyde",
             "chemical_formula": "shopify:\/\/shop_images\/image_2022-11-29_072101352.png",
             "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_072135763.png",
+            "svg": "",
             "solar_spectrum_range": "",
             "odor": "Pungent, fruity",
             "appearance": "Clear, colourless liquid",
@@ -94,6 +97,7 @@
             "title": "Toluene",
             "chemical_formula": "shopify:\/\/shop_images\/image_2022-11-29_072329250.png",
             "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_072427330.png",
+            "svg": "",
             "solar_spectrum_range": "",
             "odor": "Sharp, sweet",
             "appearance": "Clear, colourless",
@@ -109,6 +113,7 @@
             "title": "Xylene",
             "chemical_formula": "shopify:\/\/shop_images\/image_2022-11-29_072515146.png",
             "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_072523212.png",
+            "svg": "",
             "solar_spectrum_range": "",
             "odor": "Sweet",
             "appearance": "Colourless",
@@ -139,6 +144,7 @@
             "title": "Doesn’t use energy",
             "description": "Unlike air purifiers, Gush paints remove pollutants without any electrical costs",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_134604585.png",
+            "svg": "Frame 332Energy .svg",
             "lottie_file_name": "not-selected"
           }
         },
@@ -148,6 +154,7 @@
             "title": "Air-purifying walls",
             "description": "Gush paint transforms the largest surface area in your space into passive air purifiers",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_134617912.png",
+            "svg": "Frame 332 Walls.svg",
             "lottie_file_name": "not-selected"
           }
         },
@@ -157,6 +164,7 @@
             "title": "Clean air, 24\/7",
             "description": "Our air-purifying features operate even without light, protecting your air day & night",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_134633670.png",
+            "svg": "Frame 332 Air.svg",
             "lottie_file_name": "not-selected"
           }
         }
@@ -183,9 +191,11 @@
             "first_title": "VOCs don’t stand a chance",
             "first_description": "Our GPC’s catalytic agents have an activation energy of more than 120 kcal\/mol. This cuts the organic chemical bonds in most VOCs.",
             "first_image": "shopify:\/\/shop_images\/Group_1825.png",
+            "svg1": "Group 1825 VOCs .svg",
             "second_title": "Say goodbye to odors",
             "second_description": "Our GPC breaks down 99% of VOCs and deodorizes your space of chemical fumes, within 21 hours.",
             "second_image": "shopify:\/\/shop_images\/Group_1827.png",
+            "svg2": "Frame 332 Goodbye odors.svg",
             "second_lottie_file_name": "not-selected"
           }
         },
@@ -196,9 +206,11 @@
             "first_title": "Stops microbial growth",
             "first_description": "The GAE’s absorption capacity of 19.64 g\/m² deprives mold spores and bacteria of water to sprout on the painted surface.",
             "first_image": "shopify:\/\/shop_images\/Group_1982.png",
+            "svg1": "",
             "second_title": "Clean air, more quickly",
             "second_description": "The GAE’s hygroscopic nature draws pollutants to the wall, increasing the rate of contact so more pollutants are broken down in less time.",
             "second_image": "shopify:\/\/shop_images\/Group_1944.png",
+            "svg2": "",
             "second_lottie_file_name": "clean-air-more-quickly.json"
           }
         }

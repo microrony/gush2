@@ -50,7 +50,11 @@
 				{%- endif -%}
 			</div>
 				<div class="image_structure">
-					{{ block.settings.chemical_structure | image_url: width: 800 | image_tag }}
+					{% if block.settings.svg != blank %} 
+						<img src="{{ block.settings.svg | asset_url }}" alt="" >
+					{% else  %}
+						{{ block.settings.chemical_structure | image_url: width: 800 | image_tag }}
+					{% endif %}
 				</div>
 			</div>
 			<div class="right-content">
@@ -189,6 +193,12 @@ tabs.forEach(tab => {
 							"id": "chemical_structure",
 							"type": "image_picker",
 							"label": "Chemical Structure"
+						},
+						{
+							"type":"text",
+							"id":"svg",
+							"label":"SVG File name",
+							"info":"Use svg instead of png/jpg svg file must be in asset folder ( example.svg )"
 						},
 						{
 							"id": "solar_spectrum_range",

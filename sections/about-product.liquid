@@ -13,33 +13,45 @@ background: {{ section.settings.color }};
 		</div>
 		<div class="about-product__icon-with-text">
 			<div class="about-product__icon">
-				{{ section.settings.image1 | image_url: width: 160 | image_tag:
-					loading: 'lazy',
-					widths: '100, 200, 300, 400',
-					alt: section.settings.image1.alt | escape
-				}}
+				{% if section.settings.svg1 != blank %} 
+					<img src="{{ section.settings.svg1 | asset_url }}" alt="" >
+				{% else  %}
+					{{ section.settings.image1 | image_url: width: 160 | image_tag:
+						loading: 'lazy',
+						widths: '200',
+						alt: section.settings.image1.alt | escape
+					}}
+				{% endif %}
 				<div class="about-product__icon-text">
 					<h3 class="gush-font-h3">{{section.settings.heading1}}</h3>
 					<p class="gush-font-p1">{{section.settings.text1}}</p>
 				</div>
 			</div>
 			<div class="about-product__icon">
-				{{ section.settings.image2 | image_url: width: 160 | image_tag:
-					loading: 'lazy',
-					widths: '100, 200, 300, 400',
-					alt: section.settings.image2.alt | escape
-				}}
+				{% if section.settings.svg2 != blank %} 
+					<img src="{{ section.settings.svg2 | asset_url }}" alt="" >
+				{% else  %}
+					{{ section.settings.image2 | image_url: width: 160 | image_tag:
+						loading: 'lazy',
+						widths: '200',
+						alt: section.settings.image2.alt | escape
+					}}
+				{% endif %}
 				<div class="about-product__icon-text">
 					<h3 class="gush-font-h3">{{section.settings.heading2}}</h3>
 					<p class="gush-font-p1">{{section.settings.text2}}</p>
 				</div>
 			</div>
 			<div class="about-product__icon">
-				{{ section.settings.image3 | image_url: width: 160 | image_tag:
-					loading: 'lazy',
-					widths: '100, 200, 300, 400',
-					alt: section.settings.image3.alt | escape
-				}}
+				{% if section.settings.svg3 != blank %} 
+					<img src="{{ section.settings.svg3 | asset_url }}" alt="" >
+				{% else  %}
+					{{ section.settings.image3 | image_url: width: 160 | image_tag:
+						loading: 'lazy',
+						widths: '200',
+						alt: section.settings.image3.alt | escape
+					}}
+				{% endif %}
 				<div class="about-product__icon-text">
 					<h3 class="gush-font-h3">{{section.settings.heading3}}</h3>
 					<p class="gush-font-p1">{{section.settings.text3}}</p>
@@ -70,6 +82,12 @@ background: {{ section.settings.color }};
 "label": "t:sections.about-product.settings.image.label"
 },
 {
+"type":"text",
+"id":"svg1",
+"label":"SVG File name",
+"info":"Use svg instead of png/jpg svg file must be in asset folder ( example.svg )"
+},
+{
 "type": "text",
 "id": "heading1",
 "label": "t:sections.about-product.settings.heading1.label"
@@ -85,6 +103,12 @@ background: {{ section.settings.color }};
 "label": "t:sections.about-product.settings.image2.label"
 },
 {
+"type":"text",
+"id":"svg2",
+"label":"SVG File name",
+"info":"Use svg instead of png/jpg svg file must be in asset folder ( example.svg )"
+},
+{
 "type": "text",
 "id": "heading2",
 "label": "t:sections.about-product.settings.heading2.label"
@@ -98,6 +122,12 @@ background: {{ section.settings.color }};
 "type": "image_picker",
 "id": "image3",
 "label": "t:sections.about-product.settings.image3.label"
+},
+{
+"type":"text",
+"id":"svg3",
+"label":"SVG File name",
+"info":"Use svg instead of png/jpg svg file must be in asset folder ( example.svg )"
 },
 {
 "type": "text",
