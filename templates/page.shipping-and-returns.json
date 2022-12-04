@@ -8,13 +8,63 @@
           "settings": {
             "category": "Shipping",
             "type": "General Questions",
+            "title": "Is free delivery provided?",
+            "answer": "Enjoy free delivery for all orders of $70 and above.\nFor orders below $70, there will be a $10 flat fee."
+          }
+        },
+        "5e183e4e-3b6d-423f-8f1d-949195391d19": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Shipping",
+            "type": "General Questions",
+            "title": "How long does delivery usually take?",
+            "answer": "Regular orders: 3-5 business days\nColour sample orders: 4-7 business days\n\nIf you need to expedite your delivery, please leave us a note when you place your order online, and we’ll try our best to accommodate to your request."
+          }
+        },
+        "b8da1654-7a2b-4f65-aefe-a22c1e8d77a5": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Shipping",
+            "type": "General Questions",
+            "title": "Am I able to specify a preferred delivery timing?",
+            "answer": "Our daily delivery schedule hours are from 11am to 6pm. You may expect your order to arrive within that duration. We are unable to allocate specific time windows as our drivers optimise the delivery routes based on the respective locations for the day.\n\nShould you have any other requests, please reach us at hello@gush.earth and we will try our best to accommodate your request."
+          }
+        },
+        "5a8debb5-557c-4b6a-8af1-86de1e65143e": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Shipping",
+            "type": "General Questions",
+            "title": "Can I self-collect my order?",
+            "answer": "If you wish to self-collect, kindly indicate in the ‘Notes’ segment when placing your order, and we will follow up with you.\nPlease note that we will still require at least 1 working day to process your order.\n\nYou can pick up your order from our warehouse at:\n2 Gambas Crescent\n#01-35, Singapore 757044"
+          }
+        },
+        "7ee35868-f818-4c4f-bbf3-c2c68a7e4506": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Shipping",
+            "type": "General Questions",
+            "title": "I am facing some issues with my order. Who should I speak to?",
+            "answer": "We’re sorry to hear that. If you require any assistance, please reach out to us at hello@gush.earth and we’ll assist you shortly. You can also give us a call at +65 6692 9000."
+          }
+        },
+        "f46173a7-241c-47de-b26b-352374653451": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Returns, Exchanges or Cancellations",
+            "type": "",
             "title": "",
             "answer": ""
           }
         }
       },
       "block_order": [
-        "72a331ab-b127-4560-8c8b-589bfe128a37"
+        "72a331ab-b127-4560-8c8b-589bfe128a37",
+        "5e183e4e-3b6d-423f-8f1d-949195391d19",
+        "b8da1654-7a2b-4f65-aefe-a22c1e8d77a5",
+        "5a8debb5-557c-4b6a-8af1-86de1e65143e",
+        "7ee35868-f818-4c4f-bbf3-c2c68a7e4506",
+        "f46173a7-241c-47de-b26b-352374653451"
       ],
       "settings": {
         "heading": "Shipping & Returns",
