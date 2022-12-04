@@ -43,8 +43,8 @@
         "02f13b88-0429-4895-99b2-cbd58068bda3"
       ],
       "settings": {
-        "collectionList": "collection-all",
-        "products_per_page": 18,
+        "collectionList": "",
+        "products_per_page": 22,
         "columns_desktop": 3,
         "image_ratio": "adapt",
         "show_secondary_image": false,
