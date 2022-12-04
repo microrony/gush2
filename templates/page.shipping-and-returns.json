@@ -65,6 +65,33 @@
             "title": "Refund Policy",
             "answer": "Gush is able to provide a full refund on paint purchases made on our online shop, only in the following cases:\n1. Product is defective (Kindly refer to our limited lifetime warranty)\n2. Severe colour mismatch from the sample sheet\n3. Delayed delivery (1 week overdue from indicated delivery date)\nTo be eligible, all refund claims must be made within 30 calendar days of your purchase.\n\nAll refunds on purchases must include a valid proof of purchase.\nFor credit card payments, it may take up to 5 – 10 business days for the refund to show up on your credit card statement."
           }
+        },
+        "c7f8341a-65bc-498c-9409-77193dccd52e": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Billing",
+            "type": "Payment Methods",
+            "title": "If I order over a phone call, am I able to make payment upon delivery?",
+            "answer": "Yes, you can order over the phone. We will send you an order confirmation email with payment details. Once payment has been fulfilled, we will process your order accordingly. Note: We do not offer the cash- on-delivery (COD) option."
+          }
+        },
+        "fcf4a72d-1682-4e95-8a52-f8cba5ddf297": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Billing",
+            "type": "Payment Methods",
+            "title": "What forms of payment do you accept?",
+            "answer": "We accept VISA, MasterCard, AMEX, Shop Pay, Apple Pay, Google Pay and Grab Pay."
+          }
+        },
+        "dec5f769-fbe3-4790-a834-0363c01aa50b": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Billing",
+            "type": "Payment Methods",
+            "title": "What can I do if my payment is declined?",
+            "answer": "Kindly write into hello@gush.earth and we will advise you accordingly."
+          }
         }
       },
       "block_order": [
@@ -74,7 +101,10 @@
         "5a8debb5-557c-4b6a-8af1-86de1e65143e",
         "7ee35868-f818-4c4f-bbf3-c2c68a7e4506",
         "f46173a7-241c-47de-b26b-352374653451",
-        "683f0bd7-cc61-4312-b287-938a0b900bf8"
+        "683f0bd7-cc61-4312-b287-938a0b900bf8",
+        "c7f8341a-65bc-498c-9409-77193dccd52e",
+        "fcf4a72d-1682-4e95-8a52-f8cba5ddf297",
+        "dec5f769-fbe3-4790-a834-0363c01aa50b"
       ],
       "settings": {
         "heading": "Shipping & Returns",
