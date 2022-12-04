@@ -7,6 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "Community Group Buys",
+            "heading_color": "#000000",
             "heading_size": "h0"
           }
         },
@@ -14,6 +15,7 @@
           "type": "text",
           "settings": {
             "text": "Enjoy savings and create better homes with your neighbours.",
+            "color": "#000000",
             "text_style": "body"
           }
         },
@@ -21,6 +23,8 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Sign up now",
+            "btn_bg_color": "",
+            "btn_color": "",
             "button_link_1": "shopify:\/\/pages\/contact",
             "button_label_2": "",
             "button_link_2": ""
@@ -222,37 +226,43 @@
         "6f1fb3b1-1da9-4aef-9486-1fb801dd4bfd": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_154.png"
+            "brand_img": "shopify:\/\/shop_images\/image_154.png",
+            "url": ""
           }
         },
         "19604d63-bc3b-4b61-bfd5-9fd07a84c603": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_155.png"
+            "brand_img": "shopify:\/\/shop_images\/image_155.png",
+            "url": ""
           }
         },
         "f2bac977-f5c0-4a01-9d6e-bee976dee923": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_159.png"
+            "brand_img": "shopify:\/\/shop_images\/image_159.png",
+            "url": ""
           }
         },
         "5c0b8605-2414-4b17-b747-fd26d3f8aed5": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_156.png"
+            "brand_img": "shopify:\/\/shop_images\/image_156.png",
+            "url": ""
           }
         },
         "8a501607-6a1a-4204-86b8-27847c9d34a0": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_157.png"
+            "brand_img": "shopify:\/\/shop_images\/image_157.png",
+            "url": ""
           }
         },
         "a7874066-7f78-48b2-8999-67903e8cc84d": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_158.png"
+            "brand_img": "shopify:\/\/shop_images\/image_158.png",
+            "url": ""
           }
         }
       },
@@ -266,6 +276,10 @@
       ],
       "settings": {
         "heading": "Past Projects",
+        "url": "",
+        "img1_url": "",
+        "img2_url": "",
+        "img3_url": "",
         "padding_top": 100,
         "padding_bottom": 100,
         "page_name": "group_buy"
@@ -278,6 +292,8 @@
           "type": "button",
           "settings": {
             "btn_text": "Start a group buy",
+            "btn_color": "#ffffff",
+            "btn_bg_color": "#FF42EF",
             "button_link": "shopify:\/\/collections\/all"
           }
         }
