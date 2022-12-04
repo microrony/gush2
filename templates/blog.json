@@ -13,11 +13,19 @@
         "padding_bottom": 70
       }
     },
+    "933b4f83-20b2-4834-9db3-8c3e7cd19e69": {
+      "type": "gush-related-blogs",
+      "settings": {
+        "heading": "Related blogs",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    },
     "a6af7545-d491-41d3-92a5-d3d76c6cd332": {
       "type": "gush-featured-blog",
       "settings": {
-        "heading": "News",
-        "blog": "news",
+        "heading": "Science",
+        "blog": "science",
         "padding_top": 0,
         "padding_bottom": 50
       }
@@ -25,8 +33,8 @@
     "e7d17191-c8ca-40a4-b99c-76ac4d25c389": {
       "type": "gush-featured-blog",
       "settings": {
-        "heading": "Wellness",
-        "blog": "wellness",
+        "heading": "Brand",
+        "blog": "brand",
         "padding_top": 0,
         "padding_bottom": 50
       }
@@ -34,6 +42,7 @@
   },
   "order": [
     "main",
+    "933b4f83-20b2-4834-9db3-8c3e7cd19e69",
     "a6af7545-d491-41d3-92a5-d3d76c6cd332",
     "e7d17191-c8ca-40a4-b99c-76ac4d25c389"
   ]
