@@ -52,9 +52,18 @@
           "type": "faqContent",
           "settings": {
             "category": "Returns, Exchanges or Cancellations",
-            "type": "",
+            "type": "General Questions",
             "title": "Cancellations or Changes",
             "answer": "Should you have a change of mind and wish to make any changes or cancellation to your order, please email us at hello@gush.earth as soon as possible. We will look into your request and follow up with you shortly."
+          }
+        },
+        "683f0bd7-cc61-4312-b287-938a0b900bf8": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Returns, Exchanges or Cancellations",
+            "type": "General Questions",
+            "title": "Refund Policy",
+            "answer": "Gush is able to provide a full refund on paint purchases made on our online shop, only in the following cases:\n1. Product is defective (Kindly refer to our limited lifetime warranty)\n2. Severe colour mismatch from the sample sheet\n3. Delayed delivery (1 week overdue from indicated delivery date)\nTo be eligible, all refund claims must be made within 30 calendar days of your purchase.\n\nAll refunds on purchases must include a valid proof of purchase.\nFor credit card payments, it may take up to 5 – 10 business days for the refund to show up on your credit card statement."
           }
         }
       },
@@ -64,7 +73,8 @@
         "b8da1654-7a2b-4f65-aefe-a22c1e8d77a5",
         "5a8debb5-557c-4b6a-8af1-86de1e65143e",
         "7ee35868-f818-4c4f-bbf3-c2c68a7e4506",
-        "f46173a7-241c-47de-b26b-352374653451"
+        "f46173a7-241c-47de-b26b-352374653451",
+        "683f0bd7-cc61-4312-b287-938a0b900bf8"
       ],
       "settings": {
         "heading": "Shipping & Returns",
