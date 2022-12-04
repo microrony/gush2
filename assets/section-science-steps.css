@@ -45,7 +45,7 @@
 .science-steps .the-problem-block .image img {
 	width: 100%;
 	height: auto;
-	object: cover;
+	object-fit: cover;
 }
 
 /* Solution Section Styles */
@@ -58,7 +58,7 @@
 
 .the-solution-blocks img {
 	width: 100%;
-	height: 200px;
+	height: 100%;
 	object-fit: contain;
 }
 
@@ -69,8 +69,8 @@
 }
 
 .the-solution-blocks :is(.image, #lottie-container) {
-	width: 200px;
-	height: 200px;
+	width: 100%;
+	height: 250px;
 }
 
 .the-solution-blocks .content {
