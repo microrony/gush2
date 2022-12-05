@@ -84,7 +84,7 @@
           "type": "product-info",
           "settings": {
             "title": "Controls humidity",
-            "lottiefile": "Controlhumidity.json",
+            "lottiefile": "Control Humidity.json",
             "tabimg": "shopify:\/\/shop_images\/image_58.png",
             "tabdesc": "Absorbs excess moisture so you can take it easy in comfort"
           }
@@ -102,7 +102,7 @@
           "type": "product-info",
           "settings": {
             "title": "Anti-molding",
-            "lottiefile": "freshair.json",
+            "lottiefile": "Anti Molding.json",
             "tabimg": "shopify:\/\/shop_images\/paint2.png",
             "tabdesc": "Example 3"
           }
@@ -120,7 +120,7 @@
           "type": "product-info",
           "settings": {
             "title": "Toxic-free",
-            "lottiefile": "non-toxic.json",
+            "lottiefile": "toxic-free.json",
             "tabimg": "shopify:\/\/shop_images\/image_58.png",
             "tabdesc": "Example 5"
           }
