@@ -30,11 +30,21 @@
         "padding_top": 0,
         "padding_bottom": 50
       }
+    },
+    "53e8f667-fd37-4fcc-b54b-07ad8fcec7b1": {
+      "type": "gush-featured-blog",
+      "settings": {
+        "heading": "Wellness",
+        "blog": "wellness",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
     "main",
     "a6af7545-d491-41d3-92a5-d3d76c6cd332",
-    "e7d17191-c8ca-40a4-b99c-76ac4d25c389"
+    "e7d17191-c8ca-40a4-b99c-76ac4d25c389",
+    "53e8f667-fd37-4fcc-b54b-07ad8fcec7b1"
   ]
 }
