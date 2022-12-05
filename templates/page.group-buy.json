@@ -59,7 +59,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_332_1.png",
             "portfolio_title": "Get a head start",
-            "portfolio_des": "Reduce your renovation costs while getting the best of Gush paints, window films and services."
+            "portfolio_des": "Reduce your renovation costs while getting the best of Gush paints, window films and services.",
+            "svg": "Group Buy SVG 1.svg"
           }
         },
         "51e578e6-5b3b-40aa-b091-cdd07505abdc": {
@@ -67,7 +68,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_332_2.png",
             "portfolio_title": "In good company",
-            "portfolio_des": "Meet your neighbours and start building healthy connections with your new community."
+            "portfolio_des": "Meet your neighbours and start building healthy connections with your new community.",
+            "svg": "Group Buy SVG 2.svg"
           }
         },
         "8a43182e-fce6-4fbf-8d3c-d1119fbcf918": {
@@ -75,7 +77,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_435.png",
             "portfolio_title": "Faster, better, together",
-            "portfolio_des": "Joining our group buy saves you time, money and energy, so we can get your home painted more quickly."
+            "portfolio_des": "Joining our group buy saves you time, money and energy, so we can get your home painted more quickly.",
+            "svg": "Group Buy SVG 3.svg"
           }
         }
       },
