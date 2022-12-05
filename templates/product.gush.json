@@ -166,7 +166,7 @@
         "b3bf5e61-3ce4-49c8-a560-d9462466cd1b"
       ],
       "settings": {
-        "color": "#00FF00",
+        "color": "#00ff00",
         "heading": "What's the secret? Science.",
         "sub-heading": "We’re pushing the boundaries \nwith our special ingredients.",
         "link": "<p><a href=\"#\" title=\"#\">Full Ingredient details here<\/a><\/p>",
@@ -187,7 +187,9 @@
         "section-title": "Don’t settle for\nanything less",
         "section-des": "Gush paints pack a punch: you get six features in one tub. Say goodbye to toxic fumes for good.",
         "circuler-img1": "shopify:\/\/shop_images\/image_2022-11-29_082119507.png",
+        "svg1": "Settle Other Paints.svg",
         "circuler-img2": "shopify:\/\/shop_images\/image_2022-11-29_082136625.png",
+        "svg2": "Settle Gush.svg",
         "heading-img1": "Other paints",
         "heading-img2": "Gush",
         "heading": "Us vs Them"
