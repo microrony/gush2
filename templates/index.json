@@ -133,28 +133,28 @@
     "5a44ca41-997e-4a85-a054-4cb4d273dceb": {
       "type": "paint-details-slider",
       "blocks": {
-        "810a145c-0536-4e9e-b6d4-6a467e851fe5": {
+        "7248d00e-b4a3-49da-883a-0d18242402ee": {
           "type": "slide",
           "settings": {
             "category": "Gush Core",
             "Description": "Low VOC, toxic-free, \nno-frills paint for a healthier indoors.",
+            "img": "shopify:\/\/shop_images\/image_2022-12-05_091056592.png"
+          }
+        },
+        "810a145c-0536-4e9e-b6d4-6a467e851fe5": {
+          "type": "slide",
+          "settings": {
+            "category": "Gush Cair",
+            "Description": "The paint that purifies your indoor air of pollutants. 24\/7.",
             "img": "shopify:\/\/shop_images\/image_2022-12-01_154448966.png"
           }
         },
         "b7f04872-dddf-4314-bc8c-2c1ac94c5acb": {
           "type": "slide",
           "settings": {
-            "category": "Gush Cair",
-            "Description": "The paint that purifies your indoor air of pollutants. 24\/7.",
-            "img": "shopify:\/\/shop_images\/image_2022-12-05_090941178.png"
-          }
-        },
-        "7248d00e-b4a3-49da-883a-0d18242402ee": {
-          "type": "slide",
-          "settings": {
             "category": "Gush Cair Fresh",
             "Description": "Our washable and air-purifying paint. Great for kids’ rooms.",
-            "img": "shopify:\/\/shop_images\/Frame_2251.png"
+            "img": "shopify:\/\/shop_images\/image_2022-12-05_090941178.png"
           }
         },
         "f159043c-e089-4764-8f9f-902a91d26ded": {
@@ -162,14 +162,14 @@
           "settings": {
             "category": "Gush Prepair",
             "Description": "Our toxic-free sealer refreshes your wall before painting.",
-            "img": "shopify:\/\/shop_images\/kid.png"
+            "img": "shopify:\/\/shop_images\/image_2022-12-05_091151274.png"
           }
         }
       },
       "block_order": [
+        "7248d00e-b4a3-49da-883a-0d18242402ee",
         "810a145c-0536-4e9e-b6d4-6a467e851fe5",
         "b7f04872-dddf-4314-bc8c-2c1ac94c5acb",
-        "7248d00e-b4a3-49da-883a-0d18242402ee",
         "f159043c-e089-4764-8f9f-902a91d26ded"
       ],
       "settings": {
