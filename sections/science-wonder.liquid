@@ -29,7 +29,7 @@
             {{ section.settings.right_img | image_url: width:400 | image_tag}}
             <div class=" right-txt">
                 {% if section.settings.right_title != blank %} 
-                    <p class="gush-font-p1 title-text">{{ section.settings.right_title }}</p>
+                <p class="gush-font-p2 title-text" style="font-weight: 500;">{{ section.settings.right_title }}</p>
                 {% endif %}
                 <p class="gush-font-p2">{{ section.settings.right_txt }}</p>
             </div>
@@ -38,7 +38,7 @@
             {{ section.settings.left_img | image_url: width:100 | image_tag}}
             <div>
                 {% if section.settings.right_title != blank %} 
-                <p class="gush-font-p2 title-text" style="font-weight: 500">{{ section.settings.left_title }}</p>
+                <p class="gush-font-p2 title-text" style="font-weight: 500;">{{ section.settings.left_title }}</p>
                 {% endif %}
                 <p class="gush-font-p2 info-txt">{{ section.settings.left_txt }}</p>
             </div>
