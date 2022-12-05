@@ -12,6 +12,10 @@
   .ingrediant_sub_heading{
     padding-top: 10px !important;
   }
+  .ingredient__heading img{
+    max-width: 100%;
+    margin: 20px 0;
+  }
   {% if section.settings.group_buy_page %} 
   .ingrediant_sub_heading{
     font-family: 'GTAmerica';
@@ -19,10 +23,10 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 160%;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.02em; 
   }
   .qus-li__inner h3{
-    margin-left: 50px;
+    /* margin-left: 50px; */
   }
   .question__ans p{
     font-family: 'GTAmerica' !important;
@@ -65,6 +69,7 @@
 <style>
   .faq_qus .qus-li img {
     border-radius: {{ section.settings.radius }}%;
+    margin-right: 20px;
   }
   
 </style>
@@ -101,8 +106,7 @@
 .ingredient__left-container{
   gap:25rem;
 }
-.ingredient__heading {
-}
+
 .ingredient__heading p{
   white-space: pre-line;
   padding-top:16px;
@@ -170,8 +174,11 @@
         <div class="ingredient__heading">
           <h2 class="gush-font-h1">{{ section.settings.heading }}</h2>
           {% if section.settings.show_sub_title %}
-          <p class="ingrediant_sub_heading">{{ section.settings.sub-heading }}</p>
-        {% endif %}
+            <p class="ingrediant_sub_heading">{{ section.settings.sub-heading }}</p>
+          {% endif %}
+          {% if section.settings.image %} 
+              {{ section.settings.image | image_url: width: 300 | image_tag }}
+          {% endif %}
         </div>
         
         <div class="ingredient__link">{{ section.settings.link }}</div>
@@ -182,14 +189,19 @@
     <div class="ingredient__accordion">
         <div class="question">
           <div class="sub-heading">
-            <h3>{{ section.settings.sb-heading }}</h3>
+            
+              <h3>{{ section.settings.sb-heading }}</h3>
+            
           </div>
           {% for block in section.blocks %} {% if block.type == 'text' %}
             <div class="q-ans__block" id="faq__block">
               
               <div class="faq_qus" id="faq_qus" data-content-id="faq_{{ forloop.index }}">
                 
-                <div class="qus-li"><img src="{{ block.settings.faq_img | img_url: '80x80', crop: 'center'}}" alt="FAQ Image"> 
+                <div class="qus-li">
+                  {% if block.settings.faq_img != blank %} 
+                    <img src="{{ block.settings.faq_img | img_url: '80x80', crop: 'center'}}" alt="FAQ Image"> 
+                  {% endif %}
                     <div class="qus-li__inner">
                       <h3 class="gush-font-h3">{{ block.settings.title }}</h3><p>{{ block.settings.faq_quality }}</p>
                     </div>
@@ -268,6 +280,12 @@
       "label": "Sub Heading"
     },
     {
+      "type":"image_picker",
+      "id":"image",
+      "label":"Image",
+      "info":"Use either image or sub heading"
+    },
+    {
       "type": "richtext",
       "id": "link",
       "label": "Add a link"
@@ -285,7 +303,7 @@
     {
       "type": "text",
       "id": "sb-heading",
-      "label": "Sub Heading"
+      "label": "Sub Title"
     },
     {
       "type": "range",
@@ -320,7 +338,7 @@
     {
       "type":"checkbox",
       "id":"show_sub_title",
-      "label":"Sub title show hide",
+      "label":"Sub heading show hide",
       "default": false
     },
     {

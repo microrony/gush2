@@ -38,7 +38,7 @@
     justify-content: center;
     padding: 5% 5%;
   }
-  .collectionBannerInner__content svg {position: absolute;right: 3%;height: 19%;}
+  .collectionBannerInner__content a:has(svg) {position: absolute;right: 3%;height: 19%;}
   .collectionBannerInner__content h2 {margin: 0; font-size: 2.26em;}
   .collectionBannerInner__img img {height: 100%;width: 100%;}
   .collectionBannerInner__content p {width: 80%;margin: 2% 0; color: rgba(var(--color-secondary-6))}
@@ -120,9 +120,10 @@
               <div class="collectionBannerInner" style= "background-color:{{ section.settings.bg_color }};">
                 <div class="collectionBannerInner__img"><img src="{{ section.settings.bg_img | img_url: 'medium'}}" alt="BG Image"></div>
                 <div class="collectionBannerInner__content">
-                  <h2 class='gush-font-h3'>{{ section.settings.heading }}</h2>
-                  <p class="gush-font-p1">{{ section.settings.content }}</p>
-                  {% render 'icon-arrow-right' %}
+                  <h2 class='gush-font-h3'><a class="full-unstyled-link" href="{{ section.settings.url }}">{{ section.settings.heading }}</a></h2>
+                  <p class="gush-font-p1"><a class="full-unstyled-link" href="{{ section.settings.url }}">{{ section.settings.content }}</a></p>
+                  <a class="full-unstyled-link" href="{{ section.settings.url }}">{% render 'icon-arrow-right' %}</a>
+                  
                 </div>
               </div>
             {% else %}
@@ -235,9 +236,9 @@ const sorted_product = apiCall(query).then((d)=>{
 
     })
     // all product not shorted
-    apiCall(query).then(products=> console.log(products))
+    // apiCall(query).then(products=> console.log(products))
     // all sorted product
-    sorted_product.then(products=> console.log((products)))
+   // sorted_product.then(products=> console.log((products)))
     
 </script>
 
@@ -388,6 +389,11 @@ const sorted_product = apiCall(query).then((d)=>{
     "type": "text",
      "id": "content",
      "label": "Banner content"
+    },
+    {
+      "type":"url",
+      "id":"url",
+      "label":"Banner url"
     },
     {
       "type": "range",

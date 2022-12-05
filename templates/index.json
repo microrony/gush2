@@ -312,9 +312,11 @@
       "settings": {
         "title": "The science beyond the surface",
         "heading": "Meet the scientific wonders that help our paint clear your air.",
+        "left_title": "Left side title",
         "left_txt": "The Gush Proprietary Catalyst (GPC) creates the conditions to actively break down air pollutants into harmless byproducts – water and carbon dioxide.",
         "left_img": "shopify:\/\/shop_images\/Frame_2254.png",
         "img": "shopify:\/\/shop_images\/image_2022-12-01_113644883.png",
+        "right_title": "Right side title",
         "right_txt": "The Gush Absorption Element (GAE) draws moisture from the air into the painted surface, to keep your indoor air comfortably dry.",
         "right_img": "shopify:\/\/shop_images\/Frame_2253.png",
         "button_label": "Learn more",
