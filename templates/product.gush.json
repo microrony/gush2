@@ -10,8 +10,9 @@
         },
         "caption": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}"
+            "text": ""
           }
         },
         "8d33aa52-1e56-49a0-ab5c-9774dcf7b6a0": {
