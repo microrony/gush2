@@ -18,7 +18,9 @@
     height: auto;
 }
 .wonder-science-heading{
-    max-width: 280px;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
 }
 .science-wonder-middle{
     position: relative;
@@ -112,7 +114,7 @@
         padding: 50px 25px 50px 20px !important;
     }
     .wonder-science-heading{
-        max-width: 200px;
+        width: 100%;
     }
     .science-wonder-middle{
         max-width: 70%;

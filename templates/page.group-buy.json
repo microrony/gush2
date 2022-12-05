@@ -103,7 +103,6 @@
         "488b63cd-e863-4429-a174-f3cea2ecb3fb": {
           "type": "text",
           "settings": {
-            "faq_img": "shopify:\/\/shop_images\/Group_1240.png",
             "title": "Free colour consultation",
             "faq_quality": "",
             "faq_ans": "Our colour experts help you pick shades and palettes you’ll love, to get your home looking its best"
@@ -293,7 +292,7 @@
           "settings": {
             "btn_text": "Start a group buy",
             "btn_color": "#ffffff",
-            "btn_bg_color": "#FF42EF",
+            "btn_bg_color": "#ff42ef",
             "button_link": "shopify:\/\/collections\/all"
           }
         }

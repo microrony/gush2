@@ -78,7 +78,6 @@
         "01aef32a-718f-4b49-99b6-0ffa1ead0bc9": {
           "type": "text",
           "settings": {
-            "faq_img": "shopify:\/\/shop_images\/Group_1237.png",
             "title": "Enquire & Book",
             "faq_quality": "",
             "faq_ans": "Let us know about your painting needs by filling up our enquiry form below."
@@ -132,8 +131,9 @@
         "color": "#f9f4f0",
         "heading": "How it works",
         "sub-heading": "",
+        "image": "shopify:\/\/shop_images\/image_2022-12-05_091922718.png",
         "link": "",
-        "btn_text": "Shop Now",
+        "btn_text": "",
         "btn_url": "shopify:\/\/collections\/all",
         "sb-heading": "",
         "radius": 0,

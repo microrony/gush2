@@ -94,7 +94,6 @@ svg.icon.icon-minus-new.is-active {
 }
 
 .qus-li__inner h3 {
-  margin-left: 4%;
   font-size: 2rem;
   font-family: 'RecklessNeue';
   font-weight: 400;
@@ -144,7 +143,6 @@ svg.icon.icon-minus-new.is-active {
 
 .faq_qus .qus-li img {
 	width: 70px;
-	border-radius: {{ section.settings.radius }}%;
 }
 
 @media screen and (min-width: 750px) {
