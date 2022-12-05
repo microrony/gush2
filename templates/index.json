@@ -135,6 +135,7 @@
       "blocks": {
         "7248d00e-b4a3-49da-883a-0d18242402ee": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "category": "Gush Core",
             "Description": "Low VOC, toxic-free, \nno-frills paint for a healthier indoors.",
