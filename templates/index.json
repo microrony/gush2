@@ -22,7 +22,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop now",
-            "button_link_1": "shopify:\/\/collections",
+            "button_link_1": "shopify:\/\/collections\/interior-paints",
             "button_label_2": "Let us help you",
             "button_link_2": "shopify:\/\/pages\/contact-us"
           }
