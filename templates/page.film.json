@@ -25,7 +25,7 @@
             "button_label_1": "Enquire Now",
             "btn_bg_color": "",
             "btn_color": "",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify:\/\/pages\/contact-us",
             "button_label_2": "",
             "button_link_2": ""
           }
@@ -99,7 +99,7 @@
         "warranty_year": 12,
         "ingredient_heading": "What makes ClearCool films powerful",
         "btn_text": "Learn more",
-        "button_link": "shopify:\/\/collections\/all"
+        "button_link": "shopify:\/\/pages\/film-science"
       }
     },
     "film_offers": {
