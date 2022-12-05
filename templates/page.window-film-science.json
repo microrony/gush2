@@ -63,6 +63,7 @@
             "title": "Ultraviolet",
             "chemical_formula": "shopify:\/\/shop_images\/Group_1658_305a8b1d-986d-458a-a9ed-6dfd66452265.png",
             "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_074717338.png",
+            "svg": "",
             "solar_spectrum_range": "100 - 400nm",
             "odor": "",
             "appearance": "",
@@ -77,6 +78,7 @@
           "settings": {
             "title": "Visible Light",
             "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_074812568.png",
+            "svg": "",
             "solar_spectrum_range": "400 - 750nm",
             "odor": "",
             "appearance": "",
@@ -92,6 +94,7 @@
             "title": "Near Infrared",
             "chemical_formula": "shopify:\/\/shop_images\/Group_1658_1.png",
             "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_074853464.png",
+            "svg": "",
             "solar_spectrum_range": "780nm -  3000nm",
             "odor": "",
             "appearance": "",
@@ -236,6 +239,7 @@
     },
     "9789ee8d-e232-4ba5-8798-7c6ca053e32e": {
       "type": "science-steps",
+      "disabled": true,
       "blocks": {
         "718f7976-706b-4af8-8081-17ddf3b0cfc9": {
           "type": "reports-block",
