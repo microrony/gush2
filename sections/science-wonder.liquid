@@ -52,7 +52,9 @@
                 <p class="gush-font-p2 info-txt">{{ section.settings.right_txt }}</p>
             </div>
         </div>
+        {% if section.settings.button_label != blank %} 
         <a href="{{ section.settings.button_link }}" class="gush-font-p2 cta-button science-wonder-btn">{{ section.settings.button_label }} {% render 'arrow-dotted-black' %}</a>
+        {% endif %} 
     </div>
     </div>
 </div>
