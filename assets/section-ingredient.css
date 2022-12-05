@@ -144,6 +144,13 @@ svg.icon.icon-minus-new.is-active {
 .faq_qus .qus-li img {
 	width: 70px;
 }
+.ingredient_title{
+    font-family: 'GTAmerica' !important;
+    font-size: 36px !important;
+    font-weight: 500 !important;
+    line-height: 1.11em !important;
+    letter-spacing: -0.03em !important;
+}
 
 @media screen and (min-width: 750px) {
 	.ingredient__accordion .q-ans__block {
@@ -162,6 +169,10 @@ svg.icon.icon-minus-new.is-active {
 @media screen and (max-width:767px) {
   .ingredient__main {
     flex-direction: column;
+  }
+
+  .ingredient_title{
+    font-size: 18px !important;
   }
 
   .ingredient__heading h2 {
