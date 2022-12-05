@@ -94,7 +94,8 @@
       "type": "our-commitment",
       "settings": {
         "title": "Our commitment is in the loop.",
-        "description": "We have to go beyond the surface and do better with our planet in mind. Sustainability starts with us acting now for our tomorrow."
+        "description": "We have to go beyond the surface and do better with our planet in mind. Sustainability starts with us acting now for our tomorrow.",
+        "lottie_file_name": "breathingmolecule.json"
       }
     },
     "1660277963cff88234": {
