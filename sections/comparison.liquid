@@ -2,22 +2,30 @@
 {{ 'section-dont-settle.css' | asset_url | stylesheet_tag }}
 
 <section class="comparison isolate section-{{ section.id }}-padding section section-primary section-wrapper">
-<div class="settel__container gush-page-width">
-<h1 class="gush-font-h1">{{ section.settings.section-title }}</h1>
-<div class="settel__container_grid">
- <div class="text-content-gush">
-  <p class="gush-font-p1">{{ section.settings.section-des }}</p>
- </div>
- <div class="center_content">
-   <img src="{{ section.settings.circuler-img1 | img_url: 'medium'}}" alt="img2">
-   <h3 class="gush-font-h3">{{ section.settings.heading-img1 }}</h3>
- </div>
- <div class="center_content">
-   <img src="{{ section.settings.circuler-img2 | img_url: 'medium'}}" alt="img2">
-   <h3 class="gush-font-h3">{{ section.settings.heading-img2 }}</h3>
- </div>
-</div>
-</div>
+  <div class="settel__container gush-page-width">
+    <h1 class="gush-font-h1">{{ section.settings['section-title'] }}</h1>
+    <div class="settel__container_grid">
+      <div class="text-content-gush">
+        <p class="gush-font-p1">{{ section.settings['section-des'] }}</p>
+      </div>
+      <div class="center_content">
+        {% if section.settings.svg1 != blank %}
+          <img src="{{ section.settings.svg1 | asset_url }}" alt="">
+        {% else %}
+          <img src="{{ section.settings.circuler-img1 | img_url: 'medium'}}" alt="other paints">
+        {% endif %}
+        <h3 class="gush-font-h3">{{ section.settings['heading-img1'] }}</h3>
+      </div>
+      <div class="center_content">
+        {% if section.settings.svg2 != blank %}
+          <img src="{{ section.settings.svg2 | asset_url }}" alt="">
+        {% else %}
+          <img src="{{ section.settings.circuler-img2 | img_url: 'medium'}}" alt="Gush">
+        {% endif %}
+        <h3 class="gush-font-h3">{{ section.settings['heading-img2'] }}</h3>
+      </div>
+    </div>
+  </div>
 </section>
 {% schema %}
 {
@@ -40,9 +48,21 @@
          "label": "Upload an image"
       },
       {
+          "type":"text",
+          "id":"svg1",
+          "label":"SVG 1 File name",
+          "info":"Use svg instead of png/jpg svg file must be in asset folder ( example.svg )"
+      },
+      {
          "type": "image_picker",
          "id": "circuler-img2",
          "label": "Upload an image"
+      },
+      {
+          "type":"text",
+          "id":"svg2",
+          "label":"SVG 2 File name",
+          "info":"Use svg instead of png/jpg svg file must be in asset folder ( example.svg )"
       },
       {
         "type": "text",
