@@ -36,7 +36,7 @@ h2.service-banner__heading.banner__heading span {
 /* .banner__text.body {margin: 0 0 8%;} */
 .banner__text.body {
     margin: auto;
-    width: 90%;
+    width: 354px;
 }
 .banner__buttons.banner__buttons--multiple .button {
   border: 1px solid;
@@ -54,8 +54,8 @@ h2.service-banner__heading.banner__heading span {
         font-size: 40px;
         color: rgba(var(--color-secondary-6));
     }
-    .banner__text.body span {
-        font-size: 14px;
+    .banner__text.body {
+        width: 181px;
     }
     .banner_inner_box {
     width: 80%;
