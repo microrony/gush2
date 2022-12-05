@@ -326,6 +326,7 @@
     },
     "623e4ef7-e449-4a33-9c59-cd8e1ba10658": {
       "type": "further-reading",
+      "disabled": true,
       "settings": {
         "title": "Further reading",
         "blogs": "brand",
