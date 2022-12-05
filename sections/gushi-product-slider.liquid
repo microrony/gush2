@@ -23,6 +23,9 @@
                                 <p style="color:{{block.settings.txt_clr}}">{{block.settings.text}}</p>
                             </div>
                             <div class="swiper-slide__img--wrapper">
+                              {%- if block.settings.url != blank -%}
+                                <a href="{{ block.settings.url }}">
+                              {%- endif -%}
                               {%- comment -%} {{block.settings.slider-image | img_url: '400x400', crop: 'center' | img_tag }} {%- endcomment -%}
                               {{ block.settings.slider-image | image_url: width: 400, height: 400 | image_tag:
                                 loading: 'lazy',
@@ -30,6 +33,9 @@
                                 height: block.settings.slider-image.height,
                                 widths: '100,200,300,400'
                               }}
+                              {%- if block.settings.url != blank -%}
+                                </a>
+                              {%- endif -%}
                             </div>
                         </div>
                     </div>
@@ -142,6 +148,12 @@
              "id": "text",
              "label": "t:sections.gushi-product-slider.blocks.text.label",
              "info": "Please upload Product name here."
+          },
+          {
+             "type": "text",
+             "id": "url",
+             "label": "Insert URL",
+             "info": "Please upload Product url here."
           },
           {
              "type": "color",
