@@ -11,8 +11,8 @@
     "898021df-5980-4d42-be39-8d4a568763d5": {
       "type": "footer-contact",
       "settings": {
-        "title": "<p style=\"font-family: GTAmerica;font-size: 24px;font-weight: 400;line-height: 31px;letter-spacing: -0.0115em;text-align: left;\">Contact Us<\/p>",
-        "heading": "2 Gambas Cres, #01-35 Nordcom II, Singapore 757044\n039471039471\nhello@gowithgush.com",
+        "title": "Contact Us",
+        "heading": "2 Gambas Cres, #01-35 Nordcom II, Singapore 757044\n66929000\nhello@gowithgush.com",
         "btn_text": "Contact Us",
         "btn_type": "secondary",
         "page_name": "home"
