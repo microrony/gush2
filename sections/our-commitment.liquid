@@ -96,45 +96,84 @@
 <div class="our-commitment">
   <div class="content page-width">
     <div class="iframe_container">
-      <iframe src="https://my.spline.design/untitled-75255dd84590febfc23f92e6da59730e/" title="spline design"></iframe>
+      <div
+        id="solution-lottie-container"
+        data-lottie-file-path="{{ section.settings.lottie_file_name | asset_url }}"
+      ></div>
     </div>
     <div class="mobile_responsive_image">
-      <img src="{{ section.settings.image | image_url }}"/>
+      <img src="{{ section.settings.image | image_url }}">
     </div>
     <div>
-      <h2 class="gush-font-h1">{{ section.settings.title }}
-      </h2>
-      <p class="gush-font-p1">{{ section.settings.description }}
-      </p>
+      <h2 class="gush-font-h1">{{ section.settings.title }}</h2>
+      <p class="gush-font-p1">{{ section.settings.description }}</p>
     </div>
-
   </div>
 </div>
 
+<script>
+  var solutionLottieContainer = document.getElementById('solution-lottie-container');
+  var lottieFilePath = solutionLottieContainer.dataset.lottieFilePath;
+
+  var solutionAnimation = bodymovin.loadAnimation({
+    container: solutionLottieContainer, // required
+    path: lottieFilePath, // required
+    renderer: 'svg', // required
+    loop: true, // optional
+    autoplay: false, // optional
+    name: "Lottie Animation", // optional
+  });
+
+  solutionAnimation.setSpeed(.5);
+
+  // "listen" & check when header is out of viewport
+  // (i set 50% = visible => threshold: 0.5 (to set))
+  const solutionLottieViewport = function() {
+    let options = {
+      rootMargin: '-100px',
+      threshold: .5
+    }
+
+    let solutionObserver = new IntersectionObserver(entries => {
+      entries[0].isIntersecting === true
+        ? solutionAnimation.play()
+        : solutionAnimation.goToAndStop(0, 0);
+  	if(entries[0].isIntersecting) solutionObserver.unobserve(entries[0].target);
+    }, options);
+
+    solutionObserver.observe(document.querySelector('#solution-lottie-container'));
+  }
+
+  solutionLottieViewport();
+</script>
 
 {% schema %}
-  {
-    "name": "Our Commitment",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title"
-      }, {
-        "type": "textarea",
-        "id": "description",
-        "label": "Description"
-      }, {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Our Commitment"
-      }
-    ]
-  }
+{
+  "name": "Our Commitment",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }, {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    }, {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },{
+      "type": "text",
+      "id": "lottie_file_name",
+      "label": "Lottie file name here"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Commitment"
+    }
+  ]
+}
 {% endschema %}
