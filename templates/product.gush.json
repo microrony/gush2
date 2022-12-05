@@ -80,58 +80,62 @@
     "1652439533f0dc6359": {
       "type": "product-info",
       "blocks": {
-        "c07957dd-18a2-43d1-82c2-ae93a37c6489": {
+        "a2f67ce1-555b-41e9-9269-54303cbfab3f": {
           "type": "product-info",
           "settings": {
-            "title": "Controls humidity",
-            "lottiefile": "Control Humidity.json",
-            "tabimg": "shopify:\/\/shop_images\/image_58.png",
-            "tabdesc": "Absorbs excess moisture so you can take it easy in comfort"
+            "title": "Washable",
+            "lottiefile": "",
+            "tabdesc": "Cleans easily to keep your spaces fresh, with enhanced dirt and grime resistance."
           }
         },
-        "5fbea61b-e06f-4a95-b56b-938f9b84dc07": {
+        "e6dd9580-f6f0-45da-820c-a37f542a7b94": {
           "type": "product-info",
           "settings": {
-            "title": "Removes pollutants",
+            "title": "Air-purifying",
             "lottiefile": "air-purifying.json",
-            "tabimg": "shopify:\/\/shop_images\/paint3.png",
-            "tabdesc": "Example 2"
+            "tabdesc": "Better your indoor air quality by purifying VOCs in your space, including formaldehyde, benzene and toluene."
           }
         },
-        "f1d18298-7896-4cb8-8f81-c79c2fd62c24": {
+        "112cf32c-7d96-4895-9044-93011c80c682": {
           "type": "product-info",
           "settings": {
-            "title": "Anti-molding",
+            "title": "Anti-Moulding",
             "lottiefile": "Anti Molding.json",
-            "tabimg": "shopify:\/\/shop_images\/paint2.png",
-            "tabdesc": "Example 3"
+            "tabdesc": "Protect your spaces from moulding issues with anti-microbial agents."
           }
         },
-        "9e3f1e75-5c22-4786-be51-b27f2252aae0": {
+        "b0107315-38cb-46be-b65f-c46767432f8b": {
           "type": "product-info",
           "settings": {
-            "title": "Anti-bacterial",
-            "lottiefile": "anti-bacteria.json",
-            "tabimg": "shopify:\/\/shop_images\/paint4.png",
-            "tabdesc": "Example 4"
+            "title": "Anti-Bacterial",
+            "lottiefile": "",
+            "tabdesc": "Keep your spaces safe for all, by rupturing 99.9% of bacterial membranes including E.Coli and S.Aureus."
           }
         },
-        "5a382802-1239-4079-88fd-7b6522f78ab7": {
+        "6811cffd-cbe8-4e0c-8a98-8f3951a79238": {
+          "type": "product-info",
+          "settings": {
+            "title": "Odourless",
+            "lottiefile": "odourless v2.json",
+            "tabdesc": "Enjoy a smoother, happier painting experience free of fumes with our VOC-free formulation."
+          }
+        },
+        "390ba101-3199-4d49-a9ee-8611855b8a9c": {
           "type": "product-info",
           "settings": {
             "title": "Toxic-free",
             "lottiefile": "toxic-free.json",
-            "tabimg": "shopify:\/\/shop_images\/image_58.png",
-            "tabdesc": "Example 5"
+            "tabdesc": "Safer paints for you and Earth, made with non-toxic materials and minimised carbon emission manufacturing."
           }
         }
       },
       "block_order": [
-        "c07957dd-18a2-43d1-82c2-ae93a37c6489",
-        "5fbea61b-e06f-4a95-b56b-938f9b84dc07",
-        "f1d18298-7896-4cb8-8f81-c79c2fd62c24",
-        "9e3f1e75-5c22-4786-be51-b27f2252aae0",
-        "5a382802-1239-4079-88fd-7b6522f78ab7"
+        "a2f67ce1-555b-41e9-9269-54303cbfab3f",
+        "e6dd9580-f6f0-45da-820c-a37f542a7b94",
+        "112cf32c-7d96-4895-9044-93011c80c682",
+        "b0107315-38cb-46be-b65f-c46767432f8b",
+        "6811cffd-cbe8-4e0c-8a98-8f3951a79238",
+        "390ba101-3199-4d49-a9ee-8611855b8a9c"
       ],
       "settings": {
         "heading": "Features",
