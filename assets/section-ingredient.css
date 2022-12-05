@@ -151,6 +151,10 @@ svg.icon.icon-minus-new.is-active {
     line-height: 1.11em !important;
     letter-spacing: -0.03em !important;
 }
+.ingredient__heading img{
+    border-radius:10px;
+    object-fit: cover;
+}
 
 @media screen and (min-width: 750px) {
 	.ingredient__accordion .q-ans__block {
