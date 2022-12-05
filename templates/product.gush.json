@@ -10,7 +10,6 @@
         },
         "caption": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": ""
           }
