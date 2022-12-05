@@ -22,11 +22,11 @@
     letter-spacing: -0.0115em;
 }
 .warranty-year-box{
+    background: rgb(var(--color-gush-green));
     width: 158px;
     height: 158px;
     margin-right: auto;
     margin-top: 6rem;
-    border: 1px solid #000;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
