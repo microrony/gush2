@@ -84,7 +84,7 @@
           "type": "product-info",
           "settings": {
             "title": "Washable",
-            "lottiefile": "",
+            "lottiefile": "freshair v2.json",
             "tabdesc": "Cleans easily to keep your spaces fresh, with enhanced dirt and grime resistance."
           }
         },
@@ -108,7 +108,7 @@
           "type": "product-info",
           "settings": {
             "title": "Anti-Bacterial",
-            "lottiefile": "",
+            "lottiefile": "anti-bacteria.json",
             "tabdesc": "Keep your spaces safe for all, by rupturing 99.9% of bacterial membranes including E.Coli and S.Aureus."
           }
         },
