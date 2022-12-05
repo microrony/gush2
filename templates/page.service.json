@@ -158,6 +158,7 @@
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/image_2022-12-05_202819693.png",
             "text": "All Good Things",
+            "url": "\/products\/all-good-things",
             "clr": "",
             "txt_clr": ""
           }
@@ -167,6 +168,7 @@
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/image_2022-12-05_202912477.png",
             "text": "Linen",
+            "url": "\/products\/linen",
             "clr": "",
             "txt_clr": ""
           }
@@ -176,6 +178,7 @@
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/image_2022-12-05_202920451.png",
             "text": "Olive Branch",
+            "url": "\/products\/olive-branch",
             "clr": "",
             "txt_clr": ""
           }
@@ -185,6 +188,7 @@
           "settings": {
             "slider-image": "shopify:\/\/shop_images\/image_2022-12-05_203016087.png",
             "text": "Yosemite",
+            "url": "\/products\/yosemite",
             "clr": "",
             "txt_clr": ""
           }
