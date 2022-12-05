@@ -39,6 +39,17 @@
   .newsletter-form__field-wrapper .field input{
     height:54px;
   }
+  .footer-bottom-links-container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  @media screen and (max-width: 750px){
+    .footer-bottom-links-container{
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
 </style>
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding ftr_new">
@@ -193,8 +204,9 @@
               </ul>
             {%- endif -%}
           </div>
+          <div class="footer-bottom-links-container">
           {%- for block in section.blocks -%}
-            <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+            <div class="footer-block {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
                 <h2 class="footer-block__heading gush-font-p1">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
@@ -236,6 +248,7 @@
                 {%- endcase -%}
             </div>
           {%- endfor -%}
+          </div>
         </div>
       {%- endif -%}
 
