@@ -105,6 +105,7 @@
             "type": "announcement",
             "settings": {
               "text": "OUT OF STOCK: All Cair and Cair Fresh orders will be delayed until further notice. Thank you for your patience.",
+              "text_clr": "#ff5500",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -162,7 +163,7 @@
         "settings": {
           "color_scheme": "background-2",
           "newsletter_enable": true,
-          "newsletter_heading": "Sign up to our mailing list",
+          "newsletter_heading": "Add colour to your inbox",
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
