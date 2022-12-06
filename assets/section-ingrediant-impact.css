@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5,h6,p{
     background: #B6AC9E;
     color: #B6AC9E;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
 }
 .formula-circle-container .active{
     outline-offset: 28px;
