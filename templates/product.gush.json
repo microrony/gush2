@@ -173,7 +173,7 @@
         "color": "#00ff00",
         "heading": "What's the secret? Science.",
         "sub-heading": "We’re pushing the boundaries \nwith our special ingredients.",
-        "link": "<p><a href=\"#\" title=\"#\">Full Ingredient details here<\/a><\/p>",
+        "link": "<p><a href=\"\/blogs\/science\/paint-formulation\" target=\"_blank\" title=\"A deep dive into our paint formulation\">Full ingredient details here.<\/a><\/p>",
         "btn_text": "",
         "btn_url": "",
         "sb-heading": "",
