@@ -343,6 +343,7 @@
       "type": "gush-service-banner",
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/Frame_2271.jpg",
+        "bg_image_m": "shopify:\/\/shop_images\/image.png",
         "title": "Gush painting services",
         "heading": "Fulfil all your paint job needs at one go. By expert painters only.",
         "desc": "Transform your spaces now with our start-to-end suite of professional services, customisable to your needs.",
