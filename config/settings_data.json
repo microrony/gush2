@@ -96,7 +96,9 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
+    "favicon": "shopify:\/\/shop_images\/Group_1944_0a9998f3-351f-4738-9d68-2df617f6fbae.png",
     "currency_code_enabled": true,
+    "checkout_logo_image": "shopify:\/\/shop_images\/Group_1944_0a9998f3-351f-4738-9d68-2df617f6fbae.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
