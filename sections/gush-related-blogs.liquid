@@ -9,12 +9,18 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  .related-blog-prev{
+    margin-right: .75rem;
+  }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+    .related-blog-prev{
+    margin-right: 1.5rem;
+  }
   }
 {%- endstyle -%}
 
@@ -26,11 +32,11 @@
         <h2 class="gush-font-h2">{{ section.settings.heading | escape }}</h2>
     {%- endunless -%}
 		<div class="slider_nav">
-		<div class="featured-blog-prev">{% render 'icon-arrow-left-gushi' %}</div>
-		<div class="featured-blog-next">{% render 'icon-arrow-right-gushi' %}</div>
+		<div class="related-blog-prev">{% render 'icon-arrow-left-gushi' %}</div>
+		<div class="related-blog-next">{% render 'icon-arrow-right-gushi' %}</div>
 	</div>
 	</div>
-			<div class="swiper gush_featured_blog">
+			<div class="swiper gush_related_blog">
 				<div class="swiper-wrapper">
 				{%- for article in blog.articles -%}
 					<div class="swiper-slide" {{ block.shopify_attributes }}>
@@ -43,17 +49,17 @@
 </div>
 
 <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" async="defer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 {% javascript %}
-	var swiper = new Swiper(".gush_featured_blog", {
-		slidesPerView: 1.8,
+	var swiper = new Swiper(".gush_related_blog", {
+		slidesPerView: 2,
 		spaceBetween: 15,
 		centeredSlide:true,
 		loop: true,
 		navigation: {
-          nextEl: ".featured-blog-next",
-          prevEl: ".featured-blog-prev",
+          nextEl: ".related-blog-next",
+          prevEl: ".related-blog-prev",
         },
     // Responsive breakpoints
     breakpoints: {
