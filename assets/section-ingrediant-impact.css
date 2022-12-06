@@ -24,8 +24,12 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .formula-circle-container .active{
     outline-offset: 28px;
+    -webkit-outline-offset: 28px;
     outline: 2px dashed #00FF00;
+    -webkit-outline: 2px dashed #00FF00;
+    -moz-outline: 2px dashed #00FF00;
     stroke-dasharray: 5em;
+    -webkit-stroke-dasharray: 5em;
 }
 .formula-card{
     display: none;
