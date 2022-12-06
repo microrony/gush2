@@ -38,6 +38,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_432_60b03cd5-f920-43be-ac25-9a959d7c3999.png",
+        "image_mobile": "shopify:\/\/shop_images\/image_2022-12-06_091456091.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
