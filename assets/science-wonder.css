@@ -34,7 +34,7 @@
 }
 .science-wonder-container .dot-1{
     top: 50%;
-    left: 2%;
+    left: 5%;
 }
 .science-wonder-container .dot-1.active::before{
     content: "";
@@ -138,10 +138,20 @@
         gap: 20px;
         align-items: center;
     }
-    .dot.mobile-active{
+    /* .science-wonder-container .mobile-active{
         outline: 3px dotted #00ff00;
         outline-offset: 7px;
-    }
+    } */
+    .science-wonder-container .mobile-active::before {
+        content: "";
+        position: absolute;
+        top: -10px; 
+        right: -10px; 
+        bottom: -10px; 
+        left: -10px;
+        border: 3px dashed #00FF00;
+        border-radius: 50px; 
+      }
     .science-wonder-container .science-wonder-btn{
         background: #00ff00;
         color: #302112;

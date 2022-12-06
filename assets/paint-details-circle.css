@@ -51,10 +51,20 @@
     background: #00ff00;
     z-index: 2;
 }
-.paint-circle-dot.active{
+/* .paint-circle-dot.active{
     outline: 3px dashed #00FF00;
     outline-offset: 12px;
-}
+} */
+.paint-circle-dot.active::before {
+    content: "";
+    position: absolute;
+    top: -15px; 
+    right: -15px; 
+    bottom: -15px; 
+    left: -15px;
+    border: 3px dashed #00FF00;
+    border-radius: 50px; 
+  }
 .top-info-box{
     display: none;
 }
@@ -105,10 +115,20 @@
         width: 18px;
         height: 18px;
     }
-    .paint-circle-dot.active{
+    /* .paint-circle-dot.active{
         outline: 2px dashed #00FF00;
         outline-offset: 6px;
-    }
+    } */
+    .paint-circle-dot.active::before {
+        content: "";
+        position: absolute;
+        top: -8px; 
+        right: -8px; 
+        bottom: -8px; 
+        left: -8px;
+        border: 2px dashed #00FF00;
+        border-radius: 50px; 
+      }
     .heading{
         padding: 50px 0 25px 0;
         margin: 0;

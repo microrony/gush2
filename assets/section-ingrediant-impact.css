@@ -95,9 +95,16 @@ h1,h2,h3,h4,h5,h6,p{
         width: 30px;
         height: 30px;
     }
-    .formula-circle-container .active{
-        outline-offset: 20px;
-    }
+    .formula-circle-container .active::before {
+        content: "";
+        position: absolute;
+        top: -22px; 
+        right: -22px; 
+        bottom: -22px; 
+        left: -22px;
+        border: 2px dashed #00FF00;
+        border-radius: 50px; 
+      }
     .formula-info-card{
         grid-template-columns: 50px auto;
         gap: 2rem;
@@ -122,9 +129,16 @@ h1,h2,h3,h4,h5,h6,p{
         width: 20px;
         height: 20px;
     }
-    .formula-circle-container .active{
-        outline-offset: 13px;
-    }
+    .formula-circle-container .active::before {
+        content: "";
+        position: absolute;
+        top: -15px; 
+        right: -15px; 
+        bottom: -15px; 
+        left: -15px;
+        border: 2px dashed #00FF00;
+        border-radius: 50px; 
+      }
     .formula-info-card{
         float: none;
         max-width: 100%;
