@@ -25,7 +25,6 @@
   -%}
   <div class="featured-article_card_wrapper">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
-        {%- if article.image -%}
             <a href="{{ article.url }}" class="article-card__image media media--hover-effect">
               <img
                 srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
@@ -44,7 +43,6 @@
                 height="{{ article.image.height }}"
               >
             </a>
-        {%- endif -%}
         <div class="main-article_card__content">        
           <div class="main-article_card__information">
 						<div class="article_tags">

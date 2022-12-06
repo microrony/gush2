@@ -22,9 +22,7 @@
 <div class="blog">
 	<div class="page-width section-{{ section.id }}-padding">
 		<div class="slider_heading">
-    {%- unless section.settings.heading == blank -%}
-        <h2 class="gush-font-h2">{{ section.settings.heading | escape }}</h2>
-    {%- endunless -%}
+        <h2 class="gush-font-h2">{{ section.settings.blog.title | escape }}</h2>
 		<div class="slider_nav">
 		<div class="featured-blog-prev">{% render 'icon-arrow-left-gushi' %}</div>
 		<div class="featured-blog-next">{% render 'icon-arrow-right-gushi' %}</div>
@@ -33,11 +31,11 @@
     {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
 			<div class="swiper gush_featured_blog">
 				<div class="swiper-wrapper">
-						{%- for article in section.settings.blog.articles -%}
+          {%- for article in section.settings.blog.articles -%}
 					<div class="swiper-slide" {{ block.shopify_attributes }}>
-								{% render 'featured-article-card', blog: section.settings.blog, article: article, media_aspect_ratio: 1.66, show_image: true, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
+              {% render 'featured-article-card', blog: section.settings.blog, article: article, media_aspect_ratio: 1.66, show_image: true, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
 					</div>
-			{% endfor %}
+			  {% endfor %}
 				</div>
 			</div>
     {%- else -%}
@@ -59,11 +57,11 @@
 </div>
 
 <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" async="defer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 {% javascript %}
 	var swiper = new Swiper(".gush_featured_blog", {
-		slidesPerView: 1.8,
+		slidesPerView: 2,
 		spaceBetween: 15,
 		centeredSlide:true,
 		loop: true,
@@ -91,12 +89,6 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "default": "Sustainability",
-      "label": "t:sections.featured-blog.settings.heading.label"
-    },
     {
       "type": "blog",
       "id": "blog",
