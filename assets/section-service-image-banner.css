@@ -4,7 +4,9 @@ h2.service-banner__heading.banner__heading span {
  .service-banner__box{
      background-color: transparent;
  }
-  .banner_inner_box {width: 44%;margin: auto;}
+  .banner_inner_box {
+    /* width: 44%; */
+    margin: auto;}
   .banner--desktop-transparent .banner__box {
     max-width: 100%;
     width: 100%;

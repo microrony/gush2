@@ -35,6 +35,13 @@
             #ser_bnr_sub__heading-{{ block.id }}{
               color: {{ block.settings.color }} !important;
             }
+            @media screen and (min-width: 750px){
+            {% if block.settings.text_width > 0 %}  
+              .subtitle-{{block.id}}{
+                width: {{ block.settings.text_width}}px !important;
+              }
+            {% endif %}
+            }
           {%- when 'buttons' -%}
             #serv_bnr_button-{{block.id}}{
               background: {{ block.settings.btn_bg_color }} !important;
@@ -247,8 +254,8 @@
             </h2>
           <div class="banner_inner_box">
           {%- when 'text' -%}
-            <div class="banner__text gush-font-p1 {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <span class="service_banner_subtitle_des" id="ser_bnr_sub__heading-{{ block.id }}">{{ block.settings.text | escape }}</span>
+            <div class="banner__text subtitle-{{block.id}} gush-font-p1 {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+              <span class="service_banner_subtitle_des " id="ser_bnr_sub__heading-{{ block.id }}">{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'buttons' -%}
             <div class="service-banner__button banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
@@ -544,6 +551,11 @@
           "id":"color",
           "label":"Text color",
           "default":"#000000"
+        },
+        {
+          "type":"number",
+          "id":"text_width",
+          "label":"Text width"
         },
         {
           "type": "select",

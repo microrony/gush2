@@ -113,7 +113,7 @@
               </div>
             </div>
             <div class="test_description">
-              <p class="gush-font-p1 tested_by_text">{{ block.settings.tested_by }}
+              <p class="gush-font-p1 tested_by_text"><a class="full-unstyled-link" href="{{ block.settings.tested_by_url }}">{{ block.settings.tested_by }}</a>
               </p>
               <p class="gush-font-p1 description">{{ block.settings.short_description }}
               </p>
@@ -167,7 +167,8 @@
               </div>
             </div>
             <div class="test_description">
-              <p class="gush-font-p1">{{ block.settings.tested_by }}
+              <p class="gush-font-p1"><a class="full-unstyled-link" href="{{ block.settings.tested_by_url }}">{{ block.settings.tested_by }}</a>
+              </p>
               </p>
               <p class="gush-font-p1 description">{{ block.settings.short_description }}
               </p>
@@ -193,7 +194,7 @@
 							{% endif %}
             </div>
             <div class="test_description">
-              <p class="gush-font-p1">{{ block.settings.tested_by }}
+              <p class="gush-font-p1"><a class="full-unstyled-link" href="{{ block.settings.tested_by_url }}">{{ block.settings.tested_by }}</a>
               </p>
               <p class="gush-font-p1 description">{{ block.settings.short_description }}
               </p>
@@ -341,10 +342,16 @@
             "id": "short_description",
             "type": "textarea",
             "label": "Short description"
-          }, {
+          },
+          {
             "id": "tested_by",
             "type": "text",
             "label": "Tested By"
+          },
+          {
+            "id": "tested_by_url",
+            "type": "url",
+            "label": "Tested By URL"
           }
         ]
       }, {
@@ -406,6 +413,11 @@
             "id": "tested_by",
             "type": "text",
             "label": "Tested By"
+          },
+          {
+            "id": "tested_by_url",
+            "type": "url",
+            "label": "Tested By URL"
           }
         ]
       }, {
@@ -463,6 +475,11 @@
             "id": "tested_by",
             "type": "text",
             "label": "Tested By"
+          },
+          {
+            "id": "tested_by_url",
+            "type": "url",
+            "label": "Tested By URL"
           }
         ]
       }
