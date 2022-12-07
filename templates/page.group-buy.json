@@ -108,7 +108,7 @@
           "settings": {
             "title": "Free colour consultation",
             "faq_quality": "",
-            "faq_ans": "Our colour experts help you pick shades and palettes you’ll love, to get your home looking its best"
+            "faq_ans": "Our colour experts help you pick shades and palettes you’ll love, to get your home looking its best."
           }
         },
         "656ec867-5e2b-4856-8e2c-a96edc3dcff2": {
@@ -147,7 +147,7 @@
         "color": "#ffc900",
         "heading": "Gush with big savings",
         "sub-heading": "Our group buy service packages get you our full suite of paint products, services and window film installation at exclusive rates. Let’s get your new home gushing over with goodness.",
-        "link": "<p><\/p>",
+        "link": "",
         "btn_text": "",
         "btn_url": "",
         "sb-heading": "",
