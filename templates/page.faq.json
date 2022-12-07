@@ -44,7 +44,7 @@
           "type": "faqContent",
           "settings": {
             "category": "About Gush",
-            "type": "Contact Us",
+            "type": "Contact us",
             "title": "Where can I see your colours in person?",
             "answer": "You may visit us at our office at 2 Gambas Crescent, #01-35, Nordcom II, Singapore 757044, with an appointment. Please call us at 6692 9000 to arrange an appointment. \n\nVisiting hours: \nMon – Fri, except for P.Hs. \n9am - 12pm, 1pm – 5pm"
           }
@@ -53,7 +53,7 @@
           "type": "faqContent",
           "settings": {
             "category": "About Gush",
-            "type": "Contact Us",
+            "type": "Contact us",
             "title": "How can I contact Gush?",
             "answer": "You can send us an email at hello@gush.earth."
           }
