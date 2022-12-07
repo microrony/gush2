@@ -124,6 +124,7 @@
         "settings": {
           "color_scheme": "background-2",
           "logo": "shopify:\/\/shop_images\/Group_1944_0a9998f3-351f-4738-9d68-2df617f6fbae.png",
+          "logo_svg": "logo.svg",
           "logo_width": 140,
           "logo_position": "middle-left",
           "menu": "new_main_menu",
