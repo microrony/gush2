@@ -147,7 +147,7 @@
         "color": "#ffc900",
         "heading": "Gush with big savings",
         "sub-heading": "Our group buy service packages get you our full suite of paint products, services and window film installation at exclusive rates. Let’s get your new home gushing over with goodness.",
-        "link": "",
+        "link": "<p><\/p>",
         "btn_text": "",
         "btn_url": "",
         "sb-heading": "",
@@ -199,21 +199,12 @@
             "title": "Whistler Grand",
             "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
           }
-        },
-        "e1bf1d61-91e4-4718-a483-fa4f76290995": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/image_160.png",
-            "title": "Stirling Residences",
-            "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
-          }
         }
       },
       "block_order": [
         "84e3d980-3f48-4b78-a811-3042f7d33808",
         "b80e44f1-a907-4152-848d-0aa53c0a2db4",
-        "490617d0-4f96-489c-af77-6c86d3cc1130",
-        "e1bf1d61-91e4-4718-a483-fa4f76290995"
+        "490617d0-4f96-489c-af77-6c86d3cc1130"
       ],
       "settings": {
         "heading": "Ongoing projects"
