@@ -71,7 +71,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "General Questions",
+            "type": "General questions",
             "title": "Is your full colour range available on your website?",
             "answer": "No, our website only features 65 curated colours. If you’re looking for a colour that is not on our website, please reach out to us at hello@gush.earth."
           }
@@ -80,7 +80,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "General Questions",
+            "type": "General questions",
             "title": "I've just got my walls painted. The colour appears to be darker in comparison to what's shown on your website.",
             "answer": "While we’ve done our best to represent our colours accurately online, colour presentations can vary depending on the monitor and screen settings. To help in your decision-making, we recommend ordering our sample tubs to confirm your colour choice before proceeding with your paint order. This not only shows you the exact colour, but helps you visualise how it’s going to look on your wall."
           }
@@ -98,7 +98,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "General Questions",
+            "type": "General questions",
             "title": "Do you provide colour books?",
             "answer": "We don’t have a colour book for our online range, but you can get the sample tubs of the colours you’re interested in. You can do so by selecting ‘Sample’ under the product listing."
           }
@@ -107,7 +107,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Health and Safety",
+            "type": "Health and safety",
             "title": "Is it safe to stay in the house while the painting is done?",
             "answer": "Yes, that’s the beauty of using our odourless, toxic-free paints. It’s safe for pregnant women and children to stay as well. You can stay in another room while the painting is done, so the wet walls don’t get touched."
           }
@@ -116,7 +116,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Health and Safety",
+            "type": "Health and safety",
             "title": "Is the paint safe for people with asthma or respiratory illnesses?",
             "answer": "Yes, Gush paints are odourless and do not emit any toxic fumes."
           }
@@ -125,7 +125,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Paint Application",
+            "type": "Paint application",
             "title": "Do I have to use a white base first if I am painting a dark-coloured wall with a lighter colour?",
             "answer": "We recommend applying a layer of sealer instead. Besides already being white in colour, the sealer helps your paint coat bind to the wall better and prevents cracking and peeling."
           }
@@ -134,7 +134,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Paint Application",
+            "type": "Paint application",
             "title": "Is it advisable to strip the old paint every time I want to repaint?",
             "answer": "We do not recommend stripping off old paint as this would worsen the wall condition. Your best bet is to get a professional plastering service to repair the wall before you repaint it."
           }
@@ -143,8 +143,8 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Paint Application",
-            "title": "I am looking to paint on wood surfaces. Which paint would be a better choice – Air-Purifying or Gush Cair Fresh?",
+            "type": "Paint application",
+            "title": "I am looking to paint on wood surfaces. Which paint would be a better choice – Gush Cair or Gush Cair Fresh?",
             "answer": "Currently, our paints are not ideal for wood surfaces as they are water-based with matte-finishing. When applied to wood, it might cause scratches, dirt marks or peel over time. We recommend using other oil or latex-based paints instead.\nIf you still wish to use our paints on wood, make sure to apply a layer of sealer first to get the best result."
           }
         },
