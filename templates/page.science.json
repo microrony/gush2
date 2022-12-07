@@ -261,8 +261,8 @@
         "09bdf50e-4059-406e-944c-ae87fc974387": {
           "type": "molding",
           "settings": {
-            "title": "Anti-molding",
-            "text": "gush paint \nMold growth tests",
+            "title": "Anti-moulding",
+            "text": "Gush paint \nMould growth tests",
             "uncoated_surface_text": "Uncoated surface",
             "uncoated_surface_image": "shopify:\/\/shop_images\/image_2022-11-29_073713092.png",
             "gush_coated_surface_text": "Gush Coated Surface",
@@ -305,13 +305,14 @@
         "153e3e81-abfd-43a7-a5d2-b53509add15b": {
           "type": "reports-block",
           "settings": {
-            "title": "Study",
+            "title": "Wellness study",
             "description": "The effects of high formaldehyde levels to our cognitive functions",
-            "number": "05.20.20"
+            "number": "Read more"
           }
         },
         "41f9dc34-365d-4ce5-8a2f-83f44cbb4010": {
           "type": "reports-block",
+          "disabled": true,
           "settings": {
             "title": "Study",
             "description": "Product efficacy against common household pollutants",
