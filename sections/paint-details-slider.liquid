@@ -1,10 +1,14 @@
 {{ "paint-details-slider.css" | asset_url | stylesheet_tag }}
-
+<style>
+  .info-swiper{
+    pointer-events: none;
+  }
+</style>
 <div class="page-width paint-slider-contianer">
     <h2 class="gush-font-h2">{{ section.settings.heading }}</h2> 
     <div class="slider-container">
     <div class="swiper-button-prev slider-arrow"><span class="">{% render 'icon-arrow-left-gushi' %}</span></div>
-    <div thumbsSlider="" class="swiper mySwiper ">
+    <div thumbsSlider="" class="swiper mySwiper info-swiper">
       <div class="swiper-wrapper">
         {% for block in section.blocks %} 
             <div class="swiper-slide thumb-slide">

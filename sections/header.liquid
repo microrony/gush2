@@ -378,6 +378,9 @@ svg.icon.dotted_cart {
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {%- if section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+            {% if section.settings.logo_svg != blank %} 
+              <img src="{{ section.settings.logo_svg | asset_url }}" alt="" srcset="">
+            {% else  %}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo | img_url: image_size }}"
               loading="lazy"
@@ -386,6 +389,7 @@ svg.icon.dotted_cart {
               height="{{ section.settings.logo.height }}"
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
+            {% endif %}
           {%- else -%}
             <span class="h2">{{ shop.name }}</span>
           {%- endif -%}
@@ -729,6 +733,12 @@ svg.icon.dotted_cart {
       "type": "image_picker",
       "id": "logo",
       "label": "t:sections.header.settings.logo.label"
+    },
+    {
+      "type": "text",
+      "id": "logo_svg",
+      "label": "Logo svg file name",
+      "info":"Example: logo.svg ( must have in asset folder )"
     },
     {
       "type": "range",
