@@ -23,6 +23,7 @@
         },
         "b9e1ac44-ee2f-4d73-af28-b2b256fb131c": {
           "type": "faqContent",
+          "disabled": true,
           "settings": {
             "category": "About Gush",
             "type": "General Questions",
