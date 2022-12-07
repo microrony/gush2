@@ -22,7 +22,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Now",
+            "button_label_1": "Enquire Now",
             "btn_bg_color": "",
             "btn_color": "",
             "button_link_1": "shopify:\/\/collections\/all",
@@ -128,7 +128,7 @@
         "heading": "How it works",
         "sub-heading": "",
         "image": "shopify:\/\/shop_images\/image_2022-12-05_091922718.png",
-        "link": "",
+        "link": "<p><\/p>",
         "btn_text": "",
         "btn_url": "shopify:\/\/collections\/all",
         "sb-heading": "",
