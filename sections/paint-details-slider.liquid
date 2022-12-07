@@ -24,7 +24,7 @@
         {% for block in section.blocks %} 
             <div class="swiper-slide">
               <div class="swiper-button-prev mobile-arrow left "><span class="">{% render 'mobile-arrow-left' %}</span></div>
-              {{ block.settings.img | image_url: width: 600, height: 600 | image_tag }}
+              {{ block.settings.img | image_url: width: block.settings.img.width | image_tag }}
               <div class="swiper-button-next mobile-arrow right"><span class="">{% render 'mobile-arrow-right' %}</span></div>
             </div>
         {% endfor %}

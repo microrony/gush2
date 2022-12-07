@@ -54,7 +54,7 @@
              {% for block in section.blocks %} 
                 <div class="top-info-box paint-info-box {% if forloop.first %} active {% endif %}"><p class="gush-font-p2">{{ block.settings.info }}</p></div>
             {% endfor %}
-            {{ section.settings.img | image_url: width: 600 | image_tag }}
+            {{ section.settings.img | image_url: width: section.settings.img.width | image_tag }}
             {% if section.settings.bottom_circle_txt != blank %} 
                 <div class="bottom-info-box paint-info-box"><p class="gush-font-p2">{{ section.settings.bottom_circle_txt }}</p></div>
             {% endif %}
