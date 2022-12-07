@@ -14,7 +14,7 @@
         "a1fd7613-91cc-46e1-8ec9-765938383ddd": {
           "type": "text",
           "settings": {
-            "text": "Enjoy savings and create better homes with your neighbours.",
+            "text": "Enjoy savings and create better\nhomes with your neighbours.",
             "color": "#000000",
             "text_style": "body"
           }
@@ -147,7 +147,7 @@
         "color": "#ffc900",
         "heading": "Gush with big savings",
         "sub-heading": "Our group buy service packages get you our full suite of paint products, services and window film installation at exclusive rates. Let’s get your new home gushing over with goodness.",
-        "link": "",
+        "link": "<p><\/p>",
         "btn_text": "",
         "btn_url": "",
         "sb-heading": "",
