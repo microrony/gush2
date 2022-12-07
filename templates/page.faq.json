@@ -152,7 +152,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Paint Application",
+            "type": "Paint application",
             "title": "Can I use a sealer from another brand together with Gush Air-purifying paint?",
             "answer": "Yes, that’s possible. But our interior paints still give the best results when paired with the Gush sealer."
           }
@@ -161,7 +161,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Paint Application",
+            "type": "Paint application",
             "title": "What material surface can Gush Air-purifying interior paint be applied to?",
             "answer": "Wood\nApplication on wooden surfaces is possible, but not recommended. Our paint is unable to replicate the natural beauty of wooden surfaces due to its matte-texture finish. If you wish to paint gush on wood, do apply a layer of sealer first.\n\nPlastic\nApplication on plastic surfaces is possible, but not recommended. If you wish to paint gush on plastic, apply a layer of sealer first to help the paint coat bind to the surface better.\n\nMetal\nGush interior paints should not be applied to metal surfaces as it is a water-based, latex paint that may cause the metal surface to rust.\n\nExterior walls\nIt should not be used as a replacement for exterior paint. As Gush interior paints are specifically formulated for interior environments, they do not perform the same in outdoor conditions."
           }
@@ -170,7 +170,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Paint Application",
+            "type": "Paint application",
             "title": "Do I mix need to mix water with my paints?",
             "answer": "No, you don’t need to. Adding too much water will reduce our paints’ air-purifying effectiveness and finish. Give the paint a thorough stir before use so that the pigments are evenly mixed, and you’re good to go.\nIf the paint is too sticky for you, you can dilute it with water, but just a little. The amount of water you add should not exceed 15% of the overall paint solution as this would severely reduce the paints’ efficacy. Only use clean water so the paint doesn’t get contaminated."
           }
@@ -179,16 +179,17 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Paint Application",
+            "type": "Paint application",
             "title": "Do I need to use a sealer?",
             "answer": "Using a sealer neutralises existing alkalis on the wall which typically causes paint to peel, discolour or crack. It also seals off excess moisture trapped within the wall, preventing mold and efflorescence growth. Sealer also makes the paint adhere to the wall better.\n\nWe always recommend using sealer, especially if you face any of these situations:\n\n- Wall-related issues like stubborn marks due to stains, grease or patched-up areas\n- If the wall was previously painted with oil-based, emulsion paint\n- You’re changing the wall from a dark to light colour \n- This is the first paint layer being applied to a new wall \n- It has been five years since the wall was last painted"
           }
         },
         "97779afe-e007-4a6e-82da-c8bc6640cc4a": {
           "type": "faqContent",
+          "disabled": true,
           "settings": {
             "category": "Paints",
-            "type": "Paint Application",
+            "type": "Paint application",
             "title": "Do you have a guide for painting with Air-purifying paints?",
             "answer": "Yes we do. Check out this instructional video by our friend, Inch Chua. We hope you have as much fun painting your walls as she did!"
           }
@@ -197,7 +198,7 @@
           "type": "faqContent",
           "settings": {
             "category": "Paints",
-            "type": "Paint Application",
+            "type": "Paint application",
             "title": "Is there a special application method to use Gush Interior paints?",
             "answer": "Nope! Even with its air-purifying features, both Air-purifying and Gush Cair Freshs can be applied like every other paint on the market. We recommend applying two coats of paint for the best results."
           }
@@ -206,9 +207,9 @@
           "type": "faqContent",
           "settings": {
             "category": "Window Films",
-            "type": "General Questions",
+            "type": "General questions",
             "title": "How much are Gush window films?",
-            "answer": "Gush window films are currently selling at $14\/sqft. \n\nYou can reach out to our sales representatives <a href=\"https:\/\/gush.earth\/sg\/pages\/contact-us\/\">here<\/a> for more information."
+            "answer": "Gush window films are currently selling at $14\/sqft. \n\nYou can reach out to our sales representatives <a href=\"https:\/\/gush.earth\/pages\/contact-us\/\">here<\/a> for more information."
           }
         },
         "063e6ab1-8a91-435e-99f5-8981a3a939b0": {
