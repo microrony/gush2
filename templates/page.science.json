@@ -262,7 +262,7 @@
           "type": "molding",
           "settings": {
             "title": "Anti-moulding",
-            "text": "Gush paint \nMould growth tests",
+            "text": "Gush paint mould growth tests",
             "uncoated_surface_text": "Uncoated surface",
             "uncoated_surface_image": "shopify:\/\/shop_images\/image_2022-11-29_073713092.png",
             "gush_coated_surface_text": "Gush Coated Surface",
