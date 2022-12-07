@@ -15,8 +15,8 @@
         "a048d55b-dd40-4276-bf2f-40357a425873": {
           "type": "the-problem-block",
           "settings": {
-            "title": "Indoor Air Pollution",
-            "description": "We now spend more than 90% of our time indoors. When not at home, we’re huddled in offices, schools, malls – spaces prone to indoor pollutants.\n\nVOCs, viruses, bacteria, mold, allergens & chemical particles affect our physical health, well-being & productivity.",
+            "title": "Indoor air pollution",
+            "description": "We now spend more than 90% of our time indoors. When not at home, we’re huddled in offices, schools, malls – spaces prone to indoor pollutants.\n\nVOCs, viruses, bacteria, mould, allergens & chemical particles affect our physical health, well-being & productivity.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_134223291.png"
           }
         },
@@ -24,7 +24,7 @@
           "type": "the-problem-block",
           "settings": {
             "title": "VOCs: the biggest culprit",
-            "description": "Volatile Organic Compounds (VOCs) are gases released from products or chemical processes.\n\nMany products release VOCs: cleaning liquids, aerosols, furniture, post-renovation odors, electronics – even our bodies.",
+            "description": "Volatile Organic Compounds (VOCs) are gases released from products or chemical processes.\n\nMany products release VOCs: cleaning liquids, aerosols, furniture, post-renovation odours, electronics – even our bodies.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_134247595.png"
           }
         }
@@ -192,7 +192,7 @@
             "first_description": "Our GPC’s catalytic agents have an activation energy of more than 120 kcal\/mol. This cuts the organic chemical bonds in most VOCs.",
             "first_image": "shopify:\/\/shop_images\/Group_1825.png",
             "svg1": "Group 1825 VOCs .svg",
-            "second_title": "Say goodbye to odors",
+            "second_title": "Say goodbye to odours",
             "second_description": "Our GPC breaks down 99% of VOCs and deodorizes your space of chemical fumes, within 21 hours.",
             "second_image": "shopify:\/\/shop_images\/Group_1827.png",
             "svg2": "Frame 332 Goodbye odors.svg",
