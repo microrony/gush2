@@ -301,15 +301,13 @@
     },
     "1659073882562a9fbf": {
       "type": "science-steps",
-      "disabled": true,
       "blocks": {
         "153e3e81-abfd-43a7-a5d2-b53509add15b": {
           "type": "reports-block",
-          "disabled": true,
           "settings": {
             "title": "Wellness study",
             "description": "The effects of high formaldehyde levels to our cognitive functions",
-            "number": "Read more"
+            "number": "<a href=\"\/blogs\/wellness\/wellness-study-effects-of-high-formaldehyde-levels-to-our-cognitive-functions\"> Read more <\/a>"
           }
         },
         "41f9dc34-365d-4ce5-8a2f-83f44cbb4010": {
@@ -361,7 +359,7 @@
         "ef4b61de-f073-453e-959b-467366df9ed8"
       ],
       "settings": {
-        "title": "04 Accreditations",
+        "title": "05 Accreditations",
         "description": "We’ve got a suite of accreditations and awards from respected institutions, so that you can be sure you’re getting nothing but the best.",
         "page_name": "science",
         "unbreakable_benefits": false
