@@ -16,7 +16,7 @@
           "type": "the-problem-block",
           "settings": {
             "title": "Urban Heat Island effect (UHI)",
-            "description": "As our world develops, buildings are replacing natural landscapes. Less greenery, more human activity and more heat-emitting building materials make cities hotspots that generate lots of heat. \nUrban infrastructure absorbs and re-emits heat, making it much hotter than surrounding areas. In Singapore, temperature differences are as high as 7°C.",
+            "description": "As our world develops, buildings are replacing natural landscapes. Less greenery, more human activity and more heat-emitting building materials make cities hotspots that generate lots of heat. \n\nUrban infrastructure absorbs and re-emits heat, making it much hotter than surrounding areas. In Singapore, temperature differences are as high as 7°C.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_135758286.png"
           }
         },
@@ -24,7 +24,7 @@
           "type": "the-problem-block",
           "settings": {
             "title": "More and more heat produced",
-            "description": "Using air-conditioning units and cooling systems releases more heat, making the outdoors even hotter. A vicious cycle ensues.The problem is: heat doesn’t come from sunlight alone. The solar spectrum also includes heat from Ultraviolet and infrared rays, which are produced by machine and human activities too.",
+            "description": "Using air-conditioning units and cooling systems releases more heat, making the outdoors even hotter. A vicious cycle ensues.\n\nThe problem is: heat doesn’t come from sunlight alone. The solar spectrum also includes heat from Ultraviolet and infrared rays, which are produced by machine and human activities too.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_135818582.png"
           }
         }
