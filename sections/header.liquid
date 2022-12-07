@@ -109,6 +109,11 @@ svg.icon.dotted_cart {
       margin-bottom: {{ section.settings.margin_bottom }}px;
     }
   }
+  .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+  }
 {%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -562,7 +567,21 @@ svg.icon.dotted_cart {
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
+<script>
+window.onscroll = function() {myFunction333()};
 
+const navbar = document.querySelector(".header-wrapper");
+const sticky = navbar.offsetTop;
+
+
+function myFunction333() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 {% javascript %}
   class StickyHeader extends HTMLElement {
     constructor() {
