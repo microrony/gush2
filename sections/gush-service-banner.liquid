@@ -2,7 +2,7 @@
     @media screen and (min-width: 750px){
         .gush-service-banner{
             height: 800px;
-            background-image: url("{{ section.settings.bg_image | image_url : width: 1500 }}");
+            background-image: url("{{ section.settings.bg_image | image_url : width: section.settings.bg_image.width }}");
             background-repeat: no-repeat;
             background-size: cover;
             padding: 210px 0 167px 0;
