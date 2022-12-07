@@ -1133,3 +1133,30 @@ window.addEventListener("resize", () => {
     image.style.height = `${image.offsetWidth}px`;
 });
 });
+
+// gush-featured-blog swipper settings
+const swiperEles = document.querySelectorAll(".featured_swiper_gush");
+swiperEles.forEach( ele =>{
+  const sectionId = ele.dataset.sectionid;
+	var swiper = new Swiper(`.gush_featured_blog-${sectionId}`, {
+		slidesPerView: 2,
+		spaceBetween: 15,
+		centeredSlide:true,
+		loop: true,
+		navigation: {
+          nextEl: `.featured-blog-next-${sectionId}`,
+          prevEl: `.featured-blog-prev-${sectionId}`,
+        },
+    // Responsive breakpoints
+    breakpoints: {
+    750: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+		990: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+   }
+});
+})

@@ -24,12 +24,12 @@
 		<div class="slider_heading">
         <h2 class="gush-font-h2">{{ section.settings.blog.title | escape }}</h2>
 		<div class="slider_nav">
-		<div class="featured-blog-prev">{% render 'icon-arrow-left-gushi' %}</div>
-		<div class="featured-blog-next">{% render 'icon-arrow-right-gushi' %}</div>
+		<div class="featured-blog-prev-{{section.id}} featured-blog-prev">{% render 'icon-arrow-left-gushi' %}</div>
+		<div class="featured-blog-next-{{section.id}}">{% render 'icon-arrow-right-gushi' %}</div>
 	</div>
 	</div>
     {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
-			<div class="swiper gush_featured_blog">
+			<div class="swiper featured_swiper_gush gush_featured_blog-{{ section.id }}" data-sectionId="{{ section.id }}">
 				<div class="swiper-wrapper">
           {%- for article in section.settings.blog.articles -%}
 					<div class="swiper-slide" {{ block.shopify_attributes }}>
@@ -60,27 +60,28 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 {% javascript %}
-	var swiper = new Swiper(".gush_featured_blog", {
-		slidesPerView: 2,
-		spaceBetween: 15,
-		centeredSlide:true,
-		loop: true,
-		navigation: {
-          nextEl: ".featured-blog-next",
-          prevEl: ".featured-blog-prev",
-        },
-    // Responsive breakpoints
-    breakpoints: {
-    750: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-		990: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    }
-   }
-});
+// const swiperEle = document.querySelectorAll(".featured_swiper_gush")
+// 	var swiper = new Swiper(`.`, {
+// 		slidesPerView: 2,
+// 		spaceBetween: 15,
+// 		centeredSlide:true,
+// 		loop: true,
+// 		navigation: {
+//           nextEl: ".featured-blog-next",
+//           prevEl: ".featured-blog-prev",
+//         },
+//     // Responsive breakpoints
+//     breakpoints: {
+//     750: {
+//       slidesPerView: 2,
+//       spaceBetween: 20,
+//     },
+// 		990: {
+//       slidesPerView: 3,
+//       spaceBetween: 20,
+//     }
+//    }
+// });
 {% endjavascript %}
 
 {% schema %}
