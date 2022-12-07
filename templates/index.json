@@ -298,10 +298,10 @@
         "heading": "Our mission",
         "bg_color": "#f9f4f0",
         "image": "shopify:\/\/shop_images\/Group_732b7434-2b50-4580-9af1-c9732c83410f.png",
-        "content": "Gush makes <span>innovative materials<\/span> for the built environment.\nBeyond sprucing up your home,\nour products support <span>your wellbeing<\/span> and help the Earth too.  \n\nWe believe your choices,\nhowever small, can drive\npurposeful change.",
+        "content": "Gush makes <span>innovative materials<\/span> for the built environment. Beyond sprucing up your home, our products support <span>your wellbeing<\/span> and help the Earth too.  \n\nWe believe your choices,\nhowever small, can drive\npurposeful change.",
         "btn-text-1": "Learn more",
-        "link_first_btn": "",
-        "btn-text-2": "Read our manifesto",
+        "link_first_btn": "shopify:\/\/pages\/mission",
+        "btn-text-2": "",
         "link_second_btn": "",
         "padding_top": 124,
         "padding_bottom": 136
