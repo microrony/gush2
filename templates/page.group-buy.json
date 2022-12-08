@@ -277,6 +277,7 @@
     },
     "image_with_text_group_buy": {
       "type": "group_buy_image_with_text",
+      "disabled": true,
       "blocks": {
         "17758f2a-44c2-4acb-843a-008ce290fa49": {
           "type": "button",
