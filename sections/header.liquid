@@ -577,7 +577,7 @@ function myFunction333() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("header-sticky")
     const mainContent = document.getElementById("MainContent")
-    console.log(mainContent.style.paddingTop=`${navbar.offsetHeight}px`)
+    mainContent.style.paddingTop=`${navbar.offsetHeight}px`;
   } else {
     navbar.classList.remove("header-sticky");
     const mainContent = document.getElementById("MainContent")
