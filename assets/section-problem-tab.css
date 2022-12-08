@@ -43,11 +43,12 @@
 }
 
 .the-problem-tab .name_formula {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 55px;
   gap: 3rem;
   position: relative;
   margin-bottom: 3rem;
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .the-problem-tab img {
@@ -60,7 +61,7 @@
 }
 
 .the-problem-tab .image_structure {
-  width: 100%;
+  width: 90%;
 }
 
 .the-problem-tab .odor_appearance {
@@ -126,7 +127,7 @@
 	.the-problem-tab .tab-content {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		padding: 80px;
-		gap: 14rem;
+		gap: 3vw;
 		margin-top: 0rem;
 	}
 
@@ -139,10 +140,6 @@
 	.the-problem-tab .image_formula {
 		transform: translateY(-1.5rem);
 		width: auto;
-	}
-
-	.the-problem-tab .image_structure {
-		width: 390px;
 	}
 
 	.the-problem-tab .odor_appearance {
