@@ -1,66 +1,48 @@
 <svg width="390" height="320" viewBox="0 0 390 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="179.966" cy="83.25" r="2.25" fill="#302112"/>
 <circle cx="195.333" cy="84" r="3" fill="#FF5500"/>
-<circle cx="163.429" cy="86.5365" r="2.25" transform="rotate(157.588 163.429 86.5365)" fill="#302112"/>
-<circle cx="183.1" cy="85.2342" r="3" transform="rotate(168.148 183.1 85.2342)" fill="#FF5500"/>
-<circle cx="149.428" cy="95.9293" r="2.25" transform="rotate(134.959 149.428 95.9293)" fill="#302112"/>
+<circle cx="183.1" cy="85.2343" r="3" transform="rotate(168.148 183.1 85.2343)" fill="#FF5500"/>
 <circle cx="171.716" cy="88.9123" r="3" transform="rotate(156.098 171.716 88.9123)" fill="#FF5500"/>
-<circle cx="140.099" cy="109.976" r="2.25" transform="rotate(112.218 140.099 109.976)" fill="#302112"/>
-<circle cx="161.372" cy="94.8554" r="3" transform="rotate(144.318 161.372 94.8554)" fill="#FF5500"/>
-<circle cx="136.972" cy="126.634" r="2.25" transform="rotate(88.9402 136.972 126.634)" fill="#302112"/>
+<circle cx="161.372" cy="94.8555" r="3" transform="rotate(144.318 161.372 94.8555)" fill="#FF5500"/>
 <circle cx="152.436" cy="102.846" r="3" transform="rotate(132.257 152.436 102.846)" fill="#FF5500"/>
-<circle cx="140.483" cy="143.14" r="2.25" transform="rotate(69.4576 140.483 143.14)" fill="#302112"/>
 <circle cx="145.376" cy="112.469" r="3" transform="rotate(120.321 145.376 112.469)" fill="#FF5500"/>
-<circle cx="147.788" cy="158.217" r="2.25" transform="rotate(59.7002 147.788 158.217)" fill="#302112"/>
 <circle cx="140.458" cy="123.41" r="3" transform="rotate(108.11 140.458 123.41)" fill="#FF5500"/>
-<circle cx="157.251" cy="172.518" r="2.25" transform="rotate(53.6517 157.251 172.518)" fill="#302112"/>
 <circle cx="137.979" cy="135.027" r="3" transform="rotate(96.015 137.979 135.027)" fill="#FF5500"/>
-<circle cx="167.766" cy="185.691" r="2.25" transform="rotate(49.2489 167.766 185.691)" fill="#302112"/>
 <circle cx="138.078" cy="147.302" r="3" transform="rotate(82.7863 138.078 147.302)" fill="#FF5500"/>
-<circle cx="180.153" cy="197.245" r="2.25" transform="rotate(-3.00081 180.153 197.245)" fill="#302112"/>
 <circle cx="140.615" cy="158.757" r="3" transform="rotate(72.8547 140.615 158.757)" fill="#FF5500"/>
-<circle cx="192.214" cy="185.637" r="2.25" transform="rotate(-49.2946 192.214 185.637)" fill="#302112"/>
 <circle cx="144.781" cy="169.777" r="3" transform="rotate(66.0294 144.781 169.777)" fill="#FF5500"/>
-<circle cx="202.778" cy="172.387" r="2.25" transform="rotate(-53.7217 202.778 172.387)" fill="#302112"/>
-<circle cx="150.342" cy="180.877" r="3" transform="rotate(60.9559 150.342 180.877)" fill="#FF5500"/>
-<circle cx="212.051" cy="158.378" r="2.25" transform="rotate(-59.7002 212.051 158.378)" fill="#302112"/>
-<circle cx="156.314" cy="190.842" r="3" transform="rotate(57.2771 156.314 190.842)" fill="#FF5500"/>
-<circle cx="219.518" cy="142.957" r="2.25" transform="rotate(-69.6443 219.518 142.957)" fill="#302112"/>
+<circle cx="150.342" cy="180.878" r="3" transform="rotate(60.9559 150.342 180.878)" fill="#FF5500"/>
+<circle cx="156.314" cy="190.841" r="3" transform="rotate(57.2771 156.314 190.841)" fill="#FF5500"/>
 <circle cx="163.237" cy="200.998" r="3" transform="rotate(54.2238 163.237 200.998)" fill="#FF5500"/>
-<circle cx="222.964" cy="126.424" r="2.25" transform="rotate(-89.2907 222.964 126.424)" fill="#302112"/>
 <circle cx="170.319" cy="210.381" r="3" transform="rotate(51.7315 170.319 210.381)" fill="#FF5500"/>
-<circle cx="219.699" cy="109.649" r="2.25" transform="rotate(-112.648 219.699 109.649)" fill="#302112"/>
 <circle cx="177.934" cy="219.657" r="3" transform="rotate(49.4795 177.934 219.657)" fill="#FF5500"/>
-<circle cx="210.234" cy="95.6591" r="2.25" transform="rotate(-135.375 210.234 95.6591)" fill="#302112"/>
 <circle cx="186.006" cy="228.743" r="3" transform="rotate(47.2262 186.006 228.743)" fill="#FF5500"/>
-<circle cx="196.14" cy="86.3874" r="2.25" transform="rotate(-157.801 196.14 86.3874)" fill="#302112"/>
 <circle cx="195.486" cy="235.994" r="3" transform="rotate(-3.00081 195.486 235.994)" fill="#FF5500"/>
-<circle r="3" transform="matrix(0.978682 0.205383 0.205383 -0.978682 207.872 85.2342)" fill="#FF5500"/>
-<circle r="3" transform="matrix(0.91424 0.405173 0.405173 -0.91424 219.257 88.9116)" fill="#FF5500"/>
-<circle r="3" transform="matrix(0.812265 0.583288 0.583288 -0.812265 229.599 94.8554)" fill="#FF5500"/>
-<circle r="3" transform="matrix(0.672459 0.740134 0.740134 -0.672459 238.536 102.846)" fill="#FF5500"/>
+<circle r="3" transform="matrix(0.978682 0.205383 0.205383 -0.978682 207.872 85.2343)" fill="#FF5500"/>
+<circle r="3" transform="matrix(0.91424 0.405173 0.405173 -0.91424 219.257 88.9118)" fill="#FF5500"/>
+<circle r="3" transform="matrix(0.812265 0.583288 0.583288 -0.812265 229.599 94.8555)" fill="#FF5500"/>
+<circle r="3" transform="matrix(0.672459 0.740134 0.740134 -0.672459 238.536 102.847)" fill="#FF5500"/>
 <circle r="3" transform="matrix(0.504844 0.86321 0.86321 -0.504844 245.596 112.469)" fill="#FF5500"/>
 <circle r="3" transform="matrix(0.310847 0.95046 0.95046 -0.310847 250.514 123.41)" fill="#FF5500"/>
 <circle r="3" transform="matrix(0.10479 0.994494 0.994494 -0.10479 252.993 135.026)" fill="#FF5500"/>
 <circle r="3" transform="matrix(-0.125571 0.992085 0.992085 0.125571 252.894 147.301)" fill="#FF5500"/>
 <circle r="3" transform="matrix(-0.294796 0.95556 0.95556 0.294796 250.357 158.756)" fill="#FF5500"/>
 <circle r="3" transform="matrix(-0.406269 0.913754 0.913754 0.406269 246.191 169.777)" fill="#FF5500"/>
-<circle r="3" transform="matrix(-0.485482 0.874247 0.874247 0.485482 240.63 180.877)" fill="#FF5500"/>
+<circle r="3" transform="matrix(-0.485482 0.874247 0.874247 0.485482 240.63 180.878)" fill="#FF5500"/>
 <circle r="3" transform="matrix(-0.540576 0.841295 0.841295 0.540576 234.658 190.841)" fill="#FF5500"/>
 <circle r="3" transform="matrix(-0.584621 0.811306 0.811306 0.584621 227.735 200.998)" fill="#FF5500"/>
 <circle r="3" transform="matrix(-0.619348 0.785117 0.785117 0.619348 220.654 210.381)" fill="#FF5500"/>
 <circle r="3" transform="matrix(-0.649719 0.760174 0.760174 0.649719 213.038 219.657)" fill="#FF5500"/>
 <circle r="3" transform="matrix(-0.679106 0.73404 0.73404 0.679106 204.966 228.742)" fill="#FF5500"/>
 <circle cx="228.333" cy="141.663" r="3" transform="rotate(90 228.333 141.663)" fill="#FF5500"/>
-<circle cx="226.342" cy="153.036" r="3" transform="rotate(109.922 226.342 153.036)" fill="#FF5500"/>
-<circle cx="220.539" cy="163.084" r="3" transform="rotate(130.001 220.539 163.084)" fill="#FF5500"/>
+<circle cx="226.342" cy="153.037" r="3" transform="rotate(109.922 226.342 153.037)" fill="#FF5500"/>
+<circle cx="220.539" cy="163.085" r="3" transform="rotate(130.001 220.539 163.085)" fill="#FF5500"/>
 <circle cx="211.675" cy="170.531" r="3" transform="rotate(149.85 211.675 170.531)" fill="#FF5500"/>
-<circle cx="200.792" cy="174.494" r="3" transform="rotate(169.859 200.792 174.494)" fill="#FF5500"/>
+<circle cx="200.792" cy="174.495" r="3" transform="rotate(169.859 200.792 174.495)" fill="#FF5500"/>
 <circle cx="189.081" cy="174.472" r="3" transform="rotate(-169.859 189.081 174.472)" fill="#FF5500"/>
 <circle cx="178.226" cy="170.474" r="3" transform="rotate(-149.85 178.226 170.474)" fill="#FF5500"/>
-<circle cx="169.406" cy="163.019" r="3" transform="rotate(-130.001 169.406 163.019)" fill="#FF5500"/>
-<circle cx="163.642" cy="152.994" r="3" transform="rotate(-109.922 163.642 152.994)" fill="#FF5500"/>
-<circle cx="161.668" cy="141.399" r="3" transform="rotate(-89.5577 161.668 141.399)" fill="#FF5500"/>
+<circle cx="169.406" cy="163.02" r="3" transform="rotate(-130.001 169.406 163.02)" fill="#FF5500"/>
+<circle cx="163.642" cy="152.995" r="3" transform="rotate(-109.922 163.642 152.995)" fill="#FF5500"/>
+<circle cx="161.668" cy="141.4" r="3" transform="rotate(-89.5577 161.668 141.4)" fill="#FF5500"/>
 <circle cx="163.73" cy="130.091" r="3" transform="rotate(-69.6478 163.73 130.091)" fill="#FF5500"/>
 <circle cx="169.596" cy="120.08" r="3" transform="rotate(-49.5818 169.596 120.08)" fill="#FF5500"/>
 <circle cx="178.439" cy="112.728" r="3" transform="rotate(-29.7279 178.439 112.728)" fill="#FF5500"/>
