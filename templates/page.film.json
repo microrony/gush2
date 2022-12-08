@@ -146,6 +146,7 @@
           "type": "card",
           "settings": {
             "image": "shopify:\/\/shop_images\/image_2022-12-02_133328006.png",
+            "svg": "Films - 5.svg",
             "card_heading": "ClearCool 5",
             "card_info": "5% light transmission",
             "card_des": "Made for more privacy."
@@ -155,6 +156,7 @@
           "type": "card",
           "settings": {
             "image": "shopify:\/\/shop_images\/image_2022-12-02_133340367.png",
+            "svg": "",
             "card_heading": "ClearCool 35",
             "card_info": "35% light transmission",
             "card_des": "Not too bright,\nnot too dark."
@@ -164,6 +166,7 @@
           "type": "card",
           "settings": {
             "image": "shopify:\/\/shop_images\/image_2022-12-02_133358938.png",
+            "svg": "",
             "card_heading": "ClearCool 76",
             "card_info": "76% light transmission",
             "card_des": "For sunlit aesthetics \nand clear views."
