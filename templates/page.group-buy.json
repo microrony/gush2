@@ -199,12 +199,21 @@
             "title": "Ubi Grove",
             "description": "Be the first 5 sign-ups and get additional $100 off*. Next 10 sign-ups enjoy $50 off*."
           }
+        },
+        "ab952c9d-a43a-4dc6-a987-329109de0c08": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/Untitled_design_5.jpg",
+            "title": "Piermont Grand",
+            "description": ""
+          }
         }
       },
       "block_order": [
         "84e3d980-3f48-4b78-a811-3042f7d33808",
         "b80e44f1-a907-4152-848d-0aa53c0a2db4",
-        "490617d0-4f96-489c-af77-6c86d3cc1130"
+        "490617d0-4f96-489c-af77-6c86d3cc1130",
+        "ab952c9d-a43a-4dc6-a987-329109de0c08"
       ],
       "settings": {
         "heading": "Ongoing projects"
