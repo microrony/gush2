@@ -176,3 +176,18 @@
 		display: none;
 	 }
 }
+@media screen and (max-width: 990px){
+	/* .the-problem-tab .name_formula {
+		display: flex;
+		justify-content: flex-start !important;
+		gap: 3rem;
+		position: relative;
+		margin-bottom: 3rem;
+		justify-content: space-between;
+	  } */
+	  .the-problem-tab .image_structure {
+		width: 100%;
+		max-width: 390px;
+		margin: auto;
+	  }
+}
