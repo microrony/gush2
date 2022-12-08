@@ -220,13 +220,6 @@
             "url": ""
           }
         },
-        "19604d63-bc3b-4b61-bfd5-9fd07a84c603": {
-          "type": "image",
-          "settings": {
-            "brand_img": "shopify:\/\/shop_images\/Jadescape_Condo_Logo_a6c9332f-4c35-419b-b771-e6309339f4fa.png",
-            "url": ""
-          }
-        },
         "f2bac977-f5c0-4a01-9d6e-bee976dee923": {
           "type": "image",
           "settings": {
@@ -241,13 +234,6 @@
             "url": ""
           }
         },
-        "8a501607-6a1a-4204-86b8-27847c9d34a0": {
-          "type": "image",
-          "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_157.png",
-            "url": ""
-          }
-        },
         "a7874066-7f78-48b2-8999-67903e8cc84d": {
           "type": "image",
           "settings": {
@@ -258,10 +244,8 @@
       },
       "block_order": [
         "6f1fb3b1-1da9-4aef-9486-1fb801dd4bfd",
-        "19604d63-bc3b-4b61-bfd5-9fd07a84c603",
         "f2bac977-f5c0-4a01-9d6e-bee976dee923",
         "5c0b8605-2414-4b17-b747-fd26d3f8aed5",
-        "8a501607-6a1a-4204-86b8-27847c9d34a0",
         "a7874066-7f78-48b2-8999-67903e8cc84d"
       ],
       "settings": {
