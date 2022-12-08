@@ -8,7 +8,7 @@ section.footer-contact {
 		gap: 15rem;
 }
 .footer-contact__main {
-    background-image: url('contact-footer-img.png');
+    background-image: url('contact-footer.svg');
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;
