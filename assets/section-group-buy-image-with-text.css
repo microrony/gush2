@@ -1,8 +1,8 @@
 .group_image_with_text{
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 55% auto;
     padding: 10rem 0;
-    gap: 20px;
+    gap: 100px;
     align-items: center;
 }
 .group_image_with_text h2{
@@ -49,6 +49,7 @@
 @media screen and (max-width: 750px){
     .group_image_with_text{
         grid-template-columns: 1fr;
+        gap: 20px;
         padding: 25px 0 35px 0;
         text-align: center;
     }
