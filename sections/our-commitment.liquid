@@ -6,6 +6,7 @@
   .our-commitment .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
     align-items: center;
   }
 
@@ -16,42 +17,22 @@
     max-width: 466px;
     color: #796E62;
   }
-
   .our-commitment h2 {
     margin-bottom: 20px;
-  }
-
-  .iframe_container iframe {
-    width: 647px;
-    height: 496px;
-    border: 0;
-    outline: 0;
   }
   .mobile_responsive_image {
     display: none;
   }
   @media screen and (max-width: 1000px) {
-    .iframe_container iframe {
-      width: 450px;
-      height: 496px;
-      border: 0;
-      outline: 0;
-      background-color: #E8E0DB;
-    }
     .our-commitment h2 {
       font-size: 48px !important;
-    }
-    .our-commitment h2 {
-      margin: auto 20px;
-    }
-    .our-commitment p {
-      margin: auto 30px;
     }
   }
 
   @media screen and (max-width: 750px) {
     .our-commitment .content {
       grid-template-columns: repeat(1, 1fr);
+      gap: 50px;
     }
     .our-commitment .content div:nth-of-type(1) {
       order: 2;
@@ -97,7 +78,7 @@
   <div class="content page-width">
     <div class="iframe_container">
       <div
-        id="solution-lottie-container"
+        id="our-commitment-lottie-container"
         data-lottie-file-path="{{ section.settings.lottie_file_name | asset_url }}"
       ></div>
     </div>
@@ -110,9 +91,9 @@
     </div>
   </div>
 </div>
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script>
-  var solutionLottieContainer = document.getElementById('solution-lottie-container');
+  var solutionLottieContainer = document.getElementById('our-commitment-lottie-container');
   var lottieFilePath = solutionLottieContainer.dataset.lottieFilePath;
 
   var solutionAnimation = bodymovin.loadAnimation({
@@ -141,7 +122,7 @@
   	if(entries[0].isIntersecting) solutionObserver.unobserve(entries[0].target);
     }, options);
 
-    solutionObserver.observe(document.querySelector('#solution-lottie-container'));
+    solutionObserver.observe(document.querySelector('#our-commitment-lottie-container'));
   }
 
   solutionLottieViewport();

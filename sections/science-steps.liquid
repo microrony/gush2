@@ -110,9 +110,10 @@
                                                             	 {%- endif -%}" {{ block.shopify_attributes }}>
           <span class="gush-font-p2">{{ block.settings.title }}
           </span>
-          <h3 class="gush-font-h3">{{ block.settings.description }}
+          <h3 class="gush-font-h3"><a class="full-unstyled-link" href="{{ block.settings.url }}">{{ block.settings.description }}</a></A>
           </h3>
-          <span class="gush-font-p2">{{ block.settings.number }}
+          <span class="gush-font-p2">
+          <a class="full-unstyled-link" href="{{ block.settings.url }}">  {{ block.settings.number }} </a>
           </span>
 
         </div>
@@ -160,7 +161,7 @@
     </div>
   {% endif %}
 </div>
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 {% if the_solution_blocks != empty %}
   <script>
     var solutionLottieContainer = document.getElementById('solution-lottie-container');
@@ -304,10 +305,16 @@
             "type": "textarea",
             "id": "description",
             "label": "Description"
-          }, {
+          },
+          {
             "type": "text",
             "id": "number",
-            "label": "Number"
+            "label": "Text"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"
           }
         ]
       }, {
