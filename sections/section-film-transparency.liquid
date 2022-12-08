@@ -8,12 +8,16 @@
     <div class="transparency-card-container">
         {% for block in section.blocks  %} 
         <div class="transparency-card">
-                {{ block.settings.image | image_url: width: 500 | image_tag }}
+                {% if block.settings.svg != blank %} 
+                    <img src="{{ block.settings.svg | asset_url }}" alt="">
+                {% else  %}
+                    {{ block.settings.image | image_url: width: 600 | image_tag }}
+                {% endif %}
             <div>
-                <h3 class="gush-font-h3">{{block.settings.card_heading }}</h3>
-                <p class="gush-font-p2 card-info">{{block.settings.card_info }}</p>
-                <p class="gush-font-p1">{{block.settings.card_des }}</p>
-                </div>
+                <h3 class="gush-font-h3">{{ block.settings.card_heading }}</h3>
+                <p class="gush-font-p2 card-info">{{ block.settings.card_info }}</p>
+                <p class="gush-font-p1">{{ block.settings.card_des }}</p>
+            </div>
         </div>
         {% endfor %}
     </div>
@@ -44,6 +48,12 @@
                     "type":"image_picker",
                     "id":"image",
                     "label":"Image"
+                },
+                {
+                    "type":"text",
+                    "id":"svg",
+                    "label":"SVG File name",
+                    "info":"exm: img.svg (must have in the asset folder)"
                 },
                 {
                     "type":"textarea",
