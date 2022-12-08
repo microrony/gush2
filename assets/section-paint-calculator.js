@@ -1,6 +1,9 @@
-const calculateButton = document.querySelector('.calculate-button')
+const calculateButtonMbl = document.querySelector('.calculate-button.mobile')
+const calculateButtonDsk = document.querySelector('.calculate-button.desktop')
 
-calculateButton.onclick = function() {
+calculateButtonMbl.onclick = calculatePaint
+calculateButtonDsk.onclick = calculatePaint
+function calculatePaint() {
 	const floorArea = parseInt(document.getElementById('floorArea').value)
 	if (Number.isNaN(floorArea)) return
 
