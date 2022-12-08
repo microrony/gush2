@@ -62,6 +62,7 @@
 
 .the-problem-tab .image_structure {
   width: 90%;
+  max-width: 390px;
 }
 
 .the-problem-tab .odor_appearance {
@@ -135,6 +136,9 @@
 		margin-bottom: 3rem;
 		justify-content: initial;
 		align-items: initial;
+	}
+	.the-problem-tab .name_formula .formula-title{
+		font-size: 3.4vw !important;
 	}
 
 	.the-problem-tab .image_formula {
