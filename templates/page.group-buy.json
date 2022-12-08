@@ -234,6 +234,13 @@
             "url": ""
           }
         },
+        "5c79e00d-a4f0-4926-b3d4-05f9fb5e0115": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
+            "url": ""
+          }
+        },
         "a7874066-7f78-48b2-8999-67903e8cc84d": {
           "type": "image",
           "settings": {
@@ -246,6 +253,7 @@
         "6f1fb3b1-1da9-4aef-9486-1fb801dd4bfd",
         "f2bac977-f5c0-4a01-9d6e-bee976dee923",
         "5c0b8605-2414-4b17-b747-fd26d3f8aed5",
+        "5c79e00d-a4f0-4926-b3d4-05f9fb5e0115",
         "a7874066-7f78-48b2-8999-67903e8cc84d"
       ],
       "settings": {
