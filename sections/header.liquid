@@ -109,7 +109,7 @@ svg.icon.dotted_cart {
       margin-bottom: {{ section.settings.margin_bottom }}px;
     }
   }
-  .sticky {
+  .header-sticky {
       position: fixed;
       top: 0;
       width: 100%;
@@ -573,12 +573,15 @@ window.onscroll = function() {myFunction333()};
 const navbar = document.querySelector(".header-wrapper");
 const sticky = navbar.offsetTop;
 
-
 function myFunction333() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("header-sticky")
+    const mainContent = document.getElementById("MainContent")
+    console.log(mainContent.style.paddingTop=`${navbar.offsetHeight}px`)
   } else {
-    navbar.classList.remove("sticky");
+    navbar.classList.remove("header-sticky");
+    const mainContent = document.getElementById("MainContent")
+    mainContent.style.paddingTop="0"
   }
 }
 </script>
