@@ -5,9 +5,10 @@
       "blocks": {
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "text_style": "subtitle"
           }
         },
         "title": {
@@ -54,7 +55,7 @@
           "settings": {
             "heading": "Materials",
             "icon": "leather",
-            "content": "",
+            "content": "<p><\/p>",
             "page": ""
           }
         },
@@ -63,7 +64,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "",
+            "content": "<p><\/p>",
             "page": ""
           }
         },
@@ -72,7 +73,7 @@
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
-            "content": "",
+            "content": "<p><\/p>",
             "page": ""
           }
         },
@@ -81,7 +82,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "",
+            "content": "<p><\/p>",
             "page": ""
           }
         },
@@ -148,6 +149,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
+        "page_name": "home",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
