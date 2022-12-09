@@ -1,4 +1,9 @@
 {{ 'section-contact-footer.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+             assign project_blocks = section.blocks | where: 'type', 'project_block' 
+             -%}
+
 {% if section.settings.page_name == 'new_home' %}
   {% style %}
   {% endstyle %}
@@ -139,7 +144,7 @@
               <option value="other">Other:</option>
             </select>
             <br>
-            <label class="select_label_group_buy" for="ContactForm-discover">How did you discover Gush?</label>
+            <label class="select_label_group_buy1" for="ContactForm-discover">How did you discover Gush?</label>
           </div>
         {% else %}
           <div class="select_box_group_buy">
@@ -150,12 +155,12 @@
               required
             >
               <option disabled selected value>-- select a project --</option>
-              {% for block in the_problem_blocks %}
-                <option value="{{ block.settings.question}}">{{ block.settings.question }}</option>
+              {% for block in project_blocks %}
+                <option value="{{ block.settings.projectname}}">{{ block.settings.projectname}}</option>
               {% endfor %}
             </select>
             <br>
-            <label class="select_label_group_buy" for="ContactForm-discover">How did you discover Gush?</label>
+            <label class="select_label_group_buy2" for="ContactForm-project">Project</label>
           </div>
           <div class="field">
             <textarea
@@ -185,12 +190,23 @@
 </section>
 <script>
   const selectTag = document.getElementById("ContactForm-discover");
-  const selectLabel = document.querySelector(".select_label_group_buy");
+  const selectLabel = document.querySelector(".select_label_group_buy1");
   selectTag.addEventListener("click",(e)=>{
     if(e.target.value){
       selectLabel.style.fontSize = "10px";
       selectLabel.style.top = "-22px";
       selectTag.classList.remove("gray_color")
+    }
+  })
+</script>
+<script>
+  const selectTag2 = document.getElementById("ContactForm-project");
+  const selectLabel2 = document.querySelector(".select_label_group_buy2");
+  selectTag2.addEventListener("click",(e)=>{
+    if(e.target.value){
+      selectLabel2.style.fontSize = "10px";
+      selectLabel2.style.top = "-22px";
+      selectTag2.classList.remove("gray_color")
     }
   })
 </script>
@@ -251,10 +267,23 @@
 			"default": "home"
 		  }
  ],
-"presets": [
+  "blocks": [
+      {
+        "name": "Project Options",
+        "type": "project_block",
+        "settings": [
+            {
+              "type": "text",
+              "id": "projectname",
+              "label": "Title"
+            }
+        ]
+      }
+  ],
+  "presets": [
     {
         "name":"Footer Contact"
     }
-]
+  ]
 }
 {% endschema %}
