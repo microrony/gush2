@@ -302,6 +302,38 @@
     },
     "cb5e433c-c809-42c5-b549-a358067777a8": {
       "type": "footer-contact",
+      "blocks": {
+        "2a0b528e-b2a1-40fc-8818-015c7253c8da": {
+          "type": "project_block",
+          "settings": {
+            "projectname": "Piermont Grand"
+          }
+        },
+        "fceb4c51-79fe-470f-9051-15213b61d021": {
+          "type": "project_block",
+          "settings": {
+            "projectname": "Parc Esta"
+          }
+        },
+        "3aa559d2-c5f6-4497-875d-4a5f9039f9db": {
+          "type": "project_block",
+          "settings": {
+            "projectname": "Jadescape"
+          }
+        },
+        "ade4b66a-9b3f-4b44-8aaa-bc4ef652483c": {
+          "type": "project_block",
+          "settings": {
+            "projectname": "Ubi Grove"
+          }
+        }
+      },
+      "block_order": [
+        "2a0b528e-b2a1-40fc-8818-015c7253c8da",
+        "fceb4c51-79fe-470f-9051-15213b61d021",
+        "3aa559d2-c5f6-4497-875d-4a5f9039f9db",
+        "ade4b66a-9b3f-4b44-8aaa-bc4ef652483c"
+      ],
       "settings": {
         "title": "Ready to get started? Tell us your details and we’ll reach out to you directly.",
         "heading": "",
