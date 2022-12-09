@@ -131,7 +131,7 @@
               <option value="other">Other:</option>
             </select>
             <br>
-            <label class="select_label_group_buy1" for="ContactForm-discover">How did you discover Gush?</label>
+            <label class="select_label_group_buy option_discover" for="ContactForm-discover">How did you discover Gush?</label>
           </div>
         {%- if section.settings.page_name != 'group_buy' -%}
           <div class="field">
@@ -162,7 +162,7 @@
               {% endfor %}
             </select>
             <br>
-            <label class="select_label_group_buy2" for="ContactForm-project">Project</label>
+            <label class="select_label_group_buy option_project" for="ContactForm-project">Project</label>
           </div>
           <div class="field">
             <textarea
@@ -192,7 +192,7 @@
 </section>
 <script>
   const selectTag = document.getElementById("ContactForm-discover");
-  const selectLabel = document.querySelector(".select_label_group_buy1");
+  const selectLabel = document.querySelector(".option_discover");
   selectTag.addEventListener("click",(e)=>{
     if(e.target.value){
       selectLabel.style.fontSize = "10px";
@@ -203,7 +203,7 @@
 </script>
 <script>
   const selectTag2 = document.getElementById("ContactForm-project");
-  const selectLabel2 = document.querySelector(".select_label_group_buy2");
+  const selectLabel2 = document.querySelector(".option_project");
   selectTag2.addEventListener("click",(e)=>{
     if(e.target.value){
       selectLabel2.style.fontSize = "10px";
