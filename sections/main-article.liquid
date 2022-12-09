@@ -1,165 +1,193 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
-<div class="page-width">
-  <p class="gush-font-h4">{{ blog.title}}</p>
-  <hr class="horizontal_line"/>
-  <div class="article_top_container">
-    <div id="article_top_content">
-      <header class="title_container" {{ block.shopify_attributes }}>
+  <div class="page-width">
+    <p class="gush-font-h4">{{ blog.title }}</p>
+    <hr class="horizontal_line">
+    <div class="article_top_container">
+      <div id="article_top_content">
+        <header class="title_container" {{ block.shopify_attributes }}>
           <h1 class="article-template__title gush-font-h2" itemprop="headline">{{ article.title | escape }}</h1>
-      </header>
-      <div class="hide_for_mobile_responvise">
-        <p class="gush-font-p1">{{article.excerpt}}</p>
-      <div class="content_bottom_container gush-font-teritary">
-        <div>
-          {% assign reading_time = article.content | strip_html | split: ' ' | size | times: 1.0 | divided_by: 250 | ceil %}
-        {{ reading_time }} Min
-        </div>
-        <div>
-        {%- for tag in article.tags-%}
-          <span class="blog_tag">{{ tag | capitalize }}</span>{% unless forloop.last %}, {% endunless %}
-        {%- endfor -%}
-      </div>
-      <div>
-        {%- for block in section.blocks -%}
-      {%- case block.type -%}
-      {%- when 'share' -%}
-      <div class="article-template__social-sharing" {{ block.shopify_attributes }}>
-            <share-button class="share-button" {{ block.shopify_attributes }}>
-              <button class="share-button__button hidden">
-                {{ block.settings.share_label | escape }}
-              </button>
-              <details id="Details-{{ block.id }}-{{ section.id }}">
-                <summary class="share-button__button gush-font-teritary">
-                  {{ block.settings.share_label | escape }}
-                </summary>
-                <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
-                  <div class="field">
-                    <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
-                    </span>
-                    <input type="text"
-                          class="field__input"
-                          id="url"
-                          value="{{ request.origin | append: article.url }}"
-                          placeholder="{{ 'general.share.share_url' | t }}"
-                          onclick="this.select();"
-                          readonly
-                    >
-                    <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
-                  </div>
-                  <button class="share-button__close hidden no-js-hidden">
-                    {% render 'icon-close' %}
-                    <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
-                  </button>
-                  <button class="share-button__copy no-js-hidden">
-                    {% render 'icon-clipboard' %}
-                    <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
-                  </button>
-                </div>
-              </details>
-            </share-button>
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+        </header>
+        <div class="hide_for_mobile_responvise">
+          <p class="gush-font-p1">{{ article.excerpt }}</p>
+          <div class="content_bottom_container gush-font-teritary">
+            <div>
+              {% assign reading_time = article.content
+                | strip_html
+                | split: ' '
+                | size
+                | times: 1.0
+                | divided_by: 250
+                | ceil
+              %}
+              {{ reading_time }} Min
+            </div>
+            <div>
+              {%- for tag in article['tags-'] %}
+                <span class="blog_tag">{{ tag | capitalize }}</span>
+                {%- unless forloop.last %}, {% endunless %}
+              {%- endfor -%}
+            </div>
+            <div>
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'share' -%}
+                    <div class="article-template__social-sharing" {{ block.shopify_attributes }}>
+                      <share-button class="share-button" {{ block.shopify_attributes }}>
+                        <button class="share-button__button hidden">
+                          {{ block.settings.share_label | escape }}
+                        </button>
+                        <details id="Details-{{ block.id }}-{{ section.id }}">
+                          <summary class="share-button__button gush-font-teritary">
+                            {{ block.settings.share_label | escape }}
+                          </summary>
+                          <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
+                            <div class="field">
+                              <span
+                                id="ShareMessage-{{ section.id }}"
+                                class="share-button__message hidden"
+                                role="status"
+                              >
+                              </span>
+                              <input
+                                type="text"
+                                class="field__input"
+                                id="url"
+                                value="{{ request.origin | append: article.url }}"
+                                placeholder="{{ 'general.share.share_url' | t }}"
+                                onclick="this.select();"
+                                readonly
+                              >
+                              <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
+                            </div>
+                            <button class="share-button__close hidden no-js-hidden">
+                              {% render 'icon-close' %}
+                              <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
+                            </button>
+                            <button class="share-button__copy no-js-hidden">
+                              {% render 'icon-clipboard' %}
+                              <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
+                            </button>
+                          </div>
+                        </details>
+                      </share-button>
+                      <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+                    </div>
+                {%- endcase -%}
+              {% endfor %}
+            </div>
           </div>
-            {%- endcase -%}
-          {% endfor %}
+        </div>
       </div>
-      </div> 
-      </div>      
-    </div>
-    <div id="article_featured_image">
-      <img srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
-                    {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
-                    {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
-                    {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
-                    {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
-                    {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
-                    {{ article.image | image_url }} {{ article.image.width }}w"
-                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-                  src="{{ article.image | image_url: width: 1100 }}"
-                  loading="lazy"
-                  width="{{ article.image.width }}"
-                  height="{{ article.image.height }}"
-                  alt="{{ article.image.alt | escape }}">
+      <div id="article_featured_image">
+        <img
+          srcset="
+            {% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+            {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+            {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+            {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+            {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+            {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+            {{ article.image | image_url }} {{ article.image.width }}w
+          "
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+          src="{{ article.image | image_url: width: 1100 }}"
+          loading="lazy"
+          width="{{ article.image.width }}"
+          height="{{ article.image.height }}"
+          alt="{{ article.image.alt | escape }}"
+        >
       </div>
       <div class="mobile_responsive_content_box">
-      <p class="gush-font-p1">{{article.excerpt}}</p>
-      <div class="content_bottom_container gush-font-teritary">
-        <div>
-          {% assign reading_time = article.content | strip_html | split: ' ' | size | times: 1.0 | divided_by: 250 | ceil %}
-        {{ reading_time }} Min
-        </div>
-        <div>
-        {%- for tag in blog.all_tags -%}
-          <a class="blog_tag" href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag | capitalize }}</a>{% unless forloop.last %}, {% endunless %}
-        {%- endfor -%}
-      </div>
-      <div>
-        {%- for block in section.blocks -%}
-      {%- case block.type -%}
-      {%- when 'share' -%}
-      <div class="article-template__social-sharing" {{ block.shopify_attributes }}>
-            <share-button class="share-button" {{ block.shopify_attributes }}>
-              <button class="share-button__button hidden gush-font-teritary">
-               
-                {{ block.settings.share_label | escape }}
-              </button>
-              <details id="Details-{{ block.id }}-{{ section.id }}">
-                <summary class="share-button__button gush-font-teritary">
-                 
-                  {{ block.settings.share_label | escape }}
-                </summary>
-                <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
-                  <div class="field">
-                    <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
-                    </span>
-                    <input type="text"
-                          class="field__input"
-                          id="url"
-                          value="{{ request.origin | append: article.url }}"
-                          placeholder="{{ 'general.share.share_url' | t }}"
-                          onclick="this.select();"
-                          readonly
-                    >
-                    <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
-                  </div>
-                  <button class="share-button__close hidden no-js-hidden">
-                    {% render 'icon-close' %}
-                    <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
-                  </button>
-                  <button class="share-button__copy no-js-hidden">
-                    {% render 'icon-clipboard' %}
-                    <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
-                  </button>
-                </div>
-              </details>
-            </share-button>
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+        <p class="gush-font-p1">{{ article.excerpt }}</p>
+        <div class="content_bottom_container gush-font-teritary">
+          <div>
+            {% assign reading_time = article.content
+              | strip_html
+              | split: ' '
+              | size
+              | times: 1.0
+              | divided_by: 250
+              | ceil
+            %}
+            {{ reading_time }} Min
           </div>
-            {%- endcase -%}
-          {% endfor %}
+          <div>
+            {%- for tag in blog.all_tags -%}
+              <a class="blog_tag" href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag | capitalize }}</a>
+              {%- unless forloop.last %}, {% endunless %}
+            {%- endfor -%}
+          </div>
+          <div>
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'share' -%}
+                  <div class="article-template__social-sharing" {{ block.shopify_attributes }}>
+                    <share-button class="share-button" {{ block.shopify_attributes }}>
+                      <button class="share-button__button hidden gush-font-teritary">
+                        {{ block.settings.share_label | escape }}
+                      </button>
+                      <details id="Details-{{ block.id }}-{{ section.id }}">
+                        <summary class="share-button__button gush-font-teritary">
+                          {{ block.settings.share_label | escape }}
+                        </summary>
+                        <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
+                          <div class="field">
+                            <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
+                            </span>
+                            <input
+                              type="text"
+                              class="field__input"
+                              id="url"
+                              value="{{ request.origin | append: article.url }}"
+                              placeholder="{{ 'general.share.share_url' | t }}"
+                              onclick="this.select();"
+                              readonly
+                            >
+                            <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
+                          </div>
+                          <button class="share-button__close hidden no-js-hidden">
+                            {% render 'icon-close' %}
+                            <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
+                          </button>
+                          <button class="share-button__copy no-js-hidden">
+                            {% render 'icon-clipboard' %}
+                            <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
+                          </button>
+                        </div>
+                      </details>
+                    </share-button>
+                    <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+                  </div>
+              {%- endcase -%}
+            {% endfor %}
+          </div>
+        </div>
       </div>
-      </div> 
+    </div>
+    <hr class="horizontal_line2">
+    <div class="article_bottom_container">
+      <div class="article_content_header_container"></div>
+      <div class="article_content_container">
+        {{ article.content }}
       </div>
-  </div>
-  <hr class="horizontal_line2"/>
-  <div class="article_bottom_container">
-  <div class="article_content_header_container"> </div>
-  <div class="article_content_container">
-    {{ article.content }}
     </div>
   </div>
-</div>
-<div class="page-width">
-    {% include 'relatedblogs' %}
-</div>
+  {% comment %}
+    <div class="page-width">
+        {% include 'relatedblogs' %}
+    </div>
+  {% endcomment %}
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
       <div id="comments" class="page-width page-width--narrow">
         {%- if article.comments_count > 0 -%}
           {%- assign anchorId = '#Comments-' | append: article.id -%}
 
-          <h2 id="Comments-{{ article.id }}" tabindex="-1">{{ 'blogs.article.comments' | t: count: article.comments_count }}</h2>
+          <h2 id="Comments-{{ article.id }}" tabindex="-1">
+            {{ 'blogs.article.comments' | t: count: article.comments_count }}
+          </h2>
           {% paginate article.comments by 5 %}
             <div class="article-template__comments">
               {%- if comment.status == 'pending' and comment.content -%}
@@ -175,7 +203,10 @@
                 <article id="{{ comment.id }}" class="article-template__comments-comment">
                   {{ comment.content }}
                   <footer class="right">
-                    <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span><span class="caption-with-letter-spacing">{{ comment.created_at | time_tag: format: 'date' }}</span>
+                    <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span
+                    ><span class="caption-with-letter-spacing">
+                      {{- comment.created_at | time_tag: format: 'date' -}}
+                    </span>
                   </footer>
                 </article>
               {%- endfor -%}
@@ -194,7 +225,8 @@
           {%- if form.errors -%}
             <div class="form__message" role="alert">
               <h3 class="form-status caption-large text-body" tabindex="-1" autofocus>
-                {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}
+                {% render 'icon-error' %}
+                {{ 'templates.contact.form.error_heading' | t }}
               </h3>
             </div>
             <ul class="form-status-list caption-large">
@@ -203,8 +235,8 @@
                   <a href="#CommentForm-{{ field }}" class="link">
                     {%- if form.errors.translated_fields[field] contains 'author' -%}
                       {{ 'blogs.article.name' | t }}
-                    {%- elsif form.errors.translated_fields[field] contains 'body'-%}
-                     {{ 'blogs.article.message' | t }}
+                    {%- elsif form.errors.translated_fields[field] contains 'body' -%}
+                      {{ 'blogs.article.message' | t }}
                     {%- else -%}
                       {{ form.errors.translated_fields[field] }}
                     {%- endif -%}
@@ -215,11 +247,18 @@
             </ul>
           {%- elsif form.posted_successfully? -%}
             <div class="form-status-list form__message" role="status">
-              <h3 class="form-status" tabindex="-1" autofocus>{% render 'icon-success' %} {{ post_message | t }}</h3>
+              <h3 class="form-status" tabindex="-1" autofocus>
+                {% render 'icon-success' %}
+                {{ post_message | t }}
+              </h3>
             </div>
           {%- endif -%}
 
-          <div{% if blog.moderated? == false %} class="article-template__comments-fields"{% endif %}>
+          <div
+            {% if blog.moderated? == false %}
+              class="article-template__comments-fields"
+            {% endif %}
+          >
             <div class="article-template__comment-fields">
               <div class="field field--with-error">
                 <input
@@ -237,10 +276,17 @@
                   {% endif %}
                   placeholder="{{ 'blogs.article.name' | t }}"
                 >
-                <label class="field__label" for="CommentForm-author">{{ 'blogs.article.name' | t }} <span aria-hidden="true">*</span></label>
+                <label class="field__label" for="CommentForm-author">
+                  {{- 'blogs.article.name' | t }}
+                  <span aria-hidden="true">*</span></label
+                >
                 {%- if form.errors contains 'author' -%}
                   <small id="CommentForm-author-error">
-                    <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.name' | t }} {{ form.errors.messages['author'] }}.</span>
+                    <span class="form__message">
+                      {%- render 'icon-error' -%}
+                      {{- 'blogs.article.name' | t }}
+                      {{ form.errors.messages.author }}.</span
+                    >
                   </small>
                 {%- endif -%}
               </div>
@@ -262,10 +308,17 @@
                   {% endif %}
                   placeholder="{{ 'blogs.article.email' | t }}"
                 >
-                <label class="field__label" for="CommentForm-email">{{ 'blogs.article.email' | t }} <span aria-hidden="true">*</span></label>
+                <label class="field__label" for="CommentForm-email">
+                  {{- 'blogs.article.email' | t }}
+                  <span aria-hidden="true">*</span></label
+                >
                 {%- if form.errors contains 'email' -%}
                   <small id="CommentForm-email-error">
-                    <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.email' | t }} {{ form.errors.messages['email'] }}.</span>
+                    <span class="form__message">
+                      {%- render 'icon-error' -%}
+                      {{- 'blogs.article.email' | t }}
+                      {{ form.errors.messages.email }}.</span
+                    >
                   </small>
                 {%- endif -%}
               </div>
@@ -284,11 +337,18 @@
                 {% endif %}
                 placeholder="{{ 'blogs.article.message' | t }}"
               >{{ form.body }}</textarea>
-                <label class="form__label field__label" for="CommentForm-body">{{ 'blogs.article.message' | t }} <span aria-hidden="true">*</span></label>
+              <label class="form__label field__label" for="CommentForm-body">
+                {{- 'blogs.article.message' | t }}
+                <span aria-hidden="true">*</span></label
+              >
             </div>
             {%- if form.errors contains 'body' -%}
               <small id="CommentForm-body-error">
-                <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.message' | t }} {{ form.errors.messages['body'] }}.</span>
+                <span class="form__message">
+                  {%- render 'icon-error' -%}
+                  {{- 'blogs.article.message' | t }}
+                  {{ form.errors.messages.body }}.</span
+                >
               </small>
             {%- endif -%}
           </div>
@@ -298,7 +358,7 @@
           <input type="submit" class="button" value="{{ 'blogs.article.post' | t }}">
         {% endform %}
       </div>
-  </div>
+    </div>
   {%- endif -%}
 </article>
 
@@ -341,8 +401,7 @@
       "name": {{ shop.name | json }}
     }
   }
-  </script>
-
+</script>
 
 {% schema %}
 {
