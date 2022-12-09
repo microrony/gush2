@@ -136,7 +136,7 @@
       <div class="select_box_group_buy">
         <select 
         class="select_input_group_buy gray_color"
-        id="ContactForm-project"
+        id="ContactForm-discover"
         name="contact[project]"
         required>
           <option disabled selected value> -- select a project -- </option>
@@ -147,7 +147,7 @@
           <option value="other">Other:</option>
         </select>
         <br/>
-        <label class="select_label_group_buy" for="ContactForm-project">How did you discover Gush?</label>
+        <label class="select_label_group_buy" for="ContactForm-discover">How did you discover Gush?</label>
       </div>
       <div class="field">
         <textarea
@@ -172,7 +172,7 @@
     </div>
 </section>
 <script>
-const selectTag = document.getElementById("ContactForm-project");
+const selectTag = document.getElementById("ContactForm-discover");
 const selectLabel = document.querySelector(".select_label_group_buy");
 selectTag.addEventListener("click",(e)=>{
   if(e.target.value){
