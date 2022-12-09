@@ -114,22 +114,7 @@
           >
           <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
         </div>
-        {%- if section.settings.page_name != 'group_buy' -%}
-          <div class="field">
-            <textarea
-              rows="10"
-              id="ContactForm-body"
-              class="text-area field__input"
-              name="contact[{{ 'templates.contact.form.comment' | t }}]"
-              placeholder="{{ 'templates.contact.form.comment' | t }}"
-            >
-          {{- form.body -}}
-        </textarea>
-            <label class="form__label field__label" for="ContactForm-body">
-              {{- 'templates.contact.form.comment' | t -}}
-            </label>
-          </div>
-          <div class="select_box_group_buy">
+        <div class="select_box_group_buy">
             <select
               class="select_input_group_buy gray_color"
               id="ContactForm-discover"
@@ -145,6 +130,21 @@
             </select>
             <br>
             <label class="select_label_group_buy1" for="ContactForm-discover">How did you discover Gush?</label>
+          </div>
+        {%- if section.settings.page_name != 'group_buy' -%}
+          <div class="field">
+            <textarea
+              rows="10"
+              id="ContactForm-body"
+              class="text-area field__input"
+              name="contact[{{ 'templates.contact.form.comment' | t }}]"
+              placeholder="{{ 'templates.contact.form.comment' | t }}"
+            >
+          {{- form.body -}}
+        </textarea>
+            <label class="form__label field__label" for="ContactForm-body">
+              {{- 'templates.contact.form.comment' | t -}}
+            </label>
           </div>
         {% else %}
           <div class="select_box_group_buy">
