@@ -1,8 +1,10 @@
 {{ 'section-contact-footer.css' | asset_url | stylesheet_tag }}
 
-{%- liquid
+{%- if section.settings.page_name != 'group_buy' -%}
+  {%- liquid
              assign project_blocks = section.blocks | where: 'type', 'project_block' 
              -%}
+{%- endif -%}
 
 {% if section.settings.page_name == 'new_home' %}
   {% style %}
