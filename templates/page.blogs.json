@@ -1,47 +1,25 @@
 {
   "wrapper": "div.blogs_listing_page",
   "sections": {
-    "main": {
-      "type": "main-gush-blog",
-      "settings": {
-        "layout": "collage",
-        "show_image": true,
-        "image_height": "medium",
-        "show_date": false,
-        "show_author": false,
-        "padding_top": 50,
-        "padding_bottom": 70
-      }
-    },
-    "a6af7545-d491-41d3-92a5-d3d76c6cd332": {
+    "0311d073-c616-4a03-ad81-fdf3dba193a6": {
       "type": "gush-featured-blog",
       "settings": {
-        "blog": "science",
+        "blog": "sustainability",
         "padding_top": 0,
         "padding_bottom": 50
       }
     },
-    "e7d17191-c8ca-40a4-b99c-76ac4d25c389": {
+    "74727b5e-97ab-409a-b543-8c8ddf5c14ac": {
       "type": "gush-featured-blog",
       "settings": {
-        "blog": "brand",
-        "padding_top": 0,
-        "padding_bottom": 50
-      }
-    },
-    "f28edbea-4fb5-40e8-9969-81c4dcbd85bb": {
-      "type": "gush-featured-blog",
-      "settings": {
-        "blog": "wellness",
+        "blog": "sustainability",
         "padding_top": 0,
         "padding_bottom": 50
       }
     }
   },
   "order": [
-    "main",
-    "a6af7545-d491-41d3-92a5-d3d76c6cd332",
-    "e7d17191-c8ca-40a4-b99c-76ac4d25c389",
-    "f28edbea-4fb5-40e8-9969-81c4dcbd85bb"
+    "0311d073-c616-4a03-ad81-fdf3dba193a6",
+    "74727b5e-97ab-409a-b543-8c8ddf5c14ac"
   ]
 }
