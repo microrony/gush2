@@ -376,6 +376,7 @@
         },
         "02851d80-5ef3-4ced-bf18-57af9a6e1d8a": {
           "type": "faqContent",
+          "disabled": true,
           "settings": {
             "category": "Window Films",
             "type": "Window Films maintenance",
@@ -385,6 +386,7 @@
         },
         "4e09d811-8b46-49b8-9a25-4378eb16838c": {
           "type": "faqContent",
+          "disabled": true,
           "settings": {
             "category": "Window Films",
             "type": "Window Films maintenance",
