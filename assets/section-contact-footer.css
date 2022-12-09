@@ -93,6 +93,45 @@ section.footer-contact {
     top: 0;
     left: 0;
 }
+.select_box_group_buy{
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+.select_label_group_buy{
+    position: absolute;
+    top: -20px;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    pointer-events: none;
+    transition: top var(--duration-short) ease, font-size var(--duration-short) ease;
+    color: rgba(var(--color-foreground), 0.75);
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    font-family: 'GTAmerica';
+}
+.gray_color{
+    color: #B6AC9E;
+}
+.select_input_group_buy{
+    border: none;
+    font-family: 'RecklessNeue';
+    width: 100%;
+    padding: 25px 0 15px 0;
+    font-size: 16px;
+}
+.select_input_group_buy option{
+    color: #000000;
+}
+.select_box_group_buy .select_input_group_buy:focus ~ .select_label_group_buy {
+    font-size: 1rem;
+    top: -22px;
+}
+.select_input_group_buy:focus{
+    outline: none;
+    box-shadow: none;
+}
+
 @media screen and (min-width: 350px) and (max-width:768px){
     .footer-contact__form .contact__button button{
         /* width: 100%; */
