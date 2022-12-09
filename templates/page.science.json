@@ -243,7 +243,8 @@
             "item_2": "Toulene",
             "item_3": "Formaldehyde",
             "short_description": "Our GPC breaks down 99% of VOCs and deodorizes\nyour space of chemical fumes, within 21 hours.",
-            "tested_by": "Test conducted by TUV SUD PSB"
+            "tested_by": "<a href=\"\">Test conducted by TUV SUD PSB<\/a>",
+            "tested_by_url": ""
           }
         },
         "10695d0d-230c-420c-9ea9-9114468a51fd": {
@@ -255,7 +256,8 @@
             "item_2": "S. aureus",
             "item_3": "",
             "short_description": "99% removal of E.Coli and S.Aureus bacteria",
-            "tested_by": "Tested by Advanced Materials technology Centre"
+            "tested_by": "Tested by Advanced Materials technology Centre",
+            "tested_by_url": ""
           }
         },
         "09bdf50e-4059-406e-944c-ae87fc974387": {
@@ -273,7 +275,8 @@
             "surface_dimensions": "<span>Surface Dimensions<\/span>\n1m x 1m",
             "molding_clearance": "shopify:\/\/shop_images\/Group_1652.png",
             "short_description": "99% reduction in bacteria count",
-            "tested_by": "Tested by Nanyang Technological University"
+            "tested_by": "Tested by Nanyang Technological University",
+            "tested_by_url": ""
           }
         },
         "46adcdc4-ae72-4c7c-9363-9bf520fec470": {
@@ -285,7 +288,8 @@
             "svg_file_name": "co2-analysis",
             "lottie_file_name": "co2-analysis.json",
             "short_description": "99% reduction in bacteria count",
-            "tested_by": "Tested by Nanyang Technological University"
+            "tested_by": "Tested by Nanyang Technological University",
+            "tested_by_url": ""
           }
         }
       },
@@ -307,7 +311,8 @@
           "settings": {
             "title": "Wellness study",
             "description": "The effects of high formaldehyde levels to our cognitive functions",
-            "number": "<a href=\"\/blogs\/wellness\/wellness-study-effects-of-high-formaldehyde-levels-to-our-cognitive-functions\"> Read more <\/a>"
+            "number": "<a href=\"\/blogs\/wellness\/wellness-study-effects-of-high-formaldehyde-levels-to-our-cognitive-functions\"> Read more <\/a>",
+            "url": ""
           }
         },
         "41f9dc34-365d-4ce5-8a2f-83f44cbb4010": {
@@ -316,7 +321,8 @@
           "settings": {
             "title": "Study",
             "description": "Product efficacy against common household pollutants",
-            "number": "05.20.20"
+            "number": "05.20.20",
+            "url": ""
           }
         }
       },
