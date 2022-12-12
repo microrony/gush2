@@ -24,7 +24,8 @@
         {% for block in section.blocks %} 
             <div class="swiper-slide">
               <div class="swiper-button-prev mobile-arrow left "><span class="">{% render 'mobile-arrow-left' %}</span></div>
-              {{ block.settings.img | image_url: width: block.settings.img.width | image_tag }}
+              {%- comment -%} {{ block.settings.img | image_url: width: block.settings.img.width | image_tag }} {%- endcomment -%}
+              {{ block.settings.img | img_url: '450x450', crop: 'center', scale: 2, format: 'pjpg' | img_tag }}
               <div class="swiper-button-next mobile-arrow right"><span class="">{% render 'mobile-arrow-right' %}</span></div>
             </div>
         {% endfor %}

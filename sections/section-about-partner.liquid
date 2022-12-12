@@ -83,7 +83,13 @@
     </div>
     <div class="group_buy_brand_img_container">
       {% for block in section.blocks  %} 
-          <div class="about-partner__logos-img"><a href="{{ block.settings.url }}"><img src="{{ block.settings.brand_img | image_url: width: block.settings.brand_img.width  }}" alt="logo"></a></div>
+          <div class="about-partner__logos-img">
+            <a href="{{ block.settings.url }}">
+              {%- comment -%} {{ block.settings.brand_img | img_url: '450x450', crop: 'center', scale: 2, format: 'pjpg' | img_tag }} {%- endcomment -%}
+              <img src="{{ block.settings.brand_img | image_url: width: block.settings.brand_img.width  }}" alt="logo">
+
+            </a>
+          </div>
       {% endfor %}
       </div>
   </div>

@@ -9,7 +9,7 @@
   .mySwiper2 img{
     object-fit: cover;
     max-width: 100%;
-    height: 400px !important;
+    height: 385px !important;
     border-radius: 50%;
   }
 }

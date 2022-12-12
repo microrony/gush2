@@ -367,7 +367,13 @@
       </div> -->
       <div class="footer-btm">
         <div class="footer-btm__copy">{{section.settings.copy}}</div>
-        <div class="footer-btm__logo"><img src="{{section.settings.logo_ftr | img_url: 'medium' }}" alt="Footer Logo"></div>
+        <div class="footer-btm__logo">
+        {% if section.settings.footer_svg != blank %} 
+          <img src="{{ section.settings.footer_svg | asset_url }}" alt="">
+        {% else  %}
+          <img src="{{section.settings.logo_ftr | img_url: 'medium' }}" alt="Footer Logo">
+        {% endif %}
+        </div>
       </div>
 
     </div>
@@ -636,6 +642,12 @@
      "type": "image_picker",
      "id": "logo_ftr",
      "label": "Choose Logo For Footer"
+    },
+    {
+      "type":"text",
+      "id":"footer_svg",
+      "label":"SVG File name",
+      "info":"exm: logo.svg (the file must has to be in the asset folder)"
     },
     {
       "type": "range",

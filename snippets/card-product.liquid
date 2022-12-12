@@ -49,7 +49,7 @@
                   {%- if card_product.featured_media.width >= 940 -%}{{ card_product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
                   {%- if card_product.featured_media.width >= 1066 -%}{{ card_product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}{%- endcomment -%}
                   {{ card_product.featured_media | image_url }} {{ card_product.featured_media.width }}w"
-                src="{{ card_product.featured_media | image_url: width: 800 }}" 
+                src="{{ card_product.featured_media | img_url: '450x450', crop: 'center', scale: 2, format: 'pjpg' }}" 
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                 alt="{{ card_product.featured_media.alt | escape }}"
                 class="motion-reduce"
@@ -133,7 +133,7 @@
               </p>
             {%- endif -%}
             <div class="card_des">
-              <p>Interior Paint</p>
+              <p>interior paint . Liters</p>
               <span>{% render 'icon-plus-new' %}</span>
             </div>
             
