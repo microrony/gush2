@@ -26,13 +26,9 @@
                               {%- if block.settings.url != blank -%}
                                 <a href="{{ block.settings.url }}">
                               {%- endif -%}
-                              {{ block.settings.slider-image | image_url:  width: '1200', height: '1200', crop: 'center' | image_tag }}
-                              {%- comment -%} {{ block.settings.slider-image | image_url: width: 800, height: 400 | image_tag:
-                                loading: 'lazy',
-                                width: 800,
-                                height: block.settings.slider-image.height,
-                                widths: '600,800,1000'
-                              }} {%- endcomment -%}
+                              {%- comment -%} {{ block.settings.slider-image | image_url:  width: '1200', height: '1200', crop: 'center' | image_tag }} {%- endcomment -%}
+
+                              {{ block.settings.slider-image | img_url: '600x600', scale: 2, format: 'pjpg' | img_tag }}
                               {%- if block.settings.url != blank -%}
                                 </a>
                               {%- endif -%}
