@@ -83,7 +83,11 @@
                   {% if block.settings.image_mobile != blank %} 
                     {{ block.settings.image_mobile | image_url: width: 700 | image_tag: class: "mobile_show" }}
                   {% endif %}
+                  {% if block.settings.svg != blank %} 
+                  <img src="{{ block.settings.svg | asset_url }}" alt="">
+                  {% else  %}
                   <img class="{% if block.settings.image_mobile != blank %} desktop_show {% endif %}"  src="{{ block.settings.image | image_url: width: 700 }}" alt="">
+                  {% endif %}
                 </div>
               </div>
               <div class="right-content">
@@ -131,17 +135,29 @@
                   <p class="gush-font-p1">{{ block.settings.uncoated_surface_text }}
                   </p>
                   <div class="uncoated_surface_image">
+                    {% if block.settings.svg1 != blank %} 
+                      <img src="{{ block.settings.svg1 | asset_url }}" alt="">
+                      {% else  %}
                     {{ block.settings.uncoated_surface_image | image_url: width: 800 | image_tag }}
+                    {% endif %}
                   </div>
                 </div>
                 <div class="right-content">
                   <p class="gush-font-p1">{{ block.settings.gush_coated_surface_text }}
                   </p>
                   <div class="gush_coated_surface_image">
+                    {% if block.settings.svg2 != blank %} 
+                      <img src="{{ block.settings.svg2 | asset_url }}" alt="">
+                      {% else  %}
                     {{ block.settings.gush_coated_surface_image | image_url: width: 800 | image_tag }}
+                    {% endif %}
                   </div>
                   <div class="molding_clearance">
+                    {% if block.settings.svg3 != blank %} 
+                      <img src="{{ block.settings.svg3 | asset_url }}" alt="">
+                      {% else  %}
                     {{ block.settings.molding_clearance | image_url: width: 800 | image_tag }}
+                    {% endif %}
                   </div>
                 </div>
               </div>
@@ -321,6 +337,12 @@
             "label": "Image"
           },
           {
+            "type":"text",
+            "id":"svg",
+            "label":"SVG File name",
+            "info":"Exm: logo.svg ( the file must has to be in the asset folder )"
+          },
+          {
             "id": "image_mobile",
             "type": "image_picker",
             "label": "Responsive Image"
@@ -377,7 +399,14 @@
             "id": "uncoated_surface_image",
             "type": "image_picker",
             "label": "Uncoated Surface Image"
-          }, {
+          },
+          {
+            "type":"text",
+            "id":"svg1",
+            "label":"SVG File name",
+            "info":"Exm: logo.svg ( the file must has to be in the asset folder )"
+          },
+          {
             "id": "gush_coated_surface_text",
             "type": "text",
             "label": "Gush Coated Surface Text"
@@ -385,6 +414,12 @@
             "id": "gush_coated_surface_image",
             "type": "image_picker",
             "label": "Gush Coated Surface Image"
+          },
+          {
+            "type":"text",
+            "id":"svg2",
+            "label":"SVG File name",
+            "info":"Exm: logo.svg ( the file must has to be in the asset folder )"
           }, {
             "id": "environment",
             "type": "html",
@@ -405,6 +440,12 @@
             "id": "molding_clearance",
             "type": "image_picker",
             "label": "Molding Clearance"
+          },
+          {
+            "type":"text",
+            "id":"svg3",
+            "label":"SVG File name",
+            "info":"Exm: logo.svg ( the file must has to be in the asset folder )"
           }, {
             "id": "short_description",
             "type": "textarea",
