@@ -16,17 +16,17 @@
                 {% endif %}
                 <p class="gush-font-p2 ">{{ section.settings.left_txt }}</p>
             </div>
-            {{ section.settings.left_img | image_url: width:400 | image_tag}}
+            {{ section.settings.left_img | img_url: "500x500", scale: 2 | img_tag }}
         </div>
     </div>
     <div class="science-wonder-middle">
-        {{ section.settings.img | image_url: width:500 | image_tag}}
+        {{ section.settings.img | img_url: "500x500", scale: 2 | img_tag}}
         <div class="dot dot-1 active mobile-active"> </div>
         <div class="dot dot-2 active"> </div>
     </div>
     <div class="science-wonder-right">
         <div class="right-img-text">
-            {{ section.settings.right_img | image_url: width:400 | image_tag}}
+            {{ section.settings.right_img | img_url: "500x500", scale: 2 | img_tag }}
             <div class=" right-txt">
                 {% if section.settings.right_title != blank %} 
                 <p class="gush-font-p2 title-text" style="font-weight: 500 !important;">{{ section.settings.right_title }}</p>

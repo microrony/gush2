@@ -11,21 +11,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 }
 {%- endstyle -%} 
 
-{%- paginate blog.articles by 6 -%}
-<div class="main-blog page-width section-{{ section.id }}-padding">
-	<div class="title_search">
-	<h1 class="gush-font-h1">{{ blog.title | escape }}</h1>
-	<form method="get" action="/search">
-		<input type="hidden" name="type" value="article" />
-		<input type="text" name="q" placeholder="Search" class="gush-font-teritary" />
-		<button type="submit">
-			 {% render 'icon-search' %}
-	</button>
-	</form>
-</div>
-
-	<div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-		
 	{% assign featuredArticles = false %}
 	{% for link in linklists.blogs.links %}
 		{% assign blog = link.object %}
@@ -42,6 +27,22 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 	{% endfor %}
 	{% endif %}
 
+<div class="main-blog page-width section-{{ section.id }}-padding">
+	<div class="title_search">
+	<h1 class="gush-font-h1">{{ blog.title | escape }}</h1>
+	<form method="get" action="/search">
+		<input type="hidden" name="type" value="article" />
+		<input type="text" name="q" placeholder="Search" class="gush-font-teritary" />
+		<button type="submit">
+			 {% render 'icon-search' %}
+	</button>
+	</form>
+</div>
+
+	<div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+		
+
+
 		{%- for article in featuredArticles limit: 1 -%}
 		<div class="blog-articles__article article">
 			{%- render 'main-article-card',
@@ -57,11 +58,8 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 		{%- endfor -%}
 	</div>
 
-	{%- if paginate.pages > 1 -%}
-	{%- render 'pagination', paginate: paginate -%}
-	{%- endif -%}
+	
 </div>
-{%- endpaginate -%}
 
 {% schema %}
 {
