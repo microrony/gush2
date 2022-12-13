@@ -37,10 +37,13 @@
     <div class="footer-contact__form">
       {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
         {%- if form.posted_successfully? -%}
-          <div class="form-status form-status-list form__message" tabindex="-1" autofocus>
+         <script> 
+          window.location = "/pages/journal"; 
+          </script> 
+          {%- comment -%} <div class="form-status form-status-list form__message" tabindex="-1" autofocus>
             {% render 'icon-success' %}
             {{ 'templates.contact.form.post_success' | t }}
-          </div>
+          </div> {%- endcomment -%}
         {%- elsif form.errors -%}
           <div class="form__message">
             <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
