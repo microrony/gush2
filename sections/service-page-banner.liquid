@@ -187,6 +187,15 @@
     }
     </style>
 {%- endif -%}
+{%- if section.settings.page_name == "service" -%}
+<style>
+  @media screen and (min-width: 750px){
+  .banner__box > *:first-child {
+  margin-top: 8rem;
+}
+  }
+</style>
+{%- endif -%}
 
 
 
@@ -206,7 +215,7 @@
           {%- if section.settings.image.width >= 3840 -%}{{ section.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
           {{ section.settings.image | image_url }} {{ section.settings.image.width }}w"
         sizes="{% if section.settings.image_2 != blank and section.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif section.settings.image_2 != blank %}50vw{% else %}100vw{% endif %}"
-        src="{{ section.settings.image | image_url: width: section.settings.image.width }}"
+        src="{{ section.settings.image | img_url: "1920x1920", scale: 2 }}"
         loading="lazy"
         alt="{{ section.settings.image.alt | escape }}"
         width="{{ section.settings.image.width }}"
