@@ -23,7 +23,11 @@
                 <div class="formula-card card-{{ forloop.index }} {% if forloop.first %} active {% endif %}">
                     <div class="formula-info-card">
                         <div>
-                            {{ block.settings.img | image_url: width: 90 | image_tag }}
+                            {% if block.settings.svg != blank %} 
+                                <img src="{{ block.settings.svg | asset_url }}" alt="">
+                            {% else %}
+                                {{ block.settings.img | image_url: width: 90 | image_tag }}
+                            {% endif %}
                         </div>
                         <div>
                             <h1 class="gush-font-h1">{{ block.settings.heading }}</h1>
@@ -111,6 +115,12 @@
                 "type":"image_picker",
                 "id":"img",
                 "label":"Formula name"
+            },
+            {
+                "type":"text",
+                "id":"svg",
+                "label":"SVG File name",
+                "info":"exm: logo.svg (file must has to be in the asset folder)"
             },
             {
                 "type":"text",
