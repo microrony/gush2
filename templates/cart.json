@@ -27,7 +27,7 @@
         "buttons"
       ],
       "settings": {
-        "show_cart_note": false
+        "show_cart_note": true
       }
     },
     "featured-collection": {
@@ -45,7 +45,7 @@
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
