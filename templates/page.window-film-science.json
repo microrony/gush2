@@ -61,7 +61,7 @@
           "type": "chemical",
           "settings": {
             "title": "Ultraviolet",
-            "chemical_formula": "shopify:\/\/shop_images\/Group_1658_305a8b1d-986d-458a-a9ed-6dfd66452265.png",
+            "chemical_formula": "shopify:\/\/shop_images\/Frame_2340.png",
             "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_074717338.png",
             "svg": "",
             "solar_spectrum_range": "100 - 400nm",
@@ -92,7 +92,7 @@
           "type": "chemical",
           "settings": {
             "title": "Near Infrared",
-            "chemical_formula": "shopify:\/\/shop_images\/Group_1658_1.png",
+            "chemical_formula": "shopify:\/\/shop_images\/Frame_2341.png",
             "chemical_structure": "shopify:\/\/shop_images\/image_2022-11-29_074853464.png",
             "svg": "",
             "solar_spectrum_range": "780nm -  3000nm",
@@ -209,11 +209,13 @@
           "settings": {
             "title": "Heating Blocking",
             "image": "shopify:\/\/shop_images\/Group_1992.png",
+            "svg": "",
             "item_1": "",
             "item_2": "",
             "item_3": "",
             "short_description": "Gush window films are able to block heat transmissions across the solar spectrum, but allow light wavelengths to pass through.",
-            "tested_by": "Test conducted by OTM Solutions Laboratory"
+            "tested_by": "Test conducted by OTM Solutions Laboratory",
+            "tested_by_url": ""
           }
         },
         "6274f611-e3fb-46dc-bc1a-85befec32c3d": {
@@ -221,11 +223,13 @@
           "settings": {
             "title": "Energy Savings",
             "image": "shopify:\/\/shop_images\/Frame_396.png",
+            "svg": "",
             "item_1": "",
             "item_2": "",
             "item_3": "",
             "short_description": "Across an extended test period, our window films reduced average cooling energy consumption by 9.47%.",
-            "tested_by": "Test conducted by Built Environment Research and Innovation Institute"
+            "tested_by": "Test conducted by Built Environment Research and Innovation Institute",
+            "tested_by_url": ""
           }
         }
       },
@@ -246,7 +250,8 @@
           "settings": {
             "title": "Trial Study",
             "description": "Reducing temperatures in glass-covered walkway (Nanyang Technological University)",
-            "number": "05.20.20"
+            "number": "05.20.20",
+            "url": ""
           }
         },
         "5b18b894-6888-45a3-9a1f-1cc9a411f380": {
@@ -254,7 +259,8 @@
           "settings": {
             "title": "Trial Study",
             "description": "More comfort for diners while preserving views at rooftop restaurant",
-            "number": "05.20.20"
+            "number": "05.20.20",
+            "url": ""
           }
         }
       },
