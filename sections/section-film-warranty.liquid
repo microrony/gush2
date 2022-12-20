@@ -1,62 +1,76 @@
 {{ 'section-film-warranty.css' | asset_url | stylesheet_tag }}
 {{ 'section-ingredient.css' | asset_url | stylesheet_tag }}
+{{ 'film-animation.css' | asset_url | stylesheet_tag }}
 {%- comment -%} <script type="module" src="{{ 'section-film-warranty.js' | asset_url }}" async></script> {%- endcomment -%}
 
 <div class="film-warranty-container">
 	{%- comment -%} <canvas data-img-url="{{ 'stripesb.jpg' | asset_url }}" id="glCanvas" width="640" height="480"></canvas> {%- endcomment -%}
-    <div class="film-page-width">
-        <div class="warranty-heading-sub-heading">
-            <h1 class="gush-font-h1 warranty-heading">{{ section.settings.heading }}</h1>
-            <p class="gush-font-p1 warranty-sub-heading">{{ section.settings.sub_heading }}</p>
-        </div>
-        <div>
-            <div class="warranty-year-box">
-                <h1 class="gush-font-h1">{{ section.settings.warranty_year }}</h1>
-                <p>year</p>
-                <p>warranty</p>
-            </div>
-        </div>
-        <div class="ingredient__main gush-page-width">
-            
-        <div class="ingredient__accordion">
-        <div class="question">
-            <h1 class="gush-font-h3 ingredient_heading_h3">{{ section.settings.ingredient_heading }}</h1>
-          {% for block in section.blocks %} {% if block.type == 'text' %}
-            <div class="q-ans__block" id="faq__block">
-              
-              <div class="faq_qus" id="faq_qus" data-content-id="faq_{{ forloop.index }}">
-                
-                <div class="qus-li">
-                    <div class="qus-li__inner">
-                      <h3 class="gush-font-p1" style="font-weight: 500 !important;">{{ block.settings.title }}</h3><p>{{ block.settings.faq_quality }}</h3>
-                    </div>
-                  </div>
-                
-                <span>{% render 'solid-plus-icon' %}{% render 'solid-minus-icon' %}</span>
-                
-              </div>
-              <div class="question__ans">
-              <p class="faq_ans gush-font-p2" id="faq_{{ forloop.index }}">
-                {{ block.settings.faq_ans }}
-              </p>
-            </div>
-              
-            </div>
-            {% endif %}
-            {% endfor %}
-          </div>
-          {% if section.settings.btn_text != blank %}
-            <div class="ingredient_bottom_btn">
-              <a class="cta-button cta-button__fuschia gush-font-teritary" href="{{ section.settings.button_link }}">
-              {{ section.settings.btn_text }} {% render 'arrow-dotted' %}
-              </a>
-            </div>
-          {% endif %}
-        </div>
-    </div>
-    </div>
-</div>
+  <div class="full-container">
+			<div class="h-full bg-home-radial">
+				<div
+				  id="cursor"
+				  class="mouse-cursor-gradient-tracking bg-cursor-radial">
+				</div>
+				<canvas id="armyCanvas" class="z-20 w-full h-screen top-0 left-0 sticky" data="hello" data-img-url="{{ 'stripesb.jpg' | asset_url }}"></canvas>
+			  </div>
 
+			<div class="content-container">
+        <div class="film-page-width">
+            <div class="warranty-heading-sub-heading">
+                <h1 class="gush-font-h1 warranty-heading">{{ section.settings.heading }}</h1>
+                <p class="gush-font-p1 warranty-sub-heading">{{ section.settings.sub_heading }}</p>
+            </div>
+            <div>
+                <div class="warranty-year-box">
+                    <h1 class="gush-font-h1">{{ section.settings.warranty_year }}</h1>
+                    <p>year</p>
+                    <p>warranty</p>
+                </div>
+            </div>
+            <div class="ingredient__main gush-page-width">
+                
+            <div class="ingredient__accordion">
+            <div class="question">
+                <h1 class="gush-font-h3 ingredient_heading_h3">{{ section.settings.ingredient_heading }}</h1>
+              {% for block in section.blocks %} {% if block.type == 'text' %}
+                <div class="q-ans__block" id="faq__block">
+                  
+                  <div class="faq_qus" id="faq_qus" data-content-id="faq_{{ forloop.index }}">
+                    
+                    <div class="qus-li">
+                        <div class="qus-li__inner">
+                          <h3 class="gush-font-p1" style="font-weight: 500 !important;">{{ block.settings.title }}</h3><p>{{ block.settings.faq_quality }}</h3>
+                        </div>
+                      </div>
+                    
+                    <span>{% render 'solid-plus-icon' %}{% render 'solid-minus-icon' %}</span>
+                    
+                  </div>
+                  <div class="question__ans">
+                  <p class="faq_ans gush-font-p2" id="faq_{{ forloop.index }}">
+                    {{ block.settings.faq_ans }}
+                  </p>
+                </div>
+                  
+                </div>
+                {% endif %}
+                {% endfor %}
+              </div>
+              {% if section.settings.btn_text != blank %}
+                <div class="ingredient_bottom_btn">
+                  <a class="cta-button cta-button__fuschia gush-font-teritary" href="{{ section.settings.button_link }}">
+                  {{ section.settings.btn_text }} {% render 'arrow-dotted' %}
+                  </a>
+                </div>
+              {% endif %}
+            </div>
+        </div>
+        </div>
+      </div>
+		</div>
+</div>
+<script src="{{ 'three.js' | asset_url }}" ></script>
+<script src="{{ 'film-animation.js' | asset_url }}" ></script>
 {% javascript %}
 let Faqquestions = document.querySelectorAll(".faq_qus");
  
