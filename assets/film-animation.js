@@ -98,11 +98,12 @@ document.addEventListener('scroll', function () {
     })
   
   const PaneSpacing = 7
-  const PaneGeometry = new THREE.BoxGeometry(0.096, 46.4, 57.5, 256, 256)
+  const PaneGeometry = new THREE.BoxGeometry(0.096, 46.4, 57.5, 1, 1)
+  const MobilePaneGeometry = new THREE.BoxGeometry(0.096, 56.4, 17.5, 1, 1)
   
   const makePanes = (texture ) =>
     Array.from({ length: 3 }, (_, i) => {
-      const mesh = THREE.SceneUtils.createMultiMaterialObject(PaneGeometry, [
+      const mesh = THREE.SceneUtils.createMultiMaterialObject(window.innerWidth > 750 ? PaneGeometry : MobilePaneGeometry , [
         makeReflector(i, texture),
       ])
       mesh.position.x = PaneSpacing * (i - 1)
@@ -150,10 +151,12 @@ document.addEventListener('scroll', function () {
   
    function setSceneDimensions({ renderer, camera }, width, height) {
     // Seems to be necessary to use dpr here
-    renderer.setSize(width * window.devicePixelRatio, height * window.devicePixelRatio, false)
-    camera.aspect = width / height
-    camera.updateProjectionMatrix()
-    camera.zoom = Math.pow((camera.aspect * 9) / 16, 0.5)
+    // if(window.innerWidth> 750){
+      renderer.setSize(width * window.devicePixelRatio, height * window.devicePixelRatio, false)
+      camera.aspect = width / height
+      camera.updateProjectionMatrix()
+      camera.zoom = Math.pow((camera.aspect * 9) / 16, 0.5)
+    // }
   }
   async function initSceneData() {
     sceneData = await init(canvas)
