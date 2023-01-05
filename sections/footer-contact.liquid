@@ -67,8 +67,9 @@
               name="contact[{{ 'templates.contact.form.name' | t }}]"
               value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
               placeholder="{{ 'templates.contact.form.name' | t }}"
+              required
             >
-            <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+            <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }} <span aria-hidden="true">*</span></label>
           </div>
           <div class="field field--with-error">
             <input
@@ -86,6 +87,7 @@
                 aria-describedby="ContactForm-email-error"
               {% endif %}
               placeholder="{{ 'templates.contact.form.email' | t }}"
+              required
             >
             <label class="field__label" for="ContactForm-email">
               {{- 'templates.contact.form.email' | t }}
@@ -113,8 +115,9 @@
             pattern="[0-9\-]*"
             value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
             placeholder="{{ 'templates.contact.form.phone' | t }}"
+            required
           >
-          <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+          <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }} <span aria-hidden="true">*</span></label>
         </div>
         <div class="select_box_group_buy">
             <select
@@ -131,7 +134,7 @@
               <option value="other">Other:</option>
             </select>
             <br>
-            <label class="select_label_group_buy option_discover" for="ContactForm-discover">How did you discover Gush?</label>
+            <label class="select_label_group_buy option_discover" for="ContactForm-discover">How did you discover Gush? <span aria-hidden="true">*</span></label>
           </div>
         {%- if section.settings.page_name != 'group_buy' -%}
           <div class="field">
@@ -141,11 +144,12 @@
               class="text-area field__input"
               name="contact[{{ 'templates.contact.form.comment' | t }}]"
               placeholder="{{ 'templates.contact.form.comment' | t }}"
+              required
             >
           {{- form.body -}}
         </textarea>
             <label class="form__label field__label" for="ContactForm-body">
-              {{- 'templates.contact.form.comment' | t -}}
+              {{- 'templates.contact.form.comment' | t -}} <span aria-hidden="true"> *</span>
             </label>
           </div>
         {% else %}
@@ -154,7 +158,6 @@
               class="select_input_group_buy gray_color"
               id="ContactForm-project"
               name="contact[project]"
-              required
             >
               <option disabled selected value>-- select a project --</option>
               {% for block in project_blocks %}
@@ -162,7 +165,7 @@
               {% endfor %}
             </select>
             <br>
-            <label class="select_label_group_buy option_project" for="ContactForm-project">Project</label>
+            <label class="select_label_group_buy option_project" for="ContactForm-project">Project </label>
           </div>
           <div class="field">
             <textarea
@@ -171,10 +174,11 @@
               class="text-area field__input"
               name="contact[project_details]"
               placeholder="Project details"
+              required
             >
           {{- form.project_details -}}
         </textarea>
-            <label class="form__label field__label" for="ContactForm-project_details">Project details</label>
+            <label class="form__label field__label" for="ContactForm-project_details">Project details <span aria-hidden="true">*</span></label>
           </div>
         {%- endif -%}
         <div class="">
