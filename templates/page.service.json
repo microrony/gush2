@@ -166,7 +166,7 @@
         "452c641b-1cfe-4e5b-8027-acc719d7b7db": {
           "type": "image",
           "settings": {
-            "slider-image": "shopify:\/\/shop_images\/Cosmonaut_600x600_crop_center_2x.progressive_3eb01c09-3a18-4816-a776-89ed7dac6de0.webp",
+            "slider-image": "shopify:\/\/shop_images\/image_2022-12-05_202912477.png",
             "text": "Linen",
             "url": "\/products\/linen",
             "clr": "",
@@ -192,13 +192,24 @@
             "clr": "",
             "txt_clr": ""
           }
+        },
+        "e199ea07-4c50-4f27-a871-82cc74b916dd": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "url": "",
+            "clr": "",
+            "txt_clr": ""
+          }
         }
       },
       "block_order": [
         "3b58b5f3-086f-4181-9aa2-8db72ce9c5cd",
         "452c641b-1cfe-4e5b-8027-acc719d7b7db",
         "c07edf85-e99d-403c-9095-8e80bdf2abd0",
-        "0043d3e9-32bc-43ef-91b8-ac115cc5d845"
+        "0043d3e9-32bc-43ef-91b8-ac115cc5d845",
+        "e199ea07-4c50-4f27-a871-82cc74b916dd"
       ],
       "settings": {
         "heading": "Top Selling Colours",
