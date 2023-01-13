@@ -152,16 +152,16 @@
             "faq_img": "shopify:\/\/shop_images\/image_2022-11-29_081952029.png",
             "title": "Gush proprietary catalyst",
             "faq_quality": "",
-            "faq_ans": "This nifty stimulant excites the wall surface to break down pollutants into water and carbon dioxide. Removes 99% of pollutants in just 21 hours."
+            "faq_ans": "Upon contact, this nifty stimulant excites wall surfaces, causing them to break down pollutants to just harmless water and carbon dioxide. 99% of pollutants are removed in just 21 hours."
           }
         },
         "b3bf5e61-3ce4-49c8-a560-d9462466cd1b": {
           "type": "text",
           "settings": {
             "faq_img": "shopify:\/\/shop_images\/image_2022-11-29_082017880.png",
-            "title": "Formaldehyde decomposers",
+            "title": "Gush absorption element",
             "faq_quality": "",
-            "faq_ans": "Our paint’s got a unique porous coating that absorbs moisture in the air and spreads it across the surface for speedy evaporation."
+            "faq_ans": "Our paint has a unique porous coating that absorbs moisture in the air and spreads it evenly across the surface for speedy evaporation. Keeping the indoors comfortably dry."
           }
         }
       },
@@ -171,8 +171,8 @@
       ],
       "settings": {
         "color": "#00ff00",
-        "heading": "What's the secret? Science.",
-        "sub-heading": "We’re pushing the boundaries \nwith our special ingredients.",
+        "heading": "Seeking the secret? <br> It’s simply Science.",
+        "sub-heading": "",
         "link": "<p><a href=\"\/blogs\/science\/paint-formulation\" target=\"_blank\" title=\"A deep dive into our paint formulation\">Full ingredient details here.<\/a><\/p>",
         "btn_text": "",
         "btn_url": "",
