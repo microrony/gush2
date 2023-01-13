@@ -78,9 +78,9 @@
         "01aef32a-718f-4b49-99b6-0ffa1ead0bc9": {
           "type": "text",
           "settings": {
-            "title": "Enquire & book",
+            "title": "Enquire and book",
             "faq_quality": "",
-            "faq_ans": "Let us know about your painting needs by filling up our enquiry form below."
+            "faq_ans": "Tell us about your painting needs by filling up our enquiry form below."
           }
         },
         "5df8158b-c9e0-4d3e-b063-8605ab369147": {
@@ -88,7 +88,7 @@
           "settings": {
             "title": "Free site consultation",
             "faq_quality": "",
-            "faq_ans": "We'll arrange a non-obligatory site visit with you to assess the condition of your space and offer colour recommendations."
+            "faq_ans": "We’ll arrange a non-obligatory site visit with you to assess the condition of your space, while offering colour recommendations."
           }
         },
         "09d5098f-9c57-4b01-b3f0-463b287da0a8": {
@@ -96,7 +96,7 @@
           "settings": {
             "title": "Select project dates",
             "faq_quality": "",
-            "faq_ans": "After inspection, we'll confirm your job requirements and when you'd like to get your space transformed."
+            "faq_ans": "After inspection, we’ll confirm your job requirements with dates to transform your space."
           }
         },
         "fc4c32ee-f225-49d6-b45c-84275372cae9": {
@@ -104,7 +104,7 @@
           "settings": {
             "title": "Smooth & thorough painting",
             "faq_quality": "",
-            "faq_ans": "Our painting process includes furniture protection, 2 coats of Gush Paints for walls and ceilings, and disinfection services too, if you like."
+            "faq_ans": "Our painting process includes furniture protection, 2 coats of Gush Paints for walls and ceilings and disinfection services too, if you’d like."
           }
         },
         "445a3435-b1e0-4c7f-bdd6-99b83bc0666d": {
@@ -112,7 +112,7 @@
           "settings": {
             "title": "Inspection & touch-up",
             "faq_quality": "",
-            "faq_ans": "After painting is completed, we conduct a final inspection for touch-ups."
+            "faq_ans": "After painting is completed, we conduct a final inspection for touch-ups – to picture perfect finishing."
           }
         }
       },
