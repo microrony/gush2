@@ -22,7 +22,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Enquire Now",
+            "button_label_1": "Enquire now",
             "btn_bg_color": "",
             "btn_color": "",
             "button_link_1": "shopify:\/\/collections\/all",
