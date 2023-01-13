@@ -317,7 +317,7 @@
       "type": "science-wonder",
       "settings": {
         "title": "The science beyond the surface",
-        "heading": "Meet the scientific wonders that help our paint clear your air.",
+        "heading": "Meet the scientific wonders responsible for clearing your air.",
         "left_title": "Gush Proprietary Catalyst (GPC)",
         "left_txt": "The Gush Proprietary Catalyst (GPC) creates the conditions to actively break down air pollutants into harmless byproducts – water and carbon dioxide.",
         "left_img": "shopify:\/\/shop_images\/image_2022-12-09_145456124.png",
@@ -351,8 +351,8 @@
         "bg_image": "shopify:\/\/shop_images\/Frame_2271.jpg",
         "bg_image_m": "shopify:\/\/shop_images\/image.png",
         "title": "Gush painting services",
-        "heading": "Fulfil all your paint job needs at one go. By expert painters only.",
-        "desc": "Transform your spaces now with our start-to-end suite of professional services, customisable to your needs.",
+        "heading": "Our expert painters have got your back. And walls. <br> And ceilings. ",
+        "desc": "Transform your spaces with our start-to-end suite of professional services, customisable to your needs.",
         "btn_txt": "Enquire now",
         "btn_url": "shopify:\/\/pages\/services"
       }
@@ -360,7 +360,7 @@
     "c6fabc79-9dae-4573-a0e3-dd008005494c": {
       "type": "footer-contact",
       "settings": {
-        "title": "Contact Us",
+        "title": "Contact us",
         "heading": "Ready to get started or have a question? Tell us about your project needs, and we'll get in touch.",
         "btn_text": "Contact us",
         "btn_type": "secondary",
