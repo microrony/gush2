@@ -23,7 +23,7 @@
           "settings": {
             "button_label_1": "Shop now",
             "button_link_1": "shopify:\/\/collections\/interior-paints",
-            "button_label_2": "Let us help you",
+            "button_label_2": "Enquire with us",
             "button_link_2": "shopify:\/\/pages\/contact-us"
           }
         }
@@ -59,10 +59,10 @@
             "img": "shopify:\/\/shop_images\/Formaldehyde.png",
             "svg": "Element Formaldehyde.svg",
             "heading": "Formaldehyde",
-            "sub_heading": "Found in building materials, hair products and nail polish.",
+            "sub_heading": "Found in building materials, hair products, nail polish and more.",
             "odor": "Sharp, sweet",
             "appearance": "Clear, colourless",
-            "description": "It damages your liver, kidneys and respiratory system, and increases the risk of cancer."
+            "description": "Causes damage to the liver, kidneys and respiratory system; increases the risk of cancer."
           }
         },
         "9348712a-d45a-4c6d-9554-e7186cea9e58": {
@@ -73,10 +73,10 @@
             "img": "shopify:\/\/shop_images\/Group_2448.png",
             "svg": "Element Toluene.svg",
             "heading": "Toluene",
-            "sub_heading": "Found in metal cleaners, varnishes, glue and printing ink.",
+            "sub_heading": "Found in metal cleaners, varnishes, glue, printing ink and more.",
             "odor": "Sharp, sweet",
             "appearance": "Clear, colourless",
-            "description": "It poisons your central nervous system and damages your heart and liver."
+            "description": "Poisons your central nervous system; causes damage to the heart and liver."
           }
         },
         "d03c2e4d-99a9-48ba-9812-8eaeffa06569": {
@@ -87,10 +87,10 @@
             "img": "shopify:\/\/shop_images\/image_2022-12-07_111147479.png",
             "svg": "Element Xylene.svg",
             "heading": "Xylene",
-            "sub_heading": "Found in furniture finishes, thinners and lacquers.",
+            "sub_heading": "Found in furniture finishes, thinners, lacquers and more.",
             "odor": "Sweet",
             "appearance": "Colourless",
-            "description": "Xylene slows down nerve cell function and reduces muscle coordination\n."
+            "description": "Slows down nerve cell function; reduces muscle coordination."
           }
         },
         "762beb12-694b-44ae-aba1-ed73d699e68a": {
@@ -104,7 +104,7 @@
             "sub_heading": "Found in metal cleaners, varnishes, glue and printing ink.",
             "odor": "Sweet like gasoline",
             "appearance": "Clear to light yellow",
-            "description": "It poisons your central nervous system and damages your heart and liver."
+            "description": "Poisons your central nervous system; causes damage to the heart and liver."
           }
         },
         "00ba2a39-5db0-411e-8e0c-ea67503a570e": {
@@ -115,10 +115,10 @@
             "img": "shopify:\/\/shop_images\/Acetaldehyde.png",
             "svg": "Element Acetaldhyde.svg",
             "heading": "Acetaldehyde",
-            "sub_heading": "Found in ripe fruits, vegetables, diesel and flooring materials.",
+            "sub_heading": "Found in ripe fruits, vegetables, diesel, flooring materials and more.",
             "odor": "Pungent, fruity",
             "appearance": "Colourless",
-            "description": "It lowers your brain and motor functions, and causes cellular damage and scar tissue."
+            "description": "Lowers brain and motor functions; causes cellular damage and scar tissue."
           }
         }
       },
@@ -130,8 +130,8 @@
         "00ba2a39-5db0-411e-8e0c-ea67503a570e"
       ],
       "settings": {
-        "title": "By removing pollutants from your air.",
-        "description": "Click to discover what’s\nin the air around you.",
+        "title": "Pollutants don’t stand a chance.",
+        "description": "Click the particles to discover the invisible pollutants lingering in your air.",
         "background_color": "#e1d5c6"
       }
     },
