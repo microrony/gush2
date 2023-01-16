@@ -3,7 +3,7 @@ const container = document.querySelector(".film-warranty-container .full-contain
 const contentContainer = document.querySelector(".film-warranty-container .content-container");
 const canvas = document.querySelector(".film-warranty-container #armyCanvas");
 const cursor = document.querySelector(".film-warranty-container #cursor");
-container.style.height = `${contentContainer.offsetHeight}px`
+// container.style.height = `${contentContainer.offsetHeight}px`;
 let isInScreen = false;
 let mousePos = { current: { x: 0, y: 0 }}
 let sceneData;
