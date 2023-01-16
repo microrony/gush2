@@ -257,7 +257,7 @@
             "item_1": "E. Coli",
             "item_2": "S. aureus",
             "item_3": "",
-            "short_description": "99% removal of E.Coli and S.Aureus bacteria",
+            "short_description": "99% removal of E.Coli and S.Aureus bacteria.",
             "tested_by": "Tested by Advanced Materials Technology Centre",
             "tested_by_url": ""
           }
@@ -273,13 +273,13 @@
             "gush_coated_surface_text": "Gush Coated Surface",
             "gush_coated_surface_image": "shopify:\/\/shop_images\/image_2022-11-29_073759894.png",
             "svg2": "Science - Anti Molding (Gush Coated).svg",
-            "environment": "<span>Environment<\/span>\nHumidity Indoor",
+            "environment": "<span>Environment<\/span>\nIndoor Humidity",
             "temperature": "<span>Temperature<\/span>\nDifferentials",
             "testing_duration": "<span>Testing Duration<\/span>\n3 months",
             "surface_dimensions": "<span>Surface Dimensions<\/span>\n1m x 1m",
             "molding_clearance": "shopify:\/\/shop_images\/Group_1652.png",
             "svg3": "Science - Anti Molding (Small Icon).svg",
-            "short_description": "99% reduction in bacteria count",
+            "short_description": "100% clear of mould.",
             "tested_by": "Tested by Nanyang Technological University",
             "tested_by_url": ""
           }
@@ -292,7 +292,7 @@
             "second_image": "shopify:\/\/shop_images\/Group_1939.png",
             "svg_file_name": "co2-analysis",
             "lottie_file_name": "co2-analysis.json",
-            "short_description": "99% reduction in bacteria count",
+            "short_description": "Improvement of air quality overtime.",
             "tested_by": "Tested by Nanyang Technological University",
             "tested_by_url": ""
           }
