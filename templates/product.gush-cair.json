@@ -1,0 +1,241 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-gush",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "8d33aa52-1e56-49a0-ab5c-9774dcf7b6a0": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "caption",
+        "8d33aa52-1e56-49a0-ab5c-9774dcf7b6a0",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "1652439533f0dc6359": {
+      "type": "product-info",
+      "blocks": {
+        "a2f67ce1-555b-41e9-9269-54303cbfab3f": {
+          "type": "product-info",
+          "settings": {
+            "title": "Washable",
+            "lottiefile": "freshair v2.json",
+            "tabdesc": "Dirt and grime resistant. Had an oopsie? Simply grab a cloth and wipe for lasting wall freshness. "
+          }
+        },
+        "e6dd9580-f6f0-45da-820c-a37f542a7b94": {
+          "type": "product-info",
+          "settings": {
+            "title": "Air-purifying",
+            "lottiefile": "air-purifying.json",
+            "tabdesc": "Now you can breathe easy. Purify your air of toxic VOCs, including formaldehyde, benzene and toluene."
+          }
+        },
+        "112cf32c-7d96-4895-9044-93011c80c682": {
+          "type": "product-info",
+          "settings": {
+            "title": "Anti-Moulding",
+            "lottiefile": "Anti Molding.json",
+            "tabdesc": "Say no to mould. Antimicrobial agents in our paint break down mould spores, stopping them in their tracks."
+          }
+        },
+        "b0107315-38cb-46be-b65f-c46767432f8b": {
+          "type": "product-info",
+          "settings": {
+            "title": "Anti-Bacterial",
+            "lottiefile": "anti-bacteria.json",
+            "tabdesc": "Stay safe and healthy.    Microscopic tetrahedral structures in our paint effectively ruptures 99% of bacteria including E.Coli and S.Aureus."
+          }
+        },
+        "6811cffd-cbe8-4e0c-8a98-8f3951a79238": {
+          "type": "product-info",
+          "settings": {
+            "title": "Odourless",
+            "lottiefile": "odourless v2.json",
+            "tabdesc": "Enjoy a smell-free experience void of toxic fumes. All thanks to our VOC-free formulation."
+          }
+        },
+        "390ba101-3199-4d49-a9ee-8611855b8a9c": {
+          "type": "product-info",
+          "settings": {
+            "title": "Toxic-free",
+            "lottiefile": "toxic-free.json",
+            "tabdesc": "Safer paints for both you and the Earth. Made with non-toxic materials and minimised carbon emission manufacturing."
+          }
+        }
+      },
+      "block_order": [
+        "a2f67ce1-555b-41e9-9269-54303cbfab3f",
+        "e6dd9580-f6f0-45da-820c-a37f542a7b94",
+        "112cf32c-7d96-4895-9044-93011c80c682",
+        "b0107315-38cb-46be-b65f-c46767432f8b",
+        "6811cffd-cbe8-4e0c-8a98-8f3951a79238",
+        "390ba101-3199-4d49-a9ee-8611855b8a9c"
+      ],
+      "settings": {
+        "heading": "Features",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "16524396805057076a": {
+      "type": "ingredient",
+      "blocks": {
+        "cdfe81e2-cf4d-472e-bec0-8ab9619936b7": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/image_2022-11-29_081952029.png",
+            "title": "Gush proprietary catalyst",
+            "faq_quality": "",
+            "faq_ans": "Upon contact, this nifty stimulant excites wall surfaces, causing them to break down pollutants to just harmless water and carbon dioxide. 99% of pollutants are removed in just 21 hours."
+          }
+        },
+        "b3bf5e61-3ce4-49c8-a560-d9462466cd1b": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/image_2022-11-29_082017880.png",
+            "title": "Gush absorption element",
+            "faq_quality": "",
+            "faq_ans": "Our paint has a unique porous coating that absorbs moisture in the air and spreads it evenly across the surface for speedy evaporation. Keeping the indoors comfortably dry."
+          }
+        }
+      },
+      "block_order": [
+        "cdfe81e2-cf4d-472e-bec0-8ab9619936b7",
+        "b3bf5e61-3ce4-49c8-a560-d9462466cd1b"
+      ],
+      "settings": {
+        "color": "#00ff00",
+        "heading": "Seeking the secret? <br> It’s simply Science.",
+        "sub-heading": "",
+        "link": "<p><a href=\"\/blogs\/science\/paint-formulation\" target=\"_blank\" title=\"A deep dive into our paint formulation\">Full ingredient details here.<\/a><\/p>",
+        "btn_text": "",
+        "btn_url": "",
+        "sb-heading": "",
+        "radius": 49,
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "show_sub_title": true,
+        "group_buy_page": false,
+        "page": "product"
+      }
+    },
+    "1652439903eeaf17c8": {
+      "type": "comparison",
+      "settings": {
+        "section-title": "Gush is greener \nfrom every side.",
+        "section-des": "Who ever thought wellness could come in a larger-than-pint size? 6 features packed in one tub. Better for you, better for the world.",
+        "circuler-img1": "shopify:\/\/shop_images\/image_2022-11-29_082119507.png",
+        "svg1": "Settle Other Paints.svg",
+        "circuler-img2": "shopify:\/\/shop_images\/image_2022-11-29_082136625.png",
+        "svg2": "Settle Gush.svg",
+        "heading-img1": "Other paints",
+        "heading-img2": "Gush",
+        "heading": "Us vs Them"
+      }
+    },
+    "72a7f502-2042-444c-a966-2f640303a58c": {
+      "type": "section-stamped-review",
+      "blocks": {
+        "86efca96-87a5-4590-bcc1-603732a4f205": {
+          "type": "review_category",
+          "settings": {
+            "title": "All Reviews"
+          }
+        },
+        "41f19529-855a-4c94-b201-8d22e4acfb83": {
+          "type": "review_category",
+          "settings": {
+            "title": "Services"
+          }
+        },
+        "eb811e8b-33a4-4246-ae7e-0d1fd358b67a": {
+          "type": "review_category",
+          "settings": {
+            "title": "Products"
+          }
+        }
+      },
+      "block_order": [
+        "86efca96-87a5-4590-bcc1-603732a4f205",
+        "41f19529-855a-4c94-b201-8d22e4acfb83",
+        "eb811e8b-33a4-4246-ae7e-0d1fd358b67a"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "1652439533f0dc6359",
+    "16524396805057076a",
+    "1652439903eeaf17c8",
+    "72a7f502-2042-444c-a966-2f640303a58c"
+  ]
+}
