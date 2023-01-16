@@ -142,7 +142,7 @@
           "type": "the-solution-block",
           "settings": {
             "title": "Doesn’t use energy",
-            "description": "Unlike air purifiers, Gush paints remove pollutants without any electrical costs",
+            "description": "Unlike air purifiers, Gush paints remove pollutants without any electrical costs.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_134604585.png",
             "svg": "Frame 332Energy .svg",
             "lottie_file_name": "not-selected"
@@ -152,7 +152,7 @@
           "type": "the-solution-block",
           "settings": {
             "title": "Air-purifying walls",
-            "description": "Gush paint transforms the largest surface area in your space into passive air purifiers",
+            "description": "Gush paints transform the largest surface area in your space into passive air purifiers.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_134617912.png",
             "svg": "Frame 332 Walls.svg",
             "lottie_file_name": "not-selected"
@@ -176,7 +176,7 @@
       ],
       "settings": {
         "title": "02 The Solution",
-        "description": "We’ve teamed up with leading scientists and research partners to make a proven paint formulation that rids the air of pollutants.",
+        "description": "We’ve teamed up with leading scientists and research partners to innovate a proven paint formulation that rids the air of pollutants.",
         "page_name": "science",
         "unbreakable_benefits": false
       }
