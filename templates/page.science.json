@@ -53,10 +53,10 @@
             "solar_spectrum_range": "",
             "odor": "Sweet, gasoline-like",
             "appearance": "Clear to light yellow",
-            "found_in": "Found in glues, paints, furniture wax, detergents and cigarette smoke",
+            "found_in": "Found in glues, paints, furniture wax, detergents and cigarette smoke.",
             "this_is_great": "",
             "how_it_harm": "Benzene stops the bone marrow from producing enough red blood cells, which can cause anemia. It reduces levels of antibodies, causing a drop in white blood cells – essentially damaging the immune system.",
-            "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy and respiratory ailments"
+            "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy and respiratory ailments."
           }
         },
         "c11c89d9-f322-4ca2-93a5-4844a3362067": {
@@ -72,7 +72,7 @@
             "found_in": "Found in building and decor materials, hair products, nail polish, cigarette smoke.",
             "this_is_great": "",
             "how_it_harm": "Formaldehyde damages the liver, lungs, kidneys and the central nervous system while increasing the risk of cancer. It also aggravates respiratory conditions.",
-            "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy"
+            "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy."
           }
         },
         "22b53e56-e001-42b8-9a4d-9fc33f69e5e0": {
@@ -85,10 +85,10 @@
             "solar_spectrum_range": "",
             "odor": "Pungent, fruity",
             "appearance": "Clear, colourless liquid",
-            "found_in": "Comes from plants, ripe fruits and vegetables, cigarette smoke, diesel, perfumes, flooring",
+            "found_in": "Found in plants, ripe fruits and vegetables, cigarette smoke, diesel, perfumes and flooring.",
             "this_is_great": "",
             "how_it_harm": "The effects of acetaldehyde are similar to a hangover. Besides impairing brain, motor and memory functions, it also damages DNA and cell membranes, causing scar tissue.",
-            "effects_of_exposure": "Irritated eyes, skin and respiratory tract; lightheadness, skin rashes, coughing"
+            "effects_of_exposure": "Irritated eyes, skin and respiratory tract; lightheadness, skin rashes, coughing."
           }
         },
         "2c7c919c-dda7-4b64-8a7a-efb7ac25b686": {
@@ -101,10 +101,10 @@
             "solar_spectrum_range": "",
             "odor": "Sharp, sweet",
             "appearance": "Clear, colourless",
-            "found_in": "Found in metal cleaners, varnishes, shellac, nail polish, glues, rust preventives, printing inks",
+            "found_in": "Found in metal cleaners, varnishes, shellac, nail polish, glues, rust preventives, printing inks.",
             "this_is_great": "",
-            "how_it_harm": "Toluene damages the heart, liver, kidney and lungs. It causes numbness in the hands or feet. It also affects babies’ development in the womb. Exposure can induce confusion and anxiety.",
-            "effects_of_exposure": "Irritated eyes, nose and throat; dry or cracked skin, headaches, dizziness, stupor"
+            "how_it_harm": "Toluene damages the heart, liver, kidneys and lungs. It causes numbness in the hands or feet. It also affects the development of babies in the womb. Exposure can induce confusion of anxiety.",
+            "effects_of_exposure": "Irritated eyes, nose and throat; dry or cracked skin, headaches, dizziness, stupor."
           }
         },
         "138674f6-fdde-4590-b8ca-e147e70f3bde": {
@@ -117,10 +117,10 @@
             "solar_spectrum_range": "",
             "odor": "Sweet",
             "appearance": "Colourless",
-            "found_in": "Found in furniture refinishers, paint thinners, solvents, lacquers",
+            "found_in": "Found in furniture refinishers, paint thinners, solvents, lacquers.",
             "this_is_great": "",
             "how_it_harm": "Xylene slows the nervous system’s responsiveness and disrupts the functioning of nerve cells. It slows reaction time and reduces muscle coordination.",
-            "effects_of_exposure": "Irritated eyes, nose, skin and throat; headaches, slow reaction time, loss of muscle coordination"
+            "effects_of_exposure": "Irritated eyes, nose, skin and throat; headaches, slow reaction time, loss of muscle coordination."
           }
         }
       },
