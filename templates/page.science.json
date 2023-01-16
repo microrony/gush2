@@ -69,9 +69,9 @@
             "solar_spectrum_range": "",
             "odor": "Pungent, vinegar-like",
             "appearance": "Colourless",
-            "found_in": "Found in Building and decor materials, hair products, nail polish, cigarette smoke",
+            "found_in": "Found in building and decor materials, hair products, nail polish, cigarette smoke.",
             "this_is_great": "",
-            "how_it_harm": "Formaldehyde damages the liver, lungs, kidneys, central nervous systems and increases the risk of cancer. It aggravates respiratory conditions.",
+            "how_it_harm": "Formaldehyde damages the liver, lungs, kidneys and the central nervous system while increasing the risk of cancer. It also aggravates respiratory conditions.",
             "effects_of_exposure": "Dry or watery eyes, headaches, cough, breathlessness, lethargy"
           }
         },
