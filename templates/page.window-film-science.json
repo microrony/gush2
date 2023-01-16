@@ -16,7 +16,7 @@
           "type": "the-problem-block",
           "settings": {
             "title": "Urban Heat Island effect (UHI)",
-            "description": "As our world develops, buildings are replacing natural landscapes. Less greenery, more human activity and more heat-emitting building materials make cities hotspots that generate lots of heat. \n\nUrban infrastructure absorbs and re-emits heat, making it much hotter than surrounding areas. In Singapore, temperature differences are as high as 7°C.",
+            "description": "As the world becomes more urban, buildings are replacing natural landscapes. Less greenery, more human activity, more heat-emitting building materials. \n\nCities are literal hotspots that generate lots of heat. Urban infrastructure absorbs and re-emits heat, causing it to feel much hotter than surrounding areas. In Singapore, temperature differences are as high at 7°C.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_135758286.png"
           }
         },
@@ -24,7 +24,7 @@
           "type": "the-problem-block",
           "settings": {
             "title": "More and more heat produced",
-            "description": "Using air-conditioning units and cooling systems releases more heat, making the outdoors even hotter. A vicious cycle ensues.\n\nThe problem is: heat doesn’t come from sunlight alone. The solar spectrum also includes heat from Ultraviolet and infrared rays, which are produced by machine and human activities too.",
+            "description": "Using air-conditioning units and cooling systems help our indoors feel cooler, but it releases even more heat outdoors. A vicious cycle. \n\nThe problem is, heat isn’t emitted from just the Sun. The solar spectrum includes both ultraviolet and infrared rays that can be produced by machines and human activities too.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_135818582.png"
           }
         }
@@ -44,7 +44,7 @@
       "type": "parallel-text",
       "settings": {
         "title": "Heat comes from the solar spectrum",
-        "description": "In the right amounts, heat can be great for our body and mind. But too much of it, and things can get unpleasant.",
+        "description": "In good doses, heat can be great for our body and mind. With too much, things take a downward turn.",
         "bg_color": "#ffffff",
         "color": "#302112",
         "margin_top": 100,
@@ -68,9 +68,9 @@
             "odor": "",
             "appearance": "",
             "found_in": "",
-            "this_is_great": "Increasing energy levels\n and improving mood. UV also kills germs, bacteria and viruses, and a limited exposure reduces redness, swelling and itchiness. But too much does the opposite - sunburn.",
-            "how_it_harm": "As a form of ionizing radiation, UV rays excite and disrupt molecules. This can damage DNA and cellular structure. It also causes building and furniture materials to discolour and deteriorate.",
-            "effects_of_exposure": "Premature aging, sunburn, skin cancer, reduced immunity"
+            "this_is_great": "Increasing energy levels and improving mood. UV also kills germs, bacteria and viruses; limited exposure reduces redness, swelling and itchiness. Prolonged exposure does the opposite, giving you sunburn.",
+            "how_it_harm": "As a form of ionising radiation, UV rays excite and disrupt molecules that can damage DNA and cellular structure. It also causes building and furniture materials to discolour and deteriorate.",
+            "effects_of_exposure": "Premature aging, sunburn, skin cancer, reduced immunity."
           }
         },
         "49ecd685-c524-4c6a-92a3-84865525a027": {
