@@ -1,78 +1,78 @@
 <link rel="stylesheet" href="{{ 'section-paint-calculator.css' | asset_url }}" media="print" onload="this.media='all'">
 <script src="{{ 'section-paint-calculator.js' | asset_url }}" defer="defer"></script>
 
-
 {%- style -%}
-.section-{{ section.id }}-padding {
-padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-}
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
 
-@media screen and (min-width: 750px) {
-.section-{{ section.id }}-padding {
-padding-top: {{ section.settings.padding_top }}px;
-padding-bottom: {{ section.settings.padding_bottom }}px;
-}
+  @media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
 
-.footer {
-margin-top: 0 !important;
-}
-}
-
+  .footer {
+  margin-top: 0 !important;
+  }
+  }
 {%- endstyle -%}
 
 <div class="paint-calculator">
-	<div class="page-width">
-		<div class="paint-calculator-header">
-			<h1>Calculating Paint</h1>
-			<a href="#">
-			{% render 'icon-paint' %}
-		</a>
-		</div>
-	<div class="paint-calculator_content">
-		<div class="box">
-			<div>
-			<label class="gush-font-p2" for="floor area">Your Floor Area</label>
-			<div class="number-input gush-font-h3">
-			<input type="text" id="floorArea" name="floor area" placeholder="0">
-			<span>sqft</span>
-		</div>
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+      <div class="paint-calculator-header">
+        <h1>{{ section.settings.title }}</h1>
+        <a href="#">
+          {% render 'icon-paint' %}
+        </a>
+      </div>
+    {% endif %}
+    <div class="paint-calculator_content">
+      <div class="box">
+        <div>
+          <label class="gush-font-p2" for="floor area">Your Floor Area</label>
+          <div class="number-input gush-font-h3">
+            <input type="text" id="floorArea" name="floor area" placeholder="0">
+            <span>sqft</span>
+          </div>
+        </div>
+        <div class="calculate-button mobile">
+          {% render 'icon-arrow-right-white' %}
+        </div>
+      </div>
+    </div>
+    <div class="double-arrow">
+      {% render 'icon-double-arrow' %}
+    </div>
+    <div class="required-boxes">
+      <div class="box">
+        <p class="gush-font-p2">Paint</p>
+        <h3 class="gush-font-h3"><span class="paint-required">0</span>L</h3>
+      </div>
+      <div class="box">
+        <p class="gush-font-p2">Primer</p>
+        <h3 class="gush-font-h3"><span class="sealer-required">0</span>L</h3>
+      </div>
+    </div>
+    <div class="calculate-button desktop">
+      {% render 'icon-arrow-right-white' %}
+    </div>
+  </div>
 </div>
-			<div class="calculate-button mobile">
-				{%render 'icon-arrow-right-white'%}
-			</div>
-	
-	</div>
-		</div>
-	<div class="double-arrow">
-		{% render 'icon-double-arrow' %}
-	</div>
-	<div class="required-boxes">
-	<div class="box">
-		<p class="gush-font-p2">Paint</p>
-		<h3 class="gush-font-h3"><span class="paint-required">0</span>L</h3>
-	</div>
-	<div class="box">
-		<p class="gush-font-p2">Primer</p>
-		<h3  class="gush-font-h3"><span class="sealer-required">0</span>L</h3>
-	</div>
-</div>
-	<div class="calculate-button desktop">
-		{%render 'icon-arrow-right-white'%}
-	</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
 
 {% schema %}
 {
 "name": "Paint Calculator",
 "tag": "section",
 "settings": [
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Page Title",
+  "default": "Paint Calculator"
+  }
 ],
 "presets": [
 {
