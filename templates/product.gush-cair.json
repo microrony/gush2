@@ -82,6 +82,7 @@
       "blocks": {
         "a2f67ce1-555b-41e9-9269-54303cbfab3f": {
           "type": "product-info",
+          "disabled": true,
           "settings": {
             "title": "Washable",
             "lottiefile": "freshair v2.json",
@@ -127,6 +128,14 @@
             "lottiefile": "toxic-free.json",
             "tabdesc": "Safer paints for both you and the Earth. Made with non-toxic materials and minimised carbon emission manufacturing."
           }
+        },
+        "b0063e69-5b07-4ab1-aee2-6f890b5a2ee7": {
+          "type": "product-info",
+          "settings": {
+            "title": "Humidity control",
+            "lottiefile": "",
+            "tabdesc": ""
+          }
         }
       },
       "block_order": [
@@ -135,7 +144,8 @@
         "112cf32c-7d96-4895-9044-93011c80c682",
         "b0107315-38cb-46be-b65f-c46767432f8b",
         "6811cffd-cbe8-4e0c-8a98-8f3951a79238",
-        "390ba101-3199-4d49-a9ee-8611855b8a9c"
+        "390ba101-3199-4d49-a9ee-8611855b8a9c",
+        "b0063e69-5b07-4ab1-aee2-6f890b5a2ee7"
       ],
       "settings": {
         "heading": "Features",
