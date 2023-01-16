@@ -54,12 +54,12 @@
     "165276794068d36259": {
       "type": "about-product",
       "settings": {
-        "heading": "In Gush, \nyou can trust; \nno spills or \nsplatters.",
+        "heading": "In Gush\nyou can trust; \nno spills or \nsplatters.",
         "color": "#ff5500",
         "image1": "shopify:\/\/shop_images\/Frame_2324.png",
         "svg1": "Paint-Bucket.svg",
         "heading1": "Dedicated painters",
-        "text1": "Our in-house painters are seasoned professionals. Not a nook or cranny to be missed",
+        "text1": "Our in-house painters are seasoned professionals. Not a nook or cranny to be missed.",
         "image2": "shopify:\/\/shop_images\/image_2022-12-01_110738453.png",
         "svg2": "Location-Pin.svg",
         "heading2": "From start to finish",
@@ -67,7 +67,7 @@
         "image3": "shopify:\/\/shop_images\/image_2022-12-01_110759419.png",
         "svg3": "Settings.svg",
         "heading3": "Flexible packages",
-        "text3": "Get accurate quotations customized to your needs. Quality materials guaranteed.",
+        "text3": "Get accurate quotations customised to your needs. Quality materials guaranteed.",
         "icon-margin": 0,
         "page": "services"
       }
