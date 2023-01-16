@@ -162,7 +162,7 @@
           "type": "the-solution-block",
           "settings": {
             "title": "Clean air, 24\/7",
-            "description": "Our air-purifying features operate even without light, protecting your air day & night",
+            "description": "Our air-purifying feature operates without light – protecting you all day.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_134633670.png",
             "svg": "Frame 332 Air.svg",
             "lottie_file_name": "not-selected"
@@ -243,7 +243,7 @@
             "item_1": "Benzene",
             "item_2": "Toulene",
             "item_3": "Formaldehyde",
-            "short_description": "Our GPC breaks down 99% of VOCs and deodorizes\nyour space of chemical fumes, within 21 hours.",
+            "short_description": "Our GPC breaks down 99% of VOCs and deodorises\nyour space of chemical fumes, within 21 hours.",
             "tested_by": "Test conducted by TUV SUD PSB",
             "tested_by_url": ""
           }
