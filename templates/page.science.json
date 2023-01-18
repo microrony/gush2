@@ -141,7 +141,7 @@
         "c5f3fb64-36db-4528-a100-9b63aa56f3d8": {
           "type": "the-solution-block",
           "settings": {
-            "title": "Doesn’t use energy",
+            "title": "Energy saving",
             "description": "Unlike air purifiers, Gush paints remove pollutants without any electrical costs.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_134604585.png",
             "svg": "Frame 332Energy .svg",
@@ -162,7 +162,7 @@
           "type": "the-solution-block",
           "settings": {
             "title": "Clean air, 24\/7",
-            "description": "Our air-purifying feature operates without light – protecting you all day.",
+            "description": "No light necessary to remove pollutants from your air. We’ve got you round the clock.",
             "image": "shopify:\/\/shop_images\/image_2022-12-02_134633670.png",
             "svg": "Frame 332 Air.svg",
             "lottie_file_name": "not-selected"
