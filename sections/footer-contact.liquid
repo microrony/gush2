@@ -160,7 +160,7 @@
               name="contact[project]"
             >
               <option disabled selected value>-- select a project --</option>
-              {% for block in project_blocks %}
+              {% for block in section.blocks %}
                 <option value="{{ block.settings.projectname}}">{{ block.settings.projectname}}</option>
               {% endfor %}
             </select>
