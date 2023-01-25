@@ -1,7 +1,10 @@
 {
   "sections": {
     "main": {
-      "type": "paint-calculator"
+      "type": "paint-calculator",
+      "settings": {
+        "title": "Paint calculator"
+      }
     }
   },
   "order": [
