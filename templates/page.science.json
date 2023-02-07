@@ -288,7 +288,7 @@
           "type": "analysis",
           "settings": {
             "title": "Air quality",
-            "text": "CO2 Analysis",
+            "text": "CH20 Analysis",
             "second_image": "shopify:\/\/shop_images\/Group_1939.png",
             "svg_file_name": "co2-analysis",
             "lottie_file_name": "co2-analysis.json",
