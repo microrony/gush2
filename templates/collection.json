@@ -14,77 +14,89 @@
         "f356a29e-f088-47ec-9aa3-ff89d4edb0bd": {
           "type": "text_block",
           "settings": {
-            "tab_title": "Air-purifying"
+            "tab_title": "Our paints are packed with <b>6 features in 1 tub<\/b> — air-purifying, anti-bacterial, anti-moulding, odourless and toxic-free. For a washable variant, go for <b> Gush Cair Fresh <\/b>. If you’re into humidity-control, <b> Gush Cair<\/b> is for you. Remember to seal your walls with <b> Gush Prepair <\/b> first. Now sit back, and browse colours that’ll define your world for years to come. "
           }
         },
         "40874156-9e14-4441-a824-c4b01dfde99c": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "|"
           }
         },
         "18efb770-1e31-4d04-a288-99f10754c721": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "Anti-bacterial"
           }
         },
         "02f13b88-0429-4895-99b2-cbd58068bda3": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "|"
           }
         },
         "18576198-bef6-4d3f-ae3c-f011ca1817b5": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "Anti-moulding"
           }
         },
         "19283c66-e805-4329-a0e3-8066f12fbe65": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "|"
           }
         },
         "b743b736-b96e-4eaa-a87a-1a0cd32b1364": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "Odourless"
           }
         },
         "be9fc5dc-1360-42b8-b2de-218da67bbb92": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "|"
           }
         },
         "6430aedf-fc19-4c36-a351-f1169689b668": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "Toxic-free"
           }
         },
         "916c1141-3d1b-4d03-aabf-6f1753b56c0e": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "|"
           }
         },
         "4a87a865-f341-43e0-9c08-ca52f3f66e10": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "Washable (Cair Fresh)"
           }
         },
         "df2a9d7e-0fd1-4613-ace9-114c22451326": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "|"
           }
         },
         "0c8ebd4a-72b2-460e-8016-898c033c0c8f": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "tab_title": "Humidity control (Cair)"
           }
