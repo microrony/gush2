@@ -350,6 +350,15 @@
             "title": "Is the paint safe for people with asthma or respiratory illnesses?",
             "answer": "Yes, Gush paints are odourless and do not emit any toxic fumes."
           }
+        },
+        "8326bdf4-5ecb-4afe-aaa0-f153cc4de69c": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Services",
+            "type": "General",
+            "title": "Do gush provide paint services?",
+            "answer": "Yes, we do provide Paint services. For more information please click"
+          }
         }
       },
       "block_order": [
@@ -358,7 +367,8 @@
         "c616e671-8c45-40c8-a832-238d75182408",
         "5be85fb5-cec5-43f0-a9be-e1ebec60d495",
         "382bc715-5759-4476-908f-c8092d24fe64",
-        "16321f6a-839f-4e34-8eb6-5673561d2320"
+        "16321f6a-839f-4e34-8eb6-5673561d2320",
+        "8326bdf4-5ecb-4afe-aaa0-f153cc4de69c"
       ],
       "settings": {
         "heading": "FAQs",
