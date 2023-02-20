@@ -61,12 +61,6 @@
         "enable_video_looping": false
       }
     },
-    "8f160723-c6c8-4f36-a0d1-49278bf96da2": {
-      "type": "paint-calculator",
-      "settings": {
-        "title": "Paint Calculator"
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -299,7 +293,6 @@
   },
   "order": [
     "main",
-    "8f160723-c6c8-4f36-a0d1-49278bf96da2",
     "product-recommendations",
     "1652439533f0dc6359",
     "16524396805057076a",
