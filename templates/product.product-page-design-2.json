@@ -41,6 +41,12 @@
           "settings": {
             "show_dynamic_checkout": true
           }
+        },
+        "eff3ac3f-2cf3-41fc-a625-0d21c29c4148": {
+          "type": "text",
+          "settings": {
+            "text": "Don't know how much paint to use? Use our paint calculator"
+          }
         }
       },
       "block_order": [
@@ -50,7 +56,8 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "eff3ac3f-2cf3-41fc-a625-0d21c29c4148"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -59,6 +66,43 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false
+      }
+    },
+    "353df700-1ccc-42de-8ac7-5685e5309e77": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Don't know how much paint you need?",
+            "heading_size": "h2"
+          }
+        },
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The only thing you need to know is how much area you need to paint.<\/p>"
+          }
+        },
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Calculate paint price",
+            "button_link": "shopify:\/\/pages\/calculator",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-0",
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-1",
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "product-recommendations": {
@@ -200,12 +244,6 @@
         "heading": "Us vs Them"
       }
     },
-    "8b375d29-2038-4df2-93cf-87372fc8f805": {
-      "type": "paint-calculator",
-      "settings": {
-        "title": "Paint Calculator"
-      }
-    },
     "72a7f502-2042-444c-a966-2f640303a58c": {
       "type": "section-stamped-review",
       "blocks": {
@@ -295,17 +333,50 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "25ef86db-3c87-45bf-ba60-d350c9cd2d15": {
+      "type": "faq",
+      "blocks": {
+        "04b3ef4e-2f6c-4e69-99d7-ea39be1fec5d": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "What’s the difference between Cair and Cair Fresh?",
+            "answer": "Both paints remove pollutants and have anti-molding capabilities, but the paint types each have their own unique feature.\n\nGush Air-purifying paint, Cair, has a humidity control feature that maintains a healthy moisture level in your room.\n\nGush Air-purifying and Washable paint, Cair Fresh lets you easily wipe off grime from your surfaces without damaging the paint coat.\n\nWe recommend using the Cair for ceilings or areas with a lot of moisture, and Cair Fresh for walls and areas prone to dirt, stains and marks."
+          }
+        },
+        "49a4c742-49d1-4923-aa58-7cc8db5f0a9d": {
+          "type": "faqContent",
+          "settings": {
+            "category": "",
+            "type": "",
+            "title": "",
+            "answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "04b3ef4e-2f6c-4e69-99d7-ea39be1fec5d",
+        "49a4c742-49d1-4923-aa58-7cc8db5f0a9d"
+      ],
+      "settings": {
+        "heading": "FAQs",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
+    "353df700-1ccc-42de-8ac7-5685e5309e77",
     "product-recommendations",
     "1652439533f0dc6359",
     "16524396805057076a",
     "1652439903eeaf17c8",
-    "8b375d29-2038-4df2-93cf-87372fc8f805",
     "72a7f502-2042-444c-a966-2f640303a58c",
     "063d76fb-c066-4f39-9cea-762b20b351cd",
-    "c230076b-9bcf-4a9d-a2de-27bc61ceed6d"
+    "c230076b-9bcf-4a9d-a2de-27bc61ceed6d",
+    "25ef86db-3c87-45bf-ba60-d350c9cd2d15"
   ]
 }
