@@ -294,6 +294,78 @@
         "padding_bottom": 36
       }
     },
+    "25ef86db-3c87-45bf-ba60-d350c9cd2d15": {
+      "type": "faq",
+      "blocks": {
+        "04b3ef4e-2f6c-4e69-99d7-ea39be1fec5d": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "What’s the difference between Cair and Cair Fresh?",
+            "answer": "Both paints remove pollutants and have anti-molding capabilities, but the paint types each have their own unique feature.\n\nGush Air-purifying paint, Cair, has a humidity control feature that maintains a healthy moisture level in your room.\n\nGush Air-purifying and Washable paint, Cair Fresh lets you easily wipe off grime from your surfaces without damaging the paint coat.\n\nWe recommend using the Cair for ceilings or areas with a lot of moisture, and Cair Fresh for walls and areas prone to dirt, stains and marks."
+          }
+        },
+        "49a4c742-49d1-4923-aa58-7cc8db5f0a9d": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "Do you provide colour books?",
+            "answer": "We don’t have a colour book for our online range, but you can get the sample sheets of the colours you’re interested in. You can do so by selecting ‘Sample Sheets’ under the product listing."
+          }
+        },
+        "c616e671-8c45-40c8-a832-238d75182408": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "Safety",
+            "title": "Is it safe to stay in the house while the painting is done?",
+            "answer": "Yes, that’s the beauty of using our odourless, toxic-free paints. It’s safe for pregnant women and children to stay as well. You can stay in another room while the painting is done, so the wet walls don’t get touched."
+          }
+        },
+        "5be85fb5-cec5-43f0-a9be-e1ebec60d495": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "What material surface can Gush Air-purifying interior paint be applied to?",
+            "answer": "Wood\nApplication on wooden surfaces is possible, but not recommended. Our paint is unable to replicate the natural beauty of wooden surfaces due to its matte-texture finish. If you wish to paint gush on wood, do apply a layer of sealer first.\n\nPlastic\nApplication on plastic surfaces is possible, but not recommended. If you wish to paint gush on plastic, apply a layer of sealer first to help the paint coat bind to the surface better.\n\nMetal\nGush interior paints should not be applied to metal surfaces as it is a water-based, latex paint that may cause the metal surface to rust.\n\nExterior walls\nIt should not be used as a replacement for exterior paint. As Gush interior paints are specifically formulated for interior environments, they do not perform the same in outdoor conditions."
+          }
+        },
+        "382bc715-5759-4476-908f-c8092d24fe64": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "Do I need to use a sealer?",
+            "answer": "Using a sealer neutralises existing alkalis on the wall which typically causes paint to peel, discolour or crack. It also seals off excess moisture trapped within the wall, preventing mold and efflorescence growth. Sealer also makes the paint adhere to the wall better.\n\nWe always recommend using sealer, especially if you face any of these situations:\n\nIf are looking for a sealer, you can visit https:\/\/gush.earth\/products\/prepair-1\n\n- Wall-related issues like stubborn marks due to stains, grease or patched-up areas\n- If the wall was previously painted with oil-based, emulsion paint\n- You’re changing the wall from a dark to light colour\n- This is the first paint layer being applied to a new wall\n- It has been five years since the wall was last painted"
+          }
+        },
+        "16321f6a-839f-4e34-8eb6-5673561d2320": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "Safety",
+            "title": "Is the paint safe for people with asthma or respiratory illnesses?",
+            "answer": "Yes, Gush paints are odourless and do not emit any toxic fumes."
+          }
+        }
+      },
+      "block_order": [
+        "04b3ef4e-2f6c-4e69-99d7-ea39be1fec5d",
+        "49a4c742-49d1-4923-aa58-7cc8db5f0a9d",
+        "c616e671-8c45-40c8-a832-238d75182408",
+        "5be85fb5-cec5-43f0-a9be-e1ebec60d495",
+        "382bc715-5759-4476-908f-c8092d24fe64",
+        "16321f6a-839f-4e34-8eb6-5673561d2320"
+      ],
+      "settings": {
+        "heading": "FAQs",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "c230076b-9bcf-4a9d-a2de-27bc61ceed6d": {
       "type": "collection-list",
       "blocks": {
@@ -333,48 +405,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "25ef86db-3c87-45bf-ba60-d350c9cd2d15": {
-      "type": "faq",
-      "blocks": {
-        "04b3ef4e-2f6c-4e69-99d7-ea39be1fec5d": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Product",
-            "type": "General",
-            "title": "What’s the difference between Cair and Cair Fresh?",
-            "answer": "Both paints remove pollutants and have anti-molding capabilities, but the paint types each have their own unique feature.\n\nGush Air-purifying paint, Cair, has a humidity control feature that maintains a healthy moisture level in your room.\n\nGush Air-purifying and Washable paint, Cair Fresh lets you easily wipe off grime from your surfaces without damaging the paint coat.\n\nWe recommend using the Cair for ceilings or areas with a lot of moisture, and Cair Fresh for walls and areas prone to dirt, stains and marks."
-          }
-        },
-        "49a4c742-49d1-4923-aa58-7cc8db5f0a9d": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Product",
-            "type": "General",
-            "title": "Do you provide colour books?",
-            "answer": "We don’t have a colour book for our online range, but you can get the sample sheets of the colours you’re interested in. You can do so by selecting ‘Sample Sheets’ under the product listing."
-          }
-        },
-        "c616e671-8c45-40c8-a832-238d75182408": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Product",
-            "type": "General",
-            "title": "Is it safe to stay in the house while the painting is done?",
-            "answer": "Yes, that’s the beauty of using our odourless, toxic-free paints. It’s safe for pregnant women and children to stay as well. You can stay in another room while the painting is done, so the wet walls don’t get touched."
-          }
-        }
-      },
-      "block_order": [
-        "04b3ef4e-2f6c-4e69-99d7-ea39be1fec5d",
-        "49a4c742-49d1-4923-aa58-7cc8db5f0a9d",
-        "c616e671-8c45-40c8-a832-238d75182408"
-      ],
-      "settings": {
-        "heading": "FAQs",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -386,7 +416,7 @@
     "1652439903eeaf17c8",
     "72a7f502-2042-444c-a966-2f640303a58c",
     "063d76fb-c066-4f39-9cea-762b20b351cd",
-    "c230076b-9bcf-4a9d-a2de-27bc61ceed6d",
-    "25ef86db-3c87-45bf-ba60-d350c9cd2d15"
+    "25ef86db-3c87-45bf-ba60-d350c9cd2d15",
+    "c230076b-9bcf-4a9d-a2de-27bc61ceed6d"
   ]
 }
