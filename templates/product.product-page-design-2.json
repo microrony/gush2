@@ -357,7 +357,7 @@
             "category": "Services",
             "type": "General",
             "title": "Do gush provide paint services?",
-            "answer": "Yes, we do provide Paint services. For more information please click"
+            "answer": "Yes, we do provide Paint services. For more information please click <a href=\"\/pages\/services\">here<\/a>*"
           }
         }
       },
