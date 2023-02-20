@@ -100,7 +100,7 @@
         "112cf32c-7d96-4895-9044-93011c80c682": {
           "type": "product-info",
           "settings": {
-            "title": "Anti-Moulding",
+            "title": "Anti-moulding",
             "lottiefile": "Anti Molding.json",
             "tabdesc": "Say no to mould. Antimicrobial agents in our paint break down mould spores, stopping them in their tracks."
           }
@@ -108,7 +108,7 @@
         "b0107315-38cb-46be-b65f-c46767432f8b": {
           "type": "product-info",
           "settings": {
-            "title": "Anti-Bacterial",
+            "title": "Anti-bacterial",
             "lottiefile": "anti-bacteria.json",
             "tabdesc": "Stay safe and healthy.    Microscopic tetrahedral structures in our paint effectively ruptures 99% of bacteria including E.Coli and S.Aureus."
           }
