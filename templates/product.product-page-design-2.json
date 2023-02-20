@@ -101,8 +101,8 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 88
       }
     },
     "product-recommendations": {
@@ -349,16 +349,26 @@
         "49a4c742-49d1-4923-aa58-7cc8db5f0a9d": {
           "type": "faqContent",
           "settings": {
-            "category": "",
-            "type": "",
-            "title": "",
-            "answer": ""
+            "category": "Product",
+            "type": "General",
+            "title": "Do you provide colour books?",
+            "answer": "We don’t have a colour book for our online range, but you can get the sample sheets of the colours you’re interested in. You can do so by selecting ‘Sample Sheets’ under the product listing."
+          }
+        },
+        "c616e671-8c45-40c8-a832-238d75182408": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "Is it safe to stay in the house while the painting is done?",
+            "answer": "Yes, that’s the beauty of using our odourless, toxic-free paints. It’s safe for pregnant women and children to stay as well. You can stay in another room while the painting is done, so the wet walls don’t get touched."
           }
         }
       },
       "block_order": [
         "04b3ef4e-2f6c-4e69-99d7-ea39be1fec5d",
-        "49a4c742-49d1-4923-aa58-7cc8db5f0a9d"
+        "49a4c742-49d1-4923-aa58-7cc8db5f0a9d",
+        "c616e671-8c45-40c8-a832-238d75182408"
       ],
       "settings": {
         "heading": "FAQs",
