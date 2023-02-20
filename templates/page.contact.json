@@ -10,9 +10,20 @@
     },
     "898021df-5980-4d42-be39-8d4a568763d5": {
       "type": "footer-contact",
+      "blocks": {
+        "4ca43a70-2e63-4c9f-8891-1fcccda34fc1": {
+          "type": "project_block",
+          "settings": {
+            "projectname": ""
+          }
+        }
+      },
+      "block_order": [
+        "4ca43a70-2e63-4c9f-8891-1fcccda34fc1"
+      ],
       "settings": {
         "title": "Contact us",
-        "heading": "200 Braddell Road, #02-09 BCA Academy, Singapore 579700\n66929000\nhello@gush.earth",
+        "heading": "200 Braddell Road, #02-09 BCA Academy, Singapore 579700\n66929000\nhello@gush.earth\n\n<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3988.7187812345505!2d103.85405272402569!3d1.3451675588474812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da195c0365c903%3A0xa071d41a4bf43583!2sGush!5e0!3m2!1sen!2ssg!4v1676883891661!5m2!1sen!2ssg\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>",
         "btn_text": "Contact Us",
         "btn_type": "secondary",
         "page_name": "home"
