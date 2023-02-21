@@ -294,6 +294,46 @@
         "padding_bottom": 36
       }
     },
+    "c230076b-9bcf-4a9d-a2de-27bc61ceed6d": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "orange"
+          }
+        },
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "yellow"
+          }
+        },
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brown"
+          }
+        }
+      },
+      "block_order": [
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-0",
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-1",
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-2"
+      ],
+      "settings": {
+        "title": "Interested in other colors?",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "25ef86db-3c87-45bf-ba60-d350c9cd2d15": {
       "type": "faq",
       "blocks": {
@@ -375,46 +415,6 @@
         "padding_top": 100,
         "padding_bottom": 100
       }
-    },
-    "c230076b-9bcf-4a9d-a2de-27bc61ceed6d": {
-      "type": "collection-list",
-      "blocks": {
-        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "orange"
-          }
-        },
-        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "yellow"
-          }
-        },
-        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "brown"
-          }
-        }
-      },
-      "block_order": [
-        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-0",
-        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-1",
-        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-2"
-      ],
-      "settings": {
-        "title": "Interested in other colors?",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -426,7 +426,7 @@
     "1652439903eeaf17c8",
     "72a7f502-2042-444c-a966-2f640303a58c",
     "063d76fb-c066-4f39-9cea-762b20b351cd",
-    "25ef86db-3c87-45bf-ba60-d350c9cd2d15",
-    "c230076b-9bcf-4a9d-a2de-27bc61ceed6d"
+    "c230076b-9bcf-4a9d-a2de-27bc61ceed6d",
+    "25ef86db-3c87-45bf-ba60-d350c9cd2d15"
   ]
 }
