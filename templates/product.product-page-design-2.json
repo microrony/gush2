@@ -337,24 +337,6 @@
     "25ef86db-3c87-45bf-ba60-d350c9cd2d15": {
       "type": "faq",
       "blocks": {
-        "04b3ef4e-2f6c-4e69-99d7-ea39be1fec5d": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Product",
-            "type": "General",
-            "title": "What’s the difference between Cair and Cair Fresh?",
-            "answer": "Both paints remove pollutants and have anti-molding capabilities, but the paint types each have their own unique feature.\n\nGush Air-purifying paint, Cair, has a humidity control feature that maintains a healthy moisture level in your room.\n\nGush Air-purifying and Washable paint, Cair Fresh lets you easily wipe off grime from your surfaces without damaging the paint coat."
-          }
-        },
-        "49a4c742-49d1-4923-aa58-7cc8db5f0a9d": {
-          "type": "faqContent",
-          "settings": {
-            "category": "Product",
-            "type": "General",
-            "title": "Do you provide colour books?",
-            "answer": "We don’t have a colour book for our online range, but you can get the sample sheets of the colours you’re interested in. You can do so by selecting ‘Sample Sheets’ under the product listing."
-          }
-        },
         "c616e671-8c45-40c8-a832-238d75182408": {
           "type": "faqContent",
           "settings": {
@@ -379,7 +361,7 @@
             "category": "Product",
             "type": "General",
             "title": "Do I need to use a sealer?",
-            "answer": "Using a sealer neutralises existing alkalis on the wall which typically causes paint to peel, discolour or crack. It also seals off excess moisture trapped within the wall, preventing mold and efflorescence growth. Sealer also makes the paint adhere to the wall better.\n\nWe always recommend using sealer, especially if you face any of these situations:\n\nIf you are looking for a sealer, you can click <a href=\"\/products\/prepair-1\">here<\/a>*"
+            "answer": "Using a sealer neutralises existing alkalis on the wall which typically causes paint to peel, discolour or crack. It also seals off excess moisture trapped within the wall, preventing mold and efflorescence growth. Sealer also makes the paint adhere to the wall better.\n\nIf you are looking for a sealer, you can click <a href=\"\/products\/prepair-1\">here<\/a>*"
           }
         },
         "16321f6a-839f-4e34-8eb6-5673561d2320": {
@@ -399,16 +381,34 @@
             "title": "Do gush provide paint services?",
             "answer": "Yes, we do provide Paint services. For more information please click <a href=\"\/pages\/services\">here<\/a>*"
           }
+        },
+        "571a5ee5-0cfa-441f-823f-7a798097ca14": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "What’s the difference between Cair and Cair Fresh?",
+            "answer": "Both paints remove pollutants and have anti-molding capabilities, but the paint types each have their own unique feature.\n\nGush Air-purifying paint, Cair, has a humidity control feature that maintains a healthy moisture level in your room.\n\nGush Air-purifying and Washable paint, Cair Fresh lets you easily wipe off grime from your surfaces without damaging the paint coat."
+          }
+        },
+        "80c7c831-db63-4f7b-9daa-5f18acaa72be": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "Do you provide colour books?",
+            "answer": "We don’t have a colour book for our online range, but you can get the sample sheets of the colours you’re interested in. You can do so by selecting ‘Sample Sheets’ under the<a href=\"\/collections\/interior-paints\">Product listings<\/a>*."
+          }
         }
       },
       "block_order": [
-        "04b3ef4e-2f6c-4e69-99d7-ea39be1fec5d",
-        "49a4c742-49d1-4923-aa58-7cc8db5f0a9d",
         "c616e671-8c45-40c8-a832-238d75182408",
         "5be85fb5-cec5-43f0-a9be-e1ebec60d495",
         "382bc715-5759-4476-908f-c8092d24fe64",
         "16321f6a-839f-4e34-8eb6-5673561d2320",
-        "8326bdf4-5ecb-4afe-aaa0-f153cc4de69c"
+        "8326bdf4-5ecb-4afe-aaa0-f153cc4de69c",
+        "571a5ee5-0cfa-441f-823f-7a798097ca14",
+        "80c7c831-db63-4f7b-9daa-5f18acaa72be"
       ],
       "settings": {
         "heading": "FAQs",
