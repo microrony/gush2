@@ -55,7 +55,7 @@
             "category": "About Gush",
             "type": "Contact us",
             "title": "How can I contact Gush?",
-            "answer": "You can send us an email at hello@gush.earth."
+            "answer": "You can send us an email at <a href=\"mailto:hello@gush.earth\">hello@gush.earth<\/a>."
           }
         },
         "a558ef9f-633d-41cf-9482-302e4f20602c": {
