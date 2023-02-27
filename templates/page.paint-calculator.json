@@ -1,13 +1,61 @@
 {
   "sections": {
+    "7ccac43f-11eb-4936-b9d6-fe7db76a86de": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--15687894532289__7ccac43f-11eb-4936-b9d6-fe7db76a86de-167747716924ab90cf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quality in all quantities.",
+            "heading_size": "h2"
+          }
+        },
+        "template--15687894532289__7ccac43f-11eb-4936-b9d6-fe7db76a86de-167747716924ab90cf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No matter where you are in the research to painting pipeline, we’ve got you. <\/p><p>Type in the sqft of your space and find out how many litres of paint you’ll need. <br\/>Applicable to all paint variants — Gush Cair, Gush Cair Fresh and Gush Prepair. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15687894532289__7ccac43f-11eb-4936-b9d6-fe7db76a86de-167747716924ab90cf-0",
+        "template--15687894532289__7ccac43f-11eb-4936-b9d6-fe7db76a86de-167747716924ab90cf-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "8b8c441b-d51b-41a9-a465-5744dccceb86": {
+      "type": "parallel-text",
+      "settings": {
+        "title": "Quality in all quantities.",
+        "description": "No matter where you are in the research to painting pipeline, we’ve got you. \n\nType in the sqft of your space and find out how many litres of paint you’ll need. \n\nApplicable to all paint variants — Gush Cair, Gush Cair Fresh and Gush Prepair.",
+        "bg_color": "#ffffff",
+        "color": "#302112",
+        "margin_top": 50,
+        "margin_bottom": 50,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "page_name": "window_film_science"
+      }
+    },
     "main": {
       "type": "paint-calculator",
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "Paint calculator"
       }
     }
   },
   "order": [
+    "7ccac43f-11eb-4936-b9d6-fe7db76a86de",
+    "8b8c441b-d51b-41a9-a465-5744dccceb86",
     "main"
   ]
 }
