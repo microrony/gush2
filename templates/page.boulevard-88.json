@@ -175,6 +175,7 @@
     },
     "group_buy_slider": {
       "type": "group-buy-slider",
+      "disabled": true,
       "blocks": {
         "84e3d980-3f48-4b78-a811-3042f7d33808": {
           "type": "image",
@@ -217,6 +218,79 @@
       ],
       "settings": {
         "heading": "Ongoing projects"
+      }
+    },
+    "b68e2ab5-a921-40c7-8ec6-ce734910083e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16113211474113__b68e2ab5-a921-40c7-8ec6-ce734910083e-16777436739280daca-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/boulevard-88-level-2-patio.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "a6b8c2a2-3b77-4362-956e-6d13be111551": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/boulevard-88-main-building-hero-view.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--16113211474113__b68e2ab5-a921-40c7-8ec6-ce734910083e-16777436739280daca-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/boulevard-88-sky-gym.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16113211474113__b68e2ab5-a921-40c7-8ec6-ce734910083e-16777436739280daca-1",
+        "a6b8c2a2-3b77-4362-956e-6d13be111551",
+        "template--16113211474113__b68e2ab5-a921-40c7-8ec6-ce734910083e-16777436739280daca-0"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "58c42b95-bd00-4331-9e67-bc6b3c632d07": {
@@ -300,44 +374,23 @@
         "page_name": "group_buy"
       }
     },
-    "cb5e433c-c809-42c5-b549-a358067777a8": {
+    "1a67c434-6b6e-411f-94c7-d94d11654b8a": {
       "type": "footer-contact",
       "blocks": {
-        "2a0b528e-b2a1-40fc-8818-015c7253c8da": {
+        "b8484cad-a2ac-411f-af57-ee2e2f81f8a3": {
           "type": "project_block",
           "settings": {
-            "projectname": "Piermont Grand"
-          }
-        },
-        "fceb4c51-79fe-470f-9051-15213b61d021": {
-          "type": "project_block",
-          "settings": {
-            "projectname": "Parc Esta"
-          }
-        },
-        "3aa559d2-c5f6-4497-875d-4a5f9039f9db": {
-          "type": "project_block",
-          "settings": {
-            "projectname": "Jadescape"
-          }
-        },
-        "ade4b66a-9b3f-4b44-8aaa-bc4ef652483c": {
-          "type": "project_block",
-          "settings": {
-            "projectname": "Ubi Grove"
+            "projectname": "Boulevard 88"
           }
         }
       },
       "block_order": [
-        "2a0b528e-b2a1-40fc-8818-015c7253c8da",
-        "fceb4c51-79fe-470f-9051-15213b61d021",
-        "3aa559d2-c5f6-4497-875d-4a5f9039f9db",
-        "ade4b66a-9b3f-4b44-8aaa-bc4ef652483c"
+        "b8484cad-a2ac-411f-af57-ee2e2f81f8a3"
       ],
       "settings": {
         "title": "Ready to get started? Tell us your details and we’ll reach out to you directly.",
         "heading": "",
-        "btn_text": "Send enquiry",
+        "btn_text": "",
         "btn_type": "primary",
         "page_name": "group_buy"
       }
@@ -349,8 +402,9 @@
     "cdb51a37-bda3-4e98-9a91-3cfb474f2de8",
     "b985e53e-d67c-4cec-855b-ea3e6459c597",
     "group_buy_slider",
+    "b68e2ab5-a921-40c7-8ec6-ce734910083e",
     "58c42b95-bd00-4331-9e67-bc6b3c632d07",
     "image_with_text_group_buy",
-    "cb5e433c-c809-42c5-b549-a358067777a8"
+    "1a67c434-6b6e-411f-94c7-d94d11654b8a"
   ]
 }
