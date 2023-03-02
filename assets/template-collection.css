@@ -3,7 +3,6 @@
     gap: 15px;
   }
   .collection-tabs__name{
-    white-space: nowrap;
     font-size: 10px !important;
     margin-bottom: 25px !important;
   }

@@ -1,0 +1,432 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-gush",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "caption": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "8d33aa52-1e56-49a0-ab5c-9774dcf7b6a0": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "eff3ac3f-2cf3-41fc-a625-0d21c29c4148": {
+          "type": "text",
+          "settings": {
+            "text": "Don't know how much paint to use? Use our paint calculator"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "caption",
+        "8d33aa52-1e56-49a0-ab5c-9774dcf7b6a0",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "eff3ac3f-2cf3-41fc-a625-0d21c29c4148"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false
+      }
+    },
+    "353df700-1ccc-42de-8ac7-5685e5309e77": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Don't know how much paint you need?",
+            "heading_size": "h2"
+          }
+        },
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The only thing you need to know is how much area you need to paint.<\/p>"
+          }
+        },
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Calculate paint price",
+            "button_link": "shopify:\/\/pages\/calculator",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-0",
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-1",
+        "template--16103600652481__353df700-1ccc-42de-8ac7-5685e5309e77-167687916160a252fe-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 88
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "1652439533f0dc6359": {
+      "type": "product-info",
+      "blocks": {
+        "a2f67ce1-555b-41e9-9269-54303cbfab3f": {
+          "type": "product-info",
+          "settings": {
+            "title": "Stain-resistant",
+            "lottiefile": "freshair v2.json",
+            "tabdesc": "Dirt and stain-resistant. Had an oopsie? Simply grab a cloth and wipe for lasting wall freshness. "
+          }
+        },
+        "e6dd9580-f6f0-45da-820c-a37f542a7b94": {
+          "type": "product-info",
+          "settings": {
+            "title": "Air-purifying",
+            "lottiefile": "air-purifying.json",
+            "tabdesc": "Now you can breathe easy. Purify your air of toxic VOCs, including formaldehyde, benzene and toluene."
+          }
+        },
+        "112cf32c-7d96-4895-9044-93011c80c682": {
+          "type": "product-info",
+          "settings": {
+            "title": "Anti-moulding",
+            "lottiefile": "Anti Molding.json",
+            "tabdesc": "Say no to mould. Antimicrobial agents in our paint break down mould spores, stopping them in their tracks."
+          }
+        },
+        "b0107315-38cb-46be-b65f-c46767432f8b": {
+          "type": "product-info",
+          "settings": {
+            "title": "Anti-bacterial",
+            "lottiefile": "anti-bacteria.json",
+            "tabdesc": "Stay safe and healthy.    Microscopic tetrahedral structures in our paint effectively ruptures 99% of bacteria including E.Coli and S.Aureus."
+          }
+        },
+        "6811cffd-cbe8-4e0c-8a98-8f3951a79238": {
+          "type": "product-info",
+          "settings": {
+            "title": "Odourless",
+            "lottiefile": "odourless v2.json",
+            "tabdesc": "Enjoy a smell-free experience void of toxic fumes. All thanks to our VOC-free formulation."
+          }
+        },
+        "390ba101-3199-4d49-a9ee-8611855b8a9c": {
+          "type": "product-info",
+          "settings": {
+            "title": "Toxic-free",
+            "lottiefile": "toxic-free.json",
+            "tabdesc": "Safer paints for both you and the Earth. Made with non-toxic materials and minimised carbon emission manufacturing."
+          }
+        }
+      },
+      "block_order": [
+        "a2f67ce1-555b-41e9-9269-54303cbfab3f",
+        "e6dd9580-f6f0-45da-820c-a37f542a7b94",
+        "112cf32c-7d96-4895-9044-93011c80c682",
+        "b0107315-38cb-46be-b65f-c46767432f8b",
+        "6811cffd-cbe8-4e0c-8a98-8f3951a79238",
+        "390ba101-3199-4d49-a9ee-8611855b8a9c"
+      ],
+      "settings": {
+        "heading": "Features",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "16524396805057076a": {
+      "type": "ingredient",
+      "blocks": {
+        "cdfe81e2-cf4d-472e-bec0-8ab9619936b7": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/image_2022-11-29_081952029.png",
+            "title": "Gush proprietary catalyst",
+            "faq_quality": "",
+            "faq_ans": "Upon contact, this nifty stimulant excites wall surfaces, causing them to break down pollutants to just harmless water and carbon dioxide. 99% of pollutants are removed in just 21 hours."
+          }
+        },
+        "b3bf5e61-3ce4-49c8-a560-d9462466cd1b": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify:\/\/shop_images\/image_2022-11-29_082017880.png",
+            "title": "Gush absorption element",
+            "faq_quality": "",
+            "faq_ans": "Our paint has a unique porous coating that absorbs moisture in the air and spreads it evenly across the surface for speedy evaporation. Keeping the indoors comfortably dry."
+          }
+        }
+      },
+      "block_order": [
+        "cdfe81e2-cf4d-472e-bec0-8ab9619936b7",
+        "b3bf5e61-3ce4-49c8-a560-d9462466cd1b"
+      ],
+      "settings": {
+        "color": "#00ff00",
+        "heading": "Seeking the secret?  It’s simply Science.",
+        "sub-heading": "",
+        "link": "<p><a href=\"\/blogs\/science\/paint-formulation\" target=\"_blank\" title=\"A deep dive into our paint formulation\">Full ingredient details here.<\/a><\/p>",
+        "btn_text": "",
+        "btn_url": "",
+        "sb-heading": "",
+        "radius": 49,
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "show_sub_title": true,
+        "group_buy_page": false,
+        "page": "product"
+      }
+    },
+    "1652439903eeaf17c8": {
+      "type": "comparison",
+      "settings": {
+        "section-title": "Gush is greener \non every side.",
+        "section-des": "Who ever thought wellness could come in a larger-than-pint size? 6 features packed in one tub. Better for you, better for the world. \n<br> <br>\n\n¹ Gush Cair Fresh <br>\n² Gush Cair",
+        "circuler-img1": "shopify:\/\/shop_images\/Group_1117_1.png",
+        "svg1": "Group 1117 (1).svg",
+        "circuler-img2": "shopify:\/\/shop_images\/Group_2487_2.png",
+        "svg2": "Group 2487 (1).svg",
+        "heading-img1": "Other paints",
+        "heading-img2": "Gush",
+        "heading": "Us vs Them"
+      }
+    },
+    "72a7f502-2042-444c-a966-2f640303a58c": {
+      "type": "section-stamped-review",
+      "blocks": {
+        "86efca96-87a5-4590-bcc1-603732a4f205": {
+          "type": "review_category",
+          "settings": {
+            "title": "All Reviews"
+          }
+        },
+        "41f19529-855a-4c94-b201-8d22e4acfb83": {
+          "type": "review_category",
+          "settings": {
+            "title": "Services"
+          }
+        },
+        "eb811e8b-33a4-4246-ae7e-0d1fd358b67a": {
+          "type": "review_category",
+          "settings": {
+            "title": "Products"
+          }
+        }
+      },
+      "block_order": [
+        "86efca96-87a5-4590-bcc1-603732a4f205",
+        "41f19529-855a-4c94-b201-8d22e4acfb83",
+        "eb811e8b-33a4-4246-ae7e-0d1fd358b67a"
+      ],
+      "settings": {
+      }
+    },
+    "063d76fb-c066-4f39-9cea-762b20b351cd": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Purchased together",
+        "heading_size": "h2",
+        "collection": "paint-preparation",
+        "products_to_show": 4,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c230076b-9bcf-4a9d-a2de-27bc61ceed6d": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "orange"
+          }
+        },
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "yellow"
+          }
+        },
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brown"
+          }
+        }
+      },
+      "block_order": [
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-0",
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-1",
+        "template--16103600652481__c230076b-9bcf-4a9d-a2de-27bc61ceed6d-1676877706243f3efa-2"
+      ],
+      "settings": {
+        "title": "Interested in other colors?",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "25ef86db-3c87-45bf-ba60-d350c9cd2d15": {
+      "type": "faq",
+      "blocks": {
+        "c616e671-8c45-40c8-a832-238d75182408": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "Safety",
+            "title": "Is it safe to stay in the house while the painting is done?",
+            "answer": "Yes, that’s the beauty of using our odourless, toxic-free paints. It’s safe for pregnant women and children to stay as well. You can stay in another room while the painting is done, so the wet walls don’t get touched."
+          }
+        },
+        "5be85fb5-cec5-43f0-a9be-e1ebec60d495": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "What material surface can Gush Air-purifying interior paint be applied to?",
+            "answer": "Wood\nApplication on wooden surfaces is possible, but not recommended. Our paint is unable to replicate the natural beauty of wooden surfaces due to its matte-texture finish. If you wish to paint gush on wood, do apply a layer of sealer first.\n\nPlastic\nApplication on plastic surfaces is possible, but not recommended. If you wish to paint gush on plastic, apply a layer of sealer first to help the paint coat bind to the surface better.\n\nMetal\nGush interior paints should not be applied to metal surfaces as it is a water-based, latex paint that may cause the metal surface to rust."
+          }
+        },
+        "382bc715-5759-4476-908f-c8092d24fe64": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "Do I need to use a sealer?",
+            "answer": "Using a sealer neutralises existing alkalis on the wall which typically causes paint to peel, discolour or crack. It also seals off excess moisture trapped within the wall, preventing mold and efflorescence growth. Sealer also makes the paint adhere to the wall better.\n\nKnow more about <a href=\"\/products\/prepair-1\/\">Gush sealer<\/a>"
+          }
+        },
+        "16321f6a-839f-4e34-8eb6-5673561d2320": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "Safety",
+            "title": "Is the paint safe for people with asthma or respiratory illnesses?",
+            "answer": "Yes, Gush paints are odourless and do not emit any toxic fumes.\n\nKnow more about the <a href=\"\/pages\/science\">science<\/a> behind."
+          }
+        },
+        "8326bdf4-5ecb-4afe-aaa0-f153cc4de69c": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Services",
+            "type": "General",
+            "title": "Do gush provide paint services?",
+            "answer": "Yes, we do provide Paint services. Please drop us an <a href=\"\/pages\/services\">enquiry<\/a> and we will reach out to you."
+          }
+        },
+        "571a5ee5-0cfa-441f-823f-7a798097ca14": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "What’s the difference between Cair and Cair Fresh?",
+            "answer": "Both paints remove pollutants and have anti-molding capabilities, but the paint types each have their own unique feature.\n\nGush Air-purifying paint, Cair, has a humidity control feature that maintains a healthy moisture level in your room.\n\nGush Air-purifying and Washable paint, Cair Fresh lets you easily wipe off grime from your surfaces without damaging the paint coat."
+          }
+        },
+        "80c7c831-db63-4f7b-9daa-5f18acaa72be": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Product",
+            "type": "General",
+            "title": "Do you provide colour books?",
+            "answer": "We don’t have a colour book for our online range, but you can get the sample sheets of the colours you’re interested in. You can do so by selecting ‘Sample Sheets’ under the <a href=\"\/collections\/interior-paints\">Product listings<\/a>*."
+          }
+        }
+      },
+      "block_order": [
+        "c616e671-8c45-40c8-a832-238d75182408",
+        "5be85fb5-cec5-43f0-a9be-e1ebec60d495",
+        "382bc715-5759-4476-908f-c8092d24fe64",
+        "16321f6a-839f-4e34-8eb6-5673561d2320",
+        "8326bdf4-5ecb-4afe-aaa0-f153cc4de69c",
+        "571a5ee5-0cfa-441f-823f-7a798097ca14",
+        "80c7c831-db63-4f7b-9daa-5f18acaa72be"
+      ],
+      "settings": {
+        "heading": "FAQs",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "353df700-1ccc-42de-8ac7-5685e5309e77",
+    "product-recommendations",
+    "1652439533f0dc6359",
+    "16524396805057076a",
+    "1652439903eeaf17c8",
+    "72a7f502-2042-444c-a966-2f640303a58c",
+    "063d76fb-c066-4f39-9cea-762b20b351cd",
+    "c230076b-9bcf-4a9d-a2de-27bc61ceed6d",
+    "25ef86db-3c87-45bf-ba60-d350c9cd2d15"
+  ]
+}
