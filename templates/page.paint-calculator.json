@@ -46,6 +46,7 @@
     "main": {
       "type": "paint-calculator",
       "custom_css": [
+        ".paint-calculator {padding-top: 10px;}",
         ".paint-calculator div.page-width {display: flex; flex-direction: column-reverse; gap: 50px;}"
       ],
       "settings": {
