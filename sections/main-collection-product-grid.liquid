@@ -173,11 +173,7 @@
           <ul
             id="product-grid"
             data-id="{{ section.id }}"
-            class="
-                                                                    grid product-grid product-grid__gush grid--{{ section.settings.columns_mobile }}-col-tablet-down
-                                                                    {% if section.settings.columns_desktop == 1 %} grid--full-width{% else %}
-                                                                      grid--{{ section.settings.columns_desktop }}-col-desktop
-                                                                    {% endif %} event-container">
+            class=" grid product-grid product-grid__gush grid--{{ section.settings.columns_mobile }}-col-tablet-down {% if section.settings.columns_desktop == 1 %} grid--full-width{% else %} grid--{{ section.settings.columns_desktop }}-col-desktop {% endif %} event-container">
             {% assign counter = 0 %}
             {%- for product in collection.products -%}
               {% if counter == section.settings.ad_product_count %}
@@ -194,6 +190,16 @@
 
                   </div>
                 </div>
+                <li class="grid__item">
+                  {% render 'card-product' 
+                   , card_product: product,
+                   media_aspect_ratio: section.settings.image_ratio,
+                   show_secondary_image: section.settings.show_secondary_image,
+                   show_vendor: section.settings.show_vendor,
+                   show_rating: section.settings.show_rating,
+                   lazy_load: lazy_load,
+                   styles: "collection-page_product" %}
+                </li>
               {% else %}
 
                 {% assign lazy_load = false %}
