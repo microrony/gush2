@@ -37,8 +37,8 @@
         "ce3e4621-5261-45d6-9bec-aa15957d761c"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Groupbuy_KV.png",
-        "image_mobile": "shopify:\/\/shop_images\/image_2022-12-06_091456091.png",
+        "image": "shopify:\/\/shop_images\/BOULEVARD88_Web.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/BOULEVARD88_Mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -226,7 +226,7 @@
         "template--16113211474113__b68e2ab5-a921-40c7-8ec6-ce734910083e-16777436739280daca-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/boulevard-88-level-2-patio.jpg",
+            "image": "shopify:\/\/shop_images\/3xResize_3.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -244,7 +244,7 @@
         "a6b8c2a2-3b77-4362-956e-6d13be111551": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/boulevard-88-main-building-hero-view.jpg",
+            "image": "shopify:\/\/shop_images\/3xResize_2.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -262,7 +262,7 @@
         "template--16113211474113__b68e2ab5-a921-40c7-8ec6-ce734910083e-16777436739280daca-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/boulevard-88-sky-gym.jpg",
+            "image": "shopify:\/\/shop_images\/3xResize_1.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
