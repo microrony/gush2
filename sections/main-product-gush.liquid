@@ -285,6 +285,14 @@ button.quantity__button {
     }
   }
 </style>
+{% if product.options_with_values.size == 1 %}
+  <style>
+    .current_selected_product_size{
+      list-style-type: none !important;
+    }
+  </style>
+{% endif %}
+
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
@@ -466,16 +474,18 @@ button.quantity__button {
 
             <div class="product__desc-review">
             {%- if product.description != blank -%}
-              <div class="product__description rte gush-font-p2">
-                {%- for option in product.options_with_values -%}
-                {% if option.name != 'Size' %}
-                <span class="current_selected_product_variant gush-font-teritary"> {{option.selected_value}}</span>
-                {%- endif -%}
-                {% if option.name != 'Type' %}
-                <span><li class="current_selected_product_size gush-font-teritary"> {{option.selected_value}}</li></span>
-                {%- endif -%}
-                {%- endfor -%}
-              </div>
+            {% if product.variants.size > 1 %}
+            <div class="product__description rte gush-font-p2">
+              {%- for option in product.options_with_values -%}
+              {% if option.name != 'Size' %}
+              <span class="current_selected_product_variant gush-font-teritary"> {{option.selected_value}}</span>
+              {%- endif -%}
+              {% if option.name != 'Type' %}
+              <span><li class="current_selected_product_size gush-font-teritary"> {{option.selected_value}}</li></span>
+              {%- endif -%}
+              {%- endfor -%}
+            </div>
+            {% endif %}
             {%- endif -%}
             {%- comment -%} <div class="product__desc-review__rating gush-font-p2">  321 reviews</div> {%- endcomment -%}
           </div>
