@@ -61,6 +61,26 @@
         "enable_video_looping": false
       }
     },
+    "543b3b04-1457-4e1c-90c2-eeb034c43368": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "People also bought",
+        "heading_size": "h2",
+        "collection": "sealers-and-painting-tools",
+        "products_to_show": 2,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -80,6 +100,7 @@
     },
     "1652439533f0dc6359": {
       "type": "product-info",
+      "disabled": true,
       "blocks": {
         "a2f67ce1-555b-41e9-9269-54303cbfab3f": {
           "type": "product-info",
@@ -146,6 +167,7 @@
     },
     "16524396805057076a": {
       "type": "ingredient",
+      "disabled": true,
       "blocks": {
         "cdfe81e2-cf4d-472e-bec0-8ab9619936b7": {
           "type": "text",
@@ -188,6 +210,7 @@
     },
     "1652439903eeaf17c8": {
       "type": "comparison",
+      "disabled": true,
       "settings": {
         "section-title": "Gush is greener \non every side.",
         "section-des": "Who ever thought wellness could come in a larger-than-pint size? 6 features packed in one tub. Better for you, better for the world. \n<br> <br>\n\n¹Gush Cair Fresh <br>\n²Gush Cair",
@@ -233,6 +256,7 @@
   },
   "order": [
     "main",
+    "543b3b04-1457-4e1c-90c2-eeb034c43368",
     "product-recommendations",
     "1652439533f0dc6359",
     "16524396805057076a",
