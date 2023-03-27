@@ -429,6 +429,15 @@
             "title": "What is Gush paint?",
             "answer": "Gush Paints are wall paints with 6 benefits in 1. There are 2 variants — Gush Cair and Gush Cair Fresh. Both have the following benefits: air-purifying, anti-bacterial, anti-moulding, odourless, toxic-free. Gush Cair has an additional humidity-control functionality while Gush Cair Fresh is stain-resistant."
           }
+        },
+        "ce0633f6-b584-418a-a4ae-e5f178646732": {
+          "type": "faqContent",
+          "settings": {
+            "category": "About Gush",
+            "type": "General Questions",
+            "title": "Who is the founder of Gush paint?",
+            "answer": "Gush was founded by Lester Leong and Benny Jiao. Having suffered from childhood asthma and sinus issues, the entrepreneurs thought of a novel way to turn the largest surface area in our homes — our walls — into passive air-purifiers. Thus Gush was born, with a bunch of other features: anti-moulding, anti-bacterial, odourless, toxic-free, stain-resistant and humidity-control."
+          }
         }
       },
       "block_order": [
@@ -478,7 +487,8 @@
         "a9796796-44e6-40c6-9b1d-51f29e5bdb17",
         "d3fc7c61-a684-4651-8392-40e1c2ab63b0",
         "7b66c44f-1934-4d27-acb5-78b0f31db789",
-        "aaa3038b-6792-406c-b599-712d0b169a9a"
+        "aaa3038b-6792-406c-b599-712d0b169a9a",
+        "ce0633f6-b584-418a-a4ae-e5f178646732"
       ],
       "settings": {
         "heading": "FAQ",
