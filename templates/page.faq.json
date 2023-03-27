@@ -438,6 +438,15 @@
             "title": "Who is the founder of Gush paint?",
             "answer": "Gush was founded by Lester Leong and Benny Jiao. Having suffered from childhood asthma and sinus issues, the entrepreneurs thought of a novel way to turn the largest surface area in our homes — our walls — into passive air-purifiers. Thus Gush was born, with a bunch of other features: anti-moulding, anti-bacterial, odourless, toxic-free, stain-resistant and humidity-control."
           }
+        },
+        "074b8c8c-5115-40cc-bdd4-b2cbbad67c0c": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "General Questions",
+            "title": "How long can Gush paint last?",
+            "answer": "Gush paints have been put through rigorous testing for quality assurance to industry and comparative standards. As a rule of thumb, Gush paints are effective to last for 7-8 years."
+          }
         }
       },
       "block_order": [
@@ -488,7 +497,8 @@
         "d3fc7c61-a684-4651-8392-40e1c2ab63b0",
         "7b66c44f-1934-4d27-acb5-78b0f31db789",
         "aaa3038b-6792-406c-b599-712d0b169a9a",
-        "ce0633f6-b584-418a-a4ae-e5f178646732"
+        "ce0633f6-b584-418a-a4ae-e5f178646732",
+        "074b8c8c-5115-40cc-bdd4-b2cbbad67c0c"
       ],
       "settings": {
         "heading": "FAQ",
