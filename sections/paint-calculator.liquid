@@ -60,24 +60,32 @@
       {% render 'icon-arrow-right-white' %}
     </div>
   </div>
+  <div class="paint-calculator_content box gush-font-p1" style=" padding-top: 0; margin-top: 0;">
+    <p>{{ section.settings.text_content }}</p>
+  </div>
 </div>
 
 {% schema %}
 {
-"name": "Paint Calculator",
-"tag": "section",
-"settings": [
-  {
-  "type": "text",
-  "id": "title",
-  "label": "Page Title",
-  "default": "Paint Calculator"
-  }
-],
-"presets": [
-{
-"name": "Paint Calculator"
-}
-]
+  "name": "Paint Calculator",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Page Title",
+      "default": "Paint Calculator"
+    },
+    {
+      "type": "richtext",
+      "id": "text_content",
+      "label": "Content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Paint Calculator"
+    }
+  ]
 }
 {% endschema %}
