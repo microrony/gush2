@@ -50,7 +50,8 @@
 
       ],
       "settings": {
-        "title": "Paint Calculator"
+        "title": "Paint Calculator",
+        "text_content": "<p>Quality in all quantities. <br\/><br\/>No matter where you are in the research to painting pipeline, we’ve got you. <br\/><br\/>Type in the sqft of your space and find out how many litres of paint you’ll need. <br\/><br\/>Applicable to all paint variants — Gush Cair, Gush Cair Fresh and Gush Prepair.<\/p>"
       }
     }
   },
