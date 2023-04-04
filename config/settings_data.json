@@ -149,11 +149,19 @@
               "heading": "Support",
               "menu": "support"
             }
+          },
+          "669f1bbb-2705-4620-8eb6-8a84d173bddb": {
+            "type": "link_list",
+            "settings": {
+              "heading": "About",
+              "menu": "footer-about"
+            }
           }
         },
         "block_order": [
           "footer-1",
-          "745b7e59-5114-4407-93b3-9471285e5a4a"
+          "745b7e59-5114-4407-93b3-9471285e5a4a",
+          "669f1bbb-2705-4620-8eb6-8a84d173bddb"
         ],
         "settings": {
           "color_scheme": "background-2",
