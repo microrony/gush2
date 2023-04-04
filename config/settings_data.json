@@ -138,7 +138,6 @@
         "blocks": {
           "669f1bbb-2705-4620-8eb6-8a84d173bddb": {
             "type": "link_list",
-            "disabled": true,
             "settings": {
               "heading": "About",
               "menu": "footer-about"
