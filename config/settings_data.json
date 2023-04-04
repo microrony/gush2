@@ -136,13 +136,6 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "About",
-              "menu": "footer-about"
-            }
-          },
           "footer-1": {
             "type": "link_list",
             "settings": {
@@ -159,7 +152,6 @@
           }
         },
         "block_order": [
-          "footer-0",
           "footer-1",
           "745b7e59-5114-4407-93b3-9471285e5a4a"
         ],
