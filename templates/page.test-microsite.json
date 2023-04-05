@@ -1,0 +1,118 @@
+{
+  "wrapper": "section#mission_page_id.preload",
+  "sections": {
+    "hero": {
+      "type": "mission-hero",
+      "settings": {
+        "title": "We believe in better spaces for a better future.",
+        "description": "That’s why we design innovative products rooted in science to transform lives and your wellbeing.",
+        "image": "shopify:\/\/shop_images\/Frame_395.jpg"
+      }
+    },
+    "1660277929380061a2": {
+      "type": "true-wellness",
+      "settings": {
+        "title": "True wellness is plural, not singular.",
+        "description": "Wellness goes beyond the personal. We hope to unify people with products that inspire better choices in life.",
+        "image1": "shopify:\/\/shop_images\/image_2022-11-29_065950288.png",
+        "image2": "shopify:\/\/shop_images\/image_2022-11-29_070016755.png",
+        "image3": "shopify:\/\/shop_images\/image_2022-11-29_070031593.png"
+      }
+    },
+    "1660277939c188d308": {
+      "type": "lets-care",
+      "blocks": {
+        "599764d6-b145-46e7-b3e4-44b4e175b277": {
+          "type": "slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2022-12-05_091853670.png"
+          }
+        },
+        "f52c8f6d-0f1e-4b00-b99b-8061295e9468": {
+          "type": "slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2022-12-05_091908790.png"
+          }
+        },
+        "6499f964-cfb2-406a-9cbd-4b52352b7075": {
+          "type": "slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2022-12-05_091922718.png"
+          }
+        },
+        "c12344e6-78f1-4e28-ac02-d5189da8b833": {
+          "type": "tab_content",
+          "settings": {
+            "tab_title": "Air pollution",
+            "text1": "Gush Interior Paints purify your air",
+            "text2": "",
+            "text3": "",
+            "content1": "<p>With humanity now spending almost all their time indoors, exposure to indoor air pollutants poses a greater risk. It’s an increasingly common reason for illness, lower productivity and reduced wellbeing.<\/p><p><\/p><p>Our interior paints keep indoor air quality levels healthy by empowering walls and ceilings with air-purifying features - without the need for light or electricity.<br\/><\/p><p><a href=\"\/pages\/science\" title=\"Science\">Find out how our paint works<\/a><\/p>",
+            "content2": "",
+            "content3": ""
+          }
+        },
+        "2d8519b6-a5fc-4cb6-83ec-2409d743d138": {
+          "type": "tab_content",
+          "settings": {
+            "tab_title": "Climate change",
+            "text1": "Gush Exterior Paints shield your home",
+            "text2": "",
+            "text3": "",
+            "content1": "<p>Global warming has caused weather patterns to become more severe, increasing the rate of deterioration and damage that building facades now have to endure.<\/p><p>Our exterior paints increase the resistance of external surfaces against the elements, while improving a building's cooling energy efficiency and reducing maintenance costs.<\/p><p><a href=\"\/pages\/science\" title=\"Science\">Find out how our paint works<\/a><\/p>",
+            "content2": "",
+            "content3": ""
+          }
+        },
+        "601f6649-85f5-4b62-aa13-1744399aaf19": {
+          "type": "tab_content",
+          "settings": {
+            "tab_title": "Hotter cities",
+            "text1": "Gush ClearCool keeps your spaces cool",
+            "text2": "",
+            "text3": "",
+            "content1": "<p>The Urban Heat Island (UHI) Effect creates hotspots of trapped heat in cities, increasing the risk of heat stress. But relying on cooling machinery is raising Earth's temperature even further.<\/p><p>Our window films keep indoor spaces cool by blocking outside heat, lowering cooling energy consumption while keeping views through your windows clear.<\/p><p><a href=\"\/pages\/film-science\" title=\"Film Science\">Find out how our film works<\/a><\/p>",
+            "content2": "",
+            "content3": ""
+          }
+        }
+      },
+      "block_order": [
+        "599764d6-b145-46e7-b3e4-44b4e175b277",
+        "f52c8f6d-0f1e-4b00-b99b-8061295e9468",
+        "6499f964-cfb2-406a-9cbd-4b52352b7075",
+        "c12344e6-78f1-4e28-ac02-d5189da8b833",
+        "2d8519b6-a5fc-4cb6-83ec-2409d743d138",
+        "601f6649-85f5-4b62-aa13-1744399aaf19"
+      ],
+      "settings": {
+        "title": "Innovative solutions to global problems",
+        "sub_title": "Our products help to tackle specific climate issues, giving you the power to help our planet – from cleaning our homes, to cleaning the world."
+      }
+    },
+    "16602779494e6fecdf": {
+      "type": "our-commitment",
+      "settings": {
+        "title": "Our commitment is in the loop.",
+        "description": "Our circular loop system allows for our products and community to work hand-in-hand to achieve a sustainable future.",
+        "lottie_file_name": "breathingmolecule-adjusted.json"
+      }
+    },
+    "1660277963cff88234": {
+      "type": "discover-science",
+      "settings": {
+        "title": "Let’s create a world we can gush about.",
+        "button_label": "Discover our science",
+        "button_url": "shopify:\/\/pages\/science",
+        "image": "shopify:\/\/shop_images\/gush_logo_v4_1.png"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "1660277929380061a2",
+    "1660277939c188d308",
+    "16602779494e6fecdf",
+    "1660277963cff88234"
+  ]
+}
