@@ -447,6 +447,15 @@
             "title": "Who is the CEO of Gush Singapore?",
             "answer": "The CEO and co-founder of Gush is Lester Leong."
           }
+        },
+        "58cb78a8-6883-4f94-9ecb-1b1f2a6d9044": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "Paint application",
+            "title": "What happens if you paint over paint too soon?",
+            "answer": "Painting your second coat too soon can cause problems such as streaking, peeling, or uneven colour. It is best to ensure layers are completely dry before applying another coat."
+          }
         }
       },
       "block_order": [
@@ -498,7 +507,8 @@
         "074b8c8c-5115-40cc-bdd4-b2cbbad67c0c",
         "352e6662-00ed-4cb0-8d3d-9e2fc1ef2027",
         "3dd13785-b3c2-48b6-9621-f6a23a815dc3",
-        "af25d461-85d9-4abc-a936-1b4ee0350a52"
+        "af25d461-85d9-4abc-a936-1b4ee0350a52",
+        "58cb78a8-6883-4f94-9ecb-1b1f2a6d9044"
       ],
       "settings": {
         "heading": "FAQ",
