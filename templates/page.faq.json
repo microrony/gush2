@@ -429,6 +429,15 @@
             "title": "How long does Gush paint take to dry?",
             "answer": "Do give ample time in between coatings of Gush paint. In a controlled test environment, our paints are generally touch dry in 1 - 2 hours. \n\nHowever, we do recommend waiting a day or two before applying the second and final coat. This is especially important on rainy days, where drying speeds are significantly slower and could cause cracking. \n\nGush Cair in particular is touch dry within 30 mins at room temperature of 30°C. For the second coating, a minimum of 1 hour of dry time is recommended. \n\nIn the long term, allow our paints to fully cure for 2 - 3 months before applying any external pressure on it. This ensures it lasts longer."
           }
+        },
+        "3dd13785-b3c2-48b6-9621-f6a23a815dc3": {
+          "type": "faqContent",
+          "settings": {
+            "category": "Paints",
+            "type": "General questions",
+            "title": "Does air-purifying paint work?",
+            "answer": "Yes. Gush Proprietary Catalysts (GPC) in our paint breaks down 99% of VOCs and deodorises your space of chemical fumes within 24 hours. Some VOCs include Benzene, Toluene and Formaldehyde. This air-purification technique does not require the use of electricity, or additional light to work."
+          }
         }
       },
       "block_order": [
@@ -478,7 +487,8 @@
         "aaa3038b-6792-406c-b599-712d0b169a9a",
         "ce0633f6-b584-418a-a4ae-e5f178646732",
         "074b8c8c-5115-40cc-bdd4-b2cbbad67c0c",
-        "352e6662-00ed-4cb0-8d3d-9e2fc1ef2027"
+        "352e6662-00ed-4cb0-8d3d-9e2fc1ef2027",
+        "3dd13785-b3c2-48b6-9621-f6a23a815dc3"
       ],
       "settings": {
         "heading": "FAQ",
