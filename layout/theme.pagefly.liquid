@@ -270,6 +270,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	{%endif%}
 
   {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+
+  {% render 'shogun-head' %}
 </head>
 
   <body class="gradient"><div class="pagefly-container">{{ content_for_layout }}</div></body>
