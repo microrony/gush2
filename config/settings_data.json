@@ -208,6 +208,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "1759773598402494664": {
+        "type": "shopify:\/\/apps\/rt-whatsapp-chat-live-chat\/blocks\/app-embed\/9baee9b7-6929-47af-9935-05bcdc376396",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
