@@ -61,6 +61,26 @@
         "enable_video_looping": false
       }
     },
+    "9d0097b8-562f-4822-b0f7-8acdf53ed5e6": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Purchased together",
+        "heading_size": "h2",
+        "collection": "sealers-and-painting-tools",
+        "products_to_show": 3,
+        "columns_desktop": 2,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -200,26 +220,6 @@
         "heading": "Us vs Them"
       }
     },
-    "9d0097b8-562f-4822-b0f7-8acdf53ed5e6": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Purchased together",
-        "heading_size": "h2",
-        "collection": "paint-preparation",
-        "products_to_show": 4,
-        "columns_desktop": 3,
-        "color_scheme": "background-1",
-        "show_view_all": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "c5393b24-c6e4-4b37-82f4-6fa0560e550c": {
       "type": "collection-list",
       "blocks": {
@@ -296,11 +296,11 @@
   },
   "order": [
     "main",
+    "9d0097b8-562f-4822-b0f7-8acdf53ed5e6",
     "product-recommendations",
     "1652439533f0dc6359",
     "16524396805057076a",
     "1652439903eeaf17c8",
-    "9d0097b8-562f-4822-b0f7-8acdf53ed5e6",
     "c5393b24-c6e4-4b37-82f4-6fa0560e550c",
     "72a7f502-2042-444c-a966-2f640303a58c"
   ]
