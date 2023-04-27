@@ -68,7 +68,7 @@
         "heading_size": "h2",
         "collection": "sealers-and-painting-tools",
         "products_to_show": 3,
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "color_scheme": "background-1",
         "show_view_all": true,
         "image_ratio": "adapt",
