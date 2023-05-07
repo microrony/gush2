@@ -8,6 +8,15 @@
           "settings": {
           }
         },
+        "267d501d-4b55-4f83-98e0-bfef5184a9b3": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "use_metafields": false,
+            "sku_tagtype": "sku",
+            "is_featured_product": false,
+            "featured_product_handle": ""
+          }
+        },
         "caption": {
           "type": "text",
           "disabled": true,
@@ -45,6 +54,7 @@
       },
       "block_order": [
         "title",
+        "267d501d-4b55-4f83-98e0-bfef5184a9b3",
         "caption",
         "8d33aa52-1e56-49a0-ab5c-9774dcf7b6a0",
         "description",
@@ -229,6 +239,29 @@
       ],
       "settings": {
       }
+    },
+    "1683455774956510c0": {
+      "type": "apps",
+      "blocks": {
+        "fed9b39b-88d0-49a9-b113-96ffe01796d1": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "fed9b39b-88d0-49a9-b113-96ffe01796d1"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -237,6 +270,7 @@
     "1652439533f0dc6359",
     "16524396805057076a",
     "1652439903eeaf17c8",
-    "72a7f502-2042-444c-a966-2f640303a58c"
+    "72a7f502-2042-444c-a966-2f640303a58c",
+    "1683455774956510c0"
   ]
 }
