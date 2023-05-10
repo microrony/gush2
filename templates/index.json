@@ -366,6 +366,66 @@
         "btn_type": "secondary",
         "page_name": "new_home"
       }
+    },
+    "45d11cfc-b897-4625-8acc-3af8aacb6296": {
+      "type": "featured-about",
+      "settings": {
+        "heading": "As also seen in",
+        "bg_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/Gush_CC_Env_16x9_Final.png",
+        "svg": "",
+        "content": "",
+        "btn-text-1": "",
+        "link_first_btn": "",
+        "btn-text-2": "",
+        "link_second_btn": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3ae58cda-7e71-4a3e-bf1e-18d78cf4dd31": {
+      "type": "gushi-product-slider",
+      "blocks": {
+        "505bbe59-991b-410d-9a64-51738f819540": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/Vulcan-Post_1.png",
+            "text": "",
+            "url": "",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
+        "779fffa1-b483-4263-8a0c-09a728a0ee2c": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/Thingtesting_1_a09d69e8-ad1e-4440-9e03-3eb14cb5c444.png",
+            "text": "",
+            "url": "",
+            "clr": "",
+            "txt_clr": ""
+          }
+        },
+        "1441e02a-1d62-4d1f-bed9-0d1f8a7e9c19": {
+          "type": "image",
+          "settings": {
+            "text": "",
+            "url": "",
+            "clr": "",
+            "txt_clr": ""
+          }
+        }
+      },
+      "block_order": [
+        "505bbe59-991b-410d-9a64-51738f819540",
+        "779fffa1-b483-4263-8a0c-09a728a0ee2c",
+        "1441e02a-1d62-4d1f-bed9-0d1f8a7e9c19"
+      ],
+      "settings": {
+        "heading": "As also seen in",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
@@ -380,6 +440,8 @@
     "5e785e84-068f-42a0-876b-2a306e0760a6",
     "623e4ef7-e449-4a33-9c59-cd8e1ba10658",
     "5edad96d-b76d-483a-87fd-8949efadfad3",
-    "c6fabc79-9dae-4573-a0e3-dd008005494c"
+    "c6fabc79-9dae-4573-a0e3-dd008005494c",
+    "45d11cfc-b897-4625-8acc-3af8aacb6296",
+    "3ae58cda-7e71-4a3e-bf1e-18d78cf4dd31"
   ]
 }
