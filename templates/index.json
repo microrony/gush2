@@ -356,6 +356,16 @@
         "btn_txt": "Enquire now",
         "btn_url": "shopify:\/\/pages\/services"
       }
+    },
+    "78f27ebf-a1b9-4da5-af42-23e708c86bf0": {
+      "type": "footer-contact",
+      "settings": {
+        "title": "Contact us",
+        "heading": "Ready to get started? Or have a question? Tell us about your project needs, and we'll get in touch.",
+        "btn_text": "Contact us",
+        "btn_type": "primary",
+        "page_name": "home"
+      }
     }
   },
   "order": [
@@ -369,6 +379,7 @@
     "1069a742-eb58-4cca-a316-b2cb1f0314ff",
     "5e785e84-068f-42a0-876b-2a306e0760a6",
     "623e4ef7-e449-4a33-9c59-cd8e1ba10658",
-    "5edad96d-b76d-483a-87fd-8949efadfad3"
+    "5edad96d-b76d-483a-87fd-8949efadfad3",
+    "78f27ebf-a1b9-4da5-af42-23e708c86bf0"
   ]
 }
