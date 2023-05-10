@@ -182,8 +182,15 @@
         "heading": "Healthy indoor air quality, with just a lick of paint."
       }
     },
+    "62bd45d2-3714-46ed-9b46-027d4c723ea0": {
+      "type": "pagefly-section",
+      "settings": {
+        "section_id": "pf-01839c42"
+      }
+    },
     "7a90053e-69af-4a87-9650-ebd2c6f0fd2a": {
       "type": "section-about-partner",
+      "disabled": true,
       "settings": {
         "heading": "As seen on",
         "url": "",
@@ -372,6 +379,7 @@
     "6ff782c6-f777-4520-9053-9a135fb2b9df",
     "74a74acc-f9e6-4d8d-b74e-d8bec517ce01",
     "5a44ca41-997e-4a85-a054-4cb4d273dceb",
+    "62bd45d2-3714-46ed-9b46-027d4c723ea0",
     "7a90053e-69af-4a87-9650-ebd2c6f0fd2a",
     "fbc38505-915e-4308-950b-bccaf2634d33",
     "96b991d2-402b-4fde-9f7c-578b3c2508bb",
