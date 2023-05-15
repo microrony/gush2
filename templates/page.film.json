@@ -124,8 +124,8 @@
         "0a14753b-d864-427c-8d30-ffefa8799cf9": {
           "type": "offer_block",
           "settings": {
-            "discount": 10,
-            "discount_des": "Savings on your monthly bills",
+            "discount": 99,
+            "discount_des": "Blocked harmful UV rays",
             "image": "shopify:\/\/shop_images\/Group_2697_1.png"
           }
         }
