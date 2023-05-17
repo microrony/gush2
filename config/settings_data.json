@@ -214,6 +214,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "36202646437f2c90d8": {
+        "type": "shopify:\/\/apps\/growave-loyalty-wishlist-3\/blocks\/block.embed.socialshopwave-helper\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
