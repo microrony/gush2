@@ -14,7 +14,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Dull walls? Better call Gush. We’ve got solutions for all your painting needs – from walls to ceilings; mould or no; imperfections and resurrections.",
+            "text": "Dull walls? Better call Gush painting services. We’ve got solutions for all your painting needs — from walls to ceilings; mould or no; imperfections and resurrections.",
             "color": "#000000",
             "text_style": "body"
           }
@@ -54,7 +54,7 @@
     "165276794068d36259": {
       "type": "about-product",
       "settings": {
-        "heading": "In Gush\nyou can trust; \nno spills or \nsplatters.",
+        "heading": "In Gush you can trust; no spills or splatters with our painting services.",
         "color": "#ff5500",
         "image1": "shopify:\/\/shop_images\/Frame_2324.png",
         "svg1": "Paint-Bucket.svg",
@@ -63,11 +63,11 @@
         "image2": "shopify:\/\/shop_images\/image_2022-12-01_110738453.png",
         "svg2": "Location-Pin.svg",
         "heading2": "From start to finish",
-        "text2": "Plastering, wall repair, mould treatment and room disinfection. Let us tick all your boxes at one go.",
+        "text2": "Plastering, wall repair, mould treatment and room disinfection. With Gush painting services, let us tick all your boxes at one go.",
         "image3": "shopify:\/\/shop_images\/image_2022-12-01_110759419.png",
         "svg3": "Settings.svg",
         "heading3": "Flexible packages",
-        "text3": "Get accurate quotations customised to your needs. Quality materials guaranteed.",
+        "text3": "Get accurate quotations customised to your needs. Quality materials guaranteed, when you book Gush’s painting services.",
         "icon-margin": 0,
         "page": "services"
       }
