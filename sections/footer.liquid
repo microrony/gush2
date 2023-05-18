@@ -445,7 +445,7 @@ var client = ShopifyBuy.buildClient({
   domain: 'gush.earth',
   storefrontAccessToken: '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'
 });
-client.fetchCustomer().then((customer) => {
+client.fetchCustomerData().then((customer) => {
   // 在这里处理访客信息
   console.log(customer);
 }).catch((error) => {
