@@ -117,6 +117,9 @@
         "df2a9d7e-0fd1-4613-ace9-114c22451326",
         "0c8ebd4a-72b2-460e-8016-898c033c0c8f"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "collectionList": "",
         "products_per_page": 18,
@@ -125,8 +128,8 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_filtering": true,
-        "enable_sorting": true,
+        "enable_filtering": false,
+        "enable_sorting": false,
         "collapse_on_larger_devices": false,
         "columns_mobile": "2",
         "ad_product_count": 6,
