@@ -916,6 +916,7 @@ input.mobile-facets__checkbox {
 
 /* added search box*/
 .search-box {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
