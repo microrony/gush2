@@ -921,6 +921,8 @@ input.mobile-facets__checkbox {
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 10px;
+  grid-column: 2; /* Position in the second column */
+  grid-row: 1 / span 2; /* Span two rows */
 }
 
 .search-box__form {
