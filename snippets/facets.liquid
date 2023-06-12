@@ -205,34 +205,6 @@
                   </details>
               {% endcase %}
             {%- endfor -%}
-           {% if enable_filtering %}
-              <div class="search-box">
-                <form id="SearchForm" class="search-box__form">
-                  <input
-                    type="text"
-                    name="q"
-                    placeholder="Search"
-                    value="{{ results.terms | escape }}"
-                    class="search-box__input"
-                  >
-                  <button type="submit" class="search-box__button">
-                    <svg
-                      class="search-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <circle cx="11" cy="11" r="8"></circle>
-                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                  </button>
-                </form>
-              </div>
-            {% endif %}
             <noscript>
               <button type="submit" class="facets__button-no-js button button--tertiary">
                 {{ 'products.facets.filter_button' | t }}
@@ -288,7 +260,34 @@
                 {{ 'products.facets.sort_button' | t }}
               </button>
             </noscript>
-             
+              {% if enable_filtering %}
+              <div class="search-box">
+                <form id="SearchForm" class="search-box__form">
+                  <input
+                    type="text"
+                    name="q"
+                    placeholder="Search"
+                    value="{{ results.terms | escape }}"
+                    class="search-box__input"
+                  >
+                  <button type="submit" class="search-box__button">
+                    <svg
+                      class="search-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            {% endif %}
           </div>
         {%- endif -%}
 
