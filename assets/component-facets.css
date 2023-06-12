@@ -1,6 +1,6 @@
 .facets-container {
   display: grid;
-  grid-template-columns: repeat(auto, auto);
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   padding-top: 25px;
 }
@@ -917,10 +917,10 @@ input.mobile-facets__checkbox {
 /* added search box*/
 .search-box {
   position: relative;
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
   margin-bottom: 10px;
-  grid-column: 2; /* Position in the second column */
-  grid-row: 1 / span 2; /* Span two rows */
 }
 
 .search-box__form {
