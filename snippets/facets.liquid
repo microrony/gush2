@@ -21,6 +21,15 @@
   endif
 -%}
 <div class="facets-container">
+  {% if enable_filtering %}
+  <div class="search-box">
+    <form id="SearchForm" class="search-box__form">
+      <input type="text" name="q" placeholder="Search" value="{{ results.terms | escape }}" class="search-box__input">
+      <button type="submit" class="search-box__button">{{ 'products.facets.search_button' | t }}</button>
+    </form>
+  </div>
+{% endif %}
+
   {%- unless collapse_on_larger_devices -%}
     <facet-filters-form class="facets">
       <form id="FacetFiltersForm" class="facets__form">
