@@ -133,7 +133,18 @@
       class="gush-page-width"
       id="main-collection-filters"
       data-id="{{ section.id }}">
-      
+      <div class="collection-tabs collection-tabs__gush">
+        {%- comment -%} {% for item in section.settings.collectionList.links %}
+        <div class="collection-tabs__name gush-font-p1">{{- item.title | escape -}}</div>
+
+        <!--         <div class="collection-tabs__name"></div> -->
+        {% endfor %} {%- endcomment -%}
+        {% for block in section.blocks %}
+          {% if block.type == 'text_block' %}
+            <div class="collection-tabs__name gush-font-p1">{{ block.settings.tab_title }}</div>
+          {% endif %}
+        {% endfor %}
+      </div>
 
       {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, collapse_on_larger_devices: section.settings.collapse_on_larger_devices %}
     </div>
