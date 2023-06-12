@@ -3,7 +3,6 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   padding-top: 25px;
-  justify-content: flex-end;
 }
 
 .active-facets-mobile {
