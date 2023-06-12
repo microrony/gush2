@@ -122,6 +122,40 @@
       margin-top: 5px;
     }
   }
+  .search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.search-box__form {
+  display: flex;
+  align-items: center;
+}
+
+.search-box__input {
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-box__button {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  margin-left: -40px; /* Adjust the value based on the icon size */
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  fill: #333; /* Adjust the color as needed */
+}
+
 </style>
 
 <div class="section-{{ section.id }}-padding">
