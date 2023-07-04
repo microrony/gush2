@@ -7,7 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "a world we can gush about",
-            "heading_color": "#ff5500",
+            "heading_color": "#ffffff",
             "heading_size": "h1"
           }
         },
@@ -34,7 +34,7 @@
         "template--16032460800193__6ff782c6-f777-4520-9053-9a135fb2b9df-16690814089a6b9c66-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/gush-home_v2_221005_1.jpg",
+        "image": "shopify:\/\/shop_images\/Home_Page_Image.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
