@@ -8,15 +8,6 @@
           "settings": {
           }
         },
-        "267d501d-4b55-4f83-98e0-bfef5184a9b3": {
-          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "use_metafields": false,
-            "sku_tagtype": "sku",
-            "is_featured_product": false,
-            "featured_product_handle": ""
-          }
-        },
         "caption": {
           "type": "text",
           "disabled": true,
@@ -54,7 +45,6 @@
       },
       "block_order": [
         "title",
-        "267d501d-4b55-4f83-98e0-bfef5184a9b3",
         "caption",
         "8d33aa52-1e56-49a0-ab5c-9774dcf7b6a0",
         "description",
@@ -94,7 +84,7 @@
         "a2f67ce1-555b-41e9-9269-54303cbfab3f": {
           "type": "product-info",
           "settings": {
-            "title": "Stain-resistant",
+            "title": "Stain-resistant (Gush Cair Fresh only)",
             "lottiefile": "freshair v2.json",
             "tabdesc": "Dirt and stain-resistant. Had an oopsie? Simply grab a cloth and wipe for lasting wall freshness. "
           }
@@ -138,6 +128,15 @@
             "lottiefile": "toxic-free.json",
             "tabdesc": "Safer paints for both you and the Earth. Made with non-toxic materials and minimised carbon emission manufacturing."
           }
+        },
+        "acc15ef4-1093-4699-9f90-5768744b259c": {
+          "type": "product-info",
+          "disabled": true,
+          "settings": {
+            "title": "Humidity-control (Gush Cair only)",
+            "lottiefile": "",
+            "tabdesc": ""
+          }
         }
       },
       "block_order": [
@@ -146,7 +145,8 @@
         "112cf32c-7d96-4895-9044-93011c80c682",
         "b0107315-38cb-46be-b65f-c46767432f8b",
         "6811cffd-cbe8-4e0c-8a98-8f3951a79238",
-        "390ba101-3199-4d49-a9ee-8611855b8a9c"
+        "390ba101-3199-4d49-a9ee-8611855b8a9c",
+        "acc15ef4-1093-4699-9f90-5768744b259c"
       ],
       "settings": {
         "heading": "Features",
