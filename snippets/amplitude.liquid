@@ -1,0 +1,33 @@
+
+<script>
+  (function() {
+    window.amplitudeShopify = {
+      apiKey: 'de9671a3c6723e6f495241fff355fc1e',
+    }
+
+    {% capture amplitude-options-content %}{% render 'amplitude-options' %}{% endcapture %}
+    {% if amplitude-options-content contains "Could not find asset" %}
+      {% comment %} amplitude-options does not exists{% endcomment %}
+    {% else %}
+      {% render 'amplitude-options' %}
+    {% endif %}
+
+    {% render 'amplitude-user-id' %}
+
+    window.amplitudeShopify.options = {
+      includeUtm: true,
+      includeReferrer: true,
+      saveParamsReferrerOncePerSession: false,
+      transport: "beacon",
+      ...window.amplitudeShopify.customOptions
+    }
+
+    {%if customer %}
+      window.amplitudeShopify.customer = {
+        id: '{{customer.id | json}}',
+        email: {{customer.email | json}},
+      };
+    {% endif %}
+  })();
+</script>
+  
