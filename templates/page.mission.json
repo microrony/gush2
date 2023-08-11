@@ -4,8 +4,8 @@
     "hero": {
       "type": "mission-hero",
       "settings": {
-        "title": "We believe in better spaces for a better future.",
-        "description": "That’s why we design innovative products rooted in science to transform lives and your wellbeing.",
+        "title": "Home should be heavenly.",
+        "description": "How do you feel about your home right now?\n\nIf it’s any combination of these feelings, that’s a major red flag for your wellbeing.",
         "image": "shopify:\/\/shop_images\/Frame_395.jpg"
       }
     },
