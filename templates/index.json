@@ -354,6 +354,7 @@
     },
     "5edad96d-b76d-483a-87fd-8949efadfad3": {
       "type": "gush-service-banner",
+      "disabled": true,
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/Frame_2271.jpg",
         "bg_image_m": "shopify:\/\/shop_images\/image.png",
