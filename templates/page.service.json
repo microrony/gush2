@@ -14,7 +14,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "We’ve done the groundwork for quality painting services so you don’t have to. Our partners are dedicated to painting your homes to perfection —  from preparation to protection and furniture reinstatement. No spills, drips or splatters.",
+            "text": "We’ve done the groundwork for quality painting services so you don’t have to. Our partners are dedicated to painting your homes to perfection —  from preparation to protection and furniture reinstatement.",
             "color": "#000000",
             "text_style": "body"
           }
@@ -266,7 +266,7 @@
         "template--15643887894721__225db342-4ae3-4723-acee-e8f903971aa2-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Booking with Groundworks gives you a dedicated team of project managers and painters, while receiving access to Gush’s full colour catalogue of 352 colours.<\/p>",
+            "text": "<p>Booking with Groundworks gives you a dedicated team of experienced project managers and painters, while receiving access to Gush’s full colour catalogue. <\/p>",
             "text_style": "body"
           }
         },
@@ -311,7 +311,7 @@
         "template--15643887894721__f9c271bc-2a2b-4ade-8180-4b845d1a1524-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>If you’re in dire need of near-immediate painting services, look no further than Nimbus. Simply choose from their drop-down lists and sit back, relax, and let the painting commence.<br\/><br\/>Use the promo code GUSH50 for $50 off painting services.<\/p>",
+            "text": "<p>If you’re in dire need of immediate, no-frills painting services, look no further than Nimbus. Simply choose from their drop-down lists and sit back, relax, and let the painting commence.<br\/><br\/>Use the promo code GUSH50 for $50 off painting services.<\/p>",
             "text_style": "body"
           }
         },
