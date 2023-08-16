@@ -331,7 +331,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Happy_New_Year_2.png",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
