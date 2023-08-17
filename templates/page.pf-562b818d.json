@@ -1,5 +1,10 @@
 {
   "sections": {
+    "pf-562b818d": {
+      "type": "pf-562b818d",
+      "settings": {
+      }
+    },
     "abd57ee8-9685-4bc5-8ee8-573615d93d92": {
       "type": "custom-liquid",
       "settings": {
@@ -8,16 +13,11 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "pf-562b818d": {
-      "type": "pf-562b818d",
-      "settings": {
-      }
     }
   },
   "order": [
-    "abd57ee8-9685-4bc5-8ee8-573615d93d92",
-    "pf-562b818d"
+    "pf-562b818d",
+    "abd57ee8-9685-4bc5-8ee8-573615d93d92"
   ],
   "layout": "theme.pagefly"
 }
