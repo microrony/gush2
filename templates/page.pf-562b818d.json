@@ -7,7 +7,6 @@
     },
     "abd57ee8-9685-4bc5-8ee8-573615d93d92": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "<div id=\"omnisend-embedded-v2-64ddeb28c65e258f3b44b39a\"><\/div>",
         "color_scheme": "background-1",
@@ -17,7 +16,6 @@
     },
     "cb225a18-1b2c-4b82-967d-acb3972e2207": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "",
         "color_scheme": "background-1",
