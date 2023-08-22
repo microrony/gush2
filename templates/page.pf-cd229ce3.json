@@ -4,10 +4,20 @@
       "type": "pf-cd229ce3",
       "settings": {
       }
+    },
+    "69a4be47-987b-4dd1-85e8-999f464272e5": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"omnisend-embedded-v2-64ddeb28c65e258f3b44b39a\"><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "pf-cd229ce3"
+    "pf-cd229ce3",
+    "69a4be47-987b-4dd1-85e8-999f464272e5"
   ],
   "layout": "theme.pagefly"
 }
