@@ -2,7 +2,6 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -12,7 +11,7 @@
     "fab4f25f-0752-42d0-bd21-ead8fc3aad49": {
       "type": "service-page-banner",
       "blocks": {
-        "template--15643888156865__fab4f25f-0752-42d0-bd21-ead8fc3aad49-heading-1": {
+        "961082f5-29e1-4585-b7d1-314128613255": {
           "type": "heading",
           "settings": {
             "heading": "It's not just paint, it's Gush",
@@ -22,8 +21,9 @@
         }
       },
       "block_order": [
-        "template--15643888156865__fab4f25f-0752-42d0-bd21-ead8fc3aad49-heading-1"
+        "961082f5-29e1-4585-b7d1-314128613255"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/US_Landing_Page_1_Desktop_Video_1_V1.gif",
         "image_overlay_opacity": 0,
@@ -41,6 +41,7 @@
     },
     "6605a775-fdae-435c-940a-e882d65fb162": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Interior_Paint_Page_Desktop_Video_1_V1.gif",
         "image_overlay_opacity": 0,
