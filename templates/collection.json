@@ -39,6 +39,12 @@
         "page_name": "service"
       }
     },
+    "0133c580-253b-48ff-a663-f172a96b11b1": {
+      "type": "pagefly-section",
+      "settings": {
+        "section_id": "pf-43661015"
+      }
+    },
     "6605a775-fdae-435c-940a-e882d65fb162": {
       "type": "image-banner",
       "disabled": true,
@@ -216,6 +222,7 @@
   "order": [
     "banner",
     "fab4f25f-0752-42d0-bd21-ead8fc3aad49",
+    "0133c580-253b-48ff-a663-f172a96b11b1",
     "6605a775-fdae-435c-940a-e882d65fb162",
     "377cc5db-8f84-4a06-ba87-f4e7d6121502",
     "product-grid"
