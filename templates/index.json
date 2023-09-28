@@ -129,6 +129,7 @@
         "762beb12-694b-44ae-aba1-ed73d699e68a",
         "00ba2a39-5db0-411e-8e0c-ea67503a570e"
       ],
+      "disabled": true,
       "settings": {
         "title": "Pollutants don’t stand a chance.",
         "description": "Click the particles to discover invisible pollutants lingering in your air.",
@@ -240,7 +241,7 @@
         "link_text": "Find out the secret science behind our paints",
         "url": "shopify:\/\/pages\/science",
         "bottom_circle_txt": "",
-        "info_position": "left",
+        "info_position": "right",
         "padding_bottom": 0
       }
     },
@@ -300,7 +301,7 @@
         "link_text": "",
         "url": "",
         "bottom_circle_txt": "",
-        "info_position": "left",
+        "info_position": "right",
         "padding_bottom": 108
       }
     },
