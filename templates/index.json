@@ -34,7 +34,7 @@
         "template--16032460800193__6ff782c6-f777-4520-9053-9a135fb2b9df-16690814089a6b9c66-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Home_Page_Image.png",
+        "image": "shopify:\/\/shop_images\/Homepage_Video_Banner_1920x1080_V1.gif",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
@@ -323,6 +323,7 @@
     },
     "5e785e84-068f-42a0-876b-2a306e0760a6": {
       "type": "science-wonder",
+      "disabled": true,
       "settings": {
         "title": "The science beyond the surface",
         "heading": "Meet the scientific wonders responsible for clearing your air.",
