@@ -12,7 +12,7 @@
     <div class="paint-swiper">
     <div class="swiper mySwiper2 paint-details-slider-swiper">
       <div class="swiper-wrapper">
-           <div class="swiper-button-prev mobile-arrow left "><span class="">{% render 'mobile-arrow-left' %}</span></div>
+         
           <div class="swiper-slide">
             
              <img src="{{ 'earthy.png' | asset_url }}" />
@@ -38,7 +38,7 @@
              <img src="{{ 'earthy.png' | asset_url }}" />
               
             </div>
-<div class="swiper-button-next mobile-arrow right"><span class="">{% render 'mobile-arrow-right' %}</span></div>
+
       </div>
     </div>
     </div>
@@ -49,7 +49,7 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.swiper-wrapper').slick({
+      $('.mySwiper2').slick({
         setting-name: setting-value
       });
     });
