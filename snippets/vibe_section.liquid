@@ -2,7 +2,6 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
 <div class="element">
@@ -12,24 +11,16 @@
     <div class="vibe_carousel">
 
   <div class="carousel__slide">
-    <div class="carousel__slide__inner">
      <img src="{{ 'earthy.png' | asset_url }}" />
-      <div class="carousel__slide__overlay"></div>
-    </div>
   </div>
 
   <div class="carousel__slide">
-    <div class="carousel__slide__inner">
      <img src="{{ 'earthy.png' | asset_url }}" />
-      <div class="carousel__slide__overlay"></div>
-    </div>
+  
   </div>
 
   <div class="carousel__slide">
-    <div class="carousel__slide__inner">
       <img src="{{ 'earthy.png' | asset_url }}" />
-      <div class="carousel__slide__overlay"></div>
-    </div>
   </div>
   
 </div>
@@ -37,7 +28,7 @@
       <button class="button"><div class="text">Earthy</div></button>
 </div>
 
-<script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
  <script>
 $('.vibe_carousel').slick({
   slidesToShow: 3,
@@ -77,5 +68,5 @@ $('.vibe_carousel').slick({
   ]
 });
 	
-</script>
+
 </script>
