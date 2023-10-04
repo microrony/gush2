@@ -3,7 +3,17 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
+<style>
+  .collection_button {
+    border-radius: 1px;
+border: 1px solid var(--Secondary-6, #302112);
+    display: inline-flex;
+padding: 20px;
+justify-content: center;
+align-items: center;
+gap: 20px;
+  }
+</style>
 
 
 <div class="page-width">
@@ -14,22 +24,14 @@
   
       <div class="swiper-wrapper-1">
          
-          <div><img src="{{ 'earthy.png' | asset_url }}" /><a>Earthy</a>
+          <div><img src="{{ 'earthy.png' | asset_url }}" /><a class="collection_button">Earthy</a>
           </div>
 
-          <div><img src="{{ 'earthy.png' | asset_url }}" /><a>Organic</a>
+          <div><img src="{{ 'earthy.png' | asset_url }}" /><a class="collection_button">Organic</a>
             </div>
 
 
-          <div><img src="{{ 'earthy.png' | asset_url }}" /><a style="display: inline-flex;
-padding: 20px;
-justify-content: center;
-align-items: center;
-gap: 20px;">Leapfrog</a>
-          </div>
-
-
-          <div><img src="{{ 'earthy.png' | asset_url }}" /><a>Octane</a>
+          <div><img src="{{ 'earthy.png' | asset_url }}" /><a class="collection_button">Leapfrog</a>
           </div>
 
       </div>
