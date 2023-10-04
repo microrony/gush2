@@ -1,10 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "OOH_Campaign",
-      "settings": {
-      }
-    },
     "18815df8-fa0c-46e2-88cd-780929f5da66": {
       "type": "image-banner",
       "settings": {
@@ -21,10 +16,16 @@
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
+    },
+    "9d982b6f-c727-415b-8cc1-a3379e859eb9": {
+      "type": "OOH_vibe_selection",
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
-    "main",
-    "18815df8-fa0c-46e2-88cd-780929f5da66"
+    "18815df8-fa0c-46e2-88cd-780929f5da66",
+    "9d982b6f-c727-415b-8cc1-a3379e859eb9"
   ]
 }
