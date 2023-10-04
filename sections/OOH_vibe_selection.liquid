@@ -1,9 +1,10 @@
 {{ "paint-details-slider.css" | asset_url | stylesheet_tag }}
-<style>
-  .info-swiper{
-    pointer-events: none;
-  }
-</style>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
 <div class="page-width paint-slider-contianer">
     <h2 class="gush-font-h2">What's your vibe?</h2> 
     <div class="slider-container">
@@ -12,7 +13,7 @@
     <div class="swiper mySwiper2 paint-details-slider-swiper">
       <div class="swiper-wrapper">
            <div class="swiper-button-prev mobile-arrow left "><span class="">{% render 'mobile-arrow-left' %}</span></div>
-            <div class="swiper-slide">
+          <div class="swiper-slide">
             
              <img src="{{ 'earthy.png' | asset_url }}" />
              
@@ -44,37 +45,15 @@
    
     </div>
 </div>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween:20,
-        slidesPerView: 1,
-        loop: true,
-        watchSlidesProgress: true
+ <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.swiper-wrapper').slick({
+        setting-name: setting-value
       });
-      var swiper2 = new Swiper(".mySwiper2", {
-        spaceBetween: 30,
-        slidesPerView: 2,
-        loop: true,
-        breakpoints: {
-          300: {
-            slidesPerView: 1,
-          },
-          750: {
-            slidesPerView: 2,
-          }
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        thumbs: {
-          swiper: swiper
-        }
-      });
-    </script>
+    });
+  </script>
 {% schema  %} 
 {
     "name":"OOH Vibe Selection slider",
