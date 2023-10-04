@@ -34,7 +34,8 @@
       -%}
       {% if current_variant != blank %}
         <div class="product-item">
-          {{ product.featured_image | img_url:"master" }}
+
+        <img src="{{ product.featured_image | img_url:"master" }}"/>
            <h4>{{ product.title }}</h4>
           <h5>{{ current_variant.title }}</h5>
           <!-- Add code to display product image, price, etc. -->
@@ -57,7 +58,7 @@
       -%}
       {% if current_variant != blank %}
         <div class="product-item">
-          {{ product.featured_image | img_url:'master' }}
+         <img src="{{ product.featured_image | img_url:"master" }}"/>
              <h4>{{ product.title }}</h4>
           <h5>{{ current_variant.title }}</h5>
           <!-- Add code to display product image, price, etc. -->
@@ -80,7 +81,7 @@
       -%}
       {% if current_variant != blank %}
         <div class="product-item">
-         {{ product.featured_image | img_url:"master" }}
+       <img src="{{ product.featured_image | img_url:"master" }}"/>
           <h4>{{ product.title }}</h4>
           <h5>{{ current_variant.title }}</h5>
           <!-- Add code to display product image, price, etc. -->
