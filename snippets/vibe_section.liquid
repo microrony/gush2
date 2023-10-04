@@ -8,7 +8,8 @@
 <div class="element">
       <div class="text-wrapper">What’s your vibe?</div>
 
-  <div class="vibe_carousel">
+  <div class="slide-carousel">
+    <div class="vibe_carousel">
 
   <div class="carousel__slide">
     <div class="carousel__slide__inner">
@@ -32,9 +33,49 @@
   </div>
   
 </div>
+  </div>
       <button class="button"><div class="text">Earthy</div></button>
 </div>
 
 <script>
-  $('.vibe_carousel').slick();
+ <script>
+$('.vibe_carousel').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+     dots: false,
+    prevArrow: false,
+    nextArrow: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+	
+</script>
 </script>
