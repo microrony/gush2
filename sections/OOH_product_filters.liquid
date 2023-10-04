@@ -79,7 +79,8 @@
       {% if current_variant != blank %}
         <div class="product-item">
           {{ product.featured_image | image_url: width: 100 | image_tag }}
-          <h2>{{ product.title }}-{{ current_variant.title }}-{{ current_variant.id }}</h2>
+          <h3>{{ product.title }}</h3>
+          <h4>{{ current_variant.title }}</h4>
           <!-- Add code to display product image, price, etc. -->
         </div>
       {% endif %}
