@@ -88,10 +88,39 @@
   });
 </script>
 {% schema %}
-  {
-    "name": "OOH Product Filters",
-    "settings": []
-  }
+ {
+    "name":"OOH Filter Products",
+    "settings":[
+        {
+            "type":"text",
+            "id":"heading",
+            "label":"Heading"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"slide",
+            "name":"Slide",
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "id":"img",
+                    "label":"Image"
+                },
+              {
+"id" : "vibe_collection",
+"type" : "collection",
+"label" : "collection"
+}
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"OOH Filter Products"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
