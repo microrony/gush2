@@ -22,10 +22,17 @@
       "settings": {
         "heading": ""
       }
+    },
+    "0e98d41b-c752-4893-a06c-9b9db5b2ef68": {
+      "type": "OOH_product_filters",
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "18815df8-fa0c-46e2-88cd-780929f5da66",
-    "9d982b6f-c727-415b-8cc1-a3379e859eb9"
+    "9d982b6f-c727-415b-8cc1-a3379e859eb9",
+    "0e98d41b-c752-4893-a06c-9b9db5b2ef68"
   ]
 }
