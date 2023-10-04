@@ -1,6 +1,113 @@
+{% assign iteration = 0 %}
+{% assign selected_vibe = "" %}
+<div class="page-width">
+  <div class="collection-filter">
+    <form id="vibe-selection">
+      <label for="collection-filter-select">Filter by Collection:</label>
+      <select id="collection-filter-select">
+        {% for collection in collections %}
+          {% if collection.handle contains 'vibe' %}
+            {% assign iteration = iteration | plus: 1 %}
+            {% if iteration == 1 %}
+              {% assign selected_vibe = collection.handle %}
+            {% endif %}
+            <option value="{{ collection.handle }}" {% if iteration == 1 %}selected{% endif %}>{{ collection.title }}</option>
+          {% endif %}
+        {% endfor %}
+      </select>
+    </form>
+  </div>
+</div>
+
+<div class="page-width">
+  {% assign collection = collections['vibe-1'] %}
+  <div class="vibe-1 {% unless collection.handle == selected_vibe %}hidden{% endunless %}" data-vibe="{{ collection.handle }}">
+    {%- for product in collection.products -%}
+      {%- liquid
+         assign current_variant = blank
+    
+         for variant in product.variants
+           if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Pack (20ml)'
+             assign current_variant = variant
+           endif
+         endfor
+      -%}
+      {% if current_variant != blank %}
+        <div class="product-item">
+          {{ current_variant.featured_media | image_url: width: 100 | image_tag }}
+          <h2>{{ product.title }}-{{ current_variant.title }}-{{ current_variant.id }}</h2>
+          <!-- Add code to display product image, price, etc. -->
+        </div>
+      {% endif %}
+    {%- endfor -%}
+  </div>
+  
+  {% assign collection = collections['vibe-2'] %}
+  <div class="vibe-2 {% unless collection.handle == selected_vibe %}hidden{% endunless %}" data-vibe="{{ collection.handle }}">
+    {%- for product in collection.products -%}
+      {%- liquid
+         assign current_variant = blank
+    
+         for variant in product.variants
+           if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Pack (20ml)'
+             assign current_variant = variant
+           endif
+         endfor
+      -%}
+      {% if current_variant != blank %}
+        <div class="product-item">
+          {{ current_variant.featured_media | image_url: width: 100 | image_tag }}
+          <h2>{{ product.title }}-{{ current_variant.title }}-{{ current_variant.id }}</h2>
+          <!-- Add code to display product image, price, etc. -->
+        </div>
+      {% endif %}
+    {%- endfor -%}
+  </div>
+  
+  {% assign collection = collections['vibe-3'] %}
+  <div class="vibe-3 {% unless collection.handle == selected_vibe %}hidden{% endunless %}" data-vibe="{{ collection.handle }}">
+    {%- for product in collection.products -%}
+      {%- liquid
+         assign current_variant = blank
+    
+         for variant in product.variants
+           if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Pack (20ml)'
+             assign current_variant = variant
+           endif
+         endfor
+      -%}
+      {% if current_variant != blank %}
+        <div class="product-item">
+          {{ current_variant.featured_media | image_url: width: 100 | image_tag }}
+          <h2>{{ product.title }}-{{ current_variant.title }}-{{ current_variant.id }}</h2>
+          <!-- Add code to display product image, price, etc. -->
+        </div>
+      {% endif %}
+    {%- endfor -%}
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const form = document.querySelector('#vibe-selection')
+    form.addEventListener('change', (e) => {
+      const vibe = e.target.value
+
+      const collections = document.querySelectorAll('[data-vibe]')
+      collections.forEach(item => {
+        const _vibe = item.dataset.vibe
+        if(vibe === _vibe) {
+          if(item.classList.contains('hidden')) item.classList.remove('hidden')
+        }
+        else {
+          if(!item.classList.contains('hidden')) item.classList.add('hidden')
+        }
+      })
+    })
+  });
+</script>
 {% schema %}
   {
-    "name": "Section name",
+    "name": "OOH Product Filters",
     "settings": []
   }
 {% endschema %}
