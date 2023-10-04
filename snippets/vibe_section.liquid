@@ -7,20 +7,34 @@
 
 <div class="element">
       <div class="text-wrapper">What’s your vibe?</div>
-      <div class="frame">
-        <div class="group-wrapper">
-          <div class="group">
-            <div class="group-2"><img src="{{ 'earthy.png' | asset_url }}" /></div>
-            <div class="group-3"><img src="{{ 'earthy.png' | asset_url }}" /></div>
-            <div class="group-4"><img src="{{ 'earthy.png' | asset_url }}" /></div>
-            <div class="group-5"><img src="{{ 'earthy.png' | asset_url }}" /></div>
-          </div>
-        </div>
-      </div>
-      <button class="button"><div class="text">Earthy</div></button>
 
+  <div class="carousel">
+
+  <div class="carousel__slide">
+    <div class="carousel__slide__inner">
+     <img src="{{ 'earthy.png' | asset_url }}" />
+      <div class="carousel__slide__overlay"></div>
     </div>
+  </div>
+
+  <div class="carousel__slide">
+    <div class="carousel__slide__inner">
+     <img src="{{ 'earthy.png' | asset_url }}" />
+      <div class="carousel__slide__overlay"></div>
+    </div>
+  </div>
+
+  <div class="carousel__slide">
+    <div class="carousel__slide__inner">
+      <img src="{{ 'earthy.png' | asset_url }}" />
+      <div class="carousel__slide__overlay"></div>
+    </div>
+  </div>
+  
+</div>
+      <button class="button"><div class="text">Earthy</div></button>
+</div>
 
 <script>
-  $('.group').slick();
+  $('.carousel').slick();
 </script>
