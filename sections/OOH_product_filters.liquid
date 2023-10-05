@@ -6,6 +6,69 @@
     justify-content: center;}
    .vibe-3 {display: flex;
     justify-content: center;}
+
+
+   .has-secondary.grid-view-item__link img.secondary{ 
+
+  display:none; 
+
+ } 
+
+   
+
+ .has-secondary.grid-view-item__link:hover img.secondary{ 
+
+  display:block; 
+
+ } 
+
+   
+
+ .has-secondary.grid-view-item__link:hover img.grid-view-item__image{ 
+
+  display:none; 
+
+ } 
+
+   
+
+ @media screen and (min-width:767px){ 
+
+ .has-secondary.grid-view-item__link img.secondary{ 
+
+  display:none; 
+
+ } 
+
+   
+
+ .has-secondary.grid-view-item__link:hover img.secondary{ 
+
+  display:block; 
+
+ } 
+
+   
+
+ .has-.grid-view-item__link:hover img.grid-view-item__image{ 
+
+  display:none; 
+
+ } 
+
+ } 
+
+  secondary
+
+ @media screen and (max-width:767px){ 
+
+ .has-secondary.grid-view-item__link img.secondary{ 
+
+  display:none; 
+
+ } 
+
+ } 
 </style>
 {% assign iteration = 0 %}
 {% assign selected_vibe = "" %}
@@ -46,7 +109,12 @@
 
         {% for image in product.images limit:1 offset:1 %}
             <img src="{{ image | img_url:"200x200" }}"/>
-{% endfor %}
+        {% endfor %}
+
+
+             {% if product.images.size > 1 %} 
+      <img class="secondary" src="{{ product.images.last | img_url: grid_image_width }}" alt="{{ product.images.last.alt | escape }}"> 
+     {% endif %} 
         
            <h4>{{ product.title }}</h4>
           <h5>{{ current_variant.title }}</h5>
@@ -70,7 +138,10 @@
       -%}
       {% if current_variant != blank %}
         <div class="product-item">
-         <img src="{{ product.featured_image | img_url:"200x200" }}"/>
+          
+          {% for image in product.images limit:1 offset:1 %}
+            <img src="{{ image | img_url:"200x200" }}"/>
+            {% endfor %}
              <h4>{{ product.title }}</h4>
           <h5>{{ current_variant.title }}</h5>
           <!-- Add code to display product image, price, etc. -->
@@ -93,7 +164,10 @@
       -%}
       {% if current_variant != blank %}
         <div class="product-item">
-       <img src="{{ product.featured_image | img_url:"200x200" }}"/>
+              {% for image in product.images limit:1 offset:1 %}
+            <img src="{{ image | img_url:"200x200" }}"/>
+              {% endfor %}
+        <img class="hidden" src="{{ product.images.last | img_url: '450x450' }}" alt="{{ product.images.last.alt | escape }}" />
           <h4>{{ product.title }}</h4>
           <h5>{{ current_variant.title }}</h5>
           <!-- Add code to display product image, price, etc. -->
