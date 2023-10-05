@@ -56,6 +56,7 @@
   }
 }
 </style>
+
 {% assign iteration = 0 %}
 {% assign selected_vibe = "" %}
 <div class="page-width">
@@ -97,7 +98,8 @@
         {% for image in product.images limit:1 offset:1 %}
             <img class="grid-view-item__image" src="{{ image | img_url:"200x200" }}"/>
         {% endfor %}
-        <img class="hidden" src="{{ product.images.last | img_url: '450x450' }}" alt="{{ product.images.last.alt | escape }}" />
+       
+            <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}" />
       </div>
 
    
