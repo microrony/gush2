@@ -18,14 +18,17 @@
     document.getElementById('order-form').addEventListener('submit', function(e) {
       e.preventDefault(); // Prevent the form from submitting normally
 
-      // Get the selected product value
-      const selectedProduct = document.querySelector('input[name="product"]:checked').value;
-
-      // Redirect to the order details page with the selected product value
-      window.location.href = '/checkout?question1=' + selectedProduct ;
+      // Get the selected value for question1
+      const selectedQuestion1 = document.querySelector('input[name="question1"]:checked');
+      
+      if (selectedQuestion1) {
+        // Redirect to the order details page with the selected question1 value
+        window.location.href = '/checkout?question1=' + selectedQuestion1.value;
+      }
     });
   });
 </script>
+
 
 
 {% schema %}
