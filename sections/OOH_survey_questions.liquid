@@ -1,4 +1,10 @@
-<p>survey</p>
+<form action="/checkout" method="post">
+  <input type="hidden" name="checkout[attributes][gift_message]" value="">
+  <textarea name="gift_message" placeholder="Enter a gift message"></textarea>
+  <input type="submit" value="Proceed to checkout">
+</form>
+
+
 {% schema %}
  {
     "name":"OOH Survey Section",
