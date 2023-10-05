@@ -49,10 +49,6 @@
 
         <div class="collection_loads">
           {% assign collection1 = collections['vibe-1'] %}
-          {% assign iteration = iteration | plus: 1 %}
-          {% if iteration == 1 %}
-            {% assign selected_vibe = collection.handle %}
-          {% endif %}
           <a href="{{ collection1.url }}">
             <img src="{{ collection1.image.src | img_url: 'medium' }}" alt="{{ collection.title }}">
             <h3>{{ collection1.title }}</h3>
