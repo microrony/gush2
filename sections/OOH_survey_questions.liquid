@@ -18,12 +18,14 @@
     document.getElementById('order-form').addEventListener('submit', function(e) {
       e.preventDefault(); // Prevent the form from submitting normally
 
-      // Get the selected value for question1
+      // Get the selected values for question1 and question2
       const selectedQuestion1 = document.querySelector('input[name="question1"]:checked');
-      
-      if (selectedQuestion1) {
-        // Redirect to the order details page with the selected question1 value
-        window.location.href = '/checkout?question1=' + selectedQuestion1.value;
+      const selectedQuestion2 = document.querySelector('input[name="question2"]:checked');
+
+      if (selectedQuestion1 && selectedQuestion2) {
+        // Redirect to the order details page with both selected values
+        const url = `/checkout?question1=${selectedQuestion1.value}&question2=${selectedQuestion2.value}`;
+        window.location.href = url;
       }
     });
   });
