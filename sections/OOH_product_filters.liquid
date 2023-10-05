@@ -126,9 +126,13 @@
       {% if current_variant != blank %}
         <div class="product-item">
           
-          {% for image in product.images limit:1 offset:1 %}
-            <img src="{{ image | img_url:"200x200" }}"/>
-            {% endfor %}
+          <div class="reveal">
+        {% for image in product.images limit:1 offset:1 %}
+            <img class="grid-view-item__image" src="{{ image | img_url:"200x200" }}"/>
+        {% endfor %}
+       
+            <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}" />
+      </div>
              <h4>{{ product.title }}</h4>
           <h5>{{ current_variant.title }}</h5>
           <!-- Add code to display product image, price, etc. -->
@@ -151,10 +155,14 @@
       -%}
       {% if current_variant != blank %}
         <div class="product-item">
-              {% for image in product.images limit:1 offset:1 %}
-            <img src="{{ image | img_url:"200x200" }}"/>
-              {% endfor %}
-        <img class="hidden" src="{{ product.images.last | img_url: '450x450' }}" alt="{{ product.images.last.alt | escape }}" />
+               <div class="reveal">
+        {% for image in product.images limit:1 offset:1 %}
+            <img class="grid-view-item__image" src="{{ image | img_url:"200x200" }}"/>
+        {% endfor %}
+       
+            <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}" />
+      </div>
+
           <h4>{{ product.title }}</h4>
           <h5>{{ current_variant.title }}</h5>
           <!-- Add code to display product image, price, etc. -->
