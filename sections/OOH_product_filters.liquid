@@ -1,3 +1,277 @@
+{% assign iteration = 0 %}
+{% assign selected_vibe = '' %}
+<!-- OOH product filters starts from here -->
+
+<style>
+    .vibe-1 {display: flex;
+      justify-content: center;}
+     .vibe-2 {display: flex;
+      justify-content: center;}
+     .vibe-3 {display: flex;
+      justify-content: center;}
+
+    /* ===============================================
+  // Reveal module
+  // =============================================== */
+
+  .reveal .hidden { display: block !important; visibility: visible !important;}
+  .product:hover .reveal img { opacity: 1; }
+  .reveal { position: relative; }
+  .reveal .hidden {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .reveal:hover .hidden {
+    z-index: 100000;
+    opacity: 1;
+  }
+  .reveal .caption {
+    position: absolute;
+    top: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* fallback for IE8 */
+    background-color: rgba(255, 255, 255, 0.7);
+    font: 13px/1.6 sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+  }
+  .reveal .hidden .caption .centered {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  @media (min-width: 480px) and (max-width: 979px) {
+    .reveal .caption {
+      font-size: 11px;
+    }
+  }
+</style>
+
+{{ 'paint-details-slider.css' | asset_url | stylesheet_tag }}
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+<style>
+    .collection_button {
+      border-radius: 1px;
+  border: 1px solid var(--Secondary-6, #302112);
+      display: inline-flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+    }
+</style>
+
+<div class="page-width">
+  <h2 class="gush-font-h1">What's your vibe?</h2>
+  <div class="slider-container-2">
+    <div class="paint-swiper-1">
+      <div class="swiper-wrapper-1">
+        <div class="collection-filter">
+          <form id="vibe-selection">
+            <label for="collection-filter-select">Filter by Collection:</label>
+            <select id="collection-filter-select">
+              {% for collection in collections %}
+                {% if collection.handle contains 'vibe' %}
+                  {% assign iteration = iteration | plus: 1 %}
+                  {% if iteration == 1 %}
+                    {% assign selected_vibe = collection.handle %}
+                  {% endif %}
+                  <option
+                    value="{{ collection.handle }}"
+                    {% if iteration == 1 %}
+                      selected
+                    {% endif %}
+                  >
+                    {{ collection.title }}
+                  </option>
+                {% endif %}
+              {% endfor %}
+            </select>
+          </form>
+        </div>
+
+        <div class="collection_loads">
+          {% assign collection1 = collections['vibe-1'] %}
+          <a href="{{ collection1.url }}">
+            <img src="{{ collection1.image.src | img_url: 'medium' }}" alt="{{ collection.title }}">
+            <h3>{{ collection1.title }}</h3>
+          </a>
+        </div>
+        <div class="collection_loads">
+          {% assign collection2 = collections['vibe-2'] %}
+          <a href="{{ collection2.url }}">
+            <img src="{{ collection2.image.src | img_url: 'medium' }}" alt="{{ collection.title }}">
+            <h3>{{ collection2.title }}</h3>
+          </a>
+        </div>
+        <div class="collection_loads">
+          {% assign collection1 = collections['vibe-3'] %}
+          <a href="{{ collection1.url }}">
+            <img src="{{ collection3.image.src | img_url: 'medium' }}" alt="{{ collection.title }}">
+            <h3>{{ collection3.title }}</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+        jQuery(document).ready(function($){
+        $('.swiper-wrapper-1').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+      });
+</script>
+
+<div id="ooh_product_filter_section">
+  <div class="page-width">
+    <h2 class="gush-font-h1" style="font-size:42px">Select 3 paint packs for free</h2>
+    <h4 style="font-size:16px;">
+      These pocket-sized (20ml) sample sachets work just like ketchup* — simply tear, squeeze and apply
+    </h4>
+    {% assign collection = collections['vibe-1'] %}
+    <div
+      class="vibe-1 {% unless collection.handle == selected_vibe %}hidden{% endunless %} ooh_filtered_products"
+      data-vibe="{{ collection.handle }}"
+    >
+      {%- for product in collection.products -%}
+        {%- liquid
+          assign current_variant = blank
+
+          for variant in product.variants
+            if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Pack (20ml)'
+              assign current_variant = variant
+            endif
+          endfor
+        -%}
+        {% if current_variant != blank %}
+          <div class="product-item">
+            <div class="reveal">
+              {% for image in product.images limit: 1 offset: 1 %}
+                <img class="grid-view-item__image" src="{{ image | img_url:"200x200" }}">
+              {% endfor %}
+
+              <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}">
+            </div>
+
+            <h4>{{ product.title }}</h4>
+            <h5>{{ current_variant.title }}</h5>
+            <!-- Add code to display product image, price, etc. -->
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    </div>
+
+    {% assign collection = collections['vibe-2'] %}
+    <div
+      class="vibe-2 {% unless collection.handle == selected_vibe %}hidden{% endunless %} ooh_filtered_products"
+      data-vibe="{{ collection.handle }}"
+    >
+      {%- for product in collection.products -%}
+        {%- liquid
+          assign current_variant = blank
+
+          for variant in product.variants
+            if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Pack (20ml)'
+              assign current_variant = variant
+            endif
+          endfor
+        -%}
+        {% if current_variant != blank %}
+          <div class="product-item">
+            <div class="reveal">
+              {% for image in product.images limit: 1 offset: 1 %}
+                <img class="grid-view-item__image" src="{{ image | img_url:"200x200" }}">
+              {% endfor %}
+
+              <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}">
+            </div>
+            <h4>{{ product.title }}</h4>
+            <h5>{{ current_variant.title }}</h5>
+            <!-- Add code to display product image, price, etc. -->
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    </div>
+
+    {% assign collection = collections['vibe-3'] %}
+    <div
+      class="vibe-3 {% unless collection.handle == selected_vibe %}hidden{% endunless %} ooh_filtered_products"
+      data-vibe="{{ collection.handle }}"
+    >
+      {%- for product in collection.products -%}
+        {%- liquid
+          assign current_variant = blank
+
+          for variant in product.variants
+            if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Pack (20ml)'
+              assign current_variant = variant
+            endif
+          endfor
+        -%}
+        {% if current_variant != blank %}
+          <div class="product-item">
+            <div class="reveal">
+              {% for image in product.images limit: 1 offset: 1 %}
+                <img class="grid-view-item__image" src="{{ image | img_url:"200x200" }}">
+              {% endfor %}
+
+              <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}">
+            </div>
+
+            <h4>{{ product.title }}</h4>
+            <h5>{{ current_variant.title }}</h5>
+            <!-- Add code to display product image, price, etc. -->
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const form = document.querySelector('#vibe-selection')
+    form.addEventListener('change', (e) => {
+      const vibe = e.target.value
+
+      const collections = document.querySelectorAll('[data-vibe]')
+      collections.forEach(item => {
+        const _vibe = item.dataset.vibe
+        if(vibe === _vibe) {
+          if(item.classList.contains('hidden')) item.classList.remove('hidden')
+        }
+        else {
+          if(!item.classList.contains('hidden')) item.classList.add('hidden')
+        }
+      })
+    })
+  });
+</script>
+
 {% schema %}
  {
     "name":"OOH Filter Products",
