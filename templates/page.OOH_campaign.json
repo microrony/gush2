@@ -39,6 +39,24 @@
       "settings": {
         "heading": ""
       }
+    },
+    "1afdc872-b88e-44b3-8045-df91b610b0cc": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/whats_in_pack.png",
+        "image_2": "shopify:\/\/shop_images\/whats_in_pack.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "secondary_btn_white": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -46,6 +64,7 @@
     "9d982b6f-c727-415b-8cc1-a3379e859eb9",
     "0e98d41b-c752-4893-a06c-9b9db5b2ef68",
     "416326db-2154-4020-aa2f-9760ad9ad203",
-    "f7194639-2ff4-4542-88f2-a0552cc5d10a"
+    "f7194639-2ff4-4542-88f2-a0552cc5d10a",
+    "1afdc872-b88e-44b3-8045-df91b610b0cc"
   ]
 }
