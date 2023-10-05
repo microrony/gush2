@@ -1,9 +1,38 @@
 
 {% schema %}
-  {
-    "name": "OOH Order Details Section",
-    "settings": []
-  }
+ {
+    "name":"OOH Order Details Section",
+    "settings":[
+        {
+            "type":"text",
+            "id":"heading",
+            "label":"Heading"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"slide",
+            "name":"Slide",
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "id":"img",
+                    "label":"Image"
+                },
+              {
+"id" : "vibe_collection",
+"type" : "collection",
+"label" : "collection"
+}
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"OOH Order Details Section"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
