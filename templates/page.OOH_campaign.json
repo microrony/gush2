@@ -33,12 +33,19 @@
       "settings": {
         "heading": ""
       }
+    },
+    "f7194639-2ff4-4542-88f2-a0552cc5d10a": {
+      "type": "OOH_survey_questions",
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "18815df8-fa0c-46e2-88cd-780929f5da66",
     "9d982b6f-c727-415b-8cc1-a3379e859eb9",
     "0e98d41b-c752-4893-a06c-9b9db5b2ef68",
-    "416326db-2154-4020-aa2f-9760ad9ad203"
+    "416326db-2154-4020-aa2f-9760ad9ad203",
+    "f7194639-2ff4-4542-88f2-a0552cc5d10a"
   ]
 }
