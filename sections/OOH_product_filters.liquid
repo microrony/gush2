@@ -1,3 +1,5 @@
+{% assign iteration = 0 %}
+{% assign selected_vibe = "" %}
 
 {{ "paint-details-slider.css" | asset_url | stylesheet_tag }}
 <!-- Add the slick-theme.css if you want default styling -->
@@ -24,6 +26,25 @@ gap: 20px;
     <div class="paint-swiper-1">
   
       <div class="swiper-wrapper-1">
+
+        <div class="page-width">
+  <div class="collection-filter">
+    <form id="vibe-selection">
+      <label for="collection-filter-select">Filter by Collection:</label>
+      <select id="collection-filter-select">
+        {% for collection in collections %}
+          {% if collection.handle contains 'vibe' %}
+            {% assign iteration = iteration | plus: 1 %}
+            {% if iteration == 1 %}
+              {% assign selected_vibe = collection.handle %}
+            {% endif %}
+            <option value="{{ collection.handle }}" {% if iteration == 1 %}selected{% endif %}>{{ collection.title }}</option>
+          {% endif %}
+        {% endfor %}
+      </select>
+    </form>
+  </div>
+</div>
          
           <div><img src="{{ 'earthy.png' | asset_url }}" /><a class="collection_button">Earthy</a>
           </div>
@@ -123,26 +144,6 @@ gap: 20px;
 </style>
 
 <div id="ooh_product_filter_section">
-{% assign iteration = 0 %}
-{% assign selected_vibe = "" %}
-<div class="page-width">
-  <div class="collection-filter">
-    <form id="vibe-selection">
-      <label for="collection-filter-select">Filter by Collection:</label>
-      <select id="collection-filter-select">
-        {% for collection in collections %}
-          {% if collection.handle contains 'vibe' %}
-            {% assign iteration = iteration | plus: 1 %}
-            {% if iteration == 1 %}
-              {% assign selected_vibe = collection.handle %}
-            {% endif %}
-            <option value="{{ collection.handle }}" {% if iteration == 1 %}selected{% endif %}>{{ collection.title }}</option>
-          {% endif %}
-        {% endfor %}
-      </select>
-    </form>
-  </div>
-</div>
 
 <div class="page-width">
   {% assign collection = collections['vibe-1'] %}
