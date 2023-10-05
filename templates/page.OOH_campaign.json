@@ -20,11 +20,16 @@
     "9d982b6f-c727-415b-8cc1-a3379e859eb9": {
       "type": "OOH_vibe_selection",
       "settings": {
-        "heading": ""
       }
     },
     "0e98d41b-c752-4893-a06c-9b9db5b2ef68": {
       "type": "OOH_product_filters",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "416326db-2154-4020-aa2f-9760ad9ad203": {
+      "type": "OOH_order_details",
       "settings": {
         "heading": ""
       }
@@ -33,6 +38,7 @@
   "order": [
     "18815df8-fa0c-46e2-88cd-780929f5da66",
     "9d982b6f-c727-415b-8cc1-a3379e859eb9",
-    "0e98d41b-c752-4893-a06c-9b9db5b2ef68"
+    "0e98d41b-c752-4893-a06c-9b9db5b2ef68",
+    "416326db-2154-4020-aa2f-9760ad9ad203"
   ]
 }
