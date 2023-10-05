@@ -13,10 +13,6 @@
 </form>
 
 
-
-
-
-    
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('order-form').addEventListener('submit', function(e) {
@@ -26,7 +22,7 @@
       const selectedProduct = document.querySelector('input[name="product"]:checked').value;
 
       // Redirect to the order details page with the selected product value
-      window.location.href = '/checkout?product=' + selectedProduct;
+      window.location.href = '/checkout?question1=' + selectedProduct ;
     });
   });
 </script>
