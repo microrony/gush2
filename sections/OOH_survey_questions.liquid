@@ -1,12 +1,35 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+ {
+    "name":"OOH Survey Section",
+    "settings":[
+        {
+            "type":"text",
+            "id":"heading",
+            "label":"Heading"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"slide",
+            "name":"Slide",
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "id":"img",
+                    "label":"Image"
+                },
+              {
+"id" : "vibe_collection",
+"type" : "collection",
+"label" : "collection"
+}
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"OOH Survey Section"
+        }
+    ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
