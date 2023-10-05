@@ -13,13 +13,41 @@
 </form>
 
 
+<form id="quiz-form">
+  <h2>Question 1: What is your favorite color?</h2>
+  <label>
+    <input type="radio" name="question1" value="red"> Red
+  </label>
+  <label>
+    <input type="radio" name="question1" value="blue"> Blue
+  </label>
+  <label>
+    <input type="radio" name="question1" value="green"> Green
+  </label>
+
+  <h2>Question 2: What is your favorite animal?</h2>
+  <label>
+    <input type="radio" name="question2" value="dog"> Dog
+  </label>
+  <label>
+    <input type="radio" name="question2" value="cat"> Cat
+  </label>
+  <label>
+    <input type="radio" name="question2" value="bird"> Bird
+  </label>
+
+  <button type="submit">Submit</button>
+</form>
+In this example:
+
+Each question is enclosed in an <h2> heading element for clarity.
+Each set of radio buttons for a question shares the same name attribute to ensure that the user can only select one option for each question. For example, name="question1" for Question 1 and name="question2" for Question 2.
+The value attribute of each radio button represents the user's choice for that option.
+You can further enhance this form by adding JavaScript to handle form submission and collect user choices, or you can use server-side processing to handle the form data, depending on your specific requirements.
 
 
 
-    <p>Q2. How soon do you want to start painting ?</p>
-    <input type="radio" name="product" value="Within 1-4 Weeks">Within 1-4 Weeks
-    <input type="radio" name="product" value="Within 1-3 Months">Within 1-3 Months
-    <input type="radio" name="product" value="More then 3 Months">More then 3 Months
+
 
 
     
