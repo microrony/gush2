@@ -40,22 +40,59 @@
         "heading": ""
       }
     },
-    "1afdc872-b88e-44b3-8045-df91b610b0cc": {
-      "type": "image-banner",
+    "6ab897c8-2f21-4aae-9b41-8387f8cf5c32": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20976240591041__6ab897c8-2f21-4aae-9b41-8387f8cf5c32-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/08_3.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20976240591041__6ab897c8-2f21-4aae-9b41-8387f8cf5c32-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/08_3.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20976240591041__6ab897c8-2f21-4aae-9b41-8387f8cf5c32-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20976240591041__6ab897c8-2f21-4aae-9b41-8387f8cf5c32-column-1",
+        "template--20976240591041__6ab897c8-2f21-4aae-9b41-8387f8cf5c32-column-2",
+        "template--20976240591041__6ab897c8-2f21-4aae-9b41-8387f8cf5c32-column-3"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/whats_in_pack.png",
-        "image_2": "shopify:\/\/shop_images\/whats_in_pack.png",
-        "image_overlay_opacity": 100,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "secondary_btn_white": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -65,6 +102,6 @@
     "0e98d41b-c752-4893-a06c-9b9db5b2ef68",
     "416326db-2154-4020-aa2f-9760ad9ad203",
     "f7194639-2ff4-4542-88f2-a0552cc5d10a",
-    "1afdc872-b88e-44b3-8045-df91b610b0cc"
+    "6ab897c8-2f21-4aae-9b41-8387f8cf5c32"
   ]
 }
