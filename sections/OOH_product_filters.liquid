@@ -97,8 +97,8 @@
 
     {% assign collection = collections['vibe-2'] %}
     <div
-      class="vibe-2 {% unless collection.handle == selected_vibe %}hidden{% endunless %}"
-      data-vibe="{{ collection.handle }} ooh_filtered_products"
+      class="vibe-2 {% unless collection.handle == selected_vibe %}hidden{% endunless %} ooh_filtered_products"
+      data-vibe="{{ collection.handle }}"
     >
       {%- for product in collection.products -%}
         {%- liquid
@@ -129,8 +129,8 @@
 
     {% assign collection = collections['vibe-3'] %}
     <div
-      class="vibe-3 {% unless collection.handle == selected_vibe %}hidden{% endunless %}"
-      data-vibe="{{ collection.handle }} ooh_filtered_products"
+      class="vibe-3 {% unless collection.handle == selected_vibe %}hidden{% endunless %} ooh_filtered_products"
+      data-vibe="{{ collection.handle }}"
     >
       {%- for product in collection.products -%}
         {%- liquid
