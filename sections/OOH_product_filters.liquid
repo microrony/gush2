@@ -64,7 +64,7 @@
   <div class="page-width">
     {% assign collection = collections['vibe-1'] %}
     <div
-      class="vibe-1 {% unless collection.handle == selected_vibe %}hidden{% endunless %}"
+      class="vibe-1 {% unless collection.handle == selected_vibe %}hidden{% endunless %} ooh_filtered_products"
       data-vibe="{{ collection.handle }}"
     >
       {%- for product in collection.products -%}
@@ -98,7 +98,7 @@
     {% assign collection = collections['vibe-2'] %}
     <div
       class="vibe-2 {% unless collection.handle == selected_vibe %}hidden{% endunless %}"
-      data-vibe="{{ collection.handle }}"
+      data-vibe="{{ collection.handle }} ooh_filtered_products"
     >
       {%- for product in collection.products -%}
         {%- liquid
@@ -130,7 +130,7 @@
     {% assign collection = collections['vibe-3'] %}
     <div
       class="vibe-3 {% unless collection.handle == selected_vibe %}hidden{% endunless %}"
-      data-vibe="{{ collection.handle }}"
+      data-vibe="{{ collection.handle }} ooh_filtered_products"
     >
       {%- for product in collection.products -%}
         {%- liquid
