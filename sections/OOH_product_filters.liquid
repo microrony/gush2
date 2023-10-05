@@ -44,15 +44,23 @@ gap: 20px;
       </select>
     </form>
   </div>
-          <div><img src="{{ 'earthy.png' | asset_url }}" /><a class="collection_button">Earthy</a>
-          </div>
 
-          <div><img src="{{ 'earthy.png' | asset_url }}" /><a class="collection_button">Organic</a>
-            </div>
+{% assign collection_handle = 'vibe-1' %}
 
+{% for collection in collections %}
+  {% if collection.handle == collection_handle %}
+    <div class="collection-section">
+      <div class="collection-item">
+        <a href="{{ collection.url }}">
+          <img src="{{ collection.image.src | img_url: 'medium' }}" alt="{{ collection.title }}">
+          <h3>{{ collection.title }}</h3>
+        </a>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
 
-          <div><img src="{{ 'earthy.png' | asset_url }}" /><a class="collection_button">Leapfrog</a>
-          </div>
+    
 
       </div>
     </div>
