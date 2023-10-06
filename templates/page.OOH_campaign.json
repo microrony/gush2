@@ -30,18 +30,21 @@
     },
     "416326db-2154-4020-aa2f-9760ad9ad203": {
       "type": "OOH_order_details",
+      "disabled": true,
       "settings": {
         "heading": ""
       }
     },
     "f7194639-2ff4-4542-88f2-a0552cc5d10a": {
       "type": "OOH_survey_questions",
+      "disabled": true,
       "settings": {
         "heading": ""
       }
     },
     "7fe83faa-ab09-42d8-8c4a-55aff53aca9b": {
       "type": "ohh_packet_include",
+      "disabled": true,
       "settings": {
         "heading": ""
       }
