@@ -241,26 +241,6 @@
     </div>
   </div>
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", (event) => {
-    const form = document.querySelector('#vibe-selection')
-    form.addEventListener('change', (e) => {
-      const vibe = e.target.value
-
-      const collections = document.querySelectorAll('[data-vibe]')
-      collections.forEach(item => {
-        const _vibe = item.dataset.vibe
-        if (vibe === _vibe) {
-          if (item.classList.contains('hidden')) item.classList.remove('hidden')
-        }
-        else {
-          if (!item.classList.contains('hidden')) item.classList.add('hidden')
-        }
-      })
-    })
-  });
-</script>
 {% schema %}
  {
     "name":"OOH Filter Products",
