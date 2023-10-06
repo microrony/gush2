@@ -256,7 +256,7 @@
       })
     })
     form.addEventListener('change', (e) => {
-      const nonSerializeData = new FormData(e.currentTarget)
+      const formData = new FormData(e.currentTarget)
       var selectedValues = [];
       formData.getAll("vibe").forEach(function(value) {
         selectedValues.push(value);
