@@ -24,9 +24,9 @@
     <div class="paint-swiper-1">
       <div class="swiper-wrapper-1">
         <div class="collection-filter">
-          <form id="vibe-selection">
+          
             <label for="collection-filter-select">Filter by Collection:</label>
-            <select id="collection-filter-select">
+            <select id="collection-filter-select" form="ooh-campaign">
               {% for collection in collections %}
               {% if collection.handle contains 'vibe' %}
               {% assign iteration = iteration | plus: 1 %}
@@ -37,7 +37,7 @@
               {% endif %}
               {% endfor %}
             </select>
-          </form>
+          
         </div>
       </div>
     </div>
