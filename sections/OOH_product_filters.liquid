@@ -256,18 +256,8 @@
       })
     })
     form.addEventListener('change', (e) => {
-      // const vibe = e.target.value
-
-      // const collections = document.querySelectorAll('[data-vibe]')
-      // collections.forEach(item => {
-      //   const _vibe = item.dataset.vibe
-      //   if (vibe === _vibe) {
-      //     if (item.classList.contains('hidden')) item.classList.remove('hidden')
-      //   }
-      //   else {
-      //     if (!item.classList.contains('hidden')) item.classList.add('hidden')
-      //   }
-      // })
+      const nonSerializeData = new FormData(e.currentTarget)
+      console.log(nonSerializeData.get('vibe'))
     })
   });
 </script>
