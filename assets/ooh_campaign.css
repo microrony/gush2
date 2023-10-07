@@ -56,6 +56,16 @@ img.grid-view-item__image {
     left: 20px;
     z-index: 1;
 }
+.filtered_product_title {
+  font-size:16px;
+  line-height: 28px; /* 175% */
+letter-spacing: -0.4px;
+}
+.filtered_varient_title {
+  font-size: 12px;
+  line-height: 22.4px; /* 186.667% */
+letter-spacing: 0.28px;
+}
 
 .slick-arrow {
 	z-index: 1;
