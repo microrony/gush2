@@ -169,7 +169,7 @@
   {% assign productTitle = product.title | split: "/" %}
         <h4>{{ product.title }}</h4>
         <h5>{{ current_variant.title }}</h5>
-        <h6>{{ product.title | replace: "Gush Cair / ", "" }}</h6>
+        <h6>{{ current_variant.title | replace: "Gush Cair / ", "" }}</h6>
         <!-- Add code to display product image, price, etc. -->
       </div>
       {% endif %}
