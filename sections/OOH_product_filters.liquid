@@ -143,7 +143,8 @@
           assign current_variant = blank
     
           for variant in product.variants
-           echo variant.option1
+           echo variant.option1 | append: '-' | append: variant.option2 | append: '<br>'
+           
             if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Pack (20ml)'
               assign current_variant = variant
             endif
