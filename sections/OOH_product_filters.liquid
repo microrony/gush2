@@ -168,8 +168,7 @@
         </label>
   {% assign productTitle = product.title | split: "/" %}
         <h4>{{ product.title }}</h4>
-        <h5>{{ current_variant.title }}</h5>
-        <h6>{{ current_variant.title | replace: "Gush Cair / ", "" }}</h6>
+        <h5>{{ current_variant.title | replace: "Gush Cair / ", "" }}</h5>
         <!-- Add code to display product image, price, etc. -->
       </div>
       {% endif %}
@@ -202,8 +201,7 @@
           </div>
         </label>
         <h4>{{ product.title }}</h4>
-        <h5>{{ current_variant.title }}</h5>
-        <h6>{{ productTitle[1] | strip }}</h6>
+         <h5>{{ current_variant.title | replace: "Gush Cair / ", "" }}</h5>
         <!-- Add code to display product image, price, etc. -->
       </div>
       {% endif %}
@@ -237,8 +235,7 @@
         </label>
 
         <h4>{{ product.title }}</h4>
-        <h5>{{ current_variant.title }}</h5>
-        <h6>{{ productTitle[1] | strip }}</h6>
+        <h5>{{ current_variant.title | replace: "Gush Cair / ", "" }}</h5>
         <!-- Add code to display product image, price, etc. -->
       </div>
       {% endif %}
