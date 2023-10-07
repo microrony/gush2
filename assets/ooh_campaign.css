@@ -226,4 +226,5 @@ background: var(--Gush-Fuschia, #FF42EF);
  .left_right_container {
     display: flex;
     justify-content: space-between;
+   padding: 30px 0;
   }
