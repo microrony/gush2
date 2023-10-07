@@ -338,7 +338,7 @@
       .then(res => res.json())
       .then(data => {
         console.log(data)
-        window.location.href = '/checkout'
+        window.location.href = '/checkout?discount=CAMPAIGN100'
       })
       .catch(err => console.log(err))
     }
@@ -369,8 +369,13 @@
         const value = el.dataset.title
         const vibes = []
         
-        
-        if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
+        if(el.checked) {
+          if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
+        }
+        else {
+          const newArray = this.selectedColors.filter(item => item !== value);
+          this.selectedColors = newArray
+        }
 
         formData.getAll('vibe').forEach(vibe => {
           vibes.push(parseInt(vibe))
