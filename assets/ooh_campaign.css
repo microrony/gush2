@@ -228,3 +228,11 @@ background: var(--Gush-Fuschia, #FF42EF);
     justify-content: space-between;
    padding: 30px 0;
   }
+.ooh_terms_condition {
+  color: #311A08;
+font-family: GT America;
+font-size: 13.6px;
+font-style: normal;
+font-weight: 300;
+line-height: 20.4px; /* 150% */
+}
