@@ -296,7 +296,7 @@
 
     connectedCallback() {
       
-      this.form.addEventListener('input', this.handleChange.bind(this))
+      this.form.addEventListener('change', this.handleChange.bind(this))
       this.filter.addEventListener('change', this.handleFilterChange.bind(this))
     }
 
@@ -320,6 +320,11 @@
 
     handleChange(e) {
       console.log(e)
+
+      const el = e.target
+      if(el.getAttribute('type') == 'radio' || el.getAttribute('type') == 'checkbox') {
+        console.log(el)
+      }
     }
   }
   customElements.define('ooh-campaign-component', OOHCampaignComponent)
