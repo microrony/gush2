@@ -130,11 +130,11 @@
 <div id="ooh_product_filter_section">
   <div class="filtered_product_section">
     <h2 class="gush-font-h1" style="font-size:42px">Take your pick.</h2>
-    <h4 style="font-size:16px;">These pocket-sized 20ml paint samples are the best way to experience colours in person.</h4>
+    <h3 style="font-size:16px;">These pocket-sized 20ml paint samples are the best way to experience colours in person.</h3>
 
 <div class="filter_drop_down">
           <div class="collection-filter">
-          <label for="collection-filter-select">Filter by Collection:</label>
+        
           <select id="collection-filter-select">
             {% for collection in collections %}
             {% if collection.handle contains 'vibe' %}
@@ -142,7 +142,9 @@
             {% if iteration == 1 %}
             {% assign selected_vibe = collection.handle %}
             {% endif %}
-            <option value="{{ collection.handle }}" {% if iteration==1 %} selected {% endif %}>{{ collection.title }}</option>
+            <option value="{{ collection.handle }}" {% if iteration==1 %} selected {% endif %}>
+<img class="option_img" src="https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Group_747.svg?v=1696666936" />Showing {{ collection.title }} vibe pallet
+</option>
             {% endif %}
             {% endfor %}
           </select>
