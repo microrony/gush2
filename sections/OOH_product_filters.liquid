@@ -100,6 +100,7 @@
   gap: 20px;
     }
 </style>
+<ooh-campaign-component>
 <form id="vibe-selection">
 <div class="page-width">
   <h2 class="gush-font-h2">What's your vibe?</h2>
@@ -149,7 +150,7 @@
       -%}
       {% if current_variant != blank %}
       <div class="product-item">
-        <input type="checkbox" id="vibe_1_{{ product.title }}" name="vibe" value="{{ product.title }}">
+        <input type="checkbox" id="vibe_1_{{ product.title }}" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
         <label for="vibe_1_{{ product.title }}">
           <div class="reveal">
             {% for image in product.images limit: 1 offset: 1 %}
@@ -183,7 +184,7 @@
       -%}
       {% if current_variant != blank %}
       <div class="product-item">
-        <input type="checkbox" id="vibe_2_{{ product.title }}" name="vibe" value="{{ product.title }}">
+        <input type="checkbox" id="vibe_2_{{ product.title }}" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
         <label for="vibe_2_{{ product.title }}">
           <div class="reveal">
             {% for image in product.images limit: 1 offset: 1 %}
@@ -216,7 +217,7 @@
       -%}
       {% if current_variant != blank %}
       <div class="product-item">
-        <input type="checkbox" id="vibe_3_{{ product.title }}" name="vibe" value="{{ product.title }}">
+        <input type="checkbox" id="vibe_3_{{ product.title }}" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
         <label for="vibe_3_{{ product.title }}">
           <div class="reveal">
             {% for image in product.images limit: 1 offset: 1 %}
@@ -280,36 +281,52 @@
   <div id="selected_colors">color: <span class="colors"></span></div> 
 </div>
 </form>
+</ooh-campaign-component>
 <script>
-  document.addEventListener("DOMContentLoaded", (event) => {
-    const form = document.querySelector('#vibe-selection')
-    const select = document.querySelector('#collection-filter-select')
-    select.addEventListener('change', (e) => {
-      const vibe = e.target.value
-      const collections = document.querySelectorAll('[data-vibe]')
+  class OOHCampaignComponent extends HTMLElement {
+    constructor() {
+      super()
+      this.form = this.querySelector('#vibe-selection')
+    }
 
-      collections.forEach(item => {
-        const _vibe = item.dataset.vibe
-        if (vibe === _vibe) {
-          if (item.classList.contains('hidden')) item.classList.remove('hidden')
-        }
-        else {
-          if (!item.classList.contains('hidden')) item.classList.add('hidden')
-        }
-      })
-    })
-    form.addEventListener('change', (e) => {
-      const formData = new FormData(e.currentTarget)
-      var selectedValues = [];
-      formData.getAll("vibe").forEach(function(value) {
-        selectedValues.push(value);
-      });
+    connectedCallback() {
+      this.form.addEventListener('change', this.handleChange.bind(this))
+    }
 
-      console.log(selectedValues)
-      const colorElement = document.querySelector('#selected_colors span')
-      colorElement.innerHTML = `${selectedValues.join(', ')}`
-    })
-  });
+    handleChange(e) {
+      console.log(e.target)
+    }
+  }
+  customElements.define('ooh-campaign-component', OOHCampaignComponent)
+  // document.addEventListener("DOMContentLoaded", (event) => {
+  //   const form = document.querySelector('#vibe-selection')
+  //   const select = document.querySelector('#collection-filter-select')
+  //   select.addEventListener('change', (e) => {
+  //     const vibe = e.target.value
+  //     const collections = document.querySelectorAll('[data-vibe]')
+
+  //     collections.forEach(item => {
+  //       const _vibe = item.dataset.vibe
+  //       if (vibe === _vibe) {
+  //         if (item.classList.contains('hidden')) item.classList.remove('hidden')
+  //       }
+  //       else {
+  //         if (!item.classList.contains('hidden')) item.classList.add('hidden')
+  //       }
+  //     })
+  //   })
+  //   form.addEventListener('change', (e) => {
+  //     const formData = new FormData(e.currentTarget)
+  //     var selectedValues = [];
+  //     formData.getAll("vibe").forEach(function(value) {
+  //       selectedValues.push(value);
+  //     });
+
+  //     console.log(selectedValues)
+  //     const colorElement = document.querySelector('#selected_colors span')
+  //     colorElement.innerHTML = `${selectedValues.join(', ')}`
+  //   })
+  // });
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
