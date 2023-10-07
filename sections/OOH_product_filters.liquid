@@ -336,10 +336,28 @@
           vibes.push(parseInt(vibe))
         })
         this.selectedVariants = vibes
+
+        if(this.selectedVariants.length == 3) {
+          this.disabledVibeSelection(3, this.selectedVariants.length)
+        }
         
 
         this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
         console.log(this.selectedVariants)
+      }
+    }
+
+    disabledVibeSelection(max, current) {
+      const vibesInput = this.querySelectorAll('input[type="checkbox"][name"vibe"]')
+      if(max == current) {
+        vibesInput.forEach(item => {
+          if(!item.checked) item.disabled = true
+        })
+      }
+      else {
+        vibesInput.forEach(item => {
+          item.disabled = false
+        })
       }
     }
   }
