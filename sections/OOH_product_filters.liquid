@@ -139,15 +139,15 @@
     <div class="vibe-1 {% unless collection.handle == selected_vibe %}hidden{% endunless %} ooh_filtered_products"
       data-vibe="{{ collection.handle }}">
       {%- for product in collection.products -%}
-      {%- liquid
-      assign current_variant = blank
-
-      for variant in product.variants
-      if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Pack (20ml)'
-      assign current_variant = variant
-      endif
-      endfor
-      -%}
+        {%- liquid
+          assign current_variant = blank
+    
+          for variant in product.variants
+            if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Pack (20ml)'
+              assign current_variant = variant
+            endif
+          endfor
+        -%}
       {% if current_variant != blank %}
       <div class="product-item">
         <input type="checkbox" id="vibe_1_{{ product.title }}" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
