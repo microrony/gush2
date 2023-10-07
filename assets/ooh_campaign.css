@@ -190,3 +190,13 @@ align-items: center;
 .survey_plus_order {
   background: #F9F4F0;
 }
+.order_details_data_column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.order_details_data_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
