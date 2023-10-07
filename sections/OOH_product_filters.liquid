@@ -287,16 +287,27 @@
   class OOHCampaignComponent extends HTMLElement {
     constructor() {
       super()
+      
       this.form = this.querySelector('#vibe-selection')
+      this.filter = this.form.querySelector('select#collection-filter-select')
     }
 
     connectedCallback() {
-      this.form.addEventListener('change', this.handleChange.bind(this))
+      
+      // this.form.addEventListener('change', this.handleChange.bind(this))
+      this.filter.addEventListener('change', this.handleFilterChange.bind(this))
+    }
+
+    handleFilterChange(e) {
+      console.log(e)
+      const el = e.currentTarget
+
+      const collections = this.querySelectorAll('[data-vibe]')
     }
 
     handleChange(e) {
       console.log(e.target.tagName)
-      if(e.target.tagName == 'select') {
+      if(e.target.tagName == 'SELECT') {
         
         const vibe = e.target.value
         console.log(vibe)
