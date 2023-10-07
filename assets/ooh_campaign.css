@@ -236,3 +236,11 @@ font-style: normal;
 font-weight: 300;
 line-height: 20.4px; /* 150% */
 }
+.congratulations_message_free_ship {
+  display: inline-flex;
+padding: 16px 32px;
+justify-content: center;
+align-items: flex-start;
+  border-radius: 2px;
+background: #302112;
+}
