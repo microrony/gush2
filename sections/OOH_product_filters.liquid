@@ -241,12 +241,16 @@
       {% endif %}
       {%- endfor -%}
     </div>
+
+      <div class="btn-wrap">
+	<button class="prev-btn">Previous</button>
+	<button class="next-btn">Next</button>
+</div>
   </div>
     
   </div>
 </div>
 
-  
 
   <!-- OOH Whats include in package starts from here -->
  <style>
@@ -430,6 +434,8 @@
         $('.swiper-wrapper-1').slick({
     dots: true,
     arrow: true,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>',
     infinite: true,
     speed: 300,
     slidesToShow: 1,

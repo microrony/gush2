@@ -56,3 +56,37 @@ img.grid-view-item__image {
     left: 20px;
     z-index: 1;
 }
+
+.slick-arrow {
+	z-index: 1;
+	width: 40px;
+	height: 40px;
+}
+
+.slick-arrow:before {
+	font-size: 30px;
+}
+.slick-next {
+	right: 0;
+}
+.slick-prev {
+	left: 0;
+}
+
+.btn-wrap {
+	text-align: center;
+	width: 100%;
+}
+button {
+	background-color: #ddd;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 10px;
+	font-size: 18px;
+	font-weight: 600;
+	transition: all 0.5s;
+}
+button.slick-disabled {
+	opacity: 0.6;
+}
