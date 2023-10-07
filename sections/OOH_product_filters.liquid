@@ -299,7 +299,7 @@
     }
 
     handleFilterChange(e) {
-      console.log(e)
+      e.preventDefault()
       const el = e.currentTarget
 
       const collections = this.querySelectorAll('[data-vibe]')
@@ -317,23 +317,7 @@
     }
 
     handleChange(e) {
-      console.log(e.target.tagName)
-      if(e.target.tagName == 'SELECT') {
-        
-        const vibe = e.target.value
-        console.log(vibe)
-        const collections = this.querySelectorAll('[data-vibe]')
-
-        collections.forEach(item => {
-          const _vibe = item.dataset.vibe
-          if (vibe === _vibe) {
-            if (item.classList.contains('hidden')) item.classList.remove('hidden')
-          }
-          else {
-            if (!item.classList.contains('hidden')) item.classList.add('hidden')
-          }
-        })
-      }
+      
     }
   }
   customElements.define('ooh-campaign-component', OOHCampaignComponent)
