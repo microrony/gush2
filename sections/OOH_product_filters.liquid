@@ -319,11 +319,12 @@
     }
 
     handleChange(e) {
-      console.log(e)
-
       const el = e.target
-      if(el.getAttribute('type') == 'radio' || el.getAttribute('type') == 'checkbox') {
-        console.log(el)
+      const formData = new FormData(this.form)
+      if(el.getAttribute('name') == 'vibe') {
+        formData.getAll('vibe').forEach(value => {
+          if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
+        })
       }
     }
   }
