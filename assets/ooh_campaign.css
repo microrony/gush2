@@ -192,7 +192,7 @@ align-items: center;
 }
 .order_details_data_column {
   float: left;
-  width: 25%;
+  width: 33.33%;
   padding: 10px;
 }
 .order_details_data_row:after {
