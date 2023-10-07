@@ -143,8 +143,9 @@
             {% assign selected_vibe = collection.handle %}
             {% endif %}
             <option value="{{ collection.handle }}" {% if iteration==1 %} selected {% endif %}>
-<img class="option_img" src="https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Group_747.svg?v=1696666936" />Showing {{ collection.title }} vibe pallet
-</option>
+              Showing {{ collection.title }} vibe pallet
+            </option>
+            
             {% endif %}
             {% endfor %}
           </select>
