@@ -151,7 +151,8 @@
           </select>
         </div>
 </div>
-    
+
+  <div id="products_3_grid_slick">
     {% assign collection = collections['vibe-1'] %}
     <div class="vibe-1 {% unless collection.handle == selected_vibe %}hidden{% endunless %} ooh_filtered_products"
       data-vibe="{{ collection.handle }}">
@@ -253,6 +254,8 @@
       {% endif %}
       {%- endfor -%}
     </div>
+  </div>
+    
   </div>
 </div>
 
