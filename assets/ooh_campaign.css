@@ -30,3 +30,10 @@
   background-position: center; 
   background-size: 500px 500px;
 }
+#ooh_product_filter_section {
+  background: #F2E5FF;
+  text-align: center;
+}
+.filtered_product_section {
+  text-align: center;
+}
