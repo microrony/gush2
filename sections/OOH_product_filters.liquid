@@ -293,7 +293,8 @@
       
       this.selectedColors = []
       this.colorInfoEl = this.querySelector('#selected_colors span')
-      
+
+      this.selectedVariants = []
     }
 
     connectedCallback() {
@@ -326,42 +327,15 @@
       if(el.getAttribute('name') == 'vibe') {
         const value = el.dataset.title
         
+        
         if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
+        if(!this.selectedVariants.includes(parseInt(el.value))) this.selectedVariants.push(parseInt(el.value))
 
         this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
       }
     }
   }
   customElements.define('ooh-campaign-component', OOHCampaignComponent)
-  // document.addEventListener("DOMContentLoaded", (event) => {
-  //   const form = document.querySelector('#vibe-selection')
-  //   const select = document.querySelector('#collection-filter-select')
-  //   select.addEventListener('change', (e) => {
-  //     const vibe = e.target.value
-  //     const collections = document.querySelectorAll('[data-vibe]')
-
-  //     collections.forEach(item => {
-  //       const _vibe = item.dataset.vibe
-  //       if (vibe === _vibe) {
-  //         if (item.classList.contains('hidden')) item.classList.remove('hidden')
-  //       }
-  //       else {
-  //         if (!item.classList.contains('hidden')) item.classList.add('hidden')
-  //       }
-  //     })
-  //   })
-  //   form.addEventListener('change', (e) => {
-  //     const formData = new FormData(e.currentTarget)
-  //     var selectedValues = [];
-  //     formData.getAll("vibe").forEach(function(value) {
-  //       selectedValues.push(value);
-  //     });
-
-  //     console.log(selectedValues)
-  //     const colorElement = document.querySelector('#selected_colors span')
-  //     colorElement.innerHTML = `${selectedValues.join(', ')}`
-  //   })
-  // });
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
