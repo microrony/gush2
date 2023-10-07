@@ -295,12 +295,49 @@
       this.colorInfoEl = this.querySelector('#selected_colors span')
 
       this.selectedVariants = []
+      
+      this.q1 = ""
+      this.q2 = ""
     }
 
     connectedCallback() {
-      
       this.form.addEventListener('change', this.handleChange.bind(this))
       this.filter.addEventListener('change', this.handleFilterChange.bind(this))
+      this.form.addEventListener('submit', this.handleSubmit.bind(this))
+    }
+
+    handleSubmit(e) {
+      e.preventDefault()
+
+      const note = `
+        What are you painting: ${this.q1}.
+        How soon do you want to start painting: ${this.q2}
+      `
+      
+      const data = {
+        items: [],
+        note: note
+      }
+
+      this.selectedVariants.forEach(variantId => {
+        data.items.push({
+          id: variantId,
+          quantity: 1
+        })
+      })
+
+      const options = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+      };
+
+      fetch("/cart/add.js", options)
+      .then(res => res.json())
+      .then(data => console.log(data))
+      .error(err => console.log(err))
     }
 
     handleFilterChange(e) {
@@ -342,6 +379,14 @@
 
         this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
         console.log(this.selectedVariants)
+      }
+
+      if(el.getAttribute('name') == 'question1') {
+        this.q1 = el.value
+      }
+
+      if(el.getAttribute('name') == 'question2) {
+        this.q2 = el.value
       }
     }
 
