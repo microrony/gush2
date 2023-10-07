@@ -296,7 +296,9 @@
 
     handleChange(e) {
       if(e.target.tagName == 'select') {
+        
         const vibe = e.target.value
+        console.log(vibe)
         const collections = this.querySelectorAll('[data-vibe]')
 
         collections.forEach(item => {
