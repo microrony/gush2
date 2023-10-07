@@ -131,10 +131,23 @@
 
 <div id="ooh_product_filter_section">
   <div class="page-width">
-    <h2 class="gush-font-h1" style="font-size:42px">Select 3 paint packs for free</h2>
-    <h4 style="font-size:16px;">
-      These pocket-sized (20ml) sample sachets work just like ketchup* — simply tear, squeeze and apply
-    </h4>
+    <h2 class="gush-font-h1" style="font-size:42px">Take your pick.</h2>
+    <h4 style="font-size:16px;">These pocket-sized 20ml paint samples are the best way to experience colours in person.</h4>
+
+<div class="filter_drop_down">
+            <select id="collection-filter-select">
+            {% for collection in collections %}
+            {% if collection.handle contains 'vibe' %}
+            {% assign iteration = iteration | plus: 1 %}
+            {% if iteration == 1 %}
+            {% assign selected_vibe = collection.handle %}
+            {% endif %}
+            <option value="{{ collection.handle }}" {% if iteration==1 %} selected {% endif %}>{{ collection.title }}</option>
+            {% endif %}
+            {% endfor %}
+          </select>
+</div>
+    
     {% assign collection = collections['vibe-1'] %}
     <div class="vibe-1 {% unless collection.handle == selected_vibe %}hidden{% endunless %} ooh_filtered_products"
       data-vibe="{{ collection.handle }}">
