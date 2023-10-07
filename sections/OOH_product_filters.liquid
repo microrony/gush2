@@ -107,22 +107,11 @@
   <div class="slider-container-2">
     <div class="paint-swiper-1">
       <div class="swiper-wrapper-1">
-        <div class="collection-filter">
-          
-          <label for="collection-filter-select">Filter by Collection:</label>
-          <select id="collection-filter-select">
-            {% for collection in collections %}
-            {% if collection.handle contains 'vibe' %}
-            {% assign iteration = iteration | plus: 1 %}
-            {% if iteration == 1 %}
-            {% assign selected_vibe = collection.handle %}
-            {% endif %}
-            <option value="{{ collection.handle }}" {% if iteration==1 %} selected {% endif %}>{{ collection.title }}</option>
-            {% endif %}
-            {% endfor %}
-          </select>
-          
-        </div>
+         <div><img src="{{ 'earthy.png' | asset_url }}" /><a class="collection_button">Earthy</a></div>
+
+          <div><img src="{{ 'earthy.png' | asset_url }}" /><a class="collection_button">Organic</a></div>
+
+          <div><img src="{{ 'earthy.png' | asset_url }}" /><a class="collection_button">Leapfrog</a></div>
       </div>
     </div>
   </div>
@@ -135,7 +124,9 @@
     <h4 style="font-size:16px;">These pocket-sized 20ml paint samples are the best way to experience colours in person.</h4>
 
 <div class="filter_drop_down">
-            <select id="collection-filter-select">
+          <div class="collection-filter">
+          <label for="collection-filter-select">Filter by Collection:</label>
+          <select id="collection-filter-select">
             {% for collection in collections %}
             {% if collection.handle contains 'vibe' %}
             {% assign iteration = iteration | plus: 1 %}
@@ -146,6 +137,7 @@
             {% endif %}
             {% endfor %}
           </select>
+        </div>
 </div>
     
     {% assign collection = collections['vibe-1'] %}
