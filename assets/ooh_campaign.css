@@ -190,10 +190,15 @@ align-items: center;
 .survey_plus_order {
   background: #F9F4F0;
 }
-.order_details_data_column {
+.order_details_data_column_color {
+    float: left;
+  width: 40%;
+  padding: 10px 0;
+}
+.order_details_data_column2 {
   float: left;
-  width: 33.33%;
-  padding: 10px;
+  width: 60%;
+  padding: 10px 0;
 }
 .order_details_data_row:after {
   content: "";
