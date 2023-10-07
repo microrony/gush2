@@ -44,3 +44,7 @@
     grid-template-rows: 200px 200px 200px;
     grid-template-columns: 200px 200px 200px;
 }
+img.grid-view-item__image {
+    border-radius: 100px;
+    width: 60%;
+}
