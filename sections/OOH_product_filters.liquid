@@ -144,8 +144,10 @@
     
           for variant in product.variants
            echo variant.option1 | append: '-' | append: variant.option2 | append: '<br>'
-           
-            if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Pack (20ml)'
+           assign handle1 = variant.option1 | handleize
+           assign handle2 = variant.option2 | handleize
+           echo handle1 | append: '  ' | append: handle2 | append: '<br>'
+            if handle1 == 'gush-cair' and handle2 == 'paint-pack-20ml'
               assign current_variant = variant
             endif
           endfor
