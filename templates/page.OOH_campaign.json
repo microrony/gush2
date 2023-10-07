@@ -1,53 +1,5 @@
 {
   "sections": {
-    "18815df8-fa0c-46e2-88cd-780929f5da66": {
-      "type": "image-banner",
-      "blocks": {
-        "765924e8-53e3-479a-a4d2-56bc40828079": {
-          "type": "heading",
-          "settings": {
-            "heading": "Hey, colour lover.",
-            "heading_color": "#ffffff",
-            "heading_size": "h1"
-          }
-        },
-        "06449a15-6119-4fa8-8184-ae56eec3014d": {
-          "type": "text",
-          "settings": {
-            "text": "You've unlocked 3 free paint samples.",
-            "text_style": "body"
-          }
-        },
-        "6ed82646-4f9b-4e43-99c0-be4f8c50014d": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Pick your vibe",
-            "button_link_1": "#",
-            "button_label_2": "Button label",
-            "button_link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "765924e8-53e3-479a-a4d2-56bc40828079",
-        "06449a15-6119-4fa8-8184-ae56eec3014d",
-        "6ed82646-4f9b-4e43-99c0-be4f8c50014d"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Homepage_Video_Banner_1920x1080_V1.gif",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "secondary_btn_white": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "9d982b6f-c727-415b-8cc1-a3379e859eb9": {
       "type": "OOH_vibe_selection",
       "settings": {
@@ -82,7 +34,6 @@
     }
   },
   "order": [
-    "18815df8-fa0c-46e2-88cd-780929f5da66",
     "9d982b6f-c727-415b-8cc1-a3379e859eb9",
     "0e98d41b-c752-4893-a06c-9b9db5b2ef68",
     "416326db-2154-4020-aa2f-9760ad9ad203",
