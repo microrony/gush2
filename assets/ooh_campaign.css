@@ -215,3 +215,11 @@ flex: 1 0 0;
 align-self: stretch;
   background-color:#EAE4DF;
 }
+.checkout_button{
+  display: flex;
+padding: 20px;
+align-items: center;
+gap: 20px;
+  border-radius: 5px;
+background: var(--Gush-Fuschia, #FF42EF);
+}
