@@ -290,6 +290,8 @@
       
       this.form = this.querySelector('#vibe-selection')
       this.filter = this.form.querySelector('select#collection-filter-select')
+      this.selectedColors = []
+      
     }
 
     connectedCallback() {
@@ -317,7 +319,7 @@
     }
 
     handleChange(e) {
-      
+      console.log(e)
     }
   }
   customElements.define('ooh-campaign-component', OOHCampaignComponent)
