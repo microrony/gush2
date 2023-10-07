@@ -324,9 +324,9 @@
       const el = e.target
       const formData = new FormData(this.form)
       if(el.getAttribute('name') == 'vibe') {
-        formData.getAll('vibe').forEach(value => {
-          if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
-        })
+        const value = el.dataset.title
+        
+        if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
 
         this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
       }
