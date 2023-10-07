@@ -245,10 +245,10 @@ align-items: flex-start;
 background: #302112;
   color: #FFF;
 text-align: center;
-font-family: GT America;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
 line-height: 22.4px; /* 160% */
 letter-spacing: 0.28px;
+      gap: 8px;
 }
