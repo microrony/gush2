@@ -238,6 +238,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
+    {{ 'ooh_campaign.css' | asset_url | stylesheet_tag }}
+    
 		{%- comment -%} {{ 'section-stamped-reviews.css' | asset_url | stylesheet_tag }} {%- endcomment -%}
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
