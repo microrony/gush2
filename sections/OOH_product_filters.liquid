@@ -290,7 +290,9 @@
       
       this.form = this.querySelector('#vibe-selection')
       this.filter = this.form.querySelector('select#collection-filter-select')
+      
       this.selectedColors = []
+      this.colorInfoEl = this.querySelector('#selected_colors span')
       
     }
 
@@ -325,6 +327,8 @@
         formData.getAll('vibe').forEach(value => {
           if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
         })
+
+        this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
       }
     }
   }
