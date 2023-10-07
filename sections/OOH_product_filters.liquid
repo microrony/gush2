@@ -327,17 +327,19 @@
       if(el.getAttribute('name') == 'vibe') {
         
         const value = el.dataset.title
+        const vibes = []
         
         
         if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
 
         formData.getAll('vibe').forEach(vibe => {
-          if(!this.selectedVariants.includes(parseInt(vibe))) this.selectedVariants.push(parseInt(vibe))
+          vibes.push(parseInt(vibe))
         })
+        this.selectedVariants = vibes
         
 
         this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
-        
+        console.log(this.selectedVariants)
       }
     }
   }
