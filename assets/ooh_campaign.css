@@ -213,4 +213,5 @@ align-items: center;
 gap: 16px;
 flex: 1 0 0;
 align-self: stretch;
+  background-color:#EAE4DF;
 }
