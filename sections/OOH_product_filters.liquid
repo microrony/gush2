@@ -169,6 +169,8 @@
 
         <h4>{{ product.title }}</h4>
         <h5>{{ current_variant.title }}</h5>
+        <h5>{% assign productTitle = product.title | split: "/" %}
+{{ productTitle[1] | strip }}</h5>
         <!-- Add code to display product image, price, etc. -->
       </div>
       {% endif %}
