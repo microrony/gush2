@@ -2,6 +2,37 @@
   "sections": {
     "18815df8-fa0c-46e2-88cd-780929f5da66": {
       "type": "image-banner",
+      "blocks": {
+        "765924e8-53e3-479a-a4d2-56bc40828079": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hey, colour lover.",
+            "heading_color": "#ffffff",
+            "heading_size": "h1"
+          }
+        },
+        "06449a15-6119-4fa8-8184-ae56eec3014d": {
+          "type": "text",
+          "settings": {
+            "text": "You've unlocked 3 free paint samples.",
+            "text_style": "body"
+          }
+        },
+        "6ed82646-4f9b-4e43-99c0-be4f8c50014d": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Pick your vibe",
+            "button_link_1": "#",
+            "button_label_2": "Button label",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "765924e8-53e3-479a-a4d2-56bc40828079",
+        "06449a15-6119-4fa8-8184-ae56eec3014d",
+        "6ed82646-4f9b-4e43-99c0-be4f8c50014d"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Homepage_Video_Banner_1920x1080_V1.gif",
         "image_overlay_opacity": 0,
