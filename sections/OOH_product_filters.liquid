@@ -348,7 +348,7 @@
     }
 
     disabledVibeSelection(max, current) {
-      const vibesInput = this.querySelectorAll('input[type="checkbox"][name"vibe"]')
+      const vibesInput = this.querySelectorAll(`input[type="checkbox"][name"vibe"]`)
       if(max == current) {
         vibesInput.forEach(item => {
           if(!item.checked) item.disabled = true
