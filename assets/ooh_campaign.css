@@ -42,7 +42,7 @@
 .ooh_filtered_products {
     display: grid;
     grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 130px 130px 130px;
   justify-content: center;
 }
 img.grid-view-item__image {
