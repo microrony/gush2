@@ -151,7 +151,7 @@
         
       {% if current_variant != blank %}
       <div class="product-item">
-        <input type="checkbox" id="vibe_1_{{ product.title }}" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
+        <input type="checkbox" id="vibe_1_{{ product.title }}" class="vibe_input" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
         <label for="vibe_1_{{ product.title }}">
           <div class="reveal">
             {% for image in product.images limit: 1 offset: 1 %}
@@ -185,7 +185,7 @@
       -%}
       {% if current_variant != blank %}
       <div class="product-item">
-        <input type="checkbox" id="vibe_2_{{ product.title }}" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
+        <input type="checkbox" id="vibe_2_{{ product.title }}" class="vibe_input" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
         <label for="vibe_2_{{ product.title }}">
           <div class="reveal">
             {% for image in product.images limit: 1 offset: 1 %}
@@ -218,7 +218,7 @@
       -%}
       {% if current_variant != blank %}
       <div class="product-item">
-        <input type="checkbox" id="vibe_3_{{ product.title }}" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
+        <input type="checkbox" id="vibe_3_{{ product.title }}" class="vibe_input" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
         <label for="vibe_3_{{ product.title }}">
           <div class="reveal">
             {% for image in product.images limit: 1 offset: 1 %}
@@ -348,7 +348,7 @@
     }
 
     disabledVibeSelection(max, current) {
-      const vibesInput = this.querySelectorAll(`input[type="checkbox"][name"vibe"]`)
+      const vibesInput = this.querySelectorAll(`.vibe_input`)
       if(max == current) {
         vibesInput.forEach(item => {
           if(!item.checked) item.disabled = true
