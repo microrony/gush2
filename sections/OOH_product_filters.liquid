@@ -100,7 +100,6 @@
           <div class="collection-filter">
          <label>Showing {{ collection.title }} vibe pallet</label>
           <select id="collection-filter-select">
-             <option value="select the vibe" selected></option>
             {% for collection in collections %}
             {% if collection.handle contains 'vibe' %}
             {% assign iteration = iteration | plus: 1 %}
