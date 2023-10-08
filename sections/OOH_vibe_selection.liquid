@@ -44,43 +44,6 @@
 
 
 
-<label for="collection-select">Select a Collection:</label>
-<select id="collection-select" name="collection">
-  <option value="">Select a Collection</option>
-  {% for collection in collections %}
-    <option value="{{ collection.handle }}">{{ collection.title }}</option>
-  {% endfor %}
-</select>
-
-<p id="selected-collection-label">Selected Collection: <span id="selected-collection-name">---</span></p>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  var collectionSelect = document.getElementById("collection-select");
-  var selectedCollectionName = document.getElementById("selected-collection-name");
-
-  collectionSelect.addEventListener("change", function() {
-    var selectedCollectionHandle = this.value;
-    var selectedCollectionLabel = '---'; // Default label if no collection is selected
-
-    // Loop through the collections and find the selected collection's title
-    var collections = {
-      {% for collection in collections %}
-        "{{ collection.handle }}": "{{ collection.title }}",
-      {% endfor %}
-    };
-
-    if (collections[selectedCollectionHandle] !== undefined) {
-      selectedCollectionLabel = collections[selectedCollectionHandle];
-    }
-
-    selectedCollectionName.textContent = selectedCollectionLabel;
-  });
-});
-</script>
-
-
-
 
 
 

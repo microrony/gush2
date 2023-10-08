@@ -106,9 +106,11 @@
             {% if iteration == 1 %}
             {% assign selected_vibe = collection.handle %}
             {% endif %}
-            <option value="{{ collection.handle }}" {% if iteration==1 %} selected {% endif %}>
-              Showing {{ collection.title }} vibe pallet
+           <option value="{{ collection.handle }}" {% if iteration==1 %} selected {% endif %}>
+            {{ collection.title }}
             </option>
+
+             <label>Showing {{ collection.title }} vibe pallet</label>
             
             {% endif %}
             {% endfor %}
