@@ -264,4 +264,25 @@ letter-spacing: 0.28px;
 .banner.banner--content-align-center.banner--content-align-mobile-center.banner--large.banner--mobile-bottom.banner--desktop-transparen .banner__box {
     padding: 0;
     background: transparent;
+
+.vibe_carousel_selection {
+    height: 340px;
+    display: flex;
+    align-items: center;
+}
+.swiper-wrapper-1.slick-initialized.slick-slider {
+    height: 100%;
+}
+.slick-list.draggable {
+    height: 100%;
+}
+.slick-track{
+    height: 100%;
+}
+.swiper-wrapper-1 .slick-slide.slick-current.slick-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
