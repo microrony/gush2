@@ -252,19 +252,20 @@ letter-spacing: 0.28px;
       gap: 8px;
       margin: 20px 0;
 }
-.banner.banner--content-align-center.banner--content-align-mobile-center.banner--large.banner--mobile-bottom.banner--desktop-transparen .banner__content {
-       display: flex;
+.banner.banner--content-align-center.banner--content-align-mobile-center.banner--large.banner--mobile-bottom.banner--desktop-transparen .banner__content 
+{
+    display: flex;
     position: absolute;
     top: 0;
     background: transparent;
     align-items: center;
     justify-content: center;
     height: 100%;
-
+}
 .banner.banner--content-align-center.banner--content-align-mobile-center.banner--large.banner--mobile-bottom.banner--desktop-transparen .banner__box {
     padding: 0;
     background: transparent;
-
+}
 .vibe_carousel_selection {
     height: 340px;
     display: flex;
