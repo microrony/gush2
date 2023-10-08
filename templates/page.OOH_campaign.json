@@ -1,53 +1,5 @@
 {
   "sections": {
-    "438fd7ab-ead6-4d39-8eb8-e392670bcf58": {
-      "type": "image-banner",
-      "blocks": {
-        "template--20976240591041__438fd7ab-ead6-4d39-8eb8-e392670bcf58-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_color": "",
-            "heading_size": "h1"
-          }
-        },
-        "template--20976240591041__438fd7ab-ead6-4d39-8eb8-e392670bcf58-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "subtitle"
-          }
-        },
-        "template--20976240591041__438fd7ab-ead6-4d39-8eb8-e392670bcf58-buttons-1": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_label_2": "Button label",
-            "button_link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20976240591041__438fd7ab-ead6-4d39-8eb8-e392670bcf58-heading-1",
-        "template--20976240591041__438fd7ab-ead6-4d39-8eb8-e392670bcf58-text-1",
-        "template--20976240591041__438fd7ab-ead6-4d39-8eb8-e392670bcf58-buttons-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Homepage_Video_Banner_1920x1080_V1.gif",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": true,
-        "secondary_btn_white": true,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "9d982b6f-c727-415b-8cc1-a3379e859eb9": {
       "type": "OOH_vibe_selection",
       "settings": {
@@ -82,7 +34,6 @@
     }
   },
   "order": [
-    "438fd7ab-ead6-4d39-8eb8-e392670bcf58",
     "9d982b6f-c727-415b-8cc1-a3379e859eb9",
     "0e98d41b-c752-4893-a06c-9b9db5b2ef68",
     "416326db-2154-4020-aa2f-9760ad9ad203",
