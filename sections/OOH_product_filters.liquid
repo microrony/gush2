@@ -98,7 +98,7 @@
 
 <div class="filter_drop_down">
           <div class="collection-filter">
-        
+         <label>Showing {{ collection.title }} vibe pallet</label>
           <select id="collection-filter-select">
             {% for collection in collections %}
             {% if collection.handle contains 'vibe' %}
@@ -115,7 +115,6 @@
             {% endif %}
             {% endfor %}
           </select>
-             <label>Showing {{ collection.title }} vibe pallet</label>
         </div>
 </div>
 
