@@ -64,17 +64,21 @@ document.addEventListener("DOMContentLoaded", function() {
     var selectedCollectionLabel = '---'; // Default label if no collection is selected
 
     // Loop through the collections and find the selected collection's title
-    {% for collection in collections %}
-      if ("{{ collection.handle }}" === selectedCollectionHandle) {
-        selectedCollectionLabel = "{{ collection.title }}";
-        break; // Stop the loop once a match is found
-      }
-    {% endfor %}
+    var collections = {
+      {% for collection in collections %}
+        "{{ collection.handle }}": "{{ collection.title }}",
+      {% endfor %}
+    };
+
+    if (collections[selectedCollectionHandle] !== undefined) {
+      selectedCollectionLabel = collections[selectedCollectionHandle];
+    }
 
     selectedCollectionName.textContent = selectedCollectionLabel;
   });
 });
 </script>
+
 
 
 
