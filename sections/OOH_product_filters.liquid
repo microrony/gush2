@@ -2,10 +2,7 @@
 {% assign selected_vibe = '' %}
 
 {{ 'paint-details-slider.css' | asset_url | stylesheet_tag }}
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
 <style>
 
   /* ===============================================
@@ -89,29 +86,9 @@
 </style>
 <ooh-campaign-component>
 <form id="vibe-selection">
-<div class="vibe_carousel_selection">
- 
 
-      <div class="swiper-wrapper-1">
-         <div class="vibe1_background_img">
-            <h2 class="gush-font-h1">Select your vibe</h2>
-           <img class="vibe_collection_featured_img" src="{{ 'earthy.png' | asset_url }}" />
-           <a class="collection_button">Earthy</a>
-         </div>
-
-          <div class="vibe2_background_img">
-             <h2 class="gush-font-h1">Select your vibe</h2>
-            <img class="vibe_collection_featured_img" src="{{ 'earthy.png' | asset_url }}" />
-            <a class="collection_button">Organic</a>
-          </div>
-
-          <div class="vibe3_background_img">
-             <h2 class="gush-font-h1">Select your vibe</h2>
-            <img class="vibe_collection_featured_img" src="{{ 'earthy.png' | asset_url }}" />
-            <a class="collection_button">Leapfrog</a>
-          </div>
-  </div>
-</div>
+  <!-- Vibe Selection Carausel will come here -->
+  
 <!-- OOH product filters starts from here -->
 
 <div id="ooh_product_filter_section">
@@ -462,30 +439,7 @@
   }
   customElements.define('ooh-campaign-component', OOHCampaignComponent)
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-<script type="text/javascript">
-        jQuery(document).ready(function($){
-        $('.swiper-wrapper-1').slick({
-    dots: true,
-    arrow: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  });
-      });
-</script>
-
-<script type="text/javascript">
-        jQuery(document).ready(function($){
-        $('').slick({
-  slidesToShow: 6,
-  slidesToScroll: 6
-  });
-      });
-</script>
   
 {% schema %}
  {
