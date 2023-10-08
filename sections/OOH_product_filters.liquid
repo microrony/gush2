@@ -334,6 +334,26 @@
       this.form.addEventListener('change', this.handleChange.bind(this))
       this.filter.addEventListener('change', this.handleFilterChange.bind(this))
       this.form.addEventListener('submit', this.handleSubmit.bind(this))
+
+      fetch("/cart.js", { method: 'GET', headers: { "Content-Type": "application/json" }})
+      .then(res => res.json())
+      .then(data => {
+        this.cart = data
+
+        this.cart.items.forEach(item => {
+          if(item.properties.ooh_item) this.removable[item.id] = 0
+        })
+
+        fetch("/cart/update.js", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            updates: this.removable
+          })
+        })
+      })
     }
 
     handleSubmit(e) {
