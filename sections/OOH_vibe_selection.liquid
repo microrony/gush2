@@ -7,10 +7,10 @@
 
 <div class="vibe_carousel_selection">
  
-
+{% for collection in collections %}
   <div class="swiper-wrapper-1">
 
-  {% for collection in collections %}
+  
          <div class="vibe1_background_img">
               {% if collection.handle == 'vibe-1' %}
            <h2 class="gush-font-h1">Select your vibe</h2>
@@ -33,9 +33,9 @@
            <a class="collection_button">{{ collection.title }}</a>
                 {% endif %}
          </div>
-{% endfor %}
+
   </div>
-  
+  {% endfor %}
 </div>
 
 
