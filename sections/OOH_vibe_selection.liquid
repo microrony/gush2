@@ -30,6 +30,56 @@
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<label for="collection-select">Select a Collection:</label>
+<select id="collection-select" name="collection">
+  <option value="">Select a Collection</option>
+  {% for collection in collections %}
+    <option value="{{ collection.handle }}">{{ collection.title }}</option>
+  {% endfor %}
+</select>
+
+<p id="selected-collection-label">Selected Collection: <span id="selected-collection-name">---</span></p>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var collectionSelect = document.getElementById("collection-select");
+  var selectedCollectionName = document.getElementById("selected-collection-name");
+
+  collectionSelect.addEventListener("change", function() {
+    var selectedCollectionHandle = this.value;
+    var selectedCollectionLabel = '---'; // Default label if no collection is selected
+
+    // Loop through the collections and find the selected collection's title
+    {% for collection in collections %}
+      if ("{{ collection.handle }}" === selectedCollectionHandle) {
+        selectedCollectionLabel = "{{ collection.title }}";
+        break; // Stop the loop once a match is found
+      }
+    {% endfor %}
+
+    selectedCollectionName.textContent = selectedCollectionLabel;
+  });
+});
+</script>
+
+
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
