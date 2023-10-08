@@ -7,11 +7,11 @@
 
 <div class="vibe_carousel_selection">
  
-{% for collection in collections %}
+
   <div class="swiper-wrapper-1">
 
-  
-         <div class="vibe_background_img">
+  {% for collection in collections %}
+         <div class="vibe1_background_img">
               {% if collection.handle == 'vibe-1' %}
            <h2 class="gush-font-h1">Select your vibe</h2>
            <img class="vibe_collection_featured_img" src="{{ 'earthy.png' | asset_url }}" />
@@ -19,23 +19,23 @@
               {% endif %}
          </div>
 
-         <div class="vibe_background_img">
+         <div class="vibe2_background_img">
             {% if collection.handle == 'vibe-2' %}
            <h2 class="gush-font-h1">Select your vibe</h2>
            <img class="vibe_collection_featured_img" src="{{ 'earthy.png' | asset_url }}" />
            <a class="collection_button">{{ collection.title }}</a>
                 {% endif %}
          </div>
-         <div class="vibe_background_img">
+         <div class="vibe3_background_img">
                     {% if collection.handle == 'vibe-3' %}
            <h2 class="gush-font-h1">Select your vibe</h2>
            <img class="vibe_collection_featured_img" src="{{ 'earthy.png' | asset_url }}" />
            <a class="collection_button">{{ collection.title }}</a>
                 {% endif %}
          </div>
-
+{% endfor %}
   </div>
-  {% endfor %}
+  
 </div>
 
 
