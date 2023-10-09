@@ -212,7 +212,19 @@ class VibeSliderComponent extends HTMLElement {
 
   connectedCallback() {
     const paginationEl = this.querySelector('.pagination')
+    
     let pagination = false
+    let navigation = false
+
+    const nextEl = this.querySelector('.prev-next-btn-next')
+    const prevEl = this.querySelector('.prev-next-btn-prev')
+
+    if(nextEl && prevEl) {
+      navigation = {
+        nextEl: nextEl,
+        prevEl: prevEl,
+      }
+    }
 
     if(paginationEl) {
       pagination = {
