@@ -291,13 +291,13 @@ background: #0F0;
   justify-content: start;
 }
 
-#ooh_survey_section .question_class label:hover {
-  background-color: #d9d9d9;
-}
-
 #ooh_survey_section .question_class label input{
   position: relative;
   margin-right: 10px;
+}
+
+#ooh_survey_section .question_class label:has(input[type="radio"]:checked) {
+  background-color: #d9d9d9;
 }
 
 
