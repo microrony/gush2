@@ -266,6 +266,12 @@ background: #0F0;
     justify-content: center;
     gap: 0.5rem;
 }
+.vibe_selection_strip_label {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
 
 /* Question ans survey section */
 
