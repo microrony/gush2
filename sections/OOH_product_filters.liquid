@@ -102,29 +102,29 @@
     <h3 style="font-size:16px;">These pocket-sized 20ml paint samples are the best way to experience colours in person.</h3>
 
 <div class="filter_drop_down">
-          <div class="collection-filter">
-         <label>
-           <span class="vibe_drop_back">
-             <img src="https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Group_747.svg">
-           </span>Showing <span class="selected-vibe">{{ collection.title }}</span> vibe pallet</label>
-          <select id="collection-filter-select">
-            {% for collection in collections %}
-            {% if collection.handle contains 'vibe' %}
-            {% assign iteration = iteration | plus: 1 %}
-            {% if iteration == 1 %}
+  <div class="collection-filter">
+    <label>
+      <span class="vibe_drop_back">
+        <img src="https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Group_747.svg">
+      </span>
+      <span>Showing </span>
+      <span class="selected-vibe">{{ collection.title }}</span>
+      <span> vibe pallet</span>
+    </label>
+    <select id="collection-filter-select">
+      {% for collection in collections %}
+        {% if collection.handle contains 'vibe' %}
+          {% assign iteration = iteration | plus: 1 %}
+          {% if iteration == 1 %}
             {% assign selected_vibe = collection.handle %}
-            {% endif %}
-             
-           <option value="{{ collection.handle }}" {% if iteration==1 %} selected {% endif %}>
+          {% endif %}
+          <option value="{{ collection.handle }}" {% if iteration==1 %} selected {% endif %} data-title="{{ collection.title }}">
             {{ collection.title }}
-            </option>
-
-            
-            
-            {% endif %}
-            {% endfor %}
-          </select>
-        </div>
+          </option>
+        {% endif %}
+      {% endfor %}
+    </select>
+  </div>
 </div>
 
   <div id="products_3_grid_slick">
