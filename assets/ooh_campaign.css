@@ -68,6 +68,9 @@ img.grid-view-item__image {
     border-radius: 100px;
     width: 60%;
 }
+.vibe_label {
+  display: flex;
+}
 .vibe_input {
   position: relative;
   vertical-align: middle;
