@@ -98,18 +98,16 @@ img.grid-view-item__image {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.vibe_input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
 
  /* filter product custom checkmark end here */
 
 
-.vibe_input {
-  position: relative;
-  vertical-align: middle;
-  top: 35px;
-  left: 20px;
-  z-index: 1;
-}
-/* input[type="checkbox"].vibe_input {
+input[type="checkbox"].vibe_input {
   display: none;
 } */
 .filtered_product_title {
