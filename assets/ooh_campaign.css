@@ -261,3 +261,7 @@ letter-spacing: 0.28px;
     line-height: 100%;
     letter-spacing: -0.88px;
 }
+.vibe_drop_back {
+  border-radius: 20px;
+background: #0F0;
+}
