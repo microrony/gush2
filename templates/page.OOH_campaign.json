@@ -57,7 +57,12 @@
     "0e98d41b-c752-4893-a06c-9b9db5b2ef68": {
       "type": "OOH_product_filters",
       "settings": {
-        "heading": ""
+        "heading": "",
+        "vibe_collections": [
+          "vibe-3",
+          "vibe-2",
+          "vibe-1"
+        ]
       }
     }
   },
