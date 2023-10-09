@@ -37,7 +37,7 @@
     z-index: -1;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
     opacity: 0;
     -webkit-transition: opacity 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out;
@@ -96,46 +96,7 @@
     align-items: center;
   }
 
-</style>
-<style>
-  .collection_button {
-    border-radius: 1px;
-    border: 1px solid var(--Secondary-6, #302112);
-    display: inline-flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 42%;
-    color: #000;
-    font-weight: 700;
-  }
-  .vibe__container {
-    position: relative;
-    padding-bottom: var(--container-height);
-  }
-  .vibe__wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transform: translateY(10px);
-    opacity: 0;
-    visibility: hidden;
-    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  }
-  .vibe__content {
-    position: relative;
-  }
-
-  .vibe__wrapper[data-active="true"] {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-    z-index: 2;
-  }
+  
 </style>
 
 {% assign selected_vibe = blank %}
