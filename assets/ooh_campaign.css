@@ -258,6 +258,12 @@ letter-spacing: 0.28px;
   border-radius: 20px;
 background: #0F0;
 }
+.collection-filter {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
 
 /* Question ans survey section */
 
@@ -462,10 +468,4 @@ font-size: 13px;
   flex-direction: column;
   gap: 2rem;
   font-size: 13px;
-}
-.collection-filter {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
 }
