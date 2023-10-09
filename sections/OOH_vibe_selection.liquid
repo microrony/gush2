@@ -27,6 +27,18 @@
             <a class="collection_button">Bold</a>
           </div>
   </div>
+
+
+
+
+
+  {% for collection in collections %}
+    
+      {% if collection.handle contains 'vibe' %}
+    The name of the collection is: {{ collection.title }}
+  {% endif %}
+{% endfor %}
+
 </div>
 
 
