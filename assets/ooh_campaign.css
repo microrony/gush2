@@ -334,7 +334,7 @@ letter-spacing: 0.28px;
   gap: 0.5rem;
 }
 
-#ooh_survey_section .question_class label{
+#ooh_survey_section .question_class label, .shipping_charge label{
   position: relative;
   width: 100%;
   transition: all 0.2s ease;
@@ -351,7 +351,7 @@ letter-spacing: 0.28px;
   user-select: none;
 }
 
-#ooh_survey_section .question_class label input{
+#ooh_survey_section .question_class label input, .shipping_charge label input{
   margin-right: 10px;
   position: absolute;
   opacity: 0;
@@ -362,7 +362,7 @@ letter-spacing: 0.28px;
   background-color: #EAE4DF;
 }
 
-#ooh_survey_section .question_class label .checkmark {
+#ooh_survey_section .question_class label .checkmark, .shipping_charge label .checkmark {
   position: relative;
   height: 20px;
   width: 20px;
@@ -374,22 +374,22 @@ letter-spacing: 0.28px;
   border-radius: 50%;
 }
 
-#ooh_survey_section .question_class label input:checked~.checkmark {
+#ooh_survey_section .question_class label input:checked~.checkmark, .shipping_charge label input:checked~.checkmark  {
   border: 2px solid #ff40f4;
   background-color: #ffffff;
 }
 
-#ooh_survey_section .question_class label .checkmark:after {
+#ooh_survey_section .question_class label .checkmark:after, .shipping_charge label .checkmark:after {
   content: "";
   position: relative;
   display: none;
 }
 
-#ooh_survey_section .question_class label input:checked~.checkmark:after {
+#ooh_survey_section .question_class label input:checked~.checkmark:after, .shipping_charge label input:checked~.checkmark:after {
   display: block;
 }
 
-#ooh_survey_section .question_class label .checkmark:after {
+#ooh_survey_section .question_class label .checkmark:after, .shipping_charge label .checkmark:after {
   width: 10px;
   height: 10px;
   border-radius: 50%;
