@@ -420,9 +420,8 @@
 
       const selectedOption = el.options[el.selectedIndex];
       const vibe_title = selectedOption.dataset.title
-      console.log(vibe_title)
 
-      // this.updateSelectedVibeTitle(vibe_title)
+      this.updateSelectedVibeTitle(vibe_title)
 
       collections.forEach(item => {
         const _vibe = item.dataset.vibe
