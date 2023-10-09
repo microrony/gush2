@@ -385,7 +385,7 @@ svg.icon.dotted_cart {
     {%- if request.page_type == 'index' -%}
       <h1 class="header__heading">
     {%- endif -%}
-        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset site__logo">
           {%- if section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             {% if section.settings.logo_svg != blank %} 
