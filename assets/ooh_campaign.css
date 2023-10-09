@@ -263,7 +263,7 @@ line-height: 20.4px; /* 150% */
 }
 .congratulations_message_free_ship {
   display: inline-flex;
-padding: 16px 32px;
+padding: 16px 16px;
 justify-content: center;
 align-items: flex-start;
   border-radius: 2px;
@@ -277,6 +277,7 @@ line-height: 22.4px; /* 160% */
 letter-spacing: 0.28px;
       gap: 8px;
       margin: 20px 0;
+  width:100%;
 }
 .banner__text.ooh_campaign-font-p1 span{
   color: #FFF;
