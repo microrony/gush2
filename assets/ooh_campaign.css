@@ -369,7 +369,7 @@ background: #0F0;
   grid-template-areas: 
     "order-marker order-header"
     "order-marker order-details";
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .order-details-container .order .order-marker{
@@ -425,7 +425,7 @@ background: #0F0;
   position: relative;
   background-color: #e6e6e6;
 font-size: 13px;
-  padding: 0 2rem;
+  padding: 0 1rem;
   border-radius: 30px;
 }
 
