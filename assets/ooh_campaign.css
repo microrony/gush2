@@ -289,17 +289,59 @@ background: #0F0;
   display: flex;
   align-items: center;
   justify-content: start;
+  flex-direction: row-reverse;
+  cursor: pointer;
+  gap: 0.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #ooh_survey_section .question_class label input{
-  position: relative;
   margin-right: 10px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 #ooh_survey_section .question_class label:has(input[type="radio"]:checked) {
-  background-color: #d9d9d9;
+  background-color: #EAE4DF;
 }
 
+#ooh_survey_section .question_class label .checkmark {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid #767676;
+  border-radius: 50%;
+}
+
+#ooh_survey_section .question_class label input:checked~.checkmark {
+  border: 2px solid #ff40f4;
+  background-color: #ffffff;
+}
+
+#ooh_survey_section .question_class label .checkmark:after {
+  content: "";
+  position: relative;
+  display: none;
+}
+
+#ooh_survey_section .question_class label input:checked~.checkmark:after {
+  display: block;
+}
+
+#ooh_survey_section .question_class label .checkmark:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff40f4;
+}
 
 /* Order details section css starts from here */
 
