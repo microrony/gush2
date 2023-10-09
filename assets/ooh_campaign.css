@@ -184,9 +184,12 @@ button.slick-disabled {
   border-bottom: 10px solid transparent;
 }
 .ooh_package_banner {
-width: 100%;
+    width: 100%;
   height: auto;
     margin: 40px 0px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   }
 
 .ooh_package_banner img{
