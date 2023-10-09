@@ -382,6 +382,7 @@ font-size: 13px;
   justify-content: start;
   flex-direction: column;
   gap: 2rem;
+  font-size: 13px;
 }
 
 .order-details-container .order .order-details .order-values{
