@@ -2384,7 +2384,11 @@ input[type='checkbox'] {
 }
 
 .header.promo__header {
-  grid-template-areas: 'logo promo-button'
+  grid-template-areas: 'site-logo promo-button'
+}
+
+.header.promo__header .site__logo {
+  grid-area: site-logo
 }
 
 .promo__header .header__promo--button {
