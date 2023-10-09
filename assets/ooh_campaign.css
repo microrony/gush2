@@ -183,7 +183,10 @@ button.slick-disabled {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
+.ooh_package_banner {
 
+    margin: 40px 0px;
+  }
 #ooh_survey_section {
   background: #F9F4F0;
       padding: 40px 0;
