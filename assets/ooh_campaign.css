@@ -546,3 +546,9 @@ font-size: 13px;
 .gush_tnc_checkbox {
   margin-top:.7rem;
 }
+.survey_plus_order {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
