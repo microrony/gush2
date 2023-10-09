@@ -536,3 +536,8 @@ font-size: 13px;
 .shipping_details_tnC {
   margin: 4rem 0;
 }
+.tnc_acknowledge_section {
+  display:flex;
+  align-items:start;
+  justify-content:start;
+}
