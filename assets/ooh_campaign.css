@@ -626,7 +626,10 @@ width: 90rem;
 }
 .pagination {
   position: relative;
-  grid-area: pagination
+  grid-area: pagination;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper--controls .prev-next-btn {
