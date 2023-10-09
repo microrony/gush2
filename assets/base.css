@@ -2405,6 +2405,7 @@ input[type='checkbox'] {
 .header__promo--button .cta-button {
   height: 35px;
   width: 104px;
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 990px) {
