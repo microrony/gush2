@@ -569,6 +569,7 @@ svg.icon.dotted_cart {
       </a>
     </div>
 
+    {% if template.suffix == 'OOH_campaign' %}
     <div class="header__promo--button">
       <a href="#vibe_carousel_selection" class="cta-button gush-font-teritary cta-button__primary">
         <span>Pick your vibe</span>
@@ -583,6 +584,7 @@ svg.icon.dotted_cart {
         </svg>
       </a>
     </div>
+    {% endif %}
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
