@@ -35,7 +35,10 @@
   {% for collection in collections %}
     
       {% if collection.handle contains 'vibe' %}
-    The name of the collection is: {{ collection.title }}
+        <div class="vibe_class">
+         <h2 class="gush-font-h1">Select your vibe</h2>
+          <a class="collection_button"> {{ collection.title }}</a>
+        </div>
   {% endif %}
 {% endfor %}
 
