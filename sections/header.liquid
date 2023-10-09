@@ -131,7 +131,10 @@ svg.icon.dotted_cart {
   </symbol>
 </svg>
 
-{% if template.suffix == 'OOH_campaign' %}test header{% endif %}
+{% assign header_class = '' %}
+{% if template.suffix == 'OOH_campaign' %}
+  {% assign header_class = 'promo__header' %}
+{% endif %}
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header data-template="{{ template.name }}{{ template.suffix }}" class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
