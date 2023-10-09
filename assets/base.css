@@ -2383,6 +2383,10 @@ input[type='checkbox'] {
   padding-bottom: 1rem;
 }
 
+.header.promo__header {
+  grid-template-areas: 'logo promo-button'
+}
+
 @media screen and (min-width: 990px) {
   .header {
     padding-top: 3rem;
