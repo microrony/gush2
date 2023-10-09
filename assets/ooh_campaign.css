@@ -334,9 +334,25 @@ letter-spacing: 0.28px;
   gap: 0.5rem;
 }
 
-#ooh_survey_section .question_class label, .shipping_charge label{
+#ooh_survey_section .question_class label{
   position: relative;
   width: 100%;
+  transition: all 0.2s ease;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row-reverse;
+  cursor: pointer;
+  gap: 0.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.shipping_charge label{
+  position: relative;
   transition: all 0.2s ease;
   padding: 0.7rem;
   display: flex;
