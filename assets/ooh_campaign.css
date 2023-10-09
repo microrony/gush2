@@ -169,7 +169,7 @@ line-height: 40px;
 }
 .ooh_survey_container {
   display: flex;
-width: 390px;
+width: 100%;
 padding: 0px 46px 27px 46px;
 flex-direction: column;
 align-items: center;
@@ -293,7 +293,6 @@ background: #0F0;
 .order-details-container .order{
   position: relative;
   width: 100%;
-  padding: 0 6rem;
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: min-content 1fr;
