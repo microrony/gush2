@@ -411,6 +411,8 @@
       const vibe = el.value
       const vibe_title = el.dataset.title
 
+      this.updateSelectedVibeTitle(title)
+
       collections.forEach(item => {
         const _vibe = item.dataset.vibe
         if (vibe === _vibe) {
