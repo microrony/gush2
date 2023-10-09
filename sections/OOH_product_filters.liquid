@@ -131,7 +131,22 @@
         
       {% if current_variant != blank %}
       <div class="product-item">
-        <input type="checkbox" id="vibe_1_{{ product.title }}" class="vibe_input" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
+        <label class="custom-checkbox">
+        <input type="checkbox" id="vibe_1_{{ product.title }}" class="vibe_input hidden-checkbox name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}">
+     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+  <rect width="25.4386" height="25.4386" rx="12.7193" fill="#FF42EF"/>
+  <circle cx="13.5049" cy="15.295" r="0.628444" transform="rotate(45 13.5049 15.295)" fill="#302112"/>
+  <circle cx="11.7271" cy="17.0743" r="0.628444" transform="rotate(45 11.7271 17.0743)" fill="#302112"/>
+  <circle cx="9.94971" cy="18.8487" r="0.628444" transform="rotate(45 9.94971 18.8487)" fill="#302112"/>
+  <circle cx="15.2822" cy="13.5177" r="0.628444" transform="rotate(45 15.2822 13.5177)" fill="#302112"/>
+  <circle cx="17.0596" cy="11.7413" r="0.628444" transform="rotate(45 17.0596 11.7413)" fill="#302112"/>
+  <circle cx="8.01953" cy="16.7257" r="0.628444" transform="rotate(45 8.01953 16.7257)" fill="#302112"/>
+  <circle cx="6.2417" cy="14.9473" r="0.628444" transform="rotate(45 6.2417 14.9473)" fill="#302112"/>
+  <circle cx="18.811" cy="9.92" r="0.628444" transform="rotate(45 18.811 9.92)" fill="#302112"/>
+</svg>
+  Checkbox Label Text
+</label>
+        
         <label for="vibe_1_{{ product.title }}">
           <div class="reveal">
             {% for image in product.images limit: 1 offset: 1 %}
