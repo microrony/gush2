@@ -463,3 +463,9 @@ font-size: 13px;
   gap: 2rem;
   font-size: 13px;
 }
+.collection-filter {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
