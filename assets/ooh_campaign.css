@@ -69,7 +69,7 @@ img.grid-view-item__image {
     width: 60%;
 }
 
-
+ /* filter product custom checkmark */
 
 .vibe_label .checkmark {
   position: relative;
@@ -80,6 +80,11 @@ img.grid-view-item__image {
   justify-content: center;
   background-color: transparent;
   border-radius: 50%;
+}
+.vibe_label .checkmark:after {
+  content: "";
+  position: relative;
+  display: none;
 }
 
 .vibe_input {
