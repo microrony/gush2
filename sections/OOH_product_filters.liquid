@@ -42,6 +42,12 @@
     transition: opacity 0.3s ease-in-out;
   }
 
+  .reveal .hidden {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+
   .reveal:hover .hidden {
     z-index: 0;
     opacity: 1;
@@ -80,8 +86,11 @@
 
   /* checkbox code */
 
-
-
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 </style>
 <style>
