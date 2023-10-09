@@ -43,18 +43,15 @@
   {% for collection in collections %}
     
       {% if collection.handle contains 'vibe' %}
-        <div class="vibe_class"/>
+        <div class="vibe_class" style="background-image: url({{ collection.featured_image | img_url:"master" }}); 
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin: 0;
+    height: 396px;"/>
          <h2 class="ooh_vibe_selection_title gush-font-h1">Select your vibe</h2>
 
-            <img style="position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    z-index: -1;
-    object-fit: contain;
-    width: 100%;
-    height: 100%;" src="{{ collection.featured_image | img_url:"master" }}" >
+        
           
           <a class="collection_button"> {{ collection.title }}</a>
         </div>
