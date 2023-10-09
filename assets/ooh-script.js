@@ -27,7 +27,7 @@ class OOHCampaignComponent extends HTMLElement {
       this.cart = data
 
       this.cart.items.forEach(item => {
-        console.log(item)
+        console.log(item, item.id)
         // if(item.properties.ooh_item) this.removable[item.id] = 0
         this.removable[item.id] = 0
       })
