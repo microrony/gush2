@@ -16,6 +16,16 @@
     justify-content: center;
     color: #fff;
 }
+
+.slick-prev, .slick-next {
+          top: 54% !important;
+}
+.slick-next {
+    right: 68px;
+}
+.slick-prev {
+    right: 68px;
+}
   
 </style>
 
@@ -91,8 +101,8 @@
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-             prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-    nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
+  prevArrow: '<div class="slick-prev"><img src="https://cdn.shopify.com/s/files/1/0614/1470/3297/files/left_arrow_vibe.svg?v=1696848978" alt="Previous"></div>',
+  nextArrow: '<div class="slick-next"><img src="https://cdn.shopify.com/s/files/1/0614/1470/3297/files/right_arrow_vibe.svg?v=1696848978" alt="Previous"></div>'
         });
       });
 </script>
