@@ -2399,8 +2399,11 @@ input[type='checkbox'] {
 }
 
 .promo__header .header__promo--button {
-  grid-area: promo-button
+  grid-area: promo-button;
+  height: 35px;
 }
+
+
 
 @media screen and (min-width: 990px) {
   .header {
