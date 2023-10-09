@@ -272,6 +272,47 @@ letter-spacing: 0.28px;
 background: #0F0;
 }
 
+/* Question ans survey section */
+
+#ooh_survey_section{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#ooh_survey_section .question_class {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#ooh_survey_section .question_class label{
+  position: relative;
+  width: 100%;
+  transition: all 0.2s ease;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+#ooh_survey_section .question_class label:hover {
+  background-color: #d9d9d9;
+}
+
+#ooh_survey_section .question_class label input{
+  position: relative;
+  margin-right: 10px;
+}
+
 
 /* Order details section css starts from here */
 
