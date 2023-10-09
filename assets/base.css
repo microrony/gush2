@@ -2387,6 +2387,10 @@ input[type='checkbox'] {
   grid-template-areas: 'logo promo-button'
 }
 
+.promo__header .header__promo--button {
+  grid-area: promo-button
+}
+
 @media screen and (min-width: 990px) {
   .header {
     padding-top: 3rem;
