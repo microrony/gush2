@@ -99,16 +99,15 @@ img.grid-view-item__image {
   background-size: contain;
 }
 
- /* filter product custom checkmark end here */
-
 .vibe_input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-   top: 35px;
-  left: 20px;
-  z-index: 1;
 }
+
+ /* filter product custom checkmark end here */
+
+
 
 /* input[type="checkbox"].vibe_input {
   display: none;
