@@ -354,7 +354,7 @@ background: #0F0;
 .order-details-container .order .order-header span:first-of-type{
   position: relative;
   background-color: #e6e6e6;
-  font-size: 3rem;
+font-size: 13px;
   padding: 0 2rem;
   border-radius: 30px;
 }
@@ -362,7 +362,7 @@ background: #0F0;
 .order-details-container .order .order-header span:last-of-type{
   position: relative;
   align-self: center;
-  font-size: 3rem;
+  font-size: 13px;
 }
 
 .order-details-container .order .order-details{
