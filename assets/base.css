@@ -2388,6 +2388,11 @@ input[type='checkbox'] {
   grid-template-columns: auto auto;
 }
 
+.header.promo__header .header__inline-menu,
+.header.promo__header .header__icons {
+  display: none;
+}
+
 .header.promo__header .site__logo {
   grid-area: site-logo
 }
