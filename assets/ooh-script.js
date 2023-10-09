@@ -99,11 +99,11 @@ class OOHCampaignComponent extends HTMLElement {
 
     collections.forEach(item => {
       const _vibe = item.dataset.vibe
-      if (vibe === _vibe) {
-        if (item.classList.contains('hidden')) item.classList.remove('hidden')
+      if(vibe == _vibe) {
+        item.setAttribute('data-active', true)
       }
       else {
-        if (!item.classList.contains('hidden')) item.classList.add('hidden')
+        item.setAttribute('data-active', false)
       }
     })
   }
