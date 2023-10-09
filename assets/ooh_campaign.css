@@ -65,8 +65,8 @@ line-height: 25px;
   justify-content: center;
 }
 img.grid-view-item__image {
-    border-radius: 100px;
-    width: 60%;
+  border-radius: 100px;
+    
 }
 
  /* filter product custom checkmark starts here */
