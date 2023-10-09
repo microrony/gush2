@@ -271,3 +271,123 @@ letter-spacing: 0.28px;
   border-radius: 20px;
 background: #0F0;
 }
+
+
+/* Order details section css starts from here */
+
+
+.order-details-container{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+}
+
+.order-details-container .container-header {
+  font-size: 5rem;
+}
+
+.order-details-container .order{
+  position: relative;
+  width: 100%;
+  padding: 0 6rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas: 
+    "order-marker order-header"
+    "order-marker order-details";
+  gap: 2rem;
+}
+
+.order-details-container .order .order-marker{
+  position: relative;
+  display: flex;
+  grid-area: order-marker;
+}
+
+.order-details-container .order .order-marker span:nth-child(1){
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-color:#3399ff;
+  border-radius: 50%;
+}
+
+.order-details-container .order .order-marker span:nth-child(2) {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-color: #33ffbb;
+  border-radius: 50%;
+}
+
+.order-details-container .order .order-marker span:nth-child(3) {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-color: #cc66ff;
+  border-radius: 50%;
+}
+
+.order-details-container .order .order-header{
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: end;
+  gap: 2rem;
+  grid-area: order-header;
+}
+
+.order-details-container .order .order-header h3{
+  font-size: 3.5rem;
+  font-weight: lighter;
+  margin-right: auto;
+}
+
+.order-details-container .order .order-header span:first-of-type{
+  position: relative;
+  background-color: #e6e6e6;
+  font-size: 3rem;
+  padding: 0 2rem;
+  border-radius: 30px;
+}
+
+.order-details-container .order .order-header span:last-of-type{
+  position: relative;
+  align-self: center;
+  font-size: 3rem;
+}
+
+.order-details-container .order .order-details{
+  position: relative;
+  grid-area: order-details;
+  display: flex;
+  align-items: stretch;
+  justify-content: start;
+  gap: 2rem;
+  font-size: 2.5rem;
+}
+
+.order-details-container .order .order-details .order-props{
+  color: #b3b3b3;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.order-details-container .order .order-details .order-values{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 2rem;
+}
