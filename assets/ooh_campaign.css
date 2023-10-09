@@ -174,20 +174,7 @@ padding: 0px 46px 27px 46px;
 flex-direction: column;
 align-items: center;
 }
-.question2_class {
-    display: flex;
-    width: 390px;
-    padding: 0 46px 27px;
-    flex-direction: column;
-    align-items: left;
-}
-.question1_class {
-    display: flex;
-    width: 390px;
-    padding: 0 46px 27px;
-    flex-direction: column;
-    align-items: left;
-}
+
 #OOH_order_details_section {
     background: #F9F4F0;
   text-align:center;
