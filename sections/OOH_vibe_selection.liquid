@@ -5,6 +5,20 @@
 
 
 
+<style>
+.vibe_class {
+ 	background-image: url({{ collection.featured_image | img_url:"master" }}); 
+	background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 396px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+  
+</style>
+
 <div id="vibe_carousel" class="vibe_carousel_selection">
  
 <!-- 
@@ -35,7 +49,7 @@
   {% for collection in collections %}
     
       {% if collection.handle contains 'vibe' %}
-        <div class="vibe_class" style="background-image: url('{{ collection.featured_image | img_url:"master" }}');" />
+        <div class="vibe_class" />
          <h2 class="gush-font-h1">Select your vibe</h2>
           <a class="collection_button"> {{ collection.title }}</a>
         </div>
@@ -43,6 +57,7 @@
 {% endfor %}
 
 </div>
+
 
 
 
