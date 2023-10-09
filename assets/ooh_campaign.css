@@ -311,8 +311,8 @@ background: #0F0;
 .order-details-container .order .order-marker span:nth-child(1){
   position: relative;
   display: inline-block;
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
   background-color:#3399ff;
   border-radius: 50%;
 }
@@ -320,8 +320,8 @@ background: #0F0;
 .order-details-container .order .order-marker span:nth-child(2) {
   position: relative;
   display: inline-block;
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
   background-color: #33ffbb;
   border-radius: 50%;
 }
@@ -329,8 +329,8 @@ background: #0F0;
 .order-details-container .order .order-marker span:nth-child(3) {
   position: relative;
   display: inline-block;
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
   background-color: #cc66ff;
   border-radius: 50%;
 }
