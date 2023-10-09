@@ -211,7 +211,7 @@ class VibeSliderComponent extends HTMLElement {
   }
 
   connectedCallback() {
-    const paginationEl = this.querySelector('.swiper-pagination')
+    const paginationEl = this.querySelector('.pagination')
     let pagination = false
 
     if(paginationEl) {
