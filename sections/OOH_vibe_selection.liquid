@@ -26,6 +26,15 @@
 .slick-prev {
     right: 68px;
 }
+.slick-arrow.slick-prev {
+  left: 0;
+  background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0
+    0 / 100% no-repeat;
+}
+.slick-arrow.slick-next {
+  right: 0;
+  background: url("https://img.icons8.com/ios/50/000000/long-arrow-right.png") 0 0 / 100% no-repeat;
+}
   
 </style>
 
@@ -100,9 +109,7 @@
           arrow: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 1,
-  prevArrow: '<div class="slick-prev"><img src="https://cdn.shopify.com/s/files/1/0614/1470/3297/files/left_arrow_vibe.svg?v=1696848978" alt="Previous"></div>',
-  nextArrow: '<div class="slick-next"><img src="https://cdn.shopify.com/s/files/1/0614/1470/3297/files/right_arrow_vibe.svg?v=1696848978" alt="Previous"></div>'
+  slidesToShow: 1
         });
       });
 </script>
