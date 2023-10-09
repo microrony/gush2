@@ -2404,10 +2404,16 @@ input[type='checkbox'] {
 
 .header__promo--button .cta-button {
   height: 35px;
-  width: 120px;
+  width: 104px;
   border-radius: 4px;
   font-size: 16px !important;
   font-weight: 400 !important;
+}
+
+@media screen and (min-width: 990px) {
+  .header__promo--button .cta-button {
+    width: 120px;
+  }
 }
 
 @media screen and (min-width: 990px) {
