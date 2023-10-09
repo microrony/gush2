@@ -35,9 +35,9 @@
   {% for collection in collections %}
     
       {% if collection.handle contains 'vibe' %}
-        <div class="vibe_class">
+        <div class="vibe_class style="background-image: url('{{ collection.featured_image | img_url:"master" }}');" />
          <h2 class="gush-font-h1">Select your vibe</h2>
-          <img src="{{ collection.featured_image | img_url:"master" }}">
+         
           <a class="collection_button"> {{ collection.title }}</a>
         </div>
   {% endif %}
