@@ -69,12 +69,14 @@ img.grid-view-item__image {
     width: 60%;
 }
 .vibe_input {
-  display: none;
   position: relative;
   vertical-align: middle;
   top: 35px;
   left: 20px;
   z-index: 1;
+}
+input[type="checkbox"].vibe_input {
+  display: none;
 }
 .filtered_product_title {
   font-size:16px;
