@@ -343,6 +343,8 @@
       this.filter.addEventListener('change', this.handleFilterChange.bind(this))
       this.form.addEventListener('submit', this.handleSubmit.bind(this))
 
+      this.vibeTitleEl = this.querySelector('.selected-vibe__title')
+
       fetch("/cart.js", { method: 'GET', headers: { "Content-Type": "application/json" }})
       .then(res => res.json())
       .then(data => {
@@ -407,6 +409,7 @@
 
       const collections = this.querySelectorAll('[data-vibe]')
       const vibe = el.value
+      const vibe_title = el.dataset.title
 
       collections.forEach(item => {
         const _vibe = item.dataset.vibe
@@ -417,6 +420,10 @@
           if (!item.classList.contains('hidden')) item.classList.add('hidden')
         }
       })
+    }
+
+    updateSelectedVibeTitle(title) {
+      this.vibeTitleEl.innerHTML = title
     }
 
     handleChange(e) {
