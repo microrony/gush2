@@ -67,6 +67,38 @@
       font-size: 11px;
     }
   }
+
+
+
+
+
+  /* checkbox code */
+
+  .custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hidden-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+svg {
+  width: 16px; /* Adjust to your preferred size */
+  height: 16px; /* Adjust to your preferred size */
+  margin-right: 5px; /* Adjust spacing as needed */
+  fill: #000; /* Adjust the fill color */
+}
+
+/* Style for when the checkbox is checked */
+.hidden-checkbox:checked + svg {
+  fill: #00C853; /* Adjust the fill color when checked */
+}
+
 </style>
 <style>
     .collection_button {
