@@ -621,6 +621,7 @@ width: 90rem;
   position: relative;
   margin-top: 30px;
   display: grid;
+  column-gap: 24px;
   grid-template-columns: 50px auto 50px;
   grid-template-areas: 'previous-el pagination next-el';
   align-items: center;
