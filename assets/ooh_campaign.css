@@ -89,6 +89,15 @@ img.grid-view-item__image {
 .vibe_label input:checked~.checkmark:after {
   display: block;
 }
+.vibe_label .checkmark:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: url(https://cdn.shopify.com/s/files/1/0614/1470/3297/files/tick_arrow.svg?v=1696867485);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
  /* filter product custom checkmark end here */
 
