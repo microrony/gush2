@@ -37,15 +37,15 @@
         "image": "shopify:\/\/shop_images\/Homepage_Video_Banner_1920x1080_V1.gif",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "adapt_height_first_image": false,
-        "secondary_btn_white": false,
+        "adapt_height_first_image": true,
+        "secondary_btn_white": true,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": true
+        "stack_images_on_mobile": true,
+        "show_text_below": false
       }
     },
     "9d982b6f-c727-415b-8cc1-a3379e859eb9": {
