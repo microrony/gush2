@@ -211,6 +211,16 @@ class VibeSliderComponent extends HTMLElement {
   }
 
   connectedCallback() {
+    const paginationEl = this.querySelector('.swiper-pagination')
+    let pagination = false
+
+    if(paginationEl) {
+      pagination = {
+        el: paginationEl,
+        type: "fraction",
+      }
+    }
+    
     this.slider = new Swiper(this.container, {
       slidesPerView: 3,
       slidesPerGroup: 3,
@@ -218,7 +228,8 @@ class VibeSliderComponent extends HTMLElement {
       grid: {
         rows: 2,
         fill: "row"
-      }
+      },
+      pagination: pagination
     })
 
     console.log(this.slider)
