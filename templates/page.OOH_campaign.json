@@ -1,37 +1,37 @@
 {
   "sections": {
-    "eaab6be1-ce5a-477f-933f-eae63d9f16f9": {
-      "type": "OOH_image_banner",
+    "46a4be5b-bf4e-4e70-b713-407e6dcb5d12": {
+      "type": "image-banner",
       "blocks": {
-        "template--20976240591041__eaab6be1-ce5a-477f-933f-eae63d9f16f9-heading-1": {
+        "template--20976240591041__46a4be5b-bf4e-4e70-b713-407e6dcb5d12-heading-1": {
           "type": "heading",
           "settings": {
             "heading": "Hey, colour lover.",
-            "heading_color": "",
+            "heading_color": "#ffffff",
             "heading_size": "h1"
           }
         },
-        "template--20976240591041__eaab6be1-ce5a-477f-933f-eae63d9f16f9-text-1": {
+        "template--20976240591041__46a4be5b-bf4e-4e70-b713-407e6dcb5d12-text-1": {
           "type": "text",
           "settings": {
             "text": "You’ve unlocked 3 free paint samples",
             "text_style": "body"
           }
         },
-        "template--20976240591041__eaab6be1-ce5a-477f-933f-eae63d9f16f9-buttons-1": {
+        "template--20976240591041__46a4be5b-bf4e-4e70-b713-407e6dcb5d12-buttons-1": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Pick your vibe",
-            "button_link_1": "#vibe_carousel_selection",
+            "button_link_1": "#",
             "button_label_2": "",
             "button_link_2": ""
           }
         }
       },
       "block_order": [
-        "template--20976240591041__eaab6be1-ce5a-477f-933f-eae63d9f16f9-heading-1",
-        "template--20976240591041__eaab6be1-ce5a-477f-933f-eae63d9f16f9-text-1",
-        "template--20976240591041__eaab6be1-ce5a-477f-933f-eae63d9f16f9-buttons-1"
+        "template--20976240591041__46a4be5b-bf4e-4e70-b713-407e6dcb5d12-heading-1",
+        "template--20976240591041__46a4be5b-bf4e-4e70-b713-407e6dcb5d12-text-1",
+        "template--20976240591041__46a4be5b-bf4e-4e70-b713-407e6dcb5d12-buttons-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Homepage_Video_Banner_1920x1080_V1.gif",
@@ -62,7 +62,7 @@
     }
   },
   "order": [
-    "eaab6be1-ce5a-477f-933f-eae63d9f16f9",
+    "46a4be5b-bf4e-4e70-b713-407e6dcb5d12",
     "9d982b6f-c727-415b-8cc1-a3379e859eb9",
     "0e98d41b-c752-4893-a06c-9b9db5b2ef68"
   ]

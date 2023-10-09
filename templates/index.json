@@ -428,25 +428,6 @@
         "btn_type": "primary",
         "page_name": "home"
       }
-    },
-    "56ceefc8-4a0c-4938-b7ce-740c8681417f": {
-      "type": "group-buy-slider",
-      "blocks": {
-        "a5b6dc38-7389-49a5-bc1a-71b03760ff51": {
-          "type": "image",
-          "settings": {
-            "slider-image": "shopify:\/\/shop_images\/Group_2804.png",
-            "title": "",
-            "description": ""
-          }
-        }
-      },
-      "block_order": [
-        "a5b6dc38-7389-49a5-bc1a-71b03760ff51"
-      ],
-      "settings": {
-        "heading": ""
-      }
     }
   },
   "order": [
@@ -463,7 +444,6 @@
     "5e785e84-068f-42a0-876b-2a306e0760a6",
     "623e4ef7-e449-4a33-9c59-cd8e1ba10658",
     "5edad96d-b76d-483a-87fd-8949efadfad3",
-    "78f27ebf-a1b9-4da5-af42-23e708c86bf0",
-    "56ceefc8-4a0c-4938-b7ce-740c8681417f"
+    "78f27ebf-a1b9-4da5-af42-23e708c86bf0"
   ]
 }
