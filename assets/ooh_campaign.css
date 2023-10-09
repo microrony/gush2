@@ -347,6 +347,7 @@ background: #0F0;
 .order-details-container .order .order-header h3{
   font-size: 16px;
   font-weight: lighter;
+  align-self:center;
   margin-right: auto;
 }
 
