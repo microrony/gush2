@@ -12,6 +12,10 @@ class OOHCampaignComponent extends HTMLElement {
     
     this.q1 = ""
     this.q2 = ""
+
+    this.cart = {}
+    
+    this.removable = {}
   }
 
   connectedCallback() {
