@@ -616,3 +616,7 @@ width: 90rem;
     visibility: visible;
     z-index: 2;
   }
+
+.pagination {
+  position: relative;
+}
