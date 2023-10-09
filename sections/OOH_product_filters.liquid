@@ -417,9 +417,8 @@
 
       const collections = this.querySelectorAll('[data-vibe]')
       const vibe = el.value
-      const vibe_title = el.dataset.title
-
-      console.log(e.target)
+      const vibe_title = el.querySelector('option[selected]').dataset.title
+      console.log(vibe_title)
 
       // this.updateSelectedVibeTitle(vibe_title)
 
