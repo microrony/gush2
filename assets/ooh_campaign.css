@@ -555,3 +555,9 @@ font-size: 13px;
 .footer_banner {
   align-self: end;
 }
+
+@media only screen and (min-width: 740px) {
+  .footer_banner {
+    transform: translateY(-130%) translateX(30%) scale(1.3);
+  }
+}
