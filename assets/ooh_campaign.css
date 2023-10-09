@@ -553,6 +553,7 @@ font-size: 13px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  overflow:hidden;
 }
 .footer_banner {
   align-self: end;
@@ -564,6 +565,5 @@ font-size: 13px;
   }
   .ooh_survey_container {
 width: 90rem;
-
 }
 }
