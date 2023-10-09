@@ -7,7 +7,6 @@
 
 <style>
 .vibe_class {
- 	background-image: url({{ collection.featured_image | img_url:"master" }}); 
 	background-repeat: no-repeat;
     background-size: cover;
     margin:0;
@@ -15,6 +14,14 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1rem 0;
+  
+  
+  
 }
 .ooh_vibe_selection_title {
     margin: 58px 0 214px 0;
