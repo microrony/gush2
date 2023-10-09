@@ -637,6 +637,7 @@ width: 90rem;
   height: 50px;
   position: relative;
   display: flex;
+  border-radius: 50px;
 }
 .prev-next-btn::before {
   content: "";
