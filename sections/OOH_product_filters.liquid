@@ -106,7 +106,7 @@
          <label>
            <span class="vibe_drop_back">
              <img src="https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Group_747.svg">
-           </span>Showing {{ collection.title }} vibe pallet</label>
+           </span>Showing <span class="selected-vibe">{{ collection.title }}</span> vibe pallet</label>
           <select id="collection-filter-select">
             {% for collection in collections %}
             {% if collection.handle contains 'vibe' %}
