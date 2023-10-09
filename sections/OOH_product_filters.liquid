@@ -359,7 +359,8 @@
         this.cart = data
 
         this.cart.items.forEach(item => {
-          if(item.properties.ooh_item) this.removable[item.id] = 0
+          // if(item.properties.ooh_item) this.removable[item.id] = 0
+          this.removable[item.id] = 0
         })
 
         fetch("/cart/update.js", {
