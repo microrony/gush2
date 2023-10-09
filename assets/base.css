@@ -2389,6 +2389,7 @@ input[type='checkbox'] {
 }
 
 .header.promo__header .header__inline-menu,
+.header.promo__header header-drawer,
 .header.promo__header .header__icons {
   display: none;
 }
