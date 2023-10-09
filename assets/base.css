@@ -2407,7 +2407,7 @@ input[type='checkbox'] {
   width: 120px;
   border-radius: 4px;
   font-size: 16px !important;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
 }
 
 @media screen and (min-width: 990px) {
