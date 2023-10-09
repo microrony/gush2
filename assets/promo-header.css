@@ -1,0 +1,32 @@
+.header.promo__header {
+  grid-template-areas: 'site-logo promo-button';
+  grid-template-columns: auto auto;
+}
+
+.header.promo__header .header__inline-menu,
+.header.promo__header header-drawer,
+.header.promo__header .header__icons {
+  display: none;
+}
+
+.header.promo__header .site__logo {
+  grid-area: site-logo
+}
+
+.promo__header .header__promo--button {
+  grid-area: promo-button; 
+}
+
+.header__promo--button .cta-button {
+  height: 35px;
+  width: 104px;
+  border-radius: 4px;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+@media screen and (min-width: 990px) {
+  .header__promo--button .cta-button {
+    width: 120px;
+  }
+}
