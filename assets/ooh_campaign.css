@@ -552,3 +552,6 @@ font-size: 13px;
     justify-content: center;
     flex-direction: column;
 }
+.footer_banner {
+  align-self: end;
+}
