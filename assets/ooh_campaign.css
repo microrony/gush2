@@ -68,9 +68,9 @@ img.grid-view-item__image {
     border-radius: 100px;
     width: 60%;
 }
-.vibe_label {
+/* .vibe_label {
   display: flex;
-}
+} */
 .vibe_input {
   position: relative;
   vertical-align: middle;
@@ -78,9 +78,9 @@ img.grid-view-item__image {
   left: 20px;
   z-index: 1;
 }
-input[type="checkbox"].vibe_input {
+/* input[type="checkbox"].vibe_input {
   display: none;
-}
+} */
 .filtered_product_title {
   font-size:16px;
   line-height: 28px; /* 175% */
