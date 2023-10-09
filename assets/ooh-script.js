@@ -165,3 +165,65 @@ class OOHCampaignComponent extends HTMLElement {
 }
 
 customElements.define('ooh-campaign-component', OOHCampaignComponent)
+
+class HeightObserver extends HTMLElement {
+  constructor() {
+    super()
+    this.container = this.querySelector(this.dataset.container)
+  }
+
+  connectedCallback() {
+    if(this.container) {
+      this.applyHeight()
+      this.observeHeight()
+    }
+  }
+
+  applyHeight() {
+    let height = 0
+    let observableElement = this.querySelectorAll('[data-observable-element]')
+    if(observableElement.length > 0) {
+      observableElement.forEach(item => {
+        if(item.scrollHeight > height) height = item.scrollHeight
+      })
+    }
+    else {
+      height = this.container.scrollHeight
+    }
+    this.container.style.setProperty('--container-height', `${height}px` || 'auto');
+  }
+
+  observeHeight() {
+    const resizeObserver = new ResizeObserver(entries => {
+      this.applyHeight()
+    })
+
+    resizeObserver.observe(this.container);
+  }
+}
+
+customElements.define('height-observer', HeightObserver)
+
+class VibeSliderComponent extends HTMLElement {
+  constructor() {
+    super()
+    this.container = this.querySelector(this.dataset.container)
+  }
+
+  connectedCallback() {
+    this.slider = new Swiper(this.container, {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 10,
+      grid: {
+        rows: 2,
+        fill: "row"
+      }
+    })
+
+    console.log(this.slider)
+  }
+}
+
+customElements.define('vibe-slider-component', VibeSliderComponent)
+
