@@ -83,7 +83,7 @@ img.grid-view-item__image {
   z-index: 1;
   top: 0;
   right: 0;
-  transform: translate(10px, 10px);
+  transform: translate(-14px, 14px);
 }
 .vibe_label .checkmark:after {
   content: "";
