@@ -129,7 +129,8 @@
 {% assign iteration = iteration | plus: 0 %}
 {% assign vibe_options = "" %}
 
-{% for collection in collections %}
+{% assign vibe_collections = section.settings.vibe_collections %}
+{% for collection in vibe_collections %}
   {% if collection.handle contains 'vibe' %}
     {% assign iteration = iteration | plus: 1 %}
     {% if iteration == 1 %}
