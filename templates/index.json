@@ -241,6 +241,12 @@
         "section_id": "pf-d60a17c3"
       }
     },
+    "b7263e54-efe4-4c26-882b-91b3e0a3abea": {
+      "type": "pagefly-section",
+      "settings": {
+        "section_id": "pf-6ed54e93"
+      }
+    },
     "7a90053e-69af-4a87-9650-ebd2c6f0fd2a": {
       "type": "section-about-partner",
       "disabled": true,
@@ -282,6 +288,7 @@
         "36169f81-3e75-4ae0-be54-183ef4fcf471",
         "b3f68452-a105-49fb-a027-b1d91d6055b1"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Innovative features for a safer, healthier home.",
         "header_padding_top": 100,
@@ -312,6 +319,7 @@
       "block_order": [
         "93c1b259-449c-421a-b55d-e759477da892"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "header_padding_top": 0,
@@ -342,6 +350,7 @@
       "block_order": [
         "c52bd44b-ddf0-4a46-9dcf-a3d88d27ccc9"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "header_padding_top": 0,
@@ -436,6 +445,7 @@
     "74a74acc-f9e6-4d8d-b74e-d8bec517ce01",
     "5a44ca41-997e-4a85-a054-4cb4d273dceb",
     "35eea9ad-4ce6-4d99-a8ce-ae22b69a5bc7",
+    "b7263e54-efe4-4c26-882b-91b3e0a3abea",
     "7a90053e-69af-4a87-9650-ebd2c6f0fd2a",
     "fbc38505-915e-4308-950b-bccaf2634d33",
     "96b991d2-402b-4fde-9f7c-578b3c2508bb",
