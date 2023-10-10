@@ -274,8 +274,21 @@ class VibeSelectionSlider extends HTMLElement {
 
   connectedCallback() {
     this.container = this.querySelector('.swiper')
+    let navigation = false
+    
+    const nextEl = this.querySelector('.vibe--selection__prev-next-btn-next')
+    const prevEl = this.querySelector('.vibe--selection__prev-next-btn-prev')
+
+    if(nextEl && prevEl) {
+      navigation = {
+        nextEl: nextEl,
+        prevEl: prevEl,
+      }
+    }
+    
     this.slider = new Swiper(this.container, {
-      slidesPerView: 1
+      slidesPerView: 1,
+      navigation: navigation
     })
   }
 }
