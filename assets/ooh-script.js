@@ -252,7 +252,7 @@ class HeightObserver extends HTMLElement {
 
   afterSliderInit() {
     console.log('slider inited')
-    setTimeOut(() => this.applyHeight(), 1000)
+    setTimeout(() => this.applyHeight(), 1000)
   }
 
   applyHeight() {
