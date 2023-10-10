@@ -172,14 +172,16 @@ class OOHCampaignComponent extends HTMLElement {
   }
 
   updateOrderMarker() {
-    this.orderMarker = this.querySelector('.order-marker')
+    const orderMarkers = this.querySelector('.order-marker')
     const selectedElements = this.querySelectorAll('input.vibe_input[type="checkbox"]:checked')
 
-    selectedElements.forEach(input => {
-      console.log(input)
+    selectedElements.forEach((input, i) => {
+      const img_url = input.dataset.bgImage
+      const marker = orderMarkers.querySelector(`span:nth-child(${i})`)
+      marker.style.background = `url(${img_url})`
     })
 
-    console.log(this.orderMarker)
+    console.log(orderMarkers)
   }
 
   updateSelectedStatus(max, current) {
