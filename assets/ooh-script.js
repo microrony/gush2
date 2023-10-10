@@ -220,7 +220,7 @@ class HeightObserver extends HTMLElement {
     else {
       height = this.container.scrollHeight
     }
-    this.container.style.setProperty('--container-height', `${height}px` || 'auto');
+    setTimeout(() => this.container.style.setProperty('--container-height', `${height}px` || 'auto'), 300)
   }
 
   observeHeight() {
