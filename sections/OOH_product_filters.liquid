@@ -181,7 +181,7 @@
                         <div class="swiper-slide">
                           <div class="product-item">
                             <label class="vibe_label" for="vibe_{{ collection.handle }}_{{ product.id }}">
-                              <input type="checkbox" id="vibe_{{ collection.handle }}_{{ product.id }}" class="vibe_input hidden-checkbox" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}" data-bg-image="{{ image.src }}">
+                              <input type="checkbox" id="vibe_{{ collection.handle }}_{{ product.id }}" class="vibe_input hidden-checkbox" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}" data-bg-image="{{ image | image_url: width: 'master' }}">
                               <span class="checkmark"></span>
                               <div class="reveal">
                                 <img class="grid-view-item__image" src="{{ image | img_url:" 200x200" }}">
