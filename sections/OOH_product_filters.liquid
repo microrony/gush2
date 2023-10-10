@@ -139,6 +139,20 @@
     {% endcapture -%}
   {% endif %}
 {% endfor %}
+
+<style>
+  .slide-bg {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  .slider-bg::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
 <ooh-campaign-component>
 <form id="vibe-selection">
 
