@@ -25,6 +25,12 @@ class OOHCampaignComponent extends HTMLElement {
     this.filter.addEventListener('change', this.handleFilterChange.bind(this))
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
 
+    this.labels = this.querySelectorAll('.vibe_label')
+
+    this.labels.forEach(item => {
+      item.addEventListener('click', this.listenLebelClick.bind(this))
+    })
+
     this.selectionButtons = this.querySelectorAll('.vibe-selection-button')
 
     console.log(this.selectionButtons)
@@ -55,6 +61,10 @@ class OOHCampaignComponent extends HTMLElement {
         })
       })
     })
+  }
+
+  listenLebelClick(e) {
+    console.log(e)
   }
 
   selectVibe(e) {
