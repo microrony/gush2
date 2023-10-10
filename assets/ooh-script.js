@@ -318,7 +318,8 @@ class VibeSliderComponent extends HTMLElement {
       navigation: navigation,
       on: {
         init: () => {
-          console.log('inited')
+          const event = new CustomEvent('vibeSlider:inited')
+          document.dispatchEvent(event)
         }
       }
     })
