@@ -823,8 +823,8 @@ line-height: 25px;
 
 @media only screen and (min-width: 740px) {
   .vibe_label .checkmark {
-    right: 24px;
-    top: 5px;
+    right: 30px;
+    top: 8px;
   }
   .collection_button {
     --container-height: 561px;
