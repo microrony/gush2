@@ -767,6 +767,7 @@ line-height: 25px;
   transform: translateY(-50%);
   z-index: 2;
   background: transparent;
+  cursor: pointer;
 }
 .vibe--selection__prev-next-btn svg {
   width: 100%;
