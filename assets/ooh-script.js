@@ -73,7 +73,7 @@ class OOHCampaignComponent extends HTMLElement {
 
         setTimeout(() => {
           if(this.errorMessage.classList.contains('active')) this.errorMessage.classList.remove('active')
-        }, 2000)
+        }, 3000)
       }
     }
   }
