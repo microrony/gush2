@@ -773,10 +773,10 @@ line-height: 25px;
   height: 100%;
 }
 .vibe--selection__prev-next-btn-prev {
-  left: 0;
+  left: 50px;
 }
 .vibe--selection__prev-next-btn-next {
-  right: 0;
+  right: 50px;
 }
 
 .icon--arrow {
