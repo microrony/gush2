@@ -150,7 +150,7 @@
         <div class="swiper-wrapper">
           {% for collection in vibe_collections %}
             {% style %}
-              [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg::after {
+              [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg::before {
                 background: url("{{ collection.featured_image | image_url: width: 1500 }}") no-repeat center;
               }
             {% endstyle %}
