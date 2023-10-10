@@ -767,15 +767,21 @@ line-height: 25px;
     max-width: 100%;
   }
   #ooh_product_filter_section {
-  padding: 0 40px;
+    padding: 0 40px;
     width: 100%;
     text-align: center;
-}
+  }
   .filtered_product_section {
-        display: inline-block;
+    display: inline-block;
     width: 50%;
   }
   .vibe-selection-slider .slide-bg {
     padding-bottom: 56.25%;
+  }
+  .vibe--selection__text {
+    padding-top: 85px;
+  }
+  .vibe--selection__button {
+    padding-bottom: 85px;
   }
 }
