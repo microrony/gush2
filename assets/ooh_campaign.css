@@ -805,6 +805,13 @@ line-height: 25px;
   font-weight: 500;
   line-height: 22.4px;
   letter-spacing: .28px;
+  /* visibility: hidden;
+  opacity: 0;
+  bottom:  */
+}
+
+.error--message.active{
+  
 }
 
 /* Css for Desktop View  */
