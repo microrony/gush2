@@ -765,6 +765,8 @@ line-height: 25px;
 
 .vibe--selection__wrapper .vibe--selection__prev-next-btn {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 /* Css for Desktop View  */
