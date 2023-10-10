@@ -140,34 +140,13 @@
   {% endif %}
 {% endfor %}
 
-<style>
-  .swiper .slide-bg {
-    position: relative;
-    display: block;
-    padding-bottom: 56.25%;
-  }
-  .slider-bg::before {
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .vibe--selection__button {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-  }
-</style>
 <ooh-campaign-component>
 <form id="vibe-selection">
 
   <!-- Vibe Selection Carausel will come here -->
   <vibe-selection-slider>
     <div class="vabe--selection__wrapper">
-      <div class="swiper">
+      <div class="swiper vibe-selection-slider">
         <div class="swiper-wrapper">
           {% for collection in vibe_collections %}
             <div class="swiper-slide">
