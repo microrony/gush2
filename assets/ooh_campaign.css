@@ -850,4 +850,8 @@ line-height: 25px;
     width: 40px;
     height: 40px;
   }
+  .error--message {
+    max-width: 400px;
+    right: 0;
+  }
 }
