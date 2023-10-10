@@ -64,9 +64,10 @@ line-height: 25px;
     grid-template-columns: 130px 130px 130px;
   justify-content: center;
 }
+
 img.grid-view-item__image {
   border-radius: 100px;
-    
+  max-width: 86px;
 }
 
  /* filter product custom checkmark starts here */
