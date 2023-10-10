@@ -67,7 +67,9 @@ class OOHCampaignComponent extends HTMLElement {
     const el = e.currentTarget
     const input = el.querySelector('input')
     if(input) {
-      console.log(input.disabled)
+      if(input.disabled) {
+        console.log('put_code_here')
+      }
     }
   }
 
