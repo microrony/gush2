@@ -172,7 +172,7 @@ class OOHCampaignComponent extends HTMLElement {
   }
 
   updateOrderMarker() {
-    const orderMarkers = this.querySelector('.order-marker span')
+    const orderMarkers = this.querySelectorAll('.order-marker span')
     const selectedElements = this.querySelectorAll('input.vibe_input[type="checkbox"]:checked')
 
     orderMarkers.forEach((marker, i) => {
