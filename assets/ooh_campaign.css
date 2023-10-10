@@ -53,6 +53,7 @@ line-height: 25px;
 #ooh_product_filter_section {
   background: #F2E5FF;
   text-align: center;
+  padding: 0 40px;
 }
 .filtered_product_section {
   text-align: center;
