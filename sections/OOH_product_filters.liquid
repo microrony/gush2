@@ -160,7 +160,9 @@
                 background: url("{{ image_mobile | image_url: width: 1000 }}") no-repeat center center/cover;
               }
               @media only screen and (min-width: 740px) {
-                background: url("{{ image | image_url: width: 2000 }}") no-repeat center center/cover;
+                [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg::before {
+                  background: url("{{ image | image_url: width: 2000 }}") no-repeat center center/cover;
+                }
               }
             {% endstyle %}
             <div class="swiper-slide" data-slide="vibe-slide-{{ collection.handle }}">
