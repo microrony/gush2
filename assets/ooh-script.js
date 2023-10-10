@@ -24,6 +24,7 @@ class OOHCampaignComponent extends HTMLElement {
     this.form.addEventListener('change', this.handleChange.bind(this))
     this.filter.addEventListener('change', this.handleFilterChange.bind(this))
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
+    this.errorMessage = this.querySelector('.error--message')
 
     this.labels = this.querySelectorAll('.vibe_label')
 
@@ -68,7 +69,11 @@ class OOHCampaignComponent extends HTMLElement {
     const input = el.querySelector('input')
     if(input) {
       if(input.disabled) {
-        console.log('put_code_here')
+        if(!this.errorMessage.classList.contains('active')) this.errorMessage.classList.add('active')
+
+        setTimeout(() => {
+          if(this.errorMessage.classList.contains('active')) this.errorMessage.classList.remove('active')
+        }, 2000)
       }
     }
   }
