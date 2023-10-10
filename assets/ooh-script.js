@@ -251,6 +251,7 @@ class HeightObserver extends HTMLElement {
   }
 
   afterSliderInit() {
+    console.log('slider inited')
     this.applyHeight()
   }
 
