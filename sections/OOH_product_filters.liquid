@@ -174,19 +174,17 @@
                       -%}
                       {% if current_variant != blank %}
                         {% assign image = product.featured_image %}
-                        {% for image in product.images limit: 1 offset: 1 %}
-                          
-                        {% endfor %}
+                        {% if product.images[1] != blank %}
+                          {% assign image = product.images[1] %}
+                        {% endif %}
                         
                         <div class="swiper-slide">
                           <div class="product-item">
                             <label class="vibe_label" for="vibe_{{ collection.handle }}_{{ product.id }}">
-                              <input type="checkbox" id="vibe_{{ collection.handle }}_{{ product.id }}" class="vibe_input hidden-checkbox" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}" data-bg-image="{{  }}">
+                              <input type="checkbox" id="vibe_{{ collection.handle }}_{{ product.id }}" class="vibe_input hidden-checkbox" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}" data-bg-image="{{ image.src }}">
                               <span class="checkmark"></span>
                               <div class="reveal">
-                                {% for image in product.images limit: 1 offset: 1 %}
                                 <img class="grid-view-item__image" src="{{ image | img_url:" 200x200" }}">
-                                {% endfor %}
                       
                                 <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}">
                               </div>
