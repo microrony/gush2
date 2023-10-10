@@ -580,6 +580,7 @@ width: 90rem;
 }
 
 .collection_button {
+    --container-height: 379px;
     border-radius: 1px;
     border: 1px solid var(--Secondary-6, #302112);
     display: inline-flex;
