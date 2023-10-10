@@ -800,6 +800,7 @@ line-height: 25px;
   background: #302112;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* Css for Desktop View  */
