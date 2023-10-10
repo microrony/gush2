@@ -8,6 +8,8 @@ class OOHCampaignComponent extends HTMLElement {
     this.selectedColors = []
     this.colorInfoEl = this.querySelector('#selected_colors span')
 
+    this.statusTextEl = this.querySelector('.text--status')
+
     this.selectedVariants = []
     
     this.q1 = ""
@@ -134,6 +136,7 @@ class OOHCampaignComponent extends HTMLElement {
       this.selectedVariants = vibes
 
       this.disabledVibeSelection(3, this.selectedVariants.length)
+      this.updateSelectedStatus(3, this.selectedVariants.length)
       
 
       this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
@@ -149,6 +152,10 @@ class OOHCampaignComponent extends HTMLElement {
     if(el.getAttribute('name') == 'question2') {
       this.q2 = el.value
     }
+  }
+
+  updateSelectedStatus(max, current) {
+    this.statusTextEl.innerHTML = `${current}/${max}`
   }
 
   applyBackground(bg) {
