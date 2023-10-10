@@ -111,6 +111,13 @@
   img.grid-view-item__image {
     max-width: 86px;
   }
+
+  .icon--status::after {
+    background: url("{{ 'icon-tick.svg' | asset_url }}") no-repeat center;
+  }
+  .icon--eye::after {
+    background: url("{{ 'ion_eye-sharp.svg' | asset_url }}") no-repeat center;
+  }
 </style>
 
 {% assign selected_vibe = blank %}
