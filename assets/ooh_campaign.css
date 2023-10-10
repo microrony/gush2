@@ -685,6 +685,9 @@ width: 90rem;
 .helper--text {
   padding-left: 4px;
 }
+.icon--eye-container {
+  display: inline-flex;
+}
 .icon--status,
 .icon--eye {
   height: 22px;
