@@ -138,6 +138,9 @@ class OOHCampaignComponent extends HTMLElement {
 
       this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
       console.log(this.selectedVariants)
+
+      const bgElement = el.parentNode.querySelector('.grid-view-item__image')
+      this.applyBackground(bgElement)
     }
 
     if(el.getAttribute('name') == 'question1') {
@@ -147,6 +150,10 @@ class OOHCampaignComponent extends HTMLElement {
     if(el.getAttribute('name') == 'question2') {
       this.q2 = el.value
     }
+  }
+
+  applyBackground(el) {
+    console.log(el)
   }
 
   disabledVibeSelection(max, current) {
