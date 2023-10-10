@@ -240,6 +240,7 @@ class HeightObserver extends HTMLElement {
   constructor() {
     super()
     this.container = this.querySelector(this.dataset.container)
+    document.addEventListener('vibeSlider:inited', this.afterSliderInit.bind(this))
   }
 
   connectedCallback() {
@@ -247,6 +248,10 @@ class HeightObserver extends HTMLElement {
       this.applyHeight()
       this.observeHeight()
     }
+  }
+
+  afterSliderInit() {
+    this.applyHeight()
   }
 
   applyHeight() {
