@@ -763,6 +763,10 @@ line-height: 25px;
   /* transform: translateY(-50%); */
 }
 
+.vibe--selection__wrapper .vibe--selection__prev-next-btn {
+  display: flex;
+}
+
 /* Css for Desktop View  */
 
 @media only screen and (min-width: 740px) {
