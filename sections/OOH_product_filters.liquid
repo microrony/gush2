@@ -149,7 +149,12 @@
       <div class="swiper vibe-selection-slider">
         <div class="swiper-wrapper">
           {% for collection in vibe_collections %}
-            <div class="swiper-slide">
+            {% style %}
+              [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg::after {
+                background: url("{{ collection.featured_image | image_url: width: 1500 }}") no-repeat center;
+              }
+            {% endstyle %}
+            <div class="swiper-slide" data-slide="vibe-slide-{{ collection.handle }}">
               <div class="content--wrapper">
                 <div class="slide-bg"></div>
                 <div class="vibe--selection__button">
