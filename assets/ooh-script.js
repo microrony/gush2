@@ -254,7 +254,7 @@ class HeightObserver extends HTMLElement {
     let observableElement = this.querySelectorAll('[data-observable-element]')
     if(observableElement.length > 0) {
       observableElement.forEach(item => {
-        console.log()
+        console.log(item, item.scrollHeight)
         if(item.scrollHeight > height) height = item.scrollHeight
       })
     }
