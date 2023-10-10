@@ -315,7 +315,12 @@ class VibeSliderComponent extends HTMLElement {
         fill: "row"
       },
       pagination: pagination,
-      navigation: navigation
+      navigation: navigation,
+      on: {
+        init: () => {
+          console.log('inited')
+        }
+      }
     })
 
     console.log(this.slider)
