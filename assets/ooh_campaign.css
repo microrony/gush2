@@ -789,6 +789,13 @@ line-height: 25px;
   height: 100%;
 }
 
+.error--message {
+  color: #ffffff;
+  padding: 16px;
+  position: fixed;
+  bottom: 16px;
+}
+
 /* Css for Desktop View  */
 
 @media only screen and (min-width: 740px) {
