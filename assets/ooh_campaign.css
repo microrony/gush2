@@ -758,8 +758,10 @@ line-height: 25px;
   position: relative;
   /* top: 50%; */
   /* left: 0; */
-  width: 24px;
-  height: 24px;
+  width: 38px;
+  height: 38px;
+  padding: 7px;
+  display: flex;
   /* transform: translateY(-50%); */
 }
 .vibe--selection__prev-next-btn svg {
@@ -768,9 +770,7 @@ line-height: 25px;
 }
 
 .vibe--selection__wrapper .vibe--selection__prev-next-btn {
-  display: flex;
-  margin: 0;
-  padding: 0;
+  
 }
 
 .icon--arrow {
