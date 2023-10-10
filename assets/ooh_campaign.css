@@ -575,8 +575,11 @@ font-size: 13px;
     transform: translateY(-130%) translateX(30%) scale(1.3);
   }
   .ooh_survey_container {
-width: 90rem;
-}
+    width: 90rem;
+  }
+  img.grid-view-item__image {
+    max-width: 100%;
+  }
 }
 
 .collection_button {
