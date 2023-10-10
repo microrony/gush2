@@ -153,7 +153,7 @@ class OOHCampaignComponent extends HTMLElement {
   }
 
   applyBackground(el) {
-    const imgUrl = el.href
+    const imgUrl = el.getAttribute('href')
     console.log(imgUrl)
   }
 
