@@ -711,10 +711,8 @@ width: 90rem;
 .icon--status::after {
   top: -1px;
   left: -1px;
-  background: url("{{ 'icon-tick.svg' | asset_url }}") no-repeat center;
 }
 .icon--eye::after {
   top: 0;
   left: 0;
-  background: url("{{ 'ion_eye-sharp.svg' | asset_url }}") no-repeat center;
 }
