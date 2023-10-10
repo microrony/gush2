@@ -64,7 +64,11 @@ class OOHCampaignComponent extends HTMLElement {
   }
 
   listenLebelClick(e) {
-    console.log(e)
+    const el = e.currentTarget
+    const input = el.querySelector('input')
+    if(input) {
+      console.log(input.disabled)
+    }
   }
 
   selectVibe(e) {
