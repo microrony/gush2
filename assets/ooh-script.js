@@ -27,6 +27,7 @@ class OOHCampaignComponent extends HTMLElement {
 
     this.selectionButtons = this.querySelectorAll('.vibe-selection-button')
 
+    console.log(this.selectionButtons)
     this.selectionButtons.forEach(button => {
       button.addEventListener('click', this.selectVibe.bind(this))
     })
