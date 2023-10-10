@@ -762,6 +762,10 @@ line-height: 25px;
   height: 24px;
   /* transform: translateY(-50%); */
 }
+.vibe--selection__prev-next-btn svg {
+  width: 100%;
+  height: 100%;
+}
 
 .vibe--selection__wrapper .vibe--selection__prev-next-btn {
   display: flex;
