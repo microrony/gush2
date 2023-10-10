@@ -158,6 +158,8 @@ class OOHCampaignComponent extends HTMLElement {
       console.log(this.selectedVariants)
 
       if(el.checked) this.applyBackground(el.dataset.bgImage)
+
+      this.updateOrderMarker()
     }
 
     if(el.getAttribute('name') == 'question1') {
@@ -167,6 +169,17 @@ class OOHCampaignComponent extends HTMLElement {
     if(el.getAttribute('name') == 'question2') {
       this.q2 = el.value
     }
+  }
+
+  updateOrderMarker() {
+    this.orderMarker = this.querySelector('.order-marker')
+    const selectedElements = this.querySelectorAll('input.vibe_input[type="checkbox"]:checked')
+
+    selectedElements.forEach(input => {
+      console.log(input)
+    })
+
+    console.log(this.orderMarker)
   }
 
   updateSelectedStatus(max, current) {
