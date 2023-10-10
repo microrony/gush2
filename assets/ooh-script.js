@@ -179,11 +179,11 @@ class OOHCampaignComponent extends HTMLElement {
       const input = selectedElements[i]
       if(input) {
         const img_url = input.dataset.bgImage
-        if(marker.classList.contains('.hidden')) marker.classList.remove('.hidden')
+        if(marker.classList.contains('hidden')) marker.classList.remove('hidden')
         marker.style.background = `url(${img_url}) no-repeat center center/cover`
       }
       else {
-        if(!marker.classList.contains('.hidden')) marker.classList.add('.hidden')
+        if(!marker.classList.contains('hidden')) marker.classList.add('hidden')
         marker.style.background = `transparent`
       }
     })
