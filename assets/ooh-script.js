@@ -245,7 +245,7 @@ class HeightObserver extends HTMLElement {
 
   connectedCallback() {
     if(this.container) {
-      // this.applyHeight()
+      this.applyHeight()
       this.observeHeight()
     }
   }
