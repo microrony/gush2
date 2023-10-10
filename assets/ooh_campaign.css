@@ -691,8 +691,7 @@ font-size: 13px;
   display: inline-block;
   position: relative;
 }
-.icon--status,
-.error--message .icon--status{
+.icon--status {
   background: #00FF00;
   border-radius: 50%;
   margin-right: 12px;
