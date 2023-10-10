@@ -754,6 +754,15 @@ line-height: 25px;
   padding-top: 45px;
 }
 
+.vibe--selection__prev-next-btn {
+  position: relative;
+  /* top: 50%; */
+  /* left: 0; */
+  width: 24px;
+  height: 24px;
+  /* transform: translateY(-50%); */
+}
+
 /* Css for Desktop View  */
 
 @media only screen and (min-width: 740px) {
