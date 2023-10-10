@@ -157,42 +157,40 @@
     </div>
 
     <height-observer data-container=".vibe__container">
-    <div class="vibe__container">
-      {% for collection in vibe_collections %}
-        <div class="vibe__wrapper" data-vibe="{{ collection.handle }}" data-active="{% if forloop.first %}true{% else %}false{% endif %}">
-          <div class="vibe__content" data-observable-element>
-            <vibe-slider-component data-container=".swiper">
-              <div class="content-wrapper">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    {% for product in collection.products %}
-                      {%- liquid
-                         assign current_variant = blank
-                         
-                         for variant in product.variants
-                           if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Sample (20ml)'
-                             assign current_variant = variant
-                           endif
-                        endfor
-                      -%}
-                      {% if current_variant != blank %}
-                        {% assign image = product.featured_image %}
-                        {% if product.images[1] != blank %}
-                          {% assign image = product.images[1] %}
-                        {% endif %}
-                        
-                        <div class="swiper-slide">
-                          <div class="product-item">
-                            <label class="vibe_label" for="vibe_{{ collection.handle }}_{{ product.id }}">
-                              <input type="checkbox" id="vibe_{{ collection.handle }}_{{ product.id }}" class="vibe_input hidden-checkbox" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}" data-bg-image="{{ image | image_url: width: 2000 }}">
-                              <span class="checkmark"></span>
-                              <div class="reveal">
-                                <img class="grid-view-item__image" src="{{ image | img_url:" 200x200" }}">
-                      
-                                <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}">
-                              </div>
-                              
-                            </label>
+      <div class="vibe__container">
+        {% for collection in vibe_collections %}
+          <div class="vibe__wrapper" data-vibe="{{ collection.handle }}" data-active="{% if forloop.first %}true{% else %}false{% endif %}">
+            <div class="vibe__content" data-observable-element>
+              <vibe-slider-component data-container=".swiper">
+                <div class="content-wrapper">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      {% for product in collection.products %}
+                        {%- liquid
+                           assign current_variant = blank
+                           
+                           for variant in product.variants
+                             if variant.option1 == 'Gush Cair' and variant.option2 == 'Paint Sample (20ml)'
+                               assign current_variant = variant
+                             endif
+                           endfor
+                        -%}
+                        {% if current_variant != blank %}
+                          {% assign image = product.featured_image %}
+                          {% if product.images[1] != blank %}
+                            {% assign image = product.images[1] %}
+                          {% endif %}
+                          
+                          <div class="swiper-slide">
+                            <div class="product-item">
+                              <label class="vibe_label" for="vibe_{{ collection.handle }}_{{ product.id }}">
+                                <input type="checkbox" id="vibe_{{ collection.handle }}_{{ product.id }}" class="vibe_input hidden-checkbox" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}" data-bg-image="{{ image | image_url: width: 2000 }}">
+                                <span class="checkmark"></span>
+                                <div class="reveal">
+                                  <img class="grid-view-item__image" src="{{ image | image_url: width: 200, height: 200 }}" width="200" height="200" loading="lazy">
+                                  <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}" loading="lazy">
+                                </div>
+                              </label>
                             <h4 class="filtered_product_title">{{ product.title }}</h4>
                             <h5 class="filtered_varient_title">{{ current_variant.title | replace: "Gush Cair / ", "" }}</h5>
                           
@@ -217,6 +215,8 @@
       {% endfor %}
     </div>
   </height-observer>
+
+  
 {% comment %}
   <div id="products_3_grid_slick">
     {% assign collection = collections['vibe-1'] %}
