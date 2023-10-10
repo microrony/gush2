@@ -53,7 +53,7 @@ line-height: 25px;
 #ooh_product_filter_section {
   background: #F2E5FF;
   text-align: center;
-  padding: 0 40px;
+  padding: 0 10px;
 }
 .filtered_product_section {
   text-align: center;
@@ -572,18 +572,6 @@ font-size: 13px;
   align-self: end;
 }
 
-@media only screen and (min-width: 740px) {
-  .footer_banner {
-    transform: translateY(-130%) translateX(30%) scale(1.3);
-  }
-  .ooh_survey_container {
-    width: 90rem;
-  }
-  img.grid-view-item__image {
-    max-width: 100%;
-  }
-}
-
 .collection_button {
     --container-height: 379px;
     border-radius: 1px;
@@ -722,4 +710,25 @@ font-size: 13px;
 .icon--eye::after {
   top: 0;
   left: 0;
+}
+.promo_text {
+  padding: 20px 0;
+}
+
+
+/* Css for Desktop View  */
+
+@media only screen and (min-width: 740px) {
+  .footer_banner {
+    transform: translateY(-130%) translateX(30%) scale(1.3);
+  }
+  .ooh_survey_container {
+    width: 90rem;
+  }
+  img.grid-view-item__image {
+    max-width: 100%;
+  }
+  #ooh_product_filter_section {
+  padding: 0 40px;
+}
 }
