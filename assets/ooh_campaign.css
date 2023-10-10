@@ -587,11 +587,11 @@ font-size: 13px;
   }
   .vibe__container {
     position: relative;
-    /* padding-bottom: var(--container-height); */
+    padding-bottom: var(--container-height);
   }
   .vibe__wrapper {
     position: relative;
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
