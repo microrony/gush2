@@ -266,3 +266,18 @@ class VibeSliderComponent extends HTMLElement {
 
 customElements.define('vibe-slider-component', VibeSliderComponent)
 
+
+class VibeSelectionSlider extends HTMLElement {
+  constructor() {
+    super()
+  }
+
+  connectedCallback() {
+    this.container = this.querySelector('.swiper')
+    this.slider = new Swiper(this.container, {
+      slidesPerView: 1
+    })
+  }
+}
+customElements.define('vibe-selection-slider', VibeSelectionSlider)
+
