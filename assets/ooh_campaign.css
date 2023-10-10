@@ -801,6 +801,10 @@ line-height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.4px;
+  letter-spacing: .28px;
 }
 
 /* Css for Desktop View  */
