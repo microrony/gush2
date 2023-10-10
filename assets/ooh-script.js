@@ -262,6 +262,8 @@ class HeightObserver extends HTMLElement {
       observableElement.forEach(item => {
         console.log(item, item.scrollHeight)
         console.log('offset height: ', item.offsetHeight)
+        const rect = item.getBoundingClientRect()
+        console.log('Rect: ', rect)
         if(item.scrollHeight > height) height = item.scrollHeight
       })
     }
