@@ -177,8 +177,8 @@ class OOHCampaignComponent extends HTMLElement {
 
     selectedElements.forEach((input, i) => {
       const img_url = input.dataset.bgImage
-      const marker = orderMarkers.querySelector(`span:nth-child(${i})`)
-      marker.style.background = `url(${img_url})`
+      const marker = orderMarkers.querySelectorAll(`span`)
+      marker[i].style.background = `url(${img_url})`
     })
 
     console.log(orderMarkers)
