@@ -625,6 +625,7 @@ font-size: 13px;
   grid-template-areas: 'previous-el pagination next-el';
   align-items: center;
   justify-content: center;
+  min-height: 50px;
 }
 .pagination {
   position: relative;
