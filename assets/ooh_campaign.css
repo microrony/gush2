@@ -729,7 +729,7 @@ line-height: 25px;
   padding-bottom: 101.54%;
 }
 
-.slider-bg::before {
+.slide-bg::before {
   content: "";
   top: 0;
   left: 0;
