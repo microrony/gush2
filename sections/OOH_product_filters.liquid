@@ -280,8 +280,8 @@
                                 <input type="checkbox" id="vibe_{{ collection.handle }}_{{ product.id }}" class="vibe_input hidden-checkbox" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}" data-bg-image="{{ image | image_url: width: 2000 }}">
                                 <span class="checkmark"></span>
                                 <div class="reveal">
-                                  <img class="grid-view-item__image" src="{{ image | img_url: '200x200' }}" loading="lazy">
-                                  <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}" loading="lazy">
+                                  <img class="grid-view-item__image" src="{{ image | img_url: '200x200' }}">
+                                  <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}">
                                 </div>
                               </label>
                               <h4 class="filtered_product_title">{{ product.title }}</h4>
