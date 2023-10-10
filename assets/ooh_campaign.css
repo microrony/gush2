@@ -723,6 +723,11 @@ font-weight: 400;
 line-height: 25px;
 }
 
+.vibe-selection-slider .slide-bg {
+  position: relative;
+  display: block;
+  padding-bottom: 101.54%;
+}
 
 /* Css for Desktop View  */
 
@@ -744,5 +749,8 @@ line-height: 25px;
   .filtered_product_section {
         display: inline-block;
     width: 50%;
+  }
+  .vibe-selection-slider .slide-bg {
+    padding-bottom: 56.25%;
   }
 }
