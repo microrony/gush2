@@ -737,5 +737,11 @@ line-height: 25px;
   }
   #ooh_product_filter_section {
   padding: 0 40px;
+    width: 100%;
+    text-align: center;
 }
+  .filtered_product_section {
+        display: inline-block;
+    width: 50%;
+  }
 }
