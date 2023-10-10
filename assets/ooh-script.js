@@ -153,7 +153,8 @@ class OOHCampaignComponent extends HTMLElement {
   }
 
   applyBackground(el) {
-    console.log(el)
+    const imgUrl = el.href
+    console.log(imgUrl)
   }
 
   disabledVibeSelection(max, current) {
