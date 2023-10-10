@@ -149,12 +149,18 @@
       <div class="swiper vibe-selection-slider">
         <div class="swiper-wrapper">
           {% for collection in vibe_collections %}
+            {% assign image = collection.featured_image %}
+            {% assign image_mobile = collection.metafields.images.mobile_image %}
+
+            {% if image_mobile == blank %}
+              {% assign image_mobile = collection.featured_image %}
+            {% endif %}
             {% style %}
               [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg::before {
-                background: url("{{ collection.featured_image | image_url: crop: 'center', width: 2000 }}") no-repeat center center/cover;
+                background: url("{{ image_mobile | image_url: width: 1000 }}") no-repeat center center/cover;
               }
               @medis only screen and min-width(740px) {
-                background: url("{{ collection.featured_image | image_url: width: 1500 }}") no-repeat center center/cover;
+                background: url("{{ image | image_url: width: 2000 }}") no-repeat center center/cover;
               }
             {% endstyle %}
             <div class="swiper-slide" data-slide="vibe-slide-{{ collection.handle }}">
