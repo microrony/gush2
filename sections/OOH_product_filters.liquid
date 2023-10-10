@@ -191,30 +191,28 @@
                                   <img class="hidden" src="{{ 'paint_pack_sacket.png' | asset_url }}" loading="lazy">
                                 </div>
                               </label>
-                            <h4 class="filtered_product_title">{{ product.title }}</h4>
-                            <h5 class="filtered_varient_title">{{ current_variant.title | replace: "Gush Cair / ", "" }}</h5>
-                          
-                            <!-- Add code to display product image, price, etc. -->
+                              <h4 class="filtered_product_title">{{ product.title }}</h4>
+                              <h5 class="filtered_varient_title">{{ current_variant.title | replace: "Gush Cair / ", "" }}</h5>
+                              <!-- Add code to display product image, price, etc. -->
+                            </div>
                           </div>
-                        </div>
-                      {% endif %}
-                    {% endfor %}
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                    
+                    <div class="swiper--controls">
+                      <div class="pagination"></div>
+                      <div class="prev-next-btn prev-next-btn-next"></div>
+                      <div class="prev-next-btn prev-next-btn-prev"></div>
+                    </div>
                   </div>
-
-                  <div class="swiper--controls">
-                    <div class="pagination"></div>
-                    <div class="prev-next-btn prev-next-btn-next"></div>
-                    <div class="prev-next-btn prev-next-btn-prev"></div>
-                  </div>
-                  
                 </div>
-              </div>
-            </vibe-slider-component>
+              </vibe-slider-component>
+            </div>
           </div>
-        </div>
-      {% endfor %}
-    </div>
-  </height-observer>
+        {% endfor %}
+      </div>
+    </height-observer>
 
   
 {% comment %}
