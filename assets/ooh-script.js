@@ -59,7 +59,10 @@ class OOHCampaignComponent extends HTMLElement {
 
   selectVibe(e) {
     const el = e.currentTarget
-    console.log(el.dataset.value)
+    this.filter.value = el.dataset.value
+
+    var event = new Event('change')
+    this.filter.dispatchEvent(event)
   }
 
   handleSubmit(e) {
