@@ -615,7 +615,9 @@ font-size: 13px;
     visibility: visible;
     z-index: 2;
   }
-
+vibe-slider-component {
+  display: block;
+}
 .swiper--controls {
   position: relative;
   margin-top: 30px;
