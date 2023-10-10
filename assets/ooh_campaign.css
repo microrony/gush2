@@ -468,7 +468,8 @@ letter-spacing: 0.28px;
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-color:#3399ff;
+  /* background-color:#3399ff; */
+  background: transparent;
   border-radius: 50%;
 }
 
@@ -477,7 +478,8 @@ letter-spacing: 0.28px;
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-color: #33ffbb;
+  /* background-color: #33ffbb; */
+  background: transparent;
   border-radius: 50%;
 }
 
@@ -486,7 +488,8 @@ letter-spacing: 0.28px;
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-color: #cc66ff;
+  /* background-color: #cc66ff; */
+  background: transparent;
   border-radius: 50%;
 }
 
