@@ -1,1 +1,7 @@
-.vibe__container .swiper-wrapper
+.vibe__container .swiper-wrapper {
+  flex-wrap: wrap;
+}
+
+.vibe__container .swiper-slide {
+  width: calc((100% - 30px) / 3);
+}
