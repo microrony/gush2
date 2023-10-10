@@ -142,7 +142,7 @@ class OOHCampaignComponent extends HTMLElement {
       this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
       console.log(this.selectedVariants)
 
-      this.applyBackground(el.dataset.bgImage)
+      if(el.checked) this.applyBackground(el.dataset.bgImage)
     }
 
     if(el.getAttribute('name') == 'question1') {
