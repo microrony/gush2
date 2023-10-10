@@ -590,7 +590,8 @@ font-size: 13px;
     padding-bottom: var(--container-height);
   }
   .vibe__wrapper {
-    position: absolute;
+    position: relative;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
