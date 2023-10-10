@@ -52,6 +52,16 @@
     object-fit: contain;
   }
 
+  .vibe_label:has(input:disabled) .reveal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
   .reveal:hover .hidden,
   .vibe_label:has(input:checked) .hidden {
     z-index: 0;
