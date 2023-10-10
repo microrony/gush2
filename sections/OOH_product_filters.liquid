@@ -159,7 +159,7 @@
               [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg::before {
                 background: url("{{ image_mobile | image_url: width: 1000 }}") no-repeat center center/cover;
               }
-              @medis only screen and min-width(740px) {
+              @media only screen and min-width(740px) {
                 background: url("{{ image | image_url: width: 2000 }}") no-repeat center center/cover;
               }
             {% endstyle %}
