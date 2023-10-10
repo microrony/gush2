@@ -753,7 +753,9 @@ line-height: 25px;
   top: 0;
   padding-top: 45px;
 }
-
+.vibe--selection__wrapper {
+  position: relative;
+}
 .vibe--selection__prev-next-btn {
   position: absolute;
   top: 50%;
