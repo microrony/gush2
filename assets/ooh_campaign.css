@@ -855,7 +855,7 @@ line-height: 25px;
     top: 132px;
     right: -500px;
     bottom: unset;
-    
+    transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out, bottom 0.5s ease-in-out, right 0.5s ease-in-out;
   }
   .error--message.active {
     bottom: unset;
