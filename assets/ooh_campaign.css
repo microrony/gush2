@@ -807,7 +807,7 @@ line-height: 25px;
   visibility: hidden;
   opacity: 0;
   bottom: -60px;
-  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out, bottom 0.3s ease-in-out, right 0.3s ease-in-out;
 }
 
 .error--message.active{
