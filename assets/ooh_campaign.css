@@ -747,9 +747,11 @@ line-height: 25px;
 }
 .vibe--selection__button {
   bottom: 0;
+  padding-bottom: 3rem;
 }
 .vibe--selection__text {
   top: 0;
+  padding-top: 3rem;
 }
 
 /* Css for Desktop View  */
