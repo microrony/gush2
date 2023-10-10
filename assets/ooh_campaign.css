@@ -852,8 +852,10 @@ line-height: 25px;
   }
   .error--message {
     max-width: 400px;
+    top: 132px;
     right: -500px;
     bottom: unset;
+    
   }
   .error--message.active {
     bottom: unset;
