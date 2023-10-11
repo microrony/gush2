@@ -89,6 +89,11 @@ class OOHCampaignComponent extends HTMLElement {
   handleSubmit(e) {
     e.preventDefault()
 
+    const tnc_field = this.querySelector('input.gush_tnc_checkbox')
+    if(!tnc_field.checked) {
+      return
+    }
+
     const note = `
       What are you painting: ${this.q1}.
       How soon do you want to start painting: ${this.q2}
