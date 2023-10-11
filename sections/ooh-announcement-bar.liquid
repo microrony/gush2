@@ -1,6 +1,7 @@
 {% style  %} 
   #shopify-section-{{ section.id }} .gradient {
-    background: {{ section.settings.bg_color }}
+    letter-spacing: 0.28px;
+    background: {{ section.settings.bg_color }};
   }
 {%- for block in section.blocks -%}
   {%- case block.type -%}
