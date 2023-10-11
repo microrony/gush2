@@ -209,6 +209,7 @@
           "ooh-announcement-bar-0"
         ],
         "settings": {
+          "bg_color": "#302112"
         }
       }
     },
