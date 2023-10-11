@@ -90,7 +90,12 @@ class OOHCampaignComponent extends HTMLElement {
     e.preventDefault()
 
     const tnc_field = this.querySelector('input.gush_tnc_checkbox')
+    const tnc_error = this.querySelector('.error--message[data-error-type="tnc_error"]')
     if(!tnc_field.checked) {
+      if(!tnc_error.classList.contains('active')) tnc_error.classList.add('active')
+      setTimeout(() => {
+        if(tnc_error.classList.contains('active')) tnc_error.classList.remove('active')
+      }, 3000)
       return
     }
 
