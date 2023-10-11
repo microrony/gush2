@@ -222,7 +222,7 @@ class OOHCampaignComponent extends HTMLElement {
       container.style.background = `url(${bg})`
       setTimeout(() => {
         container.style.background = "#F2E5FF"
-      }, 3000)
+      }, 2700)
     }
   }
 
