@@ -953,6 +953,7 @@ select#collection-filter-select {
 
 select#collection-filter-select:focus-visible {
   border: none;
+  box-shadow: none;
 }
 
 #collection-filter-select {
