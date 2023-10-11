@@ -577,9 +577,7 @@ font-size: 13px;
 }
 
 .collection_button {
-    --container-height: 379px;
-    
-  padding: 20px;
+    padding: 20px;
     font-weight: 700;
     border-radius: 1px;
     border: 1px solid #ffffff;
@@ -593,6 +591,7 @@ font-size: 13px;
     text-decoration: none;
   }
   .vibe__container {
+    --container-height: 379px;
     position: relative;
     padding-bottom: var(--container-height);
   }
@@ -830,7 +829,7 @@ line-height: 25px;
     right: 30px;
     top: 8px;
   }
-  .collection_button {
+  .vibe__container {
     --container-height: 561px;
   }
   .footer_banner {
