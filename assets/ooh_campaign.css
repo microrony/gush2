@@ -688,6 +688,7 @@ font-size: 13px;
 .selection--status {
   padding: 16px 32px;
   display: flex;
+  max-width: 468px;
   justify-content: center;
   align-items: center;
   background-color: #302112;
