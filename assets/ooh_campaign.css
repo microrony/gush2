@@ -952,6 +952,10 @@ select#collection-filter-select {
   cursor: pointer;
 }
 
+select#collection-filter-select option {
+  padding: 5px 10px;
+}
+
 select#collection-filter-select:focus-visible {
   border: none;
   box-shadow: none;
