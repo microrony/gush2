@@ -541,13 +541,17 @@ font-size: 13px;
 }
 
 .order-details-container .order .order-details .order-props{
-  color: #b3b3b3;
+  
   display: flex;
   align-items: start;
   justify-content: start;
   flex-direction: column;
   gap: 2rem;
   font-size: 13px;
+}
+
+.order-details .order-props .option_name {
+  color: #b3b3b3;
 }
 
 .order-details-container .order .order-details .order-values{
