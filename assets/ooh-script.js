@@ -216,7 +216,11 @@ class OOHCampaignComponent extends HTMLElement {
 
   applyBackground(bg) {
     const container = this.querySelector("#ooh_product_filter_section")
-    if(container) container.style.background = `url(${bg})`
+    if(container) {
+      const currentBg = container.style.background
+      console.log(currentBg)
+      container.style.background = `url(${bg})`
+    }
   }
 
   disabledVibeSelection(max, current) {
