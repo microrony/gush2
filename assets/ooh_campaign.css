@@ -946,12 +946,13 @@ select#collection-filter-select {
   line-height: 22.4px;
   letter-spacing: 0.28px;
   -webkit-appearance: none;
+  padding-right: 24px;
 }
 
 #collection-filter-select {
   background: no-repeat #ffffff;
   border: 1px solid #000;
   background-image: url(https://cdn.shopify.com/s/files/1/0614/1470/3297/files/dropdown_arrow.svg?v=1697048401);
-  background-position: top right;
-  overflow: hidden;
+  background-position: center right;
+  overflow: hidden;
 }
