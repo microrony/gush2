@@ -851,7 +851,7 @@ a.ooh_hyperlink {
 }
 
 .selection--status-wrapper {
-  padding: 0px 45px;
+  padding: 0px 0px;
 }
 
 .order-details .order-props .option_info {
@@ -865,6 +865,11 @@ a.ooh_hyperlink_tc {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media only screen and (min-width: 429px) {
+  .selection--status-wrapper {
+    padding: 0px 45px;
+  }
 }
 /* Css for Desktop View  */
 
