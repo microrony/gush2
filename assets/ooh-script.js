@@ -95,7 +95,7 @@ class OOHCampaignComponent extends HTMLElement {
       if(!tnc_error.classList.contains('active')) tnc_error.classList.add('active')
       setTimeout(() => {
         if(tnc_error.classList.contains('active')) tnc_error.classList.remove('active')
-      }, 3000)
+      }, 5000)
       return
     }
 
