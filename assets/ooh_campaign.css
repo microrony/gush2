@@ -844,6 +844,14 @@ a.ooh_hyperlink {
   line-height: 20.4px;
 }
 
+a.ooh_gif_cta_button.cta-button.gush-font-teritary.cta-button__primary {
+  height: 54px;
+}
+
+.order-details .order-props .option_info {
+  text-align: left;
+}
+
 a.ooh_hyperlink_tc {
   color: #311A08;
   font-family: GTAmerica;
