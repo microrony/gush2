@@ -881,7 +881,8 @@ a.ooh_hyperlink_tc {
   }
   .filtered_product_section {
     display: inline-block;
-    width: 50%;
+    width: 100%;
+    max-width: 700px;
   }
   .vibe-selection-slider .slide-bg {
     padding-bottom: 56.25%;
