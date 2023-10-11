@@ -276,11 +276,11 @@ background: var(--Gush-Fuschia, #FF42EF);
   }
 .ooh_terms_condition {
   color: #311A08;
-font-family: GT America;
-font-size: 13.6px;
-font-style: normal;
-font-weight: 300;
-line-height: 20.4px; /* 150% */
+  font-family: GTAmerica;
+  font-size: 13.6px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20.4px; /* 150% */
 }
 .congratulations_message_free_ship {
   display: inline-flex;
