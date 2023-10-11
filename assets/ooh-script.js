@@ -331,7 +331,7 @@ class VibeSliderComponent extends HTMLElement {
     this.slider = new Swiper(this.container, {
       slidesPerView: 3,
       slidesPerGroup: 3,
-      spaceBetween: 10,
+      spaceBetween: 60,
       grid: {
         rows: 2,
         fill: "row"
