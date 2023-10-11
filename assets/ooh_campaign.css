@@ -827,6 +827,24 @@ line-height: 25px;
   opacity: 1;
 }
 
+
+a.ooh_hyperlink {
+  color: #311A08;
+  font-family: GTAmerica;
+  font-size: 13.6px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20.4px;
+}
+
+a.ooh_hyperlink_tc {
+  color: #311A08;
+  font-family: GTAmerica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 /* Css for Desktop View  */
 
 @media only screen and (min-width: 740px) {
