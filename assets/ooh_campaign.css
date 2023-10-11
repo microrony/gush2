@@ -782,10 +782,10 @@ line-height: 25px;
   height: 100%;
 }
 .vibe--selection__prev-next-btn-prev {
-  left: 250px;
+  left: 50px;
 }
 .vibe--selection__prev-next-btn-next {
-  right: 250px;
+  right: 50px;
 }
 
 .icon--arrow {
@@ -861,6 +861,12 @@ line-height: 25px;
   .vibe--selection__prev-next-btn {
     width: 64px;
     height: 64px;
+  }
+  .vibe--selection__prev-next-btn-prev {
+    left: 250px;
+  }
+  .vibe--selection__prev-next-btn-next {
+    right: 250px;
   }
   .error--message {
     max-width: 400px;
