@@ -1,4 +1,7 @@
 {% style  %} 
+  #shopify-section-{{ section.id }} .gradient {
+    background: {{ section.settings.bg_color }}
+  }
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
@@ -50,6 +53,12 @@
           "id": "text_clr",
           "default": "#ff5500",
           "label": "Text color"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "default": "#ff5500",
+          "label": "Background color"
         },
         {
           "type": "select",
