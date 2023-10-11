@@ -866,7 +866,7 @@ a.ooh_hyperlink_tc {
   font-weight: 400;
   line-height: normal;
 }
-@media only screen and (min-width: 429px) {
+@media only screen and (min-width: 410px) {
   .selection--status-wrapper {
     padding: 0px 45px;
   }
