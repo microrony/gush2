@@ -437,7 +437,7 @@ letter-spacing: 0.28px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: start;
   gap: 3rem;
 }
