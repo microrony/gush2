@@ -54,6 +54,7 @@ line-height: 25px;
   background: #F2E5FF;
   text-align: center;
   padding: 0 10px;
+  transition: background 0.3s ease-in-out;
 }
 .filtered_product_section {
   text-align: center;
