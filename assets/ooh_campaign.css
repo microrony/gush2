@@ -533,11 +533,6 @@ font-size: 13px;
 .order-details-container .order .order-details{
   position: relative;
   grid-area: order-details;
-  display: flex;
-  align-items: stretch;
-  justify-content: start;
-  gap: 2rem;
-  font-size: 2.5rem;
 }
 
 /* .order-details-container .order .order-details .order-props{
