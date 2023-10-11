@@ -220,6 +220,9 @@ class OOHCampaignComponent extends HTMLElement {
       const currentBg = container.style.backgroundColor
       console.log(currentBg)
       container.style.background = `url(${bg})`
+      setTimeout(() => {
+        container.style.background = "#F2E5FF"
+      }, 3000)
     }
   }
 
