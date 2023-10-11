@@ -331,13 +331,18 @@ class VibeSliderComponent extends HTMLElement {
     this.slider = new Swiper(this.container, {
       slidesPerView: 3,
       slidesPerGroup: 3,
-      spaceBetween: 40,
+      spaceBetween: 15,
       grid: {
         rows: 2,
         fill: "row"
       },
       pagination: pagination,
       navigation: navigation,
+      breakpoints: {
+        740: {
+          spaceBetween: 40
+        }
+      },
       on: {
         init: () => {
           const event = new CustomEvent('vibeSlider:inited')
