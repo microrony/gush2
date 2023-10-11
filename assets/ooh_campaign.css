@@ -949,11 +949,13 @@ select#collection-filter-select {
   padding-right: 20px;
   width: 20px;
   text-align: left;
+  cursor: pointer;
 }
 
 select#collection-filter-select:focus-visible {
   border: none;
   box-shadow: none;
+  outline: none;
 }
 
 #collection-filter-select {
