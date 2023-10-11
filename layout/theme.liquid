@@ -292,8 +292,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQH79FJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+    {% unless template.suffix == 'OOH_campaign' %}
+      {% section 'announcement-bar' %}
+    {% else %}
+      {% section 'announcement-bar' %}
+    {% endunless %}
     
-    {% section 'announcement-bar' %}
     {% section 'header' %}
 		
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
