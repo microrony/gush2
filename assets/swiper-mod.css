@@ -3,5 +3,5 @@
 }
 
 .vibe__container .swiper-slide {
-  width: calc((100% - 30px) / 3);
+  width: calc((100% - 180px) / 3);
 }
