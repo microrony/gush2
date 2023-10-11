@@ -111,21 +111,10 @@
               "color_scheme": "accent-1",
               "link": ""
             }
-          },
-          "b5338d1d-8319-43cc-918d-283e31a5fc04": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "Welcome to our store",
-              "text_clr": "#ff5500",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
           }
         },
         "block_order": [
-          "0e82010d-8c5e-4e4d-baad-81b9292b8436",
-          "b5338d1d-8319-43cc-918d-283e31a5fc04"
+          "0e82010d-8c5e-4e4d-baad-81b9292b8436"
         ],
         "settings": {
         }
