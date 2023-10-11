@@ -771,7 +771,7 @@ line-height: 25px;
 }
 .vibe--selection__prev-next-btn {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 38px;
   height: 38px;
   padding: 7px;
@@ -867,7 +867,7 @@ line-height: 25px;
     padding-bottom: 85px;
   }
   .vibe--selection__prev-next-btn {
-    top: 45%;
+    top: 50%;
     width: 64px;
     height: 64px;
   }
