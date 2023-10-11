@@ -863,10 +863,10 @@ line-height: 25px;
     height: 64px;
   }
   .vibe--selection__prev-next-btn-prev {
-    left: 250px;
+    left: 17%;
   }
   .vibe--selection__prev-next-btn-next {
-    right: 250px;
+    right: 17%;
   }
   .error--message {
     max-width: 400px;
