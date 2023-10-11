@@ -553,7 +553,6 @@ font-size: 13px;
   display: flex;
   align-items: start;
   font-size: 13px;
-  gap: 2rem;
 }
 .order-details .order-props .option_name {
   text-align: left;
