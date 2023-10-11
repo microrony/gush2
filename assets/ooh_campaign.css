@@ -556,6 +556,7 @@ font-size: 13px;
   gap: 2rem;
 }
 .order-details .order-props .option_name {
+  flex: 0 0 50px;
   color: #b3b3b3;
 }
 
