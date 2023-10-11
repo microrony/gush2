@@ -284,20 +284,21 @@ background: var(--Gush-Fuschia, #FF42EF);
 }
 .congratulations_message_free_ship {
   display: inline-flex;
-padding: 16px 16px;
-justify-content: center;
-align-items: flex-start;
+  font-family: GTAmerica;
+  padding: 16px 16px;
+  justify-content: center;
+  align-items: flex-start;
   border-radius: 2px;
-background: #302112;
+  background: #302112;
   color: #FFF;
-text-align: center;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 22.4px; /* 160% */
-letter-spacing: 0.28px;
-      gap: 8px;
-      margin: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.4px; /* 160% */
+  letter-spacing: 0.28px;
+  gap: 8px;
+  margin: 20px 0;
   width:100%;
 }
 .banner__text.ooh_campaign-font-p1 span{
