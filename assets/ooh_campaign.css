@@ -578,17 +578,19 @@ font-size: 13px;
 
 .collection_button {
     --container-height: 379px;
+    
+  padding: 20px;
+    font-weight: 700;
     border-radius: 1px;
-    border: 1px solid var(--Secondary-6, #302112);
+    border: 1px solid #ffffff;
     display: inline-flex;
-    padding: 20px;
+    padding: 15px;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 42%;
-    color: #000;
-    font-weight: 700;
-    text-decoration: none;
+    width: 10%;
+    color: #fff;
+    text-decoration: none;
   }
   .vibe__container {
     position: relative;
