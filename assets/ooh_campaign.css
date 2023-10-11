@@ -578,7 +578,6 @@ font-size: 13px;
 
 .collection_button {
     padding: 20px;
-    font-weight: 700;
     border-radius: 1px;
     border: 1px solid #ffffff;
     display: inline-flex;
@@ -588,7 +587,7 @@ font-size: 13px;
     gap: 20px;
     width: 10%;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none;
   }
   .vibe__container {
     --container-height: 379px;
