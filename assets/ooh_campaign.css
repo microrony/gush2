@@ -951,6 +951,10 @@ select#collection-filter-select {
   text-align: left;
 }
 
+select#collection-filter-select:focus-visible {
+  border: none;
+}
+
 #collection-filter-select {
   background: no-repeat #ffffff;
   border: 1px solid #000;
