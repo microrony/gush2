@@ -562,6 +562,7 @@ font-size: 13px;
   margin: 4rem 0;
 }
 .tnc_acknowledge_section {
+  font-family: GTAmerica;
   display:flex;
   align-items:start;
   justify-content:start;
