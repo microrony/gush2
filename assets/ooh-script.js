@@ -217,7 +217,7 @@ class OOHCampaignComponent extends HTMLElement {
   applyBackground(bg) {
     const container = this.querySelector("#ooh_product_filter_section")
     if(container) {
-      const currentBg = container.style.background
+      const currentBg = container.style.backgroundColor
       console.log(currentBg)
       container.style.background = `url(${bg})`
     }
