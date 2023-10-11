@@ -912,6 +912,9 @@ a.ooh_hyperlink_tc {
   .vibe--selection__prev-next-btn-next {
     right: 17%;
   }
+  .congratulations_message_free_ship {
+    max-width: 58%;
+  }
   .error--message {
     max-width: 400px;
     top: 132px;
