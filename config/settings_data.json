@@ -199,7 +199,7 @@
             "type": "announcement",
             "settings": {
               "text": "Free shipping for paint pack bundles",
-              "text_clr": "#ff5500",
+              "text_clr": "#ffffff",
               "color_scheme": "accent-1",
               "link": ""
             }
