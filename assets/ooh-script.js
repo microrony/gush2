@@ -34,7 +34,6 @@ class OOHCampaignComponent extends HTMLElement {
 
     this.selectionButtons = this.querySelectorAll('.vibe-selection-button')
 
-    console.log(this.selectionButtons)
     this.selectionButtons.forEach(button => {
       button.addEventListener('click', this.selectVibe.bind(this))
     })
@@ -88,6 +87,10 @@ class OOHCampaignComponent extends HTMLElement {
 
   handleSubmit(e) {
     e.preventDefault()
+
+    if(this.selectedVariants.length < 3) {
+      const qty_error = this.querySelector('.error--message[data-error-type="vibe_selection"]')
+    }
 
     const tnc_field = this.querySelector('input.gush_tnc_checkbox')
     const tnc_error = this.querySelector('.error--message[data-error-type="tnc_error"]')
