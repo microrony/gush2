@@ -90,12 +90,17 @@ img.grid-view-item__image {
   z-index: 1;
   top: 0;
   right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   transform: translate(-14px, 14px);
 }
 .vibe_label .checkmark:after {
   content: "";
   position: relative;
   display: none;
+}
+.vibe_label input:checked~.checkmark {
+  opacity: 1;
 }
 .vibe_label input:checked~.checkmark:after {
   display: block;
