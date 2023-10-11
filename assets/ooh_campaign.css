@@ -933,3 +933,24 @@ a.ooh_hyperlink_tc {
     right: 0;
   }
 }
+
+select#collection-filter-select {
+  background-color: #F2E5FF;
+  Border: none;
+  color: #311A08;
+  text-align: right;
+  font-family: GTAmerica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.28px;
+}
+
+#collection-filter-select {
+  background: no-repeat #ffffff;
+  border: 1px solid #000;
+  background-image: url(https://cdn.shopify.com/s/files/1/0614/1470/3297/files/dropdown_arrow.svg?v=1697048401);
+  background-position: top right;
+  overflow: hidden;
+}
