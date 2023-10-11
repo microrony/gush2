@@ -844,8 +844,8 @@ a.ooh_hyperlink {
   line-height: 20.4px;
 }
 
-a.ooh_gif_cta_button.cta-button.gush-font-teritary.cta-button__primary {
-  height: 54px;
+.selection--status-wrapper {
+  padding: 0px 45px;
 }
 
 .order-details .order-props .option_info {
