@@ -32,7 +32,7 @@ class OOHCampaignComponent extends HTMLElement {
       item.addEventListener('click', this.listenLebelClick.bind(this))
     })
 
-    const selectedVibes = this.querySelector('.vibe_input')
+    const selectedVibes = this.querySelectorAll('.vibe_input')
     console.log(selectedVibes)
     if(selectedVibes) {
       selectedVibes.forEach(input => {
