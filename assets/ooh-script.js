@@ -33,6 +33,7 @@ class OOHCampaignComponent extends HTMLElement {
     })
 
     const selectedVibes = this.querySelector('.vibe_input:checked')
+    console.log(selectedVibes)
     if(selectedVibes) {
       selectedVibes.forEach(input => {
         input.checked = false
