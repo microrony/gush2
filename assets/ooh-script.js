@@ -367,7 +367,7 @@ class VibeSliderComponent extends HTMLElement {
           const event = new CustomEvent('vibeSlider:inited', {
             detail: {
               height: slider.height,
-              slider: slider
+              wrapper: slider.wrapperEl
             }
           })
           document.dispatchEvent(event)
@@ -376,7 +376,7 @@ class VibeSliderComponent extends HTMLElement {
           const event = new CustomEvent('vibeSlider:inited', {
             detail: {
               height: slider.height,
-              slider: slider
+              wrapper: slider.wrapperEl
             }
           })
           document.dispatchEvent(event)
