@@ -364,6 +364,9 @@ class VibeSliderComponent extends HTMLElement {
         init: () => {
           const event = new CustomEvent('vibeSlider:inited')
           document.dispatchEvent(event)
+        },
+        afterInit: slider => {
+          console.log(slider)
         }
       }
     })
