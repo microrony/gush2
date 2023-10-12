@@ -360,12 +360,13 @@ class VibeSliderComponent extends HTMLElement {
         }
       },
       on: {
-        init: () => {
-          const event = new CustomEvent('vibeSlider:inited')
-          document.dispatchEvent(event)
-        },
         afterInit: slider => {
-          console.log(slider)
+          const event = new CustomEvent('vibeSlider:inited', {
+            detail: {
+              height: slider.height
+            }
+          })
+          document.dispatchEvent(event)
         }
       }
     })
