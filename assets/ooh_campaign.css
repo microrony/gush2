@@ -868,6 +868,10 @@ a.ooh_hyperlink_tc {
     display: none;
 }
 
+.swiper-button-disabled {
+  display: none;
+}
+
 /* Css for mobile screen */
 @media only screen and (max-width: 480px) {
 .survey_plus_order {
