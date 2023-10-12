@@ -288,11 +288,18 @@ class HeightObserver extends HTMLElement {
 
   afterSliderInit(e) {
     console.log('Inited: ', e.detail)
-    setTimeout(() => this.applyHeight(), 1000)
+    this.applyHeight(e.detail.height)
   }
 
-  applyHeight() {
-    let height = 0
+  applyHeight(sliderHeight) {
+    let statusBar = this.querySelector(".selection--status")
+    
+    let mainHeight = sliderHeight
+    let barHeight = statusBar.scrollHeight
+
+    console.log(barHeight)
+
+    
     let observableElement = this.querySelectorAll('[data-observable-element]')
     if(observableElement.length > 0) {
       observableElement.forEach(item => {
