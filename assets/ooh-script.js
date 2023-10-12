@@ -276,7 +276,7 @@ class HeightObserver extends HTMLElement {
     this.container = this.querySelector(this.dataset.container)
     this.activeSlider = this.querySelector('.vibe__wrapper[data-active="true"] vibe-slider-component')
 
-    console.log('Active: ', this.activeSlider)
+    console.log('Active: ', this.activeSlider.wrapperEl)
     document.addEventListener('vibeSlider:inited', this.afterSliderInit.bind(this))
   }
 
