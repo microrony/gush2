@@ -292,25 +292,15 @@ class HeightObserver extends HTMLElement {
   }
 
   applyHeight(sliderHeight) {
-    
-    let statusBar = this.querySelector(".selection--status")
-    console.log(statusBar)
-    let mainHeight = sliderHeight
-    let barHeight = statusBar.scrollHeight
 
-    console.log("bar: ",barHeight)
+    let height = 0
 
-    
-    let observableElement = this.querySelectorAll('[data-observable-element]')
-    if(observableElement.length > 0) {
-      observableElement.forEach(item => {
-        if(item.scrollHeight > height) height = item.scrollHeight
-      })
+    if(sliderHeight) {
+      height = sliderHeight
     }
     else {
       height = this.container.scrollHeight
     }
-
     console.log(height)
     this.container.style.setProperty('--container-height', `${height}px` || 'auto')
   }
