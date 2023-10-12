@@ -861,6 +861,9 @@ a.ooh_hyperlink_tc {
 .survey_plus_order {
    background: #F9F4F0;
 }
+.footer__content-top {
+    display: none;
+}
 
 /* Css for mobile screen */
 @media only screen and (max-width: 480px) {
