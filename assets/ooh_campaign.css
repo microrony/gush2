@@ -858,6 +858,9 @@ a.ooh_hyperlink_tc {
   font-weight: 400;
   line-height: normal;
 }
+.survey_plus_order {
+   background: #F9F4F0;
+}
 
 /* Css for mobile screen */
 @media only screen and (max-width: 480px) {
@@ -866,7 +869,6 @@ a.ooh_hyperlink_tc {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #F9F4F0;
   overflow:hidden;
 }
 }
