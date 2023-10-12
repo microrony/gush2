@@ -294,7 +294,7 @@ class HeightObserver extends HTMLElement {
   applyHeight(sliderHeight) {
     
     let statusBar = this.querySelector(".selection--status")
-    
+    console.log(statusBar)
     let mainHeight = sliderHeight
     let barHeight = statusBar.scrollHeight
 
