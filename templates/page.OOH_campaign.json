@@ -22,7 +22,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Pick your vibe",
-            "button_link_1": "#vibe_carousel_selection",
+            "button_link_1": "#vibe_carousel",
             "button_label_2": "",
             "button_link_2": ""
           }
