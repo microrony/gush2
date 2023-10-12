@@ -281,7 +281,16 @@
                           <div class="swiper-slide">
                             <div class="product-item">
                               <label class="vibe_label" for="vibe_{{ collection.handle }}_{{ product.id }}">
-                                <input type="checkbox" id="vibe_{{ collection.handle }}_{{ product.id }}" class="vibe_input hidden-checkbox" name="vibe" value="{{ current_variant.id }}" data-title="{{ product.title }}" data-bg-color="{{ product.metafields.custom.color }}" autocomplete="off">
+                                <input
+                                  type="checkbox"
+                                  name="vibe"
+                                  id="vibe_{{ collection.handle }}_{{ product.id }}"
+                                  class="vibe_input hidden-checkbox"
+                                  value="{{ current_variant.id }}"
+                                  data-title="{{ product.title }}"
+                                  data-bg-color="{{ product.metafields.custom.color }}"
+                                  autocomplete="off"
+                                >
                                 <span class="checkmark"></span>
                                 <div class="reveal">
                                   <img class="grid-view-item__image" src="{{ image | img_url: '200x200' }}" loading="lazy">
