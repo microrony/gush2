@@ -205,7 +205,7 @@ class OOHCampaignComponent extends HTMLElement {
       this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
       console.log(this.selectedVariants)
 
-      if(el.checked) this.applyBackground(el.dataset.bgcolor)
+      if(el.checked) this.applyBackground(el.dataset.bgColor)
 
       this.updateOrderMarker()
     }
