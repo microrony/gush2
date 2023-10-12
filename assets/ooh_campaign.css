@@ -864,6 +864,9 @@ a.ooh_hyperlink_tc {
 .footer__content-top {
     display: none;
 }
+.back_to_top {
+    display: none;
+}
 
 /* Css for mobile screen */
 @media only screen and (max-width: 480px) {
