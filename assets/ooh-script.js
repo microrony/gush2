@@ -228,7 +228,7 @@ class OOHCampaignComponent extends HTMLElement {
       if(input) {
         const color = input.dataset.bgColor
         if(marker.classList.contains('hidden')) marker.classList.remove('hidden')
-        marker.style.background = `color`
+        marker.style.background = `${color}`
       }
       else {
         if(!marker.classList.contains('hidden')) marker.classList.add('hidden')
@@ -245,8 +245,7 @@ class OOHCampaignComponent extends HTMLElement {
     const container = this.querySelector("#ooh_product_filter_section")
     if(container) {
       const currentBg = container.style.backgroundColor
-      console.log(currentBg)
-      container.style.background = `url(${bg})`
+      container.style.background = `${bg}`
       setTimeout(() => {
         container.style.background = "#F2E5FF"
       }, 1000)
