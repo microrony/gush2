@@ -369,8 +369,6 @@ class VibeSliderComponent extends HTMLElement {
         }
       }
     })
-
-    console.log(this.slider)
   }
 }
 
