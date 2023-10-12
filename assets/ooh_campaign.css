@@ -236,9 +236,7 @@ align-items: center;
     background: #F9F4F0;
   text-align:center;
 }
-.survey_plus_order {
-  background: #F9F4F0;
-}
+
 .order_details_data_column_color {
     float: left;
   width: 40%;
@@ -586,7 +584,8 @@ font-size: 13px;
   display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+  flex-direction: column;
+   background: #F9F4F0;
   overflow:hidden;
 }
 .footer_banner {
@@ -878,6 +877,12 @@ a.ooh_hyperlink_tc {
     right: 30px;
     top: 8px;
   }
+  .survey_plus_order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
   .vibe__container {
     --container-height: 561px;
   }
