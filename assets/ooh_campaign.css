@@ -868,8 +868,12 @@ a.ooh_hyperlink_tc {
     display: none;
 }
 
-
-
+.swiper-button-disabled {
+  display: none;
+}
+.omnisend-form-6476ea556a3925a0dc01ccc8-container {
+  display: none !important;
+}
 /* Css for mobile screen */
 @media only screen and (max-width: 480px) {
 .survey_plus_order {
