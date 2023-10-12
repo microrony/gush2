@@ -580,14 +580,7 @@ font-size: 13px;
 .gush_tnc_checkbox {
   margin-top:.7rem;
 }
-.survey_plus_order {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-  flex-direction: column;
-   background: #F9F4F0;
-  overflow:hidden;
-}
+
 .footer_banner {
   align-self: end;
 }
@@ -865,11 +858,26 @@ a.ooh_hyperlink_tc {
   font-weight: 400;
   line-height: normal;
 }
+
+/* Css for mobile screen */
+@media only screen and (max-width: 480px) {
+.survey_plus_order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #F9F4F0;
+  overflow:hidden;
+}
+}
+
 @media only screen and (min-width: 410px) {
   .selection--status-wrapper {
     padding: 0px 45px;
   }
 }
+
+
 /* Css for Desktop View  */
 
 @media only screen and (min-width: 740px) {
