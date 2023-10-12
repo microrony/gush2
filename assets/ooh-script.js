@@ -280,10 +280,10 @@ class HeightObserver extends HTMLElement {
   }
 
   connectedCallback() {
-    if(this.container) {
-      this.applyHeight()
-      this.observeHeight()
-    }
+    // if(this.container) {
+    //   this.applyHeight()
+    //   this.observeHeight()
+    // }
   }
 
   afterSliderInit(e) {
