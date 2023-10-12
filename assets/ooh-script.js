@@ -205,7 +205,7 @@ class OOHCampaignComponent extends HTMLElement {
       this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
       console.log(this.selectedVariants)
 
-      if(el.checked) this.applyBackground(el.dataset.bgImage)
+      if(el.checked) this.applyBackground(el.dataset.bgcolor)
 
       this.updateOrderMarker()
     }
@@ -226,9 +226,9 @@ class OOHCampaignComponent extends HTMLElement {
     orderMarkers.forEach((marker, i) => {
       const input = selectedElements[i]
       if(input) {
-        const img_url = input.dataset.bgImage
+        const color = input.dataset.bgColor
         if(marker.classList.contains('hidden')) marker.classList.remove('hidden')
-        marker.style.background = `url(${img_url}) no-repeat center center/cover`
+        marker.style.background = `color`
       }
       else {
         if(!marker.classList.contains('hidden')) marker.classList.add('hidden')
