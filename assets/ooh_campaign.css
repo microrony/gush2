@@ -1008,3 +1008,6 @@ select#collection-filter-select:focus-visible {
 .omnisend-form-6476ea556a3925a0dc01ccc8-content {
     display: none !important;
 }
+.display_none {
+  display:none;
+}
