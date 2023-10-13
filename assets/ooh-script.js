@@ -77,6 +77,7 @@ class OOHCampaignComponent extends HTMLElement {
     const input = el.querySelector('input')
     if(input) {
       if(input.disabled) {
+        // const messageEl = this.querySelector('error--message[data-error-type="maximum_selection"]')
         if(!this.errorMessage.classList.contains('active')) this.errorMessage.classList.add('active')
 
         setTimeout(() => {
