@@ -98,6 +98,8 @@ class OOHCampaignComponent extends HTMLElement {
     e.preventDefault()
 
     if(this.selectedVariants.length < 3) {
+
+      console.log(this.selectedVariants)
       const qty_error = this.querySelector('.error--message[data-error-type="vibe_selection"]')
       if(!qty_error.classList.contains('active')) qty_error.classList.add('active')
       setTimeout(() => {
