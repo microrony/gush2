@@ -346,6 +346,11 @@ align-items: center;
   position: relative;
 }
 
+.vibe__selector--helper {
+  position: absolute;
+  right: -1.5rem;
+}
+
 /* Question ans survey section */
 
 #ooh_survey_section{
