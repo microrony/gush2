@@ -99,8 +99,6 @@ class OOHCampaignComponent extends HTMLElement {
     e.preventDefault()
 
     if(this.selectedVariants.length < 3) {
-
-      console.log(this.selectedVariants)
       const qty_error = this.querySelector('.error--message[data-error-type="vibe_selection"]')
       if(!qty_error.classList.contains('active')) qty_error.classList.add('active')
       setTimeout(() => {
@@ -108,6 +106,13 @@ class OOHCampaignComponent extends HTMLElement {
       }, 5000)
       return
     }
+
+    const formData = new FormData(this.form)
+    const q1 = formData.get('question1')
+    const q2 = formData.get('question2')
+
+    console.log(q1, q2)
+    return
 
     const tnc_field = this.querySelector('input.gush_tnc_checkbox')
     const tnc_error = this.querySelector('.error--message[data-error-type="tnc_error"]')
