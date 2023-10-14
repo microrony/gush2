@@ -698,10 +698,12 @@ font-size: 13px;
   margin: 0 auto;
   margin-top: 38px;
   transition: all 0.3s ease-in-out;
+  cursor: not-allowed;
 }
 .selection--status.active {
   background-color: #302112;
   color: #ffffff;
+  cursor: default;
 }
 .helper--text {
   padding-left: 4px;
