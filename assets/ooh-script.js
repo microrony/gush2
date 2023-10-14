@@ -233,7 +233,7 @@ class OOHCampaignComponent extends HTMLElement {
         if(!eyeContainer.classList.contains('active')) eyeContainer.classList.add('active')
       }
       else {
-        submitBtn.addAttribute('disabled', true)
+        submitBtn.setAttribute('disabled', true)
         if(eyeContainer.classList.contains('active')) eyeContainer.classList.remove('active')
       }
     }
