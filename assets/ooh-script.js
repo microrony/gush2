@@ -98,7 +98,9 @@ class OOHCampaignComponent extends HTMLElement {
   handleBodyClick(e) {
     const toggleEl = this.querySelector('.vibe__selector--helper')
     console.log('vibe_trigger', toggleEl.isSameNode(e.target), toggleEl.contains(e.target))
-    if(!toggleEl.isSameNode(e.target) && !toggleEl.contains(e.target)) console.log(true)
+    if(!toggleEl.isSameNode(e.target) && !toggleEl.contains(e.target)) {
+      toggleEl.setAttribute('data-open', false)
+    }
     // console.log('click inside')
     // const toggleEl = this.querySelector('.vibe__selector--helper')
     // console.log('vibe_trigger', toggleEl.isSameNode(e.target), toggleEl.contains(e.target))
