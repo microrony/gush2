@@ -28,6 +28,8 @@ class OOHCampaignComponent extends HTMLElement {
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
     this.selectToggle.addEventListener('click', this.openToggler.bind(this))
 
+    document.addEventListener('click', this.handleBlur.bind(this))
+
     this.selectOptions = this.querySelectorAll('.vibe-option')
     this.errorMessage = this.querySelector('.error--message')
 
@@ -79,6 +81,16 @@ class OOHCampaignComponent extends HTMLElement {
         })
       })
     })
+  }
+
+  handleBlur(e) {
+    const targetEl = this.querySelector('.vibe__selector--helper')
+    const triggerEl = this.querySelector('.vibe_selection_strip_label')
+
+    console.log('Trigger: ', false)
+    if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
+
+    console.log('Trigger: ', true)
   }
 
   changeSelect(evt) {
