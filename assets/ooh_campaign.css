@@ -356,7 +356,9 @@ align-items: center;
   overflow: hidden;
 }
 
-
+.vibe__selector--helper {
+  height: var(--client-height);
+}
 
 /* Question ans survey section */
 
