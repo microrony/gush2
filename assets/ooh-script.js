@@ -4,6 +4,7 @@ class OOHCampaignComponent extends HTMLElement {
     
     this.form = this.querySelector('#vibe-selection')
     this.filter = this.form.querySelector('select#collection-filter-select')
+    this.selectToggle = this.querySelector('.select__toggle_icon')
     
     this.selectedColors = []
     this.colorInfoEl = this.querySelector('#selected_colors span')
@@ -24,6 +25,7 @@ class OOHCampaignComponent extends HTMLElement {
     this.form.addEventListener('change', this.handleChange.bind(this))
     this.filter.addEventListener('change', this.handleFilterChange.bind(this))
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
+    this.selectToggle.addEventListener('click', this.openToggler.bind(this))
     this.errorMessage = this.querySelector('.error--message')
 
     this.labels = this.querySelectorAll('.vibe_label')
@@ -70,6 +72,28 @@ class OOHCampaignComponent extends HTMLElement {
         })
       })
     })
+  }
+
+  openToggler(e) {
+    const el = e.currentTarget
+    const isOpen = el.dataset.open
+    const toggleEl = this.querySelector('.vibe__selector--helper')
+
+    if(isOpen == 'true') {
+      el.setAttribute('data-open', false)
+      if(toggleEl) {
+        if(toggleEl.classList.contains('active')) toggleEl.classList.remove('active')
+      }
+    }
+    else {
+      el.setAttribute('data-open', true)
+      if(toggleEl) {
+        if(!toggleEl.classList.contains('active')) toggleEl.classList.add('active')
+      }
+    }
+    
+    
+    if(toggleEl)
   }
 
   listenLebelClick(e) {
