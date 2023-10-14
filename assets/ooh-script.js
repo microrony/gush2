@@ -448,3 +448,5 @@ class OOHErrors extends HTMLElement {
   }
 }
 
+customElements.define('ooh-errors', OOHErrors)
+
