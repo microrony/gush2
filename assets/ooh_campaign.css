@@ -373,6 +373,7 @@ align-items: center;
 .vibe__selector--helper.active {
   height: var(--client-height);
   padding: 10px;
+  opacity: 1;
 }
 
 /* Question ans survey section */
