@@ -116,6 +116,7 @@ class OOHCampaignComponent extends HTMLElement {
       if(toggleEl) {
         if(toggleEl.classList.contains('active')) toggleEl.classList.remove('active')
       }
+      document.removeEventListener('click', () => console.log('remove'))
     }
     else {
       el.setAttribute('data-open', true)
