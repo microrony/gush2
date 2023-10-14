@@ -196,6 +196,7 @@ class OOHCampaignComponent extends HTMLElement {
   handleChange(e) {
     const el = e.target
     const formData = new FormData(this.form)
+    const submitBtn = this.form.querySelector('button[type="submit"]')
     if(el.getAttribute('name') == 'vibe') {
       
       const value = el.dataset.title
@@ -227,9 +228,11 @@ class OOHCampaignComponent extends HTMLElement {
 
       const eyeContainer = this.querySelector('.selection--status')
       if(this.selectedVariants.length == 3) {
+        this.submitBtn.removeAttribute('disabled')
         if(!eyeContainer.classList.contains('active')) eyeContainer.classList.add('active')
       }
       else {
+        this.submitBtn.addAttribute('disabled', true)
         if(eyeContainer.classList.contains('active')) eyeContainer.classList.remove('active')
       }
     }
