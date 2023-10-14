@@ -713,7 +713,7 @@ font-size: 13px;
   fill: #DED8E1;
 }
 .icon--eye-container.active svg path {
-  fill: unset;
+  fill: #ffffff;
 }
 .icon--status,
 .icon--eye {
