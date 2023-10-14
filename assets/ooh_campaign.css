@@ -348,8 +348,9 @@ align-items: center;
 
 .vibe__selector--helper {
   position: absolute;
-  right: -2.5rem;
+  right: -3.5rem;
   transform: translateX(100%);
+  text-align: left;
 }
 
 /* Question ans survey section */
