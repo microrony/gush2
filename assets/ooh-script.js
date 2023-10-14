@@ -440,7 +440,7 @@ class OOHErrors extends HTMLElement {
   }
 
   triggerErrorMessage(evt) {
-    const errorType = e.detail.type
+    const errorType = evt.detail.type
     if(errorType) {
       const errorEl = this.querySelector(`${this.errorClasses[errorType]}`)
       console.log(errorEl)
