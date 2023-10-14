@@ -225,7 +225,7 @@ class OOHCampaignComponent extends HTMLElement {
 
       this.updateOrderMarker()
 
-      const eyeContainer = this.querySelector('.icon--eye-container')
+      const eyeContainer = this.querySelector('.selection--status')
       if(this.selectedVariants.length == 3) {
         if(!eyeContainer.classList.contains('active')) eyeContainer.classList.add('active')
       }
