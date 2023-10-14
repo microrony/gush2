@@ -90,7 +90,7 @@ class OOHCampaignComponent extends HTMLElement {
     console.log('Trigger: ', false)
     if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
 
-    console.log('Trigger: ', true)
+    if(targetEl.classList.contains('active')) targetEl.classList.remove('active')
   }
 
   changeSelect(evt) {
