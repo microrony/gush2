@@ -361,8 +361,12 @@ align-items: center;
   border-radius: 10px;
 }
 
+.vibe__selector--helper .vibe-option {
+  padding-bottom: 5px;
+}
+
 .vibe__selector--helper[data-size="3"] {
-  --client-height: calc(((1em * 1.2) * 3) + 22px);
+  --client-height: calc(((1em * 1.2) * 3) + (10px * 3) + 22px);
 }
 
 .vibe__selector--helper.active {
