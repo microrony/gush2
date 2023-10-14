@@ -347,11 +347,16 @@ align-items: center;
 }
 
 .vibe__selector--helper {
+  --client-height: 10px;
   position: absolute;
   right: -3.5rem;
   transform: translateX(100%);
   text-align: left;
+  height: 0;
+  overflow: hidden;
 }
+
+
 
 /* Question ans survey section */
 
