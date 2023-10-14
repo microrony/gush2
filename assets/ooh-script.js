@@ -28,7 +28,7 @@ class OOHCampaignComponent extends HTMLElement {
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
     this.selectToggle.addEventListener('click', this.openToggler.bind(this))
 
-    document.addEventListener('click', this.handleBodyClick.bind(this))
+    this.selectToggle.addEventListener('blur', handleBlur)
 
     this.selectOptions = this.querySelectorAll('.vibe-option')
     this.errorMessage = this.querySelector('.error--message')
@@ -95,12 +95,13 @@ class OOHCampaignComponent extends HTMLElement {
     el.parentNode.classList.remove('active')
   }
 
-  handleBodyClick(e) {
-    const toggleEl = this.querySelector('.vibe__selector--helper')
-    console.log('vibe_trigger', toggleEl.isSameNode(e.target), toggleEl.contains(e.target))
-    if(!toggleEl.isSameNode(e.target) && !toggleEl.contains(e.target)) {
-      // toggleEl.setAttribute('data-open', false)
-    }
+  handleBlur(e) {
+    console.log(e)
+    // const toggleEl = this.querySelector('.vibe__selector--helper')
+    // console.log('vibe_trigger', toggleEl.isSameNode(e.target), toggleEl.contains(e.target))
+    // if(!toggleEl.isSameNode(e.target) && !toggleEl.contains(e.target)) {
+    //   toggleEl.setAttribute('data-open', false)
+    // }
     // console.log('click inside')
     // const toggleEl = this.querySelector('.vibe__selector--helper')
     // console.log('vibe_trigger', toggleEl.isSameNode(e.target), toggleEl.contains(e.target))
