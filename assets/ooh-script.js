@@ -86,13 +86,13 @@ class OOHCampaignComponent extends HTMLElement {
   handleBlur(e) {
     const targetEl = this.querySelector('.vibe__selector--helper')
     const triggerEl = this.querySelector('.vibe_selection_strip_label')
-
+    document.removeEventListener('click', () => console.log('remove'))
     console.log('Trigger: ', false)
     if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
 
     if(targetEl.classList.contains('active')) targetEl.classList.remove('active')
 
-    document.removeEventListener('click', () => console.log('remove'))
+    
   }
 
   changeSelect(evt) {
