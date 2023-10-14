@@ -91,6 +91,7 @@ class OOHCampaignComponent extends HTMLElement {
     if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
 
     if(targetEl.classList.contains('active')) targetEl.classList.remove('active')
+    document.removeEventListener('click')
   }
 
   changeSelect(evt) {
@@ -109,7 +110,6 @@ class OOHCampaignComponent extends HTMLElement {
     const el = e.currentTarget
     const isOpen = el.dataset.open
     const toggleEl = this.querySelector('.vibe__selector--helper')
-console.log(isOpen)
     if(isOpen == 'true') {
       el.setAttribute('data-open', false)
       if(toggleEl) {
@@ -121,6 +121,7 @@ console.log(isOpen)
       if(toggleEl) {
         if(!toggleEl.classList.contains('active')) toggleEl.classList.add('active')
       }
+      document.addEventListener('click', this.handleBlur.bind(this))
     }
     
     
