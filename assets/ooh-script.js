@@ -5,6 +5,8 @@ class OOHCampaignComponent extends HTMLElement {
     this.form = this.querySelector('#vibe-selection')
     this.filter = this.form.querySelector('select#collection-filter-select')
     this.selectToggle = this.querySelector('.select__toggle_icon')
+
+    
     
     this.selectedColors = []
     this.colorInfoEl = this.querySelector('#selected_colors span')
@@ -78,7 +80,7 @@ class OOHCampaignComponent extends HTMLElement {
     const el = e.currentTarget
     const isOpen = el.dataset.open
     const toggleEl = this.querySelector('.vibe__selector--helper')
-
+console.log(isOpen)
     if(isOpen == 'true') {
       el.setAttribute('data-open', false)
       if(toggleEl) {
