@@ -693,6 +693,7 @@ font-size: 13px;
   font-size: 14px;
   margin: 0 auto;
   margin-top: 38px;
+  transition: all 0.3s ease-in-out;
 }
 .selection--status.active {
   background-color: #302112;
