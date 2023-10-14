@@ -111,10 +111,13 @@ class OOHCampaignComponent extends HTMLElement {
     const question2RadioButtons = this.querySelectorAll('input[name="question2"]');
     const questionErrorEl = this.querySelector('.error--message[data-error-type="questionire"]')
 
+    const q1Checked = Array.form(question1RadioButtons).some(btn => btn.checked)
+    console.log(q1Checked, 'q1')
+
     // Check if none of the options for Question 1 are selected
     if (!Array.from(question1RadioButtons).some(radioButton => radioButton.checked)) {
       console.log('not checked')
-      if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.add('active')
+      if(!questionErrorEl.classList.contains('active')) questionErrorEl.classList.add('active')
       setTimeout(() => {
         if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.remove('active')
       }, 5000)
