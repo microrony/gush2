@@ -95,7 +95,6 @@ console.log(isOpen)
     }
     
     
-    if(toggleEl)
   }
 
   listenLebelClick(e) {
