@@ -28,7 +28,7 @@ class OOHCampaignComponent extends HTMLElement {
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
     this.selectToggle.addEventListener('click', this.openToggler.bind(this))
 
-    document.addEventListener('click', this.handleBlur.bind(this))
+    // document.addEventListener('click', this.handleBlur.bind(this))
 
     this.selectOptions = this.querySelectorAll('.vibe-option')
     this.errorMessage = this.querySelector('.error--message')
