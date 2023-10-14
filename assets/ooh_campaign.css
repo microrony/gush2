@@ -707,6 +707,7 @@ font-size: 13px;
 .icon--eye-container.active {
   cursor: pointer;
   pointer-events: all;
+  opacity: 1;
 }
 .icon--eye-container svg {
   height: 22px;
