@@ -107,31 +107,18 @@ class OOHCampaignComponent extends HTMLElement {
       return
     }
 
-    const question1RadioButtons = this.querySelectorAll('input[name="question1"]');
-    const question2RadioButtons = this.querySelectorAll('input[name="question2"]');
+
     const questionErrorEl = this.querySelector('.error--message[data-error-type="questionire"]')
 
-    console.log(question1RadioButtons)
-    const q1Checked = Array.from(question1RadioButtons).some(btn => btn.checked)
-    console.log(q1Checked, 'q1')
+    const formData = new FormData(this.form)
+    const q1 = formData.get('question1')
+    const q2 = formData.get('question2')
 
-    // Check if none of the options for Question 1 are selected
-    if (!Array.from(question1RadioButtons).some(radioButton => radioButton.checked)) {
-      console.log('not checked')
+    if(!q1 || !q2) {
       if(!questionErrorEl.classList.contains('active')) questionErrorEl.classList.add('active')
       setTimeout(() => {
         if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.remove('active')
       }, 5000)
-      return
-    }
-
-    // Check if none of the options for Question 2 are selected
-    if (!Array.from(question2RadioButtons).some(radioButton => radioButton.checked)) {
-      if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.add('active')
-      setTimeout(() => {
-        if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.remove('active')
-      }, 5000)
-      return
     }
 
     const tnc_field = this.querySelector('input.gush_tnc_checkbox')
