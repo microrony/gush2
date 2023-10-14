@@ -111,6 +111,7 @@ class OOHCampaignComponent extends HTMLElement {
     const question2RadioButtons = this.querySelectorAll('input[name="question2"]');
     const questionErrorEl = this.querySelector('.error--message[data-error-type="questionire"]')
 
+    console.log(question1RadioButtons)
     const q1Checked = Array.from(question1RadioButtons).some(btn => btn.checked)
     console.log(q1Checked, 'q1')
 
