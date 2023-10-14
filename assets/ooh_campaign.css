@@ -702,9 +702,11 @@ font-size: 13px;
   margin-left: 12px;
   cursor: not-allowed;
   pointer-events: none;
+  opacity: 0.4;
 }
 .icon--eye-container.active {
   cursor: pointer;
+  pointer-events: all;
 }
 .icon--eye-container svg {
   height: 22px;
