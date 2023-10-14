@@ -90,6 +90,8 @@ console.log(this.selectToggle)
     const event = new Event('change')
 
     this.filter.dispatchEvent(event)
+
+    el.parentNode.classList.remove('active')
   }
 
   openToggler(e) {
