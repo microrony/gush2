@@ -444,7 +444,15 @@ class OOHErrors extends HTMLElement {
     if(errorType) {
       const errorEl = this.querySelector(`${this.errorClasses[errorType]}`)
       console.log(errorEl)
+      if(errorEl) {
+        if(!errorEl.classList.contains('active')) errorEl.classList.add('active')
+        this.disableErrorMessage()
+      }
     }
+  }
+
+  disableErrorMessage(el) {
+    setTimeout(() => if(el.classList.contains('active')) el.classList.remove('active'), 5000)
   }
 }
 
