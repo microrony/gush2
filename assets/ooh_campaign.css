@@ -354,9 +354,10 @@ align-items: center;
   text-align: left;
   height: 0;
   overflow: hidden;
+  transition: height 0.3s ease-in-out;
 }
 
-.vibe__selector--helper {
+.vibe__selector--helper.active {
   height: var(--client-height);
 }
 
