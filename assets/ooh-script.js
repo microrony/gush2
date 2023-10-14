@@ -417,3 +417,25 @@ class VibeSelectionSlider extends HTMLElement {
 }
 customElements.define('vibe-selection-slider', VibeSelectionSlider)
 
+class OOHErrors extends HTMLElement {
+  constructor() {
+    super()
+    this.errorClasses = {
+      vibeSelection: `[data-error-type="vibeSelection"]`,
+      maximumLimit: `[data-error-type="maximumLimit"]`,
+      tncError: `[data-error-type="tncError"]`
+    }
+  }
+  connectedCallback() {
+    document.addEventListener('ooh:error', this.triggerErrorMessage.bind(this))
+  }
+
+  triggerErrorMessage(evt) {
+    const errorType = e.detail.type
+    if(errorType) {
+      const errorEl = this.querySelector(`${this.errorClasses[errorType]}`)
+      console.log(errorEl)
+    }
+  }
+}
+
