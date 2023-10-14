@@ -347,6 +347,7 @@ align-items: center;
 }
 
 .vibe__selector--helper {
+  
   --client-height: 86.29px;
   position: absolute;
   right: -3.5rem;
@@ -357,6 +358,10 @@ align-items: center;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
   
+}
+
+.vibe__selector--helper[data-size="3"] {
+  --client-height: calc(((1em * 1.2) * 3) + 20px);
 }
 
 .vibe__selector--helper.active {
