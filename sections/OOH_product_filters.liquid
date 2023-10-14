@@ -157,7 +157,7 @@
     {%- endcapture -%}
     {%- capture vibe_helper_options -%}
       {{ vibe_helper_options }}
-      <div data-value="{{ collection.handle }}">{{ collection.title }}</div>
+      <div class="vibe-option" data-value="{{ collection.handle }}">{{ collection.title }}</div>
     {%- endcapture -%}
   {% endif %}
 {% endfor %}
