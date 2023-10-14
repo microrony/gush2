@@ -700,6 +700,10 @@ font-size: 13px;
 .icon--eye-container {
   display: inline-flex;
 }
+.icon--eye-container {
+  height: 22px;
+  width: 22px;
+}
 .icon--status,
 .icon--eye {
   height: 22px;
