@@ -101,12 +101,13 @@ class OOHCampaignComponent extends HTMLElement {
 
     if(this.selectedVariants.length < 3) {
 
-      console.log(this.selectedVariants)
-      const qty_error = this.querySelector('.error--message[data-error-type="vibe_selection"]')
-      if(!qty_error.classList.contains('active')) qty_error.classList.add('active')
-      setTimeout(() => {
-        if(qty_error.classList.contains('active')) qty_error.classList.remove('active')
-      }, 5000)
+      const event = new CustomEvent('ooh:error', {
+        detail: {
+          type: 'vibeSelection'
+        }
+      })
+      document.dispatchEvent(event)
+
       return
     }
 
