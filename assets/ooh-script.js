@@ -107,12 +107,27 @@ class OOHCampaignComponent extends HTMLElement {
       return
     }
 
-    const formData = new FormData(this.form)
-    const q1 = formData.get('question1')
-    const q2 = formData.get('question2')
+    const question1RadioButtons = this.querySelectorAll('input[name="question1"]');
+    const question2RadioButtons = this.querySelectorAll('input[name="question2"]');
+    const questionErrorEl = this.querySelector('.error--message[data-error-type="questionire"]')
 
-    console.log(q1, q2)
-    return
+    // Check if none of the options for Question 1 are selected
+    if (!Array.from(question1RadioButtons).some(radioButton => radioButton.checked)) {
+      if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.add('active')
+      setTimeout(() => {
+        if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.remove('active')
+      }, 5000)
+      return
+    }
+
+    // Check if none of the options for Question 2 are selected
+    if (!Array.from(question2RadioButtons).some(radioButton => radioButton.checked)) {
+      if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.add('active')
+      setTimeout(() => {
+        if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.remove('active')
+      }, 5000)
+      return
+    }
 
     const tnc_field = this.querySelector('input.gush_tnc_checkbox')
     const tnc_error = this.querySelector('.error--message[data-error-type="tnc_error"]')
