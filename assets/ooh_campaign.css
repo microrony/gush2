@@ -371,6 +371,8 @@ align-items: center;
   height: 22px;
   width: 22px;
   display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .vibe__selector--helper[data-size="3"] {
