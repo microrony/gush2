@@ -119,6 +119,7 @@ class OOHCampaignComponent extends HTMLElement {
       setTimeout(() => {
         if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.remove('active')
       }, 5000)
+      return
     }
 
     const tnc_field = this.querySelector('input.gush_tnc_checkbox')
