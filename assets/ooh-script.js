@@ -113,6 +113,7 @@ class OOHCampaignComponent extends HTMLElement {
 
     // Check if none of the options for Question 1 are selected
     if (!Array.from(question1RadioButtons).some(radioButton => radioButton.checked)) {
+      console.log('not checked')
       if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.add('active')
       setTimeout(() => {
         if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.remove('active')
