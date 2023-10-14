@@ -28,9 +28,15 @@ console.log(this.selectToggle)
     this.filter.addEventListener('change', this.handleFilterChange.bind(this))
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
     this.selectToggle.addEventListener('click', this.openToggler.bind(this))
+
+    this.selectOptions = this.querySelectorAll('.vibe-option')
     this.errorMessage = this.querySelector('.error--message')
 
     this.labels = this.querySelectorAll('.vibe_label')
+
+    this.selectOptions.forEach(item => {
+      item.addEventListener('click', this.changeSelect.bind(this))
+    })
 
     this.labels.forEach(item => {
       item.addEventListener('click', this.listenLebelClick.bind(this))
@@ -74,6 +80,16 @@ console.log(this.selectToggle)
         })
       })
     })
+  }
+
+  changeSelect(evt) {
+    const el = evt.currentTarget
+    const value = el.dataset.value
+
+    this.filter.value = value
+    const event = new Event('change')
+
+    this.filter.dispatchEvent(event)
   }
 
   openToggler(e) {
