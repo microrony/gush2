@@ -383,7 +383,7 @@ align-items: center;
 }
 
 .vibe__selector--helper[data-size="3"] {
-  --client-height: calc(((1em * 1.2) * 3) + (10px * 3) + 22px);
+  --client-height: calc(((1em * 1.2) * 3) + (20px * 3) + 2px);
 }
 
 .vibe__selector--helper.active {
