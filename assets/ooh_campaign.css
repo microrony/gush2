@@ -350,15 +350,18 @@ align-items: center;
   --client-height: 86.29px;
   position: absolute;
   right: -3.5rem;
+  line-height: 1.2;
   transform: translateX(100%);
   text-align: left;
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
+  
 }
 
 .vibe__selector--helper.active {
   height: var(--client-height);
+  padding: 10px;
 }
 
 /* Question ans survey section */
