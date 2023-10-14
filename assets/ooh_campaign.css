@@ -348,7 +348,8 @@ align-items: center;
 
 .vibe__selector--helper {
   
-  --client-height: 86.29px;
+  --client-height: calc(((1em * 1.2) * 2) + (10px * 2) + 22px);
+  opacity: 0;
   position: absolute;
   right: -3.5rem;
   line-height: 1.2;
@@ -356,7 +357,7 @@ align-items: center;
   text-align: left;
   height: 0;
   overflow: hidden;
-  transition: height 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 1px solid;
   border-radius: 10px;
 }
