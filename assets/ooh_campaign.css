@@ -344,6 +344,7 @@ align-items: center;
 
 .vibe_selection_strip_label {
   position: relative;
+  cursor: pointer;
 }
 
 .vibe__selector--helper {
