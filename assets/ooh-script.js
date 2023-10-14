@@ -96,6 +96,7 @@ class OOHCampaignComponent extends HTMLElement {
   }
 
   handleBodyClick(e) {
+    console.log('click inside')
     const toggleEl = this.querySelector('.vibe__selector--helper')
     if(toggleEl.contains(e.target)) console.log('click outside')
   }
