@@ -367,6 +367,12 @@ align-items: center;
   padding-top: 5px;
 }
 
+.select__toggle_icon {
+  height: 22px;
+  width: 22px;
+  display: flex !important;
+}
+
 .vibe__selector--helper[data-size="3"] {
   --client-height: calc(((1em * 1.2) * 3) + (10px * 3) + 22px);
 }
