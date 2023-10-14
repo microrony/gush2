@@ -140,6 +140,7 @@
 {% assign selected_vibe = blank %}
 {% assign iteration = iteration | plus: 0 %}
 {% assign vibe_options = "" %}
+{% assign vibe_helper_options = "" %}
 
 {% assign vibe_collections = section.settings.vibe_collections %}
 {% for collection in vibe_collections %}
@@ -153,7 +154,11 @@
       <option value="{{ collection.handle }}" {% if iteration==1 %} selected {% endif %} data-title="{{ collection.title }}">
         {{ collection.title }}
       </option>
-    {% endcapture -%}
+    {%- endcapture -%}
+    {%- capture vibe_helper_options -%}
+      {{ vibe_helper_options }}
+      <div data-value="{{ collection.handle }}">{{ collection.title }}</div>
+    {%- endcapture -%}
   {% endif %}
 {% endfor %}
 
@@ -247,9 +252,7 @@
           <span class="selected-vibe__title">{{ selected_vibe.title }}</span>
           <span> vibe pallet</span>
           <div class="vibe__selector--helper">
-            <div>Bold</div>
-            <div>Cosmic</div>
-            <div>Tranquile</div>
+            {{ vibe_helper_options }}
           </div>
         </label>
         <select id="collection-filter-select">
