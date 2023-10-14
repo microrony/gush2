@@ -91,6 +91,8 @@ class OOHCampaignComponent extends HTMLElement {
     if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
 
     if(targetEl.classList.contains('active')) targetEl.classList.remove('active')
+
+    document.removeEventListener('click', () => console.log('remove'))
   }
 
   changeSelect(evt) {
