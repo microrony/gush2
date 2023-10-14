@@ -77,13 +77,12 @@ class OOHCampaignComponent extends HTMLElement {
     const input = el.querySelector('input')
     if(input) {
       if(input.disabled) {
+        const messageEl = this.querySelector('error--message[data-error-type="maximum_selection"]')
+        if(!messageEl.classList.contains('active')) messageEl.classList.add('active')
 
-        const event = new CustomEvent('ooh:error', {
-          detail: {
-            type: 'maximumLimit'
-          }
-        })
-        document.dispatchEvent(event)
+        setTimeout(() => {
+          if(messageEl.classList.contains('active')) messageEl.classList.remove('active')
+        }, 3000)
       }
     }
   }
@@ -101,30 +100,22 @@ class OOHCampaignComponent extends HTMLElement {
 
     if(this.selectedVariants.length < 3) {
 
-      const event = new CustomEvent('ooh:error', {
-        detail: {
-          type: 'vibeSelection'
-        }
-      })
-      document.dispatchEvent(event)
-
+      console.log(this.selectedVariants)
+      const qty_error = this.querySelector('.error--message[data-error-type="vibe_selection"]')
+      if(!qty_error.classList.contains('active')) qty_error.classList.add('active')
+      setTimeout(() => {
+        if(qty_error.classList.contains('active')) qty_error.classList.remove('active')
+      }, 5000)
       return
     }
 
     const tnc_field = this.querySelector('input.gush_tnc_checkbox')
     const tnc_error = this.querySelector('.error--message[data-error-type="tnc_error"]')
     if(!tnc_field.checked) {
-      const event = new CustomEvent('ooh:error', {
-        detail: {
-          type: 'tncError'
-        }
-      })
-      document.dispatchEvent(event)
-      
-      // if(!tnc_error.classList.contains('active')) tnc_error.classList.add('active')
-      // setTimeout(() => {
-      //   if(tnc_error.classList.contains('active')) tnc_error.classList.remove('active')
-      // }, 5000)
+      if(!tnc_error.classList.contains('active')) tnc_error.classList.add('active')
+      setTimeout(() => {
+        if(tnc_error.classList.contains('active')) tnc_error.classList.remove('active')
+      }, 5000)
       return
     }
 
@@ -440,21 +431,11 @@ class OOHErrors extends HTMLElement {
   }
 
   triggerErrorMessage(evt) {
-    const errorType = evt.detail.type
+    const errorType = e.detail.type
     if(errorType) {
       const errorEl = this.querySelector(`${this.errorClasses[errorType]}`)
       console.log(errorEl)
-      if(errorEl) {
-        if(!errorEl.classList.contains('active')) errorEl.classList.add('active')
-        this.disableErrorMessage()
-      }
     }
   }
-
-  disableErrorMessage(el) {
-    setTimeout(() => if(el.classList.contains('active')) el.classList.remove('active'), 5000)
-  }
 }
-
-customElements.define('ooh-errors', OOHErrors)
 
