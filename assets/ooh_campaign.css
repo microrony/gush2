@@ -705,6 +705,12 @@ font-size: 13px;
   height: 22px;
   width: 22px;
 }
+.icon--eye-container svg path {
+  fill: #DED8E1;
+}
+.icon--eye-container.active svg path {
+  fill: unset;
+}
 .icon--status,
 .icon--eye {
   height: 22px;
