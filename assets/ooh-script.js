@@ -86,7 +86,7 @@ class OOHCampaignComponent extends HTMLElement {
   handleBlur(e) {
     const targetEl = this.querySelector('.vibe__selector--helper')
     const triggerEl = this.querySelector('.vibe_selection_strip_label')
-    document.removeEventListener('click', () => console.log('remove'), true)
+    document.removeEventListener('click', this.handleBlur.bind(this), true)
     console.log('Trigger: ', false)
     if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
 
@@ -116,7 +116,7 @@ class OOHCampaignComponent extends HTMLElement {
       if(toggleEl) {
         if(toggleEl.classList.contains('active')) toggleEl.classList.remove('active')
       }
-      document.removeEventListener('click', () => console.log('remove'), true)
+      document.removeEventListener('click', this.handleBlur.bind(this), true)
     }
     else {
       el.setAttribute('data-open', true)
