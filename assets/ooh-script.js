@@ -223,6 +223,14 @@ class OOHCampaignComponent extends HTMLElement {
       if(el.checked) this.applyBackground(el.dataset.bgColor)
 
       this.updateOrderMarker()
+
+      if(this.selectedVariants.length == 3) {
+        const eyeContainer = this.querySelector('.icon--eye-container')
+        if(!eyeContainer.classList.contains('active')) eyeContainer.classList.add('active')
+      }
+      else {
+        if(eyeContainer.classList.contains('active')) eyeContainer.classList.remove('active')
+      }
     }
 
     if(el.getAttribute('name') == 'question1') {
