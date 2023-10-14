@@ -699,6 +699,7 @@ font-size: 13px;
 }
 .icon--eye-container {
   display: inline-flex;
+  margin-left: 12px;
 }
 .icon--eye-container svg {
   height: 22px;
