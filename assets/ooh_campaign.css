@@ -265,12 +265,16 @@ align-items: center;
 }
 .checkout_button{
   display: flex;
-padding: 20px;
-align-items: center;
-gap: 40px;
+  padding: 20px;
+  align-items: center;
+  gap: 40px;
   border-radius: 5px;
-background: var(--Gush-Fuschia, #FF42EF);
+  background: var(--Gush-Fuschia, #FF42EF);
   cursor: pointer;
+}
+
+.checkout_button:disabled {
+  background: #ded8e1;
 }
  .left_right_container {
     display: flex;
