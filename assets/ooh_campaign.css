@@ -688,11 +688,15 @@ font-size: 13px;
   max-width: 468px;
   justify-content: center;
   align-items: center;
-  background-color: #302112;
-  color: #ffffff;
+  background-color: #DED8E1;
+  color: #302112;
   font-size: 14px;
   margin: 0 auto;
   margin-top: 38px;
+}
+.selection--status.active {
+  background-color: #302112;
+  color: #ffffff;
 }
 .helper--text {
   padding-left: 4px;
@@ -703,7 +707,7 @@ font-size: 13px;
   cursor: not-allowed;
   opacity: 0.5;
 }
-.icon--eye-container.active {
+.icon--eye-container {
   cursor: pointer;
   opacity: 1;
 }
@@ -714,7 +718,7 @@ font-size: 13px;
 .icon--eye-container svg path {
   fill: #DED8E1;
 }
-.icon--eye-container.active svg path {
+.selection--status.active .icon--eye-container svg path {
   fill: #ffffff;
 }
 .icon--status,
