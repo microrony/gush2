@@ -4,7 +4,7 @@ class OOHCampaignComponent extends HTMLElement {
     
     this.form = this.querySelector('#vibe-selection')
     this.filter = this.form.querySelector('select#collection-filter-select')
-    this.selectToggle = this.querySelector('.select__toggle_icon')
+    this.selectToggle = this.querySelector('.vibe_selection_strip_label')
 console.log(this.selectToggle)
     
     
