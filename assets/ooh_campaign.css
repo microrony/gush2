@@ -347,7 +347,7 @@ align-items: center;
 }
 
 .vibe__selector--helper {
-  --client-height: 10px;
+  --client-height: 86.29px;
   position: absolute;
   right: -3.5rem;
   transform: translateX(100%);
