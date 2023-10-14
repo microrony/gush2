@@ -716,7 +716,7 @@ font-size: 13px;
   width: 22px;
 }
 .icon--eye-container svg path {
-  fill: #DED8E1;
+  fill: #302112;
 }
 .selection--status.active .icon--eye-container svg path {
   fill: #ffffff;
