@@ -357,11 +357,12 @@ align-items: center;
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
-  
+  border: 1px solid;
+  border-radius: 10px;
 }
 
 .vibe__selector--helper[data-size="3"] {
-  --client-height: calc(((1em * 1.2) * 3) + 20px);
+  --client-height: calc(((1em * 1.2) * 3) + 22px);
 }
 
 .vibe__selector--helper.active {
