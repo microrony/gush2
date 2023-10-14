@@ -382,7 +382,7 @@ align-items: center;
 
 .vibe__selector--helper.active {
   height: var(--client-height);
-  padding: 10px;
+  padding: 10px 0;
   opacity: 1;
 }
 
