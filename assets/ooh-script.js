@@ -26,7 +26,7 @@ class OOHCampaignComponent extends HTMLElement {
     this.form.addEventListener('change', this.handleChange.bind(this))
     this.filter.addEventListener('change', this.handleFilterChange.bind(this))
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
-    this.selectToggle.addEventListener('select:open', this.openToggler.bind(this))
+    this.selectToggle.addEventListener('click', this.openToggler.bind(this))
 
     document.addEventListener('click', this.handleBlur.bind(this))
 
