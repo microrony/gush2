@@ -36,8 +36,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Gif_Banner_Desktop.gif",
         "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": true,
+        "image_height": "small",
+        "adapt_height_first_image": false,
         "secondary_btn_white": true,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
