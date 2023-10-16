@@ -10,7 +10,7 @@
   width: 100%;
   display: flex;
   top: 0;
-  padding-top: 70px;
+  padding-top: 45px;
   flex-direction: column;
 }
 .gush-ooh_main_heading {
@@ -1039,6 +1039,9 @@ a.ooh_hyperlink_tc {
   }
   .vibe--selection__prev-next-btn-next {
     right: 17%;
+  }
+  .package_you_get--wrapper {
+    padding-top: 70px;
   }
   .congratulations_message_free_ship {
     max-width: 58%;
