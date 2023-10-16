@@ -110,6 +110,7 @@ class OOHCampaignComponent extends HTMLElement {
   openToggler(e) {
     const el = e.currentTarget
     const isOpen = el.dataset.open
+    console.log(e.target)
     const toggleEl = this.querySelector('.vibe__selector--helper')
     if(isOpen == 'true') {
       el.setAttribute('data-open', false)
