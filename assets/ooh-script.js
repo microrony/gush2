@@ -87,7 +87,7 @@ class OOHCampaignComponent extends HTMLElement {
     const targetEl = this.querySelector('.vibe__selector--helper')
     const triggerEl = this.querySelector('.vibe_selection_strip_label')
     document.removeEventListener('click', this.handleBlur.bind(this), true)
-    console.log('Trigger: ', false)
+    console.log('Trigger: ', false, targetEl.contains(e.target), triggerEl.contains(e.target))
     if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
 
     if(targetEl.classList.contains('active')) targetEl.classList.remove('active')
