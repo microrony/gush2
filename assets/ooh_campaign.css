@@ -1,5 +1,5 @@
 #ooh_package_you_get_section{
-  padding-top:50px;
+  /* padding-top:50px; */
   text-align:center;
   position: relative;
 }
@@ -210,7 +210,7 @@ button.slick-disabled {
 .ooh_package_banner {
     width: 100%;
   height: auto;
-  margin: 40px 0px;
+  /* margin: 40px 0px; */
   display:flex;
   align-items:center;
   justify-content:center;
