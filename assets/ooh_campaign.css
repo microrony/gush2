@@ -5,13 +5,7 @@
 }
 
 .package_you_get--wrapper {
-  position: absolute;
-  /* height: calc(100% - 100px); */
-  width: 100%;
-  display: flex;
-  top: 0;
   padding: 45px 10px 0;
-  flex-direction: column;
 }
 .gush-ooh_main_heading {
   color: #311A08;
@@ -1045,7 +1039,6 @@ a.ooh_hyperlink_tc {
     width: 100%;
     display: flex;
     top: 0;
-    padding: 45px 10px 0;
     flex-direction: column;
   }
   .package_you_get--wrapper {
