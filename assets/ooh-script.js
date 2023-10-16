@@ -197,10 +197,8 @@ class OOHCampaignComponent extends HTMLElement {
     const data = {
       items: [],
       note: note,
-      attributes: {
-        order_property: {
-          isOOHOrder: true
-        }
+      properties: {
+        is_ooh_order: true
       }
     }
 
