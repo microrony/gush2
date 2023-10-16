@@ -196,7 +196,12 @@ class OOHCampaignComponent extends HTMLElement {
     
     const data = {
       items: [],
-      note: note
+      note: note,
+      attributes: {
+        order_property: {
+          isOOHOrder: true
+        }
+      }
     }
 
     this.selectedVariants.forEach(variantId => {
