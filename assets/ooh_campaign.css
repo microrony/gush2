@@ -1041,6 +1041,14 @@ a.ooh_hyperlink_tc {
     right: 17%;
   }
   .package_you_get--wrapper {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 0;
+    padding: 45px 10px 0;
+    flex-direction: column;
+  }
+  .package_you_get--wrapper {
     padding-top: 70px;
   }
   .congratulations_message_free_ship {
