@@ -10,7 +10,7 @@
   width: 100%;
   display: flex;
   top: 0;
-  padding-top: 45px;
+  padding-top: 45px 10px;
   flex-direction: column;
 }
 .gush-ooh_main_heading {
