@@ -29,7 +29,7 @@ class OOHCampaignComponent extends HTMLElement {
     console.log(this.selectToggle, 'test')
     this.selectToggle.addEventListener('click', this.openToggler.bind(this))
 
-    // document.addEventListener('click', this.handleBlur.bind(this))
+    document.addEventListener('click', this.handleBlur.bind(this))
 
     this.selectOptions = this.querySelectorAll('.vibe-option')
     this.errorMessage = this.querySelector('.error--message')
@@ -84,17 +84,18 @@ class OOHCampaignComponent extends HTMLElement {
     })
   }
 
-  // handleBlur(e) {
-  //   const targetEl = this.querySelector('.vibe__selector--helper')
-  //   const triggerEl = this.querySelector('.vibe_selection_strip_label')
-  //   document.removeEventListener('click', this.handleBlur.bind(this), true)
-  //   console.log('Trigger: ', false, targetEl.contains(e.target), triggerEl.contains(e.target))
-  //   if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
+  handleBlur(e) {
+    const targetEl = this.querySelector('.vibe__selector--helper')
+    const triggerEl = this.querySelector('.vibe_selection_strip_label')
+    console.log(e.target)
+    document.removeEventListener('click', this.handleBlur.bind(this), true)
+    console.log('Trigger: ', false, targetEl.contains(e.target), triggerEl.contains(e.target))
+    if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
 
-  //   if(targetEl.classList.contains('active')) targetEl.classList.remove('active')
+    if(targetEl.classList.contains('active')) targetEl.classList.remove('active')
 
     
-  // }
+  }
 
   changeSelect(evt) {
     const el = evt.currentTarget
