@@ -1,7 +1,16 @@
 #ooh_package_you_get_section{
-  padding-top:50px;
+  /* padding-top:50px; */
   text-align:center;
   position: relative;
+}
+
+.package_you_get--wrapper {
+  position: absolute;
+  height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+  top: 100px;
+  flex-direction: column;
 }
 .gush-ooh_main_heading {
   color: #311A08;
@@ -201,11 +210,11 @@ button.slick-disabled {
 .ooh_package_banner {
     width: 100%;
   height: auto;
-    margin: 40px 0px;
+  /* margin: 40px 0px; */
   display:flex;
   align-items:center;
   justify-content:center;
-  }
+}
 
 .ooh_package_banner img{
     max-width: 100%;
