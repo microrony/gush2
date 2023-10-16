@@ -343,9 +343,10 @@ align-items: center;
 }
 .vibe_selection_strip_label {
   display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 999999;
 }
 
 .vibe_selection_strip_label {
