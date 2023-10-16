@@ -1041,9 +1041,8 @@ a.ooh_hyperlink_tc {
     display: flex;
     top: 0;
     flex-direction: column;
-  }
-  .package_you_get--wrapper {
     padding-top: 70px;
+    margin-bottom: 0;
   }
   .congratulations_message_free_ship {
     max-width: 58%;
