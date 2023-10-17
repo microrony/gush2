@@ -222,7 +222,7 @@ button.slick-disabled {
   background: #F9F4F0;
       padding: 40px 0;
 }
-.survey_question {
+.survey_question1,.survey_question2 {
   font-size: 24px;
 font-style: normal;
 font-weight: 400;
