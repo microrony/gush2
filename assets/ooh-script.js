@@ -297,7 +297,6 @@ class OOHCampaignComponent extends HTMLElement {
     const el = e.target
     const formData = new FormData(this.form)
     const submitBtn = this.form.querySelector('button[type="submit"]')
-    console.log()
     if(el.getAttribute('name') == 'vibe') {
       
       const value = el.dataset.title
@@ -321,7 +320,6 @@ class OOHCampaignComponent extends HTMLElement {
       
 
       this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
-      console.log(this.selectedVariants)
 
       if(el.checked) this.applyBackground(el.dataset.bgColor)
 
