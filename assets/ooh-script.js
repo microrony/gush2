@@ -193,6 +193,8 @@ class OOHCampaignComponent extends HTMLElement {
         const formData = new FormData(this.form)
         const q1 = formData.get('question1')
         const q2 = formData.get('question2')
+
+        console.log('Questions................', q1, q2)
     
         if(!q1 || !q2) {
           if(!questionErrorEl.classList.contains('active')) questionErrorEl.classList.add('active')
