@@ -169,9 +169,10 @@ class OOHCampaignComponent extends HTMLElement {
     e.preventDefault()
 
     const cookies = this.getCookies()
-    
+    console.log(cookies)
     if(!cookies.ooh_campaign) {
       const isCheckout = JSON.parse(cookies.ooh_campaign)
+      console.log(isCheckout)
       if(isCheckout.checkout) {
         if(this.selectedVariants.length < 3) {
           const qty_error = this.querySelector('.error--message[data-error-type="vibe_selection"]')
