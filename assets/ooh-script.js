@@ -5,7 +5,6 @@ class OOHCampaignComponent extends HTMLElement {
     this.form = this.querySelector('#vibe-selection')
     this.filter = this.form.querySelector('select#collection-filter-select')
     this.selectToggle = this.querySelector('.vibe_selection_strip_label')
-    console.log('Click: ',this.selectToggle)
     
     this.selectedColors = []
     this.colorInfoEl = this.querySelector('#selected_colors span')
@@ -26,7 +25,6 @@ class OOHCampaignComponent extends HTMLElement {
     this.form.addEventListener('change', this.handleChange.bind(this))
     this.filter.addEventListener('change', this.handleFilterChange.bind(this))
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
-    console.log(this.selectToggle, 'test')
     this.selectToggle.addEventListener('click', this.openToggler.bind(this))
 
     document.addEventListener('click', this.handleBlur.bind(this))
@@ -48,7 +46,6 @@ class OOHCampaignComponent extends HTMLElement {
     
     if(selectedVibes) {
       selectedVibes.forEach(input => {
-        console.log(input.checked)
         if(input.hasAttribute('checked')) input.removeAttribute('checked')
       })
     }
@@ -67,7 +64,6 @@ class OOHCampaignComponent extends HTMLElement {
       this.cart = data
 
       this.cart.items.forEach(item => {
-        console.log(item, item.id)
         // if(item.properties.ooh_item) this.removable[item.id] = 0
         this.removable[item.id] = 0
       })
@@ -104,9 +100,9 @@ class OOHCampaignComponent extends HTMLElement {
   handleBlur(e) {
     const targetEl = this.querySelector('.vibe__selector--helper')
     const triggerEl = this.querySelector('.vibe_selection_strip_label')
-    console.log(e.target)
+    
     document.removeEventListener('click', this.handleBlur.bind(this), true)
-    console.log('Trigger: ', false, targetEl.contains(e.target), triggerEl.contains(e.target))
+    
     if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
 
     if(targetEl.classList.contains('active')) targetEl.classList.remove('active')
@@ -127,7 +123,6 @@ class OOHCampaignComponent extends HTMLElement {
   openToggler(e) {
     const el = e.currentTarget
     const isOpen = el.dataset.open
-    console.log(e.target)
     const toggleEl = this.querySelector('.vibe__selector--helper')
     if(isOpen == 'true') {
       el.setAttribute('data-open', false)
@@ -175,7 +170,7 @@ class OOHCampaignComponent extends HTMLElement {
 
     const cookies = this.getCookies()
     
-    if(cookies.ooh_campaign) {
+    if(!cookies.ooh_campaign) {
       const isCheckout = JSON.parse(cookies.ooh_campaign)
       if(isCheckout.checkout) {
         if(this.selectedVariants.length < 3) {
@@ -368,7 +363,7 @@ class OOHCampaignComponent extends HTMLElement {
   }
 
   applyBackground(bg) {
-    console.log(bg)
+    
     const container = this.querySelector("#ooh_product_filter_section")
     if(container) {
       const currentBg = container.style.backgroundColor
@@ -413,7 +408,6 @@ class HeightObserver extends HTMLElement {
   }
 
   afterSliderInit(e) {
-    console.log('Inited: ', e.detail)
     this.applyHeight(e.detail.height)
   }
 
@@ -427,7 +421,6 @@ class HeightObserver extends HTMLElement {
     else {
       height = this.container.scrollHeight
     }
-    console.log(height)
     this.container.style.setProperty('--container-height', `${height}px` || 'auto')
   }
 
@@ -557,7 +550,6 @@ class OOHErrors extends HTMLElement {
     const errorType = e.detail.type
     if(errorType) {
       const errorEl = this.querySelector(`${this.errorClasses[errorType]}`)
-      console.log(errorEl)
     }
   }
 }
