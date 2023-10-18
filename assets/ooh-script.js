@@ -84,6 +84,23 @@ class OOHCampaignComponent extends HTMLElement {
     })
   }
 
+  getCookies() {
+    var cookiePairs = document.cookie.split(';');
+    var cookies = {};
+    for (var i = 0; i < cookiePairs.length; i++) {
+      var pair = cookiePairs[i].trim()
+      var separatorIndex = pair.indexOf('=');
+      if (separatorIndex === -1) {
+        continue; // Skip invalid cookie pairs
+      }
+      var key = pair.slice(0, separatorIndex);
+      var value = pair.slice(separatorIndex + 1);
+      value = decodeURIComponent(value);
+      cookies[key] = value;
+    }
+    return cookies
+  }
+
   handleBlur(e) {
     const targetEl = this.querySelector('.vibe__selector--helper')
     const triggerEl = this.querySelector('.vibe_selection_strip_label')
@@ -93,8 +110,6 @@ class OOHCampaignComponent extends HTMLElement {
     if(targetEl.contains(e.target) || triggerEl.contains(e.target)) return
 
     if(targetEl.classList.contains('active')) targetEl.classList.remove('active')
-
-    
   }
 
   changeSelect(evt) {
