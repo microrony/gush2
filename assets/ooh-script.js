@@ -169,86 +169,81 @@ class OOHCampaignComponent extends HTMLElement {
     e.preventDefault()
 
     const cookies = this.getCookies()
-    console.log(cookies)
     if(!cookies.ooh_campaign) {
-      const isCheckout = JSON.parse(cookies.ooh_campaign)
-      console.log(isCheckout)
-      if(isCheckout.checkout) {
-        if(this.selectedVariants.length < 3) {
-          const qty_error = this.querySelector('.error--message[data-error-type="vibe_selection"]')
-          if(!qty_error.classList.contains('active')) qty_error.classList.add('active')
-          setTimeout(() => {
-            if(qty_error.classList.contains('active')) qty_error.classList.remove('active')
-          }, 5000)
-          return
-        }
-    
-    
-        const questionErrorEl = this.querySelector('.error--message[data-error-type="questionire"]')
-    
-        const formData = new FormData(this.form)
-        const q1 = formData.get('question1')
-        const q2 = formData.get('question2')
-
-        console.log('Questions................', q1, q2)
-    
-        if(!q1 || !q2) {
-          if(!questionErrorEl.classList.contains('active')) questionErrorEl.classList.add('active')
-          setTimeout(() => {
-            if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.remove('active')
-          }, 5000)
-          return
-        }
-    
-        const tnc_field = this.querySelector('input.gush_tnc_checkbox')
-        const tnc_error = this.querySelector('.error--message[data-error-type="tnc_error"]')
-        if(!tnc_field.checked) {
-          if(!tnc_error.classList.contains('active')) tnc_error.classList.add('active')
-          setTimeout(() => {
-            if(tnc_error.classList.contains('active')) tnc_error.classList.remove('active')
-          }, 5000)
-          return
-        }
-    
-        const note = `
-          What are you painting: ${this.q1}.
-          How soon do you want to start painting: ${this.q2}
-        `
-        
-        const data = {
-          items: [],
-          note: note,
-          properties: {
-            is_ooh_order: true
-          }
-        }
-    
-        this.selectedVariants.forEach(variantId => {
-          data.items.push({
-            id: variantId,
-            quantity: 1
-          })
-        })
-    
-        const options = {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data)
-        };
-    
-        fetch("/cart/add.js", options)
-        .then(res => res.json())
-        .then(data => {
-          const cookieData = {
-            checkout: true
-          }
-          document.cookie = "ooh_campaign=" + JSON.stringify(cookieData) + "; expires=3m; path=/";
-          window.location.href = '/checkout?discount=CAMPAIGN100'
-        })
-        .catch(err => console.log(err))
+      if(this.selectedVariants.length < 3) {
+        const qty_error = this.querySelector('.error--message[data-error-type="vibe_selection"]')
+        if(!qty_error.classList.contains('active')) qty_error.classList.add('active')
+        setTimeout(() => {
+          if(qty_error.classList.contains('active')) qty_error.classList.remove('active')
+        }, 5000)
+        return
       }
+  
+  
+      const questionErrorEl = this.querySelector('.error--message[data-error-type="questionire"]')
+  
+      const formData = new FormData(this.form)
+      const q1 = formData.get('question1')
+      const q2 = formData.get('question2')
+
+      console.log('Questions................', q1, q2)
+  
+      if(!q1 || !q2) {
+        if(!questionErrorEl.classList.contains('active')) questionErrorEl.classList.add('active')
+        setTimeout(() => {
+          if(questionErrorEl.classList.contains('active')) questionErrorEl.classList.remove('active')
+        }, 5000)
+        return
+      }
+  
+      const tnc_field = this.querySelector('input.gush_tnc_checkbox')
+      const tnc_error = this.querySelector('.error--message[data-error-type="tnc_error"]')
+      if(!tnc_field.checked) {
+        if(!tnc_error.classList.contains('active')) tnc_error.classList.add('active')
+        setTimeout(() => {
+          if(tnc_error.classList.contains('active')) tnc_error.classList.remove('active')
+        }, 5000)
+        return
+      }
+  
+      const note = `
+        What are you painting: ${this.q1}.
+        How soon do you want to start painting: ${this.q2}
+      `
+      
+      const data = {
+        items: [],
+        note: note,
+        properties: {
+          is_ooh_order: true
+        }
+      }
+  
+      this.selectedVariants.forEach(variantId => {
+        data.items.push({
+          id: variantId,
+          quantity: 1
+        })
+      })
+  
+      const options = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+      };
+  
+      fetch("/cart/add.js", options)
+      .then(res => res.json())
+      .then(data => {
+        const cookieData = {
+          checkout: true
+        }
+        document.cookie = "ooh_campaign=" + JSON.stringify(cookieData) + "; expires=3m; path=/";
+        window.location.href = '/checkout?discount=CAMPAIGN100'
+      })
+      .catch(err => console.log(err))
     }
     else {
       const duplicateErrorEl = this.querySelector('.error--message[data-error-type="duplicate_order"]')
