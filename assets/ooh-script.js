@@ -173,10 +173,6 @@ class OOHCampaignComponent extends HTMLElement {
   handleSubmit(e) {
     e.preventDefault()
 
-    console.log(this.getCookies())
-
-    return
-
     const cookies = this.getCookies()
     if(!JSON.parse(cookies.ooh_campaign).checkout) {
       if(this.selectedVariants.length < 3) {
