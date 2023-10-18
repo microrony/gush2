@@ -247,6 +247,7 @@ class OOHCampaignComponent extends HTMLElement {
     }
     else {
       const duplicateErrorEl = this.querySelector('.error--message[data-error-type="duplicate_order"]')
+      console.log(duplicateErrorEl)
       if(!duplicateErrorEl.classList.contains('active')) duplicateErrorEl.classList.add('active')
       setTimeout(() => {
         if(duplicateErrorEl.classList.contains('active')) duplicateErrorEl.classList.remove('active')
