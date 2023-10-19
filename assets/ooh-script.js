@@ -241,7 +241,7 @@ class OOHCampaignComponent extends HTMLElement {
           checkout: true
         }
         document.cookie = "ooh_campaign=" + JSON.stringify(cookieData) + "; expires=3m; path=/";
-        window.location.href = '/checkout?discount=CAMPAIGN100'
+        window.location.href = '/checkout?discount=ohmygush'
       })
       .catch(err => console.log(err))
     }
