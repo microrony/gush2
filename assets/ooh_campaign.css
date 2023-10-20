@@ -5,6 +5,11 @@
 }
 
 .package_you_get--wrapper {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  top: 0;
+  flex-direction: column;
   padding: 45px 10px 0;
   margin-bottom: 45px;
 }
