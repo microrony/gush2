@@ -663,7 +663,6 @@ font-size: 13px;
     position: relative;
     font-size: 13px;
     flex-grow: 1;
-    text-align: right;
 }
 
 .order-details-container .order .order-details{
