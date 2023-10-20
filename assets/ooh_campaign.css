@@ -326,7 +326,8 @@ font-weight: 400;
   align-self: stretch;
   background-color:#EAE4DF;
   margin-top: 8px;
-  height:42.8px
+  height:42.8px;
+  line-height: 1;
 }
 .checkout_button{
   display: flex;
