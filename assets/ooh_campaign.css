@@ -10,7 +10,8 @@
   font-size: 32px;
 }
 .vibe--selection__text,
-.filtered_product_section {
+.filtered_product_section,
+.package_you_get--wrapper {
   padding-top: 45px;
 }
 @media only screen and (min-width: 740px) {
@@ -22,7 +23,8 @@
     line-height: 1;
   }
   .vibe--selection__text,
-  .filtered_product_section {
+  .filtered_product_section,
+  .package_you_get--wrapper {
     padding-top: 70px;
   }
 }
@@ -36,7 +38,8 @@
     line-height: 2.5;
   }
   .vibe--selection__text,
-  .filtered_product_section {
+  .filtered_product_section,
+  .package_you_get--wrapper {
     padding-top: 95px;
   }
 }
@@ -53,7 +56,8 @@
   display: flex;
   top: 0;
   flex-direction: column;
-  padding: 45px 10px 0;
+  padding-left:10px;
+  padding-right: 10px;
   margin-bottom: 45px;
 }
 
@@ -1079,7 +1083,6 @@ a.ooh_hyperlink_tc {
     right: 17%;
   }
   .package_you_get--wrapper {
-    padding-top: 70px;
     margin-bottom: 0;
   }
   .congratulations_message_free_ship {
