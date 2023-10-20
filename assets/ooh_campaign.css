@@ -259,10 +259,10 @@ font-weight: 400;
 }
 .ooh_survey_container {
   display: flex;
-width: 100%;
-padding: 0px 46px 27px 46px;
-flex-direction: column;
-align-items: center;
+  width: 100%;
+  padding: 0px 46px 27px 46px;
+  flex-direction: column;
+  align-items: start;
   z-index: 1;
   
 }
