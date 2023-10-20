@@ -112,7 +112,8 @@ line-height: 25px;
 }
 .filtered_product_section {
   text-align: center;
-   padding: 70px 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .ooh_filtered_products {
     display: grid;
