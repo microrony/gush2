@@ -585,6 +585,7 @@ font-weight: 400;
   background: #e6e6e6;
   border-radius: 1rem;
   text-align: center;
+  display: inline-block;
 }
 
 .order-details-container .order{
