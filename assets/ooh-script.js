@@ -86,7 +86,7 @@ class OOHCampaignComponent extends HTMLElement {
   }
 
   jumpToHandler(e) {
-    preventDefault()
+    e.preventDefault()
     const el = e.currentTarget
     const destination = el.getAttribute('href')
     console.log(destination)
