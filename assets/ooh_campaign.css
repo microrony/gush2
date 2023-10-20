@@ -9,6 +9,9 @@
   text-align: left;
   font-size: 32px;
 }
+.vibe--selection__text {
+  padding-top: 45px;
+}
 @media only screen and (min-width: 740px) {
   .ooh-heading {
     font-size: 48px;
@@ -16,6 +19,9 @@
   }
   .ooh-heading.gush-ooh_main_heading {
     line-height: 1;
+  }
+  .vibe--selection__text {
+    padding-top: 55px;
   }
 }
 
@@ -890,7 +896,6 @@ line-height: 25px;
 }
 .vibe--selection__text {
   top: 0;
-  padding-top: 45px;
 }
 .vibe--selection__wrapper {
   position: relative;
@@ -1052,9 +1057,6 @@ a.ooh_hyperlink_tc {
   }
   .vibe-selection-slider .slide-bg {
     padding-bottom: 56.25%;
-  }
-  .vibe--selection__text {
-    padding-top: 135px;
   }
   .vibe--selection__button {
     padding-bottom: 85px;
