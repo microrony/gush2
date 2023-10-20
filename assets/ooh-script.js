@@ -91,6 +91,17 @@ class OOHCampaignComponent extends HTMLElement {
     const destination = el.getAttribute('href')
     const destinationEl = document.querySelector(destination)
     console.log(destinationEl)
+
+    if(destinationEl) {
+      const windowHeight = window.innerHeight;
+      const elementHeight = destinationEl.clientHeight;
+      const offset = Math.max(0, (windowHeight - elementHeight) / 2);
+
+      window.scrollTo({
+        top: destinationEl.offsetTop - offset,
+        behavior: "smooth"
+      });
+    }
   }
 
   getCookies() {
