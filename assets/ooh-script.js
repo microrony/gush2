@@ -29,7 +29,6 @@ class OOHCampaignComponent extends HTMLElement {
 
     const jumpToEls = document.querySelectorAll('.jump-to-destination')
     jumpToEls.forEach(el => {
-      console.log(el)
       el.addEventListener('click', this.jumpToHandler.bind(this))
     })
 
@@ -89,7 +88,8 @@ class OOHCampaignComponent extends HTMLElement {
   jumpToHandler(e) {
     preventDefault()
     const el = e.currentTarget
-    console.log(el)
+    const destination = el.getAttribute('href')
+    console.log(destination)
   }
 
   getCookies() {
