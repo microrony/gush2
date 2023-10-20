@@ -61,6 +61,8 @@
         "ad54c593-d5e9-442f-bc23-11a529fd6314": {
           "type": "whats-include-inside",
           "settings": {
+            "heading": "Your bundle includes:",
+            "text": ""
           }
         }
       },
