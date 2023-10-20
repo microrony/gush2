@@ -667,7 +667,7 @@ font-size: 13px;
     width: 50%;
     color: #fff;
     text-decoration: none;
-      border-radius: 5px;
+      border-radius: 1px;
   }
   .vibe__container {
     --container-height: 379px;
