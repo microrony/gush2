@@ -27,6 +27,11 @@ class OOHCampaignComponent extends HTMLElement {
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
     this.selectToggle.addEventListener('click', this.openToggler.bind(this))
 
+    const jumpToEls = document.querySelector('.jump-to-destination')
+    jumpToEls.forEach(el => {
+      el.addEventListener('click', this.jumpToHandler.bind(this))
+    })
+
     document.addEventListener('click', this.handleBlur.bind(this))
 
     this.selectOptions = this.querySelectorAll('.vibe-option')
@@ -78,6 +83,12 @@ class OOHCampaignComponent extends HTMLElement {
         })
       })
     })
+  }
+
+  jumpToHandler(e) {
+    preventDefault()
+    const el = e.currentTarget
+    console.log(el)
   }
 
   getCookies() {
