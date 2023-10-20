@@ -282,7 +282,7 @@ align-items: center;
   padding: 20px;
   align-items: center;
   gap: 40px;
-  border-radius: 5px;
+  border-radius: 1px;
   background: var(--Gush-Fuschia, #FF42EF);
   cursor: pointer;
 }
