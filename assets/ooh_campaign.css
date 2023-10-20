@@ -583,7 +583,7 @@ font-weight: 400;
 .order--value {
   padding: 0 1rem;
   background: #e6e6e6;
-  border-radius: 1rem;
+  border-radius: 2rem;
   text-align: center;
   display: inline-block;
 }
