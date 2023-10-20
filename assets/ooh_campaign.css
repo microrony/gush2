@@ -16,7 +16,7 @@
   padding-top: 45px;
 }
 #ooh_survey_section {
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 @media only screen and (min-width: 740px) {
   .ooh-heading {
@@ -33,7 +33,7 @@
     padding-top: 70px;
   }
   #ooh_survey_section {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -52,7 +52,7 @@
     padding-top: 95px;
   }
   #ooh_survey_section {
-    padding-bottom: 45px;
+    padding-bottom: 75px;
   }
 }
 
