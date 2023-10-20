@@ -380,6 +380,25 @@
   <!-- OOH Whats include in package starts from here -->
   {%- assign banner_blocks = section.blocks | where: "type", "whats-include-inside" -%}
   {%- for block in banner_blocks -%}
+    {%- assign image = block.settings.image -%}
+    {%- unless block.settings.image_mobile == blank -%}
+      {%- assign image_mobile = block.settings.image_mobile -%}
+    {%- else -%}
+      {%- assign image_mobile = block.settings.image -%}
+    {%- endunless -%}
+    {%- style -%}
+      [data-block-id="{{ block.id }}"] .ooh_package_banner {
+        display: block;
+        padding-bottom: {{ 1 | divided_by: image_mobile.aspect_ratio | times: 100 }}%;
+        background: url("{{ image_mobile | image_url: width: 1000 }}") no-repeat center center/contain;
+      }
+      @media only screen and (min-width: 740px) {
+        [data-block-id="{{ block.id }}"] .ooh_package_banner {
+          padding-bottom: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;
+          background: url("{{ image | image_url: width: 2000 }}") no-repeat center center/contain;
+        }
+      }
+    {%- endstyle -%}
     <div id="ooh_package_you_get_section" data-block-id="{{ block.id }}">
       <div class="package_you_get--wrapper">
         {%- unless block.settings.heading == blank -%}
@@ -390,25 +409,10 @@
           <p class="promo_text">{{ block.settings.text }}</p>
         {%- endunless -%}
       </div>
-
-      {%- assign image = block.settings.image -%}
-      {%- assign image_mobile = block.settings.image_mobile -%}
-      <div class="ooh_package_banner">
-        
-      </div>
+      
+      <div class="ooh_package_banner"></div>
     </div>
   {%- endfor -%}
-
-<div id="ooh_package_you_get_section">
-  <div class="package_you_get--wrapper">
-    
-    
-  </div>
-  
-  <div class="ooh_package_banner">
-    <img src="https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Paint_Sample_package_Gif.gif?v=1697353111">
-</div>
-</div> 
 
 
   <div class="survey_plus_order"> 
