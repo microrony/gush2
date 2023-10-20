@@ -286,7 +286,7 @@ align-items: center;
   background: var(--Gush-Fuschia, #FF42EF);
   cursor: pointer;
   margin-right:auto;
-  
+  margin-left:0;
 }
 
 .checkout_button:disabled {
