@@ -513,7 +513,7 @@ align-items: center;
 
 .order-details-container{
   position: relative;
-  width: 100%;
+  width: 82%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -574,12 +574,12 @@ align-items: center;
 }
 
 .order-details-container .order .order-header{
-  position: relative;
-  display: flex;
-  align-items: stretch;
-  justify-content: end;
-  gap: 2rem;
-  grid-area: order-header;
+position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: start;
+    gap: 2rem;
+    grid-area: order-header;
 }
 
 .order-details-container .order .order-header h3{
