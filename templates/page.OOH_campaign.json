@@ -62,7 +62,9 @@
           "type": "whats-include-inside",
           "settings": {
             "heading": "Your bundle includes:",
-            "text": "3 paint samples, paint sponges, paint palettes and swatch cards."
+            "text": "3 paint samples, paint sponges, paint palettes and swatch cards.",
+            "image": "shopify:\/\/shop_images\/Paint_Sample_package_Gif.gif",
+            "image_mobile": "shopify:\/\/shop_images\/paint_sample_gif_mobile_v1.gif"
           }
         }
       },
