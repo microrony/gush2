@@ -662,7 +662,6 @@ font-size: 13px;
 .order-details-container .order .order-header span:last-of-type{
     position: relative;
     font-size: 13px;
-    flex-grow: 1;
 }
 
 .order-details-container .order .order-details{
