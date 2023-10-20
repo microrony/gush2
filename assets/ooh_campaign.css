@@ -11,7 +11,8 @@
 }
 .vibe--selection__text,
 .filtered_product_section,
-.package_you_get--wrapper {
+.package_you_get--wrapper,
+#ooh_survey_section {
   padding-top: 45px;
 }
 @media only screen and (min-width: 740px) {
@@ -24,7 +25,8 @@
   }
   .vibe--selection__text,
   .filtered_product_section,
-  .package_you_get--wrapper {
+  .package_you_get--wrapper,
+  #ooh_survey_section {
     padding-top: 70px;
   }
 }
@@ -39,7 +41,8 @@
   }
   .vibe--selection__text,
   .filtered_product_section,
-  .package_you_get--wrapper {
+  .package_you_get--wrapper,
+  #ooh_survey_section {
     padding-top: 95px;
   }
 }
