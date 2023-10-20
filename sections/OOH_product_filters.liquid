@@ -378,11 +378,25 @@
 
 
   <!-- OOH Whats include in package starts from here -->
+  {%- assign banner_blocks = section.blocks | where: "type", "whats-include-inside" -%}
+  {%- for block in banner_blocks -%}
+    <div id="ooh_package_you_get_section" data-block-id="{{ block.id }}">
+      <div class="package_you_get--wrapper">
+        {%- unless block.settings.heading == blank -%}
+          <h2 class="gush-font-h1" style="font-size:42px" >{{ block.settings.heading }}</h2>
+        {%- endunless -%}
+
+        {%- unless block.settings.text == blank -%}
+          <p class="promo_text">{{ block.settings.text }}</p>
+        {%- endunless -%}
+      </div>
+    </div>
+  {%- endfor -%}
 
 <div id="ooh_package_you_get_section">
   <div class="package_you_get--wrapper">
-    <h2 class="gush-font-h1" style="font-size:42px" >Your bundle includes:</h2>
-    <p class="promo_text">3 paint samples, paint sponges, paint palettes and swatch cards.</p>
+    
+    
   </div>
   
   <div class="ooh_package_banner">
