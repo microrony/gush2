@@ -95,7 +95,7 @@ class OOHCampaignComponent extends HTMLElement {
     if(destinationEl) {
       const windowHeight = window.innerHeight;
       const elementHeight = destinationEl.clientHeight;
-      const offset = Math.max(0, (windowHeight - elementHeight) / 2);
+      const offset = elementHeight < windowHeight ? (windowHeight - elementHeight) / 2 : 0;
 
       window.scrollTo({
         top: destinationEl.offsetTop - offset,
