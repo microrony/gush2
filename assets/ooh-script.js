@@ -89,7 +89,8 @@ class OOHCampaignComponent extends HTMLElement {
     e.preventDefault()
     const el = e.currentTarget
     const destination = el.getAttribute('href')
-    console.log(destination)
+    const destinationEl = document.querySelector(destination)
+    console.log(destinationEl)
   }
 
   getCookies() {
