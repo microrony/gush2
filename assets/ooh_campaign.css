@@ -33,15 +33,10 @@
   padding: 45px 10px 0;
   margin-bottom: 45px;
 }
-.gush-ooh_main_heading {
-color: #311A08;
-text-align: left;
-font-family: ABCCamera;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%; 
-
+.ooh-heading.gush-ooh_main_heading {
+  color: #311A08;
+  text-align: left;
+  font-size: 32px;
 }
 .gush_ooh_sub_heading {
 color: #311A08;
