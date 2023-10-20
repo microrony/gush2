@@ -1135,3 +1135,26 @@ select#collection-filter-select:focus-visible {
 .display_none {
   display:none;
 }
+@media screen and (min-width: 1440px) {
+  .order-details-container .order {
+    width: 62%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .order-details-container .order {
+    width: 82%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .order-details-container .order {
+    width: 92%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-details-container .order {
+    width: 100%;
+  }
+}
