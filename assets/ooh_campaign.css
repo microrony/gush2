@@ -12,11 +12,9 @@
 .vibe--selection__text,
 .filtered_product_section,
 .package_you_get--wrapper,
-#ooh_survey_section {
+#ooh_survey_section,
+#OOH_order_details_section {
   padding-top: 45px;
-}
-#ooh_survey_section {
-  padding-bottom: 25px;
 }
 @media only screen and (min-width: 740px) {
   .ooh-heading {
@@ -29,11 +27,9 @@
   .vibe--selection__text,
   .filtered_product_section,
   .package_you_get--wrapper,
-  #ooh_survey_section {
+  #ooh_survey_section,
+  #OOH_order_details_section {
     padding-top: 70px;
-  }
-  #ooh_survey_section {
-    padding-bottom: 50px;
   }
 }
 
@@ -48,11 +44,9 @@
   .vibe--selection__text,
   .filtered_product_section,
   .package_you_get--wrapper,
-  #ooh_survey_section {
+  #ooh_survey_section,
+  #OOH_order_details_section {
     padding-top: 95px;
-  }
-  #ooh_survey_section {
-    padding-bottom: 75px;
   }
 }
 
