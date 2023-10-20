@@ -29,6 +29,7 @@ class OOHCampaignComponent extends HTMLElement {
 
     const jumpToEls = document.querySelector('.jump-to-destination')
     jumpToEls.forEach(el => {
+      console.log(el)
       el.addEventListener('click', this.jumpToHandler.bind(this))
     })
 
