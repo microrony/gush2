@@ -4,10 +4,18 @@
   font-size: 32px;
   line-height: 1.625;
 }
+.ooh-heading.gush-ooh_main_heading {
+  color: #311A08;
+  text-align: left;
+  font-size: 32px;
+}
 @media only screen and (min-width: 740px) {
   .ooh-heading {
     font-size: 48px;
     line-height: 1.2918;
+  }
+  .ooh-heading.gush-ooh_main_heading {
+    line-height: 1;
   }
 }
 
@@ -15,6 +23,9 @@
   .ooh-heading {
     font-size: 64px;
     line-height: 1.25;
+  }
+  .ooh-heading.gush-ooh_main_heading {
+    line-height: 2.25;
   }
 }
 
@@ -33,11 +44,7 @@
   padding: 45px 10px 0;
   margin-bottom: 45px;
 }
-.ooh-heading.gush-ooh_main_heading {
-  color: #311A08;
-  text-align: left;
-  font-size: 32px;
-}
+
 .gush_ooh_sub_heading {
 color: #311A08;
 text-align: center;
