@@ -264,7 +264,7 @@
                 </span>
               </div>
             {%- when 'buttons' -%}
-              <div id="select_your_vibe_section" class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
+              <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
                 {%- if block.settings.button_label_1 != blank -%}
                   <a {% if block.settings.button_link_1 == blank %}role="link" aria-disabled="true" {% else %}
                     href="{{ block.settings.button_link_1 }}" {% endif %}
@@ -288,6 +288,7 @@
             </div>
         {%- endcase -%}
       {%- endfor -%}
+      <div id="select_your_vibe_section"></div>
     </div>
   </div>
 </div>
