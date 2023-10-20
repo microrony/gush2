@@ -9,7 +9,8 @@
   text-align: left;
   font-size: 32px;
 }
-.vibe--selection__text {
+.vibe--selection__text,
+.filtered_product_section {
   padding-top: 45px;
 }
 @media only screen and (min-width: 740px) {
@@ -20,7 +21,8 @@
   .ooh-heading.gush-ooh_main_heading {
     line-height: 1;
   }
-  .vibe--selection__text {
+  .vibe--selection__text,
+  .filtered_product_section {
     padding-top: 70px;
   }
 }
@@ -33,7 +35,8 @@
   .ooh-heading.gush-ooh_main_heading {
     line-height: 2.5;
   }
-  .vibe--selection__text {
+  .vibe--selection__text,
+  .filtered_product_section {
     padding-top: 95px;
   }
 }
