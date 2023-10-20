@@ -20,7 +20,7 @@
 .header__promo--button .cta-button {
   height: 35px;
   width: 104px;
-  border-radius: 4px;
+  border-radius: 1px;
   font-size: 16px !important;
   font-weight: 400 !important;
 }
