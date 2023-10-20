@@ -57,6 +57,16 @@
     },
     "0e98d41b-c752-4893-a06c-9b9db5b2ef68": {
       "type": "OOH_product_filters",
+      "blocks": {
+        "ad54c593-d5e9-442f-bc23-11a529fd6314": {
+          "type": "whats-include-inside",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ad54c593-d5e9-442f-bc23-11a529fd6314"
+      ],
       "settings": {
         "heading": "",
         "vibe_collections": [
