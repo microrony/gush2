@@ -8,6 +8,7 @@
   color: #311A08;
   text-align: left;
   font-size: 32px;
+  line-height: 1;
 }
 .vibe--selection__text,
 .filtered_product_section,
@@ -15,6 +16,9 @@
 #ooh_survey_section,
 #OOH_order_details_section {
   padding-top: 45px;
+}
+#ooh_survey_section {
+  padding-top: 65px;
 }
 @media only screen and (min-width: 740px) {
   .ooh-heading {
