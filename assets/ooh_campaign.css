@@ -1045,11 +1045,6 @@ a.ooh_hyperlink_tc {
     right: 17%;
   }
   .package_you_get--wrapper {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    top: 0;
-    flex-direction: column;
     padding-top: 70px;
     margin-bottom: 0;
   }
