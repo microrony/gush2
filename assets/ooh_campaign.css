@@ -580,6 +580,12 @@ font-weight: 400;
   font-size: 5rem;
 }
 
+.order--value {
+  padding: 1rem;
+  background: #e6e6e6;
+  border-radius: 1rem;
+}
+
 .order-details-container .order{
   position: relative;
   width: 100%;
