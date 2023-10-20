@@ -266,7 +266,9 @@ button.slick-disabled {
 
 #ooh_survey_section {
   background: #F9F4F0;
-      padding: 40px 0;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .survey_question1,.survey_question2 {
   font-size: 24px;
