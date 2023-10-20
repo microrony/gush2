@@ -268,7 +268,7 @@
                 {%- if block.settings.button_label_1 != blank -%}
                   <a {% if block.settings.button_link_1 == blank %}role="link" aria-disabled="true" {% else %}
                     href="{{ block.settings.button_link_1 }}" {% endif %}
-                    class="ooh_gif_cta_button cta-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} gush-font-teritary cta-button__primary{% endif %}">
+                    class="ooh_gif_cta_button cta-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} gush-font-teritary cta-button__primary{% endif %} jump-to-destination">
                     <span>{{ block.settings.button_label_1 | escape }}
                     </span>
                     {% render 'arrow-dotted-black' %}
