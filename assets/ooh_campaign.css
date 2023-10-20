@@ -1155,3 +1155,8 @@ select#collection-filter-select:focus-visible {
 .display_none {
   display:none;
 }
+@media screen and (max-width: 1024px) {
+  .order-details-container .order .order-header {
+    width: 437px;
+  }
+}
