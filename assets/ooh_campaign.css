@@ -21,7 +21,7 @@
     line-height: 1;
   }
   .vibe--selection__text {
-    padding-top: 55px;
+    padding-top: 70px;
   }
 }
 
@@ -32,6 +32,9 @@
   }
   .ooh-heading.gush-ooh_main_heading {
     line-height: 2.5;
+  }
+  .vibe--selection__text {
+    padding-top: 95px;
   }
 }
 
