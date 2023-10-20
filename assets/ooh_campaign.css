@@ -1,3 +1,23 @@
+.ooh-heading {
+  font-family: ABCCamera;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.625;
+}
+@media only screen and (min-width: 740px) {
+  .ooh-heading {
+    font-size: 48px;
+    line-height: 1.2918;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .ooh-heading {
+    font-size: 64px;
+    line-height: 1.25;
+  }
+}
+
 #ooh_package_you_get_section{
   /* padding-top:50px; */
   text-align:center;
