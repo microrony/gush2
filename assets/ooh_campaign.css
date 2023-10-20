@@ -1176,3 +1176,7 @@ select#collection-filter-select:focus-visible {
   width: 100%;
   max-width: 437px;
 }
+
+.tnc_acknowledge_section p {
+  line-height: 1;
+}
