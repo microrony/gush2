@@ -25,27 +25,31 @@
           >
           <label for="{{ formId }}-LastName">{{ 'customer.register.last_name' | t }}</label>
         </div>
-      
-        <div class="field {{ formId }}-email">
-          <label for="{{ formId }}-email">{{ 'customer.register.email' | t }}</label>
+
+        <div class="field">      
           <input
+            bss-b2b-is-email-field
             type="email"
             name="customer[email]"
             id="{{ formId }}-email"
             class="{% if form.errors contains 'email' %} input--error{% endif %}"
-            {% if form.email %}
-            value="{{ form.email }}"
-            {% endif %}
+            {% if form.email %} value="{{ form.email }}"{% endif %}
+            spellcheck="false"
             autocorrect="off"
             autocapitalize="off"
             autocomplete="email"
             aria-required="true"
-            {%- if form.errors contains 'email' -%}
-            class="input--error"
-            aria-invalid="true"
-            aria-describedby="{{ formId }}-email-error"
-            {%- endif -%}>
+            {% if form.errors contains 'email' %}
+              aria-invalid="true"
+              aria-describedby="{{ formId }}-email-error"
+            {% endif %}
+            placeholder="{{ 'customer.register.email' | t }}"
+          >
+          <label for="{{ formId }}-email">
+            {{ 'customer.register.email' | t }}
+          </label>
         </div>
+      
         {%- if form.errors contains 'email' -%}
           <span id="{{ formId }}-email-error" class="input-error-message">
             <span class="visually-hidden">{{ 'general.accessibility.error' | t }}
@@ -55,19 +59,20 @@
           </span>
         {%- endif -%}
         {%- if bss-b2b-include-password == true -%}
-          <div class="field {{ formId }}-password">
-            <label for="{{ formId }}-password">{{ 'customer.register.password' | t }}</label>
+          <div class="field">     
             <input
               type="password"
               name="customer[password]"
               id="{{ formId }}-password"
               class="{% if form.errors contains 'password' %} input--error{% endif %}"
               aria-required="true"
-              {%- if form.errors contains 'password' -%}
-              class="input--error"
-              aria-invalid="true"
-              aria-describedby="{{ formId }}-password-error"
-              {%- endif -%}>
+              {% if form.errors contains 'password' %}
+                aria-invalid="true"
+                aria-describedby="{{ formId }}-password-error"
+              {% endif %}
+              placeholder="{{ 'customer.register.password' | t }}"
+            >
+            <label for="{{ formId }}-password">{{ 'customer.register.password' | t }}</label>
           </div>
         {%- endif -%}
         {%- if form.errors contains 'password' and bss-b2b-include-password == true -%}
