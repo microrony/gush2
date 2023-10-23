@@ -15,7 +15,8 @@
 .package_you_get--wrapper,
 #ooh_survey_section,
 #OOH_order_details_section {
-  padding-top: 36px;
+  padding-top: 36px;   
+/* changed by vikrant */
 }
 #ooh_survey_section {
   padding-top: 65px;
