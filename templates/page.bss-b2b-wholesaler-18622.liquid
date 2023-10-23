@@ -1,25 +1,27 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+{% style %}
+  
+{% endstyle %}
+{{ 'bss-b2b-state.js' | asset_url | script_tag }}
+<script id="bss-b2b-wholesaler-form">
+  if (typeof BSS_B2B == 'undefined') {
+    var BSS_B2B = {};
+  }
+  BSS_B2B.formDataRender = [{"type":"text","required":true,"label":"Company","placeholder":"Company name","className":"form-control","name":"text-1698093742081-0","access":false,"subtype":"text","placement":"bottom"},{"type":"file","required":true,"label":"Company registration document","className":"form-control","name":"file-1698093800966-0","access":false,"placement":"bottom"}];
+  BSS_B2B.formId = 18622;
+  BSS_B2B.reCAPCHA = 1;
+  BSS_B2B.CAPCHA_SITE_KEY = "6LcYPEgbAAAAAKEQdimI1PPA4vuOJHxNb5p6eLUo";
+  BSS_B2B.status = 1;
+  BSS_B2B.created_account = 3;
+  BSS_B2B.redirect_url = "";
+  BSS_B2B.taxExempt = 1;
+  BSS_B2B.formPrivacyPolicyStatus = 1;
+  BSS_B2B.formPrivacyPolicyContent = `<p>By clicking Create, I confirm that I have read and accepted the <a href="../">privacy policy</a></p>`;
+  BSS_B2B.conditionalLogic = [];
+</script>
+<style>null</style>
 
-            {{ 'bss-b2b-state.js' | asset_url | script_tag }}
-            <script id="bss-b2b-wholesaler-form">
-            if (typeof BSS_B2B == 'undefined') {
-              var BSS_B2B = {};
-            }
-            BSS_B2B.formDataRender = [{"type":"text","required":true,"label":"Company","placeholder":"Company name","className":"form-control","name":"text-1698093742081-0","access":false,"subtype":"text","placement":"bottom"},{"type":"file","required":true,"label":"Company registration document","className":"form-control","name":"file-1698093800966-0","access":false,"placement":"bottom"}];
-            BSS_B2B.formId = 18622;
-            BSS_B2B.reCAPCHA = 1;
-            BSS_B2B.CAPCHA_SITE_KEY = "6LcYPEgbAAAAAKEQdimI1PPA4vuOJHxNb5p6eLUo";
-            BSS_B2B.status = 1;
-            BSS_B2B.created_account = 3;
-            BSS_B2B.redirect_url = "";
-            BSS_B2B.taxExempt = 1;
-            BSS_B2B.formPrivacyPolicyStatus = 1;
-            BSS_B2B.formPrivacyPolicyContent = `<p>By clicking Create, I confirm that I have read and accepted the <a href="../">privacy policy</a></p>`;
-            BSS_B2B.conditionalLogic = [];
-            </script>
-            <style>null</style>
-            
-            {% assign bss-b2b-include-password = true %}
-
+{% assign bss-b2b-include-password = true %}
 
 <div class="customer register">
   <svg style="display: none">
