@@ -6,7 +6,7 @@
   }
 {% endschema %}
 {% if bss-b2b-enable-form %}
-  <div class="grid__item medium-up--one-half medium-up--push-one-quarter">
+  <div class="{% comment %}grid__item medium-up--one-half medium-up--push-one-quarter{% endcomment %}">
     <div class="form-vertical">
       {%- assign formId = 'RegisterForm' -%}
       {% form 'create_customer', id: formId %}
