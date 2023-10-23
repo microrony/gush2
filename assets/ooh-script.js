@@ -12,6 +12,7 @@ class OOHCampaignComponent extends HTMLElement {
     this.statusTextEl = this.querySelector('.text--status')
 
     this.selectedVariants = []
+    this.selectedColors = []
     
     this.q1 = ""
     this.q2 = ""
@@ -90,14 +91,11 @@ class OOHCampaignComponent extends HTMLElement {
     const el = e.currentTarget
     const destination = el.getAttribute('href')
     const destinationEl = document.querySelector(destination)
-    console.log(destinationEl)
 
     if(destinationEl) {
       const windowHeight = window.innerHeight;
       const elementHeight = destinationEl.clientHeight;
       const offset = 100;
-console.log(destinationEl)
-      console.log(destinationEl.offsetTop)
       window.scrollTo({
         top: destinationEl.offsetTop - offset,
         behavior: "smooth"
@@ -270,19 +268,13 @@ console.log(destinationEl)
         document.cookie = "ooh_campaign=" + JSON.stringify(cookieData) + "; expires=3m; path=/";
         window.location.href = '/checkout?discount=ohmygush'
 
-        webengage.track("color_", {
-            /* Numbers */
-            "Product ID" : 1337,
-            "Price"      : 39.80,
-            "Quantity"   : 1,
-        
-            /* Strings */
-            "Product"    : "Givenchy Pour Homme Cologne",
-            "Category"   : "Fragrance",
-            "Currency"   : "USD",
-        
-            /* Boolean */
-            "Discounted" : true
+        webengage.track("ohmygush_campaign", {
+          "ProductColor1": "Astral",
+          "ProductColor2": "KittyKat",
+          "ProductColor3": "Malfoy",
+          "Number of Selected Products": 3,
+          "What are you painting" : q1,
+          "How soon you want to start" : q2
         });
       })
       .catch(err => console.log(err))
@@ -382,6 +374,8 @@ console.log(destinationEl)
   updateOrderMarker() {
     const orderMarkers = this.querySelectorAll('.order-marker span')
     const selectedElements = this.querySelectorAll('input.vibe_input[type="checkbox"]:checked')
+    this.selectedColors = []
+    selectedElements.forEach(el => this.selectedColors.push(el))
 
     orderMarkers.forEach((marker, i) => {
       const input = selectedElements[i]
