@@ -618,7 +618,7 @@ button.quantity__button {
                               {{ 'products.product.sold_out' | t }}
                             {%- endif -%}
                           </span>
-                          <span class="variant-price" bss-b2b-product-id="{{ product.id }}" bss-b2b-product-price>
+                          <span class="variant-price" bss-b2b-product-id="{{ product.id }}" bss-b2b-product-price bss-b2b-variant-id="{{ product.selected_or_first_available_variant.id }}" bss-b2b-variant-price>
                             {%-liquid
                               assign variant_price = product.selected_or_first_available_variant.price | money
                               if settings.currency_code_enabled
