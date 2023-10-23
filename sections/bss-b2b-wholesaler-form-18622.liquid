@@ -13,36 +13,19 @@
         <div id="bss-b2b-registration-form-top"></div>
 
         <div class="field">      
-          <input
-            type="text"
-            name="customer[first_name]"
-            id="RegisterForm-FirstName"
+          <input type="text" name="customer[first_name]" id="{{ formId }}-FirstName" autocomplete="given-name" placeholder="{{ 'customer.register.first_name' | t }}"
             {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
-            autocomplete="given-name"
-            placeholder="{{ 'customer.register.first_name' | t }}"
           >
-          <label for="RegisterForm-FirstName">
-            {{ 'customer.register.first_name' | t }}
-          </label>
-        </div>
-        <div class="field">
           <label for="{{ formId }}-FirstName">{{ 'customer.register.first_name' | t }}</label>
-          <input
-            type="text"
-            name="customer[first_name]"
-            id="{{ formId }}-FirstName"
-            {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
-            autocomplete="given-name" />
         </div>
-        <div class="field {{ formId }}-LastName">
-          <label for="{{ formId }}-LastName">{{ 'customer.register.last_name' | t }}</label>
-          <input
-            type="text"
-            name="customer[last_name]"
-            id="{{ formId }}-LastName"
+      
+        <div class="field">      
+          <input type="text" name="customer[last_name]" id="{{ formId }}-LastName" autocomplete="family-name" placeholder="{{ 'customer.register.last_name' | t }}"
             {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
-            autocomplete="family-name" />
+          >
+          <label for="{{ formId }}-LastName">{{ 'customer.register.last_name' | t }}</label>
         </div>
+      
         <div class="field {{ formId }}-email">
           <label for="{{ formId }}-email">{{ 'customer.register.email' | t }}</label>
           <input
