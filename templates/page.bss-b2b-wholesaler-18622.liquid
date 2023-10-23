@@ -1,7 +1,7 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 {% style %}
   @media screen and (min-width: 750px) {
-    .customer.b2b-register {
+    .customer.b2b-register:not(.account):not(.order) {
       max-width: 100%;
     }
   }
