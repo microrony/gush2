@@ -1042,6 +1042,11 @@ a.ooh_hyperlink_tc {
   flex-direction: column;
   overflow:hidden;
 }
+  .shipping_charge {
+  gap: 4px;
+  font-size:1.4rem;
+
+}
 }
 
 @media only screen and (min-width: 410px) {
