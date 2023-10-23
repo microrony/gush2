@@ -269,9 +269,9 @@ class OOHCampaignComponent extends HTMLElement {
         window.location.href = '/checkout?discount=ohmygush'
 
         webengage.track("ohmygush_campaign", {
-          "ProductColor1": "Astral",
-          "ProductColor2": "KittyKat",
-          "ProductColor3": "Malfoy",
+          "ProductColor1": this.selectedColors[0],
+          "ProductColor2": this.selectedColors[1],
+          "ProductColor3": this.selectedColors[2],
           "Number of Selected Products": 3,
           "What are you painting" : q1,
           "How soon you want to start" : q2
