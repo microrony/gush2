@@ -265,8 +265,25 @@ console.log(destinationEl)
         const cookieData = {
           checkout: true
         }
+
+        
         document.cookie = "ooh_campaign=" + JSON.stringify(cookieData) + "; expires=3m; path=/";
         window.location.href = '/checkout?discount=ohmygush'
+
+        webengage.track("color_", {
+            /* Numbers */
+            "Product ID" : 1337,
+            "Price"      : 39.80,
+            "Quantity"   : 1,
+        
+            /* Strings */
+            "Product"    : "Givenchy Pour Homme Cologne",
+            "Category"   : "Fragrance",
+            "Currency"   : "USD",
+        
+            /* Boolean */
+            "Discounted" : true
+        });
       })
       .catch(err => console.log(err))
     }
