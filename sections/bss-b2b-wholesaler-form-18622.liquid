@@ -83,10 +83,15 @@
         {%- endif -%}
         <div id="bss-b2b-registration-form-render"></div>
         <p class="text-center">
+          {% comment %}
           <input
             type="submit"
             value="{{ 'customer.register.submit' | t }}"
             class="btn">
+          {% endcomment %}
+          <button type="submit">
+            {{ 'customer.register.submit' | t }}
+          </button>
         </p>
       {% endform %}
     </div>
