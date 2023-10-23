@@ -63,7 +63,7 @@
     </div>
     <div class="field">      
       <input
-        type="email"
+        bss-b2b-is-email-field type="email"
         name="customer[email]"
         id="RegisterForm-email"
         {% if form.email %} value="{{ form.email }}"{% endif %}
@@ -118,3 +118,4 @@
     </button>
   {%- endform -%}
 </div>
+{% include 'bss-b2b-wholesaler-default-login-form' %}
