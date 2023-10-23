@@ -93,12 +93,12 @@
                           {{ 'products.product.price.sale_price' | t }}
                         </span>
                         <strong class="cart-item__final-price product-option">
-                          {{ item.final_price | money }}
+                          <span bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-item-final-price>{{ item.final_price | money }}</span>
                         </strong>
                       </div>
                     {%- else -%}
                       <div class="product-option">
-                        {{ item.original_price | money }}
+                        <span bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-item-original-price>{{ item.original_price | money }}</span>
                       </div>
                     {%- endif -%}
 
@@ -161,19 +161,19 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_line_price | money }}
+                              <span bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-original-line-price>{{ item.original_line_price | money }}</span>
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_line_price | money }}
+                            <span bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-final-line-price>{{ item.final_line_price | money }}</span>
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          <span bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-original-line-price>{{ item.original_line_price | money }}</span>
                         </span>
                       {%- endif -%}
 
@@ -251,19 +251,19 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_line_price | money }}
+                              <span bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-original-line-price>{{ item.original_line_price | money }}</span>
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_line_price | money }}
+                            <span bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-final-line-price>{{ item.final_line_price | money }}</span>
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          <span bss-b2b-cart-item-key="{{ item.key }}" bss-b2b-original-line-price>{{ item.original_line_price | money }}</span>
                         </span>
                       {%- endif -%}
 
