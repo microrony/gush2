@@ -1,5 +1,10 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 {% style %}
+  @media screen and (min-width: 750px) {
+    .customer.b2b-register {
+      max-width: 100%;
+    }
+  }
   
 {% endstyle %}
 {{ 'bss-b2b-state.js' | asset_url | script_tag }}
@@ -23,7 +28,7 @@
 
 {% assign bss-b2b-include-password = true %}
 
-<div class="customer register">
+<div class="customer register b2b-register">
   <svg style="display: none">
     <symbol id="icon-error" viewBox="0 0 13 13">
       <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"></circle>
