@@ -846,6 +846,7 @@ font-size: 13px;
   transition: all 0.3s ease-in-out;
   cursor: not-allowed;
   position: relative;
+  overflow: hidden;
 }
 .selection--status.active {
   /* background-color: rgba(var(--color-gush-fuschia)); */
