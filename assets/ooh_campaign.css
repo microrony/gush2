@@ -335,7 +335,7 @@ font-weight: 400;
 }
 .checkout_button{
   display: flex;
-  padding: 20px;
+  padding: 15px 20px;
   align-items: center;
   gap: 40px;
   border-radius: 1px;
@@ -348,7 +348,6 @@ font-weight: 400;
   font-style: normal;
   color: #302112;
   position: relative;
-  height: 45px;
 }
 
 .checkout_button:disabled {
