@@ -343,6 +343,10 @@ font-weight: 400;
   cursor: pointer;
   margin-right:auto;
   margin-left:0;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  font-style: normal;
+  color: #302112;
 }
 
 .checkout_button:disabled {
