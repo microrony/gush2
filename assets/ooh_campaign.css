@@ -881,7 +881,7 @@ font-size: 13px;
 
 .status--wrapper {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   display: flex;
   align-items: center;
 }
