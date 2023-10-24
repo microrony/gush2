@@ -964,7 +964,7 @@ font-size: 13px;
 .vibe-selection-slider .slide-bg {
   position: relative;
   display: block;
-  padding-bottom: 101.54%;
+  /* padding-bottom: 101.54%; */
 }
 
 .slide-bg::before {
