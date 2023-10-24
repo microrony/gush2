@@ -847,9 +847,12 @@ font-size: 13px;
   cursor: not-allowed;
 }
 .selection--status.active {
-  background-color: #302112;
-  color: #ffffff;
+  background-color: rgba(var(--color-gush-fuschia));
+  color: #302112;
   cursor: default;
+}
+.selection--status.active:hover {
+  color: rgba(var(--color-gush-fuschia));
 }
 .helper--text {
   padding-left: 4px;
