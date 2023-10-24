@@ -30,7 +30,7 @@ class OOHCampaignComponent extends HTMLElement {
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
     this.selectToggle.addEventListener('click', this.openToggler.bind(this))
     this.placeOrderBtn.addEventListener('click', e => {
-      console.log(e)
+      this.form.submit()
     })
 
     const jumpToEls = document.querySelectorAll('.jump-to-destination')
