@@ -348,6 +348,7 @@ font-weight: 400;
   font-style: normal;
   color: #302112;
   position: relative;
+  height: 54px;
 }
 
 .checkout_button:disabled {
