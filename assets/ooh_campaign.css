@@ -347,10 +347,19 @@ font-weight: 400;
   font-weight: 500 !important;
   font-style: normal;
   color: #302112;
+  position: relative;
 }
 
 .checkout_button:disabled {
   background: #ded8e1;
+}
+.checkout_button:disabled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
  .left_right_container {
     display: flex;
