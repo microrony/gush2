@@ -360,6 +360,7 @@ font-weight: 400;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2;
 }
  .left_right_container {
     display: flex;
