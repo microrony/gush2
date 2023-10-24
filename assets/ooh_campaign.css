@@ -1104,13 +1104,14 @@ a.ooh_hyperlink_tc {
 
 }
 }
-
+@media only screen and (max-width: 390px) {
+  .collection_button {
+    width: 53%;
+  }
+}
 @media only screen and (min-width: 410px) {
   .selection--status-wrapper {
     padding: 0px 45px;
-  }
-  .collection_button {
-    width: 53%;
   }
 }
 
