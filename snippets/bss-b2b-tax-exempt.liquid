@@ -8,16 +8,16 @@
         {% assign bss_b2b_vat_exempt_selected = "0" %}
         {% assign show_vat_apply_to = "0" %}
         {% assign show_vat_customer_tags = "" | split: "," %}
-        {% assign tax_exempt_form_header_text = "undefined" %}
-        {% assign tax_exempt_form_subtitle_text = "undefined" %}
-        {% assign tax_exempt_form_header_text_gst = "undefined" %}
-        {% assign tax_exempt_form_subtitle_text_gst = "undefined" %}
-        {% assign tax_exempt_form_header_text_abn = "undefined" %}
-        {% assign tax_exempt_form_subtitle_text_abn = "undefined" %}
-        {% assign tax_exempt_form_header_text_uk = "undefined" %}
-        {% assign tax_exempt_form_subtitle_text_uk = "undefined" %}
-        {% assign tax_exempt_form_header_text_us_ein = "undefined" %}
-        {% assign tax_exempt_form_subtitle_text_us_ein = "undefined" %}
+        {% assign tax_exempt_form_header_text = "EU VAT ID" %}
+        {% assign tax_exempt_form_subtitle_text = "(VAT will be deducted at payment step)" %}
+        {% assign tax_exempt_form_header_text_gst = "India GST Identification Number" %}
+        {% assign tax_exempt_form_subtitle_text_gst = "(India GST will be deducted at payment step)" %}
+        {% assign tax_exempt_form_header_text_abn = "ABN Registration Number" %}
+        {% assign tax_exempt_form_subtitle_text_abn = "(ABN will be deducted at payment step)" %}
+        {% assign tax_exempt_form_header_text_uk = "UK VAT Registration Number" %}
+        {% assign tax_exempt_form_subtitle_text_uk = "(UK VAT will be deducted at payment step)" %}
+        {% assign tax_exempt_form_header_text_us_ein = "US EIN Registration Number" %}
+        {% assign tax_exempt_form_subtitle_text_us_ein = "(US Tax will be deducted at payment step)" %}
         {% capture taxExemptForm %}<div class="bss-b2b-tax-ex-wrapper">
   <h3 class="bss-vat-exempt-form-header-text">
     {% if bss_b2b_vat_exempt_selected == '0'%}<span class="bss-b2b-translation-vat-form_header_text">{{ tax_exempt_form_header_text }}</span>{%endif%}
