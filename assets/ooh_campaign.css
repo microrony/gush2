@@ -870,6 +870,13 @@ font-size: 13px;
 .selection--status.active:hover {
   color: rgba(var(--color-gush-fuschia));
 }
+
+.status--wrapper {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+}
 .helper--text {
   padding-left: 4px;
 }
