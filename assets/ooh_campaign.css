@@ -1158,10 +1158,10 @@ a.ooh_hyperlink_tc {
     max-width: 700px;
   }
   .vibe-selection-slider .slide-bg {
-    padding-bottom: 56.25%;
+    /* padding-bottom: 56.25%; */
   }
   .vibe--selection__button {
-    padding-bottom: 125px;
+    padding-bottom: 70px;
   }
   .vibe--selection__prev-next-btn {
     top: 50%;
