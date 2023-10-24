@@ -845,12 +845,21 @@ font-size: 13px;
   margin-top: 38px;
   transition: all 0.3s ease-in-out;
   cursor: not-allowed;
+  position: relative;
 }
 .selection--status.active {
   /* background-color: rgba(var(--color-gush-fuschia)); */
   background-color: #ffffff;
   color: #302112;
   cursor: default;
+}
+.selection--status.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--color-gush-fuschia));
+  z-index: 1;
 }
 .selection--status.active:hover {
   color: rgba(var(--color-gush-fuschia));
