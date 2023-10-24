@@ -3188,3 +3188,6 @@ h4,
 	transform-origin: 0% 50%;
 	will-change: transform;
 } */
+
+#loyaltylion-beacon-frame { display: none !important; }
+
