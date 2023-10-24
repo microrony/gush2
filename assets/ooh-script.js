@@ -5,6 +5,8 @@ class OOHCampaignComponent extends HTMLElement {
     this.form = this.querySelector('#vibe-selection')
     this.filter = this.form.querySelector('select#collection-filter-select')
     this.selectToggle = this.querySelector('.vibe_selection_strip_label')
+
+    this.placeOrderBtn = this.querySelector('#btn_atc')
     
     this.selectedColors = []
     this.colorInfoEl = this.querySelector('#selected_colors span')
@@ -27,6 +29,9 @@ class OOHCampaignComponent extends HTMLElement {
     this.filter.addEventListener('change', this.handleFilterChange.bind(this))
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
     this.selectToggle.addEventListener('click', this.openToggler.bind(this))
+    this.placeOrderBtn.addEventListener('click', e => {
+      console.log(e)
+    })
 
     const jumpToEls = document.querySelectorAll('.jump-to-destination')
     jumpToEls.forEach(el => {
