@@ -190,7 +190,7 @@ class OOHCampaignComponent extends HTMLElement {
 
   handleSubmit(e) {
     e.preventDefault()
-
+console.log(e)
     const cookies = this.getCookies()
     if(!cookies.ooh_campaign) {
       if(this.selectedVariants.length < 3) {
