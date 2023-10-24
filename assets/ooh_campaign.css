@@ -755,6 +755,7 @@ font-size: 13px;
     font-weight: 500 !important;
     font-style: normal;
     color:#302112;
+  height: 54px;
   }
   .vibe__container {
     --container-height: 379px;
