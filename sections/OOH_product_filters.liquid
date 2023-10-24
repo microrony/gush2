@@ -172,7 +172,7 @@
           {% for collection in vibe_collections %}
             {% assign image = collection.featured_image %}
             {% assign image_mobile = collection.metafields.images.mobile_image %}
-
+--{{ image_mobile }}--
             {% unless image_mobile %}
               {% assign image_mobile = collection.featured_image %}
             {% endunless %}
