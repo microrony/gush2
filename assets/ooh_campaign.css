@@ -1011,10 +1011,10 @@ font-size: 13px;
   height: 100%;
 }
 .vibe--selection__prev-next-btn-prev {
-  left: 50px;
+  left: 30px;
 }
 .vibe--selection__prev-next-btn-next {
-  right: 50px;
+  right: 30px;
 }
 
 .icon--arrow {
