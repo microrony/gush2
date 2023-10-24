@@ -352,7 +352,9 @@ font-weight: 400;
 }
 
 @media only screen and (max-width: 767px) {
-  width: 188px;
+  .checkout_button {
+    width: 188px;
+  }
 }
 
 .checkout_button:disabled {
