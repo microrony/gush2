@@ -876,8 +876,9 @@ font-size: 13px;
 .icon--eye-container svg path {
   fill: #302112;
 }
+
 .selection--status.active .icon--eye-container svg path {
-  fill: #ffffff;
+  fill: #302112;
 }
 .icon--status,
 .icon--eye {
