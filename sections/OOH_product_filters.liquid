@@ -173,9 +173,9 @@
             {% assign image = collection.featured_image %}
             {% assign image_mobile = collection.metafields.images.mobile_image %}
 
-            {% if image_mobile == blank %}
+            {% unless image_mobile %}
               {% assign image_mobile = collection.featured_image %}
-            {% endif %}
+            {% endunless %}
             {% style %}
               .vibe-selection-slider .slide-bg {
                 padding-bottom: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;
