@@ -860,6 +860,7 @@ font-size: 13px;
   height: 100%;
   background: rgba(var(--color-gush-fuschia));
   z-index: 1;
+  transition: top ease .35s;
 }
 .selection--status.active:hover::before {
   top: -100%;
