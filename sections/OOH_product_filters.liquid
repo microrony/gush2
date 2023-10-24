@@ -177,9 +177,6 @@
               {% assign image_mobile = collection.featured_image %}
             {% endif %}
             {% style %}
-              .vibe-selection-slider .slide-bg {
-                padding-bottom: {{ 1 | divided_by: image_mobile.aspect_ratio | times: 100 }}%;
-              }
               [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg::before {
                 background: url("{{ image_mobile | image_url: width: 1000 }}") no-repeat center center/cover;
               }
@@ -191,7 +188,7 @@
             {% endstyle %}
             <div class="swiper-slide" data-slide="vibe-slide-{{ collection.handle }}">
               <div class="content--wrapper">
-                <div class="slide-bg"></div>
+                <div class="slide-bg" style="padding-bottom: {{ 1 | divided_by: image_mobile.aspect_ratio | times: 100 }}%;"></div>
                 <div class="vibe--selection__text">
                   <p class="ooh_vibe_selection_title ooh-heading">What’s your vibe?</p>
                 </div>
