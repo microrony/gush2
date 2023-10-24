@@ -171,19 +171,21 @@
         <div class="swiper-wrapper">
           {% for collection in vibe_collections %}
             {% assign image = collection.featured_image %}
-            {% assign image_mobile = collection.metafields.images.mobile_image %}
---{{ image_mobile.aspect_ratio }}--
+            {% assign image_mobile = collection.metafields.images.mobile_image.value %}
             {% unless image_mobile %}
               {% assign image_mobile = collection.featured_image %}
             {% endunless %}
             {% style %}
               .vibe-selection-slider .slide-bg {
-                padding-bottom: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;
+                padding-bottom: {{ 1 | divided_by: image_mobile.aspect_ratio | times: 100 }}%;
               }
               [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg::before {
                 background: url("{{ image_mobile | image_url: width: 1000 }}") no-repeat center center/cover;
               }
               @media only screen and (min-width: 740px) {
+                .vibe-selection-slider .slide-bg {
+                  padding-bottom: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;
+                }
                 [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg::before {
                   background: url("{{ image | image_url: width: 2000 }}") no-repeat center center/cover;
                 }
