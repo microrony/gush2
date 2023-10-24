@@ -881,6 +881,10 @@ font-size: 13px;
 .selection--status.active .icon--eye-container svg path {
   fill: #302112;
 }
+
+.selection--status.active:hover .icon--eye-container svg path {
+  fill: rgba(var(--color-gush-fuschia));
+}
 .icon--status,
 .icon--eye {
   height: 22px;
