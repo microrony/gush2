@@ -353,7 +353,7 @@ font-weight: 400;
 .checkout_button:disabled {
   background: #ded8e1;
 }
-.checkout_button:disabled::after {
+.checkout_button:disabled .btn_atc_text::after {
   content: "";
   position: absolute;
   top: 0;
