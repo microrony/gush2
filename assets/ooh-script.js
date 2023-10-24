@@ -6,7 +6,7 @@ class OOHCampaignComponent extends HTMLElement {
     this.filter = this.form.querySelector('select#collection-filter-select')
     this.selectToggle = this.querySelector('.vibe_selection_strip_label')
 
-    this.placeOrderBtn = this.querySelector('#btn_atc')
+    this.placeOrderBtn = this.querySelector('.btn_atc_text')
     
     this.selectedColors = []
     this.colorInfoEl = this.querySelector('#selected_colors span')
