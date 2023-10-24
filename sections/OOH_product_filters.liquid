@@ -177,7 +177,8 @@
             {% endunless %}
             {% style %}
               [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg {
-                padding-bottom: {{ 1 | divided_by: image_mobile.aspect_ratio | times: 100 }}%;
+                /* padding-bottom: {{ 1 | divided_by: image_mobile.aspect_ratio | times: 100 }}%; */
+                padding-bottom: 100vh;
               }
               [data-slide="vibe-slide-{{ collection.handle }}"] .slide-bg::before {
                 background: url("{{ image_mobile | image_url: width: 1000 }}") no-repeat center center/cover;
