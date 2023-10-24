@@ -30,7 +30,8 @@ class OOHCampaignComponent extends HTMLElement {
     this.form.addEventListener('submit', this.handleSubmit.bind(this))
     this.selectToggle.addEventListener('click', this.openToggler.bind(this))
     this.placeOrderBtn.addEventListener('click', e => {
-      this.form.submit()
+      const event = new Event('submit')
+      this.form.dispatchEvent(event)
     })
 
     const jumpToEls = document.querySelectorAll('.jump-to-destination')
@@ -195,7 +196,6 @@ class OOHCampaignComponent extends HTMLElement {
 
   handleSubmit(e) {
     e.preventDefault()
-console.log(e)
     const cookies = this.getCookies()
     if(!cookies.ooh_campaign) {
       if(this.selectedVariants.length < 3) {
