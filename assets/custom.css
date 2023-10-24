@@ -219,7 +219,8 @@
   transform: scale(1.02);
 }
 
-.cta-button.cta-button__primary:hover * {
+.cta-button.cta-button__primary:hover *,
+.cta-button.cta-button__primary:hover {
   color: rgba(var(--color-gush-fuschia)) !important;
 }
 
