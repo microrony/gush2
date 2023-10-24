@@ -861,6 +861,9 @@ font-size: 13px;
   background: rgba(var(--color-gush-fuschia));
   z-index: 1;
 }
+.selection--status.active:hover::before {
+  top: -100%;
+}
 .selection--status.active:hover {
   color: rgba(var(--color-gush-fuschia));
 }
