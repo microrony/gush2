@@ -189,7 +189,7 @@
                 }
               }
             {% endstyle %}
-            <div class="swiper-slide" data-slide="vibe-slide-{{ collection.handle }}">
+            <div class="swiper-slide" data-slide="vibe-slide-{{ collection.handle }}" data-test="{{ 1 | divided_by: image.aspect_ratio }}">
               <div class="content--wrapper">
                 <div class="slide-bg"></div>
                 <div class="vibe--selection__text">
