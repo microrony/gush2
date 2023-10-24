@@ -847,7 +847,8 @@ font-size: 13px;
   cursor: not-allowed;
 }
 .selection--status.active {
-  background-color: rgba(var(--color-gush-fuschia));
+  /* background-color: rgba(var(--color-gush-fuschia)); */
+  background-color: #ffffff;
   color: #302112;
   cursor: default;
 }
