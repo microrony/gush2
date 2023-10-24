@@ -410,7 +410,7 @@ li.bss-qi-text-warning::before {
   display: inline;
 }
 </style>
-                    {% include "bss-b2b-cp-header"%}
+                    
                     
                     {% include "bss-b2b-dc-header"%}
                     {% include "bss-b2b-rf-header"%}
@@ -430,15 +430,10 @@ li.bss-qi-text-warning::before {
                         BSS_B2B.storeId = 14110;
                         BSS_B2B.currentPlan = "false";
                         BSS_B2B.planCode = "advanced";
-                        BSS_B2B.shopModules = [{"code":"qb","status":0},{"code":"cp","status":1},{"code":"act","status":1},{"code":"form","status":1},{"code":"tax_exempt","status":0},{"code":"amo","status":0},{"code":"mc","status":0},{"code":"public_api","status":0},{"code":"dc","status":1},{"code":"cart_note","status":0},{"code":"mo","status":0},{"code":"tax_display","status":0},{"code":"sr","status":0},{"code":"bogo","status":0},{"code":"qi","status":0},{"code":"ef","status":0}];
+                        BSS_B2B.shopModules = [{"code":"qb","status":0},{"code":"cp","status":0},{"code":"act","status":1},{"code":"form","status":1},{"code":"tax_exempt","status":0},{"code":"amo","status":0},{"code":"mc","status":0},{"code":"public_api","status":0},{"code":"dc","status":1},{"code":"cart_note","status":0},{"code":"mo","status":0},{"code":"tax_display","status":0},{"code":"sr","status":0},{"code":"bogo","status":0},{"code":"qi","status":0},{"code":"ef","status":0}];
                         BSS_B2B.integrationApp = [];
-                        BSS_B2B.customPricingSettings = null
+                        
                         var bssB2bApiServer = "https://b2b-solution-api.bsscommerce.com";
                         var bssB2bCmsUrl = "https://b2b-solution.bsscommerce.com";
                         var bssGeoServiceUrl = "https://geo-ip-service.bsscommerce.com";
-                    </script><style type="text/css">
-                    .shopify-payment-button__button, .shopify-payment-button__more-options{
-                             display: none !important;
-                    }
-                    .bss-b2b-btn-buyitnow { display: block !important; }
-                    meta[itemprop="price"] { display: none !important; }</style>
+                    </script>
