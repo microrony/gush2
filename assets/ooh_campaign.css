@@ -728,12 +728,12 @@ font-size: 13px;
     align-items: center;
     gap: 20px;
     width: 50%;
-    color: #fff;
     text-decoration: none;
     border-radius: 1px;
     font-size: 18px !important;
     font-weight: 500 !important;
     font-style: normal;
+    color:#302112;
   }
   .vibe__container {
     --container-height: 379px;
