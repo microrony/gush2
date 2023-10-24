@@ -722,7 +722,6 @@ font-size: 13px;
   font-family: 'GTAmerica';
     padding: 20px;
     border-radius: 1px;
-    border: 1px solid #ffffff;
     display: inline-flex;
     padding: 15px;
     justify-content: center;
@@ -731,7 +730,10 @@ font-size: 13px;
     width: 50%;
     color: #fff;
     text-decoration: none;
-      border-radius: 1px;
+    border-radius: 1px;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    font-style: normal;
   }
   .vibe__container {
     --container-height: 379px;
