@@ -10,13 +10,17 @@
   font-size: 32px;
   line-height: 1;
 }
-.vibe--selection__text,
+
 .filtered_product_section,
 .package_you_get--wrapper,
 #ooh_survey_section,
 #OOH_order_details_section {
   padding-top: 36px;   
 /* changed by vikrant */
+}
+.vibe--selection__text {
+  padding-top: 100px;   
+
 }
 #ooh_survey_section {
   padding-top: 65px;
@@ -59,6 +63,10 @@
   .vibe--selection__wrapper .vibe--selection__text {
     padding-top: 125px;
   }
+  .vibe--selection__button {
+    padding-bottom: 125px;
+    
+}
 }
 
 #ooh_package_you_get_section{
@@ -436,7 +444,7 @@ font-weight: 400;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  z-index: 999999;
+  z-index: 999;
 }
 
 .vibe_selection_strip_label {
@@ -844,7 +852,7 @@ font-size: 13px;
 }
 
 .selection--status {
-  padding: 16px 20px;
+  padding: 16px 32px;
   display: flex;
   max-width: 468px;
   justify-content: center;
@@ -984,8 +992,8 @@ font-size: 13px;
   justify-content: center;
 }
 .vibe--selection__button {
-  bottom: 0;
-  padding-bottom: 54px;
+bottom:0;
+  padding-bottom: 132px;
 }
 .vibe--selection__text {
   top: 0;
@@ -1011,10 +1019,10 @@ font-size: 13px;
   height: 100%;
 }
 .vibe--selection__prev-next-btn-prev {
-  left: 30px;
+  left: 10px;
 }
 .vibe--selection__prev-next-btn-next {
-  right: 30px;
+  right: 10px;
 }
 
 .icon--arrow {
@@ -1161,7 +1169,7 @@ a.ooh_hyperlink_tc {
     /* padding-bottom: 56.25%; */
   }
   .vibe--selection__button {
-    padding-bottom: 70px;
+    padding-bottom: 130px;
   }
   .vibe--selection__prev-next-btn {
     top: 50%;
