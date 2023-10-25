@@ -852,7 +852,7 @@ font-size: 13px;
 }
 
 .selection--status {
-  padding: 16px 32px;
+  padding: 16px 15px;
   display: flex;
   max-width: 468px;
   justify-content: center;
