@@ -984,7 +984,7 @@ font-size: 13px;
   justify-content: center;
 }
 .vibe--selection__button {
-
+bottom:0;
   padding-bottom: 54px;
 }
 .vibe--selection__text {
