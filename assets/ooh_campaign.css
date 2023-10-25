@@ -436,7 +436,7 @@ font-weight: 400;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  z-index: 999999;
+  z-index: 1;
 }
 
 .vibe_selection_strip_label {
