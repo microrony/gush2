@@ -10,13 +10,17 @@
   font-size: 32px;
   line-height: 1;
 }
-.vibe--selection__text,
+
 .filtered_product_section,
 .package_you_get--wrapper,
 #ooh_survey_section,
 #OOH_order_details_section {
-  padding-top: 100px;   
+  padding-top: 36px;   
 /* changed by vikrant */
+}
+.vibe--selection__text {
+  padding-top: 100px;   
+
 }
 #ooh_survey_section {
   padding-top: 65px;
