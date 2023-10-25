@@ -984,11 +984,11 @@ font-size: 13px;
   justify-content: center;
 }
 .vibe--selection__button {
-  bottom: 0;
-  padding-bottom: 54px;
+  bottom: 112px;
+  /* padding-bottom: 54px; */
 }
 .vibe--selection__text {
-  top: 0;
+  top: 40px;
 }
 .vibe--selection__wrapper {
   position: relative;
@@ -1011,10 +1011,10 @@ font-size: 13px;
   height: 100%;
 }
 .vibe--selection__prev-next-btn-prev {
-  left: 30px;
+  left: 10px;
 }
 .vibe--selection__prev-next-btn-next {
-  right: 30px;
+  right: 10px;
 }
 
 .icon--arrow {
