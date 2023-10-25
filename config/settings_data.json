@@ -197,6 +197,7 @@
         "blocks": {
           "ooh-announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Free shipping for paint pack bundles",
               "text_clr": "#ffffff",
