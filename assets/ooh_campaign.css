@@ -984,11 +984,11 @@ font-size: 13px;
   justify-content: center;
 }
 .vibe--selection__button {
-  bottom: 112px;
-  /* padding-bottom: 54px; */
+
+  padding-bottom: 54px;
 }
 .vibe--selection__text {
-  top: 36px;
+  top: 0;
 }
 .vibe--selection__wrapper {
   position: relative;
