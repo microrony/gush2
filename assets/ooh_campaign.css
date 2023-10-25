@@ -772,6 +772,8 @@ font-size: 13px;
     --container-height: 379px;
     position: relative;
     padding-bottom: var(--container-height);
+    z-index:0; 
+/* sazzad z-index */
   }
   .vibe__wrapper {
     position: relative;
