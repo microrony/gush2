@@ -334,6 +334,7 @@ class OOHCampaignComponent extends HTMLElement {
       const vibes = []
       console.log(value)
       if(el.checked) {
+        console.log('checked')
         if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
       }
       else {
