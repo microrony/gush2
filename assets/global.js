@@ -1182,6 +1182,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
     fetch("/cart.js", { method: 'GET', headers: { "Content-Type": "application/json" }})
     .then(res => res.json())
     .then(cart => {
+      console.log(cart)
       const discount = getCookie('discount_code')
     })
   }
