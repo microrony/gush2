@@ -87,7 +87,7 @@ class OOHCampaignComponent extends HTMLElement {
         },
         body: JSON.stringify({
           updates: this.removable,
-          notes: ""
+          note: ""
         })
       })
     })
