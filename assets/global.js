@@ -1183,7 +1183,12 @@ window.addEventListener('DOMContentLoaded', (e) => {
     .then(res => res.json())
     .then(cart => {
       if(cart.note.includes('What are you painting') && cart.note.includes('How soon do you want to start painting')) {
-        console.log(cart)
+        const data = {
+          updates: [],
+          note: ""
+        }
+        cart.items.forEach(_ => data.updates.push({`${_.id}`: 0}))
+        console.log(data)
       }
       const discount = getCookie('discount_code')
     })
