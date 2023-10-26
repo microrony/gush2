@@ -86,7 +86,8 @@ class OOHCampaignComponent extends HTMLElement {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          updates: this.removable
+          updates: this.removable,
+          notes: ""
         })
       })
     })
