@@ -326,12 +326,12 @@ class OOHCampaignComponent extends HTMLElement {
 
   handleChange(e) {
     const el = e.target
-    console.log('Target',e.target)
+    
     const formData = new FormData(this.form)
     const submitBtn = this.form.querySelector('button[type="submit"]')
     if(el.getAttribute('name') == 'vibe') {
       console.log(el)
-      const value = e.target.title
+      const value = el.getAttribute('data-title')
       const vibes = []
       console.log(value)
       if(el.checked) {
