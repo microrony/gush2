@@ -1160,3 +1160,13 @@ swiperEles.forEach( ele =>{
    }
 });
 })
+
+window.addEventListener('DOMContentLoaded', (e) => {
+  if(!window.location.pathname.includes('/pages/ohmygush')) {
+    fetch("/cart.js", { method: 'GET', headers: { "Content-Type": "application/json" }})
+    .then(res => res.json())
+    .then(cart => {
+      console.log(cart)
+    })
+  }
+})
