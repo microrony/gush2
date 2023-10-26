@@ -403,7 +403,7 @@
       @media only screen and (min-width: 740px) {
         [data-block-id="{{ block.id }}"] .ooh_package_banner {
           padding-bottom: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;
-          background: url("{{ image | img_url:"medium" }}") no-repeat center center/contain;
+          background: url("{{ image | img_url:"master" }}") no-repeat center center/contain;
         }
       }
     {%- endstyle -%}
