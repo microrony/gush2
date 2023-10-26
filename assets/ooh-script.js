@@ -329,7 +329,7 @@ class OOHCampaignComponent extends HTMLElement {
     const formData = new FormData(this.form)
     const submitBtn = this.form.querySelector('button[type="submit"]')
     if(el.getAttribute('name') == 'vibe') {
-      
+      console.log(el)
       const value = el.dataset.title
       const vibes = []
       
