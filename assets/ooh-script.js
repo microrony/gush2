@@ -338,7 +338,7 @@ class OOHCampaignComponent extends HTMLElement {
         console.log('checked')
         console.log(value)
         
-        if(!this.selectedColors.includes(value)) console.log(value)
+        if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
       }
       else {
         const newArray = this.selectedColors.filter(item => item !== value);
@@ -383,8 +383,8 @@ console.log('Selected colors',this.selectedColors)
   updateOrderMarker() {
     const orderMarkers = this.querySelectorAll('.order-marker span')
     const selectedElements = this.querySelectorAll('input.vibe_input[type="checkbox"]:checked')
-    this.selectedColors = []
-    selectedElements.forEach(el => this.selectedColors.push(el))
+    // this.selectedColors = []
+    // selectedElements.forEach(el => this.selectedColors.push(el))
 
     orderMarkers.forEach((marker, i) => {
       const input = selectedElements[i]
