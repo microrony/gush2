@@ -335,6 +335,8 @@ class OOHCampaignComponent extends HTMLElement {
       console.log(value)
       if(el.checked) {
         console.log('checked')
+        console.log(value)
+        
         if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
       }
       else {
