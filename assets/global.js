@@ -1199,7 +1199,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
           body: JSON.stringify(data)
         })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => location.reload())
         .catch(err => console.log(err))
       }
       const discount = getCookie('discount_code')
