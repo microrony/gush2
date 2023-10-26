@@ -245,9 +245,6 @@ class OOHCampaignComponent extends HTMLElement {
         note: note,
         properties: {
           is_ooh_order: true
-        },
-        attributes: {
-          is_ooh_order: true
         }
       }
   
@@ -273,18 +270,28 @@ class OOHCampaignComponent extends HTMLElement {
           checkout: true
         }
 
+        fetch('/cart/update.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({attributes: {'is_ooh_order': true}})
+        })
+        .then(res => res.json())
+        .then(data => {
+          document.cookie = "ooh_campaign=" + JSON.stringify(cookieData) + "; expires=3m; path=/";
+          window.location.href = '/checkout?discount=ohmygush'
+  
+          webengage.track("ohmygush_campaign", {
+            "ProductColor1": this.selectedColors[0],
+            "ProductColor2": this.selectedColors[1],
+            "ProductColor3": this.selectedColors[2],
+            "Number of Selected Products": 3,
+            "What are you painting" : q1,
+            "How soon you want to start" : q2
+          });
+        })
         
-        document.cookie = "ooh_campaign=" + JSON.stringify(cookieData) + "; expires=3m; path=/";
-        window.location.href = '/checkout?discount=ohmygush'
-
-        webengage.track("ohmygush_campaign", {
-          "ProductColor1": this.selectedColors[0],
-          "ProductColor2": this.selectedColors[1],
-          "ProductColor3": this.selectedColors[2],
-          "Number of Selected Products": 3,
-          "What are you painting" : q1,
-          "How soon you want to start" : q2
-        });
       })
       .catch(err => console.log(err))
     }
