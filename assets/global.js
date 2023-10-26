@@ -1184,13 +1184,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
     .then(cart => {
       if(cart.note.includes('What are you painting') && cart.note.includes('How soon do you want to start painting')) {
         const data = {
-          updates: [],
+          updates: {},
           note: ""
         }
         cart.items.forEach(_ => {
-          const itemData = {}
-          itemData[_.id] = 0
-          data.updates.push(itemData)
+          data.updates[_.id] = 0
         })
         console.log(data)
         fetch("/cart/update.js", {
