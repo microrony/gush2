@@ -1187,7 +1187,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
           updates: [],
           note: ""
         }
-        cart.items.forEach(_ => data.updates.push({`${_.id}`: 0}))
+        cart.items.forEach(_ => {
+          const itemData = {}
+          itemData[_.id] = 0
+          data.updates.push(itemData)
+        })
         console.log(data)
       }
       const discount = getCookie('discount_code')
