@@ -1162,11 +1162,27 @@ swiperEles.forEach( ele =>{
 })
 
 window.addEventListener('DOMContentLoaded', (e) => {
+  function getCookie(cookieName) {
+    // Split the cookies into an array of key-value pairs
+    var cookies = document.cookie.split(';');
+  
+    // Loop through the array to find the desired cookie
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+      // Check if this cookie starts with the name we're looking for
+      if (cookie.indexOf(cookieName + '=') === 0) {
+        // Return the value of the cookie
+        return cookie.substring(cookieName.length + 1, cookie.length);
+      }
+    }
+    // If the cookie is not found, return null or an appropriate default value
+    return null;
+  }
   if(!window.location.pathname.includes('/pages/ohmygush')) {
     fetch("/cart.js", { method: 'GET', headers: { "Content-Type": "application/json" }})
     .then(res => res.json())
     .then(cart => {
-      console.log(cart)
+      const discount = getCookie('discount_code')
     })
   }
 })
