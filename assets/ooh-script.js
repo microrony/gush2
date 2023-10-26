@@ -338,7 +338,7 @@ class OOHCampaignComponent extends HTMLElement {
         console.log('checked')
         console.log(value)
         
-        if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
+        if(!this.selectedColors.includes(value)) console.log(value)
       }
       else {
         const newArray = this.selectedColors.filter(item => item !== value);
