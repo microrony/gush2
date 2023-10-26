@@ -349,7 +349,7 @@ class OOHCampaignComponent extends HTMLElement {
       this.disabledVibeSelection(3, this.selectedVariants.length)
       this.updateSelectedStatus(3, this.selectedVariants.length)
       
-
+console.log('Selected colors',this.selectedColors)
       this.colorInfoEl.innerHTML = this.selectedColors.join(', ')
 
       if(el.checked) this.applyBackground(el.dataset.bgColor)
