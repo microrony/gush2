@@ -1193,6 +1193,15 @@ window.addEventListener('DOMContentLoaded', (e) => {
           data.updates.push(itemData)
         })
         console.log(data)
+        fetch("/cart/update.js", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
       }
       const discount = getCookie('discount_code')
     })
