@@ -245,6 +245,9 @@ class OOHCampaignComponent extends HTMLElement {
         note: note,
         properties: {
           is_ooh_order: true
+        },
+        attributes: {
+          is_ooh_order: true
         }
       }
   
