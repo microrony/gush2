@@ -1182,7 +1182,9 @@ window.addEventListener('DOMContentLoaded', (e) => {
     fetch("/cart.js", { method: 'GET', headers: { "Content-Type": "application/json" }})
     .then(res => res.json())
     .then(cart => {
-      console.log(cart)
+      if(cart.note.includes('What are you painting') && cart.note.includes('How soon do you want to start painting')) {
+        console.log(cart)
+      }
       const discount = getCookie('discount_code')
     })
   }
