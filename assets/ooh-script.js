@@ -332,7 +332,7 @@ class OOHCampaignComponent extends HTMLElement {
       console.log(el)
       const value = el.dataset.title
       const vibes = []
-      
+      console.log(value)
       if(el.checked) {
         if(!this.selectedColors.includes(value)) this.selectedColors.push(value)
       }
