@@ -1,3 +1,174 @@
+ <form action="select-paint-color.html">
+    <main class="flex flex-col lg:flex-row gap-8 lg:gap-[62px] relative bg-primary min-h-screen">
+      <div>
+        <div class="hidden lg:block lg:w-[578px]"></div>
+        <img class="banner lg:w-[578px] lg:fixed lg:top-0 lg:bottom-0 hidden lg:block w-full h-full object-cover"
+          src="./banner.jpg" alt="banner" />
+        <img class="h-auto w-full lg:hidden" src="./banner-small.png" alt="banner" />
+      </div>
+      <div class="py-0 px-9 lg:px-0 lg:py-10 max-h-xl w-full overflow-auto">
+        <div x-data="{
+        currentQuestionIndex: 0,
+        questions: [
+          {
+            question: 'What best describes your interest today?',
+            options: [
+              {
+                title: 'Home Owner',
+                value: 'home-owner',
+              },
+              {
+                title: 'Not Home Owner',
+                value: 'not-home-owner',
+              },
+            ],
+            answer: '',
+          },
+          {
+            question: 'How soon will you require paint?',
+            options: [
+              {
+                title: 'Currently or in a week',
+                value: 'currently-or-in-a-week',
+              },
+              {
+                title: 'Within 1-3 months',
+                value: 'within-1-3-months',
+              },
+            ],
+            answer: '',
+          },
+          {
+            question: 'Do you know what colours you want?',
+            options: [
+              {
+                title: 'Yes',
+                value: 'yes',
+              },
+              {
+                title: 'No',
+                value: 'no',
+              },
+            ],
+            answer: '',
+          },
+          {
+            question: 'Are you planning to repaint?',
+            options: [
+              {
+                title: 'Yes',
+                value: 'yes',
+              },
+              {
+                title: 'No',
+                value: 'no',
+              },
+            ],
+            answer: '',
+          },
+          {
+            question: 'Are you facing any specific issues with your current indoor environment?',
+            options: [
+              {
+                title: 'Yes',
+                value: 'yes',
+              },
+              {
+                title: 'No',
+                value: 'no',
+              },
+            ],
+            answer: '',
+          },
+          {
+            question: 'Do you have kids or pets?',
+            options: [
+              {
+                title: 'Yes',
+                value: 'yes',
+              },
+              {
+                title: 'No',
+                value: 'no',
+              },
+            ],
+            answer: '',
+          },
+          {
+            question: 'Would you require painting services?',
+            options: [
+              {
+                title: 'Yes',
+                value: 'yes',
+              },
+              {
+                title: 'No',
+                value: 'no',
+              },
+            ],
+            answer: '',
+          },
+        ],
+        increaseIndex(answer,index) {
+          scrollIntoViewAnId('question-'+index)
+          this.questions[this.currentQuestionIndex].answer = answer 
+          this.currentQuestionIndex++;
+          this.lastIndex++
+        },
+        lastIndex: 0
+      }">
+          <template x-for="(question, index) in questions" :key="index">
+            <div
+              x-on:mouseenter="question.answer !== '' ? currentQuestionIndex = index:currentQuestionIndex = lastIndex"
+              x-on:mouseleave="currentQuestionIndex = lastIndex" :id="'question-'+index"
+              class="animate__animated animate__fadeInUp pt-4 border-b last:border-b-0 border-primary-fade pb-4">
+              <h1 :class=" currentQuestionIndex === index ?'question block ':'question block text-primary-fade'"
+                x-text="question.question"></h1>
+              <div x-transition:enter="animate__fadeIn"
+                class="flex items-center gap-[15px] options-container animate__animated "
+                x-show="currentQuestionIndex === index">
+                <template x-for="(option, optionIndex) in question.options" :key="optionIndex">
+                  <button type="button">
+                    <label
+                      :class="question.answer === option.value ?'option mt-[15px] lg:mt-5 block max-w-fit bg-heading text-white':'option mt-[15px] lg:mt-5 block max-w-fit'">
+                      <input class="appearance-none" type="radio" :id="option.value" :name="`question-${index}`"
+                        :value="option.value" @click="increaseIndex(option.value,index)">
+                      <span x-text="option.title"></span>
+                    </label>
+                  </button>
+                </template>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <div class="flex justify-center lg:justify-start items-center">
+          <button class="primary-button mt-[52px] mb-[46px] animate__animated animate__fadeInUp">
+            <span class="w-[180px] font-gt-america text-left">
+              Calculate
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20" fill="none">
+              <circle cx="10" cy="10" r="1" fill="#302112" />
+              <circle cx="7" cy="13" r="1" fill="#302112" />
+              <circle cx="4" cy="16" r="1" fill="#302112" />
+              <circle cx="1" cy="19" r="1" fill="#302112" />
+              <circle cx="1" cy="1" r="1" transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" fill="#302112" />
+              <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 3 5)" fill="#302112" />
+              <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 6 8)" fill="#302112" />
+            </svg>
+          </button>
+        </div>
+ </main>
+  </form>
+ 
+
+  <script src="./aos.js"></script>
+  <script src="./anime.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./main.js"></script>
+
 {% schema %}
   {
     "name": "Section name",
