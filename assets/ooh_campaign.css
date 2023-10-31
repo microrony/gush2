@@ -1099,9 +1099,7 @@ a.ooh_hyperlink_tc {
 .swiper-button-disabled {
   display: none;
 }
-.omnisend-form-6476ea556a3925a0dc01ccc8-container {
-  display: none !important;
-}
+
 /* Css for mobile screen */
 @media only screen and (max-width: 480px) {
 .survey_plus_order {
@@ -1241,13 +1239,7 @@ select#collection-filter-select:focus-visible {
   background-position: center right;
   overflow: hidden;
 }
-.omnisend-form-6476ea556a3925a0dc01ccc8-overlay {
-    display: none !important;
-}
 
-.omnisend-form-6476ea556a3925a0dc01ccc8-content {
-    display: none !important;
-}
 .display_none {
   display:none;
 }
