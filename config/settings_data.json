@@ -142,7 +142,6 @@
         "blocks": {
           "669f1bbb-2705-4620-8eb6-8a84d173bddb": {
             "type": "link_list",
-            "disabled": true,
             "settings": {
               "heading": "About",
               "menu": "footer-about"
@@ -150,7 +149,6 @@
           },
           "footer-1": {
             "type": "link_list",
-            "disabled": true,
             "settings": {
               "heading": "Discover",
               "menu": "discover"
@@ -158,7 +156,6 @@
           },
           "745b7e59-5114-4407-93b3-9471285e5a4a": {
             "type": "link_list",
-            "disabled": true,
             "settings": {
               "heading": "Support",
               "menu": "support"
@@ -169,6 +166,9 @@
           "669f1bbb-2705-4620-8eb6-8a84d173bddb",
           "footer-1",
           "745b7e59-5114-4407-93b3-9471285e5a4a"
+        ],
+        "custom_css": [
+
         ],
         "settings": {
           "color_scheme": "background-2",
