@@ -105,6 +105,7 @@
         "blocks": {
           "0e82010d-8c5e-4e4d-baad-81b9292b8436": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Note: Product packaging may temporarily differ from pictures as we roll out our new look.",
               "text_clr": "#ff5500",
@@ -121,6 +122,9 @@
       },
       "header": {
         "type": "header",
+        "custom_css": [
+
+        ],
         "settings": {
           "color_scheme": "background-2",
           "logo": "shopify:\/\/shop_images\/Group_1944_0a9998f3-351f-4738-9d68-2df617f6fbae.png",
@@ -138,6 +142,7 @@
         "blocks": {
           "669f1bbb-2705-4620-8eb6-8a84d173bddb": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "heading": "About",
               "menu": "footer-about"
@@ -145,6 +150,7 @@
           },
           "footer-1": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "heading": "Discover",
               "menu": "discover"
@@ -152,6 +158,7 @@
           },
           "745b7e59-5114-4407-93b3-9471285e5a4a": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "heading": "Support",
               "menu": "support"
