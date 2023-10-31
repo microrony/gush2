@@ -1,12 +1,284 @@
+{{ 'index.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+  <form action="select-paint-color.html">
+    <main class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[62px] tw-relative tw-bg-primary tw-min-h-screen">
+      <div>
+        <div class="tw-hidden lg:tw-block lg:tw-w-[578px] tw-text-primary">
+          This header will not be shown up. please don't remove it
+        </div>
+        <img class="paint_selection_image lg:tw-w-[578px] lg:tw-fixed lg:tw-top-[116px] lg:tw-bottom-0 tw-hidden lg:tw-block tw-w-full tw-h-full tw-object-cover"
+          src="https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_dek_banner.jpg?v=1698673564" alt="banner" />
+        <img class="tw-h-auto tw-w-full lg:tw-hidden" src="https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_mobile_banner.png?v=1698673564" alt="banner" />
+      </div>
+      <div class="tw-py-0 tw-px-9 lg:tw-px-0 lg:tw-py-10 tw-max-h-xl tw-relative tw-w-full tw-overflow-auto">
+        <div x-data="{
+          currentQuestionIndex: 0,
+          questions: [
+            {
+              question: 'What best describes your interest today?',
+              options: [
+                {
+                  title: 'Home Owner',
+                  value: 'home-owner',
+                },
+                {
+                  title: 'Not Home Owner',
+                  value: 'not-home-owner',
+                },
+              ],
+              answer: '',
+            },
+            {
+              question: 'How soon will you require paint?',
+              options: [
+                {
+                  title: 'Currently or in a week',
+                  value: 'currently-or-in-a-week',
+                },
+                {
+                  title: 'Within 1-3 months',
+                  value: 'within-1-3-months',
+                },
+                {
+                  title: 'After 3 months',
+                  value: 'after-3-months',
+                },
+              ],
+              answer: '',
+            },
+            {
+              question: 'Do you know what colours you want?',
+              options: [
+                {
+                  title: 'Yes',
+                  value: 'yes',
+                },
+                {
+                  title: 'No',
+                  value: 'no',
+                },
+                {
+                  title: 'Undecided',
+                  value: 'undecided',
+                },
+              ],
+              skip:{
+                value:'no',
+                nextIndex:5
+              },
+              answer: '',
+            },
+            {
+              question: 'Are you planning to repaint?',
+              options: [
+                {
+                  title: 'Yes',
+                  value: 'yes',
+                },
+                {
+                  title: 'No',
+                  value: 'no',
+                },
+              ],
+              skip:{
+                value:'no',
+                nextIndex:5
+              },
+              answer: '',
+            },
+            {
+              question: 'Are you facing any specific issues with your current indoor environment?',
+              options: [
+                {
+                  title: 'Moulding',
+                  value: 'moulding',
+                },
+                {
+                  title: 'Humidity',
+                  value: 'humidity',
+                },
+                {
+                  title: 'Odour',
+                  value: 'odour',
+                },
+              ],
+              answer: '',
+            },
+            {
+              question: 'Do you have kids or pets?',
+              options: [
+                {
+                  title: 'Yes',
+                  value: 'yes',
+                },
+                {
+                  title: 'No',
+                  value: 'no',
+                },
+              ],
+              answer: '',
+            },
+            {
+              question: 'Would you require painting services?',
+              options: [
+                {
+                  title: 'Yes',
+                  value: 'yes',
+                },
+                {
+                  title: 'No',
+                  value: 'no',
+                },
+              ],
+              answer: '',
+            },
+          ],
+          increaseIndex(answer,index,skip) {
+            this.questions[index].answer = answer 
+            if(skip && skip.value === answer){
+              scrollIntoViewAnId('paint_selection_questions-'+skip.nextIndex)
+              this.currentQuestionIndex =  skip.nextIndex;
+              this.lastIndex = this.lastIndex 
+            }else{
+              scrollIntoViewAnId('paint_selection_questions-'+index)
+              this.currentQuestionIndex = index+1;
+              this.lastIndex = index + 1
+            }
+            console.log(answer)
+          },
+        lastIndex: 0
+      }">
+          <template x-for="(question, index) in questions" :key="index">
+            <div
+               :id="'paint_selection_questions-'+index"
+              class="tw-scroll-mt-[116px] tw-group animate__animated animate__fadeInUp tw-pt-4 tw-border-b last:tw-border-b-0 tw-border-primary-fade tw-pb-4 tw-overflow-hidden">
+              <h1 :class=" currentQuestionIndex === index ?'paint_selection_question tw-block ': question.answer !== '' ?'paint_selection_question tw-block tw-text-primary-fade group-hover:tw-text-heading': 'paint_selection_question tw-block tw-text-primary-fade'"
+                x-text="question.question"></h1>
+              <div x-transition:enter="animate__fadeIn" class="tw-flex tw-items-center tw-flex-wrap tw-gap-[7px] lg:tw-gap-[15px] options-container animate__animated " x-show="currentQuestionIndex === index || (question.answer && currentQuestionIndex > index)">
+                <template x-for="(option, optionIndex) in question.options" :key="optionIndex">
+                  <button type="button" class="">
+                    <label
+                      :class="question.answer === option.value ? currentQuestionIndex !== index ? 'paint_selection_option tw-bg-primary-fade tw-text-white hover:tw-text-white tw-border-primary-fade' :'paint_selection_option tw-max-w-fit tw-bg-heading tw-text-white animate__animated animate__fadeInUp': currentQuestionIndex !== index ?'paint_selection_option tw-border-primary-fade tw-text-primary-fade hover:tw-text-white ': 'paint_selection_option animate__animated animate__fadeInUp'">
+                      <input class="tw-appearance-none" type="radio" :id="option.value" :name="`question-${index}`"
+                        :value="option.value" @click="increaseIndex(option.value,index,question?.skip)">
+                      <span x-text="option.title"></span>
+                    </label>
+                  </button>
+                </template>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <div class="tw-h-[46px]"></div>
+
+        <div class="tw-flex tw-justify-center lg:tw-justify-start tw-items-center">
+          <button class="paint_selection_primary-button tw-mb-10 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative rounded-[2px] lg:mt-[56px]">
+            <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">
+              Calculate
+            </span>
+            <span class="tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full"></span>
+            <svg class="tw-z-10" xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
+              <circle cx="10" cy="10" r="1" fill="#302112" />
+              <circle cx="7" cy="13" r="1" fill="#302112" />
+              <circle cx="4" cy="16" r="1" fill="#302112" />
+              <circle cx="1" cy="19" r="1" fill="#302112" />
+              <circle cx="1" cy="1" r="1" transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" fill="#302112" />
+              <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 3 5)" fill="#302112" />
+              <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 6 8)" fill="#302112" />
+            </svg>
+          </button>
+        </div>
+    </main>
+  </form>
+
+
+  <script src="//unpkg.com/alpinejs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+  <script>
+    // Scroll to the top of the page
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Use smooth scrolling for a nice animation
+      });
+    }
+
+    // Call the function to scroll to the top when the page loads
+    window.addEventListener("load", () => {
+      scrollToTop();
+    });
+
+    function scrollIntoViewAnId(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+
+    const screenWidth = window.innerWidth;
+
+    anime({
+      targets: ".paint_selection_image",
+      width: screenWidth > 1024 ? ["0%", "578px"] : ["0%", "33.33%"],
+      easing: "easeInOutQuad",
+    });
+    
+    const optionNames = document.querySelectorAll('.paint_selection_option');
+
+    const animateFn = (el, scale, duration, elasticity) => {
+      anime.remove(el);
+      anime({
+        targets: `.${el}`,
+        transformY:'360deg'
+      });
+    };
+
+    optionNames.forEach(option => {
+      option.addEventListener('mouseenter', (e) => {
+        animateFn(e.target, 1.2, 800, 400);
+      });
+
+      option.addEventListener('mouseleave', (e) => {
+        animateFn(e.target, 1.0, 600, 300);
+      });
+    });
+
+    
+  </script>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+ {
+    "name":"Paint QA Section",
+    "settings":[
+        {
+            "type":"text",
+            "id":"heading",
+            "label":"Heading"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"slide",
+            "name":"Slide",
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "id":"img",
+                    "label":"Image"
+                },
+              {
+"id" : "vibe_collection",
+"type" : "collection",
+"label" : "collection"
+}
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"Paint QA Section"
+        }
+    ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
