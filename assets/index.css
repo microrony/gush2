@@ -469,7 +469,6 @@ video {
   padding-bottom: 0.75em;
   font-family: GTAmerica;
   font-size: 0.875em;
-  line-height: 1.25em;
   line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(48 33 18 / var(--tw-text-opacity));
@@ -489,13 +488,12 @@ video {
 
 @media (min-width: 1024px) {
   .paint_selection_option {
-    margin-top: 1.25em;
+    margin-top: 1.10em;
     padding-top: 25.5px;
     padding-bottom: 25.5px;
     padding-left: 41px;
     padding-right: 41px;
     font-size: 1.125em;
-    line-height: 1.75em;
   }
 }
 
