@@ -3,7 +3,7 @@
 */
 
 /*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssemedy/issues/4)
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
@@ -55,7 +55,7 @@ html {
 }
 
 /*
-1. emove the margin in all browsers.
+1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 
@@ -91,7 +91,7 @@ abbr:where([title]) {
 }
 
 /*
-emove the default font size and weight for headings.
+Remove the default font size and weight for headings.
 */
 
 h1,
@@ -167,9 +167,9 @@ sup {
 }
 
 /*
-1. emove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-3. emove gaps between table borders by default.
+3. Remove gaps between table borders by default.
 */
 
 table {
@@ -183,8 +183,8 @@ table {
 
 /*
 1. Change the font styles in all browsers.
-2. emove the margin in Firefox and Safari.
-3. emove default padding in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
 */
 
 button,
@@ -213,7 +213,7 @@ textarea {
 }
 
 /*
-emove the inheritance of text transform in Edge and Firefox.
+Remove the inheritance of text transform in Edge and Firefox.
 */
 
 button,
@@ -223,7 +223,7 @@ select {
 
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
-2. emove default button styles.
+2. Remove default button styles.
 */
 
 button,
@@ -247,7 +247,7 @@ Use the modern Firefox focus style for all focusable elements.
 }
 
 /*
-emove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
 
 :-moz-ui-invalid {
@@ -263,7 +263,7 @@ progress {
 }
 
 /*
-Correct the cursor style of incement and decement buttons in Safari.
+Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 ::-webkit-inner-spin-button,
@@ -284,7 +284,7 @@ Correct the cursor style of incement and decement buttons in Safari.
 }
 
 /*
-emove the inner padding in Chrome and Safari on macOS.
+Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-search-decoration {
@@ -312,7 +312,7 @@ summary {
 }
 
 /*
-emoves the default spacing and border for appropriate elements.
+Removes the default spacing and border for appropriate elements.
 */
 
 blockquote,
@@ -403,8 +403,8 @@ Make sure disabled buttons don't get the pointer cursor.
 }
 
 /*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssemedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssemedy/issues/14#issuecomment-634934210)
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
 
@@ -423,7 +423,7 @@ object {
 }
 
 /*
-Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssemedy/issues/14)
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
 
 img,
@@ -469,7 +469,6 @@ video {
   font-family: GTAmerica;
   font-size: 0.875em;
   line-height: 1.25em;
-  line-height: 19px;
   --tw-text-opacity: 1;
   color: rgb(48 33 18 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color,
@@ -507,6 +506,10 @@ video {
   font-size: 1.125em;
   line-height: 1.75em;
   font-weight: 500;
+}
+
+.paint_selection_option {
+  line-height: 0px;
 }
 
 .tw-primary-btn .layer,
@@ -1251,12 +1254,12 @@ video {
   line-height: 15px;
 }
 
-.tw-leading-\[20px\] {
-  line-height: 20px;
-}
-
 .tw-leading-\[19px\] {
   line-height: 19px;
+}
+
+.tw-leading-\[20px\] {
+  line-height: 20px;
 }
 
 .tw-text-\[\#796E62\] {
