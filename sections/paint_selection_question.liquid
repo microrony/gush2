@@ -13,18 +13,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <form action="select-paint-color.html">
-    <main class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[62px] tw-relative tw-bg-primary tw-min-h-screen">
-      <div>
-        <div class="tw-hidden lg:tw-block lg:tw-w-[578px] tw-text-primary">
-          This header will not be shown up. please don't remove it
-        </div>
-        <img class="paint_selection_image lg:tw-w-[578px] lg:tw-fixed lg:tw-bottom-0 tw-hidden lg:tw-block tw-w-full tw-h-full tw-object-cover"
-          src="https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_dek_banner.jpg?v=1698673564" alt="banner" />
-        <img class="tw-h-auto tw-w-full lg:tw-hidden" src="https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_mobile_banner.png?v=1698673564" alt="banner" />
-      </div>
-      <div class="tw-py-0 tw-px-9 lg:tw-px-0 lg:tw-py-10 tw-max-h-xl tw-relative tw-w-full tw-overflow-auto">
-        <div x-data="{
+ <form action="select-paint-color.html">
+    <main x-data="{
           currentQuestionIndex: 0,
           questions: [
             {
@@ -39,6 +29,10 @@
                   value: 'not-home-owner',
                 },
               ],
+              image:{
+                big:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_dek_banner.jpg?v=1698673564',
+                small:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_mobile_banner.png?v=1698673564'
+              },
               answer: '',
             },
             {
@@ -57,6 +51,10 @@
                   value: 'after-3-months',
                 },
               ],
+              image:{
+                big:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_dek_banner.jpg?v=1698673564',
+                small:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_mobile_banner.png?v=1698673564'
+              },
               answer: '',
             },
             {
@@ -75,6 +73,10 @@
                   value: 'undecided',
                 },
               ],
+              image:{
+                big:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_dek_banner.jpg?v=1698673564',
+                small:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_mobile_banner.png?v=1698673564'
+              },
               skip:{
                 value:'no',
                 nextIndex:5
@@ -93,6 +95,10 @@
                   value: 'no',
                 },
               ],
+              image:{
+                big:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_dek_banner.jpg?v=1698673564',
+                small:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_mobile_banner.png?v=1698673564'
+              },
               skip:{
                 value:'no',
                 nextIndex:5
@@ -114,7 +120,15 @@
                   title: 'Odour',
                   value: 'odour',
                 },
+                {
+                  title: 'All of them',
+                  value: 'all',
+                },
               ],
+              image:{
+                big:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_dek_banner.jpg?v=1698673564',
+                small:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_mobile_banner.png?v=1698673564'
+              },
               answer: '',
             },
             {
@@ -129,6 +143,10 @@
                   value: 'no',
                 },
               ],
+              image:{
+                big:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_dek_banner.jpg?v=1698673564',
+                small:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_mobile_banner.png?v=1698673564'
+              },
               answer: '',
             },
             {
@@ -143,6 +161,10 @@
                   value: 'no',
                 },
               ],
+              image:{
+                big:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_dek_banner.jpg?v=1698673564',
+                small:'https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_mobile_banner.png?v=1698673564'
+              },
               answer: '',
             },
           ],
@@ -154,18 +176,28 @@
               this.lastIndex = this.lastIndex 
             }else{
               scrollIntoViewAnId('paint_selection_questions-'+index)
-              this.currentQuestionIndex = index+1;
+              this.currentQuestionIndex = index+1 !== this.questions.length ? index+1:index;
               this.lastIndex = index + 1
             }
-            console.log(answer)
           },
-        lastIndex: 0
-      }">
+          lastIndex: 0
+        }" 
+        class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[62px] tw-relative tw-bg-primary tw-min-h-screen">
+      <div>
+        <div class="tw-hidden lg:tw-block lg:tw-w-[578px] tw-text-primary">
+          This header will not be shown up. please don't remove it
+        </div>
+        <img class="paint_selection_image lg:tw-w-[578px] lg:tw-fixed lg:tw-top-0 lg:tw-bottom-0 tw-hidden lg:tw-block tw-w-full tw-h-full tw-object-cover"
+          :src="questions[currentQuestionIndex].image.big" alt="banner" />
+        <img class="tw-h-auto tw-w-full lg:tw-hidden" :src="questions[currentQuestionIndex].image.small" alt="banner" />
+      </div>
+      <div class="tw-py-0 tw-px-9 lg:tw-px-0 lg:tw-py-10 tw-max-h-xl tw-relative tw-w-full tw-overflow-auto">
+        <div >
           <template x-for="(question, index) in questions" :key="index">
             <div
                :id="'paint_selection_questions-'+index"
               class="tw-scroll-mt-[116px] tw-group animate__animated animate__fadeInUp tw-pt-4 tw-border-b last:tw-border-b-0 tw-border-primary-fade tw-pb-4 tw-overflow-hidden">
-              <h1 :class=" currentQuestionIndex === index ?'paint_selection_question tw-block ': question.answer !== '' ?'paint_selection_question tw-block tw-text-primary-fade group-hover:tw-text-heading': 'paint_selection_question tw-block tw-text-primary-fade'"
+              <h1 :class=" currentQuestionIndex === index ?'paint_selection_question tw-block tw-pb-[1.1em] lg:tw-pb-5': question.answer !== '' ?'paint_selection_question tw-block tw-text-primary-fade group-hover:tw-text-heading tw-pb-[1.1em] lg:tw-pb-5': 'paint_selection_question tw-block tw-text-primary-fade'+''"
                 x-text="question.question"></h1>
               <div x-transition:enter="animate__fadeIn" class="tw-flex tw-items-center tw-flex-wrap tw-gap-[7px] lg:tw-gap-[15px] options-container animate__animated " x-show="currentQuestionIndex === index || (question.answer && currentQuestionIndex > index)">
                 <template x-for="(option, optionIndex) in question.options" :key="optionIndex">
@@ -174,7 +206,7 @@
                       :class="question.answer === option.value ? currentQuestionIndex !== index ? 'paint_selection_option tw-bg-primary-fade tw-text-white hover:tw-text-white tw-border-primary-fade' :'paint_selection_option tw-max-w-fit tw-bg-heading tw-text-white animate__animated animate__fadeInUp': currentQuestionIndex !== index ?'paint_selection_option tw-border-primary-fade tw-text-primary-fade hover:tw-text-white ': 'paint_selection_option animate__animated animate__fadeInUp'">
                       <input class="tw-appearance-none" type="radio" :id="option.value" :name="`question-${index}`"
                         :value="option.value" @click="increaseIndex(option.value,index,question?.skip)">
-                      <span x-text="option.title"></span>
+                      <span x-text="option.title" class="tw-leading-[19px]"></span>
                     </label>
                   </button>
                 </template>
@@ -186,7 +218,7 @@
         <div class="tw-h-[46px]"></div>
 
         <div class="tw-flex tw-justify-center lg:tw-justify-start tw-items-center">
-          <button class="paint_selection_primary-button tw-mb-10 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative rounded-[2px] lg:mt-[56px]">
+          <button class="tw-primary-btn tw-rounded-[2px] lg:tw-mt-[56px] tw-mb-10 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative">
             <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">
               Calculate
             </span>
@@ -202,12 +234,11 @@
             </svg>
           </button>
         </div>
-
-               
     </main>
   </form>
 
 
+  
   <script src="//unpkg.com/alpinejs"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script>
@@ -232,7 +263,7 @@
 
     anime({
       targets: ".paint_selection_image",
-      width: screenWidth > 1024 ? ["0%", "578px"] : ["0%", "33.33%"],
+      width: screenWidth > 1023 ? ["0%", "578px"] : ["0%", "33.33%"],
       easing: "easeInOutQuad",
     });
     
