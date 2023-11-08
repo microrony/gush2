@@ -1,12 +1,1266 @@
+<style>
+  div#shopify-section-footer{
+  display: none
+}
+  div#shopify-section-announcement-bar {
+    display: none;
+}
+  sticky-header.header-wrapper.color-background-2.gradient.header-wrapper--border-bottom {
+    display: none;
+}
+</style>
+{{ 'index.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script
+      src="https://unpkg.com/alpinejs@3.13.2/dist/cdn.min.js"
+      defer
+    ></script>
+  <main
+      x-data="{
+        paintingType:'entire-house',
+        isModalOpen:false,
+        isDropDownOpen:false,
+        currentRoomColumnIndex:0,
+        isShowingPaintColumns:false,
+        isPickingCeilingColor:false,
+        roomTypeOptions:[
+          {
+            name:'Living room',
+            value:'living-room'
+          },
+          {
+            name:'Master bedroom',
+            value:'master-bedroom'
+          },
+          {
+            name:'Common bedroom',
+            value:'common-bedroom'
+          },
+          {
+            name:'Study room',
+            value:'study-bedroom'
+          },
+          {
+            name:'Toilet',
+            value:'toilet'
+          },
+          {
+            name:'Kitchen',
+            value:'kitchen'
+          },
+          {
+            name:'Common areas',
+            value:'common-areas'
+          },
+          {
+            name:'Wall/Ceiling',
+            value:'wall/ceiling'
+          },
+        ],
+        addRoomDetails(){
+          this.paintDetails.roomsDetails.push({
+              index:this.paintDetails.roomsDetails.length,
+              name:this.roomTypeOptions[this.paintDetails.roomsDetails.length].value,
+              area:0,
+              color:'',
+              colorName:'',
+              ceilingColor:'',
+              ceilingColorName:'' 
+            })
+        },
+        setRoomDetails(option){
+          this.paintDetails = {
+            ...option,
+            roomsDetails: Array.from({length: option.roomsCount}, (_, index) => ({
+              index,
+              name:this.roomTypeOptions[index].value ?? '',
+              area:0,
+              color:'',
+              colorName:'',
+              ceilingColor:'',
+              ceilingColorName:'' 
+            }))
+          }
+          
+        },
+        setColorOfRoom(color,colorName){
+         if(this.isPickingCeilingColor){
+          this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColor = color;
+          this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorName = colorName;
+         }else{
+          this.paintDetails.roomsDetails[this.currentRoomColumnIndex].color = color;
+          this.paintDetails.roomsDetails[this.currentRoomColumnIndex].colorName = colorName;
+         }
+         this.isModalOpen = false;
+        },
+        paintDetails:{
+          name:'',
+          value:'',
+          roomsCount:0,
+          roomsDetails:[]
+        },
+        setPaintDetailsIfRoomType(typeName){
+          this.paintDetails.roomsDetails=[]
+          this.paintDetails.name = typeName ?? '';
+          this.paintDetails.value = ''; 
+          this.paintDetails.roomsCount = 1;
+          this.isDropDownOpen = false;
+          this.paintDetails.roomsDetails= Array.from({length: 1}, (_, index) => ({
+                index,
+                name:this.roomTypeOptions[0].value ?? '',
+                area:0,
+                color:'',
+                colorName:'',
+                ceilingColor:'',
+                ceilingColorName:'' 
+              }))
+        },
+        isShowingPaintCalculator:false,
+        homeTypeList:[
+          {
+            slotName:'HDB',
+            options:[
+              {
+                name:'5-room HDB (107 - 113 sqm)',
+                value:'5-room-hdb-107-113-sqm',
+                roomsCount:5,
+              },
+              {
+                name:'4-room HDB (85 - 93 sqm)',
+                value:'4-room-hdb-85-93-sqm',
+                roomsCount:4,
+              },
+              {
+                name:'3-room HDB (60 - 68 sqm)',
+                value:'3-room-hdb-60-68-sqm',
+                roomsCount:3,
+              },
+              {
+                name:'2-room Plexi (>60 sqm)',
+                value:'2-room-plexi-more-than-60sqm',
+                roomsCount:2,
+              } 
+            ]
+          },
+          {
+            slotName:'Condominium',
+            options:[
+              {
+                name:'1 bedroom (45 - 60 sqm)',
+                value:'1-bedroom-45-60-sqm',
+                roomsCount:1,
+              },
+              {
+                name:'2 bedroom (60 - 110 sqm)',
+                value:'2-bedroom-60-110-sqm',
+                roomsCount:2,
+              },
+              {
+                name:'3 bedroom (110 - 140 sqm)',
+                value:'3-bedroom-110-140-sqm',
+                roomsCount:3,
+              },
+              {
+                name:'4 bedroom (140 - 175 sqm)',
+                value:'4-bedroom-140-175-sqm',
+                roomsCount:4,
+              }, 
+            ]
+          },
+          {
+            slotName:'Others',
+          },
+        ],
+        floorArea:0,
+        selectCategory(category){
+          this.selectedCategory = category
+        },
+        selectedCategory:{
+          name: 'Category 1',
+          color: '#302112',
+          pallets: [
+            {
+              name: 'Wabi-wasabi 1',
+              color: '#836C84'
+            },
+            {
+              name: 'Private Island 1',
+              color: '#ACA3C1'
+            },
+            {
+              name: 'Some Name 1',
+              color: '#E38981'
+            },
+            {
+              name: 'Leapfrog 1',
+              color: '#CC8A8A'
+            }
+          ]
+        },
+        categories: [
+          {
+            'name': 'Category 1',
+            'color': '#302112',
+            'pallets': [
+              { 'name': 'Wabi-wasabi', 'color': '#836C84' },
+              { 'name': 'Private Island', 'color': '#ACA3C1' },
+              { 'name': 'Some Name', 'color': '#E38981' },
+              { 'name': 'Leapfrog', 'color': '#CC8A8A' }
+            ]
+          },
+          {
+            'name': 'Category 2',
+            'color': '#BCAC98',
+            'pallets': [
+              { 'name': 'Green Valley', 'color': '#64777B' },
+              { 'name': 'Sunset Glow', 'color': '#F3786B' },
+              { 'name': 'Aurora Borealis', 'color': '#A2DEA4' },
+              { 'name': 'Golden Harvest', 'color': '#C5AA8D' }
+            ]
+          },
+          {
+            'name': 'Category 3',
+            'color': '#836C84',
+            'pallets': [
+              { 'name': 'Ocean Blue', 'color': '#2E86AB' },
+              { 'name': 'Silver Lining', 'color': '#A4A9AD' },
+              { 'name': 'Lavender Fields', 'color': '#BF94A2' },
+              { 'name': 'Rose Quartz', 'color': '#E7AD99' }
+            ]
+          },
+          {
+            'name': 'Category 4',
+            'color': '#A05A52',
+            'pallets': [
+              { 'name': 'Forest Green', 'color': '#014833' },
+              { 'name': 'Ruby Red', 'color': '#9B1B30' },
+              { 'name': 'Sunny Yellow', 'color': '#FFD662' },
+              { 'name': 'Slate Grey', 'color': '#708090' }
+            ]
+          },
+          {
+            'name': 'Category 5',
+            'color': '#000000',
+            'pallets': [
+              { 'name': 'Midnight Black', 'color': '#0D0D0D' },
+              { 'name': 'Snow White', 'color': '#FFFFFF' },
+              { 'name': 'Cherry Blossom', 'color': '#F0A6CA' },
+              { 'name': 'Amber Glow', 'color': '#FFBF00' }
+            ]
+          },
+          {
+            'name': 'Category 6',
+            'color': '#FFD24E',
+            'pallets': [
+              { 'name': 'Golden Sun', 'color': '#F7DAD9' },
+              { 'name': 'Vibrant Orange', 'color': '#FFA500' },
+              { 'name': 'Emerald Green', 'color': '#50C878' },
+              { 'name': 'Ruby Rose', 'color': '#9B111E' }
+            ]
+          },
+          {
+            'name': 'Category 7',
+            'color': '#CC8A8A',
+            'pallets': [
+              { 'name': 'Coral Pink', 'color': '#F88379' },
+              { 'name': 'Topaz Blue', 'color': '#7FC8A9' },
+              { 'name': 'Icy Mint', 'color': '#77D8D8' },
+              { 'name': 'Sunny Peach', 'color': '#FFCC99' }
+            ]
+          }
+        ]
+      }"
+      class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
+    >
+      <div>
+        <div
+          class="tw-hidden lg:tw-block lg:tw-w-[341px] xl:tw-w-[578px]"
+        ></div>
+        <img
+          class="paint_selection_image lg:tw-w-[342px] xl:tw-w-[578px] lg:tw-fixed lg:tw-top-0 lg:tw-bottom-0 tw-hidden lg:tw-block tw-w-full tw-h-full tw-object-cover"
+          src="https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_dek_banner.jpg?v=1698673564"
+          alt="banner"
+        />
+        <img
+          class="tw-h-auto tw-w-full lg:tw-hidden"
+          src="https://cdn.shopify.com/s/files/1/0755/4229/8911/files/plaint_selector_mobile_banner.png?v=1698673564"
+          alt="banner"
+        />
+      </div>
+      <div
+        class="tw-py-0 tw-px-5 lg:tw-pr-9 lg:tw-pl-0 lg:tw-py-10 tw-max-h-xl tw-w-full tw-overflow-auto animate__animated animate__fadeInUp lg:tw-overflow-hidden relative"
+      >
+        <div class="tw-flex tw-items-center tw-gap-[7px]">
+          <span class="tw-text-heading tw-text-base tw-font-gt-america">
+            I'm painting a
+          </span>
+          <label
+            for="entire-house"
+            class="tw-flex tw-items-center"
+            @click="paintingType = 'entire-house'; isShowingPaintColumns=false;"
+          >
+            <input
+              type="radio"
+              name="painting-type"
+              id="entire-house"
+              class="tw-hidden"
+            />
+            <span x-show="paintingType !== 'entire-house' ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+              >
+                <circle
+                  cx="8.5"
+                  cy="8.5"
+                  r="7.91667"
+                  fill="white"
+                  stroke="black"
+                  stroke-width="0.833333"
+                />
+              </svg>
+            </span>
+            <span x-show="paintingType === 'entire-house'">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+              >
+                <circle
+                  cx="8.5"
+                  cy="8.5"
+                  r="7.91667"
+                  fill="white"
+                  stroke="black"
+                  stroke-width="0.833333"
+                />
+                <circle
+                  cx="8.5"
+                  cy="8.5"
+                  r="3.5"
+                  fill="#FF42EF"
+                />
+              </svg>
+            </span>
+
+            <span
+              class="tw-text-heading tw-text-base tw-font-gt-america tw-ml-[3px]"
+            >
+              Entire house
+            </span>
+          </label>
+          <label
+            for="room"
+            class="tw-flex tw-items-center"
+            @click="paintingType = 'room'; isShowingPaintColumns=true; setPaintDetailsIfRoomType() "
+          >
+            <input
+              type="radio"
+              name="painting-type"
+              id="room"
+              class="tw-hidden"
+            />
+            <span x-show="paintingType !== 'room'">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+              >
+                <circle
+                  cx="8.5"
+                  cy="8.5"
+                  r="7.91667"
+                  fill="white"
+                  stroke="black"
+                  stroke-width="0.833333"
+                />
+              </svg>
+            </span>
+            <span x-show="paintingType === 'room'">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+              >
+                <circle
+                  cx="8.5"
+                  cy="8.5"
+                  r="7.91667"
+                  fill="white"
+                  stroke="black"
+                  stroke-width="0.833333"
+                />
+                <circle
+                  cx="8.5"
+                  cy="8.5"
+                  r="3.5"
+                  fill="#FF42EF"
+                />
+              </svg>
+            </span>
+
+            <span
+              class="tw-text-heading tw-text-base tw-font-gt-america tw-ml-[3px]"
+            >
+              Room
+            </span>
+          </label>
+        </div>
+        <!-- dropdown of home type -->
+        <div
+          x-show="paintingType !== 'room'"
+          x-transition
+          class="tw-mt-6"
+        >
+          <div
+            class="tw-flex flex-col tw-flex-col-reverse md:tw-flex-row flex-row tw-justify-between tw-items-start"
+          >
+            <div class="tw-w-full lg:tw-w-2/3">
+              <button
+                @click="isDropDownOpen=!isDropDownOpen"
+                class="tw-flex tw-p-3 tw-w-full tw-items-center tw-bg-white"
+              >
+                <span
+                  class="tw-text-heading tw-font-gt-america tw-mr-auto tw-text-base"
+                >
+                  Select home type
+                </span>
+                <span class="tw-flex tw-items-center tw-gap-7">
+                  <span
+                    x-text="paintDetails.name"
+                    class="tw-text-heading tw-font-gt-america tw-text-base tw-font-medium"
+                  ></span>
+                  <span
+                    :class="(isDropDownOpen ? 'bi bi-chevron-right tw-ml-auto' : 'be bi-chevron-down tw-ml-auto')+' tw-ml-6'"
+                  ></span>
+                </span>
+              </button>
+              <div
+                x-transition
+                x-show="isDropDownOpen"
+                class="tw-w-full tw-bg-white tw-h-full tw-overflow-auto lg:tw-max-h-[500px]"
+              >
+                <div class="tw-border-t tw-border-primary tw-mx-3">
+                  <div class="tw-grid tw-grid-cols-1 xl:tw-grid-cols-2">
+                    <div></div>
+                    <div>
+                      <template
+                        x-for="(homeType, index) in homeTypeList"
+                        :key="index"
+                      >
+                        <div
+                          x-data="{
+                          isHomeTypeDropDownOpen:false,
+                        }"
+                        >
+                          <button
+                            class="tw-flex tw-justify-between tw-items-center tw-w-full"
+                            @click="isHomeTypeDropDownOpen = !isHomeTypeDropDownOpen; homeType.slotName === 'Others' ? setPaintDetailsIfRoomType('Others') : null"
+                          >
+                            <p
+                              x-text="homeType.slotName"
+                              class="tw-text-heading tw-font-gt-america tw-py-[10px] tw-mr-auto"
+                            ></p>
+                            <span
+                              x-show="homeType?.options"
+                              :class="isHomeTypeDropDownOpen ?'bi bi-chevron-right' :'bi bi-chevron-down'"
+                            ></span>
+                          </button>
+                          <template
+                            x-for="(option,optionIndex) in homeType?.options"
+                            :key="optionIndex"
+                          >
+                            <label
+                              x-show="isHomeTypeDropDownOpen"
+                              @click="paintDetails = option;isDropDownOpen = false;isHomeTypeDropDownOpen = false;setRoomDetails(option)"
+                              :for="option.value"
+                              :class="paintDetails.value === option.value ? 'tw-text-heading hover:tw-text-button tw-font-gt-america tw-py-[10px] tw-mx-3 tw-ml-auto tw-cursor-pointer tw-block' : 'tw-text-darkGrey tw-normal-transition hover:tw-text-button tw-font-gt-america tw-text-base tw-py-[10px] tw-mx-3 tw-ml-auto tw-cursor-pointer tw-block'"
+                            >
+                              <input
+                                :id="option.value"
+                                type="radio"
+                                :value="option.value"
+                                class="tw-hidden"
+                              />
+                              <span x-text="option.name"></span>
+                            </label>
+                          </template>
+                        </div>
+                      </template>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="md:tw-w-1/3 tw-mb-5 tw-w-full lg:tw-w-1/4 xl:tw-w-[200px] md:tw-ml-5"
+            >
+              <div
+                x-show="paintDetails.name === 'Others'"
+                class="tw-px-4 tw-py-2 lg:tw-py-1 tw-text-2xl lg:tw-text-3xl tw-font-gt-america tw-flex tw-items-center tw-bg-white"
+              >
+                <input
+                  type="number"
+                  min="0"
+                  name="floorArea"
+                  class="focus:tw-outline-none tw-w-2/3"
+                  x-model="floorArea"
+                />
+                <span
+                  class="tw-ml-1 tw-text-black tw-w-1/3l tw-text-2xl xl:tw-text-3xl"
+                >
+                  sqm
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- rules of thumb -->
+        <div
+          x-show="!isShowingPaintColumns && paintingType !=='room'"
+          class="tw-mt-10 md:tw-mt-40 tw-grid tw-grid-cols-1 lg:tw-grid-cols-2"
+        >
+          <div class="animate__animated animate__fadeIn">
+            <p class="tw-text-heading tw-font-gt-america tw-text-base">
+              As a rule of thumb, you would need
+              <span class="tw-text-button font-gt-america tw-font-medium">
+                1 litre for every 5 sqm.
+              </span>
+            </p>
+            <p class="tw-text-heading tw-font-gt-america tw-text-base">
+              We always recommend 1coat of sealer and 2 coats of paint.
+            </p>
+          </div>
+          <div class="animate__animated animate__fadeIn">
+            <ul class="tw-list-none">
+              <li
+                class="tw-flex tw-justify-between tw-border-b tw-border-[#3021124D] tw-items-center tw-text-heading tw-font-gt-america tw-text-xl tw-py-[18px] tw-px-5"
+              >
+                <span class="tw-text-xl">Floor area</span>
+                <span>
+                  <span
+                    x-text="floorArea"
+                    class="tw-text-heading tw-text-2xl"
+                  ></span>
+                  <span>sqm</span>
+                </span>
+              </li>
+              <li
+                class="tw-flex tw-justify-between tw-border-b tw-border-[#3021124D] tw-items-center tw-text-heading tw-font-gt-america tw-text-xl tw-py-[18px] tw-px-5"
+              >
+                <span class="tw-text-xl">Paint quantity</span>
+                <span>
+                  <span
+                    x-text="floorArea/5"
+                    class="tw-text-heading tw-text-2xl"
+                  ></span>
+                  <span>L</span>
+                </span>
+              </li>
+              <li
+                class="tw-flex tw-justify-between tw-border-b tw-border-[#3021124D] tw-items-center tw-text-heading tw-font-gt-america tw-text-xl tw-py-[18px] tw-px-5"
+              >
+                <span class="tw-text-xl">Sealer quantity</span>
+                <span>
+                  <span
+                    x-text="floorArea/10"
+                    class="tw-text-heading tw-text-2xl"
+                  ></span>
+                  <span>L</span>
+                </span>
+              </li>
+            </ul>
+            <div
+              class="tw-flex tw-justify-center md:tw-justify-end tw-items-center"
+            >
+              <button
+                x-show="paintDetails.name"
+                @click="isShowingPaintColumns=true"
+                class="tw-mt-7 tw-primary-btn rounded-[2px] lg:tw-mt-40 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative"
+              >
+                <span
+                  class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left"
+                >
+                  Choose room colors
+                </span>
+                <span
+                  class="tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full"
+                ></span>
+                <svg
+                  class="tw-z-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="11"
+                  height="20"
+                  viewBox="0 0 11 20"
+                >
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="1"
+                    fill="#302112"
+                  />
+                  <circle
+                    cx="7"
+                    cy="13"
+                    r="1"
+                    fill="#302112"
+                  />
+                  <circle
+                    cx="4"
+                    cy="16"
+                    r="1"
+                    fill="#302112"
+                  />
+                  <circle
+                    cx="1"
+                    cy="19"
+                    r="1"
+                    fill="#302112"
+                  />
+                  <circle
+                    cx="1"
+                    cy="1"
+                    r="1"
+                    transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)"
+                    fill="#302112"
+                  />
+                  <circle
+                    cx="1"
+                    cy="1"
+                    r="1"
+                    transform="matrix(1 0 0 -1 3 5)"
+                    fill="#302112"
+                  />
+                  <circle
+                    cx="1"
+                    cy="1"
+                    r="1"
+                    transform="matrix(1 0 0 -1 6 8)"
+                    fill="#302112"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- paint calculator -->
+        <div
+          x-show="paintDetails.roomsDetails?.length > 0 && isShowingPaintColumns"
+          x-transition
+        >
+          <div
+            class="tw-flex tw-flex-1 tw-overflow-auto tw-gap-3 tw-mt-9 animate__animated animate__fadeIn"
+          >
+            <template
+              x-for="(item,index) in paintDetails?.roomsDetails"
+              :key="index"
+            >
+              <div
+                x-show="paintDetails.roomsDetails.length"
+                x-data="{
+                  isShowingColumn:(index  === 0 ?true:(paintingType === 'room' || paintDetails.name=== 'Others')?true: false),roomType:'',
+                  area:0,
+                }"
+              >
+                <div
+                  x-show="isShowingColumn"
+                  class="tw-border tw-h-full tw-min-w-[300px] tw-w-[300px] tw-p-3 tw-border-lightGrey tw-font-gt-america animate__animated animated"
+                >
+                  <!-- main room color picker -->
+                  <div
+                    class="tw-flex tw-justify-between tw-gap-7 tw-mb-5 tw-items-center tw-bg-transparent"
+                  >
+                    <select
+                      x-model="item.name"
+                      name="roomType"
+                      class="tw-bg-transparent px-1 py-2 focus:tw-outline-none"
+                    >
+                      <template
+                        x-for="(room,index) in roomTypeOptions"
+                        :key="index"
+                      >
+                        <option
+                          x-model="room.value"
+                          x-text="room.name"
+                          :value="room.value"
+                          :selected="index === paintDetails.roomsDetails.indexOf(item)"
+                        ></option>
+                      </template>
+                    </select>
+                    <div
+                      class="tw-flex tw-items-center tw-w-[50%] tw-font-gt-america tw-text-base tw-px-1 tw-py-2 tw-bg-white"
+                    >
+                      <input
+                        type="number"
+                        min="0"
+                        x-model="item.area"
+                        placeholder="0"
+                        :value="item.area"
+                        class="focus:tw-outline-none tw-pl-1 tw-w-1/2"
+                      />
+                      <span class="tw-ml-1 tw-w-1/2">sqm</span>
+                    </div>
+                  </div>
+                  <div class="tw-mt-5">
+                    <div x-show="item.color">
+                      <div
+                        :style="'background-color: ' + item.color"
+                        class="tw-h-[170px] animate__animated animate__fadeIn"
+                      ></div>
+                      <div
+                        class="tw-w-full tw-bg-white tw-text-heading tw-font-gt-america tw-text-base tw-text-center tw-py-1"
+                      >
+                        <span x-text="item.colorName"></span>
+                      </div>
+                    </div>
+                    <button
+                      x-show="!item.color"
+                      @click="isModalOpen = true;isPickingCeilingColor=false;currentRoomColumnIndex=index"
+                      class="tw-w-full tw-min-h-[190px] tw-bg-white tw-flex tw-justify-center tw-items-center tw-text-heading tw-font-gt-america tw-text-base"
+                    >
+                      <span class="tw-flex tw-items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="19"
+                          height="19"
+                          viewBox="0 0 19 19"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M17.4416 9.27135C17.4416 11.4625 16.5712 13.564 15.0218 15.1133C13.4724 16.6627 11.371 17.5332 9.1798 17.5332C6.98862 17.5332 4.8872 16.6627 3.3378 15.1133C1.78841 13.564 0.917969 11.4625 0.917969 9.27135C0.917969 7.08018 1.78841 4.97875 3.3378 3.42936C4.8872 1.87996 6.98862 1.00952 9.1798 1.00952C11.371 1.00952 13.4724 1.87996 15.0218 3.42936C16.5712 4.97875 17.4416 7.08018 17.4416 9.27135ZM4.58989 9.95984V8.58286H8.49131V4.68145H9.86828V8.58286H13.7697V9.95984H9.86828V13.8613H8.49131V9.95984H4.58989Z"
+                            fill="#FF40F4"
+                          />
+                        </svg>
+                      </span>
+                      <span class="ml-2">Add colour</span>
+                    </button>
+                    <button
+                      type="button"
+                      @click="isModalOpen = true;isPickingCeilingColor=false;currentRoomColumnIndex=index"
+                      class="tw-mt-2 tw-flex tw-justify-center tw-items-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
+                          fill="#FF40F4"
+                        />
+                      </svg>
+                      <span
+                        class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america"
+                      >
+                        Change Colour
+                      </span>
+                    </button>
+                  </div>
+                  <!-- ceiling color picker -->
+                  <div x-show="item.name !== 'wall/ceiling'">
+                    <div
+                      class="tw-flex tw-justify-between tw-mb-5 tw-items-center tw-bg-transparent tw-mt-12"
+                    >
+                      <span
+                        class="tw-text-heading tw-font-gt-america tw-text-base"
+                      >
+                        Ceiling
+                      </span>
+                      <div
+                        class="tw-flex tw-items-center tw-w-[90px] tw-font-gt-america tw-text-base tw-px-1 tw-py-2 tw-bg-white"
+                      >
+                        <input
+                          x-text="item.area"
+                          type="number"
+                          min="0"
+                          :value="item.area"
+                          readonly
+                          class="focus:tw-outline-none tw-pl-1 tw-w-1/2"
+                        />
+                        <span class="tw-ml-1 tw-w-1/2">sqm</span>
+                      </div>
+                    </div>
+                    <div class="tw-mt-5">
+                      <div x-show="item.ceilingColor">
+                        <div
+                          :style="'background-color: ' + item.ceilingColor"
+                          class="tw-h-[170px] animate__animated animate__fadeIn"
+                        ></div>
+                        <div
+                          class="tw-w-full tw-bg-white tw-text-heading tw-font-gt-america tw-text-base tw-text-center tw-py-1"
+                        >
+                          <span x-text="item.ceilingColorName"></span>
+                        </div>
+                      </div>
+                      <button
+                        x-show="!item.ceilingColor"
+                        @click="isModalOpen = true;isPickingCeilingColor=true;currentRoomColumnIndex=index"
+                        class="tw-w-full tw-min-h-[190px] tw-bg-white tw-flex tw-justify-center tw-items-center tw-text-heading tw-font-gt-america tw-text-base"
+                      >
+                        <span class="tw-flex tw-items-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="19"
+                            height="19"
+                            viewBox="0 0 19 19"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M17.4416 9.27135C17.4416 11.4625 16.5712 13.564 15.0218 15.1133C13.4724 16.6627 11.371 17.5332 9.1798 17.5332C6.98862 17.5332 4.8872 16.6627 3.3378 15.1133C1.78841 13.564 0.917969 11.4625 0.917969 9.27135C0.917969 7.08018 1.78841 4.97875 3.3378 3.42936C4.8872 1.87996 6.98862 1.00952 9.1798 1.00952C11.371 1.00952 13.4724 1.87996 15.0218 3.42936C16.5712 4.97875 17.4416 7.08018 17.4416 9.27135ZM4.58989 9.95984V8.58286H8.49131V4.68145H9.86828V8.58286H13.7697V9.95984H9.86828V13.8613H8.49131V9.95984H4.58989Z"
+                              fill="#FF40F4"
+                            />
+                          </svg>
+                        </span>
+                        <span class="ml-2">Add colour</span>
+                      </button>
+                      <button
+                        type="button"
+                        @click="isModalOpen = true;isPickingCeilingColor=true;currentRoomColumnIndex=index"
+                        class="tw-mt-2 tw-flex tw-justify-center tw-items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
+                            fill="#FF40F4"
+                          />
+                        </svg>
+                        <span
+                          class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america"
+                        >
+                          Change Colour
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  x-show="!isShowingColumn"
+                  @click="isShowingColumn=true"
+                  class="tw-border tw-h-full tw-w-[300px] tw-p-3 tw-border-lightGrey tw-font-gt-america animate__animated animated"
+                >
+                  <span
+                    class="tw-flex tw-min-w-[250px] tw-justify-center tw-items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19 10.5C19 12.8869 18.0518 15.1761 16.364 16.864C14.6761 18.5518 12.3869 19.5 10 19.5C7.61305 19.5 5.32387 18.5518 3.63604 16.864C1.94821 15.1761 1 12.8869 1 10.5C1 8.11305 1.94821 5.82387 3.63604 4.13604C5.32387 2.44821 7.61305 1.5 10 1.5C12.3869 1.5 14.6761 2.44821 16.364 4.13604C18.0518 5.82387 19 8.11305 19 10.5ZM5 11.25V9.75H9.25V5.5H10.75V9.75H15V11.25H10.75V15.5H9.25V11.25H5Z"
+                        fill="#FF40F4"
+                      />
+                    </svg>
+                    <span
+                      class="tw-text-heading tw-font-gt-america tw-text-lg tw-ml-2"
+                    >
+                      Add room/space
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </template>
+            <button
+              x-show="paintingType === 'room' || paintDetails.name === 'Others'"
+              @click="addRoomDetails()"
+              class="tw-border tw-w-[300px] tw-p-3 tw-border-lightGrey tw-font-gt-america animate__animated animated"
+            >
+              <span
+                class="tw-flex tw-min-w-[250px] tw-justify-center tw-items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19 10.5C19 12.8869 18.0518 15.1761 16.364 16.864C14.6761 18.5518 12.3869 19.5 10 19.5C7.61305 19.5 5.32387 18.5518 3.63604 16.864C1.94821 15.1761 1 12.8869 1 10.5C1 8.11305 1.94821 5.82387 3.63604 4.13604C5.32387 2.44821 7.61305 1.5 10 1.5C12.3869 1.5 14.6761 2.44821 16.364 4.13604C18.0518 5.82387 19 8.11305 19 10.5ZM5 11.25V9.75H9.25V5.5H10.75V9.75H15V11.25H10.75V15.5H9.25V11.25H5Z"
+                    fill="#FF40F4"
+                  />
+                </svg>
+                <span
+                  class="tw-text-heading tw-font-gt-america tw-text-lg tw-ml-2"
+                >
+                  Add room/space
+                </span>
+              </span>
+            </button>
+          </div>
+          <form
+            action="checkout.html"
+            class="tw-flex tw-justify-center tw-items-center md:tw-justify-start"
+          >
+            <input
+              type="text"
+              name="paintDetails"
+              class="tw-hidden"
+              :value="JSON.stringify(paintDetails)"
+            />
+            <button
+              class="tw-mt-7 tw-flex tw-justify-between tw-items-center tw-primary-btn rounded-[2px] lg:tw-mt-[56px] tw-mb-7 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative"
+            >
+              <span
+                class="text-span tw-z-10 tw-w-[180px] tw-block tw-h-full tw-font-gt-america tw-text-left"
+              >
+                Calculate
+              </span>
+              <span
+                class="tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full"
+              ></span>
+              <svg
+                class="tw-z-10"
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="20"
+                viewBox="0 0 11 20"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="7"
+                  cy="13"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="4"
+                  cy="16"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="19"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="matrix(1 0 0 -1 3 5)"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="matrix(1 0 0 -1 6 8)"
+                  fill="#302112"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        x-cloak
+        x-show="isModalOpen"
+        @click.away="isModalOpen = false"
+        class="tw-fixed tw-inset-0 tw-z-50 tw-flex tw-items-center tw-justify-center tw-bg-black tw-bg-opacity-50"
+      >
+        <div
+          @click.stop
+          class="tw-bg-primary animate__animated animate__zoomIn animate__faster tw-rounded-lg tw-py-5 tw-px-8 lg:tw-py-10 lg:tw-px-16 tw-w-11/12 tw-h-5/6 tw-overflow-y-auto"
+        >
+          <!-- pick a colour title and search box -->
+          <div class="tw-flex tw-justify-between tw-items-start">
+            <div
+              class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center"
+            >
+              <h1
+                class="tw-text-lg tw-mb-4 md:tw-mb-0 lg:tw-text-[32px] tw-w-full"
+              >
+                Pick a colour
+              </h1>
+              <div
+                class="tw-flex tw-items-center tw-ml-0 md:tw-ml-[66px] tw-w-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="tw-h-4 tw-w-4 lg:tw-w-[30px] lg:tw-h-[30px]"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.52 20.582C17.7078 22.1452 15.3933 23.0035 13 23C7.477 23 3 18.523 3 13C3 7.477 7.477 3 13 3C18.523 3 23 7.477 23 13C23.0035 15.3933 22.1452 17.7078 20.582 19.52L26.53 25.47L25.47 26.53L19.52 20.582ZM18.645 19.355C16.9921 20.8232 14.8321 21.5897 12.6235 21.4917C10.4148 21.3938 8.33116 20.4391 6.81472 18.8303C5.29828 17.2215 4.46835 15.0851 4.50101 12.8745C4.53368 10.6639 5.42637 8.55299 6.98968 6.98968C8.55299 5.42637 10.6639 4.53368 12.8745 4.50101C15.0851 4.46835 17.2215 5.29828 18.8303 6.81472C20.4391 8.33116 21.3938 10.4148 21.4917 12.6235C21.5897 14.8321 20.8232 16.9921 19.355 18.645L18.645 19.355Z"
+                    fill="#302112"
+                  />
+                </svg>
+                <input
+                  class="tw-ml-[10px] tw-bg-transparent tw-text-[#796E62] tw-font-gt-america tw-text-base lg:tw-text-lg focus:tw-outline-none tw-border-b tw-border-black tw-min-w-[261px]"
+                  placeholder="Type a colour name or code..."
+                  type="text"
+                />
+              </div>
+            </div>
+            <button
+              type="button"
+              @click="isModalOpen = false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="tw-h-4 tw-w-4 lg:tw-w-[28px] lg:tw-h-[28px]"
+                viewBox="0 0 29 30"
+                fill="none"
+              >
+                <line
+                  y1="-1"
+                  x2="39.0655"
+                  y2="-1"
+                  transform="matrix(-0.683949 0.72953 -0.683949 -0.72953 26.7188 0.000488281)"
+                  stroke="#302112"
+                  stroke-width="2"
+                />
+                <line
+                  y1="-1"
+                  x2="39.0655"
+                  y2="-1"
+                  transform="matrix(-0.683949 -0.72953 0.683949 -0.72953 28.5 28.4995)"
+                  stroke="#302112"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- category -->
+          <div
+            class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-6 xl:tw-grid-cols-7 tw-gap-3 md:tw-gap-4 lg:tw-gap-6 xl:tw-gap-8 tw-mt-6"
+          >
+            <template
+              x-for="(category, index) in categories"
+              :key="index"
+            >
+              <button
+                @click="selectCategory(category)"
+                type="button"
+                class="tw-flex tw-items-center"
+              >
+                <span
+                  :style="'background-color: ' + category.color"
+                  class="tw-h-8 tw-w-8 tw-rounded-full tw-flex tw-justify-center tw-items-center"
+                >
+                  <svg
+                    x-show="selectedCategory?.name === category.name"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Group 2224">
+                      <circle
+                        id="Ellipse 821"
+                        cx="8.72266"
+                        cy="10.8434"
+                        r="0.639013"
+                        transform="rotate(45 8.72266 10.8434)"
+                        fill="#fff"
+                      />
+                      <circle
+                        id="Ellipse 828"
+                        cx="6.91797"
+                        cy="12.6508"
+                        r="0.639013"
+                        transform="rotate(45 6.91797 12.6508)"
+                        fill="#fff"
+                      />
+                      <circle
+                        id="Ellipse 829"
+                        cx="5.10938"
+                        cy="14.4579"
+                        r="0.639013"
+                        transform="rotate(45 5.10938 14.4579)"
+                        fill="#fff"
+                      />
+                      <circle
+                        id="Ellipse 826"
+                        cx="10.5312"
+                        cy="9.03578"
+                        r="0.639013"
+                        transform="rotate(45 10.5312 9.03578)"
+                        fill="#fff"
+                      />
+                      <circle
+                        id="Ellipse 827"
+                        cx="12.3398"
+                        cy="7.22841"
+                        r="0.639013"
+                        transform="rotate(45 12.3398 7.22841)"
+                        fill="#fff"
+                      />
+                      <circle
+                        id="Ellipse 824"
+                        cx="3.14844"
+                        cy="12.2953"
+                        r="0.639013"
+                        transform="rotate(45 3.14844 12.2953)"
+                        fill="#fff"
+                      />
+                      <circle
+                        id="Ellipse 825"
+                        cx="1.33984"
+                        cy="10.4877"
+                        r="0.639013"
+                        transform="rotate(45 1.33984 10.4877)"
+                        fill="#fff"
+                      />
+                      <circle
+                        id="Ellipse 822"
+                        cx="14.1172"
+                        cy="5.37562"
+                        r="0.639013"
+                        transform="rotate(45 14.1172 5.37562)"
+                        fill="#fff"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <span
+                  x-text="category.name"
+                  class="tw-font-gt-america tw-text-[13px] tw-font-medium tw-text-heading tw-ml-[10px]"
+                ></span>
+              </button>
+            </template>
+          </div>
+          <div
+            class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-3 xl:tw-grid-cols-4 tw-gap-[18px] tw-w-full tw-pt-[30px]"
+          >
+            <template
+              x-for="(pallet,index) in selectedCategory.pallets"
+              :key="index"
+            >
+              <button
+                type="button"
+                @click="isOpen = false;isChangingColor=false;changingColorPalletIndex=null;setColorOfRoom(pallet.color,pallet.name)"
+                class="tw-w-full"
+              >
+                <div
+                  :style="'background-color: ' + pallet.color"
+                  class="tw-w-full tw-h-[140px] md:tw-h-[140px] lg:tw-h-[270px]"
+                ></div>
+                <h1
+                  x-text="pallet.name"
+                  class="tw-text-center tw-py-4 lg:tw-py-7 tw-font-gt-america tw-bg-white"
+                ></h1>
+              </button>
+            </template>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script>
+      // Scroll to the top of the page
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth', // Use smooth scrolling for a nice animation
+        })
+      }
+
+      // Call the function to scroll to the top when the page loads
+      window.addEventListener('load', () => {
+        scrollToTop()
+      })
+
+      function scrollIntoViewAnId(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+      }
+
+      const screenWidth = window.innerWidth
+
+      anime({
+        targets: '.paint_selection_image',
+        width: screenWidth > 1024 ? ['0%', '578px'] : ['0%', '33.33%'],
+        easing: 'easeInOutQuad',
+      })
+    </script>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+ {
+    "name":"Paint Calculation Section",
+    "settings":[
+        {
+            "type":"text",
+            "id":"heading",
+            "label":"Heading"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"slide",
+            "name":"Slide",
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "id":"img",
+                    "label":"Image"
+                },
+              {
+"id" : "vibe_collection",
+"type" : "collection",
+"label" : "collection"
+}
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"Paint Calculation Section"
+        }
+    ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
