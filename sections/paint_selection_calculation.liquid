@@ -182,11 +182,7 @@
         selectedCategory: '',
         categories:{{ collections | json | escape }},
         async getData(){
-          let response = await fetch('https://gush2.myshopify.com/admin/api/2023-10/collections/459609309377/products.json',{
-            headers:{
-              'X-Shopify-Access-Token':'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'
-            }
-          });
+          let response = await fetch('https://gush.earth/collections/vibe-1?view=data-fetch');
           let data = await response.json();
           this.products = data;
         },
@@ -1040,7 +1036,7 @@
                   ></h1>
                 </button>
               </template> -->
-              {% assign categoryName='vibe-1' %}}
+              {% assign categoryName='vibe-1' %}
               {% for product in collections[categoryName].products %}
                 <button
                   type="button"
@@ -1093,6 +1089,7 @@
       function getCollectionProduct(data){
         console.log(data)
       }
+      console.log(collections['vibe-1'].products)
     </script>
 
 {% schema %}
