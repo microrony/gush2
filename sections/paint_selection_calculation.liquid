@@ -1041,11 +1041,13 @@
                   <div
                     class="tw-w-full tw-h-[140px] md:tw-h-[140px] lg:tw-h-[270px]"
                   >
-                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" />
+                    <img src="{{ product.featured_image | product_img_url: 'medium'  }}" />
                   </div>
                   <h1
                     class="tw-text-center tw-py-4 lg:tw-py-7 tw-font-gt-america tw-bg-white"
-                  >{{ product.title }}</h1>
+                  >
+                    {{ product.title }}
+                  </h1>
                 </button>
               {% endfor %}
 
