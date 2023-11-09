@@ -201,6 +201,7 @@
             }
           ]
         },
+    collections: {{ collections }} ,
         categories: [
           {
             'name': 'Category 1',
@@ -1077,6 +1078,15 @@
             </button>
           </div>
 
+ <div class="tw-flex tw-items-center">
+  <template
+    x-for="(collection,index) in collections"
+    :key="index"
+  >
+    <div x-text="collection.name"></div>
+  </template>
+</div>
+                  
           <!-- category -->
           <div
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-6 xl:tw-grid-cols-7 tw-gap-3 md:tw-gap-4 lg:tw-gap-6 xl:tw-gap-8 tw-mt-6"
