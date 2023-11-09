@@ -1022,7 +1022,7 @@
           <div
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-3 xl:tw-grid-cols-4 tw-gap-[18px] tw-w-full tw-pt-[30px]"
           >
-            <div x-if="products.length > 0">
+            <template x-if="products.length > 0">
               <template
                 x-for="(product,index) in selectedCategory.products"
                 :key="index"
@@ -1061,7 +1061,7 @@
                   </h1>
                 </button>
               </template> -->
-            </div>
+            </template>
           </div>
         </div>
       </div>
