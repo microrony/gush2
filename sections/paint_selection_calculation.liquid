@@ -663,9 +663,10 @@
                   <div class="tw-mt-5">
                     <div x-show="item.color">
                       <div
-                        :style="'background-color: ' + item.color"
                         class="tw-h-[170px] animate__animated animate__fadeIn"
-                      ></div>
+                      >
+                        <img :src="'https://'+ item.colorImage" class="tw-h-full tw-w-full" />
+                      </div>
                       <div
                         class="tw-w-full tw-bg-white tw-text-heading tw-font-gt-america tw-text-base tw-text-center tw-py-1"
                       >
@@ -748,9 +749,10 @@
                     <div class="tw-mt-5">
                       <div x-show="item.ceilingColor">
                         <div
-                          :style="'background-color: ' + item.ceilingColor"
                           class="tw-h-[170px] animate__animated animate__fadeIn"
-                        ></div>
+                        >
+                          <img :src="'https://'+ item.ceilingColorImage" class="tw-h-full tw-w-full" />
+                        </div>
                         <div
                           class="tw-w-full tw-bg-white tw-text-heading tw-font-gt-america tw-text-base tw-text-center tw-py-1"
                         >
@@ -1065,24 +1067,6 @@
                   ></h1>
                 </button>
               </template>
-
-              <!-- <template x-for="(product,index) in products" :key="index">
-                <button
-                  type="button"
-                  class="tw-w-full"
-                >
-                  <div
-                    class="tw-w-full tw-h-[140px] md:tw-h-[140px] lg:tw-h-[270px]"
-                  >
-                    <img class="tw-h-full tw-w-full tw-object-center" src="{{ product.featured_image | product_img_url: 'medium'  }}" />
-                  </div>
-                  <h1
-                    class="tw-text-center tw-py-4 lg:tw-py-7 tw-font-gt-america tw-bg-white"
-                  >
-                    {{ product.title }}
-                  </h1>
-                </button>
-              </template> -->
             </template>
           </div>
         </div>
