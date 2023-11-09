@@ -1002,7 +1002,7 @@
            {% for collection in collections %}
              {% if collection.handle contains 'vibe' %}
                 <button
-                  onclick=""
+                  onclick="getCollectionProduct({{ collections[collection.handle].products }})"
                   type="button"
                   class="tw-flex tw-items-center"
                 > 
@@ -1090,6 +1090,10 @@
         width: screenWidth > 1024 ? ['0%', '578px'] : ['0%', '33.33%'],
         easing: 'easeInOutQuad',
       })
+
+      getCollectionProduct(data){
+        console.log(data)
+      }
     </script>
 
 {% schema %}

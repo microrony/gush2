@@ -1,3 +1,16 @@
+{%- paginate collection.products by section.settings.products_per_page -%}
+  {%- for product in collection.products -%}
+    {{ product | json }}
+  {%- endfor -%}
+{%- endpaginate -%}
+<script id="collection__data">
+  {
+    "collection": {{ collection | json }},
+    "products": [
+      
+    ]
+  }
+</script>
 {% schema %}
   {
     "name": "Collection data",
