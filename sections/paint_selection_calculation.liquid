@@ -78,8 +78,10 @@
               name:this.roomTypeOptions[this.paintDetails.roomsDetails.length].value,
               area:0,
               color:'',
+              colorImage:'',
               colorName:'',
               ceilingColor:'',
+              ceilingColorImage:'',
               ceilingColorName:'' 
             })
         },
@@ -91,20 +93,24 @@
               name:this.roomTypeOptions[index].value ?? '',
               area:0,
               color:'',
+              colorImage:'',
               colorName:'',
               ceilingColor:'',
-              ceilingColorName:'' 
+              ceilingColorImage:'',
+              ceilingColorName:''
             }))
           }
           
         },
-        setColorOfRoom(color,colorName){
+        setColorOfRoom(color,colorName,colorImage){
          if(this.isPickingCeilingColor){
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColor = color;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorName = colorName;
+          this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorImage = colorImage;
          }else{
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].color = color;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].colorName = colorName;
+          this.paintDetails.roomsDetails[this.currentRoomColumnIndex].colorImage = colorImage;
          }
          this.isModalOpen = false;
         },
@@ -125,8 +131,10 @@
                 name:this.roomTypeOptions[0].value ?? '',
                 area:0,
                 color:'',
+                colorImage:'',
                 colorName:'',
                 ceilingColor:'',
+                ceilingColorImage:'',
                 ceilingColorName:'' 
               }))
         },
@@ -1043,7 +1051,7 @@
               >
                 <button
                   type="button"
-                  @click="isOpen = false;isChangingColor=false;changingColorPalletIndex=null;setColorOfRoom(pallet.color,pallet.name)"
+                  @click="isOpen = false;isChangingColor=false;changingColorPalletIndex=null;setColorOfRoom(product.featured_image, proudct.title,product.featured_image)"
                   class="tw-w-full"
                 >
                   <div
