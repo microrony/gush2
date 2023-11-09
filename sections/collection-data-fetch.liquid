@@ -1,7 +1,10 @@
+{%- assign product_data = "" -%}
 {%- paginate collection.products by 50 -%}
-  {%- for product in collection.products -%}
-    {{ product | json }}
-  {%- endfor -%}
+  {%- capture product_data -%}
+    {%- for product in collection.products -%}
+      {{ product | json }}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  {%- endcapture -%}
 {%- endpaginate -%}
 <script id="collection__data">
   {
