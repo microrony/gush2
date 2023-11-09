@@ -1081,7 +1081,7 @@
           <div
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-6 xl:tw-grid-cols-7 tw-gap-3 md:tw-gap-4 lg:tw-gap-6 xl:tw-gap-8 tw-mt-6"
           >
-            <!-- <template
+           <template
               x-for="(category, index) in categories"
               :key="index"
             >
@@ -1175,55 +1175,32 @@
                   class="tw-font-gt-america tw-text-[13px] tw-font-medium tw-text-heading tw-ml-[10px]"
                 ></span>
               </button>
-            </template> -->
-
-        {% for collection in collections %} 
-            {% if collection.handle contains 'vibe' %}
-        
-              <button
-                type="button"
-                class="tw-flex tw-items-center"
-              >
-                <span
-                  class="tw-h-8 tw-w-8 tw-rounded-full tw-flex tw-justify-center tw-items-center"
-                >
-               
-                </span>
-                <span
-                  class="tw-font-gt-america tw-text-[13px] tw-font-medium tw-text-heading tw-ml-[10px]"
-                >
-                {{collection.title}}
-              </span>
-              </button>    
-            {% endif %} 
-            {% endfor %}
+            </template>
 
             
           </div>
           <div
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-3 xl:tw-grid-cols-4 tw-gap-[18px] tw-w-full tw-pt-[30px]"
           >
-{% for collection in collections %} 
-            {% if collection.handle contains 'vibe' %}
-              {% for product in collection.products %}
+              <template
+                x-for="(pallet,index) in selectedCategory.pallets"
+                :key="index"
+              >
                 <button
                   type="button"
+                  @click="isOpen = false;isChangingColor=false;changingColorPalletIndex=null;setColorOfRoom(pallet.color,pallet.name)"
                   class="tw-w-full"
                 >
-                  <div class="tw-w-full tw-h-[140px] md:tw-h-[140px] lg:tw-h-[270px]">
-                    <img
-                      src="{{ product.featured_image | product_img_url: 'medium' }}"
-                      alt="img"
-                      class="tw-h-full tw-w-full"
-                    />
-                  </div>
-                  <h1 class="tw-text-center tw-py-4 lg:tw-py-7 tw-font-gt-america tw-bg-white">
-                    {{ product.title }}
-                  </h1>
+                  <div
+                    :style="'background-color: ' + pallet.color"
+                    class="tw-w-full tw-h-[140px] md:tw-h-[140px] lg:tw-h-[270px]"
+                  ></div>
+                  <h1
+                    x-text="pallet.name"
+                    class="tw-text-center tw-py-4 lg:tw-py-7 tw-font-gt-america tw-bg-white"
+                  ></h1>
                 </button>
-              {% endfor %}
-              {% endif %} 
-            {% endfor %}
+              </template>
           </div>
         </div>
       </div>
