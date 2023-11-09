@@ -1002,7 +1002,7 @@
            {% for collection in collections %}
              {% if collection.handle contains 'vibe' %}
                 <button
-                  onclick=""
+                  @click="await getData()"
                   class="tw-flex tw-items-center"
                 > 
                   <span
