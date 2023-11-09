@@ -180,8 +180,8 @@
           this.selectedCategory = category;
           console.log(category);
         },
-        selectedCategory: null,
-        categories:{{ collections | json }}
+        selectedCategory: {},
+        categories:{{ collections | json | escape }}
       }"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
