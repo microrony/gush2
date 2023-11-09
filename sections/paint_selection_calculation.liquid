@@ -992,7 +992,7 @@
            {% for collection in collections %}
              {% if collection.handle contains 'vibe' %}
                 <button
-                  @click="selectCategory('{{ collection.handle }}')"
+                  @click="selectCategory('{{ collection.id }}')"
                   type="button"
                   class="tw-flex tw-items-center"
                 > 
@@ -1033,14 +1033,21 @@
                   ></h1>
                 </button>
               </template> -->
-<span x-text="selectedCategory"></span>
-  {% for product in collections['vibe-1'].products %}
-  <div class="product">
-  <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title }}">
-  <h2>{{ product.title }}</h2>
-    <a href="{{ product.url }}">View Product</a>
-  </div>
-{% endfor %}
+              {% for product in collections['vibe-1'].products %}
+                <button
+                  type="button"
+                  class="tw-w-full"
+                >
+                  <div
+                    class="tw-w-full tw-h-[140px] md:tw-h-[140px] lg:tw-h-[270px]"
+                  >
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" />
+                  </div>
+                  <h1
+                    class="tw-text-center tw-py-4 lg:tw-py-7 tw-font-gt-america tw-bg-white"
+                  >{{ product.title }}</h1>
+                </button>
+              {% endfor %}
 
           </div>
         </div>
