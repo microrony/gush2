@@ -179,8 +179,8 @@
         selectCategory(category){
           this.collectionName=category
         },
-        selectedCategory: '',
         categories:{{ collections | json | escape }},
+        products:[],
         async getData(categoryName, totalData){
           console.log(totalData)
          fetch(`https://gush.earth/collections/${categoryName}?view=data-fetch&page=1`).then(res=> res.text()).then(html=> {
@@ -188,10 +188,9 @@
             const doc = parser.parseFromString(html,'text/html')
             const dataElement = doc.querySelector('#collection__data')
             const data = JSON.parse(dataElement.textContent)
-            console.log(data)
+            this.products = data
          }).catch(err=> console.log(err))
         },
-        collectionName:''
       }"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
@@ -1021,7 +1020,7 @@
           <div
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-3 xl:tw-grid-cols-4 tw-gap-[18px] tw-w-full tw-pt-[30px]"
           >
-              <!-- <template
+              <template
                 x-for="(product,index) in selectedCategory.products"
                 :key="index"
               >
@@ -1040,9 +1039,9 @@
                     class="tw-text-center tw-py-4 lg:tw-py-7 tw-font-gt-america tw-bg-white"
                   ></h1>
                 </button>
-              </template> -->
-              {% assign categoryName='vibe-1' %}
-              {% for product in collections[categoryName].products %}
+              </template>
+
+              <!-- <template x-for="(product,index) in products" :key="index">
                 <button
                   type="button"
                   class="tw-w-full"
@@ -1058,7 +1057,7 @@
                     {{ product.title }}
                   </h1>
                 </button>
-              {% endfor %}
+              </template> -->
 
           </div>
         </div>
