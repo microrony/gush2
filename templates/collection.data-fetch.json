@@ -1,5 +1,4 @@
 {
-  "layout": false,
   "sections": {
     "product-grid": {
       "type": "collection-data-fetch",
