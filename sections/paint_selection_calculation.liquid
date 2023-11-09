@@ -181,6 +181,7 @@
         },
         categories:{{ collections | json | escape }},
         products:[],
+        getCategories(),
         getData(categoryName, totalData){
           console.log(totalData)
          fetch(`https://gush.earth/collections/${categoryName}?view=data-fetch&page=1`).then(res=> res.text()).then(html=> {
