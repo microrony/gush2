@@ -181,8 +181,8 @@
         },
         selectedCategory: '',
         categories:{{ collections | json | escape }},
-        async getData(){
-         fetch('https://gush.earth/collections/vibe-1?view=data-fetch').then(res=> res.text()).then(html=> {
+        async getData(categoryName){
+         fetch(`https://gush.earth/collections/${categoryName}?view=data-fetch`).then(res=> res.text()).then(html=> {
             const parser = new DOMParser()
             const doc = parser.parseFromString(html,'text/html')
             const dataElement = doc.querySelector('#collection__data')
@@ -1002,7 +1002,7 @@
            {% for collection in collections %}
              {% if collection.handle contains 'vibe' %}
                 <button
-                  @click="await getData()"
+                  @click="await getData('{{collection.handle}}')"
                   class="tw-flex tw-items-center"
                 > 
                   <span
