@@ -181,7 +181,7 @@
         },
         categories:{{ collections | json | escape }},
         products:[],
-        async getData(categoryName, totalData){
+        getData(categoryName, totalData){
           console.log(totalData)
          fetch(`https://gush.earth/collections/${categoryName}?view=data-fetch&page=1`).then(res=> res.text()).then(html=> {
             const parser = new DOMParser()
@@ -193,7 +193,7 @@
          }).catch(err=> console.log(err))
         },
       }"
-      x-init="$watch('products',value=> this.products=value); async getData('vibe-1')"
+      x-init="$watch('products',value=> this.products=value); getData('vibe-1')"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
       <div>
@@ -1004,7 +1004,7 @@
            {% for collection in collections %}
              {% if collection.handle contains 'vibe' %}
                 <button
-                  @click="await getData('{{collection.handle}}',{{ collection.products_count }})"
+                  @click="getData('{{collection.handle}}',{{ collection.products_count }})"
                   class="tw-flex tw-items-center"
                 > 
                   <span
