@@ -202,24 +202,7 @@
           ]
         
         categories: [
-      {% for collection in collections %}
     
-      {% if collection.handle contains 'vibe' %}
-        <div class="vibe_class" style="background-image: url({{ collection.featured_image | img_url:"master" }}); 
-	background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    margin: 0;
-    height: 396px;"/>
-         <h2 class="ooh_vibe_selection_title gush-font-h1">Select your vibe</h2>
-
-        
-          
-          <a class="collection_button"> {{ collection.title }}</a>
-        </div>
-  
-  {% endif %}
-{% endfor %}
           {
             'name': 'Category 1',
             'color': '#302112',
