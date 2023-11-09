@@ -1208,25 +1208,25 @@
           <div
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-3 xl:tw-grid-cols-4 tw-gap-[18px] tw-w-full tw-pt-[30px]"
           >
-            <template
-              x-for="(pallet,index) in selectedCategory.pallets"
-              :key="index"
-            >
-              <button
-                type="button"
-                @click="isOpen = false;isChangingColor=false;changingColorPalletIndex=null;setColorOfRoom(pallet.color,pallet.name)"
-                class="tw-w-full"
-              >
-                <div
-                  :style="'background-color: ' + pallet.color"
-                  class="tw-w-full tw-h-[140px] md:tw-h-[140px] lg:tw-h-[270px]"
-                ></div>
-                <h1
-                  x-text="pallet.name"
-                  class="tw-text-center tw-py-4 lg:tw-py-7 tw-font-gt-america tw-bg-white"
-                ></h1>
-              </button>
-            </template>
+     {% for product in collection.products %}
+<!-- do your for loop for products -->
+<button
+  type="button"
+  class="tw-w-full"
+>
+  <div class="tw-w-full tw-h-[140px] md:tw-h-[140px] lg:tw-h-[270px]">
+    <img
+      src="{{ product.featured_image | product_img_url: 'medium' }}"
+      alt="img"
+      class="tw-h-full tw-w-full"
+    />
+  </div>
+  <h1 class="tw-text-center tw-py-4 lg:tw-py-7 tw-font-gt-america tw-bg-white">
+    {{ product.title }}
+  </h1>
+</button>
+{% endfor %}
+
           </div>
         </div>
       </div>
