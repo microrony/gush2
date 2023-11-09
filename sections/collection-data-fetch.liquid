@@ -1,4 +1,3 @@
-{%- assign product_data = "" -%}
 {%- paginate collection.products by 50 -%}
   {%- capture product_data -%}
     {%- for product in collection.products -%}
@@ -10,7 +9,7 @@
   {
     "collection": {{ collection | json }},
     "products": [
-      
+      {{ product_data }}
     ]
   }
 </script>
