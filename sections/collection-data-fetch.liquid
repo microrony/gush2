@@ -1,4 +1,4 @@
-{%- paginate collection.products by section.settings.products_per_page -%}
+{%- paginate collection.products by 50 -%}
   {%- for product in collection.products -%}
     {{ product | json }}
   {%- endfor -%}
