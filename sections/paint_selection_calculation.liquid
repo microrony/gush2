@@ -201,7 +201,7 @@
             }
           ]
         
-
+        categories: [
       {% for collection in collections %}
     
       {% if collection.handle contains 'vibe' %}
@@ -220,8 +220,6 @@
   
   {% endif %}
 {% endfor %}
-
-        categories: [
           {
             'name': 'Category 1',
             'color': '#302112',
