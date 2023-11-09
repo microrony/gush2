@@ -1033,10 +1033,8 @@
 
   {% for product in collections['vibe-1'].products %}
   <div class="product">
-    <h2>{{ product.title }}</h2>
-    <p>{{ product.price | money }}</p>
-    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title }}">
-    <p>{{ product.description }}</p>
+  <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title }}">
+  <h2>{{ product.title }}</h2>
     <a href="{{ product.url }}">View Product</a>
   </div>
 {% endfor %}
