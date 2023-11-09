@@ -179,100 +179,8 @@
         selectCategory(category){
           this.selectedCategory = category
         },
-        selectedCategory:{
-          name: 'Category 1',
-          color: '#302112',
-          pallets: [
-            {
-              name: 'Wabi-wasabi 1',
-              color: '#836C84'
-            },
-            {
-              name: 'Private Island 1',
-              color: '#ACA3C1'
-            },
-            {
-              name: 'Some Name 1',
-              color: '#E38981'
-            },
-            {
-              name: 'Leapfrog 1',
-              color: '#CC8A8A'
-            }
-          ]
-        },
-        categories: [
-          {
-            'name': 'Category 1',
-            'color': '#302112',
-            'pallets': [
-              { 'name': 'Wabi-wasabi', 'color': '#836C84' },
-              { 'name': 'Private Island', 'color': '#ACA3C1' },
-              { 'name': 'Some Name', 'color': '#E38981' },
-              { 'name': 'Leapfrog', 'color': '#CC8A8A' }
-            ]
-          },
-          {
-            'name': 'Category 2',
-            'color': '#BCAC98',
-            'pallets': [
-              { 'name': 'Green Valley', 'color': '#64777B' },
-              { 'name': 'Sunset Glow', 'color': '#F3786B' },
-              { 'name': 'Aurora Borealis', 'color': '#A2DEA4' },
-              { 'name': 'Golden Harvest', 'color': '#C5AA8D' }
-            ]
-          },
-          {
-            'name': 'Category 3',
-            'color': '#836C84',
-            'pallets': [
-              { 'name': 'Ocean Blue', 'color': '#2E86AB' },
-              { 'name': 'Silver Lining', 'color': '#A4A9AD' },
-              { 'name': 'Lavender Fields', 'color': '#BF94A2' },
-              { 'name': 'Rose Quartz', 'color': '#E7AD99' }
-            ]
-          },
-          {
-            'name': 'Category 4',
-            'color': '#A05A52',
-            'pallets': [
-              { 'name': 'Forest Green', 'color': '#014833' },
-              { 'name': 'Ruby Red', 'color': '#9B1B30' },
-              { 'name': 'Sunny Yellow', 'color': '#FFD662' },
-              { 'name': 'Slate Grey', 'color': '#708090' }
-            ]
-          },
-          {
-            'name': 'Category 5',
-            'color': '#000000',
-            'pallets': [
-              { 'name': 'Midnight Black', 'color': '#0D0D0D' },
-              { 'name': 'Snow White', 'color': '#FFFFFF' },
-              { 'name': 'Cherry Blossom', 'color': '#F0A6CA' },
-              { 'name': 'Amber Glow', 'color': '#FFBF00' }
-            ]
-          },
-          {
-            'name': 'Category 6',
-            'color': '#FFD24E',
-            'pallets': [
-              { 'name': 'Golden Sun', 'color': '#F7DAD9' },
-              { 'name': 'Vibrant Orange', 'color': '#FFA500' },
-              { 'name': 'Emerald Green', 'color': '#50C878' },
-              { 'name': 'Ruby Rose', 'color': '#9B111E' }
-            ]
-          },
-          {
-            'name': 'Category 7',
-            'color': '#CC8A8A',
-            'pallets': [
-              { 'name': 'Coral Pink', 'color': '#F88379' },
-              { 'name': 'Topaz Blue', 'color': '#7FC8A9' },
-              { 'name': 'Icy Mint', 'color': '#77D8D8' },
-              { 'name': 'Sunny Peach', 'color': '#FFCC99' }
-            ]
-          }
-        ]
+        selectedCategory: {{ collections[0] | json | escape }},
+        cateogories:{{ collections | json | escape }}
       }"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
@@ -1090,7 +998,7 @@
                 type="button"
                 class="tw-flex tw-items-center"
               >
-                <span
+                <!-- <span
                   :style="'background-color: ' + category.color"
                   class="tw-h-8 tw-w-8 tw-rounded-full tw-flex tw-justify-center tw-items-center"
                 >
@@ -1169,9 +1077,9 @@
                       />
                     </g>
                   </svg>
-                </span>
+                </span> -->
                 <span
-                  x-text="category.name"
+                  x-text="category.title"
                   class="tw-font-gt-america tw-text-[13px] tw-font-medium tw-text-heading tw-ml-[10px]"
                 ></span>
               </button>
