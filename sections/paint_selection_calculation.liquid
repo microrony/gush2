@@ -189,9 +189,14 @@
         selectCategory(category){
           this.collectionName=category
         },
-        categories:{{ collections | json | escape }},
+        categories:[],
         products:[],
-        getCategories(),
+        getCategories(){
+           const dataElement = document.querySelector('#all_collections__data')
+           const data = JSON.parse(dataElement.textContent)
+           this.categories = data
+           console.log(this.categories)
+        },
         getData(categoryName, totalData){
           console.log(totalData)
          fetch(`https://gush.earth/collections/${categoryName}?view=data-fetch&page=1`).then(res=> res.text()).then(html=> {
@@ -204,7 +209,7 @@
          }).catch(err=> console.log(err))
         },
       }"
-      x-init="$watch('products',value=> this.products=value); getData('vibe-3')"
+      x-init="$watch('products',value=> this.products=value); getData('vibe-3'); getCategories()"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
       <div>
