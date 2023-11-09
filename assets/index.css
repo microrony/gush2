@@ -966,10 +966,6 @@ button.paint_selection_option {
   width: 100%;
 }
 
-.tw-w-\[170px\] {
-  width: 170px;
-}
-
 .tw-min-w-\[250px\] {
   min-width: 250px;
 }
@@ -1461,6 +1457,10 @@ button.paint_selection_option {
 
 .tw-font-medium {
   font-weight: 500;
+}
+
+.tw-uppercase {
+  text-transform: uppercase;
 }
 
 .tw-ordinal {
