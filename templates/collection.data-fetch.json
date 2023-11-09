@@ -1,0 +1,223 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "fab4f25f-0752-42d0-bd21-ead8fc3aad49": {
+      "type": "service-page-banner",
+      "blocks": {
+        "961082f5-29e1-4585-b7d1-314128613255": {
+          "type": "heading",
+          "settings": {
+            "heading": "It's not just paint, it's Gush",
+            "heading_color": "#ffffff",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "961082f5-29e1-4585-b7d1-314128613255"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/US_Landing_Page_1_Desktop_Video_1_V1.gif",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "page_name": "service"
+      }
+    },
+    "6605a775-fdae-435c-940a-e882d65fb162": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Interior_Paint_Page_Desktop_Video_1_V1.gif",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "secondary_btn_white": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "377cc5db-8f84-4a06-ba87-f4e7d6121502": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15643888156865__377cc5db-8f84-4a06-ba87-f4e7d6121502-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>If home is your happy place, let it reflect on your walls. Every tub of Gush paint brims with colour that inspires joy, transformation and self-expression. Whether you’re renovating your home, refreshing your space, or preparing for the arrival of your little one, our non-toxic paints work hard to keep you happy and well.<\/strong><\/p><p> <\/p><p><strong>Features: Anti-moulding | Anti-bacterial | VOC-free | Odourless | Air-purifying | Stain-resistant (Gush Cair Fresh only) | Humidity-control (Gush Cair only) <br\/><\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15643888156865__377cc5db-8f84-4a06-ba87-f4e7d6121502-text-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "f356a29e-f088-47ec-9aa3-ff89d4edb0bd": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "If home is your happy place, let it reflect on your walls. Every tub of Gush paint brims with colour that inspires joy, transformation and self-expression. Whether you’re renovating your home, refreshing your space, or preparing for the arrival of your little one, our non-toxic paints work hard to keep you happy and well. Features: Anti-moulding | Anti-bacterial | VOC-free | Odourless | Air-purifying | Stain-resistant (Gush Cair only) | Humidity-control (Gush Cair) Our paints are packed with 6 features in 1 tub — air-purifying, anti-bacterial, anti-moulding, odourless and toxic-free. For a stain-resistant variant, go for Gush Cair Fresh. If you’re into humidity-control, Gush Cair is for you. Remember to seal your walls with Gush Prepair first. Now sit back, and browse colours that’ll clean your air for years to come. Shop Gush paints now."
+          }
+        },
+        "40874156-9e14-4441-a824-c4b01dfde99c": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "|"
+          }
+        },
+        "18efb770-1e31-4d04-a288-99f10754c721": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Anti-bacterial"
+          }
+        },
+        "02f13b88-0429-4895-99b2-cbd58068bda3": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "|"
+          }
+        },
+        "18576198-bef6-4d3f-ae3c-f011ca1817b5": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Anti-moulding"
+          }
+        },
+        "19283c66-e805-4329-a0e3-8066f12fbe65": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "|"
+          }
+        },
+        "b743b736-b96e-4eaa-a87a-1a0cd32b1364": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Odourless"
+          }
+        },
+        "be9fc5dc-1360-42b8-b2de-218da67bbb92": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "|"
+          }
+        },
+        "6430aedf-fc19-4c36-a351-f1169689b668": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Toxic-free"
+          }
+        },
+        "916c1141-3d1b-4d03-aabf-6f1753b56c0e": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "|"
+          }
+        },
+        "4a87a865-f341-43e0-9c08-ca52f3f66e10": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Washable (Cair Fresh)"
+          }
+        },
+        "df2a9d7e-0fd1-4613-ace9-114c22451326": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "|"
+          }
+        },
+        "0c8ebd4a-72b2-460e-8016-898c033c0c8f": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Humidity control (Cair)"
+          }
+        }
+      },
+      "block_order": [
+        "f356a29e-f088-47ec-9aa3-ff89d4edb0bd",
+        "40874156-9e14-4441-a824-c4b01dfde99c",
+        "18efb770-1e31-4d04-a288-99f10754c721",
+        "02f13b88-0429-4895-99b2-cbd58068bda3",
+        "18576198-bef6-4d3f-ae3c-f011ca1817b5",
+        "19283c66-e805-4329-a0e3-8066f12fbe65",
+        "b743b736-b96e-4eaa-a87a-1a0cd32b1364",
+        "be9fc5dc-1360-42b8-b2de-218da67bbb92",
+        "6430aedf-fc19-4c36-a351-f1169689b668",
+        "916c1141-3d1b-4d03-aabf-6f1753b56c0e",
+        "4a87a865-f341-43e0-9c08-ca52f3f66e10",
+        "df2a9d7e-0fd1-4613-ace9-114c22451326",
+        "0c8ebd4a-72b2-460e-8016-898c033c0c8f"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "collectionList": "",
+        "products_per_page": 18,
+        "columns_desktop": 3,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false,
+        "columns_mobile": "2",
+        "ad_product_count": 3,
+        "bg_color": "#ff5500",
+        "bg_img": "shopify:\/\/shop_images\/Website_banner5.png",
+        "heading": "Hues to rule the year.",
+        "content": "Spoiled for choice? Check out our 2024 Colour Palette of the Year. It might just tickle your fancy.",
+        "url": "shopify:\/\/pages\/colour-palette",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "fab4f25f-0752-42d0-bd21-ead8fc3aad49",
+    "6605a775-fdae-435c-940a-e882d65fb162",
+    "377cc5db-8f84-4a06-ba87-f4e7d6121502",
+    "product-grid"
+  ]
+}
