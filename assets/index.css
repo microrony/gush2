@@ -1579,6 +1579,16 @@ input:focus-visible {
   border: 1px solid #e1d5c6 !important;
 }
 
+.input-area-surface {
+  font-size: 30px !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .input-area-surface {
+    font-size: 20px !important;
+  }
+}
+
 .last\:tw-border-b-0:last-child {
   border-bottom-width: 0px;
 }
