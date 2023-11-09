@@ -947,6 +947,10 @@ button.paint_selection_option {
   width: 2em;
 }
 
+.tw-w-\[170px\] {
+  width: 170px;
+}
+
 .tw-w-\[180px\] {
   width: 180px;
 }
@@ -969,10 +973,6 @@ button.paint_selection_option {
 
 .tw-w-full {
   width: 100%;
-}
-
-.tw-w-\[170px\] {
-  width: 170px;
 }
 
 .tw-min-w-\[250px\] {
@@ -1573,6 +1573,10 @@ input[type='number'] {
 
 input:focus-visible {
   box-shadow: none !important;
+}
+
+.button-light-grey {
+  border: 1px solid #e1d5c6 !important;
 }
 
 .last\:tw-border-b-0:last-child {
