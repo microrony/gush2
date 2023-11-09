@@ -182,9 +182,13 @@
         selectedCategory: '',
         categories:{{ collections | json | escape }},
         async getData(){
-          let response = await fetch('https://gush.earth/collections/vibe-1?view=data-fetch');
-          let data = await response.json();
-          this.products = data;
+         fetch('https://gush.earth/collections/vibe-1?view=data-fetch').then(res=> res.text()).then(html=> {
+            const parser = new DOMParser()
+            const doc = parser.parseFromString(html)
+            const dataElement = doc.querySelector('#collection__data')
+            const data = JSON.parse(dataElement.textContent)
+            console.log(data)
+         }).catch(err=> console.log(err))
         },
         collectionName:''
       }"
@@ -1086,10 +1090,7 @@
         easing: 'easeInOutQuad',
       })
 
-      function getCollectionProduct(data){
-        console.log(data)
-      }
-      console.log('collections=>', collections['vibe-1'].products)
+     
     </script>
 
 {% schema %}
