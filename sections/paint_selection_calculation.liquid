@@ -177,9 +177,9 @@
         ],
         floorArea:0,
         selectCategory(category){
-          console.log(category);
+          this.selectedCategory = category
         },
-        selectedCategory: {},
+        selectedCategory: '',
         categories:{{ collections | json | escape }}
       }"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
@@ -992,7 +992,7 @@
            {% for collection in collections %}
              {% if collection.handle contains 'vibe' %}
                 <button
-                  @click="selectCategory({{ collections[collection.handle].products }})"
+                  @click="selectCategory('{{ collection.handle }}')"
                   type="button"
                   class="tw-flex tw-items-center"
                 > 
