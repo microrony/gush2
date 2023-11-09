@@ -209,7 +209,7 @@
          }).catch(err=> console.log(err))
         },
       }"
-      x-init="$watch('products',value=> this.products=value); getData('vibe-3'); getCategories()"
+      x-init="$watch('products',value=> this.products=value);$watch('categories',value=> this.categories=value); getData(this.categories[0].handle); getCategories()"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
       <div>
