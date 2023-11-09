@@ -1002,7 +1002,7 @@
            {% for collection in collections %}
              {% if collection.handle contains 'vibe' %}
                 <button
-                  onclick="getCollectionProduct({{ collections[collection.handle].products }})"
+                  onclick="getCollectionProduct('data')"
                   type="button"
                   class="tw-flex tw-items-center"
                 > 
