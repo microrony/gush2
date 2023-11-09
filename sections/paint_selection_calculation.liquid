@@ -993,7 +993,7 @@
            {% for collection in collections %}
              {% if collection.handle contains 'vibe' %}
                 <button
-                  @click="selectCategory({{ collection }})"
+                  @click="selectCategory({{ collection.handle }})"
                   type="button"
                   class="tw-flex tw-items-center"
                 > 
