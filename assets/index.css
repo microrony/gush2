@@ -738,6 +738,11 @@ button.paint_selection_option {
   margin-right: 18px;
 }
 
+.tw-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .tw-mb-10 {
   margin-bottom: 2.5em;
 }
