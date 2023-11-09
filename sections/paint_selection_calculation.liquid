@@ -180,7 +180,17 @@
           this.selectedCategory = category
         },
         selectedCategory: '',
-        categories:{{ collections | json | escape }}
+        categories:{{ collections | json | escape }},
+        products:[],
+        async getData(){
+          let response = await fetch('https://gush.earth/admin/api/2023-10/collections/459609309377/products.json',{
+            headers:{
+              'X-Shopify-Access-Token':'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'
+            }
+          });
+          let data = await response.json();
+          this.products = data;
+        }
       }"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
@@ -1008,8 +1018,11 @@
             {% endfor %}
             
           </div>
-
-             
+{% for collection in collections %}
+             {% if collection.handle contains 'vibe' %}
+               <span ></span>
+            {% endif %}
+            {% endfor %} 
           <div
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-3 xl:tw-grid-cols-4 tw-gap-[18px] tw-w-full tw-pt-[30px]"
           >
@@ -1033,9 +1046,10 @@
                   ></h1>
                 </button>
               </template> -->
-            {{ collections[0].products[0].title }}
+            
               {% for product in collections['vibe-1'].products %}
                 <button
+                  @click="await getData()"
                   type="button"
                   class="tw-w-full"
                 >
