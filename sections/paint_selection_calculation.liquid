@@ -201,7 +201,6 @@
             }
           ]
         },
-    collections: {{ collections }} ,
         categories: [
           {
             'name': 'Category 1',
@@ -1077,15 +1076,6 @@
               </svg>
             </button>
           </div>
-
- <div class="tw-flex tw-items-center">
-  <template
-    x-for="(collection,index) in collections"
-    :key="index"
-  >
-    <div x-text="collection.name"></div>
-  </template>
-</div>
                   
           <!-- category -->
           <div
