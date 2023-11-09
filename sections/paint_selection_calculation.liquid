@@ -184,7 +184,7 @@
         async getData(){
          fetch('https://gush.earth/collections/vibe-1?view=data-fetch').then(res=> res.text()).then(html=> {
             const parser = new DOMParser()
-            const doc = parser.parseFromString(html)
+            const doc = parser.parseFromString(html,'text/html')
             const dataElement = doc.querySelector('#collection__data')
             const data = JSON.parse(dataElement.textContent)
             console.log(data)
