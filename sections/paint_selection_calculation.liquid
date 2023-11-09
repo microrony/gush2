@@ -24,7 +24,8 @@
     {%- for collection in collections -%}
     {
       "title": "{{ collection.title }}",
-      "handle": "{{ collection.handle }}"
+      "handle": "{{ collection.handle }}",
+      "totalData":"{{ collection.products_count }}"
     }{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
   ]
@@ -195,7 +196,6 @@
            const dataElement = document.querySelector('#all_collections__data')
            const data = JSON.parse(dataElement.textContent)
            this.categories = data
-           console.log(this.categories)
         },
         getData(categoryName, totalData){
           console.log(totalData)
@@ -1017,21 +1017,19 @@
           <div
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-6 xl:tw-grid-cols-7 tw-gap-3 md:tw-gap-4 lg:tw-gap-6 xl:tw-gap-8 tw-mt-6"
           >
-           {% for collection in collections %}
-             
-                <button
-                  @click="getData('{{collection.handle}}',{{ collection.products_count }})"
+             <template x-for="(category,index) in categories" :key="index">
+               <button
+                  @click="getData(category.handle, category.totalData)"
                   class="tw-flex tw-items-center"
                 > 
                   <span
+                    x-text="category.title"
                     class="tw-font-gt-america tw-text-[13px] tw-font-medium tw-text-heading tw-ml-[10px]"
                   >
-                    {{ collection.title }}
-                    
                   </span>
                 </button>
-            {% endfor %}
-            
+             </template>
+                
           </div>
           <label id="collectionDataLabel"></label>
           <div
