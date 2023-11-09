@@ -196,6 +196,7 @@
            const dataElement = document.querySelector('#all_collections__data')
            const data = JSON.parse(dataElement.textContent)
            this.categories = data
+           this.getData(data[0].handle,data[0].totalData)
         },
         getData(categoryName, totalData){
           console.log(totalData)
@@ -209,7 +210,7 @@
          }).catch(err=> console.log(err))
         },
       }"
-      x-init="$watch('products',value=> this.products=value);$watch('categories',value=> this.categories=value); getCategories();getData(this.categories[0]?.handle); "
+      x-init="$watch('products',value=> this.products=value);$watch('categories',value=> this.categories=value); getCategories();"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
       <div>
