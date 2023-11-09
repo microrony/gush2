@@ -1009,7 +1009,6 @@
             
           </div>
 
-          <span x-text="selectedCategory"></span>
                   
           <div
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-3 xl:tw-grid-cols-4 tw-gap-[18px] tw-w-full tw-pt-[30px]"
@@ -1034,7 +1033,7 @@
                   ></h1>
                 </button>
               </template> -->
-
+<span x-text="selectedCategory"></span>
   {% for product in collections['vibe-1'].products %}
   <div class="product">
   <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title }}">
