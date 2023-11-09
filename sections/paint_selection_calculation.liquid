@@ -990,102 +990,21 @@
           <div
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-6 xl:tw-grid-cols-7 tw-gap-3 md:tw-gap-4 lg:tw-gap-6 xl:tw-gap-8 tw-mt-6"
           >
-           <template
-              x-for="(category, index) in categories"
-              :key="index"
-            >
-              <button
-                @click="selectCategory(category)"
-                type="button"
-                class="tw-flex tw-items-center"
-              >
-                <!-- <span
-                  :style="'background-color: ' + category.color"
-                  class="tw-h-8 tw-w-8 tw-rounded-full tw-flex tw-justify-center tw-items-center"
-                >
-                  <svg
-                    x-show="selectedCategory?.name === category.name"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+           {% for collection in collections %}
+             {% if collection.handle contains 'vibe' %}
+                <button
+                  @click="selectCategory(category)"
+                  type="button"
+                  class="tw-flex tw-items-center"
+                > 
+                  <span
+                    class="tw-font-gt-america tw-text-[13px] tw-font-medium tw-text-heading tw-ml-[10px]"
                   >
-                    <g id="Group 2224">
-                      <circle
-                        id="Ellipse 821"
-                        cx="8.72266"
-                        cy="10.8434"
-                        r="0.639013"
-                        transform="rotate(45 8.72266 10.8434)"
-                        fill="#fff"
-                      />
-                      <circle
-                        id="Ellipse 828"
-                        cx="6.91797"
-                        cy="12.6508"
-                        r="0.639013"
-                        transform="rotate(45 6.91797 12.6508)"
-                        fill="#fff"
-                      />
-                      <circle
-                        id="Ellipse 829"
-                        cx="5.10938"
-                        cy="14.4579"
-                        r="0.639013"
-                        transform="rotate(45 5.10938 14.4579)"
-                        fill="#fff"
-                      />
-                      <circle
-                        id="Ellipse 826"
-                        cx="10.5312"
-                        cy="9.03578"
-                        r="0.639013"
-                        transform="rotate(45 10.5312 9.03578)"
-                        fill="#fff"
-                      />
-                      <circle
-                        id="Ellipse 827"
-                        cx="12.3398"
-                        cy="7.22841"
-                        r="0.639013"
-                        transform="rotate(45 12.3398 7.22841)"
-                        fill="#fff"
-                      />
-                      <circle
-                        id="Ellipse 824"
-                        cx="3.14844"
-                        cy="12.2953"
-                        r="0.639013"
-                        transform="rotate(45 3.14844 12.2953)"
-                        fill="#fff"
-                      />
-                      <circle
-                        id="Ellipse 825"
-                        cx="1.33984"
-                        cy="10.4877"
-                        r="0.639013"
-                        transform="rotate(45 1.33984 10.4877)"
-                        fill="#fff"
-                      />
-                      <circle
-                        id="Ellipse 822"
-                        cx="14.1172"
-                        cy="5.37562"
-                        r="0.639013"
-                        transform="rotate(45 14.1172 5.37562)"
-                        fill="#fff"
-                      />
-                    </g>
-                  </svg>
-                </span> -->
-                <span
-                  x-text="category.title"
-                  class="tw-font-gt-america tw-text-[13px] tw-font-medium tw-text-heading tw-ml-[10px]"
-                ></span>
-              </button>
-            </template>
-
+                    {{ collection.title }}
+                  </span>
+                </button>
+              {% endif %}
+            {% endfor %}
             
           </div>
           <div
