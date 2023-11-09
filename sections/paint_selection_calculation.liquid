@@ -1041,8 +1041,8 @@
                   ></h1>
                 </button>
               </template> -->
-            
-              {% for product in collections['vibe-1'].products %}
+              {% assign categoryName='vibe-1' %}}
+              {% for product in collections[categoryName].products %}
                 <button
                   type="button"
                   class="tw-w-full"
