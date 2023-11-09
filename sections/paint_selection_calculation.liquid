@@ -193,14 +193,7 @@
          }).catch(err=> console.log(err))
         },
       }"
-      x-init="$watch('products',value=> this.products=value);fetch(`https://gush.earth/collections/${categoryName}?view=data-fetch&page=1`).then(res=> res.text()).then(html=> {
-            const parser = new DOMParser()
-            const doc = parser.parseFromString(html,'text/html')
-            const dataElement = doc.querySelector('#collection__data')
-            const data = JSON.parse(dataElement.textContent)
-            this.products = data
-            console.log(data)
-         }).catch(err=> console.log(err))"
+      x-init="$watch('products',value=> this.products=value); async getData('vibe-1')"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
       <div>
