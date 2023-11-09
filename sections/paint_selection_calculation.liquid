@@ -189,6 +189,7 @@
             const dataElement = doc.querySelector('#collection__data')
             const data = JSON.parse(dataElement.textContent)
             this.products = data
+            console.log(data)
          }).catch(err=> console.log(err))
         },
       }"
