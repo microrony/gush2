@@ -177,7 +177,8 @@
         ],
         floorArea:0,
         selectCategory(category){
-          this.selectedCategory = category
+          this.selectedCategory = category;
+          console.log(category);
         },
         selectedCategory: {},
         categories:{{ collections | json | escape }}
