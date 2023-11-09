@@ -193,7 +193,7 @@
          }).catch(err=> console.log(err))
         },
       }"
-      x-init="$watch('products',value=> this.products=value); getData('vibe-1')"
+      x-init="$watch('products',value=> this.products=value); getData('vibe-3')"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
       <div>
@@ -1002,7 +1002,7 @@
             class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-6 xl:tw-grid-cols-7 tw-gap-3 md:tw-gap-4 lg:tw-gap-6 xl:tw-gap-8 tw-mt-6"
           >
            {% for collection in collections %}
-             {% if collection.handle contains 'vibe' %}
+             
                 <button
                   @click="getData('{{collection.handle}}',{{ collection.products_count }})"
                   class="tw-flex tw-items-center"
@@ -1014,7 +1014,6 @@
                     
                   </span>
                 </button>
-              {% endif %}
             {% endfor %}
             
           </div>
