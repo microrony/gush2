@@ -568,7 +568,7 @@ button.paint_selection_option {
 }
 
 .tw-secondary-btn svg circle {
-  fill: #000;
+  fill: #fff;
 }
 
 .tw-primary-btn:hover .text-span,
