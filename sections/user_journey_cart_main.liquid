@@ -600,10 +600,16 @@
 
 <script>
   function downloadCartAsPDF() {
-    var cartContent = document.getElementById('user_journey_cart').innerHTML; // replace 'your-cart-id' with your actual cart element ID
-    var pdf = new jsPDF();
-    pdf.text(cartContent, 10, 10);
-    pdf.save('user_journey_cart.pdf');
+    var cartElement = document.getElementById('user_journey_cart'); // replace 'your-cart-id' with your actual cart element ID
+    
+    if (cartElement) {
+      var cartContent = cartElement.innerHTML;
+      var pdf = new jsPDF();
+      pdf.text(cartContent, 10, 10);
+      pdf.save('cart.pdf');
+    } else {
+      console.error('Cart element not found.');
+    }
   }
 </script>
 
