@@ -22,11 +22,13 @@
 <script id="all_collections__data" type="application/json">
   [
     {%- for collection in collections -%}
+         {% if collection.handle contains 'vibe' %}
     {
       "title": "{{ collection.title }}",
       "handle": "{{ collection.handle }}",
       "totalData":"{{ collection.products_count }}"
     }{%- unless forloop.last -%},{%- endunless -%}
+       {% endif %}      
     {%- endfor -%}
   ]
 </script>
