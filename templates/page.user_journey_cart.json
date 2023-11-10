@@ -2,13 +2,21 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "c718343d-a8e0-4709-a2db-4ece2a2e2e13": {
+      "type": "user_journey_cart_main",
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "c718343d-a8e0-4709-a2db-4ece2a2e2e13"
   ]
 }
