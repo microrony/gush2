@@ -741,9 +741,9 @@
                       </div>
                     </div>
                     <div class="tw-mt-5">
-                      <div x-show="item.ceilingColor" class="tw-w-[170px] tw-mx-auto">
+                      <div x-show="item.ceilingColor" class="tw-w-full tw-mx-auto">
                         <div
-                          class="tw-h-[170px] animate__animated animate__fadeIn"
+                          class="tw-h-[138px] animate__animated animate__fadeIn"
                         >
                           <img :src="'https://'+ item.ceilingColorImage" class="tw-h-full tw-w-auto tw-mx-auto" />
                         </div>
@@ -756,7 +756,7 @@
                       <button
                         x-show="!item.ceilingColor"
                         @click="isModalOpen = true;isPickingCeilingColor=true;currentRoomColumnIndex=index"
-                        class="tw-h-[170px] tw-w-[170px] tw-mx-auto tw-bg-white tw-flex tw-justify-center tw-items-center tw-text-heading tw-font-gt-america tw-text-base"
+                        class="tw-h-[170px] tw-w-full tw-mx-auto tw-bg-white tw-flex tw-justify-center tw-items-center tw-text-heading tw-font-gt-america tw-text-base"
                       >
                         <span class="tw-flex tw-items-center">
                           <svg
