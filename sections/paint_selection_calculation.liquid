@@ -22,7 +22,7 @@
 {%- liquid
    assign collection_handles = ""
    for collection in collections
-     if collection.handle contains 'vibe'
+     if collection.handle contains 'white' and collection.handle contains 'grey'
        unless collection_handles == ""
          assign handle_with_separator = collection.handle | prepend: "~"
          assign collection_handles = collection_handles | append: handle_with_separator
