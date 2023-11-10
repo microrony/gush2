@@ -22,7 +22,7 @@
 {%- liquid
    assign collection_handles = ""
    for collection in collections
-     if collection.handle == 'white' or collection.handle == 'grey'
+     if collection.handle == 'beige' or collection.handle == 'blue' or collection.handle == 'brown' or collection.handle == 'green' or collection.handle == 'grey' or collection.handle == 'neutral' or collection.handle == 'orange' or collection.handle == 'pink' or collection.handle == 'purple' or collection.handle == 'red' or collection.handle == 'white' or collection.handle == 'yellow'
        unless collection_handles == ""
          assign handle_with_separator = collection.handle | prepend: "~"
          assign collection_handles = collection_handles | append: handle_with_separator
