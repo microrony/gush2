@@ -31,15 +31,18 @@
        endunless
      endif
    endfor
+
+   assign handles = collection_handles | split: "~"
 -%}
 <script id="all_collections__data" type="application/json">
   [
-    {%- for collection in collections -%}
-    {
-      "title": "{{ collection.title }}",
-      "handle": "{{ collection.handle }}",
-      "totalData":"{{ collection.products_count }}"
-    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- for handle in handles -%}
+      {%- assign collection = collections[handle] -%}
+      {
+        "title": "{{ collection.title }}",
+        "handle": "{{ collection.handle }}",
+        "totalData":"{{ collection.products_count }}"
+      }{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
   ]
 </script>
