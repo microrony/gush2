@@ -540,12 +540,9 @@
                     fill="#FF42EF"
                   />
                 </svg>
-                <a
-                  href="index.html"
-                  class="tw-ml-[4px] tw-underline tw-text-heading tw-font-gt-america tw-text-sm tw-leading-[20px]"
-                >
+                <button onclick="downloadCartAsPDF()" class="tw-ml-[4px] tw-underline tw-text-heading tw-font-gt-america tw-text-sm tw-leading-[20px]" >
                   Save order as pdf
-                </a>
+                </button>
               </div>
               <div class="tw-flex tw-items-center tw-ml-4">
                 <svg
@@ -600,6 +597,16 @@
         easing: 'easeInOutQuad',
       })
     </script>
+
+<script>
+  function downloadCartAsPDF() {
+    var cartContent = document.getElementById('user_journey_cart').innerHTML; // replace 'your-cart-id' with your actual cart element ID
+    var pdf = new jsPDF();
+    pdf.text(cartContent, 10, 10);
+    pdf.save('user_journey_cart.pdf');
+  }
+</script>
+
 {% schema %}
  {
     "name":"User Journey Cart Main",
