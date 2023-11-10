@@ -919,6 +919,10 @@ button.paint_selection_option {
   height: 100%;
 }
 
+.tw-h-\[138px\] {
+  height: 138px;
+}
+
 .tw-min-h-\[190px\] {
   min-height: 190px;
 }
