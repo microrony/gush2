@@ -1577,9 +1577,12 @@ button.paint_selection_option {
   vite: html;
 }
 
+* {
+  line-height: 1 !important;
+}
+
 body {
   font-family: 'RecklessNeue';
-  line-height: 1 !important;
 }
 
 #paint_selection_questions > div:first-child {
