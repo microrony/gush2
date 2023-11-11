@@ -847,6 +847,14 @@ button.paint_selection_option {
   margin-top: 2.25em;
 }
 
+.tw-mt-\[36px\] {
+  margin-top: 36px;
+}
+
+.tw-mt-\[48px\] {
+  margin-top: 48px;
+}
+
 .tw-block {
   display: block;
 }
@@ -895,8 +903,8 @@ button.paint_selection_option {
   height: 140px;
 }
 
-.tw-h-\[161px\] {
-  height: 161px;
+.tw-h-\[150px\] {
+  height: 150px;
 }
 
 .tw-h-\[170px\] {
@@ -1276,6 +1284,11 @@ button.paint_selection_option {
   padding-right: 1.25em;
 }
 
+.tw-px-6 {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
 .tw-px-8 {
   padding-left: 2em;
   padding-right: 2em;
@@ -1339,11 +1352,6 @@ button.paint_selection_option {
 .tw-py-\[23px\] {
   padding-top: 23px;
   padding-bottom: 23px;
-}
-
-.tw-px-6 {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
 }
 
 .tw-pb-4 {
@@ -1689,6 +1697,14 @@ select:focus-visible {
 
   .md\:tw-mt-40 {
     margin-top: 10em;
+  }
+
+  .md\:tw-mt-\[36px\] {
+    margin-top: 36px;
+  }
+
+  .md\:tw-mt-\[56px\] {
+    margin-top: 56px;
   }
 
   .md\:tw-h-\[140px\] {
