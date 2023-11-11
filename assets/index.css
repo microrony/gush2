@@ -1341,6 +1341,11 @@ button.paint_selection_option {
   padding-bottom: 23px;
 }
 
+.tw-px-6 {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
 .tw-pb-4 {
   padding-bottom: 1em;
 }
