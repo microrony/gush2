@@ -559,7 +559,12 @@
               data[key] = value
             })
 
-            console.log(JSON.parse(data.paintDetails))
+            this.data = JSON.parse(data.paintDetails)
+
+            console.log(this.data)
+            this.data.roomDetails.forEach(roomDetail => {
+              console.log(roomDetail)
+            })
           }
       }))
     })
