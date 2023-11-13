@@ -277,12 +277,25 @@
               const dataElement = doc.querySelector('#productJSON')
               const product = JSON.parse(dataElement.textContent)
               this.products.push(product)
-              console.log(product)
             })
           },
         async addToCart(id) {
           const product = this.products.find(_ => _.id == id)
-          console.log(product)
+          let data = {
+           'items': [{
+            'id': product.variants[3].id,
+            'quantity': 1
+            }]
+          };
+          const res = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          })
+          const cart = await res.json()
+          console.log(cart)
         }
       }))
     })
