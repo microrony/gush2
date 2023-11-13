@@ -32,103 +32,97 @@
   <section
     class="tw-grid tw-grid-cols-1 tw-items-start xl:tw-grid-cols-3 tw-gap-4 tw-gap-x-0 md:tw-gap-x-0 md:tw-gap-[15px] lg:tw-gap-4 xl:tw-gap-[30px] tw-z-10">
     <div class="animate__animated animate__fadeIn xl:tw-col-span-2 tw-bg-primary tw-py-[23px] tw-px-[21px]">
-      <div class="tw-flex tw-flex-col md:tw-flex-row tw-gap-4 md:tw-gap-0 md:tw-justify-between tw-items-center tw-pb-5 tw-mb-5 tw-border-b tw-border-heading/30 last:tw-border-none tw-relative">
-        <div class="tw-flex tw-flex-col md:tw-flex-row tw-items-center">
-          <div>
-            <div style="background-color: #cc8a8a"
-              class="tw-h-[130px] tw-w-[300px tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center">
-              Surface Area: 8.1 sqm
+      <template x-for="product in products">
+        <div class="tw-flex tw-flex-col md:tw-flex-row tw-gap-4 md:tw-gap-0 md:tw-justify-between tw-items-center tw-pb-5 tw-mb-5 tw-border-b tw-border-heading/30 last:tw-border-none tw-relative">
+          <div class="tw-flex tw-flex-col md:tw-flex-row tw-items-center">
+            <div>
+              <div style="background-color: #cc8a8a"
+                class="tw-h-[130px] tw-w-[300px tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center">
+                Surface Area: 8.1 sqm
+              </div>
+              <div class="tw-bg-white tw-text-[10px] tw-text-center tw-py-2 tw-font-gt-america tw-text-heading">
+                <span>Leapfrog</span>
+              </div>
             </div>
-            <div class="tw-bg-white tw-text-[10px] tw-text-center tw-py-2 tw-font-gt-america tw-text-heading">
-              <span>Leapfrog</span>
+            <div class="tw-h-[150px] tw-flex tw-flex-col tw-justify-between">
+              <div class="tw-ml-3 md:tw-mt-[56px]">
+                <select
+                  class="tw-text-heading tw-font-gt-america tw-text-base tw-border-0 tw-bg-transparent focus:tw-outline-none"
+                  name="" id="">
+                  <option value="gush-care">Gush Care</option>
+                  <option value="gush-clean-care">Gush Clean Care</option>
+                </select>
+                <span class="tw-text-darkGrey tw-font-gt-america tw-text-[7px] tw-block">
+                  Humidity-control
+                </span>
+              </div>
+              <button type="button" class="tw-flex tw-ml-3 tw-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
+                    fill="#FF40F4"></path>
+                </svg>
+                <span class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america">
+                  Recalculate
+                </span>
+              </button>
             </div>
           </div>
-          <div class="tw-h-[150px] tw-flex tw-flex-col tw-justify-between">
-            <div class="tw-ml-3 md:tw-mt-[56px]">
-              <select
-                class="tw-text-heading tw-font-gt-america tw-text-base tw-border-0 tw-bg-transparent focus:tw-outline-none"
-                name="" id="">
-                <option value="gush-care">Gush Care</option>
-                <option value="gush-clean-care">Gush Clean Care</option>
-              </select>
-              <span class="tw-text-darkGrey tw-font-gt-america tw-text-[7px] tw-block">
-                Humidity-control
-              </span>
-            </div>
-            <button type="button" class="tw-flex tw-ml-3 tw-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
-                  fill="#FF40F4"></path>
+          <div class="tw-flex tw-items-center">
+            <button>
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="14.5" stroke="#302112"></circle>
+                <circle cx="25.0004" cy="25.7778" r="0.777778" fill="#302112"></circle>
+                <circle cx="21.8872" cy="25.7778" r="0.777778" fill="#302112"></circle>
+                <circle cx="18.7778" cy="25.7778" r="0.777778" fill="#302112"></circle>
+                <circle cx="28.1098" cy="25.7778" r="0.777778" fill="#302112"></circle>
+                <circle cx="31.2231" cy="25.7778" r="0.777778" fill="#302112"></circle>
               </svg>
-              <span class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america">
-                Recalculate
-              </span>
+            </button>
+            <span class="tw-text-heading tw-font-gt-america tw-text-lg tw-mx-[18px]">
+              <span>10</span>
+              <span>L</span>
+            </span>
+            <button>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="14.5" stroke="#302112"></circle>
+                <circle cx="15.0004" cy="14.9999" r="0.777778" fill="#302112"></circle>
+                <circle cx="15.0004" cy="18.1113" r="0.777778" fill="#302112"></circle>
+                <circle cx="15.0004" cy="21.2224" r="0.777778" fill="#302112"></circle>
+                <circle cx="15.0004" cy="11.8889" r="0.777778" fill="#302112"></circle>
+                <circle cx="15.0004" cy="8.77778" r="0.777778" fill="#302112"></circle>
+                <circle cx="11.8911" cy="14.9999" r="0.777778" fill="#302112"></circle>
+                <circle cx="8.77778" cy="14.9999" r="0.777778" fill="#302112"></circle>
+                <circle cx="18.1137" cy="14.9999" r="0.777778" fill="#302112" /></circle>
+                <circle cx="21.2231" cy="14.9999" r="0.777778" fill="#302112" /></circle>
+              </svg>
             </button>
           </div>
-        </div>
-        <div class="tw-flex tw-items-center">
-          <button>
-            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="25" cy="25" r="14.5" stroke="#302112"></circle>
-              <circle cx="25.0004" cy="25.7778" r="0.777778" fill="#302112"></circle>
-              <circle cx="21.8872" cy="25.7778" r="0.777778" fill="#302112"></circle>
-              <circle cx="18.7778" cy="25.7778" r="0.777778" fill="#302112"></circle>
-              <circle cx="28.1098" cy="25.7778" r="0.777778" fill="#302112" />
-              <circle cx="31.2231" cy="25.7778" r="0.777778" fill="#302112" />
+          <span class="tw-text-heading tw-text-lg tw-font-gt-america">
+            <span>$</span>
+            <span>255.00</span>
+          </span>
+          <button class="tw-secondary-btn tw-max-w-[200px] tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative">
+            <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">Add to Cart</span>
+            <span class="tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full">this is not empty</span>
+  
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="tw-z-10" xmlns="http://www.w3.org/2000/svg">
+              <g id="Group 2224">
+                <circle id="Ellipse 821" cx="9" cy="9" r="1" fill="white"></circle>
+                <circle id="Ellipse 828" cx="9" cy="13" r="1" fill="white"></circle>
+                <circle id="Ellipse 829" cx="9" cy="17" r="1" fill="white"></circle>
+                <circle id="Ellipse 826" cx="9" cy="5" r="1" fill="white"></circle>
+                <circle id="Ellipse 827" cx="9" cy="1" r="1" fill="white"></circle>
+                <circle id="Ellipse 824" cx="5" cy="9" r="1" fill="white"></circle>
+                <circle id="Ellipse 825" cx="1" cy="9" r="1" fill="white"></circle>
+                <circle id="Ellipse 822" cx="13" cy="9" r="1" fill="white"></circle>
+                <circle id="Ellipse 823" cx="17" cy="9" r="1" fill="white"></circle>
+              </g>
             </svg>
           </button>
-          <span class="tw-text-heading tw-font-gt-america tw-text-lg tw-mx-[18px]">
-            <span>10</span>
-            <span>L</span>
-          </span>
-          <button>
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="15" cy="15" r="14.5" stroke="#302112" />
-              <circle cx="15.0004" cy="14.9999" r="0.777778" fill="#302112" />
-              <circle cx="15.0004" cy="18.1113" r="0.777778" fill="#302112" />
-              <circle cx="15.0004" cy="21.2224" r="0.777778" fill="#302112" />
-              <circle cx="15.0004" cy="11.8889" r="0.777778" fill="#302112" />
-              <circle cx="15.0004" cy="8.77778" r="0.777778" fill="#302112" />
-              <circle cx="11.8911" cy="14.9999" r="0.777778" fill="#302112" />
-              <circle cx="8.77778" cy="14.9999" r="0.777778" fill="#302112" />
-              <circle cx="18.1137" cy="14.9999" r="0.777778" fill="#302112" />
-              <circle cx="21.2231" cy="14.9999" r="0.777778" fill="#302112" />
-            </svg>
-          </button>
+          <span class="md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs md:tw-bottom-5 md:tw-right-0">Add one more litre for a better deal.</span>
         </div>
-        <span class="tw-text-heading tw-text-lg tw-font-gt-america">
-          <span>$</span>
-          <span>255.00</span>
-        </span>
-        <button
-          class="tw-secondary-btn tw-max-w-[200px] tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative">
-          <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">
-            Add to Cart
-          </span>
-          <span class="tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full">
-            this is not empty
-          </span>
-
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="tw-z-10"
-            xmlns="http://www.w3.org/2000/svg">
-            <g id="Group 2224">
-              <circle id="Ellipse 821" cx="9" cy="9" r="1" fill="white" />
-              <circle id="Ellipse 828" cx="9" cy="13" r="1" fill="white" />
-              <circle id="Ellipse 829" cx="9" cy="17" r="1" fill="white" />
-              <circle id="Ellipse 826" cx="9" cy="5" r="1" fill="white" />
-              <circle id="Ellipse 827" cx="9" cy="1" r="1" fill="white" />
-              <circle id="Ellipse 824" cx="5" cy="9" r="1" fill="white" />
-              <circle id="Ellipse 825" cx="1" cy="9" r="1" fill="white" />
-              <circle id="Ellipse 822" cx="13" cy="9" r="1" fill="white" />
-              <circle id="Ellipse 823" cx="17" cy="9" r="1" fill="white" />
-            </g>
-          </svg>
-        </button>
-        <span class="md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs md:tw-bottom-5 md:tw-right-0">
-          Add one more litre for a better deal.
-        </span>
-      </div>
+      </template>
     </div>
     <div class="animate__animated animate__fadeIn tw-bg-primary tw-w-full">
       <div class="tw-p-5 tw-flex tw-border-b tw-border-heading/30 tw-flex-col md:tw-flex-row tw-items-center">
