@@ -570,7 +570,8 @@
 
               const parser = new DOMParser()
               const doc = parser.parseFromString(html, 'text/html')
-              
+
+              console.log(doc)
               const dataElement = doc.querySelector('#productJSON')
               console.log(dataElement)
             })
