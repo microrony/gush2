@@ -32,7 +32,7 @@
   <section
     class="tw-grid tw-grid-cols-1 tw-items-start xl:tw-grid-cols-3 tw-gap-4 tw-gap-x-0 md:tw-gap-x-0 md:tw-gap-[15px] lg:tw-gap-4 xl:tw-gap-[30px] tw-z-10">
     <div class="animate__animated animate__fadeIn xl:tw-col-span-2 tw-bg-primary tw-py-[23px] tw-px-[21px]">
-      <template x-for="product in products">
+      <template x-for="product in products" :key="product.id">
         <div class="tw-flex tw-flex-col md:tw-flex-row tw-gap-4 md:tw-gap-0 md:tw-justify-between tw-items-center tw-pb-5 tw-mb-5 tw-border-b tw-border-heading/30 last:tw-border-none tw-relative">
           <div class="tw-flex tw-flex-col md:tw-flex-row tw-items-center">
             <div>
@@ -275,6 +275,7 @@
               console.log(doc)
               const dataElement = doc.querySelector('#productJSON')
               const product = JSON.parse(dataElement.textContent)
+              this.products.push(product)
               console.log(product)
             })
           }
