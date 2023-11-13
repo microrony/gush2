@@ -24,496 +24,203 @@
 
 <div id="user_journey_cart">
  <main x-data="userCart"
-      style="background-image: url('https://cdn.shopify.com/s/files/1/0614/1470/3297/files/cart-bg.png?v=1699605925')"
-      class="tw-relative tw-backdrop-blur-md tw-backdrop-brightness-50 tw-bg-no-repeat tw-bg-cover lg:tw-min-h-max tw-py-5 tw-p-4 lg:tw-py-8 lg:tw-px-4 xl:tw-py-10 xl:tw-px-[49px]"
-    >
-      <h1
-        class="tw-text-3xl tw-mb-2 lg:tw-mb-4 xl:tw-mb-[25px] tw-text-white lg:tw-text-[42px] tw-font-abccamera"
-      >
-        Calculation Result
-      </h1>
-      <section
-        class="tw-grid tw-grid-cols-1 tw-items-start xl:tw-grid-cols-3 tw-gap-4 tw-gap-x-0 md:tw-gap-x-0 md:tw-gap-[15px] lg:tw-gap-4 xl:tw-gap-[30px] tw-z-10"
-      >
-        <div
-          class="animate__animated animate__fadeIn xl:tw-col-span-2 tw-bg-primary tw-py-[23px] tw-px-[21px]"
-        >
-          <div
-            class="tw-flex tw-flex-col md:tw-flex-row tw-gap-4 md:tw-gap-0 md:tw-justify-between tw-items-center tw-pb-5 tw-mb-5 tw-border-b tw-border-heading/30 last:tw-border-none tw-relative"
-          >
-            <div class="tw-flex tw-flex-col md:tw-flex-row tw-items-center">
-              <div>
-                <div
-                  style="background-color: #cc8a8a"
-                  class="tw-h-[130px] tw-w-[300px tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center"
-                >
-                  Surface Area: 8.1 sqm
-                </div>
-                <div
-                  class="tw-bg-white tw-text-[10px] tw-text-center tw-py-2 tw-font-gt-america tw-text-heading"
-                >
-                  <span>Leapfrog</span>
-                </div>
-              </div>
-              <div class="tw-h-[150px] tw-flex tw-flex-col tw-justify-between">
-                <div class="tw-ml-3 md:tw-mt-[56px]">
-                  <select
-                    class="tw-text-heading tw-font-gt-america tw-text-base tw-border-0 tw-bg-transparent focus:tw-outline-none"
-                    name=""
-                    id=""
-                  >
-                    <option value="gush-care">Gush Care</option>
-                    <option value="gush-clean-care">Gush Clean Care</option>
-                  </select>
-                  <span
-                    class="tw-text-darkGrey tw-font-gt-america tw-text-[7px] tw-block"
-                  >
-                    Humidity-control
-                  </span>
-                </div>
-                <button
-                  type="button"
-                  class="tw-flex tw-ml-3 tw-items-center"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
-                      fill="#FF40F4"
-                    />
-                  </svg>
-                  <span
-                    class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america"
-                  >
-                    Recalculate
-                  </span>
-                </button>
-              </div>
+  style="background-image: url('https://cdn.shopify.com/s/files/1/0614/1470/3297/files/cart-bg.png?v=1699605925')"
+  class="tw-relative tw-backdrop-blur-md tw-backdrop-brightness-50 tw-bg-no-repeat tw-bg-cover lg:tw-min-h-max tw-py-5 tw-p-4 lg:tw-py-8 lg:tw-px-4 xl:tw-py-10 xl:tw-px-[49px]">
+  <h1 class="tw-text-3xl tw-mb-2 lg:tw-mb-4 xl:tw-mb-[25px] tw-text-white lg:tw-text-[42px] tw-font-abccamera">
+    Calculation Result
+  </h1>
+  <section
+    class="tw-grid tw-grid-cols-1 tw-items-start xl:tw-grid-cols-3 tw-gap-4 tw-gap-x-0 md:tw-gap-x-0 md:tw-gap-[15px] lg:tw-gap-4 xl:tw-gap-[30px] tw-z-10">
+    <div class="animate__animated animate__fadeIn xl:tw-col-span-2 tw-bg-primary tw-py-[23px] tw-px-[21px]">
+      <div class="tw-flex tw-flex-col md:tw-flex-row tw-gap-4 md:tw-gap-0 md:tw-justify-between tw-items-center tw-pb-5 tw-mb-5 tw-border-b tw-border-heading/30 last:tw-border-none tw-relative">
+        <div class="tw-flex tw-flex-col md:tw-flex-row tw-items-center">
+          <div>
+            <div style="background-color: #cc8a8a"
+              class="tw-h-[130px] tw-w-[300px tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center">
+              Surface Area: 8.1 sqm
             </div>
+            <div class="tw-bg-white tw-text-[10px] tw-text-center tw-py-2 tw-font-gt-america tw-text-heading">
+              <span>Leapfrog</span>
+            </div>
+          </div>
+          <div class="tw-h-[150px] tw-flex tw-flex-col tw-justify-between">
+            <div class="tw-ml-3 md:tw-mt-[56px]">
+              <select
+                class="tw-text-heading tw-font-gt-america tw-text-base tw-border-0 tw-bg-transparent focus:tw-outline-none"
+                name="" id="">
+                <option value="gush-care">Gush Care</option>
+                <option value="gush-clean-care">Gush Clean Care</option>
+              </select>
+              <span class="tw-text-darkGrey tw-font-gt-america tw-text-[7px] tw-block">
+                Humidity-control
+              </span>
+            </div>
+            <button type="button" class="tw-flex tw-ml-3 tw-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
+                  fill="#FF40F4"></path>
+              </svg>
+              <span class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america">
+                Recalculate
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="tw-flex tw-items-center">
+          <button>
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="25" cy="25" r="14.5" stroke="#302112"></circle>
+              <circle cx="25.0004" cy="25.7778" r="0.777778" fill="#302112"></circle>
+              <circle cx="21.8872" cy="25.7778" r="0.777778" fill="#302112"></circle>
+              <circle cx="18.7778" cy="25.7778" r="0.777778" fill="#302112"></circle>
+              <circle cx="28.1098" cy="25.7778" r="0.777778" fill="#302112" />
+              <circle cx="31.2231" cy="25.7778" r="0.777778" fill="#302112" />
+            </svg>
+          </button>
+          <span class="tw-text-heading tw-font-gt-america tw-text-lg tw-mx-[18px]">
+            <span>10</span>
+            <span>L</span>
+          </span>
+          <button>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="15" cy="15" r="14.5" stroke="#302112" />
+              <circle cx="15.0004" cy="14.9999" r="0.777778" fill="#302112" />
+              <circle cx="15.0004" cy="18.1113" r="0.777778" fill="#302112" />
+              <circle cx="15.0004" cy="21.2224" r="0.777778" fill="#302112" />
+              <circle cx="15.0004" cy="11.8889" r="0.777778" fill="#302112" />
+              <circle cx="15.0004" cy="8.77778" r="0.777778" fill="#302112" />
+              <circle cx="11.8911" cy="14.9999" r="0.777778" fill="#302112" />
+              <circle cx="8.77778" cy="14.9999" r="0.777778" fill="#302112" />
+              <circle cx="18.1137" cy="14.9999" r="0.777778" fill="#302112" />
+              <circle cx="21.2231" cy="14.9999" r="0.777778" fill="#302112" />
+            </svg>
+          </button>
+        </div>
+        <span class="tw-text-heading tw-text-lg tw-font-gt-america">
+          <span>$</span>
+          <span>255.00</span>
+        </span>
+        <button
+          class="tw-secondary-btn tw-max-w-[200px] tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative">
+          <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">
+            Add to Cart
+          </span>
+          <span class="tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full">
+            this is not empty
+          </span>
+
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="tw-z-10"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="Group 2224">
+              <circle id="Ellipse 821" cx="9" cy="9" r="1" fill="white" />
+              <circle id="Ellipse 828" cx="9" cy="13" r="1" fill="white" />
+              <circle id="Ellipse 829" cx="9" cy="17" r="1" fill="white" />
+              <circle id="Ellipse 826" cx="9" cy="5" r="1" fill="white" />
+              <circle id="Ellipse 827" cx="9" cy="1" r="1" fill="white" />
+              <circle id="Ellipse 824" cx="5" cy="9" r="1" fill="white" />
+              <circle id="Ellipse 825" cx="1" cy="9" r="1" fill="white" />
+              <circle id="Ellipse 822" cx="13" cy="9" r="1" fill="white" />
+              <circle id="Ellipse 823" cx="17" cy="9" r="1" fill="white" />
+            </g>
+          </svg>
+        </button>
+        <span class="md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs md:tw-bottom-5 md:tw-right-0">
+          Add one more litre for a better deal.
+        </span>
+      </div>
+    </div>
+    <div class="animate__animated animate__fadeIn tw-bg-primary tw-w-full">
+      <div class="tw-p-5 tw-flex tw-border-b tw-border-heading/30 tw-flex-col md:tw-flex-row tw-items-center">
+        <div>
+          <div style="background-color: #cc8a8a"
+            class="tw-h-[130px] tw-w-[300px] tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center">
+            Surface Area: 8.1 sqm
+          </div>
+          <div class="tw-bg-white tw-text-[10px] tw-text-center tw-py-2 tw-font-gt-america tw-text-heading">
+            <span>Leapfrog</span>
+          </div>
+        </div>
+        <div class="tw-ml-[22px] tw-text-center md:tw-text-left tw-mt-3 md:tw-mt-0 tw-w-full">
+          <h1 class="tw-text-heading tw-font-gt-america tw-text-sm tw-mb-2">
+            Paint Quantity: 10L
+          </h1>
+          <div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-w-full">
             <div class="tw-flex tw-items-center">
-              <button>
-                <svg
-                  width="50"
-                  height="50"
-                  viewBox="0 0 50 50"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="25"
-                    cy="25"
-                    r="14.5"
-                    stroke="#302112"
-                  />
-                  <circle
-                    cx="25.0004"
-                    cy="25.7778"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="21.8872"
-                    cy="25.7778"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="18.7778"
-                    cy="25.7778"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="28.1098"
-                    cy="25.7778"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="31.2231"
-                    cy="25.7778"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                </svg>
-              </button>
-              <span
-                class="tw-text-heading tw-font-gt-america tw-text-lg tw-mx-[18px]"
-              >
-                <span>10</span>
-                <span>L</span>
+              <span class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1">
+                x2
               </span>
-              <button>
-                <svg
-                  width="30"
-                  height="30"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="15"
-                    cy="15"
-                    r="14.5"
-                    stroke="#302112"
-                  />
-                  <circle
-                    cx="15.0004"
-                    cy="14.9999"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="15.0004"
-                    cy="18.1113"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="15.0004"
-                    cy="21.2224"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="15.0004"
-                    cy="11.8889"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="15.0004"
-                    cy="8.77778"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="11.8911"
-                    cy="14.9999"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="8.77778"
-                    cy="14.9999"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="18.1137"
-                    cy="14.9999"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="21.2231"
-                    cy="14.9999"
-                    r="0.777778"
-                    fill="#302112"
-                  />
-                </svg>
-              </button>
+              <span class="tw-text-heading tw-text-[10px]">
+                5L Gush Care
+              </span>
             </div>
-            <span class="tw-text-heading tw-text-lg tw-font-gt-america">
-              <span>$</span>
-              <span>255.00</span>
-            </span>
-            <button
-              class="tw-secondary-btn tw-max-w-[200px] tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative"
-            >
-              <span
-                class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left"
-              >
-                Add to Cart
-              </span>
-              <span
-                class="tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full"
-              >
-                this is not empty
-              </span>
 
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                class="tw-z-10"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Group 2224">
-                  <circle
-                    id="Ellipse 821"
-                    cx="9"
-                    cy="9"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 828"
-                    cx="9"
-                    cy="13"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 829"
-                    cx="9"
-                    cy="17"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 826"
-                    cx="9"
-                    cy="5"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 827"
-                    cx="9"
-                    cy="1"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 824"
-                    cx="5"
-                    cy="9"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 825"
-                    cx="1"
-                    cy="9"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 822"
-                    cx="13"
-                    cy="9"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 823"
-                    cx="17"
-                    cy="9"
-                    r="1"
-                    fill="white"
-                  />
-                </g>
-              </svg>
-            </button>
-            <span
-              class="md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs md:tw-bottom-5 md:tw-right-0"
-            >
-              Add one more litre for a better deal.
+            <span class="tw-text-heading tw-mt-3 md:tw-mt-0 tw-font-gt-america tw-text-lg">
+              $ 280.00
             </span>
           </div>
         </div>
-        <div class="animate__animated animate__fadeIn tw-bg-primary tw-w-full">
-          <div
-            class="tw-p-5 tw-flex tw-border-b tw-border-heading/30 tw-flex-col md:tw-flex-row tw-items-center"
-          >
-            <div>
-              <div
-                style="background-color: #cc8a8a"
-                class="tw-h-[130px] tw-w-[300px] tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center"
-              >
-                Surface Area: 8.1 sqm
-              </div>
-              <div
-                class="tw-bg-white tw-text-[10px] tw-text-center tw-py-2 tw-font-gt-america tw-text-heading"
-              >
-                <span>Leapfrog</span>
-              </div>
-            </div>
-            <div
-              class="tw-ml-[22px] tw-text-center md:tw-text-left tw-mt-3 md:tw-mt-0 tw-w-full"
-            >
-              <h1 class="tw-text-heading tw-font-gt-america tw-text-sm tw-mb-2">
-                Paint Quantity: 10L
-              </h1>
-              <div
-                class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-w-full"
-              >
-                <div class="tw-flex tw-items-center">
-                  <span
-                    class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1"
-                  >
-                    x2
-                  </span>
-                  <span class="tw-text-heading tw-text-[10px]">
-                    5L Gush Care
-                  </span>
-                </div>
-
-                <span
-                  class="tw-text-heading tw-mt-3 md:tw-mt-0 tw-font-gt-america tw-text-lg"
-                >
-                  $ 280.00
-                </span>
-              </div>
-            </div>
+      </div>
+      <div
+        class="tw-flex tw-justify-center md:tw-justify-between tw-mt-5 tw-p-5 tw-items-center tw-text-heading tw-font-gt-america tw-text-xl">
+        <span>Total:</span>
+        <span>
+          <span class="tw-ml-3 tw-text-2xl">$</span>
+          <span class="tw-text-2xl">635.00</span>
+        </span>
+      </div>
+      <div class="tw-mb-10 tw-p-5 tw-justify-between tw-text-center tw-flex tw-items-center tw-mt-5">
+        <div>
+          <div class="tw-flex tw-items-center tw-mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+              <path
+                d="M5.94857 7.61299C5.94857 7.55296 5.94857 7.49251 5.94857 7.43248C5.94857 5.21081 5.94857 2.98956 5.9494 0.767896C5.9494 0.6706 5.9494 0.569163 5.97465 0.476421C6.06077 0.155965 6.35887 -0.033245 6.69837 0.00484538C7.00682 0.0396236 7.24778 0.303358 7.26269 0.625885C7.26765 0.73436 7.26517 0.842835 7.26517 0.951309C7.26517 3.11087 7.26517 5.27043 7.26517 7.42999V7.65398C7.33059 7.59395 7.37033 7.55958 7.4076 7.52232C8.07873 6.84911 8.74821 6.17425 9.42142 5.50311C9.72035 5.20502 10.1484 5.21081 10.4097 5.5085C10.6316 5.76147 10.6337 6.13078 10.4097 6.38623C10.3281 6.47939 10.2371 6.56385 10.1493 6.65162C9.14858 7.65274 8.14787 8.65385 7.14676 9.65455C6.78863 10.0127 6.42635 10.0131 6.06988 9.65663C4.99962 8.58637 3.92895 7.51652 2.85952 6.44502C2.56266 6.14734 2.56349 5.71799 2.85579 5.45591C3.13319 5.20709 3.51575 5.22654 3.80101 5.51098C4.34629 6.0546 4.88825 6.6007 5.43145 7.14638C5.59126 7.30703 5.74983 7.4685 5.90923 7.62997C5.92207 7.62458 5.93532 7.61879 5.94815 7.61341L5.94857 7.61299Z"
+                fill="#FF42EF" />
+              <path
+                d="M6.60312 12.5622C4.63484 12.5622 2.66656 12.5626 0.698276 12.5618C0.281351 12.5618 -0.00929533 12.2749 0.000227271 11.8795C0.00767974 11.5719 0.222559 11.3139 0.525213 11.2568C0.605534 11.2415 0.689167 11.2377 0.771558 11.2377C4.66133 11.2369 8.55153 11.2365 12.4413 11.2386C12.5535 11.2386 12.6711 11.2468 12.7767 11.2804C13.0797 11.3764 13.2524 11.6721 13.2118 11.9987C13.175 12.2972 12.9108 12.5407 12.6007 12.5601C12.544 12.5639 12.4873 12.5618 12.4301 12.5618C10.4879 12.5618 8.54532 12.5618 6.60312 12.5618V12.5622Z"
+                fill="#FF42EF" />
+            </svg>
+            <a href="index.html"
+              class="tw-ml-[4px] tw-underline tw-text-heading tw-font-gt-america tw-text-sm tw-leading-[20px]">
+              Save order as pdf
+            </a>
           </div>
-          <div
-            class="tw-flex tw-justify-center md:tw-justify-between tw-mt-5 tw-p-5 tw-items-center tw-text-heading tw-font-gt-america tw-text-xl"
-          >
-            <span>Total:</span>
-            <span>
-              <span class="tw-ml-3 tw-text-2xl">$</span>
-              <span class="tw-text-2xl">635.00</span>
-            </span>
-          </div>
-          <div
-            class="tw-mb-10 tw-p-5 tw-justify-between tw-text-center tw-flex tw-items-center tw-mt-5"
-          >
-            <div>
-              <div class="tw-flex tw-items-center tw-mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="13"
-                  viewBox="0 0 14 13"
-                  fill="none"
-                >
-                  <path
-                    d="M5.94857 7.61299C5.94857 7.55296 5.94857 7.49251 5.94857 7.43248C5.94857 5.21081 5.94857 2.98956 5.9494 0.767896C5.9494 0.6706 5.9494 0.569163 5.97465 0.476421C6.06077 0.155965 6.35887 -0.033245 6.69837 0.00484538C7.00682 0.0396236 7.24778 0.303358 7.26269 0.625885C7.26765 0.73436 7.26517 0.842835 7.26517 0.951309C7.26517 3.11087 7.26517 5.27043 7.26517 7.42999V7.65398C7.33059 7.59395 7.37033 7.55958 7.4076 7.52232C8.07873 6.84911 8.74821 6.17425 9.42142 5.50311C9.72035 5.20502 10.1484 5.21081 10.4097 5.5085C10.6316 5.76147 10.6337 6.13078 10.4097 6.38623C10.3281 6.47939 10.2371 6.56385 10.1493 6.65162C9.14858 7.65274 8.14787 8.65385 7.14676 9.65455C6.78863 10.0127 6.42635 10.0131 6.06988 9.65663C4.99962 8.58637 3.92895 7.51652 2.85952 6.44502C2.56266 6.14734 2.56349 5.71799 2.85579 5.45591C3.13319 5.20709 3.51575 5.22654 3.80101 5.51098C4.34629 6.0546 4.88825 6.6007 5.43145 7.14638C5.59126 7.30703 5.74983 7.4685 5.90923 7.62997C5.92207 7.62458 5.93532 7.61879 5.94815 7.61341L5.94857 7.61299Z"
-                    fill="#FF42EF"
-                  />
-                  <path
-                    d="M6.60312 12.5622C4.63484 12.5622 2.66656 12.5626 0.698276 12.5618C0.281351 12.5618 -0.00929533 12.2749 0.000227271 11.8795C0.00767974 11.5719 0.222559 11.3139 0.525213 11.2568C0.605534 11.2415 0.689167 11.2377 0.771558 11.2377C4.66133 11.2369 8.55153 11.2365 12.4413 11.2386C12.5535 11.2386 12.6711 11.2468 12.7767 11.2804C13.0797 11.3764 13.2524 11.6721 13.2118 11.9987C13.175 12.2972 12.9108 12.5407 12.6007 12.5601C12.544 12.5639 12.4873 12.5618 12.4301 12.5618C10.4879 12.5618 8.54532 12.5618 6.60312 12.5618V12.5622Z"
-                    fill="#FF42EF"
-                  />
-                </svg>
-                <a
-                  href="index.html"
-                  class="tw-ml-[4px] tw-underline tw-text-heading tw-font-gt-america tw-text-sm tw-leading-[20px]"
-                >
-                  Save order as pdf
-                </a>
-              </div>
-              <div class="tw-flex tw-items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                >
-                  <path
-                    d="M4.20526 1.48354C4.31462 1.59293 4.37605 1.74127 4.37605 1.89595C4.37605 2.05063 4.31462 2.19898 4.20526 2.30837L3.15934 3.35429H7.73034C8.65332 3.35429 9.55558 3.62798 10.323 4.14076C11.0904 4.65354 11.6886 5.38238 12.0418 6.2351C12.395 7.08782 12.4874 8.02613 12.3073 8.93137C12.1273 9.83662 11.6828 10.6681 11.0302 11.3208C10.3775 11.9734 9.54601 12.4179 8.64077 12.598C7.73552 12.778 6.79721 12.6856 5.94449 12.3324C5.09177 11.9792 4.36293 11.381 3.85015 10.6136C3.33737 9.84618 3.06368 8.94393 3.06368 8.02095C3.06368 7.86624 3.12514 7.71787 3.23453 7.60847C3.34393 7.49908 3.4923 7.43762 3.64701 7.43762C3.80172 7.43762 3.95009 7.49908 4.05949 7.60847C4.16889 7.71787 4.23034 7.86624 4.23034 8.02095C4.23034 8.71319 4.43562 9.38988 4.8202 9.96545C5.20479 10.541 5.75141 10.9896 6.39095 11.2545C7.03049 11.5194 7.73423 11.5887 8.41316 11.4537C9.09209 11.3187 9.71573 10.9853 10.2052 10.4958C10.6947 10.0063 11.028 9.3827 11.1631 8.70377C11.2981 8.02484 11.2288 7.3211 10.9639 6.68156C10.699 6.04202 10.2504 5.49539 9.67484 5.11081C9.09927 4.72622 8.42258 4.52095 7.73034 4.52095H3.15934L4.20526 5.56687C4.31152 5.67689 4.37032 5.82424 4.36899 5.97719C4.36766 6.13013 4.30631 6.27644 4.19815 6.3846C4.09 6.49275 3.94369 6.5541 3.79074 6.55543C3.6378 6.55676 3.49045 6.49796 3.38043 6.3917L1.33876 4.35004C1.2294 4.24064 1.16797 4.0923 1.16797 3.93762C1.16797 3.78294 1.2294 3.63459 1.33876 3.5252L3.38043 1.48354C3.48982 1.37418 3.63816 1.31274 3.79284 1.31274C3.94752 1.31274 4.09587 1.37418 4.20526 1.48354Z"
-                    fill="#FF42EF"
-                  />
-                </svg>
-                <a
-                  href="index.html"
-                  class="tw-ml-[4px] tw-underline tw-text-heading tw-font-gt-america tw-text-sm tw-leading-[20px]"
-                >
-                  Start Over
-                </a>
-              </div>
-            </div>
-            <button
-              class="tw-primary-btn tw-max-w-[200px] tw-rounded-[2px] tw-bg-white tw-overflow-hidden tw-relative"
-            >
-              <span
-                class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left"
-              >
-                Add to Cart
-              </span>
-              <span
-                class="tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full"
-              ></span>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                class="tw-z-10"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Group 2224">
-                  <circle
-                    id="Ellipse 821"
-                    cx="9"
-                    cy="9"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 828"
-                    cx="9"
-                    cy="13"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 829"
-                    cx="9"
-                    cy="17"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 826"
-                    cx="9"
-                    cy="5"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 827"
-                    cx="9"
-                    cy="1"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 824"
-                    cx="5"
-                    cy="9"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 825"
-                    cx="1"
-                    cy="9"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 822"
-                    cx="13"
-                    cy="9"
-                    r="1"
-                    fill="white"
-                  />
-                  <circle
-                    id="Ellipse 823"
-                    cx="17"
-                    cy="9"
-                    r="1"
-                    fill="white"
-                  />
-                </g>
-              </svg>
-            </button>
+          <div class="tw-flex tw-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path
+                d="M4.20526 1.48354C4.31462 1.59293 4.37605 1.74127 4.37605 1.89595C4.37605 2.05063 4.31462 2.19898 4.20526 2.30837L3.15934 3.35429H7.73034C8.65332 3.35429 9.55558 3.62798 10.323 4.14076C11.0904 4.65354 11.6886 5.38238 12.0418 6.2351C12.395 7.08782 12.4874 8.02613 12.3073 8.93137C12.1273 9.83662 11.6828 10.6681 11.0302 11.3208C10.3775 11.9734 9.54601 12.4179 8.64077 12.598C7.73552 12.778 6.79721 12.6856 5.94449 12.3324C5.09177 11.9792 4.36293 11.381 3.85015 10.6136C3.33737 9.84618 3.06368 8.94393 3.06368 8.02095C3.06368 7.86624 3.12514 7.71787 3.23453 7.60847C3.34393 7.49908 3.4923 7.43762 3.64701 7.43762C3.80172 7.43762 3.95009 7.49908 4.05949 7.60847C4.16889 7.71787 4.23034 7.86624 4.23034 8.02095C4.23034 8.71319 4.43562 9.38988 4.8202 9.96545C5.20479 10.541 5.75141 10.9896 6.39095 11.2545C7.03049 11.5194 7.73423 11.5887 8.41316 11.4537C9.09209 11.3187 9.71573 10.9853 10.2052 10.4958C10.6947 10.0063 11.028 9.3827 11.1631 8.70377C11.2981 8.02484 11.2288 7.3211 10.9639 6.68156C10.699 6.04202 10.2504 5.49539 9.67484 5.11081C9.09927 4.72622 8.42258 4.52095 7.73034 4.52095H3.15934L4.20526 5.56687C4.31152 5.67689 4.37032 5.82424 4.36899 5.97719C4.36766 6.13013 4.30631 6.27644 4.19815 6.3846C4.09 6.49275 3.94369 6.5541 3.79074 6.55543C3.6378 6.55676 3.49045 6.49796 3.38043 6.3917L1.33876 4.35004C1.2294 4.24064 1.16797 4.0923 1.16797 3.93762C1.16797 3.78294 1.2294 3.63459 1.33876 3.5252L3.38043 1.48354C3.48982 1.37418 3.63816 1.31274 3.79284 1.31274C3.94752 1.31274 4.09587 1.37418 4.20526 1.48354Z"
+                fill="#FF42EF" />
+            </svg>
+            <a href="index.html"
+              class="tw-ml-[4px] tw-underline tw-text-heading tw-font-gt-america tw-text-sm tw-leading-[20px]">
+              Start Over
+            </a>
           </div>
         </div>
-      </section>
-    </main>
+        <button class="tw-primary-btn tw-max-w-[200px] tw-rounded-[2px] tw-bg-white tw-overflow-hidden tw-relative">
+          <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">
+            Add to Cart
+          </span>
+          <span class="tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full"></span>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="tw-z-10"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="Group 2224">
+              <circle id="Ellipse 821" cx="9" cy="9" r="1" fill="white" />
+              <circle id="Ellipse 828" cx="9" cy="13" r="1" fill="white" />
+              <circle id="Ellipse 829" cx="9" cy="17" r="1" fill="white" />
+              <circle id="Ellipse 826" cx="9" cy="5" r="1" fill="white" />
+              <circle id="Ellipse 827" cx="9" cy="1" r="1" fill="white" />
+              <circle id="Ellipse 824" cx="5" cy="9" r="1" fill="white" />
+              <circle id="Ellipse 825" cx="1" cy="9" r="1" fill="white" />
+              <circle id="Ellipse 822" cx="13" cy="9" r="1" fill="white" />
+              <circle id="Ellipse 823" cx="17" cy="9" r="1" fill="white" />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script>
