@@ -23,7 +23,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
 <div id="user_journey_cart">
- <main 
+ <main x-data="{
+   init() {
+
+     console.log('inited')
+   }
+ }"
       style="background-image: url('https://cdn.shopify.com/s/files/1/0614/1470/3297/files/cart-bg.png?v=1699605925')"
       class="tw-relative tw-backdrop-blur-md tw-backdrop-brightness-50 tw-bg-no-repeat tw-bg-cover lg:tw-min-h-max tw-py-5 tw-p-4 lg:tw-py-8 lg:tw-px-4 xl:tw-py-10 xl:tw-px-[49px]"
     >
