@@ -564,7 +564,7 @@
 
             console.log(this.data)
             this.data.roomsDetails.forEach(async roomDetail => {
-              const url = `/products/${roomDetail.handle}`
+              const url = `/products/${roomDetail.handle}?view=json`
               const req = await fetch(url)
               const html = await req.text()
 
