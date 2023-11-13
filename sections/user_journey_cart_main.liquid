@@ -22,6 +22,17 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('userCart', () => ({
+        init() {
+          console.log('userCart ready')
+            // I get called before the element using this data initializes.
+        }
+    }))
+  })
+</script>
+
 <div id="user_journey_cart">
  <main x-data="userCart"
       style="background-image: url('https://cdn.shopify.com/s/files/1/0614/1470/3297/files/cart-bg.png?v=1699605925')"
@@ -540,16 +551,6 @@
       targets: '.paint_selection_image',
       width: screenWidth > 1023 ? ['0%', '578px'] : ['0%', '33.33%'],
       easing: 'easeInOutQuad',
-    })
-  </script>
-  <script>
-    document.addEventListener('alpine:init', () => {
-      Alpine.data('userCart', () => ({
-          init() {
-            console.log('userCart ready')
-              // I get called before the element using this data initializes.
-          }
-      }))
     })
   </script>
 
