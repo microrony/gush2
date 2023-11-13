@@ -551,6 +551,15 @@
             console.log('userCart ready')
               // I get called before the element using this data initializes.
             console.log(location)
+            const url = new URL(window.location.href)
+            const params = url.searchParams
+
+            const data = {}
+            params.forEach((value, key) => {
+              data[key] = value
+            })
+
+            console.log(data)
           }
       }))
     })
