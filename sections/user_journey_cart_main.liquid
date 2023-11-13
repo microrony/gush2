@@ -573,7 +573,7 @@
 
               console.log(doc)
               const dataElement = doc.querySelector('#productJSON')
-              console.log(dataElement)
+              const product = JSON.parse(dataElement.textContent)
             })
           }
       }))
