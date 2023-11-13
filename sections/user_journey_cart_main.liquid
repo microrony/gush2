@@ -280,8 +280,9 @@
               console.log(product)
             })
           },
-        addToCart(e) {
-          console.log(e)
+        async addToCart(id) {
+          const product = this.products.find(_ => _.id == id)
+          console.log(product)
         }
       }))
     })
