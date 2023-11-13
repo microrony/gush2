@@ -23,7 +23,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
 <div id="user_journey_cart">
- <main
+ <main x-data="userCart"
       style="background-image: url('https://cdn.shopify.com/s/files/1/0614/1470/3297/files/cart-bg.png?v=1699605925')"
       class="tw-relative tw-backdrop-blur-md tw-backdrop-brightness-50 tw-bg-no-repeat tw-bg-cover lg:tw-min-h-max tw-py-5 tw-p-4 lg:tw-py-8 lg:tw-px-4 xl:tw-py-10 xl:tw-px-[49px]"
     >
@@ -515,48 +515,43 @@
       </section>
     </main>
   </div>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-    <script>
-      // Scroll to the top of the page
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth', // Use smooth scrolling for a nice animation
-        })
-      }
-
-      // Call the function to scroll to the top when the page loads
-      window.addEventListener('load', () => {
-        scrollToTop()
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+  <script>
+    // Scroll to the top of the page
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Use smooth scrolling for a nice animation
       })
-
-      function scrollIntoViewAnId(id) {
-        document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
-      }
-
-      const screenWidth = window.innerWidth
-
-      anime({
-        targets: '.paint_selection_image',
-        width: screenWidth > 1023 ? ['0%', '578px'] : ['0%', '33.33%'],
-        easing: 'easeInOutQuad',
-      })
-    </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-<script>
-  function downloadCartAsPDF() {
-    var cartElement = document.getElementById('user_journey_cart'); // replace 'your-cart-id' with your actual cart element ID
-    
-    if (cartElement) {
-      var cartContent = cartElement.innerHTML;
-      var pdf = new jsPDF();
-      pdf.text(cartContent, 10, 10);
-      pdf.save('cart.pdf');
-    } else {
-      console.error('Cart element not found.');
     }
-  }
-</script>
+
+    // Call the function to scroll to the top when the page loads
+    window.addEventListener('load', () => {
+      scrollToTop()
+    })
+
+    function scrollIntoViewAnId(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+    }
+
+    const screenWidth = window.innerWidth
+
+    anime({
+      targets: '.paint_selection_image',
+      width: screenWidth > 1023 ? ['0%', '578px'] : ['0%', '33.33%'],
+      easing: 'easeInOutQuad',
+    })
+  </script>
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('userCart', () => ({
+          init() {
+            console.log('userCart ready')
+              // I get called before the element using this data initializes.
+          }
+      }))
+    })
+  </script>
 
 {% schema %}
  {
