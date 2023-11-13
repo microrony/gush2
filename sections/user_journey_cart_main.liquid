@@ -548,6 +548,7 @@
       console.log('Alpine:init')
       Alpine.data('userCart', () => ({
           init() {
+            this.products = []
             console.log('userCart ready')
               // I get called before the element using this data initializes.
             console.log(location)
@@ -568,6 +569,9 @@
               const html = await req.text()
 
               console.log(html)
+              const parser = new DOMParser()
+              const doc = parser.parseFromString(html, 'text/html')
+              console.log(doc)
             })
           }
       }))
