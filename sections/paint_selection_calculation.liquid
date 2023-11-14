@@ -224,14 +224,12 @@
            this.getData(data[0].handle,data[0].totalData)
         },
         getData(categoryName, totalData){
-          console.log(totalData)
          fetch(`https://gush.earth/collections/${categoryName}?view=data-fetch&page=1`).then(res=> res.text()).then(html=> {
             const parser = new DOMParser()
             const doc = parser.parseFromString(html,'text/html')
             const dataElement = doc.querySelector('#collection__data')
             const data = JSON.parse(dataElement.textContent)
             this.products = data
-            console.log(data)
          }).catch(err=> console.log(err))
         },
       }"
