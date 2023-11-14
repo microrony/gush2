@@ -1065,13 +1065,13 @@
               >
                 <button
                   type="button"
-                  @click="isOpen = false;isChangingColor=false;changingColorPalletIndex=null;setColorOfRoom(product.featured_image, product.title,product.featured_image,product.handle)"
+                  @click="isOpen = false;isChangingColor=false;changingColorPalletIndex=null;setColorOfRoom(product.featured_image,product.image[1], product.title,product.featured_image,product.handle)"
                   class="tw-w-full"
                 >
                   <div
                     class="tw-w-full tw-h-[170px]"
                   >
-                    <img :src="'https://'+ product.featured_image" class="tw-h-full tw-w-full" />
+                    <img :src="'https://'+ product.image[1]" class="tw-h-full tw-w-full" />
                   </div>
                   <h1
                     x-text="product.title"
