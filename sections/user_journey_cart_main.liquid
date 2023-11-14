@@ -259,8 +259,10 @@
             const params = url.searchParams
 
             const data = {}
+            
             params.forEach((value, key) => {
               data[key] = value
+              console.log(key)
             })
 
             this.data = JSON.parse(data.paintDetails)
