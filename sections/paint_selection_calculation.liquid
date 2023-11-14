@@ -684,7 +684,7 @@
                       <div
                         class="tw-h-[138px] animate__animated animate__fadeIn"
                       >
-                        <img :src="'https://'+ item.colorImage[1]" class="tw-h-full tw-w-full tw-object-center tw-object-cover tw-mx-auto" />
+                        <img :src="'https://'+ item.colorImage" class="tw-h-full tw-w-full tw-object-center tw-object-cover tw-mx-auto" />
                       </div>
                       <div
                         class="tw-w-full tw-bg-white tw-text-heading tw-font-gt-america tw-text-base tw-text-center tw-py-1"
@@ -1065,7 +1065,7 @@
               >
                 <button
                   type="button"
-                  @click="isOpen = false;isChangingColor=false;changingColorPalletIndex=null;setColorOfRoom(product.featured_image,product.images[1], product.title,product.featured_image,product.handle)"
+                  @click="isOpen = false;isChangingColor=false;changingColorPalletIndex=null;setColorOfRoom(product.featured_image, product.title,product.featured_image,product.handle)"
                   class="tw-w-full"
                 >
                   <div
