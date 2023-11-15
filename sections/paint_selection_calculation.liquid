@@ -890,7 +890,24 @@
               type="text"
               name="paintDetails"
               class="tw-hidden"
-              :value="JSON.stringify(paintDetails.roomsDetails)"
+              :value="JSON.stringify(paintDetails.roomsDetails.map((room,index)=>{
+                return {
+                  name:room.name,
+                  area:room.area,
+                  color: room.color,
+                  colorImage: room.colorImage,
+                  colorName: room.colorName,
+                  handle: collectionName,
+                  index,
+                  celingProduct:{
+                    area: room.area,
+                    color:room.ceilingColor,
+                    colorImage:room.ceilingColorImage,
+                    colorName: room.ceilingColorName,
+                    handle:collectionName
+                  }
+                }
+              }))"
             />
             <button
               class="tw-mt-7 tw-flex tw-justify-between tw-items-center tw-primary-btn rounded-[2px] lg:tw-mt-[56px] tw-mb-7 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative"
