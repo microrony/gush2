@@ -1063,10 +1063,6 @@ button.tw-quantity-btn {
   height: 140px;
 }
 
-.tw-h-\[150px\] {
-  height: 150px;
-}
-
 .tw-h-\[170px\] {
   height: 170px;
 }
@@ -1179,10 +1175,6 @@ button.tw-quantity-btn {
   width: 100%;
 }
 
-.tw-w-\[133px\] {
-  width: 133px;
-}
-
 .tw-min-w-\[200px\] {
   min-width: 200px;
 }
@@ -1204,17 +1196,9 @@ button.tw-quantity-btn {
   min-width: max-content;
 }
 
-.tw-max-w-\[200px\] {
-  max-width: 200px;
-}
-
 .tw-max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-
-.tw-max-w-\[133px\] {
-  max-width: 133px;
 }
 
 .tw-flex-1 {
@@ -2070,10 +2054,6 @@ button[data-action='stop'] {
   background-color: transparent;
 }
 
-.disabled\:tw-opacity-25:disabled {
-  opacity: 0.25;
-}
-
 .tw-group:hover .group-hover\:tw-text-heading {
   --tw-text-opacity: 1;
   color: rgb(48 33 18 / var(--tw-text-opacity));
@@ -2110,6 +2090,10 @@ button[data-action='stop'] {
     margin-bottom: 0px;
   }
 
+  .md\:tw-ml-3 {
+    margin-left: 0.75em;
+  }
+
   .md\:tw-ml-5 {
     margin-left: 1.25em;
   }
@@ -2130,12 +2114,20 @@ button[data-action='stop'] {
     margin-top: 56px;
   }
 
+  .md\:tw-ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:tw-h-16 {
     height: 4em;
   }
 
   .md\:tw-h-\[140px\] {
     height: 140px;
+  }
+
+  .md\:tw-h-\[150px\] {
+    height: 150px;
   }
 
   .md\:tw-w-1\/3 {
@@ -2166,12 +2158,12 @@ button[data-action='stop'] {
     flex-direction: row;
   }
 
-  .md\:tw-justify-start {
-    justify-content: flex-start;
+  .md\:tw-flex-col {
+    flex-direction: column;
   }
 
-  .md\:tw-justify-end {
-    justify-content: flex-end;
+  .md\:tw-justify-start {
+    justify-content: flex-start;
   }
 
   .md\:tw-justify-between {
