@@ -362,7 +362,15 @@
             }
             data.items.push(item)
           })
-          console.log(data)
+          const res = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          })
+          const cart = await res.json()
+          console.log(cart)
         }
       }))
     })
