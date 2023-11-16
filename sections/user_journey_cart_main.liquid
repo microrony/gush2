@@ -126,7 +126,7 @@
       </template>
     </div>
     <div class="animate__animated animate__fadeIn tw-bg-primary tw-w-full">
-      <template x-for="product in cart">
+      <template x-for="(product, index) in cart" :key="index">
       <div class="tw-p-5 tw-flex tw-border-b tw-border-heading/30 tw-flex-col md:tw-flex-row tw-items-center">
         <div>
           <div style="background-color: #cc8a8a"
