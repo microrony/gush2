@@ -54,7 +54,6 @@
         currentRoomColumnIndex:0,
         isShowingPaintColumns:false,
         isPickingCeilingColor:false,
-        surfaceArea:'',
         roomTypeOptions:[
           {
             name:'Living room',
@@ -103,7 +102,7 @@
             })
         },
         setRoomDetails(option){
-          this.surfaceArea = option.maxSurfaceArea
+          this.floorArea = option.maxSurfaceArea
           this.paintDetails = {
             ...option,
             roomsDetails: Array.from({length: option.roomsCount}, (_, index) => ({
@@ -144,7 +143,7 @@
         },
         setPaintDetailsIfRoomType(typeName){
           if(typeName){
-            this.surfaceArea = 0;
+            this.floorArea = 0;
           }
           this.paintDetails.roomsDetails=[]
           this.paintDetails.name = typeName ?? '';
@@ -490,7 +489,6 @@
                 class="tw-px-4 tw-py-2 lg:tw-py-1 tw-font-gt-america tw-flex tw-items-center tw-bg-white"
               >
                 <input
-                  :value="surfaceArea ?? 0"
                   type="number"
                   min="0"
                   name="floorArea"
