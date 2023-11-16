@@ -285,6 +285,7 @@
             console.log(this.data)
             console.log(this.rooms)
             this.data.roomsDetails.forEach(async roomDetail => {
+              console.log('Room: ', roomDetail)
               const url = `/products/${roomDetail.handle}?view=json`
               const req = await fetch(url)
               const html = await req.text()
