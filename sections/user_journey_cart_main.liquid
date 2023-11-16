@@ -103,7 +103,7 @@
             <span>$</span>
             <span>255.00</span>
           </span>
-          <button @click="addToCart(`${product.id}`)" class="tw-secondary-btn tw-max-w-[200px] tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative">
+          <button @click="addToCart(`${product.id}`, `${product}`)" class="tw-secondary-btn tw-max-w-[200px] tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative">
             <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">Add to Cart</span>
             <span class="tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full">this is not empty</span>
   
@@ -192,7 +192,7 @@
             </a>
           </div>
         </div>
-        <button class="tw-primary-btn tw-max-w-[200px] tw-rounded-[2px] tw-bg-white tw-overflow-hidden tw-relative">
+        <button  class="tw-primary-btn tw-max-w-[200px] tw-rounded-[2px] tw-bg-white tw-overflow-hidden tw-relative">
           <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">
             Add to Cart
           </span>
@@ -325,23 +325,24 @@
             })
             
           },
-        async addToCart(id) {
-          const product = this.products.find(_ => _.id == id)
-          let data = {
-           'items': [{
-            'id': product.variants[3].id,
-            'quantity': 1
-            }]
-          };
-          const res = await fetch('/cart/add.js', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-          })
-          const cart = await res.json()
-          console.log(cart)
+        async addToCart(id, product) {
+          console.log(product)
+          // const product = this.products.find(_ => _.id == id)
+          // let data = {
+          //  'items': [{
+          //   'id': product.variants[3].id,
+          //   'quantity': 1
+          //   }]
+          // };
+          // const res = await fetch('/cart/add.js', {
+          //   method: 'POST',
+          //   headers: {
+          //     'Content-Type': 'application/json'
+          //   },
+          //   body: JSON.stringify(data)
+          // })
+          // const cart = await res.json()
+          // console.log(cart)
         }
       }))
     })
