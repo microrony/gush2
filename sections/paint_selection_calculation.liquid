@@ -54,6 +54,7 @@
         currentRoomColumnIndex:0,
         isShowingPaintColumns:false,
         isPickingCeilingColor:false,
+        surfaceArea:'',
         roomTypeOptions:[
           {
             name:'Living room',
@@ -102,6 +103,7 @@
             })
         },
         setRoomDetails(option){
+          this.surfaceArea = option.maxSurfaceArea
           this.paintDetails = {
             ...option,
             roomsDetails: Array.from({length: option.roomsCount}, (_, index) => ({
@@ -120,13 +122,13 @@
         },
         setColorOfRoom(color,colorName,colorImage, handle){
          if(this.isPickingCeilingColor){
-    console.log('Picking color: ', handle)
+          console.log('Picking color: ', handle)
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColor = color;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorName = colorName;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorImage = colorImage;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorHandle = handle;
          }else{
-    console.log('Picking color: ', handle)
+          console.log('Picking color: ', handle)
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].color = color;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].colorName = colorName;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].colorImage = colorImage;
@@ -141,6 +143,9 @@
           roomsDetails:[]
         },
         setPaintDetailsIfRoomType(typeName){
+          if(typeName){
+            this.surfaceArea = 0;
+          }
           this.paintDetails.roomsDetails=[]
           this.paintDetails.name = typeName ?? '';
           this.paintDetails.value = ''; 
@@ -167,21 +172,25 @@
                 name:'5-room HDB (107 - 113 sqm)',
                 value:'5-room-hdb-107-113-sqm',
                 roomsCount:5,
+                maxSurfaceArea:113
               },
               {
                 name:'4-room HDB (85 - 93 sqm)',
                 value:'4-room-hdb-85-93-sqm',
                 roomsCount:4,
+                maxSurfaceArea:93
               },
               {
                 name:'3-room HDB (60 - 68 sqm)',
                 value:'3-room-hdb-60-68-sqm',
                 roomsCount:3,
+                maxSurfaceArea: 68
               },
               {
                 name:'2-room Plexi (>60 sqm)',
                 value:'2-room-plexi-more-than-60sqm',
                 roomsCount:2,
+                maxSurfaceArea: 60
               } 
             ]
           },
@@ -192,21 +201,25 @@
                 name:'1 bedroom (45 - 60 sqm)',
                 value:'1-bedroom-45-60-sqm',
                 roomsCount:1,
+                maxSurfaceArea: 60
               },
               {
                 name:'2 bedroom (60 - 110 sqm)',
                 value:'2-bedroom-60-110-sqm',
                 roomsCount:2,
+                maxSurfaceArea: 110
               },
               {
                 name:'3 bedroom (110 - 140 sqm)',
                 value:'3-bedroom-110-140-sqm',
                 roomsCount:3,
+                maxSurfaceArea: 140
               },
               {
                 name:'4 bedroom (140 - 175 sqm)',
                 value:'4-bedroom-140-175-sqm',
                 roomsCount:4,
+                maxSurfaceArea: 175
               }, 
             ]
           },
@@ -473,11 +486,11 @@
               class="md:tw-w-1/3 tw-mb-5 tw-w-full lg:tw-w-1/4 xl:tw-w-[200px] md:tw-ml-5"
             >
               <div
-                x-show="paintDetails.name === 'Others'"
                 style="height:50px"
                 class="tw-px-4 tw-py-2 lg:tw-py-1 tw-font-gt-america tw-flex tw-items-center tw-bg-white"
               >
                 <input
+                  :value="surfaceArea ?? 0"
                   type="number"
                   min="0"
                   name="floorArea"
@@ -549,77 +562,143 @@
                 </span>
               </li>
             </ul>
-            <div
-              class="tw-flex tw-justify-center md:tw-justify-end tw-items-center"
+          </div>
+          <div
+            class="tw-w-full tw-col-span-2 animate__animated animate__fadeIn tw-flex tw-justify-center md:tw-justify-between tw-items-center"
+          >
+            <button
+              disabled
+              @click="isShowingPaintColumns=true"
+              class="tw-mt-7 tw-primary-btn rounded-[2px] lg:tw-mt-40 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative"
             >
-              <button
-                x-show="paintDetails.name"
-                @click="isShowingPaintColumns=true"
-                class="tw-mt-7 tw-primary-btn rounded-[2px] lg:tw-mt-40 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative"
+              <span
+                class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-opacity-30 tw-text-left"
               >
-                <span
-                  class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left"
-                >
-                  Choose room colors
-                </span>
-                <span
-                  class="tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full"
-                ></span>
-                <svg
-                  class="tw-z-10"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="11"
-                  height="20"
-                  viewBox="0 0 11 20"
-                >
-                  <circle
-                    cx="10"
-                    cy="10"
-                    r="1"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="7"
-                    cy="13"
-                    r="1"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="4"
-                    cy="16"
-                    r="1"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="1"
-                    cy="19"
-                    r="1"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="1"
-                    cy="1"
-                    r="1"
-                    transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="1"
-                    cy="1"
-                    r="1"
-                    transform="matrix(1 0 0 -1 3 5)"
-                    fill="#302112"
-                  />
-                  <circle
-                    cx="1"
-                    cy="1"
-                    r="1"
-                    transform="matrix(1 0 0 -1 6 8)"
-                    fill="#302112"
-                  />
-                </svg>
-              </button>
-            </div>
+                Calculate
+              </span>
+              <span
+                class="tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-opacity-30 tw-h-full tw-w-full"
+              ></span>
+              <svg
+                class="tw-z-10 tw-opacity-30"
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="20"
+                viewBox="0 0 11 20"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="7"
+                  cy="13"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="4"
+                  cy="16"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="19"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="matrix(1 0 0 -1 3 5)"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="matrix(1 0 0 -1 6 8)"
+                  fill="#302112"
+                />
+              </svg>
+            </button>
+            <button
+              @click="isShowingPaintColumns=true"
+              class="tw-mt-7 tw-primary-btn rounded-[2px] lg:tw-mt-40 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative"
+            >
+              <span
+                class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left"
+              >
+                Choose room colors
+              </span>
+              <span
+                class="tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full"
+              ></span>
+              <svg
+                class="tw-z-10"
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="20"
+                viewBox="0 0 11 20"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="7"
+                  cy="13"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="4"
+                  cy="16"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="19"
+                  r="1"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="matrix(1 0 0 -1 3 5)"
+                  fill="#302112"
+                />
+                <circle
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="matrix(1 0 0 -1 6 8)"
+                  fill="#302112"
+                />
+              </svg>
+            </button>
           </div>
         </div>
 
