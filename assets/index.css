@@ -1179,6 +1179,10 @@ button.tw-quantity-btn {
   width: 100%;
 }
 
+.tw-w-\[133px\] {
+  width: 133px;
+}
+
 .tw-min-w-\[200px\] {
   min-width: 200px;
 }
@@ -1207,6 +1211,10 @@ button.tw-quantity-btn {
 .tw-max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.tw-max-w-\[133px\] {
+  max-width: 133px;
 }
 
 .tw-flex-1 {
@@ -2056,6 +2064,10 @@ button[data-action='stop'] {
 .focus\:tw-outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.disabled\:tw-bg-transparent:disabled {
+  background-color: transparent;
 }
 
 .disabled\:tw-opacity-25:disabled {
