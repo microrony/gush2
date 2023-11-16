@@ -289,6 +289,8 @@
               const req = await fetch(url)
               const html = await req.text()
 
+              console.log('URL: ', url)
+
               const parser = new DOMParser()
               const doc = parser.parseFromString(html, 'text/html')
 
