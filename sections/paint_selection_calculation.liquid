@@ -120,6 +120,7 @@
         },
         setColorOfRoom(color,colorName,colorImage, handle){
          if(this.isPickingCeilingColor){
+    console.log('Picking color: ', handle)
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColor = color;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorName = colorName;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorImage = colorImage;
