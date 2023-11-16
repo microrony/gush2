@@ -118,19 +118,19 @@
           }
           
         },
-        setColorOfRoom(color,colorName,colorImage, product_handle){
+        setColorOfRoom(color,colorName,colorImage, handle){
          if(this.isPickingCeilingColor){
-    console.log('Picking color: ', product_handle)
+    console.log('Picking color: ', handle)
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColor = color;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorName = colorName;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorImage = colorImage;
-          this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorHandle = product_handle;
+          this.paintDetails.roomsDetails[this.currentRoomColumnIndex].ceilingColorHandle = handle;
          }else{
-    console.log('Picking color: ', product_handle)
+    console.log('Picking color: ', handle)
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].color = color;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].colorName = colorName;
           this.paintDetails.roomsDetails[this.currentRoomColumnIndex].colorImage = colorImage;
-          this.paintDetails.roomsDetails[this.currentRoomColumnIndex].handle = product_handle;
+          this.paintDetails.roomsDetails[this.currentRoomColumnIndex].handle = handle;
          }
          this.isModalOpen = false;
         },
@@ -907,7 +907,7 @@
                     color:room.ceilingColor,
                     colorImage:room.ceilingColorImage,
                     colorName: room.ceilingColorName,
-                    handle:room.ceilingColorHandle
+                    handle:room.celingColorHandle
                   }
                 }
               })})"
