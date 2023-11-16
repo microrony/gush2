@@ -286,20 +286,42 @@
             console.log(this.rooms)
             this.data.roomsDetails.forEach(async roomDetail => {
               console.log('Room: ', roomDetail)
-              const url = `/products/${roomDetail.handle}?view=json`
-              const req = await fetch(url)
-              const html = await req.text()
 
-              console.log('URL: ', url)
+              const product = await this.getProductData(roomDetail.handle)
+              console.log('URL: ', product)
 
-              const parser = new DOMParser()
-              const doc = parser.parseFromString(html, 'text/html')
-
-              console.log(doc)
-              const dataElement = doc.querySelector('#productJSON')
-              const product = JSON.parse(dataElement.textContent)
+              
               this.products.push(product)
+
+              if(roomDetail.celingProduct.color) {
+                const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
+                this.products.push(celingProduct)
+              }
             })
+          },
+
+          getProductData(handle) {
+            return new Promise(async (resolve, reject) => {
+              const url = `/products/${handle}?view=json`
+              try {
+                const req = await fetch(url)
+                const html = await req.text()
+
+                const parser = new DOMParser()
+                const doc = parser.parseFromString(html, 'text/html')
+
+                const dataElement = doc.querySelector('#productJSON')
+                if(dataElement) {
+                  const product = JSON.parse(dataElement.textContent)
+                  resolve(product)
+                }
+                resolve(null)
+              }
+              catch(e) {
+                console.log(e)
+              }
+            })
+            
           },
         async addToCart(id) {
           const product = this.products.find(_ => _.id == id)
