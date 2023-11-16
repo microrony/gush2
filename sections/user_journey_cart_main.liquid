@@ -292,8 +292,9 @@
 
               
               this.products.push(product)
-              console.log(roomDetail)
+              
               if(roomDetail.celingProduct.color) {
+                console.log('Celing product',roomDetail)
                 const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
                 console.log("Cel: ",celingProduct)
                 this.products.push(celingProduct)
