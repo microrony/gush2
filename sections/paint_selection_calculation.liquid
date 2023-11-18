@@ -973,7 +973,7 @@
               type="text"
               name="paintDetails"
               class="tw-hidden"
-              :value="JSON.stringify({...paintDetails, roomsDetails:paintDetails.roomsDetails.map((room,index)=>{
+              :value="JSON.stringify({...paintDetails, sealerQuantity, roomsDetails:paintDetails.roomsDetails.map((room,index)=>{
                 return {
                   name:room.name,
                   area:room.area,
@@ -981,7 +981,7 @@
                   colorImage: room.colorImage,
                   colorName: room.colorName,
                   handle: room.handle,
-                  quantity: paintQuantity
+                  quantity: paintQuantity,
                   index,
                   celingProduct:{
                     area: room.area,
