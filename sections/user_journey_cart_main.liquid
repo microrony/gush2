@@ -298,6 +298,7 @@
                 celingProduct.area = roomDetail.area
                 celingProduct.quantity = roomDetail.quantity
                 this.products.push(celingProduct)
+                this.products.push({...celingProduct,quantity:this.data.sealerQuantity})
               }
               
             })
