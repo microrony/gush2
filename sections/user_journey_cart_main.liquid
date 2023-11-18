@@ -289,6 +289,7 @@
               const product = await this.getProductData(roomDetail.handle)
               product.area = roomDetail.area
               product.quantity = roomDetail.quantity
+              product.bucketType = ''
 
               this.products.push(product)
               
@@ -296,6 +297,7 @@
                 const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
                 celingProduct.area = roomDetail.area
                 celingProduct.quantity = roomDetail.quantity
+                celingProduct.bucketType = ''
                 this.products.push(celingProduct)
               }
               // this.products.push({
