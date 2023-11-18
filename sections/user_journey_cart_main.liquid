@@ -298,6 +298,11 @@
                 celingProduct.quantity = roomDetail.quantity
                 this.products.push(celingProduct)
               }
+              this.products.push({
+                ...product,
+                quantity:this.data.sealerQuantity
+              })
+              console.log(this.products)
             })
           },
 
