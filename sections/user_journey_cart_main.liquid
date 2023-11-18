@@ -104,6 +104,7 @@
             <span class="tw-text-heading tw-font-gt-america tw-text-lg tw-mx-[18px]">
               <span x-text="product.quantity"></span>
               <span>L</span>
+              <span x-text="(product.quantity % 5) === 0"></span>
             </span>
             <button @click="product.quantity++">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
