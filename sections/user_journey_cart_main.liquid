@@ -126,7 +126,7 @@
           </span>
           <button
             @click="addToCart(`${product.id}`, product)"
-            disabled="cart.find(item=> item.id === product.id).id"
+            disabled="cart.find(item=> item.id === product.id) ? true:false"
             class="tw-secondary-btn tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative"
           >
             <span
