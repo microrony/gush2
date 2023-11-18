@@ -272,6 +272,18 @@
             this.cart = []
             this.rooms = []
             this.celings = []
+            this.bucketTypes = [
+              {
+                  name:'Gush Care',
+                  value:'gush-care'
+                  reason:'Humidity-control'
+                },
+                {
+                  name:'Gush Clean Care',
+                  value:'gush-care'
+                  reason:'Stain-resistant'
+                }
+            ]
             console.log('userCart ready')
             // I get called before the element using this data initializes.
             const url = new URL(window.location.href)
