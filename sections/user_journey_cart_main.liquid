@@ -297,7 +297,6 @@
               if(roomDetail.celingProduct.color) {
                 const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
                 celingProduct.area = roomDetail.area
-                ceilingProduct.quantity = roomDetail.quantity
                 this.products.push(celingProduct)
               }
             })
