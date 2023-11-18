@@ -268,7 +268,7 @@
       console.log('Alpine:init')
       Alpine.data('userCart', () => ({
           init() {
-            this.bucketTypes = [
+            bucketTypes = [
               {
                 name:'Gush Care',
                 value:'gush-care'
@@ -279,7 +279,7 @@
                 value:'gush-care'
                 reason:'Stain-resistant'
               }
-            ]
+            ],
             this.products = []
             this.cart = []
             this.rooms = []
