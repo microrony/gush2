@@ -54,8 +54,8 @@
         currentRoomColumnIndex:0,
         isShowingPaintColumns:false,
         isPickingCeilingColor:false,
-        paintQuantity: this.sealerArea/5,
-        sealerQuantity: this.sealerArea/10,
+        paintQuantity: Math.ceil(this.sealerArea/5),
+        sealerQuantity: Math.ceil(this.sealerArea/10),
         roomTypeOptions:[
           {
             name:'Living room',
