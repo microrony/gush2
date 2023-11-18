@@ -299,7 +299,10 @@
                 this.products.push(celingProduct)
               }
               this.products.push({
-                ...product,
+                id:Math.random()*1000,
+                images:[],
+                area:roomDetail.area,
+                title:'Gush EchoSeal',
                 quantity:this.data.sealerQuantity
               })
               console.log(this.products)
