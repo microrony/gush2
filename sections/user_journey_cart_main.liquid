@@ -125,7 +125,8 @@
             <span>255.00</span>
           </span>
           <button
-            @click="cart.find(item=> item.id === product.id) ? null : addToCart(`${product.id}`, product)"
+            @click="addToCart(`${product.id}`, product)"
+            :disabled="cart.find(item=> item.id === product.id)"
             class="tw-secondary-btn tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative"
           >
             <span
