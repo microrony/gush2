@@ -875,12 +875,12 @@ button.tw-quantity-btn {
   margin-bottom: 2.75em;
 }
 
-.tw-mb-2 {
-  margin-bottom: 0.5em;
+.tw-mb-16 {
+  margin-bottom: 4em;
 }
 
-.tw-mb-24 {
-  margin-bottom: 6em;
+.tw-mb-2 {
+  margin-bottom: 0.5em;
 }
 
 .tw-mb-3 {
@@ -1077,10 +1077,6 @@ button.tw-quantity-btn {
 
 .tw-h-\[50px\] {
   height: 50px;
-}
-
-.tw-h-\[678px\] {
-  height: 678px;
 }
 
 .tw-h-\[85px\] {
@@ -1304,10 +1300,6 @@ button.tw-quantity-btn {
 
 .tw-gap-\[32px\] {
   gap: 32px;
-}
-
-.tw-gap-\[60px\] {
-  gap: 60px;
 }
 
 .tw-gap-\[76px\] {
@@ -1598,11 +1590,6 @@ button.tw-quantity-btn {
 .tw-py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.tw-py-\[18px\] {
-  padding-top: 18px;
-  padding-bottom: 18px;
 }
 
 .tw-py-\[1px\] {
@@ -2135,6 +2122,10 @@ button[data-action='stop'] {
     height: 150px;
   }
 
+  .md\:tw-h-\[678px\] {
+    height: 678px;
+  }
+
   .md\:tw-w-1\/3 {
     width: 33.333333%;
   }
@@ -2230,11 +2221,6 @@ button[data-action='stop'] {
     text-align: left;
   }
 
-  .md\:tw-text-3xl {
-    font-size: 1.875em;
-    line-height: 2.25em;
-  }
-
   .md\:tw-text-xl {
     font-size: 1.25em;
     line-height: 1.75em;
@@ -2273,6 +2259,10 @@ button[data-action='stop'] {
 
   .lg\:tw-mb-10 {
     margin-bottom: 2.5em;
+  }
+
+  .lg\:tw-mb-24 {
+    margin-bottom: 6em;
   }
 
   .lg\:tw-mb-4 {
@@ -2386,6 +2376,10 @@ button[data-action='stop'] {
 
   .lg\:tw-gap-\[40px\] {
     gap: 40px;
+  }
+
+  .lg\:tw-gap-\[60px\] {
+    gap: 60px;
   }
 
   .lg\:tw-gap-\[62px\] {
