@@ -268,7 +268,18 @@
       console.log('Alpine:init')
       Alpine.data('userCart', () => ({
           init() {
-            this.bucketTypes=[]
+            this.bucketTypes=[
+              {
+                  name:'Gush Care',
+                  value:'gush-care'
+                  reason:'Humidity-control'
+                },
+                {
+                  name:'Gush Clean Care',
+                  value:'gush-care'
+                  reason:'Stain-resistant'
+                }
+            ]
             this.products = []
             this.cart = []
             this.rooms = []
@@ -277,19 +288,6 @@
             // I get called before the element using this data initializes.
             const url = new URL(window.location.href)
             const params = url.searchParams
-            this.bucketTypes = [
-              {
-                    name:'Gush Care',
-                    value:'gush-care'
-                    reason:'Humidity-control'
-                  },
-                  {
-                    name:'Gush Clean Care',
-                    value:'gush-care'
-                    reason:'Stain-resistant'
-                  }
-            ]
-
             const data = {}
             
             params.forEach((value, key) => {
