@@ -47,20 +47,6 @@
               </div>
             </div>
             <div
-              x-data="{
-                bucketTypes:[
-                  {
-                    name:'Gush Care',
-                    value:'gush-care'
-                    reason:'Humidity-control'
-                  },
-                  {
-                    name:'Gush Clean Care',
-                    value:'gush-care'
-                    reason:'Stain-resistant'
-                  }
-                ]
-              }"
               class="tw-h-full tw-w-full tw-mt-5 md:tw-mt-0 md:tw-h-[150px] tw-flex md:tw-flex-col tw-items-start tw-justify-between"
             >
               <div class="tw-ml-0 md:tw-ml-3 md:tw-mt-[56px]">
@@ -291,6 +277,18 @@
             // I get called before the element using this data initializes.
             const url = new URL(window.location.href)
             const params = url.searchParams
+            this.bucketTypes = [
+              {
+                    name:'Gush Care',
+                    value:'gush-care'
+                    reason:'Humidity-control'
+                  },
+                  {
+                    name:'Gush Clean Care',
+                    value:'gush-care'
+                    reason:'Stain-resistant'
+                  }
+            ]
 
             const data = {}
             
