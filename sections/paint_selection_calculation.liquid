@@ -54,8 +54,6 @@
         currentRoomColumnIndex:0,
         isShowingPaintColumns:false,
         isPickingCeilingColor:false,
-        paintQuantity: Math.ceil(this.floorArea/5),
-        sealerQuantity: Math.ceil(this.floorArea/10),
         roomTypeOptions:[
           {
             name:'Living room',
@@ -973,7 +971,7 @@
               type="text"
               name="paintDetails"
               class="tw-hidden"
-              :value="JSON.stringify({...paintDetails, sealerQuantity, roomsDetails:paintDetails.roomsDetails.map((room,index)=>{
+              :value="JSON.stringify({...paintDetails, sealerQuantity: Math.ceil(floorArea/10), roomsDetails:paintDetails.roomsDetails.map((room,index)=>{
                 return {
                   name:room.name,
                   area:room.area,
@@ -981,7 +979,7 @@
                   colorImage: room.colorImage,
                   colorName: room.colorName,
                   handle: room.handle,
-                  quantity: paintQuantity,
+                  quantity: Math.ceil(floorArea/5),
                   index,
                   celingProduct:{
                     area: room.area,
