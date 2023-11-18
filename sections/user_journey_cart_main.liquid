@@ -297,7 +297,7 @@
                 const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
                 celingProduct.area = roomDetail.area
                 celingProduct.quantity = roomDetail.quantity
-                this.products.push(celingProduct,{...celingProduct,quantity:this.data.sealerQuantity})
+                this.products.push(celingProduct)
               }
               
             })
