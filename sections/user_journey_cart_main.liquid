@@ -301,11 +301,7 @@
                 this.products.push(celingProduct)
               }
               this.products.push({
-                area: room.area,
-                color:room.ceilingColor,
-                colorImage:room.ceilingColorImage,
-                colorName: room.ceilingColorName,
-                handle:room.ceilingColorHandle,
+                ...product,
                 quantity: this.paintDetails.sealerQuantity,
               })
             })
