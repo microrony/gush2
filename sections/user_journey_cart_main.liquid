@@ -283,7 +283,7 @@
             })
 
             this.data = JSON.parse(data.paintDetails)
-            console.log(JSON.parse(data.paintDetails))
+            console.log()
             this.rooms = this.data.roomsDetails
             this.data.roomsDetails.forEach(async roomDetail => {
 
@@ -298,7 +298,7 @@
                 celingProduct.area = roomDetail.area
                 celingProduct.quantity = roomDetail.quantity
                 this.products.push(celingProduct)
-                this.products.push({...celingProduct,quantity:this.data.sealerQuantity})
+                this.products.push({...celingProduct,quantity:JSON.parse(data.paintDetails).sealerQuantity})
               }
               
             })
