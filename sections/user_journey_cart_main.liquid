@@ -300,6 +300,15 @@
                 celingProduct.quantity = roomDetail.quantity
                 this.products.push(celingProduct)
               }
+              this.products.push({
+                name:room.name,
+                area:room.area,
+                color: room.color,
+                colorImage: room.colorImage,
+                colorName: room.colorName,
+                handle: room.handle,
+                quantity: this.paintDetails.sealerQuantity,
+              })
             })
             console.log(this.products)
           },
