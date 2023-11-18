@@ -297,16 +297,14 @@
                 celingProduct.area = roomDetail.area
                 celingProduct.quantity = roomDetail.quantity
                 this.products.push(celingProduct)
-                const sealerProduct = {
-                    area: roomDetail.area,
-                    color:room.ceilingColor,
-                    colorImage:'',
-                    colorName: '',
-                    quantity:JSON.parse(data.paintDetails).sealerQuantity
-                }
-                sealerProduct.quantity = JSON.parse(data.paintDetails).sealerQuantity
-                console.log(sealerProduct)
               }
+            })
+            this.products.push({
+                area: roomDetail.area,
+                color:room.ceilingColor,
+                colorImage:'',
+                colorName: '',
+                quantity:JSON.parse(data.paintDetails).sealerQuantity
             })
           },
 
