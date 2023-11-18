@@ -122,7 +122,7 @@
           </div>
           <span class="tw-text-heading tw-text-lg tw-font-gt-america">
             <span>$</span>
-            <span>255.00</span>
+            <span x-text="((product.variants[3].price / 100))"></span>
           </span>
           <button
             @click="addToCart(`${product.id}`, product)"
