@@ -351,7 +351,6 @@
             
           },
         async addToCart(id, product) {
-          console.log(product)
           this.cart.push(product)
           // const product = this.products.find(_ => _.id == id)
           // let data = {
@@ -368,7 +367,7 @@
           //   body: JSON.stringify(data)
           // })
           // const cart = await res.json()
-          // console.log(cart)
+          console.log(cart)
         },
         async addAllToCart() {
           let data = {
