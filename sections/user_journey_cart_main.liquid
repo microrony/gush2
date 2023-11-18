@@ -292,17 +292,17 @@
               product.quantity = roomDetail.quantity
 
               this.products.push(product)
-              
+              this.products.push({
+                ...product,
+                quantity: this.paintDetails.sealerQuantity,
+              })
               if(roomDetail.celingProduct.color) {
                 const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
                 celingProduct.area = roomDetail.area
                 celingProduct.quantity = roomDetail.quantity
                 this.products.push(celingProduct)
               }
-              this.products.push({
-                ...product,
-                quantity: this.paintDetails.sealerQuantity,
-              })
+              
             })
             console.log(this.products)
           },
