@@ -93,7 +93,7 @@
           <div class="tw-flex tw-items-center">
             <button 
               @click="product.quantity--" 
-              :disabled="product.quantity % 5 !== 0? false:true"
+              :disabled="product.quantity % 5 === 0"
               >
               <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="25" cy="25" r="14.5" stroke="#302112"></circle>
