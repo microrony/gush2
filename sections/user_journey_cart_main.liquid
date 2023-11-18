@@ -139,7 +139,7 @@
               this is not empty
             </span>
           </button>
-          <span class="md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs md:tw-bottom-5 md:tw-right-0">Add one more litre for a better deal.</span>
+          <span x-text="product.quantity % 5 !== 0 ?'Add one more litre for a better deal.':''" class="md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs md:tw-bottom-5 md:tw-right-0"></span>
         </div>
       </template>
     </div>
