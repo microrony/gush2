@@ -135,7 +135,7 @@
               Add to Cart
             </span>
             <span
-              class="tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full"
+              :class="cart.find(item=> item.id === product.id) ?'tw-opacity-30':'') +' tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full'"
             >
               this is not empty
             </span>
