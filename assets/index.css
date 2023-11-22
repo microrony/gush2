@@ -3005,6 +3005,10 @@ button[data-action='stop'] {
     margin-top: 56px;
   }
 
+  .md\:tw-mt-20 {
+    margin-top: 5em;
+  }
+
   .md\:tw-h-16 {
     height: 4em;
   }
@@ -3217,6 +3221,10 @@ button[data-action='stop'] {
 
   .lg\:tw-mt-8 {
     margin-top: 2em;
+  }
+
+  .lg\:tw-mt-32 {
+    margin-top: 8em;
   }
 
   .lg\:tw-block {
@@ -3520,6 +3528,10 @@ button[data-action='stop'] {
 
   .xl\:tw-mb-\[25px\] {
     margin-bottom: 25px;
+  }
+
+  .xl\:tw-mt-40 {
+    margin-top: 10em;
   }
 
   .xl\:tw-h-\[466px\] {
