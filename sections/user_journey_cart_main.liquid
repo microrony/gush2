@@ -231,7 +231,7 @@
           <span>255.00</span>
         </span>
         <button
-          @click="addToCart(`${sealer.id}`, sealer)"
+          @click="addToCart(`${sealer.id}`, sealer); sealer.quantity = sealer.quantity % 5 === 0 ? sealer.quantity+5:sealer.quantity"
           :disabled="cart.find(item=> item.id === sealer.id) ? true:false"
           class="tw-secondary-btn tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative"
         >
