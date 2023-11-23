@@ -403,16 +403,7 @@
             this.data = JSON.parse(data.paintDetails)
             this.rooms = this.data.roomsDetails
 
-            // const sealer = {
-            //     id:Math.ceil(Math.random()*10000000000)
-            //     images:['https://cdn.shopify.com/s/files/1/0614/1470/3297/files/sealer.png?v=1700725035'],
-            //     featured_image:{
-            //       alt:'sealer'
-            //     },
-            //     area: this.data.sealerQuantity*10,
-            //     title: 'Sealer',
-            //     quantity: this.data.sealerQuantity
-            // }
+           
             console.log({
                 id: "sealer-id",
                 images:['https://cdn.shopify.com/s/files/1/0614/1470/3297/files/sealer.png?v=1700725035'],
@@ -441,7 +432,16 @@
                 this.products.push(celingProduct)
               }
             })
-            
+            this.sealer = {
+                id:'sealer-1',
+                images:['https://cdn.shopify.com/s/files/1/0614/1470/3297/files/sealer.png?v=1700725035'],
+                featured_image:{
+                  alt:'sealer'
+                },
+                area: this.data.sealerQuantity*10,
+                title: 'Sealer',
+                quantity: this.data.sealerQuantity
+            }
           },
 
           getProductData(handle) {
