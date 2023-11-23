@@ -273,7 +273,7 @@
                 x <span x-text="Math.floor(product.quantity/5)"></span>
               </span>
               <span x-show="product.id === 'sealer-1'" class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1">
-                x <span x-text="product.quantity % 5 === 0 ? product.quantity : product.quantity + 5"></span>
+                x <span x-text="product.quantity % 5 === 0 ? Math.floor(product.quantity/5) : Math.floor((product.quantity+5)/5)"></span>
               </span>
               <span x-show="product.id !== 'sealer-1'" class="tw-text-heading tw-text-[10px]">
                 5L Gush Care
