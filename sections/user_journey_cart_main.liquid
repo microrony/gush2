@@ -402,6 +402,22 @@
 
             this.data = JSON.parse(data.paintDetails)
             this.rooms = this.data.roomsDetails
+
+            const sealer = {
+              ...this.data,
+              sealer:{
+                id:Math.ceil(Math.random()*10000000000)
+                images:['https://cdn.shopify.com/s/files/1/0614/1470/3297/files/sealer.png?v=1700725035'],
+                featured_image:{
+                  alt:'sealer'
+                },
+                area: this.data.sealerQuantity*10,
+                title: 'Sealer',
+                quantity: this.data.sealerQuantity
+              }
+            }
+            console.log(sealer)
+            
             this.data.roomsDetails.forEach(async roomDetail => {
 
               const product = await this.getProductData(roomDetail.handle)
@@ -419,20 +435,7 @@
                 this.products.push(celingProduct)
               }
             })
-            const sealer = {
-              ...this.data,
-              sealer:{
-                id:Math.ceil(Math.random()*10000000000)
-                images:['https://cdn.shopify.com/s/files/1/0614/1470/3297/files/sealer.png?v=1700725035'],
-                featured_image:{
-                  alt:'sealer'
-                },
-                area: this.data.sealerQuantity*10,
-                title: 'Sealer',
-                quantity: this.data.sealerQuantity
-              }
-            }
-            console.log(sealer)
+            
           },
 
           getProductData(handle) {
