@@ -442,16 +442,14 @@ video {
 
 .paint_selection_question {
   font-family: RecklessNeue;
-  font-size: 1.125em;
-  line-height: 1.75em;
+  font-size: 18px;
   --tw-text-opacity: 1;
   color: rgb(48 33 18 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
   .paint_selection_question {
-    font-size: 1.5em;
-    line-height: 2em;
+    font-size: 24px;
   }
 }
 
@@ -464,13 +462,12 @@ video {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(48 33 18 / var(--tw-border-opacity));
-  padding-left: 1.25em;
-  padding-right: 1.25em;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-family: GTAmerica;
-  font-size: 0.875em;
-  line-height: 1.25em;
+  font-size: 14px;
   --tw-text-opacity: 1;
   color: rgb(48 33 18 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color,
@@ -497,8 +494,7 @@ button.paint_selection_option {
     padding-bottom: 25.5px;
     padding-left: 41px;
     padding-right: 41px;
-    font-size: 1.125em;
-    line-height: 1.75em;
+    font-size: 18px;
   }
 }
 
@@ -507,10 +503,9 @@ button.paint_selection_option {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 1.25em;
-  padding: 1.25em;
-  font-size: 1.125em;
-  line-height: 1.75em;
+  gap: 20px;
+  padding: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -524,14 +519,13 @@ button.paint_selection_option {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(48 33 18 / var(--tw-border-opacity));
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   text-align: center;
   font-family: GTAmerica;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 16px;
   --tw-text-opacity: 1;
   color: rgb(48 33 18 / var(--tw-text-opacity));
 }
@@ -543,14 +537,13 @@ button.tw-quantity-btn {
 .tw-stalked-out {
   --tw-bg-opacity: 1;
   background-color: rgb(182 172 158 / var(--tw-bg-opacity));
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   text-align: center;
   font-family: GTAmerica;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 16px;
   --tw-text-opacity: 1;
   color: rgb(91 95 100 / var(--tw-text-opacity));
 }
@@ -558,14 +551,13 @@ button.tw-quantity-btn {
 .tw-selected {
   --tw-bg-opacity: 1;
   background-color: rgb(255 66 239 / var(--tw-bg-opacity));
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   text-align: center;
   font-family: GTAmerica;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 16px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1515,31 +1507,31 @@ button.tw-quantity-btn {
 }
 
 .-tw-inset-1 {
-  inset: -0.25em;
+  inset: -4px;
 }
 
 .tw--inset-1 {
-  inset: -0.25em;
+  inset: -4px;
 }
 
 .tw-inset-0 {
-  inset: 0px;
+  inset: 0;
 }
 
 .-tw-top-1 {
-  top: -0.25em;
+  top: -4px;
 }
 
 .tw--top-1 {
-  top: -0.25em;
+  top: -4px;
 }
 
 .tw-left-10 {
-  left: 2.5em;
+  left: 40px;
 }
 
 .tw-right-10 {
-  right: 2.5em;
+  right: 40px;
 }
 
 .tw-top-1\/2 {
@@ -1567,8 +1559,8 @@ button.tw-quantity-btn {
 }
 
 .tw-mx-3 {
-  margin-left: 0.75em;
-  margin-right: 0.75em;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .tw-mx-\[18px\] {
@@ -1582,13 +1574,13 @@ button.tw-quantity-btn {
 }
 
 .tw-my-12 {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .tw-my-20 {
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .tw-my-auto {
@@ -1597,43 +1589,43 @@ button.tw-quantity-btn {
 }
 
 .tw-mb-10 {
-  margin-bottom: 2.5em;
+  margin-bottom: 40px;
 }
 
 .tw-mb-11 {
-  margin-bottom: 2.75em;
+  margin-bottom: 44px;
 }
 
 .tw-mb-16 {
-  margin-bottom: 4em;
+  margin-bottom: 64px;
 }
 
 .tw-mb-2 {
-  margin-bottom: 0.5em;
+  margin-bottom: 8px;
 }
 
 .tw-mb-3 {
-  margin-bottom: 0.75em;
+  margin-bottom: 12px;
 }
 
 .tw-mb-4 {
-  margin-bottom: 1em;
+  margin-bottom: 16px;
 }
 
 .tw-mb-5 {
-  margin-bottom: 1.25em;
+  margin-bottom: 20px;
 }
 
 .tw-mb-6 {
-  margin-bottom: 1.5em;
+  margin-bottom: 24px;
 }
 
 .tw-mb-7 {
-  margin-bottom: 1.75em;
+  margin-bottom: 28px;
 }
 
 .tw-mb-9 {
-  margin-bottom: 2.25em;
+  margin-bottom: 36px;
 }
 
 .tw-mb-\[31px\] {
@@ -1641,23 +1633,27 @@ button.tw-quantity-btn {
 }
 
 .tw-ml-0 {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .tw-ml-1 {
-  margin-left: 0.25em;
+  margin-left: 4px;
 }
 
 .tw-ml-2 {
-  margin-left: 0.5em;
+  margin-left: 8px;
 }
 
 .tw-ml-3 {
-  margin-left: 0.75em;
+  margin-left: 12px;
 }
 
 .tw-ml-6 {
-  margin-left: 1.5em;
+  margin-left: 24px;
+}
+
+.tw-ml-7 {
+  margin-left: 28px;
 }
 
 .tw-ml-\[10px\] {
@@ -1681,15 +1677,15 @@ button.tw-quantity-btn {
 }
 
 .tw-mr-1 {
-  margin-right: 0.25em;
+  margin-right: 4px;
 }
 
 .tw-mr-2 {
-  margin-right: 0.5em;
+  margin-right: 8px;
 }
 
 .tw-mr-4 {
-  margin-right: 1em;
+  margin-right: 16px;
 }
 
 .tw-mr-auto {
@@ -1697,47 +1693,47 @@ button.tw-quantity-btn {
 }
 
 .tw-mt-10 {
-  margin-top: 2.5em;
+  margin-top: 40px;
 }
 
 .tw-mt-12 {
-  margin-top: 3em;
+  margin-top: 48px;
 }
 
 .tw-mt-16 {
-  margin-top: 4em;
+  margin-top: 64px;
 }
 
 .tw-mt-2 {
-  margin-top: 0.5em;
+  margin-top: 8px;
 }
 
 .tw-mt-24 {
-  margin-top: 6em;
+  margin-top: 96px;
 }
 
 .tw-mt-3 {
-  margin-top: 0.75em;
+  margin-top: 12px;
 }
 
 .tw-mt-5 {
-  margin-top: 1.25em;
+  margin-top: 20px;
 }
 
 .tw-mt-6 {
-  margin-top: 1.5em;
+  margin-top: 24px;
 }
 
 .tw-mt-7 {
-  margin-top: 1.75em;
+  margin-top: 28px;
 }
 
 .tw-mt-8 {
-  margin-top: 2em;
+  margin-top: 32px;
 }
 
 .tw-mt-9 {
-  margin-top: 2.25em;
+  margin-top: 36px;
 }
 
 .tw-mt-\[23px\] {
@@ -1769,23 +1765,23 @@ button.tw-quantity-btn {
 }
 
 .tw-h-10 {
-  height: 2.5em;
+  height: 40px;
 }
 
 .tw-h-12 {
-  height: 3em;
+  height: 48px;
 }
 
 .tw-h-20 {
-  height: 5em;
+  height: 80px;
 }
 
 .tw-h-4 {
-  height: 1em;
+  height: 16px;
 }
 
 .tw-h-5 {
-  height: 1.25em;
+  height: 20px;
 }
 
 .tw-h-5\/6 {
@@ -1793,15 +1789,15 @@ button.tw-quantity-btn {
 }
 
 .tw-h-6 {
-  height: 1.5em;
+  height: 24px;
 }
 
 .tw-h-8 {
-  height: 2em;
+  height: 32px;
 }
 
 .tw-h-96 {
-  height: 24em;
+  height: 384px;
 }
 
 .tw-h-\[114px\] {
@@ -1869,7 +1865,7 @@ button.tw-quantity-btn {
 }
 
 .tw-w-12 {
-  width: 3em;
+  width: 48px;
 }
 
 .tw-w-2\/3 {
@@ -1877,19 +1873,19 @@ button.tw-quantity-btn {
 }
 
 .tw-w-4 {
-  width: 1em;
+  width: 16px;
 }
 
 .tw-w-5 {
-  width: 1.25em;
+  width: 20px;
 }
 
 .tw-w-6 {
-  width: 1.5em;
+  width: 24px;
 }
 
 .tw-w-8 {
-  width: 2em;
+  width: 32px;
 }
 
 .tw-w-\[156px\] {
@@ -2045,31 +2041,31 @@ button.tw-quantity-btn {
 }
 
 .tw-gap-0 {
-  gap: 0px;
+  gap: 0;
 }
 
 .tw-gap-1 {
-  gap: 0.25em;
+  gap: 4px;
 }
 
 .tw-gap-3 {
-  gap: 0.75em;
+  gap: 12px;
 }
 
 .tw-gap-4 {
-  gap: 1em;
+  gap: 16px;
 }
 
 .tw-gap-5 {
-  gap: 1.25em;
+  gap: 20px;
 }
 
 .tw-gap-7 {
-  gap: 1.75em;
+  gap: 28px;
 }
 
 .tw-gap-8 {
-  gap: 2em;
+  gap: 32px;
 }
 
 .tw-gap-\[18px\] {
@@ -2093,8 +2089,8 @@ button.tw-quantity-btn {
 }
 
 .tw-gap-x-0 {
-  -moz-column-gap: 0px;
-  column-gap: 0px;
+  -moz-column-gap: 0;
+  column-gap: 0;
 }
 
 .tw-space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -2290,23 +2286,23 @@ button.tw-quantity-btn {
 }
 
 .tw-p-2 {
-  padding: 0.5em;
+  padding: 8px;
 }
 
 .tw-p-3 {
-  padding: 0.75em;
+  padding: 12px;
 }
 
 .tw-p-4 {
-  padding: 1em;
+  padding: 16px;
 }
 
 .tw-p-5 {
-  padding: 1.25em;
+  padding: 20px;
 }
 
 .tw-p-8 {
-  padding: 2em;
+  padding: 32px;
 }
 
 .tw-p-\[13px\] {
@@ -2314,48 +2310,48 @@ button.tw-quantity-btn {
 }
 
 .tw-px-1 {
-  padding-left: 0.25em;
-  padding-right: 0.25em;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .tw-px-10 {
-  padding-left: 2.5em;
-  padding-right: 2.5em;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .tw-px-2 {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .tw-px-3 {
-  padding-left: 0.75em;
-  padding-right: 0.75em;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .tw-px-4 {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .tw-px-5 {
-  padding-left: 1.25em;
-  padding-right: 1.25em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .tw-px-6 {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .tw-px-8 {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .tw-px-9 {
-  padding-left: 2.25em;
-  padding-right: 2.25em;
+  padding-left: 36px;
+  padding-right: 36px;
 }
 
 .tw-px-\[21px\] {
@@ -2364,38 +2360,38 @@ button.tw-quantity-btn {
 }
 
 .tw-py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .tw-py-1 {
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .tw-py-2 {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .tw-py-3 {
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .tw-py-4 {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .tw-py-5 {
-  padding-top: 1.25em;
-  padding-bottom: 1.25em;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .tw-py-6 {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .tw-py-\[10px\] {
@@ -2424,15 +2420,15 @@ button.tw-quantity-btn {
 }
 
 .tw-pb-2 {
-  padding-bottom: 0.5em;
+  padding-bottom: 8px;
 }
 
 .tw-pb-4 {
-  padding-bottom: 1em;
+  padding-bottom: 16px;
 }
 
 .tw-pb-5 {
-  padding-bottom: 1.25em;
+  padding-bottom: 20px;
 }
 
 .tw-pb-\[1\.1em\] {
@@ -2448,11 +2444,11 @@ button.tw-quantity-btn {
 }
 
 .tw-pl-1 {
-  padding-left: 0.25em;
+  padding-left: 4px;
 }
 
 .tw-pl-10 {
-  padding-left: 2.5em;
+  padding-left: 40px;
 }
 
 .tw-pl-\[14px\] {
@@ -2472,15 +2468,15 @@ button.tw-quantity-btn {
 }
 
 .tw-pt-4 {
-  padding-top: 1em;
+  padding-top: 16px;
 }
 
 .tw-pt-5 {
-  padding-top: 1.25em;
+  padding-top: 20px;
 }
 
 .tw-pt-6 {
-  padding-top: 1.5em;
+  padding-top: 24px;
 }
 
 .tw-pt-\[15px\] {
@@ -2536,13 +2532,11 @@ button.tw-quantity-btn {
 }
 
 .tw-text-2xl {
-  font-size: 1.5em;
-  line-height: 2em;
+  font-size: 24px;
 }
 
 .tw-text-3xl {
-  font-size: 1.875em;
-  line-height: 2.25em;
+  font-size: 30px;
 }
 
 .tw-text-\[10px\] {
@@ -2562,28 +2556,23 @@ button.tw-quantity-btn {
 }
 
 .tw-text-base {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 16px;
 }
 
 .tw-text-lg {
-  font-size: 1.125em;
-  line-height: 1.75em;
+  font-size: 18px;
 }
 
 .tw-text-sm {
-  font-size: 0.875em;
-  line-height: 1.25em;
+  font-size: 14px;
 }
 
 .tw-text-xl {
-  font-size: 1.25em;
-  line-height: 1.75em;
+  font-size: 20px;
 }
 
 .tw-text-xs {
-  font-size: 0.75em;
-  line-height: 1em;
+  font-size: 12px;
 }
 
 .tw-font-bold {
@@ -2702,6 +2691,10 @@ button.tw-quantity-btn {
 
 .tw-text-primary-fade {
   color: #30211230;
+}
+
+.tw-text-transparent {
+  color: transparent;
 }
 
 .tw-text-white {
@@ -2832,22 +2825,22 @@ button[data-action='stop'] {
 
 .after\:-tw-bottom-5::after {
   content: var(--tw-content);
-  bottom: -1.25em;
+  bottom: -20px;
 }
 
 .after\:tw-left-0::after {
   content: var(--tw-content);
-  left: 0px;
+  left: 0;
 }
 
 .after\:tw-h-1::after {
   content: var(--tw-content);
-  height: 0.25em;
+  height: 4px;
 }
 
 .after\:tw-w-12::after {
   content: var(--tw-content);
-  width: 3em;
+  width: 48px;
 }
 
 .after\:tw-skew-x-\[20deg\]::after {
@@ -2865,7 +2858,7 @@ button[data-action='stop'] {
 }
 
 .last\:tw-mb-0:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .last\:tw-border-b-0:last-child {
@@ -2918,8 +2911,7 @@ button[data-action='stop'] {
   :is(
     :where(p):not(:where([class~='tw-not-prose'], [class~='tw-not-prose'] *))
   ) {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 16px;
 }
 
 .prose-p\:tw-leading-6
@@ -2943,11 +2935,11 @@ button[data-action='stop'] {
   }
 
   .sm\:tw-gap-10 {
-    gap: 2.5em;
+    gap: 40px;
   }
 
   .sm\:tw-gap-y-10 {
-    row-gap: 2.5em;
+    row-gap: 40px;
   }
 }
 
@@ -2957,32 +2949,32 @@ button[data-action='stop'] {
   }
 
   .md\:tw-bottom-5 {
-    bottom: 1.25em;
+    bottom: 20px;
   }
 
   .md\:tw-right-0 {
-    right: 0px;
+    right: 0;
   }
 
   .md\:tw-my-24 {
-    margin-top: 6em;
-    margin-bottom: 6em;
+    margin-top: 96px;
+    margin-bottom: 96px;
   }
 
   .md\:tw-mb-0 {
-    margin-bottom: 0px;
-  }
-
-  .md\:tw-ml-0 {
-    margin-left: 0px;
-  }
-
-  .md\:tw-ml-3 {
-    margin-left: 0.75em;
+    margin-bottom: 0;
   }
 
   .md\:tw-ml-5 {
-    margin-left: 1.25em;
+    margin-left: 20px;
+  }
+
+  .md\:tw-ml-7 {
+    margin-left: 28px;
+  }
+
+  .md\:tw-ml-\[5px\] {
+    margin-left: 5px;
   }
 
   .md\:tw-ml-\[66px\] {
@@ -2990,27 +2982,23 @@ button[data-action='stop'] {
   }
 
   .md\:tw-mt-0 {
-    margin-top: 0px;
+    margin-top: 0;
+  }
+
+  .md\:tw-mt-20 {
+    margin-top: 80px;
   }
 
   .md\:tw-mt-36 {
-    margin-top: 9em;
-  }
-
-  .md\:tw-mt-40 {
-    margin-top: 10em;
+    margin-top: 144px;
   }
 
   .md\:tw-mt-\[56px\] {
     margin-top: 56px;
   }
 
-  .md\:tw-mt-20 {
-    margin-top: 5em;
-  }
-
   .md\:tw-h-16 {
-    height: 4em;
+    height: 64px;
   }
 
   .md\:tw-h-\[140px\] {
@@ -3078,11 +3066,11 @@ button[data-action='stop'] {
   }
 
   .md\:tw-gap-0 {
-    gap: 0px;
+    gap: 0;
   }
 
   .md\:tw-gap-4 {
-    gap: 1em;
+    gap: 16px;
   }
 
   .md\:tw-gap-\[15px\] {
@@ -3094,17 +3082,17 @@ button[data-action='stop'] {
   }
 
   .md\:tw-gap-x-0 {
-    -moz-column-gap: 0px;
-    column-gap: 0px;
+    -moz-column-gap: 0;
+    column-gap: 0;
   }
 
   .md\:tw-p-5 {
-    padding: 1.25em;
+    padding: 20px;
   }
 
   .md\:tw-px-10 {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .md\:tw-px-\[40px\] {
@@ -3143,8 +3131,7 @@ button[data-action='stop'] {
   }
 
   .md\:tw-text-xl {
-    font-size: 1.25em;
-    line-height: 1.75em;
+    font-size: 20px;
   }
 
   .md\:tw-leading-\[32px\] {
@@ -3162,11 +3149,11 @@ button[data-action='stop'] {
   }
 
   .lg\:tw-bottom-0 {
-    bottom: 0px;
+    bottom: 0;
   }
 
   .lg\:tw-top-0 {
-    top: 0px;
+    top: 0;
   }
 
   .lg\:tw-col-span-2 {
@@ -3174,57 +3161,57 @@ button[data-action='stop'] {
   }
 
   .lg\:tw-my-24 {
-    margin-top: 6em;
-    margin-bottom: 6em;
+    margin-top: 96px;
+    margin-bottom: 96px;
   }
 
   .lg\:tw-my-36 {
-    margin-top: 9em;
-    margin-bottom: 9em;
+    margin-top: 144px;
+    margin-bottom: 144px;
   }
 
   .lg\:tw-mb-0 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .lg\:tw-mb-10 {
-    margin-bottom: 2.5em;
+    margin-bottom: 40px;
   }
 
   .lg\:tw-mb-14 {
-    margin-bottom: 3.5em;
+    margin-bottom: 56px;
   }
 
   .lg\:tw-mb-24 {
-    margin-bottom: 6em;
+    margin-bottom: 96px;
   }
 
   .lg\:tw-mb-4 {
-    margin-bottom: 1em;
+    margin-bottom: 16px;
   }
 
   .lg\:tw-mb-5 {
-    margin-bottom: 1.25em;
+    margin-bottom: 20px;
   }
 
   .lg\:tw-mt-0 {
-    margin-top: 0px;
+    margin-top: 0;
+  }
+
+  .lg\:tw-mt-32 {
+    margin-top: 128px;
   }
 
   .lg\:tw-mt-40 {
-    margin-top: 10em;
+    margin-top: 160px;
+  }
+
+  .lg\:tw-mt-8 {
+    margin-top: 32px;
   }
 
   .lg\:tw-mt-\[56px\] {
     margin-top: 56px;
-  }
-
-  .lg\:tw-mt-8 {
-    margin-top: 2em;
-  }
-
-  .lg\:tw-mt-32 {
-    margin-top: 8em;
   }
 
   .lg\:tw-block {
@@ -3236,11 +3223,11 @@ button[data-action='stop'] {
   }
 
   .lg\:tw-h-10 {
-    height: 2.5em;
+    height: 40px;
   }
 
   .lg\:tw-h-6 {
-    height: 1.5em;
+    height: 24px;
   }
 
   .lg\:tw-h-\[270px\] {
@@ -3277,7 +3264,7 @@ button[data-action='stop'] {
   }
 
   .lg\:tw-w-10 {
-    width: 2.5em;
+    width: 40px;
   }
 
   .lg\:tw-w-2\/3 {
@@ -3285,7 +3272,7 @@ button[data-action='stop'] {
   }
 
   .lg\:tw-w-6 {
-    width: 1.5em;
+    width: 24px;
   }
 
   .lg\:tw-w-\[28px\] {
@@ -3341,11 +3328,11 @@ button[data-action='stop'] {
   }
 
   .lg\:tw-gap-4 {
-    gap: 1em;
+    gap: 16px;
   }
 
   .lg\:tw-gap-6 {
-    gap: 1.5em;
+    gap: 24px;
   }
 
   .lg\:tw-gap-\[15px\] {
@@ -3369,32 +3356,32 @@ button[data-action='stop'] {
   }
 
   .lg\:tw-p-14 {
-    padding: 3.5em;
+    padding: 56px;
   }
 
   .lg\:tw-px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .lg\:tw-px-12 {
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 
   .lg\:tw-px-16 {
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 
   .lg\:tw-px-4 {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .lg\:tw-px-7 {
-    padding-left: 1.75em;
-    padding-right: 1.75em;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 
   .lg\:tw-px-\[90px\] {
@@ -3403,23 +3390,23 @@ button[data-action='stop'] {
   }
 
   .lg\:tw-py-1 {
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
   .lg\:tw-py-10 {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .lg\:tw-py-7 {
-    padding-top: 1.75em;
-    padding-bottom: 1.75em;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 
   .lg\:tw-py-8 {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   .lg\:tw-py-\[100px\] {
@@ -3428,34 +3415,31 @@ button[data-action='stop'] {
   }
 
   .lg\:tw-pb-5 {
-    padding-bottom: 1.25em;
+    padding-bottom: 20px;
   }
 
   .lg\:tw-pb-6 {
-    padding-bottom: 1.5em;
+    padding-bottom: 24px;
   }
 
   .lg\:tw-pl-0 {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .lg\:tw-pr-9 {
-    padding-right: 2.25em;
+    padding-right: 36px;
   }
 
   .lg\:tw-text-3xl {
-    font-size: 1.875em;
-    line-height: 2.25em;
+    font-size: 30px;
   }
 
   .lg\:tw-text-4xl {
-    font-size: 2.25em;
-    line-height: 2.5em;
+    font-size: 36px;
   }
 
   .lg\:tw-text-5xl {
-    font-size: 3em;
-    line-height: 1;
+    font-size: 48px;
   }
 
   .lg\:tw-text-\[32px\] {
@@ -3471,18 +3455,19 @@ button[data-action='stop'] {
   }
 
   .lg\:tw-text-base {
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 16px;
   }
 
   .lg\:tw-text-lg {
-    font-size: 1.125em;
-    line-height: 1.75em;
+    font-size: 18px;
   }
 
   .lg\:tw-text-xl {
-    font-size: 1.25em;
-    line-height: 1.75em;
+    font-size: 20px;
+  }
+
+  .lg\:tw-leading-5 {
+    line-height: 1.25em;
   }
 
   .lg\:tw-leading-\[30px\] {
@@ -3500,8 +3485,7 @@ button[data-action='stop'] {
     :is(
       :where(p):not(:where([class~='tw-not-prose'], [class~='tw-not-prose'] *))
     ) {
-    font-size: 1.25em;
-    line-height: 1.75em;
+    font-size: 20px;
   }
 }
 
@@ -3519,11 +3503,11 @@ button[data-action='stop'] {
   }
 
   .xl\:tw-mb-24 {
-    margin-bottom: 6em;
+    margin-bottom: 96px;
   }
 
   .xl\:tw-mb-9 {
-    margin-bottom: 2.25em;
+    margin-bottom: 36px;
   }
 
   .xl\:tw-mb-\[25px\] {
@@ -3531,7 +3515,7 @@ button[data-action='stop'] {
   }
 
   .xl\:tw-mt-40 {
-    margin-top: 10em;
+    margin-top: 160px;
   }
 
   .xl\:tw-h-\[466px\] {
@@ -3587,7 +3571,7 @@ button[data-action='stop'] {
   }
 
   .xl\:tw-gap-8 {
-    gap: 2em;
+    gap: 32px;
   }
 
   .xl\:tw-gap-\[30px\] {
@@ -3618,13 +3602,13 @@ button[data-action='stop'] {
   }
 
   .xl\:tw-py-10 {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .xl\:tw-py-12 {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .xl\:tw-py-\[141px\] {
@@ -3633,22 +3617,19 @@ button[data-action='stop'] {
   }
 
   .xl\:tw-pb-10 {
-    padding-bottom: 2.5em;
+    padding-bottom: 40px;
   }
 
   .xl\:tw-text-2xl {
-    font-size: 1.5em;
-    line-height: 2em;
+    font-size: 24px;
   }
 
   .xl\:tw-text-3xl {
-    font-size: 1.875em;
-    line-height: 2.25em;
+    font-size: 30px;
   }
 
   .xl\:tw-text-5xl {
-    font-size: 3em;
-    line-height: 1;
+    font-size: 48px;
   }
 
   .xl\:tw-text-\[64px\] {
@@ -3656,13 +3637,11 @@ button[data-action='stop'] {
   }
 
   .xl\:tw-text-lg {
-    font-size: 1.125em;
-    line-height: 1.75em;
+    font-size: 18px;
   }
 
   .xl\:tw-text-xl {
-    font-size: 1.25em;
-    line-height: 1.75em;
+    font-size: 20px;
   }
 
   .xl\:tw-leading-\[34px\] {
