@@ -311,20 +311,16 @@
                 celingProduct.bucketType = ''
                 this.products.push(celingProduct)
               }
-              // this.products.push({
-              //   id:Math.random()*1000,
-              //   images:[
-              //     '//gush.earth/cdn/shop/products/Citadel.jpg?v=1669369218'
-              //   ],
-              //   featured_image:{
-              //     alt:'Sealer'
-              //   },
-              //   area:roomDetail.area,
-              //   title:'Gush EchoSeal',
-              //   quantity:this.data.sealerQuantity
-              // })
-              console.log(this.products)
             })
+            this.room.sealer = {
+              images:[''],
+              featured_image:{
+                alt:'sealer'
+              },
+              area: this.data.sealerQuantity*10,
+              title: 'Sealer',
+              quantity: this.data.sealerQuantity
+            }
           },
 
           getProductData(handle) {
