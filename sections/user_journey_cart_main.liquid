@@ -197,7 +197,7 @@
           </div>
         </div>
         <div class="tw-flex tw-items-center">
-          <button @click="sealer.quantity--">
+          <button @click="sealer.quantity = sealer.quantity - 5">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="25" cy="25" r="14.5" stroke="#302112"></circle>
               <circle cx="25.0004" cy="25.7778" r="0.777778" fill="#302112"></circle>
@@ -211,7 +211,7 @@
             <span x-text="sealer.quantity"></span>
             <span>L</span>
           </span>
-          <button @click="sealer.quantity++">
+          <button @click="sealer.quantity = sealer.quantity + 5">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="15" cy="15" r="14.5" stroke="#302112"></circle>
               <circle cx="15.0004" cy="14.9999" r="0.777778" fill="#302112"></circle>
