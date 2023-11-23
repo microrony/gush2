@@ -265,7 +265,7 @@
         
         <div class="tw-ml-[22px] tw-text-center md:tw-text-left tw-mt-3 md:tw-mt-0 tw-w-full">
           <h1 class="tw-text-heading tw-font-gt-america tw-text-sm tw-mb-2">
-            Paint Quantity: <span x-text="product.quantity"></span> L
+            <span x-show="product.id !== 'sealer-1'"> Paint Quantity:</span> <span x-show="product.id === 'sealer-1'"> Sealer Quantity:</span> <span x-text="product.quantity"></span> L
           </h1>
           <div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-w-full">
             <div class="tw-flex tw-items-center">
