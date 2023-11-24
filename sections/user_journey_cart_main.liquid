@@ -282,7 +282,7 @@
                 5L Gush EcoSeal
               </span>
             </div>
-            <span x-text="('$ ' + (product.variants[3].price / 100))" class="tw-text-heading tw-mt-3 md:tw-mt-0 tw-font-gt-america tw-text-lg">
+            <span x-text="('$ ' + (product.variants[3].price / 100).toFixed(2))" class="tw-text-heading tw-mt-3 md:tw-mt-0 tw-font-gt-america tw-text-lg">
             </span>
           </div>
           <div x-show="product.quantity % 5 !==0 && product.id !== 'sealer-1'" class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-w-full">
