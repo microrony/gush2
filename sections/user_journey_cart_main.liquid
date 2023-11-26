@@ -400,6 +400,7 @@
             this.data.roomsDetails.forEach(async roomDetail => {
 
               const product = await this.getProductData(roomDetail.handle)
+              console.log(roomDetail)
               product.area = roomDetail.area ? roomDetail.area : 0
               product.quantity = roomDetail.quantity
               product.bucketType = ''
