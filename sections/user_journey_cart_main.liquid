@@ -257,10 +257,7 @@
             <div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-w-full">
               <div class="tw-flex tw-items-center">
                 <span x-show="product.id !== 'sealer-1'" class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1">
-                  <span x-show="product.quantity > 5">
-                    x <span x-text="Math.floor(product.quantity/5)"></span>
-                  </span>
-                  
+                  x <span x-text="Math.floor(product.quantity/5)"></span>
                 </span>
                 <span x-show="product.id === 'sealer-1'" class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1">
                   x <span x-text="product.quantity % 5 === 0 ? Math.floor(product.quantity/5) : Math.floor((product.quantity+5)/5)"></span>
