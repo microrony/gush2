@@ -424,6 +424,10 @@
                 this.products.push(celingProduct)
               }
             })
+
+            const sealerProduct = fetch('/products/prepair-1?view=json').then(res => res.text()).then(html => {
+              console.log(html)
+            })
             
             this.sealer = {
                 id:'sealer-1',
