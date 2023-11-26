@@ -375,10 +375,8 @@
   <script>
     document.addEventListener('alpine:init', () => {
       console.log('Alpine:init')
-      Alpine.store('product', () => {
-        return {
-          products: []
-        }
+      Alpine.store('product', {
+        products: []
       })
       Alpine.data('userCart', () => ({
           async init() {
