@@ -399,13 +399,20 @@
 
             this.data.roomsDetails.forEach(async roomDetail => {
 
-              const product = await this.getProductData(roomDetail.handle)
-              console.log(roomDetail)
-              product.area = roomDetail.area ? roomDetail.area : 0
-              product.quantity = roomDetail.quantity
-              product.bucketType = ''
+              const productData = await this.getProductData(roomDetail.handle)
 
-              this.products.push(product)
+              const _product = {
+                ...productData,
+                area: roomDetail.area || 0,
+                quantity: roomDetail.quantity,
+                bucketType: ""
+              }
+              // console.log(roomDetail)
+              // product.area = roomDetail.area ? roomDetail.area : 0
+              // product.quantity = roomDetail.quantity
+              // product.bucketType = ''
+
+              this.products.push(_product)
               
               if(roomDetail.celingProduct.color) {
                 const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
