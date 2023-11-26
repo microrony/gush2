@@ -389,7 +389,7 @@
     document.addEventListener('alpine:init', () => {
       console.log('Alpine:init')
       Alpine.data('userCart', () => ({
-          init() {
+          async init() {
             this.products = []
             this.cart = []
             this.rooms = []
@@ -425,9 +425,25 @@
               }
             })
 
-            const sealerProduct = fetch('/products/prepair-1?view=json').then(res => res.text()).then(html => {
-              console.log(html)
-            })
+            try {
+              const parser = new DOMParser()
+              
+              const sealerReq = await fetch('/products/prepair-1?view=json')
+              const sealerText = await sealerReq.text()
+
+              const doc = parser.parseFromString(sealerText, 'text/html')
+
+              const sealerProduct = JSON.parse(doc.querySelector('#productJSON').textContent)
+
+              this.sealer = {
+                ...sealerProduct,
+                area: this.data.sealer.quantity*10,
+                quantity: this.data.sealerQuantity
+              }
+            }
+            catch(e) {
+              console.log(e)
+            }
             
             this.sealer = {
                 id:'sealer-1',
