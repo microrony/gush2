@@ -375,6 +375,11 @@
   <script>
     document.addEventListener('alpine:init', () => {
       console.log('Alpine:init')
+      Alpine.store('product', () => {
+        return {
+          products: []
+        }
+      })
       Alpine.data('userCart', () => ({
           async init() {
             this.products = []
@@ -410,6 +415,8 @@
                 }
   
                 this.products.push(_product)
+
+                this.$stores.products.push(_product)
                 
                 if(roomDetail.celingProduct.handle) {
                   const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
