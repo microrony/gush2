@@ -431,7 +431,8 @@
               this.sealer = {
                 ...sealerProduct,
                 area: this.data.sealerQuantity*10,
-                quantity: this.data.sealerQuantity
+                quantity: this.data.sealerQuantity,
+                selectedVariant: sealerProduct.variants.find(_ => _.option1=="5L")
               }
 
               console.log(this.sealer)
