@@ -562,90 +562,27 @@
               </li>
             </ul>
           </div>
-          <div
-            class="tw-w-full lg:tw-col-span-2 animate__animated animate__fadeIn tw-flex-col md:tw-flex-row tw-flex tw-justify-center md:tw-justify-between tw-items-center tw-mb-5 lg:tw-mb-0"
-          >
-            <button
-              @click="isShowingPaintColumns=true"
-              class="tw-mt-7 tw-primary-btn rounded-[2px] lg:tw-mt-40 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative"
-            >
-              <span
-                class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left"
-              >
-                Choose room colors
-              </span>
-              <span
-                class="tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full"
-              ></span>
-              <svg
-                class="tw-z-10"
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="20"
-                viewBox="0 0 11 20"
-              >
-                <circle
-                  cx="10"
-                  cy="10"
-                  r="1"
-                  fill="#302112"
-                />
-                <circle
-                  cx="7"
-                  cy="13"
-                  r="1"
-                  fill="#302112"
-                />
-                <circle
-                  cx="4"
-                  cy="16"
-                  r="1"
-                  fill="#302112"
-                />
-                <circle
-                  cx="1"
-                  cy="19"
-                  r="1"
-                  fill="#302112"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)"
-                  fill="#302112"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(1 0 0 -1 3 5)"
-                  fill="#302112"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(1 0 0 -1 6 8)"
-                  fill="#302112"
-                />
+          <div class="tw-w-full lg:tw-col-span-2 animate__animated animate__fadeIn tw-flex-col md:tw-flex-row tw-flex tw-justify-center md:tw-justify-between tw-items-center tw-mb-5 lg:tw-mb-0">
+            <button @click="isShowingPaintColumns=true" class="tw-mt-7 tw-primary-btn rounded-[2px] lg:tw-mt-40 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative">
+              <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">Choose room colors</span>
+              <span class="tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full"></span>
+              <svg class="tw-z-10" xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
+                <circle cx="10" cy="10" r="1" fill="#302112"/>
+                <circle cx="7" cy="13" r="1" fill="#302112" />
+                <circle cx="4" cy="16" r="1" fill="#302112"/>
+                <circle cx="1" cy="19" r="1" fill="#302112"/>
+                <circle cx="1" cy="1" r="1" transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" fill="#302112"/>
+                <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 3 5)" fill="#302112"/>
+                <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 6 8)" fill="#302112"/>
               </svg>
             </button>
           </div>
         </div>
 
         <!-- paint calculator -->
-        <div
-          x-show="paintDetails.roomsDetails?.length > 0 && isShowingPaintColumns"
-          x-transition
-        >
-          <div
-            class="tw-flex tw-flex-1 tw-overflow-auto tw-gap-3 tw-mt-9 animate__animated animate__fadeIn"
-          >
-            <template
-              x-for="(item,index) in paintDetails?.roomsDetails"
-              :key="index"
-            >
+        <div x-show="paintDetails.roomsDetails?.length > 0 && isShowingPaintColumns" x-transition>
+          <div class="tw-flex tw-flex-1 tw-overflow-auto tw-gap-3 tw-mt-9 animate__animated animate__fadeIn">
+            <template x-for="(item,index) in paintDetails?.roomsDetails" :key="index">
               <div
                 x-show="paintDetails.roomsDetails.length"
                 x-data="{
@@ -661,42 +598,19 @@
                   <div
                     class="tw-flex tw-justify-between tw-gap-7 tw-mb-5 tw-items-center tw-bg-transparent"
                   >
-                    <select
-                      x-model="item.name"
-                      name="roomType"
-                      class="tw-bg-transparent px-1 py-2 focus:tw-outline-none"
-                    >
-                      <template
-                        x-for="(room,index) in roomTypeOptions"
-                        :key="index"
-                      >
-                        <option
-                          x-model="room.value"
-                          x-text="room.name"
-                          :value="room.value"
-                          :selected="index === paintDetails.roomsDetails.indexOf(item)"
-                        ></option>
+                    <select x-model="item.name" name="roomType" class="tw-bg-transparent px-1 py-2 focus:tw-outline-none">
+                      <template x-for="(room,index) in roomTypeOptions" :key="index">
+                        <option x-model="room.value" x-text="room.name" :value="room.value" :selected="index === paintDetails.roomsDetails.indexOf(item)"></option>
                       </template>
                     </select>
-                    <div
-                      class="tw-flex tw-items-center tw-w-[50%] tw-font-gt-america tw-text-base tw-px-1 tw-py-2 tw-bg-white"
-                    >
-                      <input
-                        type="number"
-                        min="0"
-                        x-model="item.area"
-                        placeholder="0"
-                        :value="item.area"
-                        class="focus:tw-outline-none tw-pl-1 tw-w-1/2"
-                      />
+                    <div class="tw-flex tw-items-center tw-w-[50%] tw-font-gt-america tw-text-base tw-px-1 tw-py-2 tw-bg-white">
+                      <input type="number" min="0" x-model="item.area" placeholder="0" :value="item.area" class="focus:tw-outline-none tw-pl-1 tw-w-1/2"/>
                       <span class="tw-ml-1 tw-w-1/2">sqm</span>
                     </div>
                   </div>
                   <div class="tw-mt-5">
                     <div x-show="item.color" class="tw-w-full tw-mx-auto">
-                      <div
-                        class="tw-h-[138px] animate__animated animate__fadeIn"
-                      >
+                      <div class="tw-h-[138px] animate__animated animate__fadeIn">
                         <img :src="'https://'+ item.colorImage" class="tw-h-full tw-w-full tw-object-center tw-object-cover tw-mx-auto" />
                       </div>
                       <div
@@ -711,16 +625,8 @@
                       class="tw-h-[170px] tw-w-full tw-mx-auto tw-bg-white tw-flex tw-justify-center tw-items-center tw-text-heading tw-font-gt-america tw-text-base"
                     >
                       <span class="tw-flex tw-items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="19"
-                          height="19"
-                          viewBox="0 0 19 19"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M17.4416 9.27135C17.4416 11.4625 16.5712 13.564 15.0218 15.1133C13.4724 16.6627 11.371 17.5332 9.1798 17.5332C6.98862 17.5332 4.8872 16.6627 3.3378 15.1133C1.78841 13.564 0.917969 11.4625 0.917969 9.27135C0.917969 7.08018 1.78841 4.97875 3.3378 3.42936C4.8872 1.87996 6.98862 1.00952 9.1798 1.00952C11.371 1.00952 13.4724 1.87996 15.0218 3.42936C16.5712 4.97875 17.4416 7.08018 17.4416 9.27135ZM4.58989 9.95984V8.58286H8.49131V4.68145H9.86828V8.58286H13.7697V9.95984H9.86828V13.8613H8.49131V9.95984H4.58989Z"
                             fill="#FF40F4"
                           />
@@ -733,23 +639,13 @@
                       @click="isModalOpen = true;isPickingCeilingColor=false;currentRoomColumnIndex=index"
                       class="tw-mt-2 tw-flex tw-mx-auto tw-justify-center tw-items-center"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 14 14"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
                           fill="#FF40F4"
                         />
                       </svg>
-                      <span
-                        class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america"
-                      >
+                      <span class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america">
                         Change Colour
                       </span>
                     </button>
