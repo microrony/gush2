@@ -393,6 +393,7 @@
             })
 
             this.data = JSON.parse(data.paintDetails)
+            console.log('Data: ', this.data)
             this.rooms = this.data.roomsDetails
 
             this.data.roomsDetails.forEach(async roomDetail => {
