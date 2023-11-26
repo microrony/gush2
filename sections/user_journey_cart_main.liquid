@@ -399,7 +399,7 @@
             this.data.roomsDetails.forEach(async roomDetail => {
               console.log('Detail: ',roomDetail)
 
-              if(roomDetail.color && roomDetail.colorName && roomDetail.handle) {
+              if(roomDetail.handle) {
                 const productData = await this.getProductData(roomDetail.handle)
 
                 const _product = {
