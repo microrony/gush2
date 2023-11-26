@@ -427,12 +427,16 @@
               const doc = parser.parseFromString(sealerText, 'text/html')
 
               const sealerProduct = JSON.parse(doc.querySelector('#productJSON').textContent)
+              const selectedVariant = sealerProduct.variants.find(_ => _.option1=="5L")
+              console.log('selectedVar: ', selectedVariant)
 
               this.sealer = {
                 ...sealerProduct,
                 area: this.data.sealerQuantity*10,
                 quantity: this.data.sealerQuantity,
-                selectedVariant: sealerProduct.variants.find(_ => _.option1=="5L")
+                selectedVariant: {
+                  price: 0
+                }
               }
 
               console.log(this.sealer)
