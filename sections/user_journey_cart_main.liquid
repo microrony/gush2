@@ -411,7 +411,7 @@
   
                 this.products.push(_product)
                 
-                if(roomDetail.celingProduct.color) {
+                if(roomDetail.celingProduct.handle) {
                   const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
                   celingProduct.area = roomDetail.area
                   celingProduct.quantity = roomDetail.quantity
