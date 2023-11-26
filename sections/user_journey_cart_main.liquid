@@ -218,7 +218,7 @@
         </div>
         <span class="tw-text-heading tw-text-lg tw-font-gt-america">
           <span>$</span>
-          <span x-text="`${sealer.variants.find(_ => _.option1 == '5L').id}`">255.00</span>
+          <span x-text="`${sealer.variants[0].id}`">255.00</span>
         </span>
         <button
           @click="addToCart(`${sealer.id}`, sealer)"
