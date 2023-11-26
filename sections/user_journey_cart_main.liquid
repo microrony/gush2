@@ -399,23 +399,25 @@
             this.data.roomsDetails.forEach(async roomDetail => {
               console.log('Detail: ',roomDetail)
 
-              const productData = await this.getProductData(roomDetail.handle)
+              if(roomDetail.color && roomDetail.colorName) {
+                const productData = await this.getProductData(roomDetail.handle)
 
-              const _product = {
-                ...productData,
-                area: roomDetail.area || 0,
-                quantity: roomDetail.quantity,
-                bucketType: ""
-              }
-
-              this.products.push(_product)
-              
-              if(roomDetail.celingProduct.color) {
-                const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
-                celingProduct.area = roomDetail.area
-                celingProduct.quantity = roomDetail.quantity
-                celingProduct.bucketType = ''
-                this.products.push(celingProduct)
+                const _product = {
+                  ...productData,
+                  area: roomDetail.area || 0,
+                  quantity: roomDetail.quantity,
+                  bucketType: ""
+                }
+  
+                this.products.push(_product)
+                
+                if(roomDetail.celingProduct.color) {
+                  const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
+                  celingProduct.area = roomDetail.area
+                  celingProduct.quantity = roomDetail.quantity
+                  celingProduct.bucketType = ''
+                  this.products.push(celingProduct)
+                }
               }
             })
             console.log(this.products)
