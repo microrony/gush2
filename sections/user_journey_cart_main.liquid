@@ -397,6 +397,7 @@
             this.rooms = this.data.roomsDetails
 
             this.data.roomsDetails.forEach(async roomDetail => {
+              console.log('Detail: ',roomDetail)
 
               const productData = await this.getProductData(roomDetail.handle)
 
