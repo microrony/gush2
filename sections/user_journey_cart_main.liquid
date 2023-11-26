@@ -217,9 +217,8 @@
           </button>
         </div>
         <span class="tw-text-heading tw-text-lg tw-font-gt-america">
-          <pre x-text="JSON.stringify(sealer, null, 2)"></pre>
-          <!-- <span>$</span>
-          <span x-text="`${sealer.variants[0].id}`">255.00</span> -->
+          <span>$</span>
+          <span x-text="`${sealer.selectedVariant.price / 100}`">255.00</span>
         </span>
         <button
           @click="addToCart(`${sealer.id}`, sealer)"
@@ -446,17 +445,6 @@
             }
             catch(e) {
               console.log(e)
-            }
-            
-            this.sealer = {
-                id:'sealer-1',
-                images:['','https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Frame_2233.png?v=1700816494'],
-                featured_image:{
-                  alt:'sealer'
-                },
-                area: this.data.sealerQuantity*10,
-                title: 'Sealer',
-                quantity: this.data.sealerQuantity
             }
           },
 
