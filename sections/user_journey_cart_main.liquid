@@ -403,6 +403,7 @@
         cart: [],
         addItem(item) {
           this.cart.push(item)
+          this.total = 0
 
           this.cart.forEach(product => {
             if(product.handle === 'prepair-1') {
