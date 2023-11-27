@@ -404,8 +404,27 @@
         addItem(item) {
           this.cart.push(item)
 
-          this.cart.forEach(_item => {
-            this.total += 10
+          this.cart.forEach(product => {
+            if(product.handle === 'prepair-1') {
+              const price = product.variants[0].price * Math.ceil(product.quantity / 5)
+
+              this.total = this.total + price
+            }
+            else {
+              if(product.quantity < 5) {
+                const price = product.variants[1].price * product.quantity
+
+                this.total = this.total + price
+              }
+              else {
+                const oneLiterQty = product.quantity % 5
+                const fiveLiterQty = parseInt((product.quantity / 5).toFixed(0))
+
+                const price = (product.variants[1].price * oneLiterQty) + (product.variants[2].price * fiveLiterQty)
+
+                this.total = this.total + price
+              }
+            }
           })
         }
       })
