@@ -418,7 +418,7 @@
               }
               else {
                 const oneLiterQty = product.quantity % 5
-                const fiveLiterQty = parseInt((product.quantity / 5).toFixed(0))
+                const fiveLiterQty = Math.floor(product.quantity / 5)
 
                 console.log(fiveLiterQty, oneLiterQty)
 
