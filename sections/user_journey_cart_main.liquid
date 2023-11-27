@@ -400,7 +400,14 @@
       Alpine.store('product', {
         products: [],
         total: 0,
-        cart: []
+        cart: [],
+        addItem(item) {
+          this.cart.push(item)
+
+          this.cart.forEach(_item => {
+            this.total += 10
+          })
+        }
       })
       Alpine.data('userCart', () => ({
           async init() {
