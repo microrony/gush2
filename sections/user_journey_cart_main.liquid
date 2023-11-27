@@ -476,6 +476,11 @@
             }
           },
 
+          getTotal() {
+            console.log(this.cart)
+            return 0;
+          },
+
           getProductData(handle) {
             return new Promise(async (resolve, reject) => {
               const url = `/products/${handle}?view=json`
