@@ -399,10 +399,8 @@
       console.log('Alpine:init')
       Alpine.store('product', {
         products: [],
-        getCartTotal() {
-          console.log('Cart: ',this.cart)
-          return 20
-        }
+        total: 0,
+        cart: []
       })
       Alpine.data('userCart', () => ({
           async init() {
