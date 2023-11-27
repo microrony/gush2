@@ -243,7 +243,7 @@
               <template x-show="product.handle !== 'prepair-1'">
                 <img :src="product.images[1]" class="tw-absolute tw-inset-0 tw-h-full tw-w-full tw-z-0" :alt="product.featured_image.alt" height="200" width="200" />
               </template>
-              <template x-show="product.handle == 'prepair-1'">
+              <template class="prepares" x-show="product.handle == 'prepair-1'">
                 <img :src="product._image" class="tw-absolute tw-inset-0 tw-h-full tw-w-full tw-z-0" :alt="product.featured_image.alt" height="200" width="200" />
               </template>
               <span x-show="product.id !== 'sealer-1'" class="tw-z-10">Surface area: <span x-text="product.area"></span> sqm</span>
