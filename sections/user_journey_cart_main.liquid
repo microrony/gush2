@@ -482,7 +482,6 @@
                 }
               }
             })
-            console.log(this.products)
 
             try {
               const parser = new DOMParser()
@@ -494,7 +493,6 @@
 
               const sealerProduct = JSON.parse(doc.querySelector('#productJSON').textContent)
               const selectedVariant = sealerProduct.variants.find(_ => _.option1=="5L")
-              console.log('selectedVar: ', selectedVariant)
 
               this.sealer = {
                 ...sealerProduct,
@@ -504,7 +502,6 @@
                 _image: 'https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Frame_2233.png?v=1700816494'
               }
 
-              console.log('Sealer:........', this.sealer)
             }
             catch(e) {
               console.log(e)
