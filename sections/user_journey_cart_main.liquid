@@ -314,7 +314,7 @@
         <span>Total:</span>
         <span>
           <span class="tw-ml-3 tw-text-2xl">$ </span>
-          <span class="tw-text-2xl" x-text="getTotal()"></span>
+          <span class="tw-text-2xl" x-text="$store.product.cartTotal"></span>
         </span>
       </div>
       <div class="tw-mb-10 tw-p-5 tw-justify-between tw-text-center tw-flex tw-items-center tw-mt-5">
@@ -398,7 +398,8 @@
     document.addEventListener('alpine:init', () => {
       console.log('Alpine:init')
       Alpine.store('product', {
-        products: []
+        products: [],
+        cartTotal: 0
       })
       Alpine.data('userCart', () => ({
           async init() {
@@ -481,7 +482,7 @@
             console.log(this.cart)
             let price = 0
             this.cart.forEach(item => {
-              price += 10
+              this.$store.product.cartTotal += 10
               
             })
             return 10;
