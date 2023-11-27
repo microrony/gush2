@@ -401,21 +401,40 @@
         products: [],
         total: 0,
         cart: [],
+
+        items: [],
         addProduct(product) {
           this.products.push(product)
         },
         addItem(item) {
+          this.items = []
           let total = 0
           this.cart.push(item)
           this.cart.forEach(product => {
             if(product.handle === 'prepair-1') {
-              const price = product.variants[0].price * Math.ceil(product.quantity / 5)
+              const quantity = Math.ceil(product.quantity / 5)
+              
+              const price = product.variants[0].price * quantity
+
+              const line_item = {
+                id: product.variants[0].id,
+                quantity: quantity
+              }
 
               total = total + (price / 100)
+              this.items.push(line_item)
             }
             else {
               if(product.quantity < 5) {
-                const price = product.variants[1].price * product.quantity
+                const quantity = product.quantity
+                const price = product.variants[1].price * quantity
+
+                const line_item = {
+                  id: product.variants[1].id,
+                  quantity: quantity
+                }
+
+                this.items.push(line_item)
 
                 total = total + (price / 100)
               }
@@ -423,9 +442,22 @@
                 const oneLiterQty = product.quantity % 5
                 const fiveLiterQty = Math.floor(product.quantity / 5)
 
-                console.log(fiveLiterQty, oneLiterQty)
+                
 
                 const price = (product.variants[1].price * oneLiterQty) + (product.variants[2].price * fiveLiterQty)
+
+                const line_item_one_l = {
+                  id: product.variants[1].id,
+                  quantity: oneLiterQty
+                }
+
+                const line_item_five_l = {
+                  id: product.variants[2].id,
+                  quantity: fiveLiterQty
+                }
+
+                this.items.push(line_item_one_l)
+                this.items.push(line_item_five_l)
 
                 total = total + (price / 100)
               }
