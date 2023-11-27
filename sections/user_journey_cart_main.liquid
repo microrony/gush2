@@ -420,6 +420,8 @@
                 const oneLiterQty = product.quantity % 5
                 const fiveLiterQty = parseInt((product.quantity / 5).toFixed(0))
 
+                console.log(fiveLiterQty, oneLiterQty)
+
                 const price = (product.variants[1].price * oneLiterQty) + (product.variants[2].price * fiveLiterQty)
 
                 total = total + (price / 100)
