@@ -473,7 +473,7 @@
                 this.$store.product.addProduct(_product)
                 
                 if(roomDetail.celingProduct.handle) {
-                  console.log(roomDetail)
+                  console.log(roomDetail.celingProduct)
                   const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
                   celingProduct.area = roomDetail.area
                   celingProduct.quantity = roomDetail.area / 5
