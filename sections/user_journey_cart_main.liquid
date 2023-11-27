@@ -305,7 +305,15 @@
         <span>Total:</span>
         <span>
           <span class="tw-ml-3 tw-text-2xl">$ </span>
-          <span class="tw-text-2xl" x-text="(cart.reduce((acc, product) => product.variants[3].price + acc, 0) / 100).toFixed(2)"></span>
+          <span class="tw-text-2xl" x-text="(cart.reduce((acc, product) => {
+            if(product.handle == 'prepare-1') {
+              product.variants[0].price + acc,
+            }
+            else {
+              product.variants[3].price + acc
+            }
+            
+          }, 0) / 100).toFixed(2)"></span>
         </span>
       </div>
       <div class="tw-mb-10 tw-p-5 tw-justify-between tw-text-center tw-flex tw-items-center tw-mt-5">
