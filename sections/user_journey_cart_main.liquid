@@ -520,7 +520,9 @@
 
           getProductData(handle) {
             return new Promise(async (resolve, reject) => {
+              
               const url = `/products/${handle}?view=json`
+              console.log(handle)
               try {
                 const req = await fetch(url)
                 const html = await req.text()
