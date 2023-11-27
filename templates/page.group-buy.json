@@ -243,17 +243,38 @@
             "url": ""
           }
         },
-        "5c79e00d-a4f0-4926-b3d4-05f9fb5e0115": {
+        "a7874066-7f78-48b2-8999-67903e8cc84d": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_158.png",
+            "url": ""
+          }
+        },
+        "833ff103-a2ca-4885-8112-30e7fff7e7b9": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/image_52.png",
+            "url": ""
+          }
+        },
+        "c4fb1045-d93c-46b3-b4ba-f1124f8d2fed": {
+          "type": "image",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/JADESCAPE_1.png",
+            "url": ""
+          }
+        },
+        "3b42ea51-3d9f-4b76-b032-025124ab4b55": {
           "type": "image",
           "settings": {
             "brand_img": "shopify:\/\/shop_images\/Untitled_design.png",
             "url": ""
           }
         },
-        "a7874066-7f78-48b2-8999-67903e8cc84d": {
+        "e2e1c3db-d6e4-46ee-82d8-82b7235da9e5": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_158.png",
+            "brand_img": "shopify:\/\/shop_images\/image_51.png",
             "url": ""
           }
         }
@@ -262,8 +283,11 @@
         "6f1fb3b1-1da9-4aef-9486-1fb801dd4bfd",
         "f2bac977-f5c0-4a01-9d6e-bee976dee923",
         "5c0b8605-2414-4b17-b747-fd26d3f8aed5",
-        "5c79e00d-a4f0-4926-b3d4-05f9fb5e0115",
-        "a7874066-7f78-48b2-8999-67903e8cc84d"
+        "a7874066-7f78-48b2-8999-67903e8cc84d",
+        "833ff103-a2ca-4885-8112-30e7fff7e7b9",
+        "c4fb1045-d93c-46b3-b4ba-f1124f8d2fed",
+        "3b42ea51-3d9f-4b76-b032-025124ab4b55",
+        "e2e1c3db-d6e4-46ee-82d8-82b7235da9e5"
       ],
       "settings": {
         "heading": "Past Projects",
@@ -278,7 +302,6 @@
     },
     "image_with_text_group_buy": {
       "type": "group_buy_image_with_text",
-      "disabled": true,
       "blocks": {
         "17758f2a-44c2-4acb-843a-008ce290fa49": {
           "type": "button",
@@ -293,6 +316,7 @@
       "block_order": [
         "17758f2a-44c2-4acb-843a-008ce290fa49"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/image_163.png",
         "heading": "All set and \nready to go?",
