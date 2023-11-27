@@ -402,9 +402,8 @@
         total: 0,
         cart: [],
         addItem(item) {
-          this.cart.push(item)
           this.total = 0
-
+          this.cart.push(item)
           this.cart.forEach(product => {
             if(product.handle === 'prepair-1') {
               const price = product.variants[0].price * Math.ceil(product.quantity / 5)
