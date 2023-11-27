@@ -456,8 +456,9 @@
                   quantity: fiveLiterQty
                 }
 
-                this.items.push(line_item_one_l)
-                this.items.push(line_item_five_l)
+                if(oneLiterQty != 0) this.items.push(line_item_one_l)
+                
+                if(fiveLiterQty != 0) this.items.push(line_item_five_l)
 
                 total = total + (price / 100)
               }
