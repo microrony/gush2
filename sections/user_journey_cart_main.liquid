@@ -464,7 +464,7 @@
               }
             }
           })
-          this.total = total
+          this.total = parseFloat(total.toFixed(2))
         }
       })
       Alpine.data('userCart', () => ({
