@@ -402,19 +402,19 @@
         total: 0,
         cart: [],
         addItem(item) {
-          this.total = 0
+          let total = 0
           this.cart.push(item)
           this.cart.forEach(product => {
             if(product.handle === 'prepair-1') {
               const price = product.variants[0].price * Math.ceil(product.quantity / 5)
 
-              this.total = this.total + (price / 100)
+              total = total + (price / 100)
             }
             else {
               if(product.quantity < 5) {
                 const price = product.variants[1].price * product.quantity
 
-                this.total = this.total + (price / 100)
+                total = total + (price / 100)
               }
               else {
                 const oneLiterQty = product.quantity % 5
@@ -422,10 +422,12 @@
 
                 const price = (product.variants[1].price * oneLiterQty) + (product.variants[2].price * fiveLiterQty)
 
-                this.total = this.total + (price / 100)
+                total = total + (price / 100)
               }
             }
           })
+
+          console.log('Total ', total)
         }
       })
       Alpine.data('userCart', () => ({
