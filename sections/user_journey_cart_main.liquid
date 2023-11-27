@@ -401,6 +401,9 @@
         products: [],
         total: 0,
         cart: [],
+        addProduct(product) {
+          this.products.push(product)
+        },
         addItem(item) {
           let total = 0
           this.cart.push(item)
