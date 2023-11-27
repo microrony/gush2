@@ -470,7 +470,7 @@
   
                 this.products.push(_product)
 
-                this.$store.product.products.push(_product)
+                this.$store.product.addProduct(_product)
                 
                 if(roomDetail.celingProduct.handle) {
                   const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
@@ -478,7 +478,7 @@
                   celingProduct.quantity = roomDetail.area / 5
                   celingProduct.bucketType = ''
                   this.products.push(celingProduct)
-                  this.$store.product.products.push(celingProduct)
+                  this.$store.product.addProduct(celingProduct)
                 }
               }
             })
