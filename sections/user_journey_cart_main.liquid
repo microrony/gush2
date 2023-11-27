@@ -288,7 +288,7 @@
                   </span>
                 </template>
                 <template x-show="product.handle !== 'prepair-1'">
-                  <span x-text="sss" class="tw-text-heading tw-mt-3 md:tw-mt-0 tw-font-gt-america tw-text-lg">
+                  <span x-text="('$ ' + (((Math.floor(product.quantity / 5)) *  (product.variants[2].price)) / 100).toFixed(2))" class="tw-text-heading tw-mt-3 md:tw-mt-0 tw-font-gt-america tw-text-lg">
                   </span>
                 </template>
                 
