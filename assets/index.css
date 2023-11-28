@@ -2278,6 +2278,14 @@ button.tw-quantity-btn {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.tw-bg-button\/75 {
+  background-color: rgb(255 64 244 / 0.75);
+}
+
+.tw-bg-button\/90 {
+  background-color: rgb(255 64 244 / 0.9);
+}
+
 .tw-bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
