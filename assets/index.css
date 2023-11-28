@@ -1692,8 +1692,20 @@ button.tw-quantity-btn {
   margin-right: 16px;
 }
 
+.tw-mr-9 {
+  margin-right: 36px;
+}
+
 .tw-mr-auto {
   margin-right: auto;
+}
+
+.tw-mt-1 {
+  margin-top: 4px;
+}
+
+.tw-mt-1\.5 {
+  margin-top: 6px;
 }
 
 .tw-mt-10 {
@@ -1746,14 +1758,6 @@ button.tw-quantity-btn {
 
 .tw-mt-\[60px\] {
   margin-top: 60px;
-}
-
-.tw-mt-1 {
-  margin-top: 4px;
-}
-
-.tw-mt-1\.5 {
-  margin-top: 6px;
 }
 
 .tw-block {
@@ -1842,6 +1846,10 @@ button.tw-quantity-btn {
 
 .tw-h-\[50px\] {
   height: 50px;
+}
+
+.tw-h-\[69px\] {
+  height: 69px;
 }
 
 .tw-h-\[85px\] {
@@ -2431,6 +2439,10 @@ button.tw-quantity-btn {
   padding-bottom: 9px;
 }
 
+.tw-pb-1 {
+  padding-bottom: 4px;
+}
+
 .tw-pb-2 {
   padding-bottom: 8px;
 }
@@ -2828,6 +2840,30 @@ button[data-action='stop'] {
 
 .file\:tw-rounded::file-selector-button {
   border-radius: 0.25em;
+}
+
+.placeholder\:tw-font-gt-america::-moz-placeholder {
+  font-family: GTAmerica;
+}
+
+.placeholder\:tw-font-gt-america::placeholder {
+  font-family: GTAmerica;
+}
+
+.placeholder\:tw-text-base::-moz-placeholder {
+  font-size: 16px;
+}
+
+.placeholder\:tw-text-base::placeholder {
+  font-size: 16px;
+}
+
+.placeholder\:tw-text-heading\/75::-moz-placeholder {
+  color: rgb(48 33 18 / 0.75);
+}
+
+.placeholder\:tw-text-heading\/75::placeholder {
+  color: rgb(48 33 18 / 0.75);
 }
 
 .after\:tw-absolute::after {
