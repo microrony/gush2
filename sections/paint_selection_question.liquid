@@ -258,8 +258,24 @@
       });
     });
 
-    
+
+
+  function paintqa() {
+  var selectedAnswer = "";
+  var radioButtons = document.querySelectorAll('#paint_selection_questions-0 input[type="radio"]:checked');
+  
+  if (radioButtons.length > 0) {
+    selectedAnswer = radioButtons[0].value;
+  }
+  
+  return selectedAnswer;
+   
+}
+
+     console.log(paintqa());
   </script>
+
+                
 
 {% schema %}
  {
