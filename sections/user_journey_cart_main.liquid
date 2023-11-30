@@ -412,15 +412,16 @@
         },
         increaseQty(product) {
           this.products.forEach(item => {
+            
             if(item.id == product.id) {
               item.quantity++
 
-              this.cart.forEach(_ => {
-                console.log(_)
-                if(_.id == item.id) {
-                  console.log(_, item)
-                }
-              })
+              // this.cart.forEach(_ => {
+              //   console.log(_)
+              //   if(_.id == item.id) {
+              //     console.log(_, item)
+              //   }
+              // })
             }
           })
           this.setTotal()
@@ -430,11 +431,11 @@
             if(item.id == product.id) {
               item.quantity--
 
-              this.cart.forEach(_ => {
-                if(_.id == item.id) {
-                  console.log(_, item)
-                }
-              })
+              // this.cart.forEach(_ => {
+              //   if(_.id == item.id) {
+              //     console.log(_, item)
+              //   }
+              // })
             }
           })
           this.setTotal()
