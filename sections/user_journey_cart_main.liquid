@@ -411,6 +411,9 @@
           this.products.push(product)
         },
         increaseQty(product) {
+          this.products.forEach(item => {
+            console.log(item.id, product.id)
+          })
           const index = this.products.indexOf(_ => _.id == product.id)
           console.log(index)
         },
