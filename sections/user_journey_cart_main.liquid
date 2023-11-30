@@ -410,6 +410,10 @@
         addProduct(product) {
           this.products.push(product)
         },
+        increaseQty(product) {
+          const index = this.products.indexOf(_ => _.id == product.id)
+          console.log(index)
+        },
         addItem(item) {
           this.items = []
           let total = 0
