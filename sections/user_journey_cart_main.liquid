@@ -411,12 +411,12 @@
           this.products.push(product)
         },
         increaseQty(product) {
+          const qty = product.quantity++
           this.products.forEach(item => {
-            const qty = item.quantity++
-            if(item.id == product.id) qty
-
-            const index = this.cart.findIndex(_ => _.id == product.id)
-            this.cart[index].quantity = qty
+            if(item.id == product.id) item.quantity = qty
+          })
+          this.products.forEach(item => {
+            if(item.id == product.id) item.quantity = qty
           })
           this.setTotal()
         },
