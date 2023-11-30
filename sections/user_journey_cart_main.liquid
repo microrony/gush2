@@ -412,7 +412,7 @@
         },
         increaseQty(product) {
           this.products.forEach(item => {
-            console.log(item.id, product.id)
+            if(item.id == product.id) item.quantity++
           })
           const index = this.products.findIndex(_ => _.id == product.id)
           console.log(index)
