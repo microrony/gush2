@@ -416,6 +416,7 @@
               item.quantity++
 
               this.cart.forEach(_ => {
+                console.log(_)
                 if(_.id == item.id) {
                   console.log(_, item)
                 }
