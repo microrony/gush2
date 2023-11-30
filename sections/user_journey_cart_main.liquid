@@ -411,9 +411,10 @@
           this.products.push(product)
         },
         increaseQty(product) {
-          const qty = product.quantity++
+          let qty = 0
           this.products.forEach(item => {
-            if(item.id == product.id) item.quantity = qty
+            
+            if(item.id == product.id) qty = item.quantity++
           })
           this.products.forEach(item => {
             if(item.id == product.id) item.quantity = qty
