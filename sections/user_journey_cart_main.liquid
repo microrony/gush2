@@ -426,8 +426,11 @@
             if(item.id == product.id) {
               item.quantity--
 
-              const index = this.cart.findIndex(_ => _.id == item.id)
-              this.cart[index].quantity = item.quantity
+              this.cart.forEach(_ => {
+                if(_.id == item.id) {
+                  console.log(_, item)
+                }
+              })
             }
           })
           this.setTotal()
