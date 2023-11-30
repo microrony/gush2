@@ -418,6 +418,7 @@
             const index = this.cart.findIndex(_ => _.id == product.id)
             this.cart[index].quantity = qty
           })
+          this.setTotal()
         },
         decreaseQty(product) {
           this.products.forEach(item => {
@@ -427,12 +428,10 @@
             const index = this.cart.findIndex(_ => _.id == product.id)
             this.cart[index].quantity = qty
           })
-          
+          this.setTotal()
         },
-        addItem(item) {
-          this.items = []
+        setTotal() {
           let total = 0
-          this.cart.push(item)
           this.cart.forEach(product => {
             if(product.handle === 'prepair-1') {
               const quantity = Math.ceil(product.quantity / 5)
@@ -488,6 +487,13 @@
             }
           })
           this.total = parseFloat(total.toFixed(2))
+        }
+        addItem(item) {
+          this.items = []
+          
+          this.cart.push(item)
+          this.setTotal()
+          
         }
       })
       Alpine.data('userCart', () => ({
