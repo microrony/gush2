@@ -412,7 +412,6 @@
         },
         increaseQty(product) {
           this.products.forEach(item => {
-            let qty = 0
             if(item.id == product.id) {
               item.quantity++
 
@@ -424,7 +423,6 @@
         },
         decreaseQty(product) {
           this.products.forEach(item => {
-            let qty = 0
             if(item.id == product.id) {
               item.quantity--
 
