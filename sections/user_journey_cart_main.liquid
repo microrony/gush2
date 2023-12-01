@@ -523,11 +523,10 @@
               data[key] = value
             })
 
-            console.log('Data:......',data)
-
             this.data = JSON.parse(data.paintDetails)
-            console.log('Data: ', this.data)
             this.rooms = this.data.roomsDetails
+
+            this.questions = this.data.questions
 
             this.data.roomsDetails.forEach(async roomDetail => {
               console.log('Detail: ',roomDetail)
@@ -629,27 +628,24 @@
           console.log(this.cart)
         },
         async addAllToCart() {
-          let data = {
-            items: this.$store.product.items
+          const note = ''
+          for(let key in this.questions) {
+            console.log(key, this.questions[key])
           }
+          // let data = {
+          //   items: this.$store.product.items,
+            
+          // }
 
-          console.log(data)
-          // this.cart.forEach(product => {
-          //   const item = {
-          //     id: product.variants[3].id,
-          //     quantity: 1
-          //   }
-          //   data.items.push(item)
+          // const res = await fetch('/cart/add.js', {
+          //   method: 'POST',
+          //   headers: {
+          //     'Content-Type': 'application/json'
+          //   },
+          //   body: JSON.stringify(data)
           // })
-          const res = await fetch('/cart/add.js', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-          })
-          const cart = await res.json()
-          console.log(cart)
+          // const cart = await res.json()
+          // console.log(cart)
         }
       }))
     })
