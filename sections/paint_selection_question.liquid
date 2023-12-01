@@ -202,7 +202,7 @@
               'require services' : this.questions[5].answer,
               'email id': 'client_email'
             });
-            let answers = questions.map(item=> item.answer)
+            let answers = this.questions.map(item=> item.answer)
             window.location.href='https://gush.earth/pages/paint-calculation-journey'+'?'+JSON.stringify(answers)
           }
         }" 
