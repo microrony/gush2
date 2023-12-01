@@ -631,7 +631,7 @@
           let note = ''
           this.questions.forEach(item => {
             console.log(item)
-            const string = `${item.question.replace('?')}: ${item.answer}\n`
+            const string = `${item.question.replace('?', '')}: ${item.answer}\n`
             note = note + string
           })
           
