@@ -200,7 +200,7 @@
               'issues': this.questions[3].answer,
               'kids or pets' : this.questions[4].answer,
               'require services' : this.questions[5].answer,
-              'email id': 'client_email'
+              'email id': this.email
             });
             let answers = this.questions.map(item=> ({question:item.question, answer:item.answer}))
             window.location.href='https://gush.earth/pages/paint-calculation-journey'+'?answers='+JSON.stringify(answers)
