@@ -628,10 +628,13 @@
           console.log(this.cart)
         },
         async addAllToCart() {
-          const note = ''
+          let note = ''
           this.questions.forEach(item => {
             console.log(item)
+            const string = `${item.question}: ${item.answer}\n`
+            note = note + string
           })
+          console.log(note)
           // let data = {
           //   items: this.$store.product.items,
             
