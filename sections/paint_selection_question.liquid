@@ -194,12 +194,13 @@
           lastIndex: 0,
           sendQuery(){
             webengage.track(`paint_calc_QA`, {
-              'ProductColor1': this.questions[0].answer,
-              'ProductColor2': this.questions[1].answer,
-              'ProductColor3': this.questions[2].answer,
-              'Number of Selected Products': this.questions[3].answer,
-              'What are you painting' : this.questions[4].answer,
-              'How soon you want to start' : this.questions[5].answer
+              'interest': this.questions[0].answer,
+              'time to paint': this.questions[1].answer,
+              'choice of colors': this.questions[2].answer,
+              'issues': this.questions[3].answer,
+              'kids or pets' : this.questions[4].answer,
+              'require services' : this.questions[5].answer,
+              'email id': 'client_email'
             });
             window.location.href='https://gush.earth/pages/paint-calculation-journey'
           }
