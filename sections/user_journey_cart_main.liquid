@@ -629,9 +629,9 @@
         },
         async addAllToCart() {
           const note = ''
-          for(let key in this.questions) {
-            console.log(key, this.questions[key])
-          }
+          this.questions.forEach(item => {
+            console.log(item)
+          })
           // let data = {
           //   items: this.$store.product.items,
             
