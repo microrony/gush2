@@ -810,7 +810,7 @@
               type="text"
               name="paintDetails"
               class="tw-hidden"
-              :value="JSON.stringify({...paintDetails, sealerQuantity: Math.ceil(floorArea/10), roomsDetails:paintDetails.roomsDetails.map((room,index)=>{
+              :value="JSON.stringify({...paintDetails, questions: questions, sealerQuantity: Math.ceil(floorArea/10), roomsDetails:paintDetails.roomsDetails.map((room,index)=>{
                 return {
                   name:room.name,
                   area:room.area,
