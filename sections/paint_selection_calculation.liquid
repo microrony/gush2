@@ -238,6 +238,16 @@
            this.categories = data
            this.getData(data[0].handle,data[0].totalData)
         },
+        getPreviousData() {
+          const url = new URL(window.location.href)
+          const params = url.searchParams
+          const data = {}
+          
+          params.forEach((value, key) => {
+            data[key] = value
+          })
+          console.log('previous data: ', data)
+        },
         getData(categoryName, totalData){
          fetch(`https://gush.earth/collections/${categoryName}?view=data-fetch&page=1`).then(res=> res.text()).then(html=> {
             const parser = new DOMParser()
@@ -249,7 +259,7 @@
          }).catch(err=> console.log(err))
         },
       }"
-      x-init="$watch('products',value=> this.products=value);$watch('categories',value=> this.categories=value); getCategories();"
+      x-init="$watch('products',value=> this.products=value);$watch('categories',value=> this.categories=value); getCategories(); getPreviousData();"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
     >
       <div>
