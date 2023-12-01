@@ -950,15 +950,9 @@
                 </button>
               </template>
             </template>
-          </div>
-        </div>
-      </div>
-    </main>
 
-
-
-
-        {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form gush-font-p2' -%}
+            <template>
+                  {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form gush-font-p2' -%}
                   <input type="hidden" name="contact[tags]" value="newsletter">
                   <div class="newsletter-form__field-wrapper">
                     <div class="field">
@@ -997,6 +991,16 @@
                     <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
                   {%- endif -%}
                 {%- endform -%}
+            </template>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+    
 
                   
                 
