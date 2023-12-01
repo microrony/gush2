@@ -634,11 +634,13 @@
             const string = `${item.question.replace('?')}: ${item.answer}\n`
             note = note + string
           })
-          console.log(note)
-          // let data = {
-          //   items: this.$store.product.items,
-            
-          // }
+          
+          let data = {
+            items: this.$store.product.items,
+            note: note
+          }
+
+          console.log(data)
 
           // const res = await fetch('/cart/add.js', {
           //   method: 'POST',
