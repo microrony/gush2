@@ -202,7 +202,8 @@
               'require services' : this.questions[5].answer,
               'email id': 'client_email'
             });
-            window.location.href='https://gush.earth/pages/paint-calculation-journey'
+            let answers = questions.map(item=> item.answer)
+            window.location.href='https://gush.earth/pages/paint-calculation-journey'+'?'+JSON.stringify(answers)
           }
         }" 
         class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[62px] tw-relative tw-bg-primary tw-min-h-screen">
