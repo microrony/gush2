@@ -649,7 +649,7 @@
             body: JSON.stringify(data)
           })
           const cart = await res.json()
-          console.log(cart)
+          location.href = '/cart'
         }
       }))
     })
