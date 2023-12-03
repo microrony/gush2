@@ -656,6 +656,7 @@
             dpi: 300, // Set to 300 DPI
             scale: 1, // Adjusts your resolution
             onrendered: function(canvas) {
+              console.log(canvas)
               var img = canvas.toDataURL("image/jpeg", 1);
               var pdf = new jsPDF('L', 'px', [w, h]);
               pdf.addImage(img, 'JPEG', 0, 0, w, h);
