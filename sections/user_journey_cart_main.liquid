@@ -241,7 +241,7 @@
     <div class="animate__animated animate__fadeIn tw-bg-primary tw-w-full">
       <template x-for="(product, index) in $store.product.cart" :key="index">
         <div class="tw-p-5 tw-flex tw-border-b tw-border-heading/30 tw-flex-col md:tw-flex-row tw-items-center">
-          <template x-if="product.handle === 'prepair-1'">
+          <template x-if="product.handle === 'gush-ecoseal'">
             <div>
               <div class="tw-h-[130px] tw-w-[300px tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center tw-relative tw-flex tw-justify-center tw-items-center">
                 <img :src="product._image" class="tw-absolute tw-inset-0 tw-h-full tw-w-full tw-z-0" :alt="product.featured_image.alt" height="200" width="200" />
@@ -252,7 +252,7 @@
             </div>
           </template>
 
-          <template x-if="product.handle !== 'prepair-1'">
+          <template x-if="product.handle !== 'gush-ecoseal'">
             
             <div>
               <div class="tw-h-[130px] tw-w-[300px tw-text-xs tw-px-6 tw-font-gt-america tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center tw-relative tw-flex tw-justify-center tw-items-center">
@@ -268,36 +268,36 @@
           
           <div class="tw-ml-7 tw-text-center md:tw-text-left tw-mt-3 md:tw-mt-0 tw-w-full">
             <h1 class="tw-text-heading tw-font-gt-america tw-text-sm tw-mb-2">
-              <span x-show="product.handle !== 'prepair-1'"> Paint Quantity:</span> <span x-show="product.handle === 'prepair-1'"> Sealer Quantity:</span> <span x-show="product.handle !== 'prepair-1'" x-text="product.quantity"></span> <span x-show="product.handle === 'prepair-1'" x-text="product.quantity % 5 ===0 ? product.quantity : Math.floor((product.quantity+5)/5)*5"></span> L
+              <span x-show="product.handle !== 'gush-ecoseal'"> Paint Quantity:</span> <span x-show="product.handle === 'gush-ecoseal'"> Sealer Quantity:</span> <span x-show="product.handle !== 'gush-ecoseal'" x-text="product.quantity"></span> <span x-show="product.handle === 'gush-ecoseal'" x-text="product.quantity % 5 ===0 ? product.quantity : Math.floor((product.quantity+5)/5)*5"></span> L
             </h1>
             <template x-if="product.quantity > 5">
               <div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-w-full">
                 <div class="tw-flex tw-items-center">
-                  <span x-show="product.handle !== 'prepair-1'" class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1">
+                  <span x-show="product.handle !== 'gush-ecoseal'" class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1">
                     x <span x-text="Math.floor(product.quantity/5)"></span>
                   </span>
-                  <span x-show="product.handle === 'prepair-1'" class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1">
+                  <span x-show="product.handle === 'gush-ecoseal'" class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1">
                     x <span x-text="product.quantity % 5 === 0 ? Math.floor(product.quantity/5) : Math.floor((product.quantity+5)/5)"></span>
                   </span>
-                  <span x-show="product.handle !== 'prepair-1'" class="tw-text-heading tw-text-[10px]">
+                  <span x-show="product.handle !== 'gush-ecoseal'" class="tw-text-heading tw-text-[10px]">
                     5L Gush Care
                   </span>
-                  <span x-show="product.handle === 'prepair-1'" class="tw-text-heading tw-text-[10px]">
+                  <span x-show="product.handle === 'gush-ecoseal'" class="tw-text-heading tw-text-[10px]">
                     5L Gush EcoSeal
                   </span>
                 </div>
-                <template x-if="product.handle === 'prepair-1'">
+                <template x-if="product.handle === 'gush-ecoseal'">
                   <span x-text="('$ ' + (((Math.ceil(product.quantity / 5)) *  (product.variants[0].price)) / 100).toFixed(2))" class="tw-text-heading tw-mt-3 md:tw-mt-0 tw-font-gt-america tw-text-lg">
                   </span>
                 </template>
-                <template x-if="product.handle !== 'prepair-1'">
+                <template x-if="product.handle !== 'gush-ecoseal'">
                   <span x-text="('$ ' + (((Math.floor(product.quantity / 5)) *  (product.variants[2].price)) / 100).toFixed(2))" class="tw-text-heading tw-mt-3 md:tw-mt-0 tw-font-gt-america tw-text-lg">
                   </span>
                 </template>
                 
               </div>
             </template>
-            <div x-show="product.quantity % 5 !==0 && product.handle !== 'prepair-1'" class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-w-full">
+            <div x-show="product.quantity % 5 !==0 && product.handle !== 'gush-ecoseal'" class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-w-full">
               <div class="tw-flex tw-items-center">
                 <span class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1">
                   x <span x-text="((product.quantity/5).toString().split('.')[1])/2"></span>
@@ -442,7 +442,7 @@
         setTotal() {
           let total = 0
           this.cart.forEach(product => {
-            if(product.handle === 'prepair-1') {
+            if(product.handle === 'gush-ecoseal') {
               const quantity = Math.ceil(product.quantity / 5)
               
               const price = product.variants[0].price * quantity
@@ -558,7 +558,7 @@
             try {
               const parser = new DOMParser()
               
-              const sealerReq = await fetch('/products/prepair-1?view=json')
+              const sealerReq = await fetch('/products/gush-ecoseal?view=json')
               const sealerText = await sealerReq.text()
 
               const doc = parser.parseFromString(sealerText, 'text/html')
