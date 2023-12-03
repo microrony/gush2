@@ -652,9 +652,10 @@
             scale: 1, // Adjusts your resolution
             onrendered: function(canvas) {
               var img = canvas.toDataURL("image/jpeg", 1);
-              var pdf = new jsPDF('L', 'px', [w, h]);
-              pdf.addImage(img, 'JPEG', 0, 0, w, h);
-              doc.save('sample-file.pdf');
+              console.log(img)
+              // var pdf = new jsPDF('L', 'px', [w, h]);
+              // pdf.addImage(img, 'JPEG', 0, 0, w, h);
+              // doc.save('sample-file.pdf');
             }
           })
         }
