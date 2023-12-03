@@ -607,6 +607,7 @@
           },
         async addToCart(id, product) {
           this.cart.push(product)
+          console.log(id, product)
           this.$store.product.addItem(product)
           // const product = this.products.find(_ => _.id == id)
           // let data = {
