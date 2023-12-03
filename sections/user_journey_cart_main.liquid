@@ -644,10 +644,10 @@
           const removable = html.querySelector('.not-printable')
           removable.remove()
 
-          var w = html.offsetWidth;
-          var h = html.offsetHeight;
+          var w = container.offsetWidth;
+          var h = container.offsetHeight;
 
-          html2canvas(html, {
+          html2canvas(container, {
             dpi: 300, // Set to 300 DPI
             scale: 1, // Adjusts your resolution
             onrendered: function(canvas) {
