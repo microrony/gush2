@@ -644,6 +644,11 @@
           const removable = html.querySelector('.not-printable')
           removable.remove()
 
+          const scripts = html.querySelectorAll('script')
+          scripts.forEach(script => {
+            console.log(script)
+          })
+
           var w = html.offsetWidth;
           var h = html.offsetHeight;
 
