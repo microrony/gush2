@@ -639,19 +639,24 @@
           location.href = '/cart'
         },
         generatePDF() {
-          var pdf = new jsPDF();
           const container = document.getElementById('user_journey_cart')
           const html = container.cloneNode(true)
           const removable = html.querySelector('.not-printable')
           removable.remove()
 
-          pdf.fromHTML(html, 15, 15, {
-            'width': 190,
-            'elementHandlers': {
-              '#editor': (element, renderer) => true
+          var w = html.offsetWidth;
+          var h = html.offsetHeight;
+
+          html2canvas(html, {
+            dpi: 300, // Set to 300 DPI
+            scale: 1, // Adjusts your resolution
+            onrendered: function(canvas) {
+              var img = canvas.toDataURL("image/jpeg", 1);
+              var pdf = new jsPDF('L', 'px', [w, h]);
+              pdf.addImage(img, 'JPEG', 0, 0, w, h);
+              doc.save('sample-file.pdf');
             }
           })
-          pdf.save('sample-page.pdf')
         }
       }))
     })
