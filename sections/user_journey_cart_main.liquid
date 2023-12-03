@@ -644,18 +644,17 @@
           const removable = html.querySelector('.not-printable')
           removable.remove()
 
-          var w = container.offsetWidth;
-          var h = container.offsetHeight;
+          var w = html.offsetWidth;
+          var h = html.offsetHeight;
 
-          html2canvas(container, {
+          html2canvas(html, {
             dpi: 300, // Set to 300 DPI
             scale: 1, // Adjusts your resolution
             onrendered: function(canvas) {
               var img = canvas.toDataURL("image/jpeg", 1);
-              console.log(img)
-              // var pdf = new jsPDF('L', 'px', [w, h]);
-              // pdf.addImage(img, 'JPEG', 0, 0, w, h);
-              // doc.save('sample-file.pdf');
+              var pdf = new jsPDF('L', 'px', [w, h]);
+              pdf.addImage(img, 'JPEG', 0, 0, w, h);
+              doc.save('sample-file.pdf');
             }
           })
         }
