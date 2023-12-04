@@ -275,10 +275,10 @@
 
           const webEngageTrackingData = {
             'i am painting': this.paintingType,
-            'room type': this.paintDetails.name,
-            'floor area': this.paintDetails.maxSurfaceArea,
-            'paint quanity': this.paintDetails.maxSurfaceArea / 5,
-            'sealer quantity': this.paintDetails.maxSurfaceArea / 10,
+            'room type': this.paintDetails.name || '',
+            'floor area': this.paintDetails.maxSurfaceArea || 0,
+            'paint quanity': this.paintDetails.maxSurfaceArea / 5 || 0,
+            'sealer quantity': this.paintDetails.maxSurfaceArea / 10 || 0,
             'rooms colors': roomColors.join(','),
             'ceiling colors': ceilingColors.join(',')
           }
