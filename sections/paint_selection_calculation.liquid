@@ -247,7 +247,9 @@
           params.forEach((value, key) => {
             data[key] = value
           })
-          this.questions = JSON.parse(data.answers)
+          if(data.answers) {
+            this.questions = JSON.parse(data.answers)
+          }
         },
         getData(categoryName, totalData){
          fetch(`https://gush.earth/collections/${categoryName}?view=data-fetch&page=1`).then(res=> res.text()).then(html=> {
