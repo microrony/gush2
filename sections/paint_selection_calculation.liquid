@@ -259,6 +259,12 @@
             this.collectionName = categoryName
          }).catch(err=> console.log(err))
         },
+        trackSelections(evt) {
+
+          evt.preventDefault()
+          console.log(this.paintingType)
+          console.log(this.currentRoomColumnIndex)
+        }
       }"
       x-init="$watch('products',value=> this.products=value);$watch('categories',value=> this.categories=value); getCategories(); getPreviousData();"
       class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-8 lg:tw-gap-[40px] xl:tw-gap-[62px] lg:tw-overflow-hidden tw-bg-primary tw-min-h-screen"
