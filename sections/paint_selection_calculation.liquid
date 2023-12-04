@@ -265,9 +265,22 @@
           console.log(this.paintDetails.name)
           console.log(this.paintDetails)
 
+          let roomColors = []
+          let ceilingColors = []
+
+          this.paintDetails.roomDetails.forEach(item => {
+            if(item.colorName) roomColors.push(item.colorName)
+            if(item.ceilingColorName) ceilingColors.push(item.ceilingColorName)
+          })
+
           const webEngageTrackingData = {
             'i am painting': this.paintingType,
             'room type': this.paintDetails.name,
+            'floor area': this.paintDetails.maxSurfaceArea,
+            'paint quanity': this.paintDetails.maxSurfaceArea / 5,
+            'sealer quantity': this.paintDetails.maxSurfaceArea / 10,
+            'rooms colors': roomColors.join(','),
+            'ceiling colors': ceilingColors.join(',')
           }
 
           /*
