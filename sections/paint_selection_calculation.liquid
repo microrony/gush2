@@ -247,7 +247,6 @@
             data[key] = value
           })
           this.questions = JSON.parse(data.answers)
-          console.log(this.questions)
         },
         getData(categoryName, totalData){
          fetch(`https://gush.earth/collections/${categoryName}?view=data-fetch&page=1`).then(res=> res.text()).then(html=> {
