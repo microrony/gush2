@@ -54,7 +54,6 @@
         currentRoomColumnIndex:0,
         isShowingPaintColumns:false,
         isPickingCeilingColor:false,
-        questions: [],
         roomTypeOptions:[
           {
             name:'Living room',
@@ -811,7 +810,7 @@
               type="text"
               name="paintDetails"
               class="tw-hidden"
-              :value="JSON.stringify({...paintDetails, sealerQuantity: Math.ceil(floorArea/10), roomsDetails:paintDetails.roomsDetails.map((room,index)=>{
+              :value="JSON.stringify({...paintDetails, questions: questions, sealerQuantity: Math.ceil(floorArea/10), roomsDetails:paintDetails.roomsDetails.map((room,index)=>{
                 return {
                   name:room.name,
                   area:room.area,
@@ -832,12 +831,8 @@
                 }
               })})"
             />
-            <button
-              class="tw-mt-7 tw-flex tw-justify-between tw-items-center tw-primary-btn rounded-[2px] lg:tw-mt-[56px] tw-mb-7 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative"
-            >
-              <span
-                class="text-span tw-z-10 tw-w-[180px] tw-block tw-h-full tw-font-gt-america tw-text-left"
-              >
+            <button class="tw-mt-7 tw-flex tw-justify-between tw-items-center tw-primary-btn rounded-[2px] lg:tw-mt-[56px] tw-mb-7 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative">
+              <span class="text-span tw-z-10 tw-w-[180px] tw-block tw-h-full tw-font-gt-america tw-text-left">
                 Calculate
               </span>
               <span
@@ -1002,6 +997,8 @@
       })
 
       const funct = document.getQuerySelector("input[name='paintDetails']")
+      console.log(funct);
+     
     </script>
 
 {% schema %}
