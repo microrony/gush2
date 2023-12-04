@@ -270,7 +270,8 @@
             'room type': this.paintDetails.name,
           }
 
-          <!-- webengage.track(`paint_calculation_page`, {
+          /*
+          webengage.track(`paint_calculation_page`, {
             'i am painting': 'Entire room',
             'room type': 2 bedroom (60 - 110 sqm),
             'floor area': 110,
@@ -278,7 +279,7 @@
             'sealer quantity': 11L,
             'rooms colors' : boa,linen,all good thing , 
             'ceiling colors' : cheeseburger, boa
-          }); -->
+          }) */
         }
       }"
       x-init="$watch('products',value=> this.products=value);$watch('categories',value=> this.categories=value); getCategories(); getPreviousData();"
