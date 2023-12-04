@@ -262,7 +262,7 @@
 
           evt.preventDefault()
           console.log(this.paintingType)
-          console.log(this.currentRoomColumnIndex)
+          console.log(this.paintDetails.name)
         }
       }"
       x-init="$watch('products',value=> this.products=value);$watch('categories',value=> this.categories=value); getCategories(); getPreviousData();"
