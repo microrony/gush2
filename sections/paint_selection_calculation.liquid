@@ -268,7 +268,10 @@
           let roomColors = []
           let ceilingColors = []
 
-          
+          this.paintDetails.roomsDetails.forEach(item => {
+            if(item.colorName) roomColors.push(item.colorName)
+            if(item.ceilingColorName) ceilingColors.push(item.ceilingColorName)
+          })
 
           const webEngageTrackingData = {
             'i am painting': this.paintingType,
