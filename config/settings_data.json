@@ -105,6 +105,7 @@
         "blocks": {
           "0e82010d-8c5e-4e4d-baad-81b9292b8436": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Note: Product packaging may temporarily differ from pictures as we roll out our new look.",
               "text_clr": "#ff5500",
