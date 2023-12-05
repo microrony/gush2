@@ -648,6 +648,7 @@
           const clonedRootElement = this.cloneNodeWithStyles(container);
 
           const doc = document.implementation.createHTMLDocument('New Document');
+          doc.body.style.margin = 0
           doc.body.appendChild(clonedRootElement);
 
           const rawHTML = doc.documentElement.outerHTML;
