@@ -693,7 +693,12 @@
 
           for (let i = 0; i < computedStyles.length; i++) {
             const cssPropName = computedStyles[i];
-            clonedNode.style.setProperty(cssPropName, computedStyles.getPropertyValue(cssPropName));
+            const cssPropValue = computedStyles.getPropertyValue(cssPropName);
+        
+            // Apply style property only if it has a non-empty value
+            if (cssPropValue) {
+              clonedNode.style.setProperty(cssPropName, cssPropValue);
+            }
           }
 
           for (let i = 0; i < node.childNodes.length; i++) {
