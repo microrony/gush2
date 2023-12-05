@@ -657,40 +657,16 @@
 
           // console.log(rawHTML)
 
-          var worker = html2pdf().from(doc.body).save();
+          // var worker = html2pdf().from(doc.body).save();
+          var opt = {
+            margin:       1,
+            filename:     'cart.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 1 },
+            jsPDF:        { unit: 'in', format: 'a4', orientation: 'landscape' }
+          };
 
-          
-          // html2canvas(doc.body.innerHTML, { allowTaint: true, useCORS: true, scale: 1 })
-          // .then(canvas => {
-          //   const image = new Image()
-          //   image.src = canvas.toDataURL()
-          //   console.log('done')
-          // })
-          
-          // const container = document.getElementById('user_journey_cart')
-          // const html = container.cloneNode(true)
-          // const removable = html.querySelector('.not-printable')
-          // removable.remove()
-
-          // const scripts = html.querySelectorAll('script')
-          // scripts.forEach(script => {
-          //   console.log(script)
-          // })
-
-          // var w = html.offsetWidth;
-          // var h = html.offsetHeight;
-
-          // html2canvas(html, {
-          //   dpi: 300, // Set to 300 DPI
-          //   scale: 1, // Adjusts your resolution
-          //   onrendered: function(canvas) {
-          //     console.log(canvas)
-          //     var img = canvas.toDataURL("image/jpeg", 1);
-          //     var pdf = new jsPDF('L', 'px', [w, h]);
-          //     pdf.addImage(img, 'JPEG', 0, 0, w, h);
-          //     doc.save('sample-file.pdf');
-          //   }
-          // })
+          html2pdf().set(opt).from(doc.body).save()
         },
         cloneNodeWithStyles(node) {
           if (node.tagName.toLowerCase() === 'template') {
