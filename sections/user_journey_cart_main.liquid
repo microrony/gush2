@@ -642,6 +642,18 @@
         },
         generatePDF() {
           console.log('generatePdf')
+
+          const container = document.getElementById('user_journey_cart')
+
+          const clonedRootElement = this.cloneNodeWithStyles(container);
+
+          const doc = document.implementation.createHTMLDocument('New Document');
+          doc.body.appendChild(clonedRootElement);
+
+          const rawHTML = doc.documentElement.outerHTML;
+
+          console.log(rawHTML)
+          
           // const container = document.getElementById('user_journey_cart')
           // const html = container.cloneNode(true)
           // const removable = html.querySelector('.not-printable')
@@ -673,6 +685,22 @@
           }
 
           const clonedNode = node.cloneNode()
+
+          const computedStyles = window.getComputedStyle(node);
+          clonedNode.style.cssText = computedStyles.cssText;
+
+          for (let i = 0; i < node.childNodes.length; i++) {
+            const child = node.childNodes[i];
+            if (child.nodeType === Node.ELEMENT_NODE) {
+              const clonedChild = this.cloneNodeWithStyles(child);
+              clonedNode.appendChild(clonedChild);
+            } else if (child.nodeType === Node.TEXT_NODE) {
+              const textNode = document.createTextNode(child.textContent);
+              clonedNode.appendChild(textNode);
+            }
+          }
+        
+          return clonedNode;
         }
       }))
     })
