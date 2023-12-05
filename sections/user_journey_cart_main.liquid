@@ -684,7 +684,7 @@
             return document.createDocumentFragment(); // Return an empty fragment to exclude the template
           }
 
-          const clonedNode = node.cloneNode()
+          const clonedNode = node.cloneNode(false)
 
           const computedStyles = window.getComputedStyle(node);
           clonedNode.style.cssText = computedStyles.cssText;
