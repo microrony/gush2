@@ -706,20 +706,26 @@
         },
 
         copyToClipboard(string) {
-          const textarea = document.createElement('textarea')
-          textarea.value = string
-          textarea.setAttribute('readonly', '');
-          textarea.style.position = 'absolute';
-          textarea.style.left = '-9999px'
+          // Create a temporary element to hold the HTML content and styles
+          const tempElement = document.createElement('div');
+          tempElement.innerHTML = htmlString;
         
-          document.body.appendChild(textarea)
+          // Set the styles to ensure they are included in the copied content
+          const clonedElement = cloneNodeWithStyles(tempElement);
+          
+          // Append the cloned element to the body temporarily
+          document.body.appendChild(clonedElement);
         
-          // Select and copy the HTML content
-          textarea.select();
+          // Select and copy the HTML content with styles
+          const selection = window.getSelection();
+          const range = document.createRange();
+          range.selectNodeContents(clonedElement);
+          selection.removeAllRanges();
+          selection.addRange(range);
           document.execCommand('copy');
         
-          // Clean up - remove the textarea
-          document.body.removeChild(textarea);
+          // Clean up - remove the cloned element
+          document.body.removeChild(clonedElement);
         }
       }))
     })
