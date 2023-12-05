@@ -661,13 +661,14 @@
           document.body.appendChild(iframe); // 👈 still required
           iframe.contentWindow.document.open();
           iframe.contentWindow.document.write(rawHTML);
-          
-console.log('start')
+          iframe.contentWindow.document.close();
+
           html2canvas(iframe.contentWindow.document.body, {
             dpi: 300,
             scale: 1,
             onrendered: canvas => {
               var img = canvas.toDataURL("image/jpeg", 1);
+              console.log(img)
               var pdf = new jsPDF('L', 'px', [w, h]);
               pdf.addImage(img, 'JPEG', 0, 0, w, h);
               doc.save('sample-file.pdf');
