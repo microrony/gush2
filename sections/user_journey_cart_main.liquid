@@ -657,7 +657,7 @@
 
           // console.log(rawHTML)
 
-          var worker = html2pdf().from(element).save();
+          var worker = html2pdf().from(doc.body).save();
 
           
           // html2canvas(doc.body.innerHTML, { allowTaint: true, useCORS: true, scale: 1 })
