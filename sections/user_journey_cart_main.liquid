@@ -641,7 +641,6 @@
           location.href = '/cart'
         },
         generatePDF() {
-          console.log('generatePdf')
 
           const container = document.getElementById('user_journey_cart')
 
@@ -652,12 +651,6 @@
           doc.body.appendChild(clonedRootElement);
 
           const rawHTML = doc.documentElement.outerHTML;
-
-          // this.copyToClipboard(rawHTML)
-
-          // console.log(rawHTML
-
-          console.log(doc.body.style.width)
 
           var main_container_width = doc.body.style.width;
           // var worker = html2pdf().from(container).save();
