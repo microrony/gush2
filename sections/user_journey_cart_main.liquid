@@ -688,8 +688,10 @@
 
           const clonedNode = node.cloneNode(false)
 
-          const computedStyles = window.getComputedStyle(node);
-          clonedNode.style.cssText = computedStyles.cssText;
+          const computedStyles = window.getComputedStyle(node)
+          clonedNode.setAttribute('style', computedStyles.cssText);
+
+          console.log(computedStyles)
 
           for (let i = 0; i < node.childNodes.length; i++) {
             const child = node.childNodes[i];
