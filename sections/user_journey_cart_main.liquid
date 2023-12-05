@@ -664,7 +664,7 @@
           iframe.contentWindow.document.close();
 
           
-          html2canvas(container, {
+          html2canvas(doc.body.innerHTML, {
             dpi: 300,
             scale: 1,
             onrendered: canvas => {
