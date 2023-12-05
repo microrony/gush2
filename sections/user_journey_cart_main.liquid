@@ -661,7 +661,7 @@
           document.body.appendChild(iframe); // 👈 still required
           iframe.contentWindow.document.open();
           iframe.contentWindow.document.write(rawHTML);
-          iframe.contentWindow.document.close();
+          
 console.log('start')
           html2canvas(iframe.contentWindow.document.body, {
             dpi: 300,
