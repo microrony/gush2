@@ -667,9 +667,10 @@ console.log('start')
             dpi: 300,
             scale: 1,
             onrendered: canvas => {
-              console.log('done')
-              console.log(canvas)
-              
+              var img = canvas.toDataURL("image/jpeg", 1);
+              var pdf = new jsPDF('L', 'px', [w, h]);
+              pdf.addImage(img, 'JPEG', 0, 0, w, h);
+              doc.save('sample-file.pdf');
             }
           })
           
