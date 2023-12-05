@@ -664,16 +664,11 @@
           iframe.contentWindow.document.close();
 
           
-          html2canvas(doc.body.innerHTML, {
-            dpi: 300,
-            scale: 1,
-            onrendered: canvas => {
-              var img = canvas.toDataURL("image/jpeg", 1);
-              console.log(img)
-              var pdf = new jsPDF('L', 'px', [w, h]);
-              pdf.addImage(img, 'JPEG', 0, 0, w, h);
-              doc.save('sample-file.pdf');
-            }
+          html2canvas(doc.body.innerHTML, { allowTaint: true, useCORS: true, scale: 1 })
+          .then(canvas => {
+            const image = new Image()
+            image.src = canvas.toDataURL()
+            console.log('done')
           })
           
           // const container = document.getElementById('user_journey_cart')
