@@ -653,9 +653,18 @@
 
           const rawHTML = doc.documentElement.outerHTML;
 
-          this.copyToClipboard(rawHTML)
+          // this.copyToClipboard(rawHTML)
 
-          console.log(rawHTML)
+          // console.log(rawHTML)
+
+          html2canvas(rawHTML, {
+            dpi: 300,
+            scale: 1,
+            onrendered: canvas => {
+              console.log(canvas)
+              
+            }
+          })
           
           // const container = document.getElementById('user_journey_cart')
           // const html = container.cloneNode(true)
