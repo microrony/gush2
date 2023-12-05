@@ -680,7 +680,7 @@
           // })
         },
         cloneNodeWithStyles(node) {
-          if (node.tagName.toLowerCase() === 'template' || node.getAttribute('x-data')) {
+          if (node.tagName.toLowerCase() === 'template') {
             return document.createDocumentFragment(); // Return an empty fragment to exclude the template
           }
 
