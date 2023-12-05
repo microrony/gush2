@@ -711,7 +711,7 @@
           tempElement.innerHTML = htmlString;
         
           // Set the styles to ensure they are included in the copied content
-          const clonedElement = cloneNodeWithStyles(tempElement);
+          const clonedElement = this.cloneNodeWithStyles(tempElement);
           
           // Append the cloned element to the body temporarily
           document.body.appendChild(clonedElement);
