@@ -691,7 +691,10 @@
           const computedStyles = window.getComputedStyle(node)
           clonedNode.setAttribute('style', computedStyles.cssText);
 
-          console.log(computedStyles.cssText)
+          for (let i = 0; i < computedStyles.length; i++) {
+            const cssPropName = computedStyles[i];
+            clonedNode.style.setProperty(cssPropName, computedStyles.getPropertyValue(cssPropName));
+          }
 
           for (let i = 0; i < node.childNodes.length; i++) {
             const child = node.childNodes[i];
