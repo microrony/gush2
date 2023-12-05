@@ -706,7 +706,7 @@
             const src = node.getAttribute('src');
             if (src && !src.startsWith('http')) {
               // If the src attribute is a relative path, modify it to include the full URL
-              clonedNode.setAttribute('src', 'https://example.com/' + src); // Replace 'https://example.com/' with your actual domain
+              clonedNode.setAttribute('src', 'https:' + src); // Replace 'https://example.com/' with your actual domain
             }
           }
 
