@@ -658,7 +658,6 @@
           // console.log(rawHTML)
 
           const iframe = document.createElement("iframe");
-          iframe.classList.add('hidden')
           document.body.appendChild(iframe); // 👈 still required
           iframe.contentWindow.document.open();
           iframe.contentWindow.document.write(rawHTML);
