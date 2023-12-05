@@ -705,7 +705,7 @@
           return clonedNode;
         },
 
-        copyToClipboard(string) {
+        copyToClipboard(htmlString) {
           // Create a temporary element to hold the HTML content and styles
           const tempElement = document.createElement('div');
           tempElement.innerHTML = htmlString;
