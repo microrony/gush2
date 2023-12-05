@@ -716,26 +716,21 @@
         },
 
         copyToClipboard(htmlString) {
-          // Create a temporary element to hold the HTML content and styles
-          const tempElement = document.createElement('div');
-          tempElement.innerHTML = htmlString;
+          // Create a temporary textarea to hold the HTML content
+          const textarea = document.createElement('textarea');
+          textarea.value = htmlString;
+          textarea.setAttribute('readonly', '');
+          textarea.style.position = 'absolute';
+          textarea.style.left = '-9999px'; // Move the textarea off-screen
         
-          // Set the styles to ensure they are included in the copied content
-          const clonedElement = this.cloneNodeWithStyles(tempElement);
-          
-          // Append the cloned element to the body temporarily
-          document.body.appendChild(clonedElement);
+          document.body.appendChild(textarea);
         
-          // Select and copy the HTML content with styles
-          const selection = window.getSelection();
-          const range = document.createRange();
-          range.selectNodeContents(clonedElement);
-          selection.removeAllRanges();
-          selection.addRange(range);
+          // Select and copy the HTML content
+          textarea.select();
           document.execCommand('copy');
         
-          // Clean up - remove the cloned element
-          document.body.removeChild(clonedElement);
+          // Clean up - remove the textarea
+          document.body.removeChild(textarea);
         }
       }))
     })
