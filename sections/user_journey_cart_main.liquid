@@ -657,7 +657,13 @@
 
           // console.log(rawHTML)
 
-          html2canvas(doc.body, {
+          const iframe = document.createElement("iframe");
+          document.body.appendChild(iframe); // 👈 still required
+          iframe.contentWindow.document.open();
+          iframe.contentWindow.document.write(rawHTML);
+          iframe.contentWindow.document.close();
+
+          html2canvas(iframe.contentWindow.document.body, {
             dpi: 300,
             scale: 1,
             onrendered: canvas => {
