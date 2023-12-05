@@ -652,6 +652,8 @@
 
           const rawHTML = doc.documentElement.outerHTML;
 
+          this.copyToClipboard(rawHTML)
+
           console.log(rawHTML)
           
           // const container = document.getElementById('user_journey_cart')
@@ -701,6 +703,23 @@
           }
         
           return clonedNode;
+        },
+
+        copyToClipboard(string) {
+          const textarea = document.createElement('textarea')
+          textarea.value = string
+          textarea.setAttribute('readonly', '');
+          textarea.style.position = 'absolute';
+          textarea.style.left = '-9999px'
+        
+          document.body.appendChild(textarea)
+        
+          // Select and copy the HTML content
+          textarea.select();
+          document.execCommand('copy');
+        
+          // Clean up - remove the textarea
+          document.body.removeChild(textarea);
         }
       }))
     })
