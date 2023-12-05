@@ -657,13 +657,7 @@
 
           // console.log(rawHTML)
 
-          const pdf = new jsPDF()
-
-          pdf.html(doc.body.innerHTML, {
-            callback: function(pdf) {
-              pdf.save('generated-pdf.pdf')
-            }
-          })
+          var worker = html2pdf().from(element).save();
 
           
           // html2canvas(doc.body.innerHTML, { allowTaint: true, useCORS: true, scale: 1 })
