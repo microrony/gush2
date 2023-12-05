@@ -663,7 +663,7 @@
           iframe.contentWindow.document.write(rawHTML);
           iframe.contentWindow.document.close();
 
-          html2canvas(iframe.contentWindow.document.body, {
+          html2canvas(rawHTML, {
             dpi: 300,
             scale: 1,
             onrendered: canvas => {
