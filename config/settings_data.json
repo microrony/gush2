@@ -151,7 +151,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Discover",
-              "menu": "discover"
+              "menu": "footer-discover"
             }
           },
           "745b7e59-5114-4407-93b3-9471285e5a4a": {
