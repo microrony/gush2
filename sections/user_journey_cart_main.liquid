@@ -659,7 +659,7 @@
             filename:     'cart.pdf',
             image:        { type: 'jpeg', quality: 0.98 },
             html2canvas:  { scale: 3 },
-            jsPDF:        { unit: 'px', format: [1920, 1080], orientation: 'landscape' }
+            jsPDF:        { unit: 'px', format: [1920, 2080], orientation: 'landscape' }
           };
 
           html2pdf().set(opt).from(doc.body).save()
