@@ -306,7 +306,7 @@
             filename:     'cart.pdf',
             image:        { type: 'jpeg', quality: 0.98 },
             html2canvas:  { scale: 1 ,scrollY: 0 },
-            jsPDF:        { unit: "in", format: "b2", orientation: 'landscape' }
+            jsPDF:        { unit: 'in', format: 'b2', orientation: 'landscape' }
           };
 
           html2pdf().set(opt).from(doc.body).save()
