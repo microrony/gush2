@@ -282,6 +282,73 @@
           }
           
           webengage.track(`paint_calculation_page`, webEngageTrackingData)
+        },
+    generatePDF() {
+
+          const container = document.getElementById('user_journey_cart')
+
+          const clonedRootElement = this.cloneNodeWithStyles(container);
+
+          const doc = document.implementation.createHTMLDocument('New Document');
+          doc.body.style.margin = 0
+          doc.body.appendChild(clonedRootElement);
+
+          const rawHTML = doc.documentElement.outerHTML;
+
+          var main_container_width = doc.body.style.width;
+          // var worker = html2pdf().from(doc.body.innerHTML).save();
+          var opt = {
+            margin:       0,
+            filename:     'cart.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 1 ,scrollY: 0 },
+            jsPDF:        { unit: "in", format: "b2", orientation: 'landscape' }
+          };
+
+          html2pdf().set(opt).from(doc.body).save()
+        },
+        cloneNodeWithStyles(node) {
+          if (node.tagName.toLowerCase() === 'template') {
+            return document.createDocumentFragment(); // Return an empty fragment to exclude the template
+          }
+
+          const clonedNode = node.cloneNode(false)
+
+          const computedStyles = window.getComputedStyle(node)
+          clonedNode.setAttribute('style', computedStyles.cssText);
+
+          for (let i = 0; i < computedStyles.length; i++) {
+            const cssPropName = computedStyles[i];
+            const cssPropValue = computedStyles.getPropertyValue(cssPropName);
+        
+            // Apply style property only if it has a non-empty value
+            if (cssPropValue) {
+              clonedNode.style.setProperty(cssPropName, cssPropValue);
+            }
+          }
+
+          // Handle specific attributes based on the element type
+          if (node.tagName.toLowerCase() === 'img') {
+            const src = node.getAttribute('src');
+            if (src && !src.startsWith('http')) {
+              // If the src attribute is a relative path, modify it to include the full URL
+              clonedNode.setAttribute('src', 'https:' + src); // Replace 'https://example.com/' with your actual domain
+              console.log(src)
+            }
+          }
+
+          for (let i = 0; i < node.childNodes.length; i++) {
+            const child = node.childNodes[i];
+            if (child.nodeType === Node.ELEMENT_NODE) {
+              const clonedChild = this.cloneNodeWithStyles(child);
+              clonedNode.appendChild(clonedChild);
+            } else if (child.nodeType === Node.TEXT_NODE) {
+              const textNode = document.createTextNode(child.textContent);
+              clonedNode.appendChild(textNode);
+            }
+          }
+        
+          return clonedNode;
         }
       }"
       x-init="$watch('products',value=> this.products=value);$watch('categories',value=> this.categories=value); getCategories(); getPreviousData();"
@@ -887,7 +954,7 @@
                   d="M6.60312 12.5622C4.63484 12.5622 2.66656 12.5626 0.698276 12.5618C0.281351 12.5618 -0.00929533 12.2749 0.000227271 11.8795C0.00767974 11.5719 0.222559 11.3139 0.525213 11.2568C0.605534 11.2415 0.689167 11.2377 0.771558 11.2377C4.66133 11.2369 8.55153 11.2365 12.4413 11.2386C12.5535 11.2386 12.6711 11.2468 12.7767 11.2804C13.0797 11.3764 13.2524 11.6721 13.2118 11.9987C13.175 12.2972 12.9108 12.5407 12.6007 12.5601C12.544 12.5639 12.4873 12.5618 12.4301 12.5618C10.4879 12.5618 8.54532 12.5618 6.60312 12.5618V12.5622Z"
                   fill="#FF42EF" />
               </svg>
-              <a id="download-pdf-btn"
+              <a @click="generatePDF()" id="download-pdf-btn"
                 href="/"
                 class="tw-ml-[4px] tw-underline tw-text-heading tw-font-gt-america tw-text-sm tw-leading-[20px]">
                 Save order as pdf
@@ -1022,7 +1089,7 @@
 
       const funct = document.getQuerySelector("input[name='paintDetails']")
       console.log(funct);
-     
+
     </script>
 
 {% schema %}
