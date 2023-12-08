@@ -290,7 +290,7 @@
         },
     generatePDF() {
 
-          const container = document.getElementById('paint_selection_cal_main_div')
+          const container = document.getElementById('main_paint_cal_snap_section')
 
           const clonedRootElement = this.cloneNodeWithStyles(container);
 
@@ -688,7 +688,7 @@
 
         <!-- paint calculator -->
         <div x-show="paintDetails.roomsDetails?.length > 0 && isShowingPaintColumns" x-transition>
-          <div class="tw-flex tw-flex-1 tw-overflow-auto tw-gap-3 tw-mt-9 animate__animated animate__fadeIn">
+          <div id="main_paint_cal_snap_section" class="tw-flex tw-flex-1 tw-overflow-auto tw-gap-3 tw-mt-9 animate__animated animate__fadeIn">
             <template x-for="(item,index) in paintDetails?.roomsDetails" :key="index">
               <div
                 x-show="paintDetails.roomsDetails.length"
