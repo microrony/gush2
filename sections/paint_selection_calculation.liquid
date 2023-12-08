@@ -50,6 +50,7 @@
     {%- endfor -%}
   ]
 </script>
+<div id="paint_selection_cal_main_div">
   <main
       x-data="{
         paintingType:'entire-house',
@@ -289,7 +290,7 @@
         },
     generatePDF() {
 
-          const container = document.getElementById('user_journey_cart')
+          const container = document.getElementById('paint_selection_cal_main_div')
 
           const clonedRootElement = this.cloneNodeWithStyles(container);
 
@@ -303,7 +304,7 @@
           // var worker = html2pdf().from(doc.body.innerHTML).save();
           var opt = {
             margin:       0,
-            filename:     'cart.pdf',
+            filename:     'paint_selection_page.pdf',
             image:        { type: 'jpeg', quality: 0.98 },
             html2canvas:  { scale: 1 ,scrollY: 0 },
             jsPDF:        { unit: 'in', format: 'b2', orientation: 'landscape' }
@@ -959,7 +960,6 @@
                   fill="#FF42EF" />
               </svg>
               <a @click="generatePDF()" id="download-pdf-btn"
-                href="/"
                 class="tw-ml-[4px] tw-underline tw-text-heading tw-font-gt-america tw-text-sm tw-leading-[20px]">
                 Save order as pdf
               </a>
@@ -1056,6 +1056,7 @@
         </div>
       </div>
     </main>
+                  </div>
 
 
 
