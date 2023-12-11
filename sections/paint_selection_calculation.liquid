@@ -259,6 +259,7 @@
               const data = JSON.parse(dataEl.textContent)
 
               this.searchArray = [...this.searchArray, ...data]
+              console.log(this.searchArray)
             }
             catch(e) {
               console.log('Error on loadAllData function')
