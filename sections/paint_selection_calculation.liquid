@@ -238,12 +238,33 @@
         },
         categories:[],
         products:[],
+        searchArray: [],
         getCategories(){
            const dataElement = document.querySelector('#all_collections__data')
            const data = JSON.parse(dataElement.textContent)
            this.categories = data
-    console.log('categories', this.categories)
            this.getData(data[0].handle,data[0].totalData)
+          this.loadAllData(this.categories)
+        },
+        loadAllData(categories) {
+          categories.forEach(async item => {
+            try {
+              const url = `https://gush.earth/collections/${item.handle}?view=data-fetch`
+              const response = await fetch(url)
+              const html = await response.text()
+
+              const parser = new DOMParser()
+              const doc = parser.parseFromString(html, 'text/html')
+              const dataEl = doc.querySelector('#collection__data')
+              const data = JSON.parse(dataEl.textContent)
+
+              this.searchArray = [...this.searchArray, ...data]
+            }
+            catch(e) {
+              console.log('Error on loadAllData function')
+              console.log('Error: ', e)
+            }
+          })
         },
         getPreviousData() {
           const url = new URL(window.location.href)
