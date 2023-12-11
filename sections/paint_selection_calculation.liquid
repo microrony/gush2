@@ -272,7 +272,7 @@
           console.log(value)
           console.log(this.searchArray)
           const filteredArray = solidArray.filter(item => item.title.toLowerCase().includes(value))
-          console.log(filteredArray)
+          this.products = filteredArray
         },
         getPreviousData() {
           const url = new URL(window.location.href)
