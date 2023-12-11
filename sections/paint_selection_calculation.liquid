@@ -570,7 +570,7 @@
                               x-show="isHomeTypeDropDownOpen"
                               @click="paintDetails = option;isDropDownOpen = false;isHomeTypeDropDownOpen = false;setRoomDetails(option)"
                               :for="option.value"
-                              :class="tw-text-heading hover:tw-text-button tw-text-xs md:tw-text-base tw-font-gt-america tw-py-[10px] tw-mx-3 tw-ml-auto tw-cursor-pointer tw-block' : 'tw-text-darkGrey tw-normal-transition hover:tw-text-button tw-font-gt-america tw-text-xs md:tw-text-base tw-py-[10px] tw-mx-3 tw-ml-auto tw-cursor-pointer tw-block'"
+                              :class="paintDetails.value === option.value ? 'tw-text-heading hover:tw-text-button tw-text-xs md:tw-text-base tw-font-gt-america tw-py-[10px] tw-mx-3 tw-ml-auto tw-cursor-pointer tw-block' : 'tw-text-darkGrey tw-normal-transition hover:tw-text-button tw-font-gt-america tw-text-xs md:tw-text-base tw-py-[10px] tw-mx-3 tw-ml-auto tw-cursor-pointer tw-block'"
                             >
                               <input
                                 :id="option.value"
