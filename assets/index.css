@@ -1583,11 +1583,6 @@ button.tw-quantity-btn {
   margin-bottom: 80px;
 }
 
-.tw-my-\[33px\] {
-  margin-top: 33px;
-  margin-bottom: 33px;
-}
-
 .tw-my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -1625,10 +1620,6 @@ button.tw-quantity-btn {
   margin-bottom: 24px;
 }
 
-.tw-mb-7 {
-  margin-bottom: 28px;
-}
-
 .tw-mb-9 {
   margin-bottom: 36px;
 }
@@ -1637,16 +1628,16 @@ button.tw-quantity-btn {
   margin-bottom: 31px;
 }
 
+.tw-mb-\[33px\] {
+  margin-bottom: 33px;
+}
+
 .tw-ml-0 {
   margin-left: 0;
 }
 
 .tw-ml-1 {
   margin-left: 4px;
-}
-
-.tw-ml-10 {
-  margin-left: 40px;
 }
 
 .tw-ml-2 {
@@ -1753,16 +1744,12 @@ button.tw-quantity-btn {
   margin-top: 23px;
 }
 
-.tw-mt-\[60px\] {
-  margin-top: 60px;
-}
-
 .tw-mt-\[33px\] {
   margin-top: 33px;
 }
 
-.tw-mb-\[33px\] {
-  margin-bottom: 33px;
+.tw-mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .tw-block {
@@ -1821,6 +1808,10 @@ button.tw-quantity-btn {
   height: 384px;
 }
 
+.tw-h-\[100px\] {
+  height: 100px;
+}
+
 .tw-h-\[114px\] {
   height: 114px;
 }
@@ -1839,6 +1830,10 @@ button.tw-quantity-btn {
 
 .tw-h-\[170px\] {
   height: 170px;
+}
+
+.tw-h-\[241px\] {
+  height: 241px;
 }
 
 .tw-h-\[271px\] {
@@ -1869,14 +1864,6 @@ button.tw-quantity-btn {
   height: 100%;
 }
 
-.tw-h-\[100px\] {
-  height: 100px;
-}
-
-.tw-h-\[241px\] {
-  height: 241px;
-}
-
 .tw-min-h-\[190px\] {
   min-height: 190px;
 }
@@ -1891,6 +1878,10 @@ button.tw-quantity-btn {
 
 .tw-w-1\/2 {
   width: 50%;
+}
+
+.tw-w-1\/3 {
+  width: 33.333333%;
 }
 
 .tw-w-11\/12 {
@@ -1967,10 +1958,6 @@ button.tw-quantity-btn {
 
 .tw-w-full {
   width: 100%;
-}
-
-.tw-w-1\/3 {
-  width: 33.333333%;
 }
 
 .tw-min-w-\[200px\] {
@@ -2316,6 +2303,11 @@ button.tw-quantity-btn {
   object-fit: cover;
 }
 
+.tw-object-bottom {
+  -o-object-position: bottom;
+  object-position: bottom;
+}
+
 .tw-object-center {
   -o-object-position: center;
   object-position: center;
@@ -2324,11 +2316,6 @@ button.tw-quantity-btn {
 .tw-object-right {
   -o-object-position: right;
   object-position: right;
-}
-
-.tw-object-bottom {
-  -o-object-position: bottom;
-  object-position: bottom;
 }
 
 .tw-p-2 {
@@ -3049,6 +3036,14 @@ button[data-action='stop'] {
     margin-bottom: 0;
   }
 
+  .md\:tw-mb-7 {
+    margin-bottom: 28px;
+  }
+
+  .md\:tw-ml-10 {
+    margin-left: 40px;
+  }
+
   .md\:tw-ml-5 {
     margin-left: 20px;
   }
@@ -3081,24 +3076,24 @@ button[data-action='stop'] {
     margin-top: 144px;
   }
 
-  .md\:tw-mt-\[56px\] {
-    margin-top: 56px;
-  }
-
   .md\:tw-mt-5 {
     margin-top: 20px;
-  }
-
-  .md\:tw-ml-10 {
-    margin-left: 40px;
   }
 
   .md\:tw-mt-8 {
     margin-top: 32px;
   }
 
-  .md\:tw-mb-7 {
-    margin-bottom: 28px;
+  .md\:tw-mt-\[56px\] {
+    margin-top: 56px;
+  }
+
+  .md\:tw-block {
+    display: block;
+  }
+
+  .md\:tw-hidden {
+    display: none;
   }
 
   .md\:tw-h-16 {
@@ -3113,20 +3108,16 @@ button[data-action='stop'] {
     height: 150px;
   }
 
+  .md\:tw-h-\[170px\] {
+    height: 170px;
+  }
+
   .md\:tw-h-\[520px\] {
     height: 520px;
   }
 
   .md\:tw-h-\[678px\] {
     height: 678px;
-  }
-
-  .md\:tw-h-\[170px\] {
-    height: 170px;
-  }
-
-  .md\:tw-w-1\/3 {
-    width: 33.333333%;
   }
 
   .md\:tw-w-3\/4 {
@@ -3246,16 +3237,16 @@ button[data-action='stop'] {
     text-align: left;
   }
 
+  .md\:tw-text-2xl {
+    font-size: 24px;
+  }
+
   .md\:tw-text-base {
     font-size: 16px;
   }
 
   .md\:tw-text-xl {
     font-size: 20px;
-  }
-
-  .md\:tw-text-2xl {
-    font-size: 24px;
   }
 
   .md\:tw-leading-\[32px\] {
