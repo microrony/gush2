@@ -271,9 +271,11 @@
           })
         },
         findProducts(e) {
-          const value = e.currentTarget.value
+          const value = e.currentTarget.value.toLowerCase()
           console.log(value)
           console.log(this.searchArray)
+          const filteredArray = this.searchArray.filter(item => item.handle.includes(value))
+          console.log(filteredArray)
         },
         getPreviousData() {
           const url = new URL(window.location.href)
