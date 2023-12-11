@@ -705,7 +705,7 @@
                   <div
                     class="tw-flex tw-justify-between tw-gap-7 tw-mb-5 tw-items-center tw-bg-transparent"
                   >
-                    <select x-model="item.name" name="roomType" class="tw-bg-transparent px-1 py-2 focus:tw-outline-none">
+                    <select x-model="item.name" name="roomType" class="tw-bg-transparent px-1 py-2 focus:tw-outline-none tw-text-xs md:tw-text-base">
                       <template x-for="(room,index) in roomTypeOptions" :key="index">
                         <option x-model="room.value" x-text="room.name" :value="room.value" :selected="index === paintDetails.roomsDetails.indexOf(item)"></option>
                       </template>
