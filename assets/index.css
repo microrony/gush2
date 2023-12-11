@@ -2326,6 +2326,11 @@ button.tw-quantity-btn {
   object-position: right;
 }
 
+.tw-object-bottom {
+  -o-object-position: bottom;
+  object-position: bottom;
+}
+
 .tw-p-2 {
   padding: 8px;
 }
