@@ -246,41 +246,29 @@
            this.getData(data[0].handle,data[0].totalData)
           this.loadAllData(this.categories)
         },
-        async loadData(handle) {
-          try {
-            const url = `https://gush.earth/collections/${handle}?view=data-fetch`;
-            const response = await fetch(url);
-            const html = await response.text();
-        
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            const dataEl = doc.querySelector('#collection__data');
-            const data = JSON.parse(dataEl.textContent);
-        
-            return data;
-          } catch (e) {
-            console.log(`Error fetching data for ${handle}:`, e);
-            throw e;
-          }
-        },
-        
-        async loadAllData(categories) {
-          try {
-            const promises = categories.map(category => loadData(category.handle));
-            const dataArray = await Promise.all(promises);
-        
-            let searchArray = dataArray.flat(); // Flattening the array of arrays into a single array
-        
-            // Remove duplicates based on 'handle'
-            searchArray = Array.from(new Set(this.searchArray.map(obj => obj.handle)))
-              .map(handle => this.searchArray.find(obj => obj.handle === handle));
-        
-            this.searchArray = searchArray;
-          } catch (error) {
-            console.error('Error on loadAllData function:', error);
-            return [];
-          }
-          console.log(this.searchArray)
+        loadAllData(categories) {
+          categories.forEach(async (item, index) => {
+            try {
+              const url = `https://gush.earth/collections/${item.handle}?view=data-fetch`
+              const response = await fetch(url)
+              const html = await response.text()
+
+              const parser = new DOMParser()
+              const doc = parser.parseFromString(html, 'text/html')
+              const dataEl = doc.querySelector('#collection__data')
+              const data = JSON.parse(dataEl.textContent)
+
+              this.searchArray = [...this.searchArray, ...data]
+              if(index == categories.length - 1) {
+                console.log(this.searchArray, categories.length, index)
+                this.searchArray = Array.from(new Set(this.searchArray.map(obj => obj.handle))).map(handle => this.searchArray.find(obj => obj.handle === handle))
+              }
+            }
+            catch(e) {
+              console.log('Error on loadAllData function')
+              console.log('Error: ', e)
+            }
+          })
         },
         getPreviousData() {
           const url = new URL(window.location.href)
