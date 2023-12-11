@@ -247,7 +247,7 @@
           this.loadAllData(this.categories)
         },
         loadAllData(categories) {
-          categories.forEach(async item => {
+          categories.forEach(async (item, index) => {
             try {
               const url = `https://gush.earth/collections/${item.handle}?view=data-fetch`
               const response = await fetch(url)
@@ -259,15 +259,13 @@
               const data = JSON.parse(dataEl.textContent)
 
               this.searchArray = [...this.searchArray, ...data]
-              console.log(this.searchArray)
+              if(index == categories.length - 1) console.log(this.searchArray)
             }
             catch(e) {
               console.log('Error on loadAllData function')
               console.log('Error: ', e)
             }
           })
-
-          console.log('SearchArray: ',this.searchArray)
         },
         getPreviousData() {
           const url = new URL(window.location.href)
