@@ -710,7 +710,7 @@
                         <option x-model="room.value" x-text="room.name" :value="room.value" :selected="index === paintDetails.roomsDetails.indexOf(item)"></option>
                       </template>
                     </select>
-                    <div class="tw-flex tw-items-center tw-w-[50%] tw-font-gt-america tw-text-base tw-px-1 tw-py-2 tw-bg-white">
+                    <div class="tw-flex tw-items-center tw-w-[50%] tw-font-gt-america tw-text-xs md:tw-text-base tw-px-1 tw-py-2 tw-bg-white">
                       <input type="number" min="0" x-model="item.area" placeholder="0" :value="item.area" class="focus:tw-outline-none tw-pl-1 tw-w-1/2"/>
                       <span class="tw-ml-1 tw-w-1/2">sqm</span>
                     </div>
@@ -721,7 +721,7 @@
                         <img :src="'https://'+ item.colorImage" class="tw-h-full tw-w-full tw-object-center tw-object-cover tw-mx-auto" />
                       </div>
                       <div
-                        class="tw-w-full tw-bg-white tw-text-heading tw-font-gt-america tw-text-base tw-text-center tw-py-1"
+                        class="tw-w-full tw-bg-white tw-text-heading tw-font-gt-america tw-text-xs md:tw-text-base tw-text-center tw-py-1"
                       >
                         <span class="room_colors_choosen" x-text="item.colorName"></span>
                       </div>
@@ -729,7 +729,7 @@
                     <button
                       x-show="!item.color"
                       @click="isModalOpen = true;isPickingCeilingColor=false;currentRoomColumnIndex=index"
-                      class="tw-h-[170px] tw-w-full tw-mx-auto tw-bg-white tw-flex tw-justify-center tw-items-center tw-text-heading tw-font-gt-america tw-text-base"
+                      class="tw-h-[170px] tw-w-full tw-mx-auto tw-bg-white tw-flex tw-justify-center tw-items-center tw-text-heading tw-font-gt-america tw-text-xs md:tw-text-base"
                     >
                       <span class="tw-flex tw-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
@@ -763,12 +763,12 @@
                       class="tw-flex tw-justify-between tw-mb-5 tw-items-center tw-bg-transparent tw-mt-12"
                     >
                       <span
-                        class="tw-text-heading tw-font-gt-america tw-text-base"
+                        class="tw-text-heading tw-font-gt-america tw-text-xs md:tw-text-base"
                       >
                         Ceiling
                       </span>
                       <div
-                        class="tw-flex tw-items-center tw-w-auto tw-font-gt-america tw-text-base tw-px-1 tw-py-2 tw-bg-transparent"
+                        class="tw-flex tw-items-center tw-w-auto tw-font-gt-america tw-text-xs md:tw-text-base tw-px-1 tw-py-2 tw-bg-transparent"
                       >
                         <span x-text="item.area" class="tw-pl-1 tw-bg-transparent"></span>
                         <span class="tw-ml-1 tw-w-1/2">sqm</span>
@@ -782,7 +782,7 @@
                           <img :src="'https://'+ item.ceilingColorImage" class="tw-h-full tw-w-full tw-object-center tw-object-cover tw-mx-auto" />
                         </div>
                         <div
-                          class="tw-w-full tw-bg-white tw-text-heading tw-font-gt-america tw-text-base tw-text-center tw-py-1"
+                          class="tw-w-full tw-bg-white tw-text-heading tw-font-gt-america tw-text-xs md:tw-text-base tw-text-center tw-py-1"
                         >
                           <span class="ceiling_colors_choosen" x-text="item.ceilingColorName"></span>
                         </div>
@@ -790,7 +790,7 @@
                       <button
                         x-show="!item.ceilingColor"
                         @click="isModalOpen = true;isPickingCeilingColor=true;currentRoomColumnIndex=index"
-                        class="tw-h-[170px] tw-w-full tw-mx-auto tw-bg-white tw-flex tw-justify-center tw-items-center tw-text-heading tw-font-gt-america tw-text-base"
+                        class="tw-h-[170px] tw-w-full tw-mx-auto tw-bg-white tw-flex tw-justify-center tw-items-center tw-text-heading tw-font-gt-america tw-text-xs md:tw-text-base"
                       >
                         <span class="tw-flex tw-items-center">
                           <svg
