@@ -524,7 +524,7 @@
                 <span class="tw-flex tw-items-center tw-gap-7">
                   <span
                     x-text="paintDetails.name"
-                    class="tw-text-heading tw-font-gt-america tw-text-base tw-font-medium"
+                    class="tw-text-heading tw-font-gt-america tw-text-xs md:tw-text-base tw-font-medium"
                   ></span>
                   <span
                     :class="(isDropDownOpen ? 'bi bi-chevron-right tw-ml-auto' : 'be bi-chevron-down tw-ml-auto')+' tw-ml-6'"
@@ -616,9 +616,9 @@
         <!-- rules of thumb -->
         <div
           x-show="!isShowingPaintColumns && paintingType !=='room'"
-          class="tw-mt-10 md:tw-mt-20 lg:tw-mt-32 xl:tw-mt-40 tw-grid tw-grid-cols-1 lg:tw-grid-cols-2"
+          class="tw-mt-[33px] md:tw-mt-20 lg:tw-mt-32 xl:tw-mt-40 tw-grid tw-grid-cols-1 lg:tw-grid-cols-2"
         >
-          <div class="animate__animated animate__fadeIn lg:tw-mt-8">
+          <div class="animate__animated animate__fadeIn tw-mb-[33px] lg:tw-mt-8">
             <p class="tw-text-heading tw-font-gt-america tw-text-xs md:tw-text-base tw-leading-none">
               As a rule of thumb, you would need
               <span class="tw-text-button font-gt-america tw-font-medium">
