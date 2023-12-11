@@ -1873,6 +1873,10 @@ button.tw-quantity-btn {
   height: 100px;
 }
 
+.tw-h-\[241px\] {
+  height: 241px;
+}
+
 .tw-min-h-\[190px\] {
   min-height: 190px;
 }
