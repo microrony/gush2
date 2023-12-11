@@ -269,8 +269,6 @@
         findProducts(e) {
           const value = e.currentTarget.value.toLowerCase()
           const solidArray = Array.from(new Set(this.searchArray.map(obj => obj.handle))).map(handle => this.searchArray.find(obj => obj.handle === handle))
-          console.log(value)
-          console.log(this.searchArray)
           const filteredArray = solidArray.filter(item => item.title.toLowerCase().includes(value))
           this.products = filteredArray
         },
