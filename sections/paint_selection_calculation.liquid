@@ -246,7 +246,7 @@
            this.getData(data[0].handle,data[0].totalData)
           this.loadAllData(this.categories)
         },
-        async function loadData(handle) {
+        async loadData(handle) {
           try {
             const url = `https://gush.earth/collections/${handle}?view=data-fetch`;
             const response = await fetch(url);
@@ -264,7 +264,7 @@
           }
         },
         
-        async function loadAllData(categories) {
+        async loadAllData(categories) {
           try {
             const promises = categories.map(category => loadData(category.handle));
             const dataArray = await Promise.all(promises);
