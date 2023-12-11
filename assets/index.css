@@ -3068,6 +3068,10 @@ button[data-action='stop'] {
     margin-top: 56px;
   }
 
+  .md\:tw-mt-5 {
+    margin-top: 20px;
+  }
+
   .md\:tw-h-16 {
     height: 64px;
   }
