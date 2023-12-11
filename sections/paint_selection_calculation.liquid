@@ -271,7 +271,8 @@
           })
         },
         findProducts(e) {
-          console.log(e)
+          const value = e.currentTarget.value
+          console.log(value)
         },
         getPreviousData() {
           const url = new URL(window.location.href)
