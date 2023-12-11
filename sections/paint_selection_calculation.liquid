@@ -260,7 +260,7 @@
 
               this.searchArray = [...this.searchArray, ...data]
               if(index == categories.length - 1) {
-                console.log(this.searchArray)
+                console.log(this.searchArray, categories.length, index)
                 this.searchArray = Array.from(new Set(this.searchArray.map(obj => obj.handle))).map(handle => this.searchArray.find(obj => obj.handle === handle))
               }
             }
