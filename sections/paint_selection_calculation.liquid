@@ -242,6 +242,7 @@
            const dataElement = document.querySelector('#all_collections__data')
            const data = JSON.parse(dataElement.textContent)
            this.categories = data
+    console.log('categories', this.categories)
            this.getData(data[0].handle,data[0].totalData)
         },
         getPreviousData() {
