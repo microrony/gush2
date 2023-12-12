@@ -646,7 +646,7 @@
                     <button
                       @click="addToCart(`${sealer.selectedVariant.id}`, sealer)"
                       :disabled="cart.find(item=> item.id === sealer.id) ? true:false"
-                      class="tw-px-4 tw-py-2 tw-text-white tw-text-xs tw-text-center tw-bg-heading"
+                      :class="(cart.find(item=> item.id === sealer.id) ? 'tw-bg-heading/30':'tw-bg-heading') + ' tw-px-4 tw-py-2 tw-text-white tw-text-xs tw-text-center tw-rounded-none'"
                     >
                       Add to Cart
                     </button>
