@@ -693,7 +693,7 @@
             </div>
           </template>
           
-          <div class="tw-ml-7 tw-text-center md:tw-text-left tw-mt-3 md:tw-mt-0 tw-w-full">
+          <div class="tw-ml-7 tw-text-left tw-mt-3 md:tw-mt-0 tw-w-full">
             <h1 class="tw-text-heading tw-font-gt-america tw-text-sm tw-mb-2">
               <span x-show="product.handle !== 'gush-ecoseal'"> Paint Quantity:</span> <span x-show="product.handle === 'gush-ecoseal'"> Sealer Quantity:</span> <span x-show="product.handle !== 'gush-ecoseal'" x-text="product.quantity"></span> <span x-show="product.handle === 'gush-ecoseal'" x-text="product.quantity % 5 ===0 ? product.quantity : Math.floor((product.quantity+5)/5)*5"></span> L
             </h1>
