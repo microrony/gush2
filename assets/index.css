@@ -1950,6 +1950,10 @@ button.tw-quantity-btn {
   border-radius: 0.5em;
 }
 
+.tw-rounded-none{
+  border-radius: 0px;
+}
+
 .tw-border{
   border-width: 1px;
 }
