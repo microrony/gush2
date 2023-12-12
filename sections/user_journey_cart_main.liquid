@@ -347,7 +347,7 @@
                     <button
                       @click="addToCart(`${product.id}`, product)"
                       :disabled="cart.find(item=> item.id === product.id) ? true:false"
-                      :class="(cart.find(item=> item.id === product.id) ? 'tw-bg-heading/30':'tw-bg-heading') + ' tw-px-4 tw-py-2 tw-text-white tw-text-xs tw-text-center'"
+                      :class="(cart.find(item=> item.id === product.id) ? 'tw-bg-heading/30':'tw-bg-heading') + ' tw-px-4 tw-py-2 tw-text-white tw-text-xs tw-text-center tw-rounded-0'"
                     >
                       Add to Cart
                     </button>
