@@ -3266,6 +3266,11 @@ button[data-action='stop'] {
     padding-bottom: 70px;
   }
 
+  .md\:tw-px-\[21px\] {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
   .md\:tw-pb-\[20px\] {
     padding-bottom: 20px;
   }
