@@ -3172,6 +3172,10 @@ button[data-action='stop'] {
     height: 678px;
   }
 
+  .md\:tw-h-\[120px\] {
+    height: 120px;
+  }
+
   .md\:tw-w-3\/4 {
     width: 75%;
   }
@@ -3186,6 +3190,10 @@ button[data-action='stop'] {
 
   .md\:tw-w-full {
     width: 100%;
+  }
+
+  .md\:tw-w-\[120px\] {
+    width: 120px;
   }
 
   .md\:tw-grid-cols-1 {
