@@ -179,7 +179,7 @@
                 </div>
   
                 <div class="tw-flex tw-justify-between tw-items-center tw-mt-4">
-                  <button>
+                  <button @click="$store.product.decreaseQty(product)">
                     <svg
                       width="25"
                       height="25"
@@ -226,10 +226,10 @@
                     </svg>
                   </button>
                   <span class="tw-text-heading tw-font-gt-america tw-text-xs">
-                    <span>10</span>
-                    <span>L</span>
+                    <span x-text="product.quantity"></span>
+                  <span>L</span>
                   </span>
-                  <button>
+                  <button @click="$store.product.increaseQty(product)">
                     <svg
                       width="15"
                       height="15"
