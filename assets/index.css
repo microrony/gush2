@@ -1924,8 +1924,8 @@ button.tw-quantity-btn {
   width: 32px;
 }
 
-.tw-w-\[100px\] {
-  width: 100px;
+.tw-w-\[115px\] {
+  width: 115px;
 }
 
 .tw-w-\[156px\] {
@@ -2423,11 +2423,6 @@ button.tw-quantity-btn {
   padding-right: 36px;
 }
 
-.tw-px-\[21px\] {
-  padding-left: 21px;
-  padding-right: 21px;
-}
-
 .tw-py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -2524,12 +2519,20 @@ button.tw-quantity-btn {
   padding-left: 40px;
 }
 
+.tw-pl-5 {
+  padding-left: 20px;
+}
+
 .tw-pl-\[14px\] {
   padding-left: 14px;
 }
 
 .tw-pl-\[28px\] {
   padding-left: 28px;
+}
+
+.tw-pr-3 {
+  padding-right: 12px;
 }
 
 .tw-pr-\[18px\] {
@@ -2574,14 +2577,6 @@ button.tw-quantity-btn {
 
 .tw-pt-\[7px\] {
   padding-top: 7px;
-}
-
-.tw-pr-3 {
-  padding-right: 12px;
-}
-
-.tw-pl-5 {
-  padding-left: 20px;
 }
 
 .tw-text-left {
@@ -3259,6 +3254,11 @@ button[data-action='stop'] {
     padding-right: 40px;
   }
 
+  .md\:tw-px-\[21px\] {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
   .md\:tw-px-\[40px\] {
     padding-left: 40px;
     padding-right: 40px;
@@ -3272,11 +3272,6 @@ button[data-action='stop'] {
   .md\:tw-py-\[70px\] {
     padding-top: 70px;
     padding-bottom: 70px;
-  }
-
-  .md\:tw-px-\[21px\] {
-    padding-left: 21px;
-    padding-right: 21px;
   }
 
   .md\:tw-pb-\[20px\] {
