@@ -367,190 +367,192 @@
         </template>
       </template>
       <template x-if="sealer">
-      <div class="tw-flex tw-flex-col md:tw-flex-row tw-gap-4 md:tw-gap-0 md:tw-justify-between tw-items-center tw-pb-5 tw-mb-5 tw-border-b tw-border-heading/30 last:tw-border-none tw-relative">
-        <div class="tw-flex tw-flex-col md:tw-flex-row tw-items-center">
-          <div>
-            <div
-              class="tw-h-[130px] tw-w-[300px] tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center tw-relative tw-flex tw-justify-center tw-items-center">
-              <img :src="sealer._image" class="tw-absolute tw-inset-0 tw-h-full tw-w-full tw-z-0" :alt="sealer.featured_image.alt" height="200" width="200" />
+        <div>
+          <div class="tw-flex tw-flex-col md:tw-flex-row tw-gap-4 md:tw-gap-0 md:tw-justify-between tw-items-center tw-pb-5 tw-mb-5 tw-border-b tw-border-heading/30 last:tw-border-none tw-relative">
+            <div class="tw-flex tw-flex-col md:tw-flex-row tw-items-center">
+              <div>
+                <div
+                  class="tw-h-[130px] tw-w-[300px] tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center tw-relative tw-flex tw-justify-center tw-items-center">
+                  <img :src="sealer._image" class="tw-absolute tw-inset-0 tw-h-full tw-w-full tw-z-0" :alt="sealer.featured_image.alt" height="200" width="200" />
+                </div>
+                <div class="tw-bg-white tw-text-[10px] tw-text-center tw-py-2 tw-font-gt-america tw-text-heading">
+                  <span class="tw-font-gt-america">Surface area: <span x-text="sealer.area"></span> sqm</span>
+                </div>
+              </div>
+              <div class="tw-h-full tw-w-full tw-mt-5 md:tw-mt-0 md:tw-h-[150px] tw-flex md:tw-flex-col tw-items-start tw-justify-between">
+                <div class="tw-ml-0 md:tw-ml-7 md:tw-mt-[56px]">
+                  <p class="tw-text-heading tw-font-gt-america tw-text-base tw-border-0 tw-bg-transparent focus:tw-outline-none">
+                    Gush EcoSeal
+                  </p>
+                  <span style="max-width:132px;font-size:9px" class="tw-text-darkGrey tw-ml-0 tw-font-gt-america tw-block tw-mt-1.5">
+                    Required as a 1-coat base coat. 
+                    Quantity: half the quantity of paint.
+                  </span>
+                </div>
+                <button @click="history.back()" type="button" class="tw-flex tw-ml-3 tw-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
+                      fill="#FF40F4"
+                    ></path>
+                  </svg>
+                  <span class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america">
+                    Recalculate
+                  </span>
+                </button>
+              </div>
             </div>
-            <div class="tw-bg-white tw-text-[10px] tw-text-center tw-py-2 tw-font-gt-america tw-text-heading">
-              <span class="tw-font-gt-america">Surface area: <span x-text="sealer.area"></span> sqm</span>
-            </div>
-          </div>
-          <div class="tw-h-full tw-w-full tw-mt-5 md:tw-mt-0 md:tw-h-[150px] tw-flex md:tw-flex-col tw-items-start tw-justify-between">
-            <div class="tw-ml-0 md:tw-ml-7 md:tw-mt-[56px]">
-              <p class="tw-text-heading tw-font-gt-america tw-text-base tw-border-0 tw-bg-transparent focus:tw-outline-none">
-                Gush EcoSeal
-              </p>
-              <span style="max-width:132px;font-size:9px" class="tw-text-darkGrey tw-ml-0 tw-font-gt-america tw-block tw-mt-1.5">
-                Required as a 1-coat base coat. 
-                Quantity: half the quantity of paint.
-              </span>
-            </div>
-            <button @click="history.back()" type="button" class="tw-flex tw-ml-3 tw-items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
-                  fill="#FF40F4"
-                ></path>
-              </svg>
-              <span class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america">
-                Recalculate
-              </span>
-            </button>
-          </div>
-        </div>
-        <div class="tw-flex tw-items-center">
-          <!-- <button @click="sealer.quantity = sealer.quantity - 5">
-            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="25" cy="25" r="14.5" stroke="#302112"></circle>
-              <circle cx="25.0004" cy="25.7778" r="0.777778" fill="#302112"></circle>
-              <circle cx="21.8872" cy="25.7778" r="0.777778" fill="#302112"></circle>
-              <circle cx="18.7778" cy="25.7778" r="0.777778" fill="#302112"></circle>
-              <circle cx="28.1098" cy="25.7778" r="0.777778" fill="#302112"></circle>
-              <circle cx="31.2231" cy="25.7778" r="0.777778" fill="#302112"></circle>
-            </svg>
-          </button> -->
-          <span class="tw-text-heading tw-font-gt-america tw-text-lg tw-mx-[18px]">
-            <span x-text="sealer.quantity"></span>
-            <span>L</span>
-          </span>
-          <!-- <button @click="sealer.quantity = sealer.quantity + 5">
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="15" cy="15" r="14.5" stroke="#302112"></circle>
-              <circle cx="15.0004" cy="14.9999" r="0.777778" fill="#302112"></circle>
-              <circle cx="15.0004" cy="18.1113" r="0.777778" fill="#302112"></circle>
-              <circle cx="15.0004" cy="21.2224" r="0.777778" fill="#302112"></circle>
-              <circle cx="15.0004" cy="11.8889" r="0.777778" fill="#302112"></circle>
-              <circle cx="15.0004" cy="8.77778" r="0.777778" fill="#302112"></circle>
-              <circle cx="11.8911" cy="14.9999" r="0.777778" fill="#302112"></circle>
-              <circle cx="8.77778" cy="14.9999" r="0.777778" fill="#302112"></circle>
-              <circle cx="18.1137" cy="14.9999" r="0.777778" fill="#302112" /></circle>
-              <circle cx="21.2231" cy="14.9999" r="0.777778" fill="#302112" /></circle>
-            </svg>
-          </button> -->
-        </div>
-        <span class="tw-text-heading tw-text-lg tw-font-gt-america">
-          <span>$</span>
-          <span x-text="`${sealer.selectedVariant.price / 100}`">255.00</span>
-        </span>
-        <button
-          @click="addToCart(`${sealer.selectedVariant.id}`, sealer)"
-          :disabled="cart.find(item=> item.id === sealer.id) ? true:false"
-          class="tw-secondary-btn tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative"
-        >
-          <span class="text-span tw-text-lg tw-leading-[18px] tw-z-10 tw-w-full tw-h-full tw-font-gt-america tw-text-left">
-            Add to Cart
-          </span>
-          <span :class="cart.find(item=> item.id === sealer.id) ?'tw-opacity-30 tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full':'tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full'">
-            this is not empty
-          </span>
-        </button>
-        <span class="md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs md:tw-bottom-5 md:tw-right-0">Sealers are available in 5litre & 20litre capacity</span>
-      </div>
-      <div class="tw-flex md:tw-hidden tw-justify-between tw-gap-[52px] tw-pb-5 tw-mb-5 tw-border-b tw-border-heading/30 last:tw-border-none">
-          <div class="tw-w-[100px]">
-            <div
-              class="tw-h-[100px] tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center tw-relative"
-            >
-              <img
-                :src="sealer._image" :alt="sealer.featured_image.alt"
-                class="tw-absolute tw-inset-0 tw-h-full tw-w-full tw-z-0"
-                height="200"
-                width="200"
-              />
-            </div>
-            <div
-              class="tw-bg-white tw-text-[9px] tw-text-center tw-py-2 tw-font-gt-america tw-text-heading"
-            >
-              <span
-                style="line-height: 15px"
-                class="tw-z-10 tw-font-gt-america"
-              >
-                Surface area:
-                <span x-text="sealer.area"> </span> sqm</span
-              >
-            </div>
-
-            <div class="tw-flex tw-justify-between tw-items-center tw-mt-4">
-              
-              <span class="tw-text-heading tw-font-gt-america tw-text-xs">
+            <div class="tw-flex tw-items-center">
+              <!-- <button @click="sealer.quantity = sealer.quantity - 5">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="14.5" stroke="#302112"></circle>
+                  <circle cx="25.0004" cy="25.7778" r="0.777778" fill="#302112"></circle>
+                  <circle cx="21.8872" cy="25.7778" r="0.777778" fill="#302112"></circle>
+                  <circle cx="18.7778" cy="25.7778" r="0.777778" fill="#302112"></circle>
+                  <circle cx="28.1098" cy="25.7778" r="0.777778" fill="#302112"></circle>
+                  <circle cx="31.2231" cy="25.7778" r="0.777778" fill="#302112"></circle>
+                </svg>
+              </button> -->
+              <span class="tw-text-heading tw-font-gt-america tw-text-lg tw-mx-[18px]">
                 <span x-text="sealer.quantity"></span>
                 <span>L</span>
               </span>
-              
+              <!-- <button @click="sealer.quantity = sealer.quantity + 5">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15" r="14.5" stroke="#302112"></circle>
+                  <circle cx="15.0004" cy="14.9999" r="0.777778" fill="#302112"></circle>
+                  <circle cx="15.0004" cy="18.1113" r="0.777778" fill="#302112"></circle>
+                  <circle cx="15.0004" cy="21.2224" r="0.777778" fill="#302112"></circle>
+                  <circle cx="15.0004" cy="11.8889" r="0.777778" fill="#302112"></circle>
+                  <circle cx="15.0004" cy="8.77778" r="0.777778" fill="#302112"></circle>
+                  <circle cx="11.8911" cy="14.9999" r="0.777778" fill="#302112"></circle>
+                  <circle cx="8.77778" cy="14.9999" r="0.777778" fill="#302112"></circle>
+                  <circle cx="18.1137" cy="14.9999" r="0.777778" fill="#302112" /></circle>
+                  <circle cx="21.2231" cy="14.9999" r="0.777778" fill="#302112" /></circle>
+                </svg>
+              </button> -->
             </div>
-
+            <span class="tw-text-heading tw-text-lg tw-font-gt-america">
+              <span>$</span>
+              <span x-text="`${sealer.selectedVariant.price / 100}`">255.00</span>
+            </span>
             <button
-              @click="history.back()"
-              type="button"
-              class="tw-flex tw-mt-2 tw-items-center"
+              @click="addToCart(`${sealer.selectedVariant.id}`, sealer)"
+              :disabled="cart.find(item=> item.id === sealer.id) ? true:false"
+              class="tw-secondary-btn tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
-                  fill="#FF40F4"
-                ></path>
-              </svg>
-              <span
-                class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america"
-              >
-                Recalculate
+              <span class="text-span tw-text-lg tw-leading-[18px] tw-z-10 tw-w-full tw-h-full tw-font-gt-america tw-text-left">
+                Add to Cart
+              </span>
+              <span :class="cart.find(item=> item.id === sealer.id) ?'tw-opacity-30 tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full':'tw-absolute tw-text-heading layer tw-inset-0 -tw-z-0 tw-bg-heading tw-h-full tw-w-full'">
+                this is not empty
               </span>
             </button>
+            <span class="md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs md:tw-bottom-5 md:tw-right-0">Sealers are available in 5litre & 20litre capacity</span>
           </div>
-          <div>
-            <div class="tw-ml-0 md:tw-ml-7 md:tw-mt-[56px]">
-              <select
-                class="tw-text-heading tw-font-medium tw-font-gt-america tw-text-base tw-border-0 tw-bg-transparent focus:tw-outline-none"
-              >
-                <option value="gush-care">Gush Care</option>
-                <option value="gush-clean-care">Gush Clean Care</option>
-              </select>
-              <span
-                style="font-size: 9px"
-                class="tw-text-darkGrey tw-ml-2 tw-font-gt-america tw-block"
-              >
-                Humidity-control
-              </span>
-            </div>
-            <div class="tw-mt-[46px]">
-              <div class="tw-flex tw-items-center tw-gap-2">
-                <button
-                  @click="addToCart(`${sealer.selectedVariant.id}`, sealer)"
-                  :disabled="cart.find(item=> item.id === sealer.id) ? true:false"
-                  class="tw-px-4 tw-py-2 tw-text-white tw-text-xs tw-text-center tw-bg-heading"
+          <div class="tw-flex md:tw-hidden tw-justify-between tw-gap-[52px] tw-pb-5 tw-mb-5 tw-border-b tw-border-heading/30 last:tw-border-none">
+              <div class="tw-w-[100px]">
+                <div
+                  class="tw-h-[100px] tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center tw-relative"
                 >
-                  Add to Cart
+                  <img
+                    :src="sealer._image" :alt="sealer.featured_image.alt"
+                    class="tw-absolute tw-inset-0 tw-h-full tw-w-full tw-z-0"
+                    height="200"
+                    width="200"
+                  />
+                </div>
+                <div
+                  class="tw-bg-white tw-text-[9px] tw-text-center tw-py-2 tw-font-gt-america tw-text-heading"
+                >
+                  <span
+                    style="line-height: 15px"
+                    class="tw-z-10 tw-font-gt-america"
+                  >
+                    Surface area:
+                    <span x-text="sealer.area"> </span> sqm</span
+                  >
+                </div>
+    
+                <div class="tw-flex tw-justify-between tw-items-center tw-mt-4">
+                  
+                  <span class="tw-text-heading tw-font-gt-america tw-text-xs">
+                    <span x-text="sealer.quantity"></span>
+                    <span>L</span>
+                  </span>
+                  
+                </div>
+    
+                <button
+                  @click="history.back()"
+                  type="button"
+                  class="tw-flex tw-mt-2 tw-items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.65625 5.25005L3.12725 2.77905L3.86925 3.52105L2.66525 4.72505H8.39825V5.77505H2.66525L3.86925 6.97905L3.12725 7.72105L0.65625 5.25005ZM13.3402 8.75005L10.8693 11.2211L10.1273 10.4791L11.3313 9.27505H5.59825V8.22505H11.3313L10.1273 7.02105L10.8693 6.27905L13.3402 8.75005Z"
+                      fill="#FF40F4"
+                    ></path>
+                  </svg>
+                  <span
+                    class="tw-ml-1 tw-underline tw-text-[10px] tw-text-heading tw-font-gt-america"
+                  >
+                    Recalculate
+                  </span>
                 </button>
-                <span class="tw-text-darkGrey tw-text-xs tw-font-gt-america">
-                  <span>$</span>
-                  <span x-text="`${sealer.selectedVariant.price / 100}`"></span>
-                </span>
               </div>
-              <span
-                x-text="(product.quantity+1) % 5 === 0 ?'Add one more litre for a better deal.':''"
-                class="md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs tw-mt-2"
-              ></span>
+              <div>
+                <div class="tw-ml-0 md:tw-ml-7 md:tw-mt-[56px]">
+                  <select
+                    class="tw-text-heading tw-font-medium tw-font-gt-america tw-text-base tw-border-0 tw-bg-transparent focus:tw-outline-none"
+                  >
+                    <option value="gush-care">Gush Care</option>
+                    <option value="gush-clean-care">Gush Clean Care</option>
+                  </select>
+                  <span
+                    style="font-size: 9px"
+                    class="tw-text-darkGrey tw-ml-2 tw-font-gt-america tw-block"
+                  >
+                    Humidity-control
+                  </span>
+                </div>
+                <div class="tw-mt-[46px]">
+                  <div class="tw-flex tw-items-center tw-gap-2">
+                    <button
+                      @click="addToCart(`${sealer.selectedVariant.id}`, sealer)"
+                      :disabled="cart.find(item=> item.id === sealer.id) ? true:false"
+                      class="tw-px-4 tw-py-2 tw-text-white tw-text-xs tw-text-center tw-bg-heading"
+                    >
+                      Add to Cart
+                    </button>
+                    <span class="tw-text-darkGrey tw-text-xs tw-font-gt-america">
+                      <span>$</span>
+                      <span x-text="`${sealer.selectedVariant.price / 100}`"></span>
+                    </span>
+                  </div>
+                  <span
+                    x-text="(product.quantity+1) % 5 === 0 ?'Add one more litre for a better deal.':''"
+                    class="md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs tw-mt-2"
+                  ></span>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       </template>
     </div>
