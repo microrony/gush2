@@ -667,7 +667,7 @@
     </div>
     <div class="animate__animated animate__fadeIn tw-bg-primary tw-w-full">
       <template x-for="(product, index) in $store.product.cart" :key="index">
-        <div class="tw-p-5 tw-flex tw-border-b tw-border-heading/30 tw-flex-col md:tw-flex-row tw-items-center">
+        <div class="tw-p-5 tw-flex tw-border-b tw-border-heading/30 tw-items-center">
           <template x-if="product.handle === 'gush-ecoseal'">
             <div>
               <div class="tw-h-[130px] tw-w-[300px tw-text-xs tw-px-6 tw-text-center tw-text-white md:tw-w-[130px] tw-flex tw-justify-center tw-items-center tw-relative tw-flex tw-justify-center tw-items-center">
@@ -698,7 +698,7 @@
               <span x-show="product.handle !== 'gush-ecoseal'"> Paint Quantity:</span> <span x-show="product.handle === 'gush-ecoseal'"> Sealer Quantity:</span> <span x-show="product.handle !== 'gush-ecoseal'" x-text="product.quantity"></span> <span x-show="product.handle === 'gush-ecoseal'" x-text="product.quantity % 5 ===0 ? product.quantity : Math.floor((product.quantity+5)/5)*5"></span> L
             </h1>
             <template x-if="product.quantity > 5">
-              <div class="tw-flex tw-justify-between tw-items-center tw-w-full">
+              <div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-center tw-w-full">
                 <div class="tw-flex tw-items-center">
                   <span x-show="product.handle !== 'gush-ecoseal'" class="tw-px-2 tw-py-[1px] tw-text-[10px] tw-bg-[#D9D9D9] tw-rounded-full tw-mr-1">
                     x <span x-text="Math.floor(product.quantity/5)"></span>
