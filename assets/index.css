@@ -1546,6 +1546,10 @@ button.tw-quantity-btn {
   z-index: -10;
 }
 
+.tw-z-0 {
+  z-index: 0;
+}
+
 .tw-z-10 {
   z-index: 10;
 }
@@ -1720,6 +1724,10 @@ button.tw-quantity-btn {
   margin-top: 12px;
 }
 
+.tw-mt-4 {
+  margin-top: 16px;
+}
+
 .tw-mt-5 {
   margin-top: 20px;
 }
@@ -1746,6 +1754,10 @@ button.tw-quantity-btn {
 
 .tw-mt-\[33px\] {
   margin-top: 33px;
+}
+
+.tw-mt-\[46px\] {
+  margin-top: 46px;
 }
 
 .tw-mt-\[60px\] {
@@ -2072,6 +2084,10 @@ button.tw-quantity-btn {
   gap: 4px;
 }
 
+.tw-gap-2 {
+  gap: 8px;
+}
+
 .tw-gap-3 {
   gap: 12px;
 }
@@ -2102,6 +2118,10 @@ button.tw-quantity-btn {
 
 .tw-gap-\[32px\] {
   gap: 32px;
+}
+
+.tw-gap-\[52px\] {
+  gap: 52px;
 }
 
 .tw-gap-\[76px\] {
@@ -2590,6 +2610,10 @@ button.tw-quantity-btn {
 
 .tw-text-\[7px\] {
   font-size: 7px;
+}
+
+.tw-text-\[9px\] {
+  font-size: 9px;
 }
 
 .tw-text-base {
@@ -3090,6 +3114,10 @@ button[data-action='stop'] {
 
   .md\:tw-block {
     display: block;
+  }
+
+  .md\:tw-flex {
+    display: flex;
   }
 
   .md\:tw-hidden {
