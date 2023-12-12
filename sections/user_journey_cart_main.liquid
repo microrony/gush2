@@ -345,6 +345,8 @@
                 <div class="tw-mt-[46px]">
                   <div class="tw-flex tw-items-center tw-gap-2">
                     <button
+                      @click="addToCart(`${product.id}`, product)"
+                      :disabled="cart.find(item=> item.id === product.id) ? true:false"
                       class="tw-px-4 tw-py-2 tw-text-white tw-text-xs tw-text-center tw-bg-heading"
                     >
                       Add to Cart
