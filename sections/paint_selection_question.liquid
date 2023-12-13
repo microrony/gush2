@@ -257,7 +257,7 @@
 
         <div class="tw-h-[71px]">
           <span
-            x-show="questions.filter(item=> item.answer === '').length > 0 && email === ''"
+            x-show="questions.filter(item=> item.answer === '').length > 0 || email === ''"
             class="tw-block md:tw-absolute tw-text-button tw-font-gt-america tw-text-xs md:tw-bottom-5 md:tw-right-0 tw-mt-2"
           >
             All the questions' answers and email is mandatory to proceed
@@ -271,7 +271,7 @@
             </label>
             <input x-model="email" id="paint_cal_email_id" type="text" placeholder="Email*" class="placeholder:tw-font-gt-america tw-pb-1 placeholder:tw-text-base placeholder:tw-text-heading/75 focus:tw-outline-none tw-font-gt-america tw-text-base tw-leading-6 tw-border-b tw-border-heading tw-w-full tw-bg-transparent">
           </div>
-          <button @click="sendQuery()" :disabled="!email" name="proceed_calculation" class="paint_cal_button tw-primary-btn tw-rounded-[2px] lg:tw-mt-[56px] tw-mb-10 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative">
+          <button @click="sendQuery()" :disabled="!email || questions.filter(item=> item.answer === '').length" name="proceed_calculation" class="paint_cal_button tw-primary-btn tw-rounded-[2px] lg:tw-mt-[56px] tw-mb-10 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative">
             <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">
               Proceed
             </span>
