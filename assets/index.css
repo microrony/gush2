@@ -3088,6 +3088,10 @@ button[data-action='stop'] {
 }
 
 @media (min-width: 768px) {
+  .md\:tw-fixed {
+    position: fixed;
+  }
+
   .md\:tw-absolute {
     position: absolute;
   }
