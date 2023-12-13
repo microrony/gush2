@@ -322,6 +322,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% if content_for_header contains 'bss-b2b-cp' %}{% include 'bss-b2b-header' %}{% endif %}    {% include "loyaltylion" %}
 </head>
 
+
+
+
+
+<script>
+    // Function to set a cookie
+    function setCookie(cname, cvalue, exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      const expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    // Function to get a cookie value
+    function getCookie(cname) {
+      const name = cname + "=";
+      const decodedCookie = decodeURIComponent(document.cookie);
+      const ca = decodedCookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    // Function to check if the user is a new visitor
+    function isNewVisitor() {
+      const visitedBefore = getCookie("visitedBefore");
+      return visitedBefore === "";
+    }
+
+    // Function to redirect new visitors
+    function redirectNewCustomers() {
+      if (isNewVisitor()) {
+        // Set a cookie to mark the user as visited
+        setCookie("visitedBefore", "true", 1); // Cookie will expire in 365 days
+
+        // Redirect the user to the different page
+        window.location.href = "https://gush.earth/pages/paint-selection-journey";
+      }
+    }
+
+    // Call the function when the page loads
+    window.onload = redirectNewCustomers;
+  </script>
+
+
+
+
+
+
+
+  
+
   <script type="text/javascript" src="https://quickchat.ai/user_kit/quickchat8vqb7j.js" id="quickchat_script" scenario_id="2nkxhfhzh6"></script>
 
   <body class="gradient">{% include 'appjetty-geo-ip-redirect' %} {% include 'appjetty-popup' %}
