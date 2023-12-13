@@ -271,11 +271,11 @@
             </label>
             <input x-model="email" id="paint_cal_email_id" type="text" placeholder="Email*" class="placeholder:tw-font-gt-america tw-pb-1 placeholder:tw-text-base placeholder:tw-text-heading/75 focus:tw-outline-none tw-font-gt-america tw-text-base tw-leading-6 tw-border-b tw-border-heading tw-w-full tw-bg-transparent">
           </div>
-          <button @click="sendQuery()" :disabled="!email || questions.filter(item=> item.answer === '').length" name="proceed_calculation" class="paint_cal_button tw-primary-btn tw-rounded-[2px] lg:tw-mt-[56px] tw-mb-10 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative">
+          <button @click="sendQuery()" :disabled="!email || questions.filter(item=> item.answer === '').length > 0" name="proceed_calculation" class="paint_cal_button tw-primary-btn tw-rounded-[2px] lg:tw-mt-[56px] tw-mb-10 tw-bg-white tw-overflow-hidden animate__animated animate__fadeInUp tw-relative">
             <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">
               Proceed
             </span>
-            <span :class="!email || questions.filter(item=> item.answer === '').length? 'tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button/50 tw-h-full tw-w-full':'tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full'"></span>
+            <span :class="!email || questions.filter(item=> item.answer === '').length > 0? 'tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button/50 tw-h-full tw-w-full':'tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full'"></span>
             <svg class="tw-z-10" xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
               <circle cx="10" cy="10" r="1" fill="#302112" />
               <circle cx="7" cy="13" r="1" fill="#302112" />
