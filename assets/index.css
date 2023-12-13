@@ -1506,6 +1506,10 @@ button.tw-quantity-btn {
   position: relative;
 }
 
+.tw-sticky {
+  position: sticky;
+}
+
 .-tw-inset-1 {
   inset: -4px;
 }
@@ -1528,10 +1532,6 @@ button.tw-quantity-btn {
 
 .tw-left-10 {
   left: 40px;
-}
-
-.tw-left-12 {
-  left: 48px;
 }
 
 .tw-left-4 {
@@ -1876,6 +1876,10 @@ button.tw-quantity-btn {
   height: 69px;
 }
 
+.tw-h-\[71px\] {
+  height: 71px;
+}
+
 .tw-h-\[85px\] {
   height: 85px;
 }
@@ -1886,10 +1890,6 @@ button.tw-quantity-btn {
 
 .tw-h-full {
   height: 100%;
-}
-
-.tw-h-\[71px\] {
-  height: 71px;
 }
 
 .tw-min-h-\[190px\] {
@@ -2311,8 +2311,8 @@ button.tw-quantity-btn {
   background-color: rgb(255 64 244 / var(--tw-bg-opacity));
 }
 
-.tw-bg-button\/90 {
-  background-color: rgb(255 64 244 / 0.9);
+.tw-bg-button\/50 {
+  background-color: rgb(255 64 244 / 0.5);
 }
 
 .tw-bg-heading {
@@ -2340,10 +2340,6 @@ button.tw-quantity-btn {
 .tw-bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.tw-bg-button\/50 {
-  background-color: rgb(255 64 244 / 0.5);
 }
 
 .tw-bg-opacity-50 {
