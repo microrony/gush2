@@ -2603,6 +2603,10 @@ button.tw-quantity-btn {
   padding-top: 7px;
 }
 
+.tw-pr-5 {
+  padding-right: 20px;
+}
+
 .tw-text-left {
   text-align: left;
 }
