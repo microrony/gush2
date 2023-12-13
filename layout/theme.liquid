@@ -326,7 +326,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<!-- <script>
+<script>
   // Function to check if the user is a new visitor
   function isNewVisitor() {
     // Check if the 'visited' cookie is set
@@ -349,14 +349,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Set the 'visited' cookie
     setVisitedCookie();
 
-     // Set the delay (8 seconds in this case)
-    var delayInSeconds = 8;
-
-    // Use setTimeout to execute the redirect function after the delay
-    setTimeout(redirectToDifferentPage, delayInSeconds * 1000);
+     // Redirect new visitors after 8 seconds
+  if (isNewVisitor()) {
+    // Set a timeout for 8 seconds
+    setTimeout(redirectAfterDelay, 8000);
+  }
   }
 </script>
- -->
+
 
 
 
