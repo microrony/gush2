@@ -344,16 +344,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   // Redirect new visitors to a different page
   if (isNewVisitor()) {
     // Redirect to the different page
+    setTimeout(redirectAfterDelay, 8000);
     window.location.href = 'https://www.google.com/';
 
     // Set the 'visited' cookie
     setVisitedCookie();
 
-     // Redirect new visitors after 8 seconds
-  if (isNewVisitor()) {
-    // Set a timeout for 8 seconds
-    setTimeout(redirectAfterDelay, 8000);
-  }
   }
 </script>
 
