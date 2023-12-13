@@ -343,7 +343,7 @@
                   </span>
                 </div>
                 <div class="tw-mt-[46px]">
-                  <div class="tw-flex tw-items-center tw-gap-2">
+                  <div class="tw-flex tw-justify-between tw-items-center tw-gap-2">
                     <button
                       @click="addToCart(`${product.id}`, product)"
                       :disabled="cart.find(item=> item.id === product.id) ? true:false"
@@ -642,7 +642,7 @@
                   </span>
                 </div>
                 <div class="tw-mt-[46px]">
-                  <div class="tw-flex tw-items-center tw-gap-2">
+                  <div class="tw-flex tw-justify-between tw-items-center tw-gap-2">
                     <button
                       @click="addToCart(`${sealer.selectedVariant.id}`, sealer)"
                       :disabled="cart.find(item=> item.id === sealer.id) ? true:false"
