@@ -2035,6 +2035,10 @@ button.tw-quantity-btn {
   flex: 1 1 0%;
 }
 
+.tw-flex-grow {
+  flex-grow: 1;
+}
+
 .tw-table-auto {
   table-layout: auto;
 }
