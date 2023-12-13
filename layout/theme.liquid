@@ -326,7 +326,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<script>
+<!-- <script>
   // Function to check if the user is a new visitor
   function isNewVisitor() {
     // Check if the 'visited' cookie is set
@@ -350,6 +350,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Set the 'visited' cookie
     setVisitedCookie();
 
+  }
+</script> -->
+<script>
+  // Function to check if the user is a new visitor
+  function isNewVisitor() {
+    // Check if the 'visited' cookie is set
+    return document.cookie.indexOf('visited=true') === -1;
+  }
+
+  // Function to set the 'visited' cookie
+  function setVisitedCookie() {
+    // Set the 'visited' cookie to expire in 30 days
+    var expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + 30);
+    document.cookie = 'visited=true; expires=' + expirationDate.toUTCString() + '; path=/';
+  }
+
+  // Function to redirect after a delay
+  function redirectAfterDelay() {
+    // Redirect to the different page
+    window.location.href = 'https://www.google.com/';
+
+    // Set the 'visited' cookie
+    setVisitedCookie();
+  }
+
+  // Redirect new visitors to a different page
+  if (isNewVisitor()) {
+    // Redirect after a delay of 8 seconds
+    setTimeout(redirectAfterDelay, 8000);
   }
 </script>
 
