@@ -347,7 +347,7 @@
                     <button
                       @click="addToCart(`${product.id}`, product)"
                       :disabled="cart.find(item=> item.id === product.id) ? true:false"
-                      :class="(cart.find(item=> item.id === product.id) ? 'tw-bg-heading/30':'tw-bg-heading') + ' tw-px-4 tw-py-2 tw-text-white tw-text-xs tw-text-center tw-rounded-none'"
+                      :class="(cart.find(item=> item.id === product.id) ? 'tw-bg-heading/30':'tw-bg-heading') + ' tw-px-4 tw-py-2 tw-text-white tw-text-xs tw-text-center tw-rounded-none tw-font-gt-america'"
                     >
                       Add to cart
                     </button>
@@ -646,7 +646,7 @@
                     <button
                       @click="addToCart(`${sealer.selectedVariant.id}`, sealer)"
                       :disabled="cart.find(item=> item.id === sealer.id) ? true:false"
-                      :class="(cart.find(item=> item.id === sealer.id) ? 'tw-bg-heading/30':'tw-bg-heading') + ' tw-px-4 tw-py-2 tw-text-white tw-text-xs tw-text-center tw-rounded-none'"
+                      :class="(cart.find(item=> item.id === sealer.id) ? 'tw-bg-heading/30':'tw-bg-heading') + ' tw-px-4 tw-py-2 tw-font-gt-america tw-text-white tw-text-xs tw-text-center tw-rounded-none'"
                     >
                       Add to cart
                     </button>
