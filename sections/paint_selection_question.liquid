@@ -275,7 +275,7 @@
             <span class="text-span tw-z-10 tw-w-[180px] tw-h-full tw-font-gt-america tw-text-left">
               Proceed
             </span>
-            <span :class="!email? 'tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button/90 tw-h-full tw-w-full':'tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full'"></span>
+            <span :class="!email || questions.filter(item=> item.answer === '').length? 'tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button/50 tw-h-full tw-w-full':'tw-absolute layer tw-inset-0 -tw-z-0 tw-bg-button tw-h-full tw-w-full'"></span>
             <svg class="tw-z-10" xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
               <circle cx="10" cy="10" r="1" fill="#302112" />
               <circle cx="7" cy="13" r="1" fill="#302112" />
