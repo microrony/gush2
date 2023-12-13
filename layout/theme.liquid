@@ -327,52 +327,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <script>
-    // Function to set a cookie
-    function setCookie(cname, cvalue, exdays) {
-      const d = new Date();
-      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-      const expires = "expires=" + d.toUTCString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
+  // Function to check if the user is a new visitor
+  function isNewVisitor() {
+    // Check if the 'visited' cookie is set
+    return document.cookie.indexOf('visited=true') === -1;
+  }
 
-    // Function to get a cookie value
-    function getCookie(cname) {
-      const name = cname + "=";
-      const decodedCookie = decodeURIComponent(document.cookie);
-      const ca = decodedCookie.split(';');
-      for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
+  // Function to set the 'visited' cookie
+  function setVisitedCookie() {
+    // Set the 'visited' cookie to expire in 30 days
+    var expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + 30);
+    document.cookie = 'visited=true; expires=' + expirationDate.toUTCString() + '; path=/';
+  }
 
-    // Function to check if the user is a new visitor
-    function isNewVisitor() {
-      const visitedBefore = getCookie("visitedBefore");
-      return visitedBefore === "";
-      console.log(visitedBefore);
-    }
+  // Redirect new visitors to a different page
+  if (isNewVisitor()) {
+    // Redirect to the different page
+    window.location.href = 'https://www.google.com/';
 
-    // Function to redirect new visitors
-    function redirectNewCustomers() {
-      if (isNewVisitor()) {
-        // Set a cookie to mark the user as visited
-        setCookie("visitedBefore", "true", 1); // Cookie will expire in 365 days
-
-        // Redirect the user to the different page
-        window.location.href = "https://gush.earth/pages/paint-selection-journey";
-      }
-    }
-
-    // Call the function when the page loads
-    window.onload = redirectNewCustomers;
-  </script>
+    // Set the 'visited' cookie
+    setVisitedCookie();
+  }
+</script>
 
 
 
