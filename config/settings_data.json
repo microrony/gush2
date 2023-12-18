@@ -102,20 +102,6 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "0e82010d-8c5e-4e4d-baad-81b9292b8436": {
-            "type": "announcement",
-            "settings": {
-              "text": "Take 12% off paint orders with the promo code OHMYGUSH12",
-              "text_clr": "#ff5500",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "0e82010d-8c5e-4e4d-baad-81b9292b8436"
-        ],
         "settings": {
         }
       },
