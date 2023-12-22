@@ -972,7 +972,6 @@
                 }
   
                 this.products.push(_product)
-                this.setSealerQuantity(10)
 
                 this.$store.product.addProduct(_product)
                 
@@ -984,8 +983,6 @@
                   celingProduct.bucketType = ''
                   this.products.push(celingProduct)
                   this.$store.product.addProduct(celingProduct)
-
-                  this.setSealerQuantity(Math.ceil(oomDetail.area / 5)
                 }
               }
             })
@@ -1014,10 +1011,9 @@
               console.log(e)
             }
           },
-          setSealerQuantity(qty) {
-            this.sealerQty += qty
-            console.log(this.sealerQty)
-          },
+          getSealerQuantity() {
+            
+          }
 
           getProductData(handle) {
             return new Promise(async (resolve, reject) => {
