@@ -992,7 +992,7 @@
               const roomDetailsProducts = await Promise.all(roomDetailsProductsPromises);
               const flattenedProducts = roomDetailsProducts.flat().filter(product => product !== null);
 
-              this.$store.product.products = flattendeProducts
+              this.$store.product.products = flattenedProducts
               
           
               console.log('Flattened Products: ', flattenedProducts);
