@@ -422,7 +422,7 @@
                 </svg>
               </button> -->
               <span class="tw-text-heading tw-font-gt-america tw-text-lg tw-mx-[18px]">
-                <span x-text="sealer.quantity"></span>
+                <span x-text="$store.product.sealer.quantity"></span>
                 <span>L</span>
               </span>
               <!-- <button @click="sealer.quantity = sealer.quantity + 5">
@@ -442,7 +442,7 @@
             </div>
             <span class="tw-text-heading tw-text-lg tw-font-gt-america">
               <span>$</span>
-              <span x-text="`${sealer.selectedVariant.price / 100}`">255.00</span>
+              <span x-text="`${$store.product.sealer.selectedVariant.price / 100}`">255.00</span>
             </span>
             <button
               @click="addToCart(`${$store.product.sealer.selectedVariant.id}`, $store.product.sealer)"
