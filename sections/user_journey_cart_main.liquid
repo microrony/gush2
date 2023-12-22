@@ -445,7 +445,7 @@
               <span x-text="`${sealer.selectedVariant.price / 100}`">255.00</span>
             </span>
             <button
-              @click="addToCart(`${sealer.selectedVariant.id}`, sealer)"
+              @click="addToCart(`${$store.product.sealer.selectedVariant.id}`, $store.product.sealer)"
               :disabled="cart.find(item=> item.id === sealer.id) ? true:false"
               class="tw-secondary-btn tw-rounded-[2px] lg:tw-mt-[56px] lg:tw-mb-10 tw-bg-white tw-overflow-hidden tw-relative"
             >
@@ -530,7 +530,7 @@
                     </svg> -->
                   </button>
                   <span class="tw-text-heading tw-font-gt-america tw-text-xs">
-                    <span x-text="sealer.quantity"></span>
+                    <span x-text="$store.product.sealer.quantity"></span>
                     <span>L</span>
                   </span>
                   <button>
