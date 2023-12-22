@@ -997,7 +997,7 @@
               this.sealer = {
                 ...sealerProduct,
                 area: this.data.sealerQuantity*10,
-                quantity: this.data.sealerQuantity,
+                quantity: this.$store.product.finalSealerQuantity,
                 selectedVariant: selectedVariant,
                 _image: 'https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Frame_2233.png?v=1700816494'
               }
