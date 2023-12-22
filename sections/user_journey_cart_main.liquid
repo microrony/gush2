@@ -943,6 +943,7 @@
             this.rooms = []
             this.celings = []
             this.sealer = null
+            this.sealerQty = 0
             console.log('userCart ready')
             // I get called before the element using this data initializes.
             const url = new URL(window.location.href)
@@ -971,6 +972,7 @@
                 }
   
                 this.products.push(_product)
+                
 
                 this.$store.product.addProduct(_product)
                 
@@ -1009,6 +1011,9 @@
             catch(e) {
               console.log(e)
             }
+          },
+          setSealerQty(qty) {
+            console.log(qty, this.sealerQty)
           },
 
           getProductData(handle) {
