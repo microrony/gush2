@@ -1016,6 +1016,7 @@
           setSealerQty(qty) {
             console.log(qty, this.sealerQty)
             this.sealerQty = this.sealerQty + qty
+            if(this.sealer) this.sealer.quantity = this.sealerQty
           },
 
           getProductData(handle) {
