@@ -972,9 +972,9 @@
                     bucketType: "",
                   };
           
-                  this.products.push(_product);
-                  this.setSealerQty(Math.ceil((area * 1.3) / 5));
-                  this.$store.product.addProduct(_product);
+                  // this.products.push(_product);
+                  // this.setSealerQty(Math.ceil((area * 1.3) / 5));
+                  // this.$store.product.addProduct(_product);
           
                   let ceilingProduct = null;
                   if (roomDetail.celingProduct.handle) {
@@ -982,8 +982,8 @@
                     ceilingProduct.area = roomDetail.area;
                     ceilingProduct.quantity = roomDetail.area / 5;
                     ceilingProduct.bucketType = '';
-                    this.products.push(ceilingProduct);
-                    this.$store.product.addProduct(ceilingProduct);
+                    // this.products.push(ceilingProduct);
+                    // this.$store.product.addProduct(ceilingProduct);
                   }
           
                   return [ _product, ceilingProduct ]; // Return an array of product objects
