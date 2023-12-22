@@ -843,6 +843,9 @@
         },
         setSealerQty() {
           console.log('sealer quantity')
+          this.products.forEach(item => {
+            console.log(item)
+          })
         },
         increaseQty(product) {
           this.products.forEach(item => {
