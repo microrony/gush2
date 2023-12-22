@@ -855,7 +855,6 @@
             }
           })
           this.setTotal()
-          this.setSealerQty()
         },
         decreaseQty(product) {
           this.products.forEach(item => {
@@ -864,7 +863,6 @@
             }
           })
           this.setTotal()
-          this.setSealerQty()
         },
         setTotal() {
           let total = 0
@@ -923,6 +921,7 @@
             }
           })
           this.total = parseFloat(total.toFixed(2))
+          this.setSealerQty()
         },
         addItem(item) {
           this.items = []
