@@ -993,44 +993,10 @@
               const flattenedProducts = roomDetailsProducts.flat().filter(product => product !== null);
 
               this.$store.product.products = flattenedProducts
-              
-          
-              console.log('Flattened Products: ', flattenedProducts);
             }
             catch(error) {
               console.log('Error', error)
             }
-
-            // this.data.roomsDetails.forEach(async roomDetail => {
-            //   console.log('Detail: ',roomDetail)
-
-            //   if(roomDetail.handle) {
-            //     const productData = await this.getProductData(roomDetail.handle)
-            //     const area = parseInt(roomDetail.area || '0')
-            //     const _product = {
-            //       ...productData,
-            //       area: roomDetail.area || 0,
-            //       quantity: Math.ceil( (area * 1.3)/ 5) ,
-            //       bucketType: ""
-            //     }
-  
-            //     this.products.push(_product)
-            //     this.setSealerQty(Math.ceil((area * 1.3) / 5))
-                
-
-            //     this.$store.product.addProduct(_product)
-                
-            //     if(roomDetail.celingProduct.handle) {
-            //       console.log(roomDetail.celingProduct)
-            //       const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
-            //       celingProduct.area = roomDetail.area
-            //       celingProduct.quantity = roomDetail.area / 5
-            //       celingProduct.bucketType = ''
-            //       this.products.push(celingProduct)
-            //       this.$store.product.addProduct(celingProduct)
-            //     }
-            //   }
-            // })
 
             try {
               const parser = new DOMParser()
