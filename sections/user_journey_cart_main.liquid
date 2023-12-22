@@ -940,136 +940,144 @@
       })
       Alpine.data('userCart', () => ({
           async init() {
-    try {
-      this.products = [];
-      this.cart = [];
-      this.rooms = [];
-      this.celings = [];
-      this.sealer = null;
-      this.sealerQty = 0;
-      console.log('userCart ready');
+            this.products = []
+            this.cart = []
+            this.rooms = []
+            this.celings = []
+            this.sealer = null
+            this.sealerQty = 0
+            console.log('userCart ready')
+            // I get called before the element using this data initializes.
+            const url = new URL(window.location.href)
+            const params = url.searchParams
+            const data = {}
+            
+            params.forEach((value, key) => {
+              data[key] = value
+            })
 
-      const url = new URL(window.location.href);
-      const params = url.searchParams;
-      const data = {};
+            this.data = JSON.parse(data.paintDetails)
+            this.rooms = this.data.roomsDetails
+            this.questions = this.data.questions
 
-      params.forEach((value, key) => {
-        data[key] = value;
-      });
+            this.data.roomsDetails.forEach(async roomDetail => {
+              console.log('Detail: ',roomDetail)
 
-      this.data = JSON.parse(data.paintDetails);
-      this.rooms = this.data.roomsDetails;
-      this.questions = this.data.questions;
+              if(roomDetail.handle) {
+                const productData = await this.getProductData(roomDetail.handle)
+                const area = parseInt(roomDetail.area || '0')
+                const _product = {
+                  ...productData,
+                  area: roomDetail.area || 0,
+                  quantity: Math.ceil( (area * 1.3)/ 5) ,
+                  bucketType: ""
+                }
+  
+                this.products.push(_product)
+                this.setSealerQty(Math.ceil((area * 1.3) / 5))
+                
 
-      const roomDetailsPromises = this.data.roomsDetails.map(async (roomDetail) => {
-        if (roomDetail.handle) {
-          const productData = await this.getProductData(roomDetail.handle);
-          const area = parseInt(roomDetail.area || '0');
-          const _product = {
-            ...productData,
-            area: roomDetail.area || 0,
-            quantity: Math.ceil((area * 1.3) / 5),
-            bucketType: "",
-          };
+                this.$store.product.addProduct(_product)
+                
+                if(roomDetail.celingProduct.handle) {
+                  console.log(roomDetail.celingProduct)
+                  const celingProduct = await this.getProductData(roomDetail.celingProduct.handle)
+                  celingProduct.area = roomDetail.area
+                  celingProduct.quantity = roomDetail.area / 5
+                  celingProduct.bucketType = ''
+                  this.products.push(celingProduct)
+                  this.$store.product.addProduct(celingProduct)
+                }
+              }
+            })
 
-          this.products.push(_product);
-          this.setSealerQty(Math.ceil((area * 1.3) / 5));
-          this.$store.product.addProduct(_product);
+            try {
+              const parser = new DOMParser()
+              
+              const sealerReq = await fetch('/products/gush-ecoseal?view=json')
+              const sealerText = await sealerReq.text()
 
-          if (roomDetail.celingProduct.handle) {
-            const celingProduct = await this.getProductData(roomDetail.celingProduct.handle);
-            celingProduct.area = roomDetail.area;
-            celingProduct.quantity = roomDetail.area / 5;
-            celingProduct.bucketType = '';
-            this.products.push(celingProduct);
-            this.$store.product.addProduct(celingProduct);
-          }
-        }
-      });
+              const doc = parser.parseFromString(sealerText, 'text/html')
 
-      await Promise.all(roomDetailsPromises);
+              const sealerProduct = JSON.parse(doc.querySelector('#productJSON').textContent)
+              const selectedVariant = sealerProduct.variants.find(_ => _.option1=="5L")
 
-      const parser = new DOMParser();
-      const sealerReq = await fetch('/products/gush-ecoseal?view=json');
-      const sealerText = await sealerReq.text();
-      const doc = parser.parseFromString(sealerText, 'text/html');
+              this.sealer = {
+                ...sealerProduct,
+                area: this.data.sealerQuantity*10,
+                quantity: 0,
+                selectedVariant: selectedVariant,
+                _image: 'https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Frame_2233.png?v=1700816494'
+              }
+              this.$store.product.sealer = this.sealer
 
-      const sealerProduct = JSON.parse(doc.querySelector('#productJSON').textContent);
-      const selectedVariant = sealerProduct.variants.find(_ => _.option1 == "5L");
+            }
+            catch(e) {
+              console.log(e)
+            }
+          },
+          setSealerQty(qty) {
+            console.log(qty, this.sealerQty)
+            this.sealerQty = this.sealerQty + qty
+            if(this.sealer) this.sealer.quantity = this.sealerQty
+          },
 
-      this.sealer = {
-        ...sealerProduct,
-        area: this.data.sealerQuantity * 10,
-        quantity: 0,
-        selectedVariant: selectedVariant,
-        _image: 'https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Frame_2233.png?v=1700816494'
-      };
-      this.$store.product.sealer = this.sealer;
-    } catch (error) {
-      console.error(error);
-    }
-  },
+          getProductData(handle) {
+            return new Promise(async (resolve, reject) => {
+              
+              const url = `/products/${handle}?view=json`
+              console.log(handle)
+              try {
+                const req = await fetch(url)
+                const html = await req.text()
 
-  setSealerQty(qty) {
-    console.log(qty, this.sealerQty);
-    this.sealerQty = this.sealerQty + qty;
-    if (this.sealer) this.sealer.quantity = this.sealerQty;
-  },
+                const parser = new DOMParser()
+                const doc = parser.parseFromString(html, 'text/html')
 
-  async getProductData(handle) {
-    try {
-      const url = `/products/${handle}?view=json`;
-      const req = await fetch(url);
-      const html = await req.text();
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      const dataElement = doc.querySelector('#productJSON');
-
-      if (dataElement) {
-        return JSON.parse(dataElement.textContent);
-      }
-      return null;
-    } catch (error) {
-      console.error(error);
-      return null;
-    }
-  },
-
-  async addToCart(id, product) {
-    this.cart.push(product);
-    console.log(id, product);
-    this.$store.product.addItem(product);
-    console.log(this.cart);
-  },
-
-  async addAllToCart() {
-    let note = '';
-    this.questions.forEach(item => {
-      const string = `${item.question.replace('?', '')}: ${item.answer}\n`;
-      note = note + string;
-    });
-
-    const data = {
-      items: this.$store.product.items,
-      note: note
-    };
-
-    console.log(data);
-
-    try {
-      const res = await fetch('/cart/add.js', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
+                const dataElement = doc.querySelector('#productJSON')
+                if(dataElement) {
+                  const product = JSON.parse(dataElement.textContent)
+                  resolve(product)
+                }
+                resolve(null)
+              }
+              catch(e) {
+                console.log(e)
+              }
+            })
+            
+          },
+        async addToCart(id, product) {
+          this.cart.push(product)
+          console.log(id, product)
+          this.$store.product.addItem(product)
+          console.log(this.cart)
         },
-        body: JSON.stringify(data)
-      });
-      const cart = await res.json();
-      location.href = '/cart';
-    } catch (error) {
-      console.error(error);
-    }
-  },
+        async addAllToCart() {
+          let note = ''
+          this.questions.forEach(item => {
+            console.log(item)
+            const string = `${item.question.replace('?', '')}: ${item.answer}\n`
+            note = note + string
+          })
+          
+          let data = {
+            items: this.$store.product.items,
+            note: note
+          }
+
+          console.log(data)
+
+          const res = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          })
+          const cart = await res.json()
+          location.href = '/cart'
+        },
         generatePDF() {
 
           const container = document.getElementById('user_journey_cart')
