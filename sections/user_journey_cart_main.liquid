@@ -1039,10 +1039,13 @@
             //   console.log(e)
             // }
           },
-          setSealerQty(qty) {
-            console.log(qty, this.sealerQty)
-            this.sealerQty = this.sealerQty + qty
-            if(this.sealer) this.sealer.quantity = this.sealerQty
+
+          getSealerQty() {
+            let total = 0
+            this.products.forEach(item => {
+              total = total + item.quantity
+            })
+            return total / 2
           },
 
           getProductData(handle) {
