@@ -847,7 +847,7 @@
           this.products.forEach(item => {
             total+= item.quantity
           })
-          console.log(total)
+          this.finalSealerQuantity = total / 2
         },
         increaseQty(product) {
           this.products.forEach(item => {
