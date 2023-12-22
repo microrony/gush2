@@ -1000,7 +1000,7 @@
 
               const sealerProduct = JSON.parse(doc.querySelector('#productJSON').textContent)
               const selectedVariant = sealerProduct.variants.find(_ => _.option1=="5L")
-
+              const sealerQty = getSealerQty
               this.sealer = {
                 ...sealerProduct,
                 area: this.data.sealerQuantity*10,
