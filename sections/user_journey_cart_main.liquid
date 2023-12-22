@@ -1046,7 +1046,7 @@
             this.products.forEach(item => {
               total = total + item.quantity
             })
-            return total / 2
+            return Math.ceil(total / 2)
           },
 
           getProductData(handle) {
