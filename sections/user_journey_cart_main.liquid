@@ -839,19 +839,16 @@
         items: [],
         addProduct(product) {
           this.products.push(product)
+          this.setSealerQty()
+        },
+        setSealerQty() {
+          console.log('sealer quantity')
         },
         increaseQty(product) {
           this.products.forEach(item => {
             
             if(item.id == product.id) {
               item.quantity++
-
-              // this.cart.forEach(_ => {
-              //   console.log(_)
-              //   if(_.id == item.id) {
-              //     console.log(_, item)
-              //   }
-              // })
             }
           })
           this.setTotal()
@@ -860,12 +857,6 @@
           this.products.forEach(item => {
             if(item.id == product.id) {
               item.quantity--
-
-              // this.cart.forEach(_ => {
-              //   if(_.id == item.id) {
-              //     console.log(_, item)
-              //   }
-              // })
             }
           })
           this.setTotal()
