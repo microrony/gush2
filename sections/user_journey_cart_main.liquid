@@ -838,10 +838,6 @@
         finalSealerQuantity: 0,
         items: [],
         sealer: null,
-        addProduct(product) {
-          this.products.push(product)
-          this.setSealerQty()
-        },
         setSealerQty() {
           console.log('sealer quantity')
           let total = 0
@@ -992,13 +988,9 @@
               const roomDetailsProducts = await Promise.all(roomDetailsProductsPromises);
               const flattenedProducts = roomDetailsProducts.flat().filter(product => product !== null);
 
+              this.products = flattenedProducts
               this.$store.product.products = flattenedProducts
-            }
-            catch(error) {
-              console.log('Error', error)
-            }
 
-            try {
               const parser = new DOMParser()
               
               const sealerReq = await fetch('/products/gush-ecoseal?view=json')
@@ -1017,11 +1009,35 @@
                 _image: 'https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Frame_2233.png?v=1700816494'
               }
               this.$store.product.sealer = this.sealer
+            }
+            catch(error) {
+              console.log('Error', error)
+            }
 
-            }
-            catch(e) {
-              console.log(e)
-            }
+            // try {
+            //   const parser = new DOMParser()
+              
+            //   const sealerReq = await fetch('/products/gush-ecoseal?view=json')
+            //   const sealerText = await sealerReq.text()
+
+            //   const doc = parser.parseFromString(sealerText, 'text/html')
+
+            //   const sealerProduct = JSON.parse(doc.querySelector('#productJSON').textContent)
+            //   const selectedVariant = sealerProduct.variants.find(_ => _.option1=="5L")
+
+            //   this.sealer = {
+            //     ...sealerProduct,
+            //     area: this.data.sealerQuantity*10,
+            //     quantity: 0,
+            //     selectedVariant: selectedVariant,
+            //     _image: 'https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Frame_2233.png?v=1700816494'
+            //   }
+            //   this.$store.product.sealer = this.sealer
+
+            // }
+            // catch(e) {
+            //   console.log(e)
+            // }
           },
           setSealerQty(qty) {
             console.log(qty, this.sealerQty)
