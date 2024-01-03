@@ -191,11 +191,20 @@
             "title": "Florence Residences",
             "description": ""
           }
+        },
+        "2fefe560-a183-49b9-b1fc-d0457a39d565": {
+          "type": "image",
+          "settings": {
+            "slider-image": "shopify:\/\/shop_images\/TENGAH.png",
+            "title": "Tengah Plantation",
+            "description": ""
+          }
         }
       },
       "block_order": [
         "84e3d980-3f48-4b78-a811-3042f7d33808",
-        "b80e44f1-a907-4152-848d-0aa53c0a2db4"
+        "b80e44f1-a907-4152-848d-0aa53c0a2db4",
+        "2fefe560-a183-49b9-b1fc-d0457a39d565"
       ],
       "settings": {
         "heading": "Ongoing projects"
