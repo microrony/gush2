@@ -274,6 +274,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           font-size: 1.6rem;
         }
       }
+      /* globo form custom */
+      .globo-form-control input, .globo-form-control textarea, .globo-form-control select{
+        backgroud: #fff !important;
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
