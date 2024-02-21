@@ -105,6 +105,7 @@
         "blocks": {
           "announcement_KmF4zy": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Join our mouldiest wall competition and win up to $3,000 worth of professional mould removal and painting services",
               "text_clr": "#ff5500",
