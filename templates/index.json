@@ -48,6 +48,12 @@
         "show_text_below": false
       }
     },
+    "pagefly_section_Gtm6hg": {
+      "type": "pagefly-section",
+      "settings": {
+        "section_id": "pf-f59c95eb"
+      }
+    },
     "e7023664-6059-43cf-8030-a3b7bd05b89f": {
       "type": "image-banner",
       "blocks": {
@@ -441,6 +447,7 @@
   },
   "order": [
     "6ff782c6-f777-4520-9053-9a135fb2b9df",
+    "pagefly_section_Gtm6hg",
     "e7023664-6059-43cf-8030-a3b7bd05b89f",
     "74a74acc-f9e6-4d8d-b74e-d8bec517ce01",
     "5a44ca41-997e-4a85-a054-4cb4d273dceb",
