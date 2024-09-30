@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "e62b00f8-1831-4efc-8db8-a63cb17c3506": {
@@ -7,28 +16,70 @@
           "type": "text",
           "settings": {
             "heading": "Who this Limited Lifetime Warranty for Paint Extends To",
-            "content": "<ol><li>This limited warranty extends to the original purchaser of any Paint. The “Original Purchaser,” for the purposes of this warranty, is the first purchaser of the Paint from gush who owns or rents their home and who applies (or who has a painting contractor apply) the Paint to their home. All references to “you” or “your” herein refer only to original purchasers. gush limited warranties are not transferable. All gush warranties are valid only for the duration the original purchaser of the Paint owns or rents their home. A copy of your invoice is required to determine warranty applicability.\n<\/li><\/ol>"
+            "content": "<ol><li>This limited warranty extends to the original purchaser of any Paint. The “original purchaser” is defined as the first person to purchase the Paint from Gush who either owns or rents the property where the Paint is applied. This warranty is only valid for the duration of the original purchaser’s ownership or tenancy of the property. All references to \"you\" or \"your\" herein refer solely to original purchasers. Gush warranties are non-transferable. Proof of purchase is required to determine warranty eligibility.\n</li></ol>"
           }
         },
         "d2834eef-5f1f-4ca1-bdb7-55253347c07f": {
           "type": "text",
           "settings": {
-            "heading": "gush’s Limited Lifetime Warranty for Paint and Responsibilities",
-            "content": "<ol>\n<li>\ngush warrants the Paint in its original packaging sold to the Original Purchaser against Paint Defects (as defined in Section C below), so long as the Paint is used normally in accordance with instructions on the label and the product Technical Data Sheets.\n<\/li>\n<\/ol>"
+            "heading": "gush’s Limited Lifetime Warranty and Responsibilities",
+            "content": "<ol>\n<li>\nGush warrants the Paint in its original packaging sold to you against the defects as defined in Section 3 below, for as long as you reside in the property, provided that the Paint is applied and maintained according to label instructions.</li>\n</ol>"
           }
         },
         "c93722ad-f5c3-4594-98c6-13a597fe7170": {
           "type": "text",
           "settings": {
             "heading": "What this Limited Lifetime Warranty for Paint Covers",
-            "content": "<ol>\n<li>\nTHIS LIMITED LIFETIME WARRANTY APPLIES SOLELY TO THE FOLLOWING DEFECTS:\n<ol>\n<li>\nCracking, chipping, blistering, or peeling from properly prepared surfaces; and\n<\/li>\n<li>\nWearing down to expose the underlying surface of properly prepared surfaces (collectively, the “Paint Defects”).\n<\/li>\n<\/ol>\n<\/li>\n<\/ol>"
+            "content": "<ol>\n<li>\nTHIS LIMITED LIFETIME WARRANTY covers the following:\n<ol>\n<li>\n<b>Peeling, blistering, and flaking</b> of paint from surfaces that have been properly prepared and maintained.</li>\n<li>\n<b>Significant discolouration or fading </b> not typical of the normal ageing or wear processes of paint over time.</li>\n</ol>\n</li>\n</ol>"
           }
         },
         "596cdd96-ea6c-497c-b3c8-18948f3c1fe0": {
           "type": "text",
           "settings": {
-            "heading": "What this Limited Lifetime Warranty for Paint Excludes",
-            "content": "<ol>\n<li>THIS LIMITED LIFETIME WARRANTY DOES NOT COVER:\n<ol>\n<li>Normal color fading, gloss loss, or chalking caused by exposure to sunlight, wind, or water;<\/li>\n<li>Abrasion or burnishing due to scrubbing, traffic, or other wear and tear;<\/li>\n<li>Cracking, chipping, blistering, or peeling caused by structural expansion and contraction, settling, or other movement of building components, by excessive heat exposure, or by water intrusion;<\/li>\n<li>Film degradation or discoloration due to mold or mildew; or<\/li>\n<li>Damages resulting from improper surface preparation or coating application, extraordinary or catastrophic events, or failure to perform recommended maintenance.<\/li>\n<\/ol>\n<\/li>\n<\/ol>"
+            "heading": "What this Limited Lifetime Warranty Excludes",
+            "content": "<ol>\n<li>THIS LIMITED LIFETIME WARRANTY DOES NOT COVER:\n<ol>\n<li>Expected colour fading, gloss loss, or chalking due to typical climate conditions (sun, humidity, rain, etc.);</li>\n<li>Damage from scrubbing, high traffic, or other day-to-day wear and tear;</li>\n<li>Peeling, blistering, or flaking caused by structural shifts, extreme heat exposure, or water intrusion;</li>\n<li>Mould or mildew growth due to high humidity, unless a separate mould warranty is awarded; or</li>\n<li>Improper surface preparation or incorrect application.</li>\n</ol>\n</li>\n</ol>"
+          }
+        },
+        "text_g9amK9": {
+          "type": "text",
+          "settings": {
+            "heading": "Your Sole and Exclusive Remedy",
+            "content": "<ol>\n<li>\nIf a defect is identified, Gush’s only responsibility is, at its discretion, to either provide replacement Paint or issue a refund for the defective Paint. Acceptance of any remedy by Gush Paint will fully settle all claims regarding the defect.\n</li>\n</ol>"
+          }
+        },
+        "text_MwdpHB": {
+          "type": "text",
+          "settings": {
+            "heading": "Claim Process",
+            "content": "<ol>\n<li>\nTo make a warranty claim, you are required to:\n<ol>\n<li>\nProvide proof of your original purchase (receipt/invoice).</li>\n<li>\nSubmit a detailed description of the issue, along with photographs of the affected area.</li>\n<li>\nAll claims must be submitted via email to hello@gush.earth.</li>\n<li>\nAdditionally, the Paint must have been used as instructed on the label, including proper surface preparation, sufficient drying times between coats, and using sealers where applicable.</li>\n</ol>\n</li>\n</ol>"
+          }
+        },
+        "text_3dc9ww": {
+          "type": "text",
+          "settings": {
+            "heading": "General Conditions",
+            "content": "<ol>\n<li>\nThis limited warranty applies only to the paint itself and does not cover labour or the costs associated with paint removal.\n</li>\n<li>\nGush reserves the right to inspect the property before approving any claim.\n</li>\n<li>\nGush may conduct testing of the Paint to determine the cause of the defect before resolving the claim.</li>\n</ol>"
+          }
+        },
+        "text_pHx6qW": {
+          "type": "text",
+          "settings": {
+            "heading": "Disclaimer, Limitations on Liability",
+            "content": "<ol>\n<li> To the fullest extent allowed by Singaporean law, Gush provides the Paint “as is” and disclaims all other warranties, express or implied, including implied warranties of merchantability or fitness for a particular purpose. Gush will not be held responsible for any incidental, consequential, or indirect damages related to the use or inability to use the Paint. Gush’s total liability will not exceed the original purchase price of the Paint.</li>\n</ol>"
+          }
+        },
+        "text_AbYaYT": {
+          "type": "text",
+          "settings": {
+            "heading": "Modifications and Alterations of Product",
+            "content": "<ol>\n<li>\nGush is not liable for any Paint that has been altered, processed, or modified after purchase.</li>\n</ol>"
+          }
+        },
+        "text_q6YxmC": {
+          "type": "text",
+          "settings": {
+            "heading": "Governing Law",
+            "content": "<ol>\n<li>\nThis warranty, and any actions related to it, will be governed by the laws of Singapore. All disputes will be handled exclusively by the courts of Singapore.</li>\n</ol>"
           }
         }
       },
@@ -36,11 +87,20 @@
         "990087a5-adae-4199-8239-571036210a1c",
         "d2834eef-5f1f-4ca1-bdb7-55253347c07f",
         "c93722ad-f5c3-4594-98c6-13a597fe7170",
-        "596cdd96-ea6c-497c-b3c8-18948f3c1fe0"
+        "596cdd96-ea6c-497c-b3c8-18948f3c1fe0",
+        "text_g9amK9",
+        "text_MwdpHB",
+        "text_3dc9ww",
+        "text_pHx6qW",
+        "text_AbYaYT",
+        "text_q6YxmC"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "heading": "gush Limited\nLifetime Warranty",
-        "secondary-heading": "Last Updated: 18 March 2020\n<br><br>\nYour gush interior paint is covered by a Limited Lifetime Warranty, subject to the terms and conditions set forth herein. This limited warranty gives you specific legal rights.\nThis limited warranty extends to any paint products manufactured by LivinWall Pte. Ltd. (“gush”) and purchased directly from gush (the “Paint”).",
+        "secondary-heading": "Last Updated: 30 September 2024\n<br><br>\nYour Gush paint is covered by a Limited Warranty, subject to the terms and conditions set forth herein. This warranty provides you with specific legal rights. This limited warranty extends to any paint products manufactured by Gush Pte. Ltd. (“gush”) and purchased directly from gush (the “Paint”).",
         "padding_top": 100,
         "padding_bottom": 100
       }
