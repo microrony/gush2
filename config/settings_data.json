@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
@@ -83,11 +92,11 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_twitter_link": "https:\/\/twitter.com\/gushearth",
-    "social_facebook_link": "https:\/\/www.facebook.com\/gush.earth",
-    "social_pinterest_link": "https:\/\/www.pinterest.com\/gushearth\/",
-    "social_instagram_link": "http:\/\/instagram.com\/gush.earth",
-    "social_linkedin_link": "https:\/\/www.linkedin.com\/company\/gushearth",
+    "social_twitter_link": "https://twitter.com/gushearth",
+    "social_facebook_link": "https://www.facebook.com/gush.earth",
+    "social_pinterest_link": "https://www.pinterest.com/gushearth/",
+    "social_instagram_link": "http://instagram.com/gush.earth",
+    "social_linkedin_link": "https://www.linkedin.com/company/gushearth",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
@@ -96,9 +105,9 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "favicon": "shopify://shop_images/favicon.png",
     "currency_code_enabled": true,
-    "checkout_logo_image": "shopify:\/\/shop_images\/Group_1944_0a9998f3-351f-4738-9d68-2df617f6fbae.png",
+    "checkout_logo_image": "shopify://shop_images/Group_1944_0a9998f3-351f-4738-9d68-2df617f6fbae.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -117,17 +126,14 @@
         "block_order": [
           "announcement_KmF4zy"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "header": {
         "type": "header",
-        "custom_css": [
-
-        ],
+        "custom_css": [],
         "settings": {
           "color_scheme": "background-2",
-          "logo": "shopify:\/\/shop_images\/Group_1944_0a9998f3-351f-4738-9d68-2df617f6fbae.png",
+          "logo": "shopify://shop_images/Group_1944_0a9998f3-351f-4738-9d68-2df617f6fbae.png",
           "logo_svg": "logo.svg",
           "logo_width": 50,
           "logo_position": "middle-left",
@@ -167,9 +173,7 @@
           "footer-1",
           "745b7e59-5114-4407-93b3-9471285e5a4a"
         ],
-        "custom_css": [
-
-        ],
+        "custom_css": [],
         "settings": {
           "color_scheme": "background-2",
           "newsletter_enable": true,
@@ -179,8 +183,8 @@
           "enable_language_selector": false,
           "payment_enable": false,
           "margin_top": 0,
-          "copy": "2024 Gush",
-          "logo_ftr": "shopify:\/\/shop_images\/logo_1.png",
+          "copy": "2024 Gush <br><br>200 Braddell Road<br>Block B(2-1) #02-09  BCA Academy<br>Singapore 579700",
+          "logo_ftr": "shopify://shop_images/logo_1.png",
           "footer_svg": "logo.svg",
           "padding_top": 68,
           "padding_bottom": 0
@@ -221,39 +225,32 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "1513253815146976218": {
-        "type": "shopify:\/\/apps\/omnisend-email-marketing-sms\/blocks\/app-embed\/44704aa2-794f-4c5d-8c8e-039c841158e9",
+        "type": "shopify://apps/omnisend-email-marketing-sms/blocks/app-embed/44704aa2-794f-4c5d-8c8e-039c841158e9",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "1759773598402494664": {
-        "type": "shopify:\/\/apps\/rt-whatsapp-chat-live-chat\/blocks\/app-embed\/9baee9b7-6929-47af-9935-05bcdc376396",
+        "type": "shopify://apps/rt-whatsapp-chat-live-chat/blocks/app-embed/9baee9b7-6929-47af-9935-05bcdc376396",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "16278478101612877664": {
-        "type": "shopify:\/\/apps\/pagefly-landing-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "type": "shopify://apps/pagefly-landing-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "12314280791104830742": {
-        "type": "shopify:\/\/apps\/webengage\/blocks\/webengage-embed\/1d458caf-1d70-4697-a570-55048d495614",
+        "type": "shopify://apps/webengage/blocks/webengage-embed/1d458caf-1d70-4697-a570-55048d495614",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "6279071938380501511": {
-        "type": "shopify:\/\/apps\/powerful-form-builder\/blocks\/app-embed\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+        "type": "shopify://apps/powerful-form-builder/blocks/app-embed/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -373,8 +370,7 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",
@@ -409,7 +405,7 @@
               "type": "text",
               "settings": {
                 "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
               }
             }
           },
