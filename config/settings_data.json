@@ -112,6 +112,15 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "announcement_KKinMC": {
+            "type": "announcement",
+            "settings": {
+              "text": "Selamat Hari Raya! Enjoy 15% off your paints with us using the promo code: RAYA15",
+              "text_clr": "#ff5500",
+              "color_scheme": "accent-1",
+              "link": "shopify://collections/all"
+            }
+          },
           "announcement_KmF4zy": {
             "type": "announcement",
             "disabled": true,
@@ -124,6 +133,7 @@
           }
         },
         "block_order": [
+          "announcement_KKinMC",
           "announcement_KmF4zy"
         ],
         "settings": {}
