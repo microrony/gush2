@@ -119,26 +119,26 @@
           "type": "text",
           "settings": {
             "faq_img": "shopify://shop_images/Rectangle_156_106823b4-24f1-4b32-821e-0d33f6c22392.png",
-            "title": "<h2><b>Season Experts</b></h2>",
-            "faq_quality": "Seasoned and highly professional painters  ensure even complicated areas are well coated.",
-            "faq_ans": ""
+            "title": "Seasoned Experts",
+            "faq_quality": "",
+            "faq_ans": "Seasoned and highly professional painters  ensure even complicated areas are well coated."
           }
         },
         "21d96d48-0267-40a6-8878-ec207f99e2bd": {
           "type": "text",
           "settings": {
             "faq_img": "shopify://shop_images/Rectangle_157_272fce90-6a08-452c-b6f3-71d7b71b70a2.png",
-            "title": "<h2><b> Start-To-End</b></h2>",
-            "faq_quality": "Plastering, wall repair, mold treatment & room disinfection. Fulfill all your paint job requirements in one place.",
-            "faq_ans": ""
+            "title": "Start-To-End",
+            "faq_quality": "",
+            "faq_ans": "Plastering, wall repair, mold treatment & room disinfection. Fulfill all your paint job requirements in one place."
           }
         },
         "488b63cd-e863-4429-a174-f3cea2ecb3fb": {
           "type": "text",
           "settings": {
             "faq_img": "shopify://shop_images/Rectangle_6_52d4bfea-e6d8-4477-9d07-51813899e1a0.png",
-            "title": "<h2><b2>Flexible & Thorough</b2></h2>",
-            "faq_quality": "Get accurate quotations tailored to your specific needs, with quality materials & equipment assured for all projects.",
+            "title": "Flexible & Thorough",
+            "faq_quality": "",
             "faq_ans": "Get accurate quotations tailored to your specific needs, with quality materials & equipment assured for all projects."
           }
         }
