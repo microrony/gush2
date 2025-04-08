@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "community_group_banner": {
@@ -6,7 +15,7 @@
         "ba68abe8-60fe-43e7-8cfa-1a9621287c3f": {
           "type": "heading",
           "settings": {
-            "heading": "Boulevard 88",
+            "heading": "Our Painting Services",
             "heading_color": "#000000",
             "heading_size": "h0"
           }
@@ -14,18 +23,19 @@
         "a1fd7613-91cc-46e1-8ec9-765938383ddd": {
           "type": "text",
           "settings": {
-            "text": "Great neighbours, great savings, great homes.",
+            "text": "Consciously done,\nbeautifully finished.\n\nPainting your space\nwith the planet in mind.",
             "color": "#000000",
+            "text_width": 0,
             "text_style": "body"
           }
         },
         "ce3e4621-5261-45d6-9bec-aa15957d761c": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Sign up now",
+            "button_label_1": "Enquire now",
             "btn_bg_color": "",
             "btn_color": "",
-            "button_link_1": "shopify:\/\/pages\/contact-us",
+            "button_link_1": "shopify://pages/contact-us",
             "button_label_2": "",
             "button_link_2": ""
           }
@@ -37,8 +47,8 @@
         "ce3e4621-5261-45d6-9bec-aa15957d761c"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BOULEVARD88_Web.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/BOULEVARD88_Mobile.jpg",
+        "image": "shopify://shop_images/gush_retail_paint_serivicing_page_hero_banner_-_no_copy_-_1920x1080_99d60f22-a7f1-455e-ac73-da8c56032cbb.png",
+        "image_mobile": "shopify://shop_images/gush_retail_paint_serivicing_page_hero_banner_-_no_copy_-_390x844_6a5641e0-9cd0-48b2-a36d-21f5aa7cbb06.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -55,10 +65,18 @@
     "reason_to_chose_gush": {
       "type": "section-reason-to-chose-gush",
       "blocks": {
+        "portfolio_Rkk4ww": {
+          "type": "portfolio",
+          "settings": {
+            "portfolio_title": "",
+            "portfolio_des": "",
+            "svg": ""
+          }
+        },
         "22a693ff-45dc-4579-b308-601ac90e8851": {
           "type": "portfolio",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_332_1.png",
+            "image": "shopify://shop_images/Frame_332_1.png",
             "portfolio_title": "Get a head start",
             "portfolio_des": "Reduce your renovation costs while getting the best of Gush paints, window films and services.",
             "svg": "Group Buy SVG 1.svg"
@@ -67,7 +85,7 @@
         "51e578e6-5b3b-40aa-b091-cdd07505abdc": {
           "type": "portfolio",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_332_2.png",
+            "image": "shopify://shop_images/Frame_332_2.png",
             "portfolio_title": "In good company",
             "portfolio_des": "Meet your neighbours and start building healthy connections with your new community.",
             "svg": "Group Buy SVG 2.svg"
@@ -76,7 +94,7 @@
         "8a43182e-fce6-4fbf-8d3c-d1119fbcf918": {
           "type": "portfolio",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_435.png",
+            "image": "shopify://shop_images/Frame_435.png",
             "portfolio_title": "Faster, better, together",
             "portfolio_des": "Joining our group buy saves you time, money and energy, so we can get your home painted more quickly.",
             "svg": "Group Buy SVG 3.svg"
@@ -84,10 +102,12 @@
         }
       },
       "block_order": [
+        "portfolio_Rkk4ww",
         "22a693ff-45dc-4579-b308-601ac90e8851",
         "51e578e6-5b3b-40aa-b091-cdd07505abdc",
         "8a43182e-fce6-4fbf-8d3c-d1119fbcf918"
       ],
+      "disabled": true,
       "settings": {
         "section_title": "The more,\nthe merrier"
       }
@@ -95,7 +115,68 @@
     "cdb51a37-bda3-4e98-9a91-3cfb474f2de8": {
       "type": "ingredient",
       "blocks": {
+        "text_8VgyW4": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify://shop_images/Rectangle_156_106823b4-24f1-4b32-821e-0d33f6c22392.png",
+            "title": "<h2><b>Season Experts</b></h2>",
+            "faq_quality": "Seasoned and highly professional painters  ensure even complicated areas are well coated.",
+            "faq_ans": ""
+          }
+        },
         "21d96d48-0267-40a6-8878-ec207f99e2bd": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify://shop_images/Rectangle_157_272fce90-6a08-452c-b6f3-71d7b71b70a2.png",
+            "title": "<h2><b> Start-To-End</b></h2>",
+            "faq_quality": "Plastering, wall repair, mold treatment & room disinfection. Fulfill all your paint job requirements in one place.",
+            "faq_ans": ""
+          }
+        },
+        "488b63cd-e863-4429-a174-f3cea2ecb3fb": {
+          "type": "text",
+          "settings": {
+            "faq_img": "shopify://shop_images/Rectangle_6_52d4bfea-e6d8-4477-9d07-51813899e1a0.png",
+            "title": "<h2><b2>Flexible & Thorough</b2></h2>",
+            "faq_quality": "Get accurate quotations tailored to your specific needs, with quality materials & equipment assured for all projects.",
+            "faq_ans": "Get accurate quotations tailored to your specific needs, with quality materials & equipment assured for all projects."
+          }
+        }
+      },
+      "block_order": [
+        "text_8VgyW4",
+        "21d96d48-0267-40a6-8878-ec207f99e2bd",
+        "488b63cd-e863-4429-a174-f3cea2ecb3fb"
+      ],
+      "settings": {
+        "color": "#ffc900",
+        "heading": "Why  Gush",
+        "sub-heading": "",
+        "link": "",
+        "btn_text": "",
+        "btn_url": "",
+        "sb-heading": "",
+        "radius": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_sub_title": true,
+        "group_buy_page": true,
+        "page": "services"
+      }
+    },
+    "ingredient_m6PwVz": {
+      "type": "ingredient",
+      "blocks": {
+        "text_RbnCb8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "faq_quality": "",
+            "faq_ans": ""
+          }
+        },
+        "text_T6nafh": {
           "type": "text",
           "settings": {
             "title": "2 coats of Gush Paint",
@@ -103,7 +184,7 @@
             "faq_ans": "Enjoy the full benefits of our air-purifying paint with smooth, professionally painted walls and ceilings."
           }
         },
-        "488b63cd-e863-4429-a174-f3cea2ecb3fb": {
+        "text_KPwbxh": {
           "type": "text",
           "settings": {
             "title": "Free colour consultation",
@@ -111,7 +192,7 @@
             "faq_ans": "Allow our colour experts to assist you with shades and palettes to your taste."
           }
         },
-        "656ec867-5e2b-4856-8e2c-a96edc3dcff2": {
+        "text_iwENBT": {
           "type": "text",
           "settings": {
             "title": "Select up to 4 colours",
@@ -119,7 +200,7 @@
             "faq_ans": "Besides white, choose up to 4 different colours from our full colour range."
           }
         },
-        "0fe55fe9-42a6-4dbe-a7e5-4ed05a440867": {
+        "text_LeX9tR": {
           "type": "text",
           "settings": {
             "title": "1 complimentary touch-up",
@@ -127,7 +208,7 @@
             "faq_ans": "We’ll make sure your walls and ceilings are perfectly painted – no patchy spots or areas untouched."
           }
         },
-        "293dacdb-0fad-4f64-bcd7-376bdb85d384": {
+        "text_tyGkRA": {
           "type": "text",
           "settings": {
             "title": "2-year warranty",
@@ -137,16 +218,18 @@
         }
       },
       "block_order": [
-        "21d96d48-0267-40a6-8878-ec207f99e2bd",
-        "488b63cd-e863-4429-a174-f3cea2ecb3fb",
-        "656ec867-5e2b-4856-8e2c-a96edc3dcff2",
-        "0fe55fe9-42a6-4dbe-a7e5-4ed05a440867",
-        "293dacdb-0fad-4f64-bcd7-376bdb85d384"
+        "text_RbnCb8",
+        "text_T6nafh",
+        "text_KPwbxh",
+        "text_iwENBT",
+        "text_LeX9tR",
+        "text_tyGkRA"
       ],
+      "disabled": true,
       "settings": {
         "color": "#ffc900",
-        "heading": "Gush-sized savings",
-        "sub-heading": "Our group buy service packages get you our full suite of paint products, services and window film installation at exclusive rates. Let’s get your new home gushing over with goodness.",
+        "heading": "Why Gush",
+        "sub-heading": "",
         "link": "",
         "btn_text": "",
         "btn_url": "",
@@ -161,6 +244,7 @@
     },
     "b985e53e-d67c-4cec-855b-ea3e6459c597": {
       "type": "parallel-text",
+      "disabled": true,
       "settings": {
         "title": "Come home to \nclean air. Let’s \nthrive together.",
         "description": "Explore properties with Gush group buys happening now. Don’t miss out on discounts for your new home.",
@@ -175,12 +259,11 @@
     },
     "group_buy_slider": {
       "type": "group-buy-slider",
-      "disabled": true,
       "blocks": {
         "84e3d980-3f48-4b78-a811-3042f7d33808": {
           "type": "image",
           "settings": {
-            "slider-image": "shopify:\/\/shop_images\/Untitled_design_2.jpg",
+            "slider-image": "shopify://shop_images/Untitled_design_2.jpg",
             "title": "Parc Esta",
             "description": "First 10 sign-ups: 50% off Gush ClearCool"
           }
@@ -188,7 +271,7 @@
         "b80e44f1-a907-4152-848d-0aa53c0a2db4": {
           "type": "image",
           "settings": {
-            "slider-image": "shopify:\/\/shop_images\/Untitled_design_3.jpg",
+            "slider-image": "shopify://shop_images/Untitled_design_3.jpg",
             "title": "Jadescape",
             "description": "First 10 sign-ups: 50% off Gush ClearCool"
           }
@@ -196,7 +279,7 @@
         "490617d0-4f96-489c-af77-6c86d3cc1130": {
           "type": "image",
           "settings": {
-            "slider-image": "shopify:\/\/shop_images\/Untitled_design_4.jpg",
+            "slider-image": "shopify://shop_images/Untitled_design_4.jpg",
             "title": "Ubi Grove",
             "description": "First 10 sign-ups: 50% off Gush ClearCool"
           }
@@ -204,7 +287,7 @@
         "ab952c9d-a43a-4dc6-a987-329109de0c08": {
           "type": "image",
           "settings": {
-            "slider-image": "shopify:\/\/shop_images\/Untitled_design_5.jpg",
+            "slider-image": "shopify://shop_images/Untitled_design_5.jpg",
             "title": "Piermont Grand",
             "description": "First 10 sign-ups: 50% off Gush ClearCool"
           }
@@ -216,6 +299,7 @@
         "490617d0-4f96-489c-af77-6c86d3cc1130",
         "ab952c9d-a43a-4dc6-a987-329109de0c08"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Ongoing projects"
       }
@@ -226,7 +310,7 @@
         "template--16113211474113__b68e2ab5-a921-40c7-8ec6-ce734910083e-16777436739280daca-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3xResize_3.jpg",
+            "image": "shopify://shop_images/3xResize_3.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -244,7 +328,7 @@
         "a6b8c2a2-3b77-4362-956e-6d13be111551": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3xResize_2.jpg",
+            "image": "shopify://shop_images/3xResize_2.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -262,7 +346,7 @@
         "template--16113211474113__b68e2ab5-a921-40c7-8ec6-ce734910083e-16777436739280daca-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3xResize_1.jpg",
+            "image": "shopify://shop_images/3xResize_1.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -283,6 +367,7 @@
         "a6b8c2a2-3b77-4362-956e-6d13be111551",
         "template--16113211474113__b68e2ab5-a921-40c7-8ec6-ce734910083e-16777436739280daca-0"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
@@ -299,35 +384,35 @@
         "6f1fb3b1-1da9-4aef-9486-1fb801dd4bfd": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_154.png",
+            "brand_img": "shopify://shop_images/image_154.png",
             "url": ""
           }
         },
         "f2bac977-f5c0-4a01-9d6e-bee976dee923": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_159.png",
+            "brand_img": "shopify://shop_images/image_159.png",
             "url": ""
           }
         },
         "5c0b8605-2414-4b17-b747-fd26d3f8aed5": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_156.png",
+            "brand_img": "shopify://shop_images/image_156.png",
             "url": ""
           }
         },
         "5c79e00d-a4f0-4926-b3d4-05f9fb5e0115": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/Untitled_design.png",
+            "brand_img": "shopify://shop_images/Untitled_design.png",
             "url": ""
           }
         },
         "a7874066-7f78-48b2-8999-67903e8cc84d": {
           "type": "image",
           "settings": {
-            "brand_img": "shopify:\/\/shop_images\/image_158.png",
+            "brand_img": "shopify://shop_images/image_158.png",
             "url": ""
           }
         }
@@ -339,6 +424,7 @@
         "5c79e00d-a4f0-4926-b3d4-05f9fb5e0115",
         "a7874066-7f78-48b2-8999-67903e8cc84d"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Past Projects",
         "url": "",
@@ -352,7 +438,6 @@
     },
     "image_with_text_group_buy": {
       "type": "group_buy_image_with_text",
-      "disabled": true,
       "blocks": {
         "17758f2a-44c2-4acb-843a-008ce290fa49": {
           "type": "button",
@@ -360,15 +445,16 @@
             "btn_text": "Start a group buy",
             "btn_color": "#ffffff",
             "btn_bg_color": "#ff42ef",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         }
       },
       "block_order": [
         "17758f2a-44c2-4acb-843a-008ce290fa49"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/image_163.png",
+        "image": "shopify://shop_images/image_163.png",
         "heading": "All set and \nready to go?",
         "description": "Can’t find your property? Start your own group buy today. Get your neighbours enjoying clean, safe homes together with you; special rates included just for you.",
         "page_name": "group_buy"
@@ -400,6 +486,7 @@
     "community_group_banner",
     "reason_to_chose_gush",
     "cdb51a37-bda3-4e98-9a91-3cfb474f2de8",
+    "ingredient_m6PwVz",
     "b985e53e-d67c-4cec-855b-ea3e6459c597",
     "group_buy_slider",
     "b68e2ab5-a921-40c7-8ec6-ce734910083e",
