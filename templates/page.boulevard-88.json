@@ -436,6 +436,12 @@
         "page_name": "group_buy"
       }
     },
+    "pagefly_section_UXTHr7": {
+      "type": "pagefly-section",
+      "settings": {
+        "section_id": "pf-69088bf6"
+      }
+    },
     "image_with_text_group_buy": {
       "type": "group_buy_image_with_text",
       "blocks": {
@@ -473,6 +479,7 @@
       "block_order": [
         "b8484cad-a2ac-411f-af57-ee2e2f81f8a3"
       ],
+      "disabled": true,
       "settings": {
         "title": "Ready to get started? Tell us your details and we’ll reach out to you directly.",
         "heading": "",
@@ -491,6 +498,7 @@
     "group_buy_slider",
     "b68e2ab5-a921-40c7-8ec6-ce734910083e",
     "58c42b95-bd00-4331-9e67-bc6b3c632d07",
+    "pagefly_section_UXTHr7",
     "image_with_text_group_buy",
     "1a67c434-6b6e-411f-94c7-d94d11654b8a"
   ]
