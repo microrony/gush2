@@ -150,8 +150,9 @@
       ],
       "settings": {
         "color": "#ffc900",
-        "heading": "Why  Gush",
+        "heading": "Why",
         "sub-heading": "",
+        "image": "shopify://shop_images/logo.svg",
         "link": "",
         "btn_text": "",
         "btn_url": "",
