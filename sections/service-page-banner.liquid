@@ -269,7 +269,8 @@
           {%- when 'buttons' -%}
             <div class="service-banner__button banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
-                <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="cta-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} cta-button__primary gush-font-teritary{% endif %}" id="serv_bnr_button-{{block.id}}"><span>{{ block.settings.button_label_1 | escape }}</span>{% render 'arrow-dotted' %}</a>
+                <a href="/pages/painting-services#pf-0ca5"
+ class="cta-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} cta-button__primary gush-font-teritary{% endif %}" id="serv_bnr_button-{{block.id}}"><span>{{ block.settings.button_label_1 | escape }}</span>{% render 'arrow-dotted' %}</a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
 								<a {% if block.settings.button_link_2 == blank %}role="link" aria-disabled="true" {% else %}
