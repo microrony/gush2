@@ -244,52 +244,56 @@
       "disabled": true,
       "settings": {}
     },
-    "image_with_text_pFt7Er": {
-      "type": "image-with-text",
+    "image_banner_jawEWF": {
+      "type": "image-banner",
       "blocks": {
-        "heading_rBxr6w": {
+        "heading_LtMGbG": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "",
+            "heading_color": "",
             "heading_size": "h1"
           }
         },
-        "text_qTipJ4": {
+        "text_dPzhNE": {
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "",
             "text_style": "body"
           }
         },
-        "button_WN777c": {
-          "type": "button",
+        "buttons_Dt7Xgt": {
+          "type": "buttons",
           "disabled": true,
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_label_2": "Button label",
+            "button_link_2": ""
           }
         }
       },
       "block_order": [
-        "heading_rBxr6w",
-        "text_qTipJ4",
-        "button_WN777c"
+        "heading_LtMGbG",
+        "text_dPzhNE",
+        "buttons_Dt7Xgt"
       ],
-      "name": "t:sections.image-with-text.presets.name",
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/26_JUNE__WHICH_PAINT_IS_FOR_YOUv3_470659b6-e0e0-4c81-bd77-1ef20defeb82.png",
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "overlap",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "secondary_btn_white": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
-        "page_name": "home",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
@@ -300,6 +304,6 @@
     "16524396805057076a",
     "1652439903eeaf17c8",
     "72a7f502-2042-444c-a966-2f640303a58c",
-    "image_with_text_pFt7Er"
+    "image_banner_jawEWF"
   ]
 }
