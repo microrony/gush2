@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
@@ -25,7 +34,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/US_Landing_Page_1_Desktop_Video_1_V1.gif",
+        "image": "shopify://shop_images/US_Landing_Page_1_Desktop_Video_1_V1.gif",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -43,7 +52,7 @@
       "type": "image-banner",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Interior_Paint_Page_Desktop_Video_1_V1.gif",
+        "image": "shopify://shop_images/Interior_Paint_Page_Desktop_Video_1_V1.gif",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "adapt_height_first_image": false,
@@ -63,7 +72,7 @@
         "template--15643888156865__377cc5db-8f84-4a06-ba87-f4e7d6121502-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>If home is your happy place, let it reflect on your walls. Every tub of Gush paint brims with colour that inspires joy, transformation and self-expression. Whether you’re renovating your home, refreshing your space, or preparing for the arrival of your little one, our non-toxic paints work hard to keep you happy and well.<\/strong><\/p><p> <\/p><p><strong>Features: Anti-moulding | Anti-bacterial | VOC-free | Odourless | Air-purifying | Stain-resistant (Gush Clean Care only) | Humidity-control (Gush Care only) <br\/><\/strong><\/p>"
+            "text": "<p><strong>If home is your happy place, let it reflect on your walls. Every tub of Gush paint brims with colour that inspires joy, transformation and self-expression. Whether you’re renovating your home, refreshing your space, or preparing for the arrival of your little one, our non-toxic paints work hard to keep you happy and well.</strong></p><p> </p><p><strong>Features: Anti-moulding | Anti-bacterial | VOC-free | Odourless | Air-purifying | Stain-resistant (Gush Clean Care only) | Humidity-control (Gush Care only) <br/></strong></p>"
           }
         }
       },
@@ -187,9 +196,7 @@
         "df2a9d7e-0fd1-4613-ace9-114c22451326",
         "0c8ebd4a-72b2-460e-8016-898c033c0c8f"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "collectionList": "",
         "products_per_page": 18,
@@ -204,10 +211,10 @@
         "columns_mobile": "2",
         "ad_product_count": 3,
         "bg_color": "#ff5500",
-        "bg_img": "shopify:\/\/shop_images\/Website_banner5.png",
+        "bg_img": "shopify://shop_images/Website_banner5.png",
         "heading": "Hues to rule the year.",
-        "content": "Spoiled for choice? Check out our 2024 Colour Palette of the Year. It might just tickle your fancy.",
-        "url": "shopify:\/\/pages\/colour-palette",
+        "content": "Spoiled for choice? Check out our 2025 Colour Palette of the Year. It might just tickle your fancy.",
+        "url": "shopify://pages/colour-palette",
         "padding_top": 36,
         "padding_bottom": 36
       }
