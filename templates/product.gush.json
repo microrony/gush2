@@ -214,6 +214,58 @@
         "heading": "Us vs Them"
       }
     },
+    "ooh_image_banner_9XizqE": {
+      "type": "OOH_image_banner",
+      "blocks": {
+        "heading_Hc4irw": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_color": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_yWUTrx": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_KL8QwB": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_label_2": "Button label",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Hc4irw",
+        "text_yWUTrx",
+        "buttons_KL8QwB"
+      ],
+      "name": "OOH Image Banner",
+      "settings": {
+        "image": "shopify://shop_images/Paint_guide.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "secondary_btn_white": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "72a7f502-2042-444c-a966-2f640303a58c": {
       "type": "section-stamped-review",
       "blocks": {
@@ -243,38 +295,6 @@
       ],
       "disabled": true,
       "settings": {}
-    },
-    "image_banner_jawEWF": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_LtMGbG": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "",
-            "heading_color": "",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LtMGbG"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/26_JUNE__WHICH_PAINT_IS_FOR_YOUv3_470659b6-e0e0-4c81-bd77-1ef20defeb82.png",
-        "image_overlay_opacity": 100,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "secondary_btn_white": false,
-        "desktop_content_position": "top-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
     }
   },
   "order": [
@@ -283,7 +303,7 @@
     "1652439533f0dc6359",
     "16524396805057076a",
     "1652439903eeaf17c8",
-    "72a7f502-2042-444c-a966-2f640303a58c",
-    "image_banner_jawEWF"
+    "ooh_image_banner_9XizqE",
+    "72a7f502-2042-444c-a966-2f640303a58c"
   ]
 }
