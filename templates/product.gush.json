@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -5,8 +14,7 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -17,13 +25,11 @@
         },
         "8d33aa52-1e56-49a0-ab5c-9774dcf7b6a0": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -33,8 +39,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -159,7 +164,7 @@
         "cdfe81e2-cf4d-472e-bec0-8ab9619936b7": {
           "type": "text",
           "settings": {
-            "faq_img": "shopify:\/\/shop_images\/image_2022-11-29_081952029.png",
+            "faq_img": "shopify://shop_images/image_2022-11-29_081952029.png",
             "title": "Gush proprietary catalyst",
             "faq_quality": "",
             "faq_ans": "Upon contact, this nifty stimulant excites wall surfaces, causing them to break down pollutants to just harmless water and carbon dioxide. 99% of pollutants are removed in just 21 hours."
@@ -168,7 +173,7 @@
         "b3bf5e61-3ce4-49c8-a560-d9462466cd1b": {
           "type": "text",
           "settings": {
-            "faq_img": "shopify:\/\/shop_images\/image_2022-11-29_082017880.png",
+            "faq_img": "shopify://shop_images/image_2022-11-29_082017880.png",
             "title": "Gush absorption element",
             "faq_quality": "",
             "faq_ans": "Our paint has a unique porous coating that absorbs moisture in the air and spreads it evenly across the surface for speedy evaporation. Keeping the indoors comfortably dry."
@@ -183,7 +188,7 @@
         "color": "#00ff00",
         "heading": "Seeking the secret?  It’s simply Science.",
         "sub-heading": "",
-        "link": "<p><a href=\"\/blogs\/science\/paint-formulation\" target=\"_blank\" title=\"A deep dive into our paint formulation\">Full ingredient details here.<\/a><\/p>",
+        "link": "<p><a href=\"/blogs/science/paint-formulation\" target=\"_blank\" title=\"A deep dive into our paint formulation\">Full ingredient details here.</a></p>",
         "btn_text": "",
         "btn_url": "",
         "sb-heading": "",
@@ -200,13 +205,26 @@
       "settings": {
         "section-title": "Gush is greener \non every side.",
         "section-des": "Who ever thought wellness could come in a larger-than-pint size? 6 features packed in one tub. Better for you, better for the world. \n<br> <br>\n\n¹Gush CleanCare <br>\n²Gush Care",
-        "circuler-img1": "shopify:\/\/shop_images\/Other_paints_1.png",
+        "circuler-img1": "shopify://shop_images/Other_paints_1.png",
         "svg1": "others1.png",
-        "circuler-img2": "shopify:\/\/shop_images\/Gush_1.png",
+        "circuler-img2": "shopify://shop_images/Gush_1.png",
         "svg2": "gush1.png",
         "heading-img1": "Other paints",
         "heading-img2": "Gush",
         "heading": "Us vs Them"
+      }
+    },
+    "comparison_KwgxH6": {
+      "type": "comparison",
+      "settings": {
+        "section-title": "Interior Paint Guide",
+        "section-des": "",
+        "circuler-img1": "shopify://shop_images/26_JUNE__WHICH_PAINT_IS_FOR_YOUv3.png",
+        "svg1": "",
+        "svg2": "",
+        "heading-img1": "",
+        "heading-img2": "",
+        "heading": ""
       }
     },
     "72a7f502-2042-444c-a966-2f640303a58c": {
@@ -237,8 +255,7 @@
         "eb811e8b-33a4-4246-ae7e-0d1fd358b67a"
       ],
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
@@ -247,6 +264,7 @@
     "1652439533f0dc6359",
     "16524396805057076a",
     "1652439903eeaf17c8",
+    "comparison_KwgxH6",
     "72a7f502-2042-444c-a966-2f640303a58c"
   ]
 }
