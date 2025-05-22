@@ -255,39 +255,19 @@
             "heading_color": "",
             "heading_size": "h1"
           }
-        },
-        "text_dPzhNE": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
-        "buttons_Dt7Xgt": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_label_2": "Button label",
-            "button_link_2": ""
-          }
         }
       },
       "block_order": [
-        "heading_LtMGbG",
-        "text_dPzhNE",
-        "buttons_Dt7Xgt"
+        "heading_LtMGbG"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/26_JUNE__WHICH_PAINT_IS_FOR_YOUv3_470659b6-e0e0-4c81-bd77-1ef20defeb82.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_overlay_opacity": 100,
+        "image_height": "large",
         "adapt_height_first_image": false,
         "secondary_btn_white": false,
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-left",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
