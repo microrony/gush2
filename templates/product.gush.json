@@ -216,40 +216,6 @@
     },
     "ooh_image_banner_9XizqE": {
       "type": "OOH_image_banner",
-      "blocks": {
-        "heading_Hc4irw": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_color": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_yWUTrx": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_KL8QwB": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_label_2": "Button label",
-            "button_link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_Hc4irw",
-        "text_yWUTrx",
-        "buttons_KL8QwB"
-      ],
       "name": "OOH Image Banner",
       "settings": {
         "image": "shopify://shop_images/Paint_guide.png",
@@ -257,44 +223,32 @@
         "image_height": "large",
         "adapt_height_first_image": false,
         "secondary_btn_white": false,
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-left",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
     },
-    "72a7f502-2042-444c-a966-2f640303a58c": {
-      "type": "section-stamped-review",
-      "blocks": {
-        "86efca96-87a5-4590-bcc1-603732a4f205": {
-          "type": "review_category",
-          "settings": {
-            "title": "All Reviews"
-          }
-        },
-        "41f19529-855a-4c94-b201-8d22e4acfb83": {
-          "type": "review_category",
-          "settings": {
-            "title": "Services"
-          }
-        },
-        "eb811e8b-33a4-4246-ae7e-0d1fd358b67a": {
-          "type": "review_category",
-          "settings": {
-            "title": "Product"
-          }
-        }
-      },
-      "block_order": [
-        "86efca96-87a5-4590-bcc1-603732a4f205",
-        "41f19529-855a-4c94-b201-8d22e4acfb83",
-        "eb811e8b-33a4-4246-ae7e-0d1fd358b67a"
-      ],
-      "disabled": true,
-      "settings": {}
+    "ooh_image_banner_QGDD4d": {
+      "type": "OOH_image_banner",
+      "name": "OOH Image Banner",
+      "settings": {
+        "image": "shopify://shop_images/product_listing_page_-_interior_paint_guide_section.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "secondary_btn_white": false,
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -304,6 +258,6 @@
     "16524396805057076a",
     "1652439903eeaf17c8",
     "ooh_image_banner_9XizqE",
-    "72a7f502-2042-444c-a966-2f640303a58c"
+    "ooh_image_banner_QGDD4d"
   ]
 }
