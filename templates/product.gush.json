@@ -249,6 +249,56 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "collage_jXF3TB": {
+      "type": "collage",
+      "blocks": {
+        "image_DKGDVV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Paint_guide.png",
+            "image_padding": true
+          }
+        }
+      },
+      "block_order": [
+        "image_DKGDVV"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collage_diEQj4": {
+      "type": "collage",
+      "blocks": {
+        "image_pAYtJn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/product_listing_page_-_interior_paint_guide_section.png",
+            "image_padding": true
+          }
+        }
+      },
+      "block_order": [
+        "image_pAYtJn"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -258,6 +308,8 @@
     "16524396805057076a",
     "1652439903eeaf17c8",
     "ooh_image_banner_9XizqE",
-    "ooh_image_banner_QGDD4d"
+    "ooh_image_banner_QGDD4d",
+    "collage_jXF3TB",
+    "collage_diEQj4"
   ]
 }
