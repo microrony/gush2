@@ -216,6 +216,7 @@
     },
     "ooh_image_banner_9XizqE": {
       "type": "OOH_image_banner",
+      "disabled": true,
       "name": "OOH Image Banner",
       "settings": {
         "image": "shopify://shop_images/Paint_guide.png",
@@ -234,6 +235,7 @@
     },
     "ooh_image_banner_QGDD4d": {
       "type": "OOH_image_banner",
+      "disabled": true,
       "name": "OOH Image Banner",
       "settings": {
         "image": "shopify://shop_images/product_listing_page_-_interior_paint_guide_section.png",
