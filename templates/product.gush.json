@@ -214,24 +214,6 @@
         "heading": "Us vs Them"
       }
     },
-    "ooh_image_banner_9XizqE": {
-      "type": "OOH_image_banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Paint_guide.png",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "secondary_btn_white": false,
-        "desktop_content_position": "top-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "ooh_image_banner_QGDD4d": {
       "type": "OOH_image_banner",
       "disabled": true,
@@ -265,7 +247,7 @@
         "image_DKGDVV"
       ],
       "custom_css": [
-        "div {background-color: #FF42EF;}"
+        "div {background-color: #ff42ef;}"
       ],
       "settings": {
         "heading": "",
@@ -308,7 +290,6 @@
     "1652439533f0dc6359",
     "16524396805057076a",
     "1652439903eeaf17c8",
-    "ooh_image_banner_9XizqE",
     "ooh_image_banner_QGDD4d",
     "collage_jXF3TB",
     "collage_diEQj4"
