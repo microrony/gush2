@@ -195,6 +195,7 @@
         },
         "97779afe-e007-4a6e-82da-c8bc6640cc4a": {
           "type": "faqContent",
+          "disabled": true,
           "settings": {
             "category": "Paints",
             "type": "General questions",
