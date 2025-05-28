@@ -265,13 +265,16 @@
         "image_pAYtJn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/product_listing_page_-_interior_paint_guide_section.png",
+            "image": "shopify://shop_images/Image_3_1.png",
             "image_padding": true
           }
         }
       },
       "block_order": [
         "image_pAYtJn"
+      ],
+      "custom_css": [
+        "img {width: 100%;}"
       ],
       "settings": {
         "heading": "",
