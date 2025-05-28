@@ -274,7 +274,7 @@
         "image_pAYtJn"
       ],
       "custom_css": [
-        "img {width: 100%;}"
+        "@media only screen and (max-width: 560px) {img {width: 100%;}}"
       ],
       "settings": {
         "heading": "",
