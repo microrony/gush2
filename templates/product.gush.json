@@ -82,6 +82,33 @@
         "padding_bottom": 28
       }
     },
+    "collage_jXF3TB": {
+      "type": "collage",
+      "blocks": {
+        "image_DKGDVV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Paint_guide.png",
+            "image_padding": true
+          }
+        }
+      },
+      "block_order": [
+        "image_DKGDVV"
+      ],
+      "custom_css": [
+        "div {background-color: #ff42ef;}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "1652439533f0dc6359": {
       "type": "product-info",
       "blocks": {
@@ -232,33 +259,6 @@
         "show_text_below": true
       }
     },
-    "collage_jXF3TB": {
-      "type": "collage",
-      "blocks": {
-        "image_DKGDVV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Paint_guide.png",
-            "image_padding": true
-          }
-        }
-      },
-      "block_order": [
-        "image_DKGDVV"
-      ],
-      "custom_css": [
-        "div {background-color: #ff42ef;}"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "collage_diEQj4": {
       "type": "collage",
       "blocks": {
@@ -274,7 +274,7 @@
         "image_pAYtJn"
       ],
       "custom_css": [
-        "@media only screen and (max-width: 560px) {img {width: 100%;}}"
+        "@media only screen and (max-width: 560px) {img {width: 100%; }}"
       ],
       "settings": {
         "heading": "",
@@ -290,11 +290,11 @@
   "order": [
     "main",
     "product-recommendations",
+    "collage_jXF3TB",
+    "collage_diEQj4",
     "1652439533f0dc6359",
     "16524396805057076a",
     "1652439903eeaf17c8",
-    "ooh_image_banner_QGDD4d",
-    "collage_jXF3TB",
-    "collage_diEQj4"
+    "ooh_image_banner_QGDD4d"
   ]
 }
