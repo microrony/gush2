@@ -3191,9 +3191,3 @@ h4,
 
 #loyaltylion-beacon-frame { display: none !important; }
 
-
-
-.product__description em,
-.product__description i {
-  font-weight: 400 !important;
-}
