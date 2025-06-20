@@ -369,85 +369,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 </script> -->
 
-<div class="whatsapp-button-container" 
-     style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
 
-  <div id="whatsapp-bubbles" 
-       style="
-         display: none !important;
-         flex-direction: column !important;
-         gap: 6px !important;
-         position: absolute;
-         bottom: 70px;
-         right: 0;
-         background: transparent;
-       ">
-    <button id="close-bubbles" 
-            style="
-              position: absolute;
-              top: -8px;
-              right: -8px;
-              width: 24px;
-              height: 24px;
-              border: none;
-              border-radius: 50%;
-              background: #fff;
-              cursor: pointer;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-size: 16px;
-              line-height: 1;
-              z-index: 10000;
-            ">
-      &times;
-    </button>
+  <script type="text/javascript" src="https://quickchat.ai/user_kit/quickchat8vqb7j.js" id="quickchat_script" scenario_id="2nkxhfhzh6"></script>
 
-    <a href="https://wa.me/6566929000?text=Hi%2C%20I%20am%20looking%20to%20buy%20paints%20for%20a%20touch-up." 
-       target="_blank"
-       style="background: #fff; border-radius: 18px; padding: 6px 12px; font-size: 14px; color: #2F2F2F; text-decoration: none; box-shadow: 0 2px 6px rgba(0,0,0,0.1); white-space: nowrap;">
-      Hi, I am looking to buy paints for a touch-up.
-    </a>
-
-    <a href="https://wa.me/6566929000?text=Hi%2C%20I%20am%20looking%20to%20repaint%20my%20wall." 
-       target="_blank"
-       style="background: #fff; border-radius: 18px; padding: 6px 12px; font-size: 14px; color: #2F2F2F; text-decoration: none; box-shadow: 0 2px 6px rgba(0,0,0,0.1); white-space: nowrap;">
-      Hi, I am looking to repaint my wall.
-    </a>
-
-    <a href="https://wa.me/6566929000?text=Hi%2C%20I%20am%20looking%20for%20a%20painting%20service." 
-       target="_blank"
-       style="background: #fff; border-radius: 18px; padding: 6px 12px; font-size: 14px; color: #2F2F2F; text-decoration: none; box-shadow: 0 2px 6px rgba(0,0,0,0.1); white-space: nowrap;">
-      Hi, I am looking for a painting service.
-    </a>
-  </div>
-
-  <!-- add text-decoration:none here -->
-  <a href="https://wa.me/6566929000?text=Hi%2C%20I%20am%20interested%20in%20painting%20services." 
-     target="_blank" rel="noopener noreferrer"
-     style="text-decoration: none;">
-    <img src="https://s3.ap-southeast-1.amazonaws.com/assets-chatavocado.ai/whatsapp_FAB.png" 
-         alt="WhatsApp Us" 
-         style="width: 56px; height: 56px; cursor: pointer;">
-  </a>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const bubbles  = document.getElementById('whatsapp-bubbles');
-    const closeBtn = document.getElementById('close-bubbles');
-
-    setTimeout(() => {
-      // inline !important overrides most theme rules
-      bubbles.style.setProperty('display', 'flex', 'important');
-    }, 7000);
-
-    closeBtn.addEventListener('click', () => {
-      bubbles.style.display = 'none';
-    });
-  });
-</script>
-  
   <body class="gradient"><div class="pagefly-container">
               {{ content_for_layout }}
             </div></body>
