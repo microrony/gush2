@@ -1,6 +1,520 @@
+{% doc %}
+  @prompt
+    Create an interactive message overlay popup that displays when a CTA button is clicked. The overlay should include an image display area, customizable message text, and a close button. Include smooth fade-in/fade-out animations and ensure the overlay is responsive and accessible with proper focus management.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-message-overlay-trigger-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    border: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_font_size }}px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .ai-message-overlay-trigger-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+    color: {{ block.settings.button_hover_text_color }};
+  }
+
+  .ai-message-overlay-trigger-{{ ai_gen_id }}:focus {
+    outline: none;
+    border-color: {{ block.settings.button_color }};
+    box-shadow: 0 0 0 3px rgba({{ block.settings.button_color | color_extract: 'red' }}, {{ block.settings.button_color | color_extract: 'green' }}, {{ block.settings.button_color | color_extract: 'blue' }}, 0.3);
+  }
+
+  .ai-message-overlay-backdrop-{{ ai_gen_id }} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .ai-message-overlay-backdrop-{{ ai_gen_id }}.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ai-message-overlay-content-{{ ai_gen_id }} {
+    background-color: {{ block.settings.overlay_background_color }};
+    border-radius: {{ block.settings.overlay_border_radius }}px;
+    max-width: {{ block.settings.overlay_max_width }}px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    transform: scale(0.9) translateY(20px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .ai-message-overlay-backdrop-{{ ai_gen_id }}.active .ai-message-overlay-content-{{ ai_gen_id }} {
+    transform: scale(1) translateY(0);
+  }
+
+  .ai-message-overlay-header-{{ ai_gen_id }} {
+    position: relative;
+    padding: 20px 20px 0;
+  }
+
+  .ai-message-overlay-close-{{ ai_gen_id }} {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    color: {{ block.settings.overlay_text_color }};
+    transition: background-color 0.2s ease;
+    z-index: 1;
+  }
+
+  .ai-message-overlay-close-{{ ai_gen_id }}:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-message-overlay-close-{{ ai_gen_id }}:focus {
+    outline: 2px solid {{ block.settings.button_color }};
+    outline-offset: 2px;
+  }
+
+  .ai-message-overlay-close-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ai-message-overlay-image-container-{{ ai_gen_id }} {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .ai-message-overlay-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: block;
+  }
+
+  .ai-message-overlay-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 200px;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-message-overlay-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+  }
+
+  .ai-message-overlay-body-{{ ai_gen_id }} {
+    padding: 0 20px 20px;
+  }
+
+  .ai-message-overlay-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_font_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.overlay_text_color }};
+    margin: 0 0 15px;
+    line-height: 1.3;
+  }
+
+  .ai-message-overlay-message-{{ ai_gen_id }} {
+    font-size: {{ block.settings.message_font_size }}px;
+    color: {{ block.settings.overlay_text_color }};
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .ai-message-overlay-message-{{ ai_gen_id }} p {
+    margin: 0 0 15px;
+  }
+
+  .ai-message-overlay-message-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-message-overlay-content-{{ ai_gen_id }} {
+      margin: 10px;
+      max-width: none;
+    }
+
+    .ai-message-overlay-header-{{ ai_gen_id }},
+    .ai-message-overlay-body-{{ ai_gen_id }} {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .ai-message-overlay-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_font_size | times: 0.9 }}px;
+    }
+
+    .ai-message-overlay-message-{{ ai_gen_id }} {
+      font-size: {{ block.settings.message_font_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<message-overlay-{{ ai_gen_id }} {{ block.shopify_attributes }}>
+  <button
+    class="ai-message-overlay-trigger-{{ ai_gen_id }}"
+    type="button"
+    aria-haspopup="dialog"
+    aria-expanded="false"
+  >
+    {{ block.settings.button_text }}
+  </button>
+
+  <div
+    class="ai-message-overlay-backdrop-{{ ai_gen_id }}"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="ai-message-overlay-title-{{ ai_gen_id }}"
+    aria-describedby="ai-message-overlay-message-{{ ai_gen_id }}"
+  >
+    <div class="ai-message-overlay-content-{{ ai_gen_id }}">
+      <div class="ai-message-overlay-header-{{ ai_gen_id }}">
+        <button
+          class="ai-message-overlay-close-{{ ai_gen_id }}"
+          type="button"
+          aria-label="Close message"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        {% if block.settings.overlay_image %}
+          <div class="ai-message-overlay-image-container-{{ ai_gen_id }}">
+            <img
+              src="{{ block.settings.overlay_image | image_url: width: 800 }}"
+              alt="{{ block.settings.overlay_image.alt | escape }}"
+              class="ai-message-overlay-image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="{{ block.settings.overlay_image.width }}"
+              height="{{ block.settings.overlay_image.height }}"
+            >
+          </div>
+        {% else %}
+          <div class="ai-message-overlay-image-container-{{ ai_gen_id }}">
+            <div class="ai-message-overlay-image-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-message-overlay-body-{{ ai_gen_id }}">
+        {% if block.settings.overlay_title != blank %}
+          <h2
+            id="ai-message-overlay-title-{{ ai_gen_id }}"
+            class="ai-message-overlay-title-{{ ai_gen_id }}"
+          >
+            {{ block.settings.overlay_title }}
+          </h2>
+        {% endif %}
+
+        {% if block.settings.overlay_message != blank %}
+          <div
+            id="ai-message-overlay-message-{{ ai_gen_id }}"
+            class="ai-message-overlay-message-{{ ai_gen_id }}"
+          >
+            {{ block.settings.overlay_message }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</message-overlay-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class MessageOverlay{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.trigger = null;
+        this.backdrop = null;
+        this.closeButton = null;
+        this.content = null;
+        this.previouslyFocusedElement = null;
+        this.isOpen = false;
+      }
+
+      connectedCallback() {
+        this.trigger = this.querySelector('.ai-message-overlay-trigger-{{ ai_gen_id }}');
+        this.backdrop = this.querySelector('.ai-message-overlay-backdrop-{{ ai_gen_id }}');
+        this.closeButton = this.querySelector('.ai-message-overlay-close-{{ ai_gen_id }}');
+        this.content = this.querySelector('.ai-message-overlay-content-{{ ai_gen_id }}');
+
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.trigger.addEventListener('click', () => this.openOverlay());
+        this.closeButton.addEventListener('click', () => this.closeOverlay());
+        this.backdrop.addEventListener('click', (e) => {
+          if (e.target === this.backdrop) {
+            this.closeOverlay();
+          }
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (this.isOpen && e.key === 'Escape') {
+            this.closeOverlay();
+          }
+          if (this.isOpen && e.key === 'Tab') {
+            this.handleTabKey(e);
+          }
+        });
+      }
+
+      openOverlay() {
+        this.previouslyFocusedElement = document.activeElement;
+        this.isOpen = true;
+        
+        document.body.style.overflow = 'hidden';
+        this.backdrop.classList.add('active');
+        this.trigger.setAttribute('aria-expanded', 'true');
+        
+        setTimeout(() => {
+          this.closeButton.focus();
+        }, 100);
+      }
+
+      closeOverlay() {
+        this.isOpen = false;document.body.style.overflow = '';
+        this.backdrop.classList.remove('active');
+        this.trigger.setAttribute('aria-expanded', 'false');
+        
+        if (this.previouslyFocusedElement) {
+          this.previouslyFocusedElement.focus();
+        }
+      }
+
+      handleTabKey(e) {
+        const focusableElements = this.content.querySelectorAll(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        const firstFocusable = focusableElements[0];
+        const lastFocusable = focusableElements[focusableElements.length - 1];
+
+        if (e.shiftKey) {
+          if (document.activeElement === firstFocusable) {
+            lastFocusable.focus();
+            e.preventDefault();
+          }
+        } else {
+          if (document.activeElement === lastFocusable) {
+            firstFocusable.focus();
+            e.preventDefault();
+          }
+        }
+      }
+    }
+
+    customElements.define('message-overlay-{{ ai_gen_id }}', MessageOverlay{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Message Overlay Popup",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Button Settings"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "View Message"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover background color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button font size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Button horizontal padding",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "min": 8,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Button vertical padding",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 6
+    },
+    {
+      "type": "header",
+      "content": "Overlay Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "overlay_image",
+      "label": "Overlay image"
+    },
+    {
+      "type": "text",
+      "id": "overlay_title",
+      "label": "Overlay title",
+      "default": "Important Message"
+    },
+    {
+      "type": "richtext",
+      "id": "overlay_message",
+      "label": "Overlay message",
+      "default": "<p>This is your customizable message content. You can include multiple paragraphs and formatting.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Overlay Style"
+    },
+    {
+      "type": "color",
+      "id": "overlay_background_color",
+      "label": "Overlay background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "overlay_text_color",
+      "label": "Overlay text color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_max_width",
+      "min": 400,
+      "max": 800,
+      "step": 20,
+      "unit": "px",
+      "label": "Overlay max width",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "overlay_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Overlay border radius",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "title_font_size",
+      "min": 18,
+      "max": 36,
+      "step": 2,
+      "unit": "px",
+      "label": "Title font size",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "message_font_size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Message font size",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "Message Overlay Popup"
+    }
+  ]
+}
 {% endschema %}
