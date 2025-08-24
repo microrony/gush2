@@ -16,7 +16,7 @@ Gush: Handpicked colours banner (inline)
       list-style: none;
     ">
 
-  {#-- Banner aligned to the same container as the grid --#}
+{% comment %} Banner aligned to the same container as the grid {% endcomment %}
   <div style="background:#FF4B00;color:#1a1a1a;padding:clamp(28px,4vw,56px) 0;margin:24px 0;border-radius:12px;">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
       <h2 style="font-size:clamp(26px,3.2vw,44px);line-height:1.15;margin:0 0 14px;color:#111;">
@@ -32,28 +32,39 @@ Gush: Handpicked colours banner (inline)
     </div>
   </div>
 
-  <!-- Overlay (moved to <body> by JS) -->
-  <div id="gush-guide-overlay"
-       role="dialog" aria-modal="true" aria-label="Gush E-Commerce Colour Guide"
-       style="position:fixed;inset:0;background:rgba(0,0,0,.65);
-              z-index:2147483647;display:none;padding:2vh 2vw;">
-    <div id="gush-guide-modal"
-         style="position:relative;background:#fff;width:min(96vw,1280px);
-                margin:2vh auto;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.25);
-                display:flex;flex-direction:column;max-height:96vh;">
-      <button type="button" id="gush-guide-close" aria-label="Close"
-              style="position:absolute;top:12px;right:16px;font-size:28px;line-height:1;
-                     background:transparent;border:0;cursor:pointer;color:#111;">×</button>
+<!-- Overlay (moved to <body> by JS) -->
+<div id="gush-guide-overlay"
+     role="dialog" aria-modal="true" aria-label="Gush E-Commerce Colour Guide"
+     style="position:fixed;inset:0;background:rgba(0,0,0,.65);
+            z-index:2147483647;display:none;padding:2vh 2vw;">
+  <div id="gush-guide-modal"
+       style="position:relative;background:#fff;width:min(96vw,1280px);
+              margin:2vh auto;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.25);
+              display:flex;flex-direction:column;max-height:96vh;">
 
-      <!-- Scrollable viewer area -->
-      <div style="flex:1 1 auto;min-height:0;overflow:auto;">
-        <object data="{{ GUIDE_URL }}" type="application/pdf"
-                style="display:block;width:100%;height:100% !important;min-height:80vh;"
-                aria-label="Gush E-Commerce Colour Guide">
-          <iframe src="{{ GUIDE_URL }}" title="Gush E-Commerce Colour Guide"
-                  style="display:block;width:100%;height:100% !important;border:0;"></iframe>
-        </object>
-      </div>
+    <!-- Modal header with close button (kept away from PDF viewer toolbar) -->
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:8px;
+                padding:10px 16px;border-bottom:1px solid #eee;flex:0 0 auto;">
+      <button type="button" id="gush-guide-close" aria-label="Close"
+              style="font-size:24px;line-height:1;background:transparent;border:0;cursor:pointer;color:#111;">×</button>
+    </div>
+
+    <!-- Scrollable viewer area -->
+    <div style="flex:1 1 auto;min-height:0;overflow:auto;">
+      <object data="{{ GUIDE_URL }}" type="application/pdf"
+              style="display:block;width:100%;height:100% !important;min-height:80vh;"
+              aria-label="Gush E-Commerce Colour Guide">
+        <iframe src="{{ GUIDE_URL }}" title="Gush E-Commerce Colour Guide"
+                style="display:block;width:100%;height:100% !important;border:0;"></iframe>
+      </object>
+    </div>
+
+    <div style="padding:10px 16px;text-align:center;flex:0 0 auto;">
+      <a href="{{ GUIDE_URL }}" target="_blank" rel="noopener"
+         style="text-decoration:underline;">Open the Colour Guide in a new tab</a>
+    </div>
+  </div>
+</div>
 
       <div style="padding:10px 16px;text-align:center;flex:0 0 auto;">
         <a href="{{ GUIDE_URL }}" target="_blank" rel="noopener"
