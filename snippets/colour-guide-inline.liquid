@@ -1,8 +1,9 @@
 {%- comment -%}
 Gush: Handpicked colours banner (inline)
-- Full-row banner inside product grid
+- Full-bleed banner (edge-to-edge across viewport)
+- Still behaves as a grid item so rows of 3 stay intact
 - Desktop-safe overlay (moved to <body>)
-- Robust PDF embed with fallbacks + height enforcement
+- Taller modal (90vh) + robust PDF embed
 {%- endcomment -%}
 
 {%- assign GUIDE_URL = "https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Gush_E-Commerce_Colour_Guide.pdf?v=1756040535" -%}
@@ -15,16 +16,29 @@ Gush: Handpicked colours banner (inline)
       flex: 0 0 100% !important;
       list-style: none;
     ">
-  <div style="background:#FF4B00;color:#1a1a1a;padding:clamp(24px,4vw,56px);margin:24px 0;border-radius:12px;">
-    <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-      <h2 style="font-size:clamp(24px,3vw,40px);line-height:1.15;margin:0 0 12px;color:#111;">
+
+  {%- comment -%} FULL-BLEED WRAPPER {%- endcomment -%}
+  <div
+    style="
+      background:#FF4B00;
+      color:#1a1a1a;
+      padding: clamp(28px, 4vw, 64px) 0;
+      margin: 24px 0;
+      /* full-bleed trick */
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+    "
+  >
+    <div style="max-width:1320px;margin:0 auto;padding:0 24px;">
+      <h2 style="font-size:clamp(26px,3.2vw,44px);line-height:1.15;margin:0 0 14px;color:#111;">
         Here are our handpicked colours
       </h2>
-      <p style="font-size:clamp(14px,1.3vw,18px);max-width:60ch;margin:0 0 20px;color:#231f20;">
+      <p style="font-size:clamp(15px,1.3vw,19px);max-width:65ch;margin:0 0 22px;color:#231f20;">
         Finding your shade should feel inspiring, not overwhelming. That’s why we’ve curated 66 handpicked bestsellers and timeless favourites: so choosing the right colour for your home feels effortless.
       </p>
       <button type="button" id="gush-guide-open"
-              style="background:#FF17A3;color:#fff;border:0;border-radius:8px;padding:12px 20px;font-size:16px;cursor:pointer;">
+              style="background:#FF17A3;color:#fff;border:0;border-radius:10px;padding:12px 22px;font-size:16px;cursor:pointer;">
         View the Colour Guide
       </button>
     </div>
@@ -36,15 +50,16 @@ Gush: Handpicked colours banner (inline)
        style="position:fixed;inset:0;background:rgba(0,0,0,.65);
               z-index:2147483647;display:none;padding:24px;">
     <div id="gush-guide-modal"
-         style="position:relative;background:#fff;width:min(100%,980px);
-                margin:4vh auto;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden;min-height:70vh;">
+         style="position:relative;background:#fff;width:min(96vw,1280px);
+                margin:3vh auto;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.25);
+                overflow:hidden;min-height:90vh;display:flex;flex-direction:column;">
       <button type="button" id="gush-guide-close" aria-label="Close"
-              style="position:absolute;top:10px;right:12px;font-size:28px;line-height:1;
+              style="position:absolute;top:12px;right:16px;font-size:28px;line-height:1;
                      background:transparent;border:0;cursor:pointer;color:#111;">×</button>
 
-      <div style="height:calc(100% - 48px);">
+      <div style="flex:1 1 auto;height:auto;min-height:0;">
         <object data="{{ GUIDE_URL }}" type="application/pdf"
-                style="display:block;width:100%;height:100% !important;"
+                style="display:block;width:100%;height:100% !important;min-height:75vh;"
                 aria-label="Gush E-Commerce Colour Guide">
           <!-- Fallback if <object> is blocked -->
           <iframe src="{{ GUIDE_URL }}" title="Gush E-Commerce Colour Guide"
@@ -52,7 +67,7 @@ Gush: Handpicked colours banner (inline)
         </object>
       </div>
 
-      <div style="padding:10px;text-align:center;">
+      <div style="padding:10px 16px;text-align:center;flex:0 0 auto;">
         <a href="{{ GUIDE_URL }}" target="_blank" rel="noopener"
            style="text-decoration:underline;">Open the Colour Guide in a new tab</a>
       </div>
@@ -79,16 +94,8 @@ Gush: Handpicked colours banner (inline)
     else { root.style.overflow = ''; body.style.overflow = ''; }
   }
 
-  function openOverlay(){
-    overlay.style.display = 'block';
-    lockScroll(true);
-    try { closeBtn.focus(); } catch(e){}
-  }
-  function closeOverlay(){
-    overlay.style.display = 'none';
-    lockScroll(false);
-    try { openBtn.focus(); } catch(e){}
-  }
+  function openOverlay(){ overlay.style.display = 'block'; lockScroll(true); try { closeBtn.focus(); } catch(e){} }
+  function closeOverlay(){ overlay.style.display = 'none';  lockScroll(false); try { openBtn.focus(); } catch(e){} }
 
   openBtn.addEventListener('click', openOverlay);
   closeBtn.addEventListener('click', closeOverlay);
