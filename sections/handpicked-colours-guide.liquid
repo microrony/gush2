@@ -1,7 +1,6 @@
 {% comment %}
-  Handpicked Colours + Colour Guide Modal
-  Drop-in section for collection page.
-  Author: KJ x Gush
+  Handpicked Colours + Colour Guide Modal (Gush)
+  Section to drop on collection pages (e.g., Interior Paints)
 {% endcomment %}
 
 <section class="gush-handpicked-wrapper">
@@ -10,9 +9,9 @@
       <h2 class="gush-handpicked__title">
         {{ section.settings.heading | escape }}
       </h2>
-      <p class="gush-handpicked__body">
+      <div class="gush-handpicked__body">
         {{ section.settings.body }}
-      </p>
+      </div>
       <button
         id="gush-handpicked-open"
         class="gush-handpicked__btn"
@@ -42,7 +41,8 @@
         ×
       </button>
 
-      {% assign guide_url = section.settings.guide_url | strip %}
+      {% assign fallback_url = "https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Gush_E-Commerce_Colour_Guide.pdf?v=1756040535" %}
+      {% assign guide_url = section.settings.guide_url | default: fallback_url | strip %}
       {% assign is_pdf = guide_url | downcase | slice: -4, 4 %}
       {% if is_pdf == '.pdf' %}
         <iframe
@@ -63,7 +63,7 @@
 
   <style>
     .gush-handpicked-wrapper {
-      background: #FF4B00; /* current orange background */
+      background: #FF4B00;
       color: #1a1a1a;
       padding: clamp(24px, 4vw, 56px) 0;
     }
@@ -87,7 +87,7 @@
       color: #231f20;
     }
     .gush-handpicked__btn {
-      background: #FF17A3; /* Gush accent */
+      background: #FF17A3;
       color: #fff;
       border: 0;
       border-radius: 8px;
@@ -105,7 +105,7 @@
       inset: 0;
       background: rgba(0,0,0,.65);
       z-index: 9999;
-      display: none; /* toggled via JS */
+      display: none;
       padding: 24px;
     }
     .gush-handpicked-overlay.is-open { display: block; }
@@ -175,36 +175,37 @@
   </script>
 
   {% schema %}
-{
-  "name": "Colour Guide",
-  "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Here are our handpicked colours"
-    },
-    {
-      "type": "richtext",
-      "id": "body",
-      "label": "Body copy",
-      "default": "<p>Finding your shade should feel inspiring, not overwhelming. That’s why we’ve curated 66 handpicked bestsellers and timeless favourites: so choosing the right colour for your home feels effortless.</p>"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Button label",
-      "default": "View the Colour Guide"
-    },
-    {
-      "type": "url",
-      "id": "guide_url",
-      "label": "Colour Guide file URL (PNG or PDF)",
-      "info": "Paste the URL from Content → Files. If it ends in .pdf, it will embed as a PDF. Otherwise it will show an image."
-    }
-  ],
-  "presets": [
-    { "name": "Colour Guide" }
-  ]
-}
-{% endschema %}
+  {
+    "name": "Colour Guide",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Here are our handpicked colours"
+      },
+      {
+        "type": "richtext",
+        "id": "body",
+        "label": "Body copy",
+        "default": "<p>Finding your shade should feel inspiring, not overwhelming. That’s why we’ve curated 66 handpicked bestsellers and timeless favourites: so choosing the right colour for your home feels effortless.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label",
+        "default": "View the Colour Guide"
+      },
+      {
+        "type": "url",
+        "id": "guide_url",
+        "label": "Colour Guide file URL (PNG or PDF)",
+        "info": "Paste the URL from Content → Files. If left blank, this section will use the default Gush E-Commerce Colour Guide URL."
+      }
+    ],
+    "presets": [
+      { "name": "Colour Guide" }
+    ]
+  }
+  {% endschema %}
+</section>
