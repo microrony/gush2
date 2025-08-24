@@ -1,15 +1,15 @@
 {%- comment -%}
-Gush: Handpicked colours banner (inline, safe for product grid)
-- Renders as <li> so it fits the <ul> grid.
-- Forces full-width in both CSS Grid & Flex layouts.
-- Moves overlay to <body> at runtime to avoid clipping (desktop fix).
+Gush: Handpicked colours banner (inline)
+- Full-row banner inside product grid
+- Desktop-safe overlay (moved to <body>)
+- Robust PDF embed with fallbacks + height enforcement
 {%- endcomment -%}
 
 {%- assign GUIDE_URL = "https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Gush_E-Commerce_Colour_Guide.pdf?v=1756040535" -%}
 
 <li class="grid__item"
     style="
-      grid-column: 1 / -1;
+      grid-column: 1 / -1 !important;
       width: 100% !important;
       max-width: 100% !important;
       flex: 0 0 100% !important;
@@ -23,60 +23,60 @@ Gush: Handpicked colours banner (inline, safe for product grid)
       <p style="font-size:clamp(14px,1.3vw,18px);max-width:60ch;margin:0 0 20px;color:#231f20;">
         Finding your shade should feel inspiring, not overwhelming. That’s why we’ve curated 66 handpicked bestsellers and timeless favourites: so choosing the right colour for your home feels effortless.
       </p>
-      <button type="button" id="gush-handpicked-open"
+      <button type="button" id="gush-guide-open"
               style="background:#FF17A3;color:#fff;border:0;border-radius:8px;padding:12px 20px;font-size:16px;cursor:pointer;">
         View the Colour Guide
       </button>
     </div>
   </div>
 
-  <!-- Overlay (will be moved to <body> by JS) -->
-  <div id="gush-handpicked-overlay"
+  <!-- Overlay (moved to <body> by JS) -->
+  <div id="gush-guide-overlay"
        role="dialog" aria-modal="true" aria-label="Gush E-Commerce Colour Guide"
        style="position:fixed;inset:0;background:rgba(0,0,0,.65);
-              z-index:2147483000;display:none;padding:24px;">
-    <div id="gush-handpicked-dialog"
+              z-index:2147483647;display:none;padding:24px;">
+    <div id="gush-guide-modal"
          style="position:relative;background:#fff;width:min(100%,980px);
-                margin:4vh auto;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden;">
-      <button type="button" id="gush-handpicked-close" aria-label="Close"
+                margin:4vh auto;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden;min-height:70vh;">
+      <button type="button" id="gush-guide-close" aria-label="Close"
               style="position:absolute;top:10px;right:12px;font-size:28px;line-height:1;
                      background:transparent;border:0;cursor:pointer;color:#111;">×</button>
 
-      {%- assign is_pdf = GUIDE_URL | downcase | slice: -4, 4 -%}
-      {%- if is_pdf == '.pdf' -%}
-        <iframe src="{{ GUIDE_URL }}"
-                title="Gush E-Commerce Colour Guide PDF"
-                style="display:block;width:100%;height:min(80vh,900px);border:0;"></iframe>
-      {%- else -%}
-        <img src="{{ GUIDE_URL }}"
-             alt="Gush E-Commerce Colour Guide"
-             style="display:block;width:100%;height:auto;">
-      {%- endif -%}
+      <div style="height:calc(100% - 48px);">
+        <object data="{{ GUIDE_URL }}" type="application/pdf"
+                style="display:block;width:100%;height:100% !important;"
+                aria-label="Gush E-Commerce Colour Guide">
+          <!-- Fallback if <object> is blocked -->
+          <iframe src="{{ GUIDE_URL }}" title="Gush E-Commerce Colour Guide"
+                  style="display:block;width:100%;height:100% !important;border:0;"></iframe>
+        </object>
+      </div>
+
+      <div style="padding:10px;text-align:center;">
+        <a href="{{ GUIDE_URL }}" target="_blank" rel="noopener"
+           style="text-decoration:underline;">Open the Colour Guide in a new tab</a>
+      </div>
     </div>
   </div>
 </li>
 
 <script>
 (function(){
-  var openBtn  = document.getElementById('gush-handpicked-open');
-  var overlay  = document.getElementById('gush-handpicked-overlay');
-  var closeBtn = document.getElementById('gush-handpicked-close');
+  var openBtn  = document.getElementById('gush-guide-open');
+  var overlay  = document.getElementById('gush-guide-overlay');
+  var closeBtn = document.getElementById('gush-guide-close');
 
   if (!openBtn || !overlay || !closeBtn) return;
 
-  // Move overlay to <body> so it sits above everything on desktop
+  // Ensure overlay lives at <body> level (avoids clipping/stacking issues on desktop)
   if (overlay.parentNode !== document.body) {
     document.body.appendChild(overlay);
   }
 
   function lockScroll(lock){
-    if(lock){
-      document.documentElement.style.overflow = 'hidden';
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.documentElement.style.overflow = '';
-      document.body.style.overflow = '';
-    }
+    var root = document.documentElement, body = document.body;
+    if (lock) { root.style.overflow = 'hidden'; body.style.overflow = 'hidden'; }
+    else { root.style.overflow = ''; body.style.overflow = ''; }
   }
 
   function openOverlay(){
