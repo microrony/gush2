@@ -1,36 +1,40 @@
 {%- comment -%}
-Gush: Handpicked colours banner (inline, safe for product UL)
-- Renders as an <li> so it doesn't break the grid
-- Moves the overlay to <body> at runtime to avoid clipping/stacking issues
+Gush: Handpicked colours banner (inline, safe for product grid)
+- Renders as <li> so it fits the <ul> grid.
+- Forces full-width in both CSS Grid & Flex layouts.
+- Moves overlay to <body> at runtime to avoid clipping (desktop fix).
 {%- endcomment -%}
 
 {%- assign GUIDE_URL = "https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Gush_E-Commerce_Colour_Guide.pdf?v=1756040535" -%}
 
-<li class="grid__item grid__item--full-width"
-    style="grid-column:1 / -1; list-style:none; width:100%;">
-  <div class="gush-handpicked-wrapper"
-       style="background:#FF4B00;color:#1a1a1a;padding:clamp(24px,4vw,56px);margin:24px 0;border-radius:12px;">
-    <div class="gush-handpicked"
-         style="max-width:1200px;margin:0 auto;padding:0 20px;">
+<li class="grid__item"
+    style="
+      grid-column: 1 / -1;
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: 0 0 100% !important;
+      list-style: none;
+    ">
+  <div style="background:#FF4B00;color:#1a1a1a;padding:clamp(24px,4vw,56px);margin:24px 0;border-radius:12px;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
       <h2 style="font-size:clamp(24px,3vw,40px);line-height:1.15;margin:0 0 12px;color:#111;">
         Here are our handpicked colours
       </h2>
       <p style="font-size:clamp(14px,1.3vw,18px);max-width:60ch;margin:0 0 20px;color:#231f20;">
         Finding your shade should feel inspiring, not overwhelming. That’s why we’ve curated 66 handpicked bestsellers and timeless favourites: so choosing the right colour for your home feels effortless.
       </p>
-      <button id="gush-handpicked-open"
-              type="button"
+      <button type="button" id="gush-handpicked-open"
               style="background:#FF17A3;color:#fff;border:0;border-radius:8px;padding:12px 20px;font-size:16px;cursor:pointer;">
         View the Colour Guide
       </button>
     </div>
   </div>
 
-  {#-- We initially place the overlay here, then JS moves it to <body> --#}
+  <!-- Overlay (will be moved to <body> by JS) -->
   <div id="gush-handpicked-overlay"
        role="dialog" aria-modal="true" aria-label="Gush E-Commerce Colour Guide"
        style="position:fixed;inset:0;background:rgba(0,0,0,.65);
-              z-index:2147483000; display:none; padding:24px;">
+              z-index:2147483000;display:none;padding:24px;">
     <div id="gush-handpicked-dialog"
          style="position:relative;background:#fff;width:min(100%,980px);
                 margin:4vh auto;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden;">
@@ -58,9 +62,9 @@ Gush: Handpicked colours banner (inline, safe for product UL)
   var overlay  = document.getElementById('gush-handpicked-overlay');
   var closeBtn = document.getElementById('gush-handpicked-close');
 
-  if(!openBtn || !overlay || !closeBtn) return;
+  if (!openBtn || !overlay || !closeBtn) return;
 
-  // Move overlay to <body> to avoid parent stacking/overflow issues (desktop fix)
+  // Move overlay to <body> so it sits above everything on desktop
   if (overlay.parentNode !== document.body) {
     document.body.appendChild(overlay);
   }
@@ -75,12 +79,20 @@ Gush: Handpicked colours banner (inline, safe for product UL)
     }
   }
 
-  function openOverlay(){ overlay.style.display = 'block'; lockScroll(true); closeBtn.focus(); }
-  function closeOverlay(){ overlay.style.display = 'none';  lockScroll(false); openBtn.focus(); }
+  function openOverlay(){
+    overlay.style.display = 'block';
+    lockScroll(true);
+    try { closeBtn.focus(); } catch(e){}
+  }
+  function closeOverlay(){
+    overlay.style.display = 'none';
+    lockScroll(false);
+    try { openBtn.focus(); } catch(e){}
+  }
 
   openBtn.addEventListener('click', openOverlay);
   closeBtn.addEventListener('click', closeOverlay);
-  overlay.addEventListener('click', function(e){ if(e.target === overlay) closeOverlay(); });
-  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && overlay.style.display === 'block') closeOverlay(); });
+  overlay.addEventListener('click', function(e){ if (e.target === overlay) closeOverlay(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && overlay.style.display === 'block') closeOverlay(); });
 })();
 </script>
