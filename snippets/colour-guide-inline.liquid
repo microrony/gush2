@@ -1,9 +1,8 @@
 {%- comment -%}
 Gush: Handpicked colours banner (inline)
-- Full-bleed banner (edge-to-edge across viewport)
-- Still behaves as a grid item so rows of 3 stay intact
-- Desktop-safe overlay (moved to <body>)
-- Taller modal (90vh) + robust PDF embed
+- Aligns with product grid width (no full-bleed)
+- Renders as a grid <li> so rows-of-3 stay intact
+- Desktop overlay moved to <body>, taller, with internal scroll
 {%- endcomment -%}
 
 {%- assign GUIDE_URL = "https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Gush_E-Commerce_Colour_Guide.pdf?v=1756040535" -%}
@@ -17,20 +16,9 @@ Gush: Handpicked colours banner (inline)
       list-style: none;
     ">
 
-  {%- comment -%} FULL-BLEED WRAPPER {%- endcomment -%}
-  <div
-    style="
-      background:#FF4B00;
-      color:#1a1a1a;
-      padding: clamp(28px, 4vw, 64px) 0;
-      margin: 24px 0;
-      /* full-bleed trick */
-      width: 100vw;
-      margin-left: calc(50% - 50vw);
-      margin-right: calc(50% - 50vw);
-    "
-  >
-    <div style="max-width:1320px;margin:0 auto;padding:0 24px;">
+  {#-- Banner aligned to the same container as the grid --#}
+  <div style="background:#FF4B00;color:#1a1a1a;padding:clamp(28px,4vw,56px) 0;margin:24px 0;border-radius:12px;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
       <h2 style="font-size:clamp(26px,3.2vw,44px);line-height:1.15;margin:0 0 14px;color:#111;">
         Here are our handpicked colours
       </h2>
@@ -48,20 +36,20 @@ Gush: Handpicked colours banner (inline)
   <div id="gush-guide-overlay"
        role="dialog" aria-modal="true" aria-label="Gush E-Commerce Colour Guide"
        style="position:fixed;inset:0;background:rgba(0,0,0,.65);
-              z-index:2147483647;display:none;padding:24px;">
+              z-index:2147483647;display:none;padding:2vh 2vw;">
     <div id="gush-guide-modal"
          style="position:relative;background:#fff;width:min(96vw,1280px);
-                margin:3vh auto;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.25);
-                overflow:hidden;min-height:90vh;display:flex;flex-direction:column;">
+                margin:2vh auto;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.25);
+                display:flex;flex-direction:column;max-height:96vh;">
       <button type="button" id="gush-guide-close" aria-label="Close"
               style="position:absolute;top:12px;right:16px;font-size:28px;line-height:1;
                      background:transparent;border:0;cursor:pointer;color:#111;">×</button>
 
-      <div style="flex:1 1 auto;height:auto;min-height:0;">
+      <!-- Scrollable viewer area -->
+      <div style="flex:1 1 auto;min-height:0;overflow:auto;">
         <object data="{{ GUIDE_URL }}" type="application/pdf"
-                style="display:block;width:100%;height:100% !important;min-height:75vh;"
+                style="display:block;width:100%;height:100% !important;min-height:80vh;"
                 aria-label="Gush E-Commerce Colour Guide">
-          <!-- Fallback if <object> is blocked -->
           <iframe src="{{ GUIDE_URL }}" title="Gush E-Commerce Colour Guide"
                   style="display:block;width:100%;height:100% !important;border:0;"></iframe>
         </object>
@@ -84,9 +72,7 @@ Gush: Handpicked colours banner (inline)
   if (!openBtn || !overlay || !closeBtn) return;
 
   // Ensure overlay lives at <body> level (avoids clipping/stacking issues on desktop)
-  if (overlay.parentNode !== document.body) {
-    document.body.appendChild(overlay);
-  }
+  if (overlay.parentNode !== document.body) document.body.appendChild(overlay);
 
   function lockScroll(lock){
     var root = document.documentElement, body = document.body;
@@ -94,8 +80,8 @@ Gush: Handpicked colours banner (inline)
     else { root.style.overflow = ''; body.style.overflow = ''; }
   }
 
-  function openOverlay(){ overlay.style.display = 'block'; lockScroll(true); try { closeBtn.focus(); } catch(e){} }
-  function closeOverlay(){ overlay.style.display = 'none';  lockScroll(false); try { openBtn.focus(); } catch(e){} }
+  function openOverlay(){ overlay.style.display = 'block'; lockScroll(true); try{ closeBtn.focus(); }catch(e){} }
+  function closeOverlay(){ overlay.style.display = 'none';  lockScroll(false); try{ openBtn.focus(); }catch(e){} }
 
   openBtn.addEventListener('click', openOverlay);
   closeBtn.addEventListener('click', closeOverlay);
