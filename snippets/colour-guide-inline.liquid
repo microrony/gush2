@@ -1,8 +1,9 @@
 {%- comment -%}
-Gush: Handpicked colours banner (inline, aligned with grid)
-- Desktop: header + CTA share a row, CTA stands out
-- Mobile/tablet: header, then body, then CTA (stacked)
-- Overlay unchanged (PDF viewer), lives at <body> level
+Gush: Colour Guide banner (inline)
+- Aligned with grid via .gush-page-width
+- Headline + CTA share a row; no body copy
+- CTA has subtle one-time pulse
+- Overlay: desktop-safe, scrollable, thin header
 {%- endcomment -%}
 
 {%- assign GUIDE_URL = "https://cdn.shopify.com/s/files/1/0614/1470/3297/files/Gush_E-Commerce_Colour_Guide.pdf?v=1756040535" -%}
@@ -11,11 +12,13 @@ Gush: Handpicked colours banner (inline, aligned with grid)
     style="grid-column:1 / -1 !important; width:100% !important; max-width:100% !important; flex:0 0 100% !important; list-style:none;">
 
   <style>
-    /* Scoped to avoid theme collisions */
-    .gush-guide-banner { background:#FF4B00; color:#1a1a1a; border-radius:12px; padding:clamp(28px,4vw,56px) 0; margin:24px 0; }
-    .gush-guide-inner { max-width:1200px; margin:0 auto; padding:0 20px; }
-    /* If your theme has a container class, this aligns perfectly */
-    .gush-page-width .gush-guide-inner { max-width:unset; padding:0; }
+    /* --- Banner layout --- */
+    .gush-guide-banner { background:#FF4B00; color:#1a1a1a; border-radius:14px; padding:clamp(28px,4vw,56px) 0; margin:24px 0; }
+    .gush-guide-container { /* aligns with your grid container */
+      max-width: 100%; margin: 0 auto;
+    }
+    .gush-guide-inner { padding: 0 32px; }              /* side padding inside the orange */
+    @media (max-width: 768px){ .gush-guide-inner{ padding: 0 20px; } }
 
     .gush-guide-top { display:flex; align-items:flex-start; justify-content:space-between; gap:20px; flex-wrap:wrap; }
     .gush-guide-title {
@@ -23,9 +26,8 @@ Gush: Handpicked colours banner (inline, aligned with grid)
       font-size:clamp(32px, 5vw, 64px);
       line-height:1.05;
       color:#111;
-      flex:1 1 680px; /* let it breathe across the orange area */
+      flex:1 1 680px; /* lets the title span nicely */
     }
-    .gush-guide-body { font-size:clamp(15px,1.3vw,19px); color:#231f20; margin:14px 0 0 0; max-width:65ch; }
 
     .gush-guide-btn {
       appearance:none; -webkit-appearance:none;
@@ -45,15 +47,25 @@ Gush: Handpicked colours banner (inline, aligned with grid)
       .gush-guide-btn { margin-top:10px; }
     }
 
-    /* Overlay chrome (thin header) */
+    /* --- Subtle one-time pulse (respects reduced motion) --- */
+    @media (prefers-reduced-motion: no-preference) {
+      .gush-guide-btn.is-pulsing { animation: gushPulse 1.2s ease-out 0.4s 2; }
+      @keyframes gushPulse {
+        0%   { transform: scale(1);    box-shadow: 0 8px 20px rgba(255,23,163,.35); }
+        50%  { transform: scale(1.06); box-shadow: 0 18px 36px rgba(255,23,163,.55); }
+        100% { transform: scale(1);    box-shadow: 0 8px 20px rgba(255,23,163,.35); }
+      }
+    }
+
+    /* --- Overlay chrome (thin header) --- */
     #gush-guide-overlay { position:fixed; inset:0; background:rgba(0,0,0,.65); z-index:2147483647; display:none; padding:2vh 2vw; }
     #gush-guide-modal {
       position:relative; background:#fff; width:min(96vw,1280px); margin:2vh auto; border-radius:12px;
       box-shadow:0 10px 30px rgba(0,0,0,.25); display:flex; flex-direction:column; max-height:96vh;
     }
     .gush-guide-modal__hdr {
-      display:flex; align-items:center; justify-content:flex-end; height:44px;
-      padding:0 12px; border-bottom:1px solid #e9e9e9; flex:0 0 auto;
+      display:flex; align-items:center; justify-content:flex-end;
+      height:44px; padding:0 12px; border-bottom:1px solid #e9e9e9; flex:0 0 auto;
     }
     #gush-guide-close {
       width:32px; height:32px; display:inline-flex; align-items:center; justify-content:center;
@@ -65,20 +77,17 @@ Gush: Handpicked colours banner (inline, aligned with grid)
   </style>
 
   <div class="gush-guide-banner">
-    <!-- If your theme has a page container like .gush-page-width, wrap the inner in it:
-         <div class="gush-page-width"><div class="gush-guide-inner"> ... </div></div>
-         Otherwise use just .gush-guide-inner as below. -->
-    <div class="gush-guide-inner">
-      <div class="gush-guide-top">
-        <h2 class="gush-guide-title">All Our Listed Colours At One Glance</h2>
-        <button type="button" id="gush-guide-open" class="gush-guide-btn" aria-haspopup="dialog" aria-controls="gush-guide-overlay">
-          View the Colour Guide
-        </button>
+    <!-- use your site container so it aligns perfectly with the grid -->
+    <div class="gush-page-width gush-guide-container">
+      <div class="gush-guide-inner">
+        <div class="gush-guide-top">
+          <h2 class="gush-guide-title">All Our Listed Colours At One Glance</h2>
+          <button type="button" id="gush-guide-open" class="gush-guide-btn" aria-haspopup="dialog" aria-controls="gush-guide-overlay">
+            View the Colour Guide
+          </button>
+        </div>
+        {# body text removed per request #}
       </div>
-      <p class="gush-guide-body">
-        Finding your shade should feel inspiring, not overwhelming. That’s why we’ve curated 66 handpicked bestsellers and timeless favourites:
-        so choosing the right colour for your home feels effortless.
-      </p>
     </div>
   </div>
 
@@ -110,7 +119,7 @@ Gush: Handpicked colours banner (inline, aligned with grid)
 
   if (!openBtn || !overlay || !closeBtn) return;
 
-  // Move overlay to <body> so it sits above the grid on desktop
+  // Ensure overlay lives at <body> level (avoids clipping/stack issues)
   if (overlay.parentNode !== document.body) document.body.appendChild(overlay);
 
   function lockScroll(lock){
@@ -126,5 +135,24 @@ Gush: Handpicked colours banner (inline, aligned with grid)
   closeBtn.addEventListener('click', closeOverlay);
   overlay.addEventListener('click', function(e){ if (e.target === overlay) closeOverlay(); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && overlay.style.display === 'block') closeOverlay(); });
+
+  // Subtle one-time CTA pulse when banner first enters the viewport
+  (function(){
+    try {
+      var seenKey = 'gushGuidePulseSeen';
+      if (sessionStorage.getItem(seenKey) === '1') return;
+      function runPulse(){ openBtn.classList.add('is-pulsing'); sessionStorage.setItem(seenKey, '1');
+        openBtn.addEventListener('animationend', function(){ openBtn.classList.remove('is-pulsing'); }, { once:true }); }
+      if ('IntersectionObserver' in window) {
+        var banner = document.querySelector('.gush-guide-banner');
+        if (banner) {
+          var io = new IntersectionObserver(function(entries){
+            entries.forEach(function(entry){ if(entry.isIntersecting){ runPulse(); io.disconnect(); } });
+          }, { threshold: 0.5 });
+          io.observe(banner);
+        } else { setTimeout(runPulse, 800); }
+      } else { setTimeout(runPulse, 800); }
+    } catch(e){}
+  })();
 })();
 </script>
