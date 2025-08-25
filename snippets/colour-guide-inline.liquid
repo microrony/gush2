@@ -47,7 +47,30 @@ Gush: Colour Guide banner (inline)
     .gush-guide-btn:focus{ outline:2px solid #111; outline-offset:2px; }
 
     @media (max-width:1100px){ .gush-guide-btn{ justify-self:start; margin-top:10px; } }
-
+/* Gradient, icon bubble, and hover animation to match “Enquire now” */
+.gush-cta{
+  display:inline-flex; align-items:center; gap:14px;
+  font: inherit; /* same font as your site/buttons */
+  background: linear-gradient(90deg, #FF17A3 0%, #FF5DED 100%);
+  background-size: 200% 100%;
+  color:#fff; padding:14px 22px; border-radius:12px; border:0;
+  box-shadow: 0 10px 28px rgba(255, 23, 163, .40);
+  transition: background-position .35s ease, box-shadow .25s ease, transform .06s ease, filter .2s ease;
+}
+.gush-cta__icon{
+  width:32px; height:32px; border-radius:999px;
+  display:inline-flex; align-items:center; justify-content:center;
+  background: rgba(255,255,255,.22);
+  transition: transform .2s ease, background .2s ease;
+}
+.gush-cta:hover{
+  background-position: 100% 0%;
+  box-shadow: 0 14px 36px rgba(255, 23, 163, .52);
+  filter: saturate(1.06);
+}
+.gush-cta:hover .gush-cta__icon{ transform: translateX(2px); background: rgba(255,255,255,.28); }
+.gush-cta:active{ transform: translateY(1px); }
+.gush-cta:focus-visible{ outline:2px solid #111; outline-offset:3px; }
     /* Subtle one-time pulse */
     @media (prefers-reduced-motion: no-preference){
       .gush-guide-btn.is-pulsing{ animation:gushPulse 1.2s ease-out .4s 2; }
@@ -76,9 +99,14 @@ Gush: Colour Guide banner (inline)
       <div class="gush-guide-inner">
         <div class="gush-guide-top">
           <h2 class="gush-guide-title">All Our Listed Colours At One Glance</h2>
-          <button type="button" id="gush-guide-open" class="gush-guide-btn" aria-haspopup="dialog" aria-controls="gush-guide-overlay">
-            View the Colour Guide
-          </button>
+          <button type="button" id="gush-guide-open" class="gush-guide-btn gush-cta" aria-haspopup="dialog" aria-controls="gush-guide-overlay">
+  <span class="gush-cta__label">View the Colour Guide</span>
+  <span class="gush-cta__icon" aria-hidden="true">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+      <path d="M5 12h14M13 6l6 6-6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </span>
+</button>
         </div>
       </div>
     </div>
